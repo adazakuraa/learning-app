@@ -1,0 +1,79 @@
+# 教材の追加方法
+
+```
+content/
+  <科目フォルダ>/subject.yaml
+  <科目フォルダ>/<章フォルダ>/chapter.yaml
+  <科目フォルダ>/<章フォルダ>/<単元フォルダ>/
+    unit.yaml      必須
+    source.md      元の教材（Notion から取り込んだまま。手で直さない）
+    lesson.md      学習用テキスト（任意。無ければ source.md を表示）
+    captions.vtt   字幕（WebVTT）
+    video.mp4      動画（任意。別リポジトリの URL も指定可）
+    *.png ...      画像（Markdown から相対パスで参照）
+```
+
+- フォルダ名の先頭に `_` を付けると無視される（下書き用）。
+- 並び順は `order`、無ければフォルダ名順。
+
+## subject.yaml / chapter.yaml
+
+```yaml
+id: info-processing     # 英小文字・数字・ハイフン
+title: 情報処理
+description: 任意の説明
+order: 1
+```
+
+## unit.yaml
+
+```yaml
+id: tcp-ip                         # 全単元で一意。進捗データのキーになるので後から変えない
+title: TCP/IP
+summary: 一覧に表示する概要
+order: 1
+video:
+  src: video.mp4                   # または https://<user>.github.io/learning-videos-1/tcp-ip.mp4
+  captions: captions.vtt
+  duration: 420                    # 秒（任意）
+generation:                        # 動画生成時の追加指示（アプリには表示されない）
+  style: animation                 # slide | animation | whiteboard | mixed
+  instructions:
+    - 具体的な日常生活の例を入れてほしい
+```
+
+## 動画ファイル
+
+- H.264 + AAC の MP4、`-movflags +faststart` 付き（Safari で確実に再生するため）。
+- 1ファイル 100MB 未満。リポジトリが大きくなったら動画専用リポジトリ（GitHub Pages 有効）に置き、`video.src` に URL を書く。
+
+## Notion からの取り込み（一括）
+
+1. Notion の「勉強用テキスト」ページで エクスポート → Markdown & CSV、サブページを含める
+2. zip を GitHub の Releases に添付する（スマホのブラウザから可）
+3. Claude Code に「Releases の zip を取り込んで」と依頼する。内部では次を実行する:
+
+```sh
+unzip export.zip -d /tmp/export
+python3 scripts/import_notion.py /tmp/export content
+```
+
+- 科目ページの `# XX01｜章名` が章、`### XX01-01｜単元名` が単元になる。
+- 画像は WebP に変換・縮小（最大幅1600px）して単元フォルダに置く。
+- 再実行しても `lesson.md`・動画・字幕・`unit.yaml` の追加項目（video, generation, summary）は消えない。
+- 単元 ID（例: `math-ma01-02`）は進捗データのキー。Notion 側で単元コードを変えると別単元扱いになるので注意。
+
+## 動画生成の指示
+
+- 全科目共通のルール: `pipeline/guidelines.md`
+- 科目ごとの指示: `content/<科目>/subject.yaml` の `generation`
+- 章・単元ごとの指示: `chapter.yaml` / `unit.yaml` の `generation`（同じ形式）
+
+```yaml
+generation:
+  style: auto          # auto | slide | animation | whiteboard | mixed
+  instructions:
+    - 具体的な日常生活の例を入れてほしい
+```
+
+AI に渡す指示一式は `python3 scripts/video_prompt.py <単元ID>` で確認できる。

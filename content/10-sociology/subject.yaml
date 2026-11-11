@@ -1,0 +1,7 @@
+id: sociology
+title: 社会学
+group: 文系学問
+order: 10
+generation:
+  style: auto
+  instructions: []

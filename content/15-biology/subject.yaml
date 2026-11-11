@@ -1,0 +1,7 @@
+id: biology
+title: 生物学
+group: 理系学問
+order: 15
+generation:
+  style: auto
+  instructions: []

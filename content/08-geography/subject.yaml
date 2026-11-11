@@ -1,0 +1,7 @@
+id: geography
+title: 地理
+group: 文系学問
+order: 8
+generation:
+  style: auto
+  instructions: []

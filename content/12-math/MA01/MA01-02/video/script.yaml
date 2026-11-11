@@ -1,0 +1,438 @@
+# MA01-02 数の種類 — 解説動画の台本
+# added: true の項目は元教材にない補足（内容確認の対象）
+title: 数の種類
+scenes:
+  # ---------- 導入 ----------
+  - board: whiteboard
+    steps:
+      - say: この単元では、数の「種類」を整理します。
+        show:
+          - { type: title, text: 数の種類 }
+      - say: 整数、自然数、有理数、無理数。名前はむずかしそうですが、数直線と図を使えば、すっきり整理できます。
+        show:
+          - { type: text, size: l, text: "整数・自然数・**有理数**・**無理数**…" }
+      - say: 最後に、計算の練習問題も解いてみましょう。
+        show:
+          - type: list
+            items: ["① 数の仲間分け", "② 実数ではない数", "③ 練習問題"]
+
+  # ---------- 数直線：整数と自然数 ----------
+  - board: whiteboard
+    steps:
+      - say: まず、数を1本の線の上に並べてみます。これを「数直線」といいます。右に行くほど大きく、左に行くほど小さくなります。
+        added: true
+        show:
+          - { type: title, text: 数直線で考えよう }
+          - id: line
+            type: svg
+            at: [60, 200]
+            w: 1160
+            h: 170
+            markup: |
+              <path d="M20 80 H1140"/><path d="M1124 70 L1140 80 L1124 90"/>
+              <path d="M70 68 V92"/><path d="M220 68 V92"/><path d="M370 68 V92"/><path d="M520 68 V92"/>
+              <path d="M670 68 V92"/><path d="M820 68 V92"/><path d="M970 68 V92"/>
+              <g fill="currentColor" stroke="none" font-size="30" text-anchor="middle">
+                <text x="70" y="135">-3</text><text x="220" y="135">-2</text><text x="370" y="135">-1</text><text x="520" y="135">0</text>
+                <text x="670" y="135">1</text><text x="820" y="135">2</text><text x="970" y="135">3</text>
+              </g>
+      - say: -1、0、1、2のように、目盛りにぴったり乗る数を「整数」と呼びます。
+        show:
+          - type: svg
+            at: [60, 200]
+            w: 1160
+            h: 170
+            color: green
+            anim: fade
+            markup: |
+              <g fill="currentColor" stroke="none"><circle cx="70" cy="80" r="10"/><circle cx="220" cy="80" r="10"/><circle cx="370" cy="80" r="10"/>
+              <circle cx="520" cy="80" r="10"/><circle cx="670" cy="80" r="10"/><circle cx="820" cy="80" r="10"/><circle cx="970" cy="80" r="10"/></g>
+          - { type: text, at: [80, 420], color: green, text: "整数 … -3, -2, -1, 0, 1, 2, 3 …" }
+      - say: マイナスの整数は、身近なところにもあります。冬の気温が0℃より低いと、-3℃のように言いますね。建物の地下1階も、-1階と考えられます。
+        added: true
+        show:
+          - type: svg
+            at: [1010, 395]
+            w: 200
+            h: 300
+            color: blue
+            markup: |
+              <path d="M70 20 V220"/><path d="M100 20 V220"/><path d="M70 20 Q85 5 100 20"/>
+              <circle cx="85" cy="250" r="30"/>
+              <path d="M100 80 H120"/><path d="M100 170 H120"/>
+              <path d="M85 170 V230" stroke-width="10"/>
+              <g fill="currentColor" stroke="none" font-size="26"><text x="126" y="89">0℃</text><text x="126" y="179">-3℃</text></g>
+          - { type: text, at: [80, 520], size: s, color: gray, text: "例：気温 -3℃　地下1階 → -1階" }
+      - say: そのうち、0より大きい整数、つまり1、2、3…を「自然数」といいます。ものを数えるときに使う数ですね。
+        show:
+          - type: svg
+            at: [60, 200]
+            w: 1160
+            h: 170
+            color: pink
+            markup: |
+              <circle cx="670" cy="80" r="22"/><circle cx="820" cy="80" r="22"/><circle cx="970" cy="80" r="22"/>
+          - { type: text, at: [80, 580], color: pink, text: "自然数 … 1, 2, 3 …（0より大きい整数）" }
+      - say: りんごを数えるとき、-1個や0.5個とは数えませんね。1個、2個、3個と数えるのが自然数です。
+        added: true
+        show:
+          - type: svg
+            at: [80, 640]
+            w: 520
+            h: 70
+            color: pink
+            markup: |
+              <circle cx="30" cy="32" r="24"/><path d="M30 8 Q34 0 42 -2"/>
+              <circle cx="120" cy="32" r="24"/><path d="M120 8 Q124 0 132 -2"/>
+              <circle cx="210" cy="32" r="24"/><path d="M210 8 Q214 0 222 -2"/>
+              <g fill="currentColor" stroke="none" font-size="26"><text x="250" y="42">1個、2個、3個…</text></g>
+      - say: では、目盛りと目盛りのあいだには、どんな数があるのでしょうか。
+        pause: 1
+
+  # ---------- 目盛りのあいだ：有理数と無理数 ----------
+  - board: whiteboard
+    steps:
+      - say: 整数ではない数も、数直線の上にちゃんと場所があります。
+        show:
+          - { type: title, text: 目盛りのあいだの数 }
+          - type: svg
+            at: [60, 230]
+            w: 1160
+            h: 170
+            anim: fade
+            markup: |
+              <path d="M20 80 H1140"/><path d="M1124 70 L1140 80 L1124 90"/>
+              <path d="M70 68 V92"/><path d="M220 68 V92"/><path d="M370 68 V92"/><path d="M520 68 V92"/>
+              <path d="M670 68 V92"/><path d="M820 68 V92"/><path d="M970 68 V92"/>
+              <g fill="currentColor" stroke="none" font-size="30" text-anchor="middle">
+                <text x="70" y="135">-3</text><text x="220" y="135">-2</text><text x="370" y="135">-1</text><text x="520" y="135">0</text>
+                <text x="670" y="135">1</text><text x="820" y="135">2</text><text x="970" y="135">3</text>
+              </g>
+      - say: たとえば、5/2は2.5です。このように、整数を整数で割った「分数」の形で表せる数を「有理数」といいます。31/13なども有理数です。
+        show:
+          - type: svg
+            at: [60, 230]
+            w: 1160
+            h: 170
+            color: blue
+            markup: |
+              <path d="M895 -10 V80"/><circle cx="895" cy="80" r="9" fill="currentColor"/>
+          - { type: formula, at: [905, 120], tex: '\tfrac{5}{2}=2.5', color: blue }
+          - { type: text, at: [80, 450], color: blue, text: "有理数 … 分数で表せる数（例：5/2、31/13）" }
+      - say: 一方、円周率πや、√2のような数は、どうしても単純な分数では表せません。これを「無理数」といいます。
+        show:
+          - type: svg
+            at: [60, 230]
+            w: 1160
+            h: 170
+            color: pink
+            markup: |
+              <path d="M732 20 V80"/><circle cx="732" cy="80" r="9" fill="currentColor"/>
+              <path d="M991 20 V80"/><circle cx="991" cy="80" r="9" fill="currentColor"/>
+          - { type: formula, at: [690, 175], tex: '\sqrt{2}', color: pink }
+          - { type: formula, at: [1065, 175], tex: '\pi', color: pink }
+          - { type: text, at: [80, 520], color: pink, text: "無理数 … 分数で表せない数（例：π、√2）" }
+      - say: πは3.14159…、√2は1.41421…と、小数がくり返しなしで、どこまでも続きます。
+        added: true
+        show:
+          - { type: text, at: [80, 600], size: s, color: gray, text: "π = 3.14159…　√2 = 1.41421…（小数が終わらず、くり返しもない）" }
+
+  # ---------- 身近な例：有理数と無理数 ----------
+  - board: whiteboard
+    steps:
+      - say: 有理数と無理数を、身近な例で見てみましょう。まずは有理数。ピザ5枚を2人で分けると、1人分は2枚と半分、つまり5/2枚で、2.5枚です。
+        added: true
+        show:
+          - { type: title, text: 身近な例で見てみよう }
+          - type: svg
+            at: [70, 150]
+            w: 560
+            h: 200
+            color: yellow
+            markup: |
+              <circle cx="60" cy="70" r="50"/><circle cx="180" cy="70" r="50"/>
+              <path d="M250 20 A50 50 0 0 1 250 120 Z"/>
+              <path d="M10 140 H310"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="20" y="185">1人分 ＝ 5/2 ＝ 2.5枚</text></g>
+          - { type: tag, at: [400, 190], color: blue, text: 有理数 }
+      - say: 次に無理数。どんな大きさの円でも、まわりの長さは、直径のおよそ3.14倍になります。この3.14…という数がπです。
+        added: true
+        show:
+          - type: svg
+            at: [70, 390]
+            w: 560
+            h: 300
+            color: pink
+            markup: |
+              <circle cx="120" cy="130" r="100"/>
+              <path d="M20 130 H220" stroke-dasharray="8 8"/>
+              <g fill="currentColor" stroke="none" font-size="26">
+                <text x="70" y="120">直径 1</text>
+                <text x="250" y="110">まわりの長さ</text>
+                <text x="250" y="150">＝ 3.14159…（π）</text>
+              </g>
+      - say: もう一つ。1辺が1メートルの正方形の、ななめの長さ、対角線は√2メートル、およそ1.41メートルです。
+        added: true
+        show:
+          - type: svg
+            at: [700, 150]
+            w: 520
+            h: 330
+            color: pink
+            markup: |
+              <rect x="40" y="40" width="220" height="220"/>
+              <path d="M40 260 L260 40"/>
+              <g fill="currentColor" stroke="none" font-size="26">
+                <text x="120" y="300">1m</text><text x="270" y="160">1m</text>
+                <text x="290" y="60">対角線 ＝ √2 m</text><text x="290" y="100">≒ 1.41421… m</text>
+              </g>
+      - say: こんなに身近な長さなのに、どう工夫しても、分数ではぴったり表せない。それが無理数です。
+        show:
+          - { type: box, at: [700, 520], w: 500, color: pink, title: 無理数, text: "身近にあるのに、分数ではぴったり表せない数" }
+
+  # ---------- 数の家族（包含関係の図） ----------
+  - board: whiteboard
+    steps:
+      - say: ここまでの数を、仲間分けの図にまとめましょう。数直線の上に乗る数を、まとめて「実数」と呼びます。私たちがふだん使う数は、ほとんど実数です。
+        show:
+          - { type: title, text: 数の家族 }
+          - type: svg
+            at: [0, 0]
+            w: 1280
+            h: 720
+            color: yellow
+            markup: |
+              <rect x="60" y="125" width="1160" height="575" rx="18"/>
+              <text x="85" y="168" font-size="32" fill="currentColor" stroke="none">実数</text>
+      - say: 実数は、分数で表せる「有理数」と、分数で表せない「無理数」の2つに分かれます。
+        show:
+          - type: svg
+            at: [0, 0]
+            w: 1280
+            h: 720
+            color: blue
+            markup: |
+              <rect x="90" y="190" width="720" height="490" rx="14"/>
+              <text x="112" y="232" font-size="30" fill="currentColor" stroke="none">有理数（分数で表せる）</text>
+          - type: svg
+            at: [0, 0]
+            w: 1280
+            h: 720
+            color: pink
+            delay: 1.5
+            markup: |
+              <rect x="840" y="190" width="350" height="490" rx="14"/>
+              <text x="862" y="232" font-size="30" fill="currentColor" stroke="none">無理数</text>
+              <text x="862" y="268" font-size="22" fill="currentColor" stroke="none">（分数で表せない）</text>
+              <text x="900" y="370" font-size="40" fill="currentColor" stroke="none">π</text>
+              <text x="900" y="450" font-size="40" fill="currentColor" stroke="none">√2</text>
+              <text x="900" y="530" font-size="40" fill="currentColor" stroke="none">√5</text>
+          - { type: text, at: [590, 330], color: blue, text: "5/2" }
+          - { type: text, at: [590, 400], color: blue, text: "31/13" }
+          - { type: text, at: [590, 470], color: blue, text: "0.5" }
+      - say: 整数も、たとえば3は3/1と書けるので、実は有理数の仲間です。
+        added: true
+        show:
+          - type: svg
+            at: [0, 0]
+            w: 1280
+            h: 720
+            color: green
+            markup: |
+              <rect x="120" y="280" width="440" height="380" rx="12"/>
+              <text x="142" y="322" font-size="30" fill="currentColor" stroke="none">整数</text>
+              <text x="142" y="635" font-size="28" fill="currentColor" stroke="none">0　-1　-51 …</text>
+      - say: そして整数の中に、自然数が入っています。
+        show:
+          - type: svg
+            at: [0, 0]
+            w: 1280
+            h: 720
+            color: white
+            markup: |
+              <rect x="150" y="350" width="380" height="220" rx="10"/>
+              <text x="172" y="392" font-size="30" fill="currentColor" stroke="none">自然数</text>
+              <text x="172" y="470" font-size="28" fill="currentColor" stroke="none">1　2　3　109 …</text>
+      - say: 大きな箱の中に、小さな箱が入っている。このイメージで覚えておきましょう。
+        pause: 2
+
+  # ---------- 実数ではない数 ----------
+  - board: whiteboard
+    steps:
+      - say: 実は、実数ではない数もあります。その代表が「複素数」です。
+        show:
+          - { type: title, text: 実数ではない数 }
+      - say: ふつう、同じ数を2回かけると、答えは0以上になります。3×3も、-3×-3も、答えは9です。
+        added: true
+        show:
+          - { type: formula, tex: '3 \times 3 = 9 \qquad (-3) \times (-3) = 9' }
+      - say: ところが、2回かけると-1になる数「i」を考えます。これを「虚数」といいます。
+        show:
+          - { type: formula, color: yellow, tex: 'i \times i = -1' }
+          - { type: tag, color: yellow, text: 虚数 i }
+      - say: このiを使って、1+iや-5iのように表す数が「複素数」です。
+        show:
+          - { type: formula, tex: '1+i \qquad -5i' }
+      - say: 日常生活で直接使うことはほとんどありませんが、工学や物理学などの分野で使われています。たとえば、家のコンセントに来ている電気、交流の計算にも使われます。今は、名前だけ知っておけば十分です。
+        show:
+          - { type: box, color: gray, w: 900, title: ポイント, text: "数直線に乗らない数もある。日常ではほぼ使わない（工学・物理学で使う）" }
+
+  # ---------- 練習問題 ----------
+  - board: slide
+    steps:
+      - say: ここからは練習問題です。問題を読んだら、動画を一時停止して考えてみましょう。
+        show:
+          - { type: title, text: 練習問題 }
+          - { type: text, size: l, text: "問題 → 少し考える時間 → 解き方" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題1。2の4乗かける2の6乗はいくつでしょう。
+        show:
+          - { type: title, text: "問題 ①" }
+          - { type: formula, size: l, tex: '2^4 \times 2^6 = \ ?' }
+        pause: 3
+      - say: 同じ数の累乗どうしのかけ算は、「何乗」の部分をそのまま足せます。4+6で、2の10乗です。
+        show:
+          - { type: formula, color: yellow, tex: '2^4 \times 2^6 = 2^{4+6} = 2^{10}' }
+      - say: 2の10乗は1024。前の単元の、折り紙を10回折ると1024層になる話と同じ数ですね。
+        show:
+          - { type: formula, size: l, color: green, tex: '2^{10} = 1024' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題2。-51、109、√5、112/35を、自然数、有理数、無理数、その他に分けてみましょう。
+        show:
+          - { type: title, text: "問題 ②" }
+          - { type: text, size: l, text: "-51　　109　　√5　　112/35" }
+          - { type: text, size: s, color: gray, text: "自然数・有理数・無理数・その他 に分類" }
+        pause: 3
+      - say: 109は、0より大きい整数なので自然数。112/35は分数で表されているので有理数です。
+        show:
+          - { type: text, text: "109 → **自然数**　　112/35 → **有理数**" }
+      - say: √5は、2乗すると5になる数で、2.236…と小数が終わりません。分数で表せないので無理数です。
+        added: true
+        show:
+          - { type: text, text: "√5 = 2.236… → **無理数**" }
+      - say: -51は負の数なので、自然数ではありません。この問題の答えでは「その他」にしています。ただ、さっきの図のとおり、整数は分数でも書けるので、広く見れば有理数の仲間でもあります。
+        show:
+          - { type: text, text: "-51 → 自然数ではない（答えは「その他」）" }
+          - { type: text, size: s, color: gray, text: "※ 整数は -51/1 と書けるので、有理数の仲間でもある" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題3。√4を整数で表すといくつでしょう。
+        show:
+          - { type: title, text: "問題 ③" }
+          - { type: formula, size: l, tex: '\sqrt{4} = \ ?' }
+        pause: 3
+      - say: √4は「2乗したら4になる数」という意味です。そういう数は、2と-2の2つがあります。
+        show:
+          - { type: formula, tex: '2 \times 2 = 4 \qquad (-2) \times (-2) = 4' }
+      - say: ただし、ふつう√は正の数のほうを表します。-2を表したいときは「-√4」と書きます。だから答えは2です。
+        show:
+          - { type: formula, size: l, color: green, tex: '\sqrt{4} = 2 \qquad -\sqrt{4} = -2' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題4。3対5は、四角対125。四角に入る数はいくつでしょう。
+        show:
+          - { type: title, text: "問題 ④" }
+          - { type: formula, size: l, tex: '3 : 5 = \square : 125' }
+        pause: 3
+      - say: 比の式では、内側どうしのかけ算と、外側どうしのかけ算が等しくなります。
+        show:
+          - { type: formula, color: yellow, tex: '5 \times \square = 3 \times 125' }
+      - say: 3×125は375。375を5で割って、答えは75です。
+        show:
+          - { type: formula, size: l, color: green, tex: '\square = 375 \div 5 = 75' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題5。ある本の3/5まで読んだとき、残りが160ページあった。本は全部で何ページでしょう。
+        show:
+          - { type: title, text: "問題 ⑤" }
+          - { type: text, text: "本の 3/5 まで読んだ → 残り 160ページ。全部で何ページ？" }
+        pause: 3
+      - say: 全体を1とすると、読み終えたのが3/5なので、残りは2/5。この2/5が160ページにあたります。
+        show:
+          - type: svg
+            w: 1000
+            h: 120
+            markup: |
+              <rect x="10" y="20" width="600" height="60" fill="currentColor" fill-opacity="0.18"/>
+              <rect x="610" y="20" width="400" height="60"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="230" y="60">読んだ 3/5</text><text x="700" y="60">残り 2/5 = 160</text></g>
+      - say: 2/5で160ページなら、1/5は80ページ。全体の5/5は、80×5で400ページです。
+        show:
+          - { type: formula, size: l, color: green, tex: '160 \div 2 = 80 \quad\rightarrow\quad 80 \times 5 = 400' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題6。分速40メートルは、時速何キロメートルでしょう。
+        show:
+          - { type: title, text: "問題 ⑥" }
+          - { type: text, text: "分速 40m は 時速 何km？" }
+        pause: 3
+      - say: 1分で40メートル進むなら、60分、つまり1時間では、40×60で2400メートル進みます。
+        show:
+          - { type: formula, tex: '40 \times 60 = 2400\ \text{m}' }
+      - say: 1000メートルが1キロメートルなので、2400メートルは2.4キロメートル。答えは時速2.4キロメートルです。
+        show:
+          - { type: formula, size: l, color: green, tex: '2400\ \text{m} = 2.4\ \text{km} \;\rightarrow\; \text{時速}\ 2.4\ \text{km}' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題7。目的地まで2.4キロメートル。分速60メートルで歩くと、何分かかるでしょう。
+        show:
+          - { type: title, text: "問題 ⑦" }
+          - { type: text, text: "2.4km を 分速60m で歩くと 何分？" }
+        pause: 3
+      - say: 単位をそろえます。2.4キロメートルは2400メートル。これを1分に進む60メートルで割ると、40分です。
+        show:
+          - { type: formula, size: l, color: green, tex: '2400 \div 60 = 40\ \text{分}' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題8。原価1200円の商品に、2割の利益を見込んで定価をつけました。定価はいくらでしょう。
+        show:
+          - { type: title, text: "問題 ⑧" }
+          - { type: text, text: "原価1200円 ＋ 2割の利益 → 定価は？" }
+        pause: 3
+      - say: 2割の利益を足すということは、原価の1.2倍にするということです。1200×1.2で、1440円です。
+        show:
+          - { type: formula, size: l, color: green, tex: '1200 \times 1.2 = 1440\ \text{円}' }
+      - say: ちなみに、12×12=144のような数を覚えておくと、こういう計算がすぐにできます。11×11=121、15×15=225なども有名です。
+        show:
+          - { type: text, size: s, color: gray, text: "12×12=144　11×11=121　15×15=225" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題9。定価1000円の商品を2割引にし、さらにそこから3割引にしました。値段はいくらでしょう。
+        show:
+          - { type: title, text: "問題 ⑨" }
+          - { type: text, text: "1000円 → 2割引 → さらに3割引 → いくら？" }
+        pause: 3
+      - say: 2割引は0.8倍なので、800円。そこからさらに3割引は0.7倍なので、800×0.7で560円です。
+        show:
+          - { type: formula, tex: '1000 \times 0.8 = 800' }
+          - { type: formula, size: l, color: green, tex: '800 \times 0.7 = 560\ \text{円}' }
+      - say: 2割と3割を足して5割引、つまり500円にはならないことに注意しましょう。
+        show:
+          - { type: box, color: pink, w: 760, title: 注意, text: "2割引＋3割引 ≠ 5割引" }
+
+  # ---------- まとめ ----------
+  - board: whiteboard
+    steps:
+      - say: まとめです。
+        show:
+          - { type: title, text: まとめ }
+      - say: 数直線に乗る数が実数。その中に、分数で表せる有理数と、表せない無理数があります。
+        show:
+          - { type: text, text: "**実数** ＝ 有理数（分数で表せる）＋ 無理数（π、√2 など）" }
+      - say: 有理数の中に整数があり、整数の中に、0より大きい自然数があります。
+        show:
+          - { type: text, text: "有理数 ⊃ **整数** ⊃ **自然数**（1, 2, 3 …）" }
+      - say: そして、2乗すると-1になる虚数iを使う、複素数という数もあります。テキストでも、もう一度確認してみましょう。
+        show:
+          - { type: text, text: "実数ではない数：**複素数**（虚数 i を使う）" }

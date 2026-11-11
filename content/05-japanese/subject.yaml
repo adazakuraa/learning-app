@@ -1,0 +1,7 @@
+id: japanese
+title: 国語
+group: 文系学問
+order: 5
+generation:
+  style: auto
+  instructions: []

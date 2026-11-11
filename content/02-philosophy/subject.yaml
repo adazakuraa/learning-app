@@ -1,0 +1,7 @@
+id: philosophy
+title: 哲学
+group: 文系学問
+order: 2
+generation:
+  style: auto
+  instructions: []
