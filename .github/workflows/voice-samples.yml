@@ -23,13 +23,17 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - name: Install
+      - name: Install npm packages
+        run: npm ci
+      - name: Install Playwright + Chromium
         run: |
-          npm ci
           npm i --no-save playwright
           npx playwright install --with-deps chromium
-          sudo apt-get update && sudo apt-get install -y ffmpeg
-          pip install pyyaml
+      - name: Install ffmpeg and PyYAML
+        run: |
+          which ffmpeg || (sudo apt-get update -q && sudo apt-get install -y -q ffmpeg)
+          python3 -c "import yaml" 2>/dev/null || sudo apt-get install -y -q python3-yaml
+          ffmpeg -version | head -1; python3 -c "import yaml; print('pyyaml', yaml.__version__)"
       - name: Wait for VOICEVOX
         run: |
           for i in $(seq 1 60); do curl -sf http://localhost:50021/version && exit 0; sleep 5; done
