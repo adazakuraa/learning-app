@@ -4,3 +4,8 @@ title: 練習問題
 summary: 有意差と統計的検定 の問題
 order: 999
 practice: true
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 225
+  narration: VOICEVOX:青山龍星

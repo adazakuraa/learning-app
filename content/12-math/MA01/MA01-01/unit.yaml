@@ -5,4 +5,5 @@ order: 1
 video:
   src: video.mp4
   captions: captions.vtt
-  duration: 180
+  duration: 173
+  narration: VOICEVOX:青山龍星

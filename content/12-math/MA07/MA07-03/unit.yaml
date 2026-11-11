@@ -2,3 +2,8 @@ id: math-ma07-03
 code: MA07-03
 title: 数学的帰納法
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 62
+  narration: VOICEVOX:青山龍星

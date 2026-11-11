@@ -2,3 +2,8 @@ id: math-ma07-04
 code: MA07-04
 title: フィボナッチ数列
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 52
+  narration: VOICEVOX:青山龍星
