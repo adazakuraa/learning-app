@@ -1,0 +1,44 @@
+title: 正規分布
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「正規分布」です。
+        show:
+          - { type: title, text: 正規分布 }
+      - say: 世の中の多くのデータは、真ん中あたりがいちばん多く、外側に行くほど少なくなる、という形に分布します。これを正規分布といいます。
+        show:
+          - type: svg
+            at: [140, 150]
+            w: 1000
+            h: 420
+            color: gray
+            markup: |
+              <path d="M20 380 H980"/>
+          - type: svg
+            at: [140, 150]
+            w: 1000
+            h: 420
+            color: blue
+            markup: |
+              <path d="M40 378 C260 376 330 40 500 40 C670 40 740 376 960 378"/>
+              <path d="M500 40 V380" stroke-dasharray="8 10" stroke="#9aa3ad"/>
+              <g fill="currentColor" stroke="none" font-size="26"><text x="520" y="80">真ん中（平均）がいちばん多い</text><text x="760" y="340">外側は少ない</text></g>
+      - say: 左右対称の、つりがねのような形をしています。
+        show:
+          - { type: text, at: [140, 600], color: yellow, text: "左右対称の「つりがね型」" }
+
+  - board: whiteboard
+    steps:
+      - say: 人の身長、テストの点数、工場で作る製品のわずかな誤差、気温の分布。これらはすべて、ほぼ正規分布に従います。
+        show:
+          - { type: title, text: 身のまわりの正規分布 }
+          - type: list
+            items: ["人の身長", "テストの点数", "製品の誤差", "気温の分布"]
+      - say: たとえば身長なら、平均くらいの人がいちばん多く、とても高い人や、とても低い人は少ないですね。
+        added: true
+        show:
+          - { type: text, color: gray, size: s, text: "平均くらいの人が多く、極端に高い・低い人は少ない" }
+      - say: 次の章の「統計」でも、この形がたびたび出てきます。
+        added: true
+        show:
+          - { type: text, color: yellow, text: "→ 次の章「統計の基礎」へつながる" }

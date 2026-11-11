@@ -1,0 +1,39 @@
+title: 期待値
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「期待値」です。
+        show:
+          - { type: title, text: 期待値 }
+      - say: 期待値とは、起こりうる結果の平均値のことです。
+        show:
+          - { type: text, size: l, text: "**期待値** ＝ 起こりうる結果の平均" }
+      - say: 求め方は、「結果×その確率」を、すべてのパターンについて足し合わせます。
+        show:
+          - { type: box, color: yellow, w: 900, text: "（結果 × 確率）をすべて足す" }
+
+  - board: whiteboard
+    steps:
+      - say: サイコロを1回振ったときの、出る目の期待値を求めてみましょう。どの目も、確率は1/6です。
+        show:
+          - { type: title, text: サイコロの期待値 }
+          - { type: formula, tex: '1 \times \tfrac{1}{6} + 2 \times \tfrac{1}{6} + 3 \times \tfrac{1}{6} + 4 \times \tfrac{1}{6} + 5 \times \tfrac{1}{6} + 6 \times \tfrac{1}{6}' }
+      - say: 計算すると、21/6で、3.5です。
+        show:
+          - { type: formula, size: l, color: green, tex: '= \tfrac{21}{6} = 3.5' }
+      - say: 3.5という目が出るわけではありません。でも、何回も振り続けると、出た目の平均は、3.5に近づいていきます。
+        show:
+          - { type: text, text: "何回も振ると、出た目の平均は **3.5** に近づく" }
+
+  - board: whiteboard
+    steps:
+      - say: 期待値は、ギャンブルの分析にも役立ちます。宝くじやカジノが、平均すると損だということも、期待値で示せます。
+        show:
+          - { type: title, text: 期待値でかしこく判断 }
+          - { type: text, text: "宝くじ・カジノ → 期待値で見ると **損**" }
+      - say: 保険も、期待値で見れば損です。でも、保険の価値は、期待値ではなく、最悪の事態を避けられる安心感にあります。
+        show:
+          - { type: text, text: "保険 → 期待値では損。でも価値は「最悪の事態を避ける安心」" }
+      - say: 期待値だけで判断していい場面と、そうでない場面を区別すること。それが、かしこい意思決定につながります。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "期待値で判断する場面 ／ そうでない場面 を区別しよう" }

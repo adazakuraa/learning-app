@@ -1,0 +1,53 @@
+title: 確率の基本
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「確率の基本」です。
+        show:
+          - { type: title, text: 確率の基本 }
+      - say: 確率とは、ある出来事の起こりやすさを、0から1の数で表したものです。0は0％、1は100％、0.5は50％です。
+        show:
+          - type: svg
+            w: 1100
+            h: 160
+            markup: |
+              <path d="M40 80 H1060"/><path d="M40 66 V94"/><path d="M550 66 V94"/><path d="M1060 66 V94"/>
+              <g fill="currentColor" stroke="none" font-size="28" text-anchor="middle">
+                <text x="40" y="140">0（0％）</text><text x="550" y="140">0.5（50％）</text><text x="1060" y="140">1（100％）</text>
+                <text x="40" y="40">起こらない</text><text x="1060" y="40">必ず起こる</text>
+              </g>
+
+  - board: whiteboard
+    steps:
+      - say: 確率の基本の計算は、「求める場合の数÷全体の場合の数」です。
+        show:
+          - { type: title, text: 確率の計算 }
+          - { type: formula, size: l, color: yellow, tex: '\text{確率} = \frac{\text{求める場合の数}}{\text{全体の場合の数}}' }
+      - say: サイコロを1回振って、3が出る確率は？出る目は全部で6通り。そのうち3は1通り。だから、1/6です。
+        show:
+          - type: svg
+            w: 900
+            h: 120
+            markup: |
+              <rect x="10" y="10" width="100" height="100" rx="14"/><rect x="150" y="10" width="100" height="100" rx="14"/>
+              <rect x="290" y="10" width="100" height="100" rx="14" stroke="#f3d77a" stroke-width="5"/>
+              <rect x="430" y="10" width="100" height="100" rx="14"/><rect x="570" y="10" width="100" height="100" rx="14"/><rect x="710" y="10" width="100" height="100" rx="14"/>
+              <g fill="currentColor" stroke="none" font-size="44" text-anchor="middle"><text x="60" y="76">1</text><text x="200" y="76">2</text><text x="480" y="76">4</text><text x="620" y="76">5</text><text x="760" y="76">6</text></g>
+              <text x="340" y="76" font-size="44" fill="#f3d77a" stroke="none" text-anchor="middle">3</text>
+          - { type: formula, size: l, color: green, tex: '\frac{1}{6}' }
+
+  - board: whiteboard
+    steps:
+      - say: 確率は、ときに直感を裏切ります。
+        show:
+          - { type: title, text: 直感の落とし穴 }
+      - say: コインを10回投げて、全部表でした。次は、表が出やすいでしょうか。それとも、そろそろ裏が出やすいでしょうか。
+        show:
+          - { type: text, text: "表・表・表・表・表・表・表・表・表・表 → 次は？" }
+        pause: 2
+      - say: 答えは、どちらでもありません。コインに記憶はないので、次に表が出る確率は、いつでも1/2です。
+        show:
+          - { type: text, color: green, text: "次も **1/2**（コインに記憶はない）" }
+      - say: 「ここまで表が続いたから、次は裏が出るはず」という考え方を、「ギャンブラーの誤謬」といいます。誤謬とは、まちがった考え方のことです。
+        show:
+          - { type: box, color: pink, w: 1000, title: ギャンブラーの誤謬（ごびゅう）, text: "「続いたから、次は逆が出るはず」という思いこみ" }

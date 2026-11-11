@@ -1,0 +1,76 @@
+title: 場合の数・樹形図
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「場合の数と確率」の章です。
+        show:
+          - { type: title, text: 第5章　場合の数と確率 }
+      - say: この章では、何通りあるかを正しく数える方法と、ものごとの起こりやすさ、つまり確率の考え方を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["場合の数・樹形図", "順列と組み合わせ", "確率の基本", "条件付き確率", "期待値", "正規分布", "練習問題"]
+      - say: くじ、保険、病気の検査結果。確率がわかると、直感にだまされずに、かしこく判断できるようになります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "「どれくらい起こりやすいか」を数で考え、かしこく判断する" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は、「場合の数と樹形図」です。
+        show:
+          - { type: title, text: 場合の数・樹形図 }
+      - say: 場合の数とは、ある出来事が起こりうるパターンの数のことです。
+        show:
+          - { type: text, size: l, text: "**場合の数** ＝ 起こりうるパターンの数" }
+      - say: もれなく、重なりなく数えるのは、意外とむずかしいもの。そこで役立つのが、「樹形図」です。
+        show:
+          - { type: text, text: "もれなく・重なりなく数える → **樹形図**" }
+
+  - board: whiteboard
+    steps:
+      - say: コインを2回投げる場合を考えます。1回目は、表か裏。
+        show:
+          - { type: title, text: コインを2回投げる }
+          - type: svg
+            at: [80, 160]
+            w: 760
+            h: 500
+            markup: |
+              <path d="M60 250 L260 120"/><path d="M60 250 L260 380"/>
+              <g fill="currentColor" stroke="none" font-size="32"><text x="0" y="262">●</text><text x="270" y="132">表</text><text x="270" y="392">裏</text></g>
+      - say: それぞれから、2回目の表と裏に、枝分かれします。
+        show:
+          - type: svg
+            at: [80, 160]
+            w: 760
+            h: 500
+            color: blue
+            markup: |
+              <path d="M320 120 L520 50"/><path d="M320 120 L520 190"/><path d="M320 380 L520 310"/><path d="M320 380 L520 450"/>
+              <g fill="currentColor" stroke="none" font-size="32"><text x="530" y="62">表</text><text x="530" y="202">裏</text><text x="530" y="322">表</text><text x="530" y="462">裏</text></g>
+      - say: 枝の先を読むと、表表、表裏、裏表、裏裏の4通り。木の枝のように広がるので、樹形図といいます。
+        show:
+          - type: list
+            at: [880, 200]
+            color: yellow
+            items: ["表・表", "表・裏", "裏・表", "裏・裏"]
+          - { type: text, at: [880, 480], color: green, text: "→ 4通り" }
+
+  - board: whiteboard
+    steps:
+      - say: 場合の数の基本ルールに、「積の法則」があります。
+        show:
+          - { type: title, text: 積の法則 }
+      - say: AとBが独立して起きるとき、全体の場合の数は、A×Bになります。独立とは、一方の結果が、もう一方にまったく関係しないことです。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "A と B が **独立** → 全体の場合の数 ＝ A × B" }
+          - { type: text, size: s, color: gray, text: "独立 ＝ 一方の結果が、もう一方に関係しない" }
+      - say: コインを2回投げるなら、2×2で4通り。さっきの樹形図と同じですね。サイコロを2回振るなら、6×6で36通りです。
+        show:
+          - { type: formula, tex: '\text{コイン2回：}\; 2 \times 2 = 4' }
+          - { type: formula, tex: '\text{サイコロ2回：}\; 6 \times 6 = 36' }
+      - say: 洋服で考えると、シャツが3枚、ズボンが2本なら、組み合わせは3×2で6通りです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "例：シャツ3枚 × ズボン2本 ＝ 6通りのコーデ" }

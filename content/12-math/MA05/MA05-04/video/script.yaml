@@ -1,0 +1,49 @@
+title: 条件付き確率
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「条件付き確率」です。
+        show:
+          - { type: title, text: 条件付き確率 }
+      - say: 条件付き確率とは、ある条件がわかっているときの確率です。条件が加わると、確率は変わります。
+        show:
+          - { type: text, size: l, text: "条件が加わると、**確率は変わる**" }
+      - say: サイコロを振って6が出る確率は、1/6。でも、「偶数が出た」とわかっているなら、候補は2、4、6の3つだけ。6である確率は、1/3に変わります。
+        show:
+          - { type: formula, tex: '\text{6が出る確率} = \tfrac{1}{6}' }
+          - { type: formula, color: yellow, tex: '\text{偶数とわかっているとき、6である確率} = \tfrac{1}{3}' }
+
+  - board: whiteboard
+    steps:
+      - say: 「Aが起きたという条件のもとで、Bが起きる確率」を、P（B｜A）と書きます。
+        show:
+          - { type: title, text: 条件付き確率の式 }
+          - { type: formula, size: l, color: yellow, tex: 'P(B|A) = \frac{P(A \cap B)}{P(A)}' }
+      - say: 「AとBが両方起きる確率」を、「Aが起きる確率」で割ったものです。
+        show:
+          - { type: text, text: "（A と B が両方起きる確率）÷（A が起きる確率）" }
+      - say: Aが起きた世界だけに、範囲をしぼって考える、というイメージです。
+        added: true
+        show:
+          - type: svg
+            w: 800
+            h: 260
+            markup: |
+              <rect x="10" y="10" width="780" height="240" rx="8" stroke="#9aa3ad"/>
+              <circle cx="320" cy="130" r="100" stroke="#8fc4ff" stroke-width="5"/><circle cx="450" cy="130" r="90" stroke="#f4a3b8"/>
+              <text x="230" y="70" font-size="26" fill="#8fc4ff" stroke="none">A（条件）</text><text x="480" y="70" font-size="26" fill="#f4a3b8" stroke="none">B</text>
+              <text x="560" y="230" font-size="22" fill="#9aa3ad" stroke="none">A の中だけで考える</text>
+
+  - board: whiteboard
+    steps:
+      - say: トランプで考えましょう。52枚から1枚引いたら、ハートだとわかりました。それが絵札、つまりJ、Q、Kである確率は？
+        show:
+          - { type: title, text: トランプの例 }
+          - { type: text, text: "引いたカードはハート。絵札（J・Q・K）である確率は？" }
+        pause: 2
+      - say: ハートで絵札は3枚なので、P（AかつB）は3/52。ハートは13枚なので、P（A）は13/52。割ると、3/13です。
+        show:
+          - { type: formula, tex: 'P(B|A) = \frac{3/52}{13/52} = \frac{3}{13}' }
+      - say: 「ハートの13枚の中に、絵札が3枚」と考えると、直感的にも納得できますね。
+        show:
+          - { type: text, color: green, text: "ハート13枚の中に絵札3枚 → 3/13" }

@@ -1,0 +1,162 @@
+title: 練習問題 場合の数と確率
+scenes:
+  - board: slide
+    steps:
+      - say: 「場合の数と確率」の章の練習問題です。全部で12問あります。問題を読んだら一時停止して、考えてみましょう。
+        show:
+          - { type: title, text: 練習問題　場合の数と確率 }
+          - { type: text, size: l, text: "積の法則・順列・組み合わせ・確率・期待値" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題1。5種類のケーキと3種類のジュースから、1種類ずつ選びます。選び方は何通りでしょう。
+        show:
+          - { type: title, text: "問題 ①②" }
+          - { type: text, text: "① ケーキ5種類 × ジュース3種類 から1つずつ" }
+        pause: 3
+      - say: 積の法則で、5×3で15通りです。
+        show:
+          - { type: formula, color: green, tex: '5 \times 3 = 15\ \text{通り}' }
+      - say: 問題2。A、B、Cの3人がかけっこをします。1位、2位、3位の順位のつき方は何通りでしょう。
+        show:
+          - { type: text, text: "② 3人の順位のつき方" }
+        pause: 3
+      - say: 1位は3通り、2位は残りの2通り、3位は残った1人で1通り。3×2×1、つまり3の階乗で、6通りです。
+        show:
+          - { type: formula, color: green, tex: '3! = 3 \times 2 \times 1 = 6\ \text{通り}' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題3。5人の中から、リーダーと副リーダーを決めます。選び方は何通りでしょう。
+        show:
+          - { type: title, text: "問題 ③④" }
+          - { type: text, text: "③ 5人からリーダーと副リーダー" }
+        pause: 3
+      - say: リーダーと副リーダーは役割がちがうので、区別が必要です。順列で、5P2＝5×4で20通りです。
+        show:
+          - { type: formula, color: green, tex: '{}_5\mathrm{P}_2 = 5 \times 4 = 20\ \text{通り}' }
+      - say: 問題4。5人の中から、委員会の当番を2人決めます。選び方は何通りでしょう。
+        show:
+          - { type: text, text: "④ 5人から当番を2人" }
+        pause: 3
+      - say: 当番の2人に区別はないので、組み合わせです。5C2＝5×4÷2で10通りです。
+        show:
+          - { type: formula, color: green, tex: '{}_5\mathrm{C}_2 = \frac{5 \times 4}{2} = 10\ \text{通り}' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題5。サイコロを2回投げます。出た目の合計が5になる場合の数と、その確率は？
+        show:
+          - { type: title, text: "問題 ⑤⑥" }
+          - { type: text, text: "⑤ サイコロ2回、合計が5になる場合の数と確率" }
+        pause: 3
+      - say: 合計5は、1と4、2と3、3と2、4と1の4通り。全体は6×6で36通りなので、確率は4/36で1/9です。
+        show:
+          - { type: text, text: "(1,4)　(2,3)　(3,2)　(4,1)　→ 4通り" }
+          - { type: formula, color: green, tex: '\frac{4}{36} = \frac{1}{9}' }
+      - say: 問題6。2人でじゃんけんをします。あいこになる確率は？
+        show:
+          - { type: text, text: "⑥ 2人でじゃんけん、あいこの確率" }
+        pause: 3
+      - say: 手の組み合わせは3×3で9通り。あいこは、グー同士、チョキ同士、パー同士の3通り。3/9で1/3です。
+        show:
+          - { type: formula, color: green, tex: '\frac{3}{9} = \frac{1}{3}' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題7。コインを2回投げて、2回とも表が出る確率は？また、2回とも表だったとき、3回目も表が出る確率は？
+        show:
+          - { type: title, text: "問題 ⑦" }
+        pause: 3
+      - say: 2回とも表は、1/2×1/2で1/4。3回目は、それまでの結果とは関係ない、つまり独立なので、1/2のままです。
+        show:
+          - { type: formula, color: green, tex: '\tfrac{1}{2} \times \tfrac{1}{2} = \tfrac{1}{4}' }
+          - { type: text, color: green, text: "3回目も表：1/2（ギャンブラーの誤謬に注意）" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題8。10本のくじのうち、当たりは2本。1本引いて、戻さずにもう1本引きます。2回連続で当たる確率、2回とも外れる確率、少なくとも1回当たる確率は？
+        show:
+          - { type: title, text: "問題 ⑧　くじ引き" }
+          - { type: text, size: s, text: "10本中 当たり2本。引いたくじは戻さない" }
+        pause: 4
+      - say: 1本目が当たる確率は2/10。すると残り9本のうち当たりは1本なので、2本目も当たる確率は1/9。かけて、2/90、つまり1/45です。
+        show:
+          - { type: formula, color: green, tex: '(1)\; \tfrac{2}{10} \times \tfrac{1}{9} = \tfrac{1}{45}' }
+      - say: 2回とも外れるのは、8/10、つづいて残り9本のうち外れ7本で7/9。かけて56/90、つまり28/45です。
+        show:
+          - { type: formula, color: green, tex: '(2)\; \tfrac{8}{10} \times \tfrac{7}{9} = \tfrac{28}{45}' }
+      - say: 「少なくとも1回当たる」は、「1回も当たらない」の反対です。この反対の出来事を、余事象といいます。1から28/45を引いて、17/45です。
+        show:
+          - { type: formula, color: green, tex: '(3)\; 1 - \tfrac{28}{45} = \tfrac{17}{45}' }
+          - { type: text, size: s, color: gray, text: "「少なくとも1回」は、余事象（1回もない）を1から引くと楽" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題9。3つの箱のうち、1つに宝物が入っています。あなたが1つを選ぶと、答えを知っている友人が、残り2つのうち、はずれの箱を1つ開けてみせました。最初の箱のままだと当たる確率は？もう1つの箱に変えると？
+        show:
+          - { type: title, text: "問題 ⑨　3つの箱" }
+          - type: svg
+            w: 900
+            h: 180
+            markup: |
+              <rect x="40" y="30" width="200" height="130" rx="10" stroke="#f3d77a" stroke-width="5"/>
+              <rect x="350" y="30" width="200" height="130" rx="10"/>
+              <rect x="660" y="30" width="200" height="130" rx="10" stroke="#9aa3ad" stroke-dasharray="10 8"/>
+              <g fill="currentColor" stroke="none" font-size="26" text-anchor="middle"><text x="140" y="105">あなたの箱</text><text x="450" y="105">残りの箱</text></g>
+              <text x="760" y="105" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">はずれ</text>
+        pause: 4
+      - say: 最初に選んだ箱が当たりの確率は1/3。つまり、選ばなかった2つの箱のどちらかが当たりの確率は、2/3です。
+        show:
+          - { type: text, text: "あなたの箱：1/3　　選ばなかった2つ：合わせて 2/3" }
+      - say: 友人は答えを知っていて、必ず、はずれを開けます。だから、選ばなかった側の2/3が、残った1つの箱に集まります。箱を変えると、当たる確率は2/3。変えたほうが得です。
+        show:
+          - { type: text, color: green, text: "そのまま：1/3　　変える：**2/3**" }
+          - { type: text, size: s, color: gray, text: "「モンティ・ホール問題」として有名。直感とずれる代表例" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題10。ある病気の検査は、病気の人を99％の確率で陽性と判定します。病気でない人を、まちがって陽性と判定する確率は1％。病気の人は全体の1％です。陽性と出たとき、本当に病気である確率は？
+        show:
+          - { type: title, text: "問題 ⑩　検査の陽性" }
+          - { type: text, size: s, text: "病気の人の99％が陽性　病気でない人の1％が陽性　病気の人は全体の1％" }
+        pause: 4
+      - say: 1万人で考えると、わかりやすくなります。病気の人は1％で100人。そのうち99％、99人が陽性です。
+        added: true
+        show:
+          - { type: text, text: "1万人 → 病気100人 → そのうち陽性 **99人**" }
+      - say: 病気でない人は9900人。そのうち1％の99人が、まちがって陽性になります。
+        added: true
+        show:
+          - { type: text, text: "病気でない9900人 → まちがって陽性 **99人**" }
+      - say: 陽性の人は合わせて198人。そのうち本当に病気なのは99人。だから、確率は1/2、50％です。
+        show:
+          - { type: formula, size: l, color: green, tex: '\frac{99}{99 + 99} = \frac{1}{2}' }
+      - say: 99％正確な検査でも、病気の人がとても少ないと、陽性の半分はまちがい。これも、条件付き確率の、直感とずれる例です。
+        show:
+          - { type: text, size: s, color: gray, text: "陽性でも、本当に病気なのは50％。もとの割合（1％）が大事" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題11。サイコロを1回振って、出た目の数×100円もらえるゲーム。もらえる金額の期待値は？
+        show:
+          - { type: title, text: "問題 ⑪⑫　期待値" }
+          - { type: text, text: "⑪ 出た目 × 100円 もらえる" }
+        pause: 3
+      - say: 100円から600円まで、それぞれ確率1/6。足すと2100円で、それを6で割って、350円です。
+        show:
+          - { type: formula, color: green, tex: '\tfrac{100+200+300+400+500+600}{6} = \tfrac{2100}{6} = 350\ \text{円}' }
+      - say: 問題12。1枚300円の宝くじ。当たる確率は5％で、当たると3000円。得か損か？
+        show:
+          - { type: text, text: "⑫ 1枚300円。5％で3000円" }
+        pause: 3
+      - say: 期待値は、3000×0.05で150円。300円払って、平均150円しか戻らないので、損です。
+        show:
+          - { type: formula, color: green, tex: '3000 \times 0.05 = 150\ \text{円} < 300\ \text{円} \;\rightarrow\; \text{損}' }
+
+  - board: whiteboard
+    steps:
+      - say: おつかれさまでした。確率の問題は、直感とずれることがよくあります。図や具体的な人数に置きかえて考えるのがコツです。
+        show:
+          - { type: title, text: おつかれさまでした }
+          - { type: text, text: "コツ：図や「1万人」のような具体的な数に置きかえる" }
