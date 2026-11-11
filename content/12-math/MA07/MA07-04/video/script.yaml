@@ -1,0 +1,47 @@
+title: フィボナッチ数列
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「フィボナッチ数列」です。
+        show:
+          - { type: title, text: フィボナッチ数列 }
+      - say: 1、1、2、3、5、8、13、21、34、55。前の2つの数を足すと、次の数になる。このルールで作られるのが、フィボナッチ数列です。
+        show:
+          - { type: text, size: l, text: "1, 1, 2, 3, 5, 8, 13, 21, 34, 55 …" }
+          - { type: text, color: yellow, text: "1 ＋ 1 ＝ 2、1 ＋ 2 ＝ 3、2 ＋ 3 ＝ 5 …（前の2つを足す）" }
+
+  - board: whiteboard
+    steps:
+      - say: この数列がおもしろいのは、自然界のあちこちに現れることです。
+        show:
+          - { type: title, text: 自然の中のフィボナッチ数 }
+      - say: ひまわりの種のらせんの数、松ぼっくりのうろこの並び、花びらの枚数。これらは、フィボナッチ数になっていることが多いのです。
+        show:
+          - type: svg
+            w: 1100
+            h: 320
+            color: yellow
+            markup: |
+              <circle cx="180" cy="160" r="130"/>
+              <path d="M180 160 Q260 100 300 160 Q300 260 180 280"/><path d="M180 160 Q100 220 60 160 Q60 60 180 40"/>
+              <path d="M180 160 Q240 220 180 290"/><path d="M180 160 Q120 100 180 30"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="380" y="120">ひまわりの種のらせん</text><text x="380" y="180">松ぼっくりのうろこ</text><text x="380" y="240">花びらの枚数</text></g>
+              <text x="380" y="300" font-size="24" fill="#9aa3ad" stroke="none">→ 数えると 3, 5, 8, 13, 21, 34 … が多い</text>
+
+  - board: whiteboard
+    steps:
+      - say: さらに、となり合う数の比、たとえば55÷34を計算すると、およそ1.618。数が大きくなるほど、この比は、「黄金比」と呼ばれる数に近づいていきます。
+        show:
+          - { type: title, text: 黄金比 }
+          - { type: formula, tex: '\frac{55}{34} \approx 1.618' }
+          - { type: text, color: yellow, text: "となり合う数の比 → **黄金比**（約1.618）に近づく" }
+      - say: 黄金比は、美しく見える比率として、建築やデザインの話でよく紹介されます。
+        added: true
+        show:
+          - type: svg
+            w: 900
+            h: 280
+            color: blue
+            markup: |
+              <rect x="20" y="20" width="400" height="247"/><path d="M267 20 V267"/>
+              <g fill="currentColor" stroke="none" font-size="26"><text x="460" y="120">横：縦 ≒ 1.618：1</text><text x="460" y="170">（黄金長方形）</text></g>

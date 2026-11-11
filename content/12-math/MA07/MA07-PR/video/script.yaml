@@ -1,0 +1,66 @@
+title: 練習問題 数列
+scenes:
+  - board: slide
+    steps:
+      - say: 「数列」の章の練習問題です。問題を読んだら一時停止して、考えてみましょう。
+        show:
+          - { type: title, text: 練習問題　数列 }
+          - { type: formula, tex: 'S_n = \tfrac{1}{2}n(a+l) \qquad S_n = \tfrac{a(r^n-1)}{r-1}' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題1。1から10までの整数の和を、等差数列の公式で求めましょう。
+        show:
+          - { type: title, text: "問題 ①②" }
+          - { type: text, text: "① 1 から 10 までの和" }
+        pause: 3
+      - say: 初項1、末項10、項数10なので、10×（1＋10）÷2で、55です。
+        show:
+          - { type: formula, color: green, tex: '\tfrac{1}{2} \times 10 \times (1 + 10) = 55' }
+      - say: 問題2。50から100までの整数の和は？
+        show:
+          - { type: text, text: "② 50 から 100 までの和" }
+        pause: 3
+      - say: 注意したいのは、項数です。50から100までは、100－50＋1で、51個あります。初項50、末項100、項数51なので、51×150÷2で、3825です。
+        show:
+          - { type: text, size: s, color: pink, text: "項数は 100 − 50 ＋ 1 ＝ 51（＋1を忘れずに）" }
+          - { type: formula, color: green, tex: '\tfrac{1}{2} \times 51 \times (50 + 100) = 3825' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題3。3、12、48、192…という数列の、5番目までの和は？
+        show:
+          - { type: title, text: "問題 ③" }
+          - { type: text, size: l, text: "3, 12, 48, 192, …（5項目まで）" }
+        pause: 3
+      - say: 初項3、公比4、項数5の等比数列です。公式に入れると、3×（4の5乗－1）÷（4－1）。4の5乗は、2の10乗と同じ1024なので、3×1023÷3で、1023です。
+        show:
+          - { type: formula, color: green, tex: '\frac{3(4^5 - 1)}{4 - 1} = \frac{3 \times 1023}{3} = 1023' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題4。等比数列の和の公式が成り立つことを、数学的帰納法で証明しましょう。
+        show:
+          - { type: title, text: "問題 ④　帰納法で証明" }
+          - { type: formula, size: l, color: yellow, tex: 'S_n = \frac{a(1 - r^n)}{1 - r}' }
+        pause: 3
+      - say: ①、n＝1のとき。左辺は初項だけなので、a。右辺にn＝1を入れると、a（1－r）÷（1－r）で、a。等しいので成り立ちます。
+        show:
+          - { type: formula, tex: '\text{①}\; S_1 = a,\quad \frac{a(1-r)}{1-r} = a' }
+      - say: ②、n＝kのとき成り立つと仮定します。k＋1番目までの和は、k番目までの和に、k＋1番目の項、aのrのk乗を足したものです。
+        show:
+          - { type: formula, tex: '\text{②}\; S_{k+1} = S_k + ar^k = \frac{a(1 - r^k)}{1 - r} + ar^k' }
+      - say: 通分して分子を展開すると、マイナスarのk乗と、プラスarのk乗が打ち消し合います。
+        show:
+          - { type: formula, tex: '= \frac{a - ar^k + ar^k - ar^{k+1}}{1 - r}' }
+      - say: 残るのは、a（1－rのk＋1乗）÷（1－r）。これは、公式のnにk＋1を入れた形です。n＝k＋1でも成り立つことが示せました。
+        show:
+          - { type: formula, color: green, tex: '= \frac{a(1 - r^{k+1})}{1 - r}' }
+          - { type: text, size: s, color: gray, text: "①と②より、すべての自然数 n で成り立つ（ドミノ倒し）" }
+
+  - board: whiteboard
+    steps:
+      - say: おつかれさまでした。証明の流れは、テキストでもう一度、ゆっくり確認しておきましょう。
+        show:
+          - { type: title, text: おつかれさまでした }
+          - { type: text, text: "証明の流れは、テキストでもゆっくり確認しよう" }
