@@ -1,0 +1,49 @@
+title: 酸と塩基（アルカリ）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「酸と塩基」です。酸とは、水にとけて、水素イオンH⁺を出すもののことです。
+        show:
+          - { type: title, text: 酸 }
+          - { type: text, size: l, text: "**酸** ＝ 水にとけて **H⁺**（水素イオン）を出すもの" }
+      - say: たとえば塩酸、HClは、水にとけるとH⁺とCl⁻に分かれるので、酸です。
+        show:
+          - { type: formula, tex: '\text{HCl} \rightarrow \text{H}^+ + \text{Cl}^-' }
+      - say: 身近な酸には、胃酸の主成分の塩酸、お酢の酢酸、強い酸の硫酸、レモンや梅の酸っぱさのクエン酸、炭酸水の炭酸などがあります。酸っぱいものの多くは、酸です。
+        show:
+          - type: list
+            size: s
+            items: ["塩酸（HCl）：胃酸の主成分", "酢酸：お酢", "硫酸（H₂SO₄）：強い酸", "クエン酸：レモン・梅", "炭酸：二酸化炭素がとけた水"]
+
+  - board: whiteboard
+    steps:
+      - say: 塩基、アルカリは、H⁺を受けとる、または水酸化物イオンOH⁻を出すもののことです。
+        show:
+          - { type: title, text: 塩基（アルカリ） }
+          - { type: text, size: l, text: "**塩基** ＝ **OH⁻** を出す（H⁺を受けとる）もの" }
+      - say: 水酸化ナトリウムNaOHは、水にとけるとNa⁺とOH⁻に分かれるので、塩基です。
+        show:
+          - { type: formula, tex: '\text{NaOH} \rightarrow \text{Na}^+ + \text{OH}^-' }
+      - say: 身近な塩基には、パイプの洗浄剤の水酸化ナトリウム、洗剤のアンモニア、料理や掃除に使う重曹などがあります。ぬるぬるして、汚れを落とすものが多いですね。
+        show:
+          - type: list
+            size: s
+            items: ["水酸化ナトリウム：パイプ洗浄剤", "アンモニア：洗剤", "重曹（炭酸水素ナトリウム）：料理・掃除"]
+
+  - board: whiteboard
+    steps:
+      - say: 酸性、塩基性の強さは、pH、ペーハーで表します。0から14までの数で、7が中性。7より小さいと酸性、大きいとアルカリ性です。
+        show:
+          - { type: title, text: pH（ペーハー） }
+          - type: svg
+            w: 1100
+            h: 260
+            markup: |
+              <defs><linearGradient id="ph" x1="0" x2="1"><stop offset="0" stop-color="#f4a3b8"/><stop offset="0.5" stop-color="#9be0b0"/><stop offset="1" stop-color="#8fc4ff"/></linearGradient></defs>
+              <rect x="40" y="90" width="1020" height="40" fill="url(#ph)" stroke="none" rx="8"/>
+              <g stroke="none" font-size="24" text-anchor="middle" fill="currentColor"><text x="40" y="160">0</text><text x="550" y="160">7</text><text x="1060" y="160">14</text></g>
+              <g stroke="none" font-size="26" text-anchor="middle"><text x="200" y="70" fill="#f4a3b8">酸性</text><text x="550" y="70" fill="#9be0b0">中性</text><text x="900" y="70" fill="#8fc4ff">アルカリ性</text></g>
+              <g stroke="none" font-size="22" text-anchor="middle" fill="#9aa3ad"><text x="186" y="210">胃酸 2</text><text x="260" y="245">レモン 2〜3</text><text x="405" y="210">コーヒー 5</text><text x="550" y="210">純水 7</text><text x="623" y="245">重曹水 8</text><text x="732" y="210">石けん水 9〜10</text></g>
+      - say: 胃酸はpH2ほどの強い酸性、レモン汁は2から3、コーヒーは5ほど。純粋な水は7で中性。重曹水は8ほど、石けん水は9から10ほどの、アルカリ性です。
+        show:
+          - { type: text, size: s, color: gray, text: "胃酸 2、レモン 2〜3、コーヒー 5、純水 7、重曹水 8、石けん水 9〜10" }

@@ -1,0 +1,48 @@
+title: 化学結合の種類
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「化学変化のしくみ」の章です。
+        show:
+          - { type: title, text: 第3章　化学変化のしくみ }
+      - say: この章では、原子どうしの結びつき方と、身近な化学変化の代表、酸化と還元、そして、酸と塩基、中和を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["化学結合の種類", "酸化と還元", "酸と塩基（アルカリ）", "中和反応"]
+      - say: さび、カイロ、レモンの酸っぱさ、胃薬。どれも、この章の知識で説明できます。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "身近な化学変化を、結びつき方と反応の種類で説明できるようになる" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「化学結合の種類」です。原子どうしが結びつく方法には、主に3種類あります。前の章で学んだ、共有結合とイオン結合、そして、金属結合です。
+        show:
+          - { type: title, text: 化学結合の種類 }
+          - { type: text, color: green, text: "**共有結合** … 非金属どうし（例：H₂O、Cl₂）" }
+          - { type: text, color: blue, text: "**イオン結合** … 非金属と金属（例：NaCl）" }
+          - { type: text, color: yellow, text: "**金属結合** … 金属どうし（例：鉄、銅）" }
+      - say: ちなみに、周期表を見ると、非金属はとても少ないことがわかります。118個の元素のうち、非金属は、およそ20個ほどしかありません。ほとんどの元素は、金属なのです。
+        show:
+          - { type: text, size: s, color: gray, text: "118の元素のうち、非金属は約20個。ほとんどは金属" }
+
+  - board: whiteboard
+    steps:
+      - say: 金属結合では、金属の原子のあいだを、自由に動き回れる電子があります。これを、自由電子といいます。
+        show:
+          - { type: title, text: 金属結合と自由電子 }
+          - type: svg
+            w: 1000
+            h: 260
+            markup: |
+              <g stroke="#f3d77a"><circle cx="150" cy="80" r="40"/><circle cx="300" cy="80" r="40"/><circle cx="450" cy="80" r="40"/><circle cx="600" cy="80" r="40"/><circle cx="750" cy="80" r="40"/>
+              <circle cx="150" cy="190" r="40"/><circle cx="300" cy="190" r="40"/><circle cx="450" cy="190" r="40"/><circle cx="600" cy="190" r="40"/><circle cx="750" cy="190" r="40"/></g>
+              <g fill="#8fc4ff" stroke="none"><circle cx="225" cy="135" r="9"/><circle cx="380" cy="40" r="9"/><circle cx="520" cy="140" r="9"/><circle cx="680" cy="230" r="9"/><circle cx="830" cy="130" r="9"/><circle cx="90" cy="135" r="9"/><circle cx="370" cy="235" r="9"/></g>
+              <text x="860" y="60" font-size="24" fill="#8fc4ff" stroke="none">自由電子</text>
+      - say: この自由電子のおかげで、金属は、電気や熱をよく通し、ピカピカと光り、引っぱると伸び、たたくと広がる、という性質を持っています。
+        show:
+          - { type: text, text: "電気・熱をよく通す、光沢、延性（のびる）、展性（広がる）" }
+      - say: 銅が電線に使われるのは、自由電子が、電気をとても効率よく運ぶからです。アルミホイルが薄く広がるのも、金属結合のおかげです。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "電線に銅（電気をよく運ぶ）　アルミホイル（薄く広がる）" }

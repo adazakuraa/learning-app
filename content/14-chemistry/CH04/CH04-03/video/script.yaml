@@ -1,0 +1,54 @@
+title: 反応速度と触媒
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「反応速度と触媒」です。木が燃えるのは、日常的に起きやすい反応です。でも、ふつうの温度で、勝手に燃え出すことはありませんね。
+        show:
+          - { type: title, text: 反応速度と触媒 }
+          - { type: text, text: "木が燃えるのは起きやすい反応。でも勝手には燃えない。なぜ？" }
+      - say: 反応を起こすには、「活性化エネルギー」という、最初の山を越える必要があるからです。マッチで火をつけるのは、この山を越えるためのエネルギーを、与えているのです。
+        show:
+          - type: svg
+            at: [80, 230]
+            w: 1100
+            h: 380
+            markup: |
+              <path d="M40 340 H1060" stroke="#9aa3ad"/><path d="M40 340 V20" stroke="#9aa3ad"/>
+              <path d="M60 180 H260 C380 180 420 40 520 40 C620 40 660 280 780 280 H1040" stroke="#f3d77a"/>
+              <path d="M520 50 V170" stroke="#f4a3b8"/><path d="M510 156 L520 172 L530 156" stroke="#f4a3b8"/>
+              <g stroke="none" font-size="24"><text x="80" y="165" fill="currentColor">反応前</text><text x="860" y="265" fill="currentColor">反応後</text><text x="540" y="120" fill="#f4a3b8">活性化エネルギー（山）</text><text x="50" y="40" fill="#9aa3ad">エネルギー</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 反応を速くする方法には、次のようなものがあります。
+        show:
+          - { type: title, text: 反応を速くするには }
+      - say: ひとつは、温度を上げること。粒子の動きが激しくなり、ぶつかる回数が増えます。
+        show:
+          - { type: text, text: "**温度を上げる** → 粒子の動きが激しくなり、ぶつかる回数が増える" }
+      - say: もうひとつは、表面積を増やすこと。固体なら、細かくすると、反応する面が増えます。砂糖のかたまりより、粉砂糖のほうがとけやすいのは、このためです。
+        show:
+          - { type: text, text: "**表面積を増やす** → 細かくすると反応する面が増える（粉砂糖はとけやすい）" }
+
+  - board: whiteboard
+    steps:
+      - say: そして、反応を速めるものとして、「触媒」があります。触媒は、活性化エネルギーの山を、低くするはたらきがあります。
+        show:
+          - { type: title, text: 触媒 }
+          - type: svg
+            at: [80, 160]
+            w: 1100
+            h: 360
+            markup: |
+              <path d="M40 320 H1060" stroke="#9aa3ad"/>
+              <path d="M60 180 H260 C380 180 420 40 520 40 C620 40 660 280 780 280 H1040" stroke="#f3d77a"/>
+              <path d="M260 180 C380 180 420 130 520 130 C620 130 660 280 780 280" stroke="#9be0b0" stroke-dasharray="10 8"/>
+              <g stroke="none" font-size="24"><text x="540" y="40" fill="#f3d77a">触媒なし</text><text x="540" y="160" fill="#9be0b0">触媒あり（山が低い）</text></g>
+      - say: 触媒そのものは、反応の前後で変わりません。山を低くする「近道」をつくる、案内役のような存在です。
+        added: true
+        show:
+          - { type: box, at: [80, 560], w: 1100, color: green, text: "触媒 ＝ 山を低くする案内役（自分は反応の前後で変わらない）" }
+      - say: 私たちの体の中で働く酵素も、触媒の一種です。食べ物の消化や、エネルギーづくりを、体温くらいの温度でも速く進められるのは、酵素のおかげです。
+        added: true
+        show:
+          - { type: text, at: [80, 650], size: s, color: gray, text: "体の中の酵素も触媒（体温でも反応を速く進める）" }

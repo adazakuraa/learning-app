@@ -1,0 +1,45 @@
+title: エントロピーとは何か
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「エントロピーとは何か」です。なぜ反応は、自然に進むのか。その問いへの、もうひとつの答えが、エントロピーです。
+        show:
+          - { type: title, text: エントロピーとは何か }
+      - say: エントロピーとは、「乱雑さ」「ちらかり具合」の度合いを表す考え方です。
+        show:
+          - { type: text, size: l, text: "**エントロピー** ＝ 乱雑さ・ちらかり具合" }
+      - say: 自然界では、エントロピーが増える方向、つまり、ちらかる方向に、ものごとが進むことが知られています。これを、エントロピー増大の法則、熱力学第二法則といいます。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "自然は、**ちらかる方向** に進む（エントロピー増大の法則）" }
+
+  - board: whiteboard
+    steps:
+      - say: インクを水に1滴たらすと、自然に広がっていきます。でも、広がったインクが、自然に1か所に集まることはありませんね。
+        show:
+          - { type: title, text: インクの広がり }
+          - type: svg
+            w: 1100
+            h: 280
+            markup: |
+              <rect x="40" y="40" width="280" height="220" stroke="#8fc4ff"/><rect x="420" y="40" width="280" height="220" stroke="#8fc4ff"/><rect x="800" y="40" width="280" height="220" stroke="#8fc4ff"/>
+              <circle cx="180" cy="100" r="16" fill="#b39ddb" stroke="none"/>
+              <circle cx="560" cy="140" r="60" fill="#b39ddb" fill-opacity="0.45" stroke="none"/>
+              <rect x="802" y="42" width="276" height="216" fill="#b39ddb" fill-opacity="0.2" stroke="none"/>
+              <path d="M330 150 H410 M710 150 H790" stroke="#f3d77a"/>
+              <text x="560" y="30" font-size="22" fill="#f3d77a" stroke="none" text-anchor="middle">自然に広がる（逆は起きない）</text>
+      - say: 部屋も、放っておくと、ちらかっていきますが、勝手に片づくことはありません。これも同じイメージです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "部屋は放っておくとちらかる（勝手に片づくことはない）" }
+
+  - board: whiteboard
+    steps:
+      - say: 化学反応でも、同じことが言えます。固体がとけて液体になる、気体が広がる、分子がばらばらに分かれる。これらは、乱雑さが増える方向なので、自然に起きやすいのです。
+        show:
+          - { type: title, text: 化学反応とエントロピー }
+          - type: list
+            items: ["固体がとけて液体になる", "気体が広がる", "分子がばらばらに分かれる"]
+          - { type: text, color: yellow, text: "→ 乱雑さが増える方向なので、自然に起きやすい" }
+      - say: 前の単元の「エネルギーが低いほうへ」と、この「ちらかるほうへ」。この2つの力のバランスで、反応が自然に進むかどうかが決まります。前の単元の冷却パックは、熱を吸うのに自然に進みます。それは、とけてちらかる力が勝っているからなのです。
+        show:
+          - { type: box, color: blue, w: 1000, text: "反応の向き ＝「エネルギーが低いほうへ」＋「ちらかるほうへ」のバランス" }
