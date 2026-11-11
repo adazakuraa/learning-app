@@ -2,3 +2,7 @@ id: math-ma01-01
 code: MA01-01
 title: 指数と累乗
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 180

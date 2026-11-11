@@ -1,0 +1,10 @@
+id: math-ma01-practice
+code: MA01-PR
+title: 練習問題
+summary: 数の種類 の問題
+order: 999
+practice: true
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 274

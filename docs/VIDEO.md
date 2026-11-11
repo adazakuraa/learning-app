@@ -5,6 +5,7 @@
 
 ## 流れ
 
+0. 章の1本目の動画は、冒頭で章の概要と学ぶ目的に軽く触れる。練習問題は単元の動画に入れず、章末の「練習問題」単元（`<章>-PR`）の動画で扱う。
 1. 指示を確認する: `python3 scripts/video_prompt.py <単元ID>`
    - `pipeline/guidelines.md`（共通ルール）＋科目・章・単元の `generation` 指示＋元教材 `source.md`
 2. 台本を書く: `content/.../<単元>/video/script.yaml`（AI エージェントが作成）
