@@ -2,7 +2,16 @@ name: Narrate and render videos
 
 # Runs VOICEVOX (free speech synthesis) on GitHub's runner, generates narration for the
 # video scripts, re-renders the affected videos and commits them back to the branch.
+# On the working branches it runs automatically when video scripts are pushed: changed scripts
+# (and steps whose narration text changed) are re-rendered. Locally rendered MP4s are therefore
+# not needed any more; push the script and let this workflow produce the video.
 on:
+  push:
+    branches: ['ccr-*']
+    paths:
+      - 'content/**/video/script.yaml'
+      - '.github/workflows/videos.yml'
+      - 'pipeline/**'
   workflow_dispatch:
     inputs:
       filter:
@@ -32,6 +41,8 @@ jobs:
           - 50021:50021
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -49,22 +60,34 @@ jobs:
           echo "VOICEVOX engine did not start"; exit 1
       - name: Narrate
         run: python3 pipeline/narrate.py --filter "${{ inputs.filter }}" --changed-list narrated.txt
-      - name: Render
+      - name: Decide what to render
         run: |
-          if [ "${{ inputs.rerender_all }}" = "true" ]; then
-            find content -path '*/video/script.yaml' | while read f; do
-              python3 -c "import yaml,sys; print(yaml.safe_load(open(sys.argv[1]))['id'])" "$(dirname "$(dirname "$f")")/unit.yaml"
-            done | grep "^${{ inputs.filter }}" > todo.txt || true
+          ids_for() { while read f; do [ -f "$f" ] && python3 -c "import yaml,sys; print(yaml.safe_load(open(sys.argv[1]))['id'])" "$(dirname "$(dirname "$f")")/unit.yaml"; done; }
+          all_scripts() { find content -path '*/video/script.yaml' | sort; }
+          : > todo.txt
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ "${{ inputs.rerender_all }}" = "true" ]; then all_scripts | ids_for | grep "^${{ inputs.filter }}" > todo.txt || true; fi
           else
-            cp narrated.txt todo.txt
+            BEFORE="${{ github.event.before }}"
+            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then
+              all_scripts | ids_for > todo.txt
+            elif git diff --name-only "$BEFORE" "${{ github.sha }}" | grep -qE '^(pipeline/|\.github/workflows/videos.yml)'; then
+              all_scripts | ids_for > todo.txt      # renderer changed: re-render everything
+            else
+              git diff --name-only "$BEFORE" "${{ github.sha }}" | grep 'video/script.yaml$' | ids_for > todo.txt
+            fi
           fi
-          echo "rendering $(wc -l < todo.txt) videos"
-          cat todo.txt | xargs -r -P 2 -I{} node pipeline/render/render.mjs {}
+          cat narrated.txt >> todo.txt
+          sort -u todo.txt -o todo.txt
+          echo "rendering $(wc -l < todo.txt) videos:"; cat todo.txt
+      - name: Render
+        run: cat todo.txt | xargs -r -P 2 -I{} node pipeline/render/render.mjs {}
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add content
           if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
-          git commit -m "Narration and videos (${{ inputs.filter || 'all' }}) via VOICEVOX:青山龍星"
+          git commit -m "Render videos with narration (VOICEVOX:青山龍星) [skip ci]"
+          git pull --rebase
           git push
