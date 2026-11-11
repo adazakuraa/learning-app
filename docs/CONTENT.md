@@ -62,3 +62,18 @@ python3 scripts/import_notion.py /tmp/export content
 - 画像は WebP に変換・縮小（最大幅1600px）して単元フォルダに置く。
 - 再実行しても `lesson.md`・動画・字幕・`unit.yaml` の追加項目（video, generation, summary）は消えない。
 - 単元 ID（例: `math-ma01-02`）は進捗データのキー。Notion 側で単元コードを変えると別単元扱いになるので注意。
+
+## 動画生成の指示
+
+- 全科目共通のルール: `pipeline/guidelines.md`
+- 科目ごとの指示: `content/<科目>/subject.yaml` の `generation`
+- 章・単元ごとの指示: `chapter.yaml` / `unit.yaml` の `generation`（同じ形式）
+
+```yaml
+generation:
+  style: auto          # auto | slide | animation | whiteboard | mixed
+  instructions:
+    - 具体的な日常生活の例を入れてほしい
+```
+
+AI に渡す指示一式は `python3 scripts/video_prompt.py <単元ID>` で確認できる。

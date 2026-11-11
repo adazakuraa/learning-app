@@ -2,3 +2,6 @@ id: religion
 title: 宗教
 group: 文系学問
 order: 3
+generation:
+  style: auto
+  instructions: []

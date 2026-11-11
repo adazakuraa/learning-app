@@ -2,3 +2,6 @@ id: world-history
 title: 世界史
 group: 文系学問
 order: 7
+generation:
+  style: auto
+  instructions: []

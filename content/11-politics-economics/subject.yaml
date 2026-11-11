@@ -2,3 +2,6 @@ id: politics-economics
 title: 政治・経済
 group: 文系学問
 order: 11
+generation:
+  style: auto
+  instructions: []

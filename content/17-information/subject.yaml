@@ -2,3 +2,6 @@ id: information
 title: 情報
 group: 理系学問
 order: 17
+generation:
+  style: auto
+  instructions: []
