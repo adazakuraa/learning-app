@@ -1,4 +1,4 @@
-# Change this file and push to render the same unit with several voices (samples/voices/*.mp4).
+# Change this file and push to render the same unit with several voices (samples/voices/*.mp4). (rev 2)
 unit: math-ma02-01
 voices:
   - { speaker: 四国めたん, style: ノーマル }
