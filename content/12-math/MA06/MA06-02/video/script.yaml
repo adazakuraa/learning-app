@@ -1,0 +1,90 @@
+title: 分散と標準偏差
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「分散と標準偏差」です。
+        show:
+          - { type: title, text: 分散と標準偏差 }
+      - say: 平均が同じでも、データの「ばらつき」がちがうことがあります。
+        show:
+          - { type: text, size: l, text: "平均が同じでも、**ばらつき** がちがう" }
+      - say: 「全員の年収が1000万円」と、「ほとんどが300万円で、1人だけ1億円」。平均だけ見ると同じでも、まったくちがう状況ですね。
+        show:
+          - type: svg
+            w: 1100
+            h: 220
+            markup: |
+              <path d="M20 180 H520" stroke="#9aa3ad"/><path d="M600 180 H1100" stroke="#9aa3ad"/>
+              <g fill="#8fc4ff" stroke="none">
+                <circle cx="80" cy="120" r="12"/><circle cx="130" cy="120" r="12"/><circle cx="180" cy="120" r="12"/><circle cx="230" cy="120" r="12"/><circle cx="280" cy="120" r="12"/>
+                <circle cx="330" cy="120" r="12"/><circle cx="380" cy="120" r="12"/><circle cx="430" cy="120" r="12"/><circle cx="480" cy="120" r="12"/>
+              </g>
+              <g fill="#f4a3b8" stroke="none">
+                <circle cx="640" cy="160" r="12"/><circle cx="670" cy="160" r="12"/><circle cx="700" cy="160" r="12"/><circle cx="730" cy="160" r="12"/><circle cx="760" cy="160" r="12"/>
+                <circle cx="790" cy="160" r="12"/><circle cx="820" cy="160" r="12"/><circle cx="850" cy="160" r="12"/><circle cx="880" cy="160" r="12"/><circle cx="1070" cy="30" r="12"/>
+              </g>
+              <text x="140" y="215" font-size="24" fill="#8fc4ff" stroke="none">全員そろっている</text>
+              <text x="700" y="215" font-size="24" fill="#f4a3b8" stroke="none">ばらばら（外れ値あり）</text>
+      - say: このばらつきを数で表したものが、「標準偏差」と「分散」です。標準偏差は、ギリシャ文字のσ、シグマで表します。
+        show:
+          - { type: text, text: "ばらつきの数値化 → **標準偏差**（σ）と **分散**" }
+
+  - board: whiteboard
+    steps:
+      - say: これらは、「それぞれのデータが、平均からどれだけ離れているか」の平均です。
+        show:
+          - { type: title, text: 標準偏差の意味 }
+          - { type: box, color: yellow, w: 1000, text: "それぞれのデータが **平均からどれだけ離れているか** の平均" }
+      - say: 標準偏差が小さいほど、データは平均の近くに集まっています。大きいほど、散らばっています。
+        show:
+          - { type: text, color: blue, text: "小さい → 平均の近くに集まっている" }
+          - { type: text, color: pink, text: "大きい → 散らばっている" }
+      - say: 分散と標準偏差は、計算方法は少しちがいますが、表している意味はほぼ同じです。ここでは、より大事な標準偏差を見ていきます。
+        show:
+          - { type: text, size: s, color: gray, text: "分散と標準偏差は、計算方法はちがうが意味はほぼ同じ" }
+
+  - board: whiteboard
+    steps:
+      - say: 前の章で学んだ正規分布では、平均から標準偏差1つ分の範囲に、全体のおよそ68％が入ります。
+        show:
+          - { type: title, text: 正規分布と標準偏差 }
+          - type: svg
+            at: [140, 150]
+            w: 1000
+            h: 400
+            markup: |
+              <path d="M20 360 H980" stroke="#9aa3ad"/>
+              <path d="M40 358 C260 356 330 30 500 30 C670 30 740 356 960 358" stroke="#8fc4ff"/>
+          - type: svg
+            at: [140, 150]
+            w: 1000
+            h: 400
+            color: yellow
+            markup: |
+              <path d="M380 360 V120"/><path d="M620 360 V120"/>
+              <path d="M385 300 H615"/>
+              <g fill="currentColor" stroke="none" font-size="26" text-anchor="middle"><text x="500" y="290">68％</text><text x="380" y="395">－1σ</text><text x="620" y="395">＋1σ</text></g>
+      - say: 標準偏差2つ分の範囲には、およそ95％が入ります。
+        show:
+          - type: svg
+            at: [140, 150]
+            w: 1000
+            h: 400
+            color: pink
+            markup: |
+              <path d="M260 360 V280"/><path d="M740 360 V280"/>
+              <path d="M265 335 H735"/>
+              <g fill="currentColor" stroke="none" font-size="26" text-anchor="middle"><text x="500" y="330">95％</text><text x="260" y="395">－2σ</text><text x="740" y="395">＋2σ</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 投資の世界では、標準偏差が「リスク」の目安として使われます。
+        show:
+          - { type: title, text: 投資のリスク }
+      - say: 平均のリターンが同じ5％でも、標準偏差が1％の投資と、20％の投資では、性格がまったくちがいます。
+        show:
+          - { type: text, text: "平均リターン5％ 同士でも…" }
+      - say: 前者は、だいたい5％前後で安定します。後者は、25％の利益が出ることもあれば、マイナス15％の損失が出ることもあります。
+        show:
+          - { type: box, color: blue, w: 1000, title: "標準偏差1％", text: "だいたい5％前後で安定（4〜6％くらい）" }
+          - { type: box, color: pink, w: 1000, title: "標準偏差20％", text: "＋25％の年も、－15％の年もある" }

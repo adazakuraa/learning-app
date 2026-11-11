@@ -1,0 +1,48 @@
+title: 有意差と統計的検定
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「有意差と統計的検定」です。
+        show:
+          - { type: title, text: 有意差と統計的検定 }
+      - say: 新しい薬を飲んだグループの回復率が75％、飲まなかったグループが65％だったとします。
+        show:
+          - type: svg
+            w: 900
+            h: 280
+            markup: |
+              <path d="M40 250 H860" stroke="#9aa3ad"/>
+              <rect x="150" y="62" width="200" height="188" fill="#8fc4ff" stroke="#8fc4ff"/>
+              <rect x="520" y="88" width="200" height="162" fill="#9aa3ad" stroke="#9aa3ad"/>
+              <g font-size="28" stroke="none" text-anchor="middle"><text x="250" y="45" fill="#8fc4ff">飲んだ 75％</text><text x="620" y="72" fill="#9aa3ad">飲まない 65％</text></g>
+      - say: この10％の差は、本当に薬の効果でしょうか。それとも、たまたまの誤差でしょうか。この問いに答えるのが、「統計的検定」です。
+        show:
+          - { type: text, text: "差は **薬の効果**？ それとも **偶然**？ → 統計的検定" }
+
+  - board: whiteboard
+    steps:
+      - say: 考え方はこうです。「もし薬に効果がなかったとしたら、偶然だけで、これだけの差が出る確率はどれくらいか」を計算します。
+        show:
+          - { type: title, text: 検定の考え方 }
+          - { type: box, color: blue, w: 1100, text: "もし薬に効果がなかったら、偶然でこの差が出る確率は？" }
+      - say: その確率がとても小さければ、「偶然とは考えにくい。薬に効果がある」と判断します。
+        show:
+          - { type: text, text: "確率がとても小さい → 偶然とは考えにくい → **効果あり** と判断" }
+      - say: コインで考えてみましょう。10回投げて10回とも表なら、「このコインは何かおかしい」と思いますね。偶然では、めったに起きないからです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "例：コイン10回すべて表 → 偶然ではめったに起きない → 何かおかしい" }
+
+  - board: whiteboard
+    steps:
+      - say: 「偶然だけで、この結果の差が出る確率」を、p値といいます。
+        show:
+          - { type: title, text: p値と有意差 }
+          - { type: text, size: l, text: "**p値** ＝ 偶然だけでこの差が出る確率" }
+      - say: 一般に、p値が0.05、つまり5％より小さいとき、「統計的に有意である」、あるいは「有意差がある」と判断します。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "p値 ＜ 0.05（5％） → **統計的に有意**（有意差がある）" }
+      - say: 「有意差あり」と聞いたら、「偶然とは考えにくい差がある」という意味だと、覚えておきましょう。
+        added: true
+        show:
+          - { type: text, color: gray, size: s, text: "有意差あり ＝ 偶然とは考えにくい差がある" }
