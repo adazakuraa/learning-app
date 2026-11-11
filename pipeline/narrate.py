@@ -80,6 +80,7 @@ def main():
     ap.add_argument('--style', default='ノーマル')
     ap.add_argument('--speed', type=float, default=1.05)
     ap.add_argument('--changed-list', default='', help='write ids of units with new audio to this file')
+    ap.add_argument('--out-root', default='', help='write clips to <out-root>/<unit-id>/ instead of the unit (voice samples)')
     a = ap.parse_args()
 
     sid = speaker_id(a.engine, a.speaker, a.style)
@@ -90,7 +91,8 @@ def main():
     for uid, script in find_scripts(a.filter):
         before = made
         data = yaml.safe_load(script.read_text(encoding='utf-8'))
-        ndir = script.parent / 'narration'
+        ndir = Path(a.out_root) / uid if a.out_root else script.parent / 'narration'
+        ndir.mkdir(parents=True, exist_ok=True)
         ndir.mkdir(exist_ok=True)
         mf = ndir / 'manifest.json'
         manifest = json.loads(mf.read_text()) if mf.exists() else {}

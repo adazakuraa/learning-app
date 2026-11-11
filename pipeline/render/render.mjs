@@ -94,7 +94,10 @@ async function main() {
   const stillsArg = rest.includes('--stills') ? rest[rest.indexOf('--stills') + 1] : null;
   const unitDir = findUnit(id);
   const scriptFile = path.join(unitDir, 'video', 'script.yaml');
-  const narr = narrationDurations(path.join(unitDir, 'video', 'narration'));
+  const opt = (k) => (rest.includes(k) ? rest[rest.indexOf(k) + 1] : null);
+  const narrDir = opt('--narration-dir') ?? path.join(unitDir, 'video', 'narration');
+  const outOverride = opt('--out'); // write the MP4 elsewhere and leave the unit untouched (voice samples)
+  const narr = narrationDurations(narrDir);
   const tl = compile(loadScript(scriptFile), Object.fromEntries(Object.entries(narr).map(([k, v]) => [k, v.sec])));
   console.log(`${id}: ${tl.duration.toFixed(1)}s, ${tl.cues.length} captions, narration ${Object.keys(narr).length ? 'yes' : 'no'}`);
 
@@ -147,10 +150,11 @@ async function main() {
   const narrList = [];
   for (const sc of tl.scenes) for (const st of sc.steps) if (st.audioKey) narrList.push({ file: narr[st.audioKey].file, at: st.t + 0.15 });
   const vtt = toVtt(tl.cues);
-  const vttFile = path.join(unitDir, 'captions.vtt');
+  const vttFile = outOverride ? outOverride.replace(/\.mp4$/, '.vtt') : path.join(unitDir, 'captions.vtt');
   fs.writeFileSync(vttFile, vtt);
 
-  const outFile = path.join(unitDir, 'video.mp4');
+  const outFile = outOverride ? path.resolve(outOverride) : path.join(unitDir, 'video.mp4');
+  fs.mkdirSync(path.dirname(outFile), { recursive: true });
   const tmpFile = outFile + '.tmp.mp4';
   // inputs: 0 = frames, 1..n = narration clips (or 1 = silence), last = captions
   const args = ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-'];
@@ -194,11 +198,12 @@ async function main() {
   const mb = (fs.statSync(outFile).size / 1e6).toFixed(1);
   console.log(`\r  done: ${frames} frames (${captured} captured) in ${Math.round((Date.now() - started) / 1000)}s -> video.mp4 ${mb}MB`);
 
+  if (outOverride) return;
   // record in unit.yaml
   const unitYaml = path.join(unitDir, 'unit.yaml');
   const doc = YAML.parseDocument(fs.readFileSync(unitYaml, 'utf8'));
   const video = { src: 'video.mp4', captions: 'captions.vtt', duration: Math.round(tl.duration) };
-  const manifest = path.join(unitDir, 'video', 'narration', 'manifest.json');
+  const manifest = path.join(narrDir, 'manifest.json');
   if (narrList.length && fs.existsSync(manifest)) video.narration = JSON.parse(fs.readFileSync(manifest, 'utf8'))._credit ?? 'VOICEVOX';
   doc.set('video', video);
   fs.writeFileSync(unitYaml, doc.toString());
