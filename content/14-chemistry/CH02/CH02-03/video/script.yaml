@@ -1,0 +1,59 @@
+title: 分子とイオン
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「分子とイオン」です。最外殻電子が8個でない原子は、オクテット則を満たしていないので、安定になるために、化学反応を起こします。
+        show:
+          - { type: title, text: 分子とイオン }
+          - { type: box, color: yellow, w: 1000, text: "最外殻電子が8個でない → 安定になりたい → **化学反応** を起こす" }
+
+  - board: whiteboard
+    steps:
+      - say: 最外殻電子が7個の、塩素Clを例に考えましょう。8個にするいちばん簡単な方法は、塩素どうしでくっつくことです。
+        show:
+          - { type: title, text: 共有結合と分子 }
+          - type: svg
+            w: 1000
+            h: 300
+            markup: |
+              <circle cx="380" cy="150" r="120" stroke="#9be0b0"/><circle cx="620" cy="150" r="120" stroke="#9be0b0"/>
+              <g stroke="none" font-size="36" text-anchor="middle" fill="#9be0b0"><text x="340" y="162">Cl</text><text x="660" y="162">Cl</text></g>
+              <g fill="#f3d77a" stroke="none"><circle cx="490" cy="130" r="11"/><circle cx="510" cy="170" r="11"/></g>
+              <text x="500" y="295" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">電子を出し合って共有</text>
+      - say: おたがいに7個目の電子を出し合い、共有することで、どちらも、8個そろったような状態を作れます。こうした結びつきを、共有結合といい、できた粒を、分子といいます。
+        show:
+          - { type: text, text: "電子を出し合って **共有** → どちらも8個に ＝ **共有結合**　できた粒 ＝ **分子**（Cl₂）" }
+      - say: 水素の分子、H₂も同じです。水素は、K殻だけなので、2個そろえば安定です。
+        show:
+          - { type: text, size: s, color: gray, text: "H₂：K殻は2個で安定" }
+
+  - board: whiteboard
+    steps:
+      - say: もう一つの方法は、ほかの原子から、電子をもらう、またはあげる方法です。ナトリウムNaは、最外殻電子が1個。この1個を手放せば、内側の殻が8個そろって安定します。
+        show:
+          - { type: title, text: イオン結合 }
+          - { type: text, color: blue, text: "Na：最外殻電子1個 → 手放したい" }
+      - say: そこに、電子が1個足りない塩素Clが来ると、どうなるでしょう。Naの電子をClがもらえば、どちらもオクテット則を満たせます。
+        show:
+          - type: svg
+            w: 1000
+            h: 260
+            markup: |
+              <circle cx="220" cy="130" r="100" stroke="#8fc4ff"/><circle cx="780" cy="130" r="110" stroke="#9be0b0"/>
+              <g stroke="none" font-size="36" text-anchor="middle"><text x="220" y="142" fill="#8fc4ff">Na</text><text x="780" y="142" fill="#9be0b0">Cl</text></g>
+              <circle cx="330" cy="80" r="12" fill="#f3d77a" stroke="none"/>
+              <path d="M350 70 Q500 0 660 70" stroke="#f3d77a"/><path d="M646 60 L662 72 L644 78" stroke="#f3d77a"/>
+              <text x="500" y="30" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">電子が移る</text>
+      - say: 電子をもらった塩素はマイナスに、渡したナトリウムはプラスになります。プラスとマイナスが引き合って、塩化ナトリウム、つまり食塩になります。
+        show:
+          - { type: formula, size: l, color: yellow, tex: '\text{Na}^+ + \text{Cl}^- \rightarrow \text{NaCl}\;（食塩）' }
+
+  - board: whiteboard
+    steps:
+      - say: このように、電荷をもった状態の原子を、イオンと呼びます。そして、プラスとマイナスのイオンが引き合う結びつきを、イオン結合といいます。
+        show:
+          - { type: title, text: イオン }
+          - { type: text, text: "電荷をもった原子 ＝ **イオン**（Na⁺、Cl⁻ など）　引き合う結びつき ＝ **イオン結合**" }
+      - say: スポーツドリンクにふくまれる「電解質」、つまりナトリウムやカリウム、カルシウムは、体の中で、すべてイオンの形で働いています。
+        show:
+          - { type: box, color: blue, w: 1000, text: "スポーツドリンクの「電解質」＝ 体の中でイオンとして働く" }

@@ -1,0 +1,42 @@
+title: 化学式と化学反応式
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「化学式と化学反応式」です。化学式は、ものを、元素記号と数字で表したものです。
+        show:
+          - { type: title, text: 化学式 }
+      - say: H₂Oは水。水素原子2個と、酸素原子1個からできています。CO₂は二酸化炭素。炭素原子1個と、酸素原子2個からできています。
+        show:
+          - type: svg
+            w: 1100
+            h: 220
+            markup: |
+              <circle cx="180" cy="110" r="50" stroke="#f4a3b8"/><circle cx="110" cy="170" r="30" stroke="#eef0ea"/><circle cx="250" cy="170" r="30" stroke="#eef0ea"/>
+              <g stroke="none" font-size="26" text-anchor="middle"><text x="180" y="120" fill="#f4a3b8">O</text><text x="110" y="180">H</text><text x="250" y="180">H</text><text x="180" y="40" fill="#f3d77a">H₂O（水）</text></g>
+              <circle cx="700" cy="120" r="44" stroke="#9aa3ad"/><circle cx="600" cy="120" r="50" stroke="#f4a3b8"/><circle cx="800" cy="120" r="50" stroke="#f4a3b8"/>
+              <g stroke="none" font-size="26" text-anchor="middle"><text x="700" y="130" fill="#9aa3ad">C</text><text x="600" y="130" fill="#f4a3b8">O</text><text x="800" y="130" fill="#f4a3b8">O</text><text x="700" y="40" fill="#f3d77a">CO₂（二酸化炭素）</text></g>
+      - say: 元素記号の右下の小さな数字は、その原子の数を表しています。1のときは書きません。
+        show:
+          - { type: text, size: s, color: gray, text: "右下の数字 ＝ 原子の数（1のときは省略）" }
+
+  - board: whiteboard
+    steps:
+      - say: 化学反応を表す式を、化学反応式といいます。たとえば、2H₂＋O₂→2H₂O。
+        show:
+          - { type: title, text: 化学反応式 }
+          - { type: formula, size: xl, color: yellow, tex: '2\text{H}_2 + \text{O}_2 \rightarrow 2\text{H}_2\text{O}' }
+      - say: これは、水素分子2つと、酸素分子1つが反応して、水の分子が2つできる、という意味です。前につく大きな数字は、分子の数を表しています。
+        show:
+          - type: svg
+            w: 1100
+            h: 160
+            markup: |
+              <g stroke="#eef0ea"><circle cx="60" cy="60" r="24"/><circle cx="105" cy="60" r="24"/><circle cx="60" cy="120" r="24"/><circle cx="105" cy="120" r="24"/></g>
+              <text x="170" y="100" font-size="36" fill="currentColor" stroke="none">＋</text>
+              <g stroke="#f4a3b8"><circle cx="260" cy="90" r="30"/><circle cx="318" cy="90" r="30"/></g>
+              <path d="M380 90 H500" stroke="#f3d77a"/><path d="M486 80 L500 90 L486 100" stroke="#f3d77a"/>
+              <g stroke="#f4a3b8"><circle cx="600" cy="60" r="30"/><circle cx="800" cy="60" r="30"/></g>
+              <g stroke="#eef0ea"><circle cx="560" cy="110" r="20"/><circle cx="640" cy="110" r="20"/><circle cx="760" cy="110" r="20"/><circle cx="840" cy="110" r="20"/></g>
+      - say: 反応式では、左と右で、原子の数が等しくなければなりません。左は、水素原子が4個、酸素原子が2個。右も、水素4個、酸素2個です。化学反応は、原子の組み合わせが変わるだけで、原子の数は変わらないからです。これが、質量保存の法則です。
+        show:
+          - { type: box, color: green, w: 1000, text: "左右で原子の数は同じ（H 4個・O 2個）→ 組み合わせが変わるだけ（**質量保存の法則**）" }

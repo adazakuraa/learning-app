@@ -1,0 +1,48 @@
+title: 純物質と混合物・単体と化合物
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「純物質と混合物、単体と化合物」です。ものの分け方を整理しましょう。
+        show:
+          - { type: title, text: 物質の分け方 }
+      - say: ものは、まず、純物質と混合物の2つに分けられます。純物質は、1種類のものだけでできているもの。鉄、酸素、水、食塩などです。
+        show:
+          - { type: text, color: blue, text: "**純物質** … 1種類だけ（鉄・酸素・水・食塩）" }
+      - say: 混合物は、いくつかの純物質が混ざり合ったもの。空気は窒素や酸素などの混合、食塩水は水と食塩の混合です。牛乳や、金属を混ぜた合金も混合物です。
+        show:
+          - { type: text, color: pink, text: "**混合物** … いくつか混ざっている（空気・食塩水・牛乳・合金）" }
+
+  - board: whiteboard
+    steps:
+      - say: 純物質は、さらに、単体と化合物に分かれます。
+        show:
+          - { type: title, text: 単体と化合物 }
+          - type: svg
+            w: 1100
+            h: 330
+            markup: |
+              <rect x="430" y="10" width="240" height="70" rx="10" stroke="#9aa3ad"/><text x="550" y="56" font-size="30" fill="currentColor" stroke="none" text-anchor="middle">物質</text>
+              <path d="M500 80 L300 130"/><path d="M600 80 L800 130"/>
+              <rect x="180" y="130" width="240" height="70" rx="10" stroke="#8fc4ff"/><text x="300" y="176" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">純物質</text>
+              <rect x="680" y="130" width="240" height="70" rx="10" stroke="#f4a3b8"/><text x="800" y="176" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="middle">混合物</text>
+              <path d="M260 200 L140 250"/><path d="M340 200 L460 250"/>
+              <rect x="40" y="250" width="200" height="70" rx="10" stroke="#f3d77a"/><text x="140" y="296" font-size="30" fill="#f3d77a" stroke="none" text-anchor="middle">単体</text>
+              <rect x="360" y="250" width="200" height="70" rx="10" stroke="#9be0b0"/><text x="460" y="296" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">化合物</text>
+      - say: 単体は、1種類の元素だけでできているもの。鉄、酸素、水素、金などです。
+        show:
+          - { type: text, color: yellow, text: "**単体** … 1種類の元素だけ（Fe 鉄、O₂ 酸素、H₂ 水素、Au 金）" }
+      - say: 化合物は、2種類以上の元素が結びついた純物質。水、食塩、二酸化炭素、アンモニアなどです。
+        show:
+          - { type: text, color: green, text: "**化合物** … 2種類以上の元素が結びつく（H₂O 水、NaCl 食塩、CO₂、NH₃）" }
+
+  - board: whiteboard
+    steps:
+      - say: 混合物と化合物のちがいがまぎらわしいので、整理しておきましょう。食塩水は、水と食塩が、ただ混ざっているだけ。水を蒸発させれば、食塩をとり出せます。
+        added: true
+        show:
+          - { type: title, text: 混合物と化合物のちがい }
+          - { type: box, color: pink, w: 1000, title: 混合物（食塩水）, text: "ただ混ざっているだけ → 水を蒸発させれば食塩が残る" }
+      - say: 一方、水という化合物は、水素と酸素が結びついて、まったく別のものになっています。水を見ても、水素や酸素の性質は残っていませんね。
+        added: true
+        show:
+          - { type: box, color: green, w: 1000, title: 化合物（水）, text: "水素と酸素が結びついて、まったく別のものに" }
