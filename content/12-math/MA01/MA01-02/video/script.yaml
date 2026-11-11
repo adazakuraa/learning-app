@@ -48,6 +48,21 @@ scenes:
               <g fill="currentColor" stroke="none"><circle cx="70" cy="80" r="10"/><circle cx="220" cy="80" r="10"/><circle cx="370" cy="80" r="10"/>
               <circle cx="520" cy="80" r="10"/><circle cx="670" cy="80" r="10"/><circle cx="820" cy="80" r="10"/><circle cx="970" cy="80" r="10"/></g>
           - { type: text, at: [80, 420], color: green, text: "整数 … -3, -2, -1, 0, 1, 2, 3 …" }
+      - say: マイナスの整数は、身近なところにもあります。冬の気温が0℃より低いと、-3℃のように言いますね。建物の地下1階も、-1階と考えられます。
+        added: true
+        show:
+          - type: svg
+            at: [1010, 395]
+            w: 200
+            h: 300
+            color: blue
+            markup: |
+              <path d="M70 20 V220"/><path d="M100 20 V220"/><path d="M70 20 Q85 5 100 20"/>
+              <circle cx="85" cy="250" r="30"/>
+              <path d="M100 80 H120"/><path d="M100 170 H120"/>
+              <path d="M85 170 V230" stroke-width="10"/>
+              <g fill="currentColor" stroke="none" font-size="26"><text x="126" y="89">0℃</text><text x="126" y="179">-3℃</text></g>
+          - { type: text, at: [80, 520], size: s, color: gray, text: "例：気温 -3℃　地下1階 → -1階" }
       - say: そのうち、0より大きい整数、つまり1、2、3…を「自然数」といいます。ものを数えるときに使う数ですね。
         show:
           - type: svg
@@ -57,7 +72,20 @@ scenes:
             color: pink
             markup: |
               <circle cx="670" cy="80" r="22"/><circle cx="820" cy="80" r="22"/><circle cx="970" cy="80" r="22"/>
-          - { type: text, at: [80, 490], color: pink, text: "自然数 … 1, 2, 3 …（0より大きい整数）" }
+          - { type: text, at: [80, 580], color: pink, text: "自然数 … 1, 2, 3 …（0より大きい整数）" }
+      - say: りんごを数えるとき、-1個や0.5個とは数えませんね。1個、2個、3個と数えるのが自然数です。
+        added: true
+        show:
+          - type: svg
+            at: [80, 640]
+            w: 520
+            h: 70
+            color: pink
+            markup: |
+              <circle cx="30" cy="32" r="24"/><path d="M30 8 Q34 0 42 -2"/>
+              <circle cx="120" cy="32" r="24"/><path d="M120 8 Q124 0 132 -2"/>
+              <circle cx="210" cy="32" r="24"/><path d="M210 8 Q214 0 222 -2"/>
+              <g fill="currentColor" stroke="none" font-size="26"><text x="250" y="42">1個、2個、3個…</text></g>
       - say: では、目盛りと目盛りのあいだには、どんな数があるのでしょうか。
         pause: 1
 
@@ -108,6 +136,59 @@ scenes:
         added: true
         show:
           - { type: text, at: [80, 600], size: s, color: gray, text: "π = 3.14159…　√2 = 1.41421…（小数が終わらず、くり返しもない）" }
+
+  # ---------- 身近な例：有理数と無理数 ----------
+  - board: whiteboard
+    steps:
+      - say: 有理数と無理数を、身近な例で見てみましょう。まずは有理数。ピザ5枚を2人で分けると、1人分は2枚と半分、つまり5/2枚で、2.5枚です。
+        added: true
+        show:
+          - { type: title, text: 身近な例で見てみよう }
+          - type: svg
+            at: [70, 150]
+            w: 560
+            h: 200
+            color: yellow
+            markup: |
+              <circle cx="60" cy="70" r="50"/><circle cx="180" cy="70" r="50"/>
+              <path d="M250 20 A50 50 0 0 1 250 120 Z"/>
+              <path d="M10 140 H310"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="20" y="185">1人分 ＝ 5/2 ＝ 2.5枚</text></g>
+          - { type: tag, at: [400, 190], color: blue, text: 有理数 }
+      - say: 次に無理数。どんな大きさの円でも、まわりの長さは、直径のおよそ3.14倍になります。この3.14…という数がπです。
+        added: true
+        show:
+          - type: svg
+            at: [70, 390]
+            w: 560
+            h: 300
+            color: pink
+            markup: |
+              <circle cx="120" cy="130" r="100"/>
+              <path d="M20 130 H220" stroke-dasharray="8 8"/>
+              <g fill="currentColor" stroke="none" font-size="26">
+                <text x="70" y="120">直径 1</text>
+                <text x="250" y="110">まわりの長さ</text>
+                <text x="250" y="150">＝ 3.14159…（π）</text>
+              </g>
+      - say: もう一つ。1辺が1メートルの正方形の、ななめの長さ、対角線は√2メートル、およそ1.41メートルです。
+        added: true
+        show:
+          - type: svg
+            at: [700, 150]
+            w: 520
+            h: 330
+            color: pink
+            markup: |
+              <rect x="40" y="40" width="220" height="220"/>
+              <path d="M40 260 L260 40"/>
+              <g fill="currentColor" stroke="none" font-size="26">
+                <text x="120" y="300">1m</text><text x="270" y="160">1m</text>
+                <text x="290" y="60">対角線 ＝ √2 m</text><text x="290" y="100">≒ 1.41421… m</text>
+              </g>
+      - say: こんなに身近な長さなのに、どう工夫しても、分数ではぴったり表せない。それが無理数です。
+        show:
+          - { type: box, at: [700, 520], w: 500, color: pink, title: 無理数, text: "身近にあるのに、分数ではぴったり表せない数" }
 
   # ---------- 数の家族（包含関係の図） ----------
   - board: whiteboard
@@ -192,7 +273,7 @@ scenes:
       - say: このiを使って、1+iや-5iのように表す数が「複素数」です。
         show:
           - { type: formula, tex: '1+i \qquad -5i' }
-      - say: 日常生活で使うことはほとんどありませんが、工学や物理学などの分野で使われています。今は、名前だけ知っておけば十分です。
+      - say: 日常生活で直接使うことはほとんどありませんが、工学や物理学などの分野で使われています。たとえば、家のコンセントに来ている電気、交流の計算にも使われます。今は、名前だけ知っておけば十分です。
         show:
           - { type: box, color: gray, w: 900, title: ポイント, text: "数直線に乗らない数もある。日常ではほぼ使わない（工学・物理学で使う）" }
 
