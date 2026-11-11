@@ -31,11 +31,6 @@ jobs:
   videos:
     runs-on: ubuntu-latest
     timeout-minutes: 340
-    services:
-      voicevox:
-        image: voicevox/voicevox_engine:cpu-latest
-        ports:
-          - 50021:50021
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -56,10 +51,11 @@ jobs:
           sudo ln -sf "$(node -p "require('ffprobe-static').path")" /usr/local/bin/ffprobe
           pip install pyyaml
           ffmpeg -version | head -1; ffprobe -version | head -1; python3 -c "import yaml; print('pyyaml', yaml.__version__)"
-      - name: Wait for VOICEVOX
+      - name: Start VOICEVOX engine
         run: |
+          docker run -d --name voicevox -p 50021:50021 voicevox/voicevox_engine:cpu-latest > /dev/null
           for i in $(seq 1 60); do curl -sf http://localhost:50021/version && exit 0; sleep 5; done
-          echo "VOICEVOX engine did not start"; exit 1
+          docker logs voicevox | tail -30; exit 1
       - name: Narrate
         run: python3 pipeline/narrate.py --filter "${{ inputs.filter }}" --changed-list narrated.txt
       - name: Decide what to render

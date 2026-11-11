@@ -151,6 +151,7 @@ async function main() {
   const narrList = [];
   for (const sc of tl.scenes) for (const st of sc.steps) if (st.audioKey) narrList.push({ file: narr[st.audioKey].file, at: st.t + 0.15 });
   const vtt = toVtt(tl.cues);
+  if (outOverride) fs.mkdirSync(path.dirname(path.resolve(outOverride)), { recursive: true });
   const vttFile = outOverride ? outOverride.replace(/\.mp4$/, '.vtt') : path.join(unitDir, 'captions.vtt');
   fs.writeFileSync(vttFile, vtt);
 
