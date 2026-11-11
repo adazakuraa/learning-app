@@ -1,0 +1,55 @@
+title: 加速度
+scenes:
+  - board: slide
+    steps:
+      - say: ここから、「力と運動」の章です。
+        show:
+          - { type: title, text: 第2章　力と運動 }
+      - say: この章では、ものがどう動くのか、そして、力がかかるとどう変わるのかを学びます。ニュートンの法則が中心です。
+        added: true
+        show:
+          - type: list
+            items: ["加速度", "ニュートンの運動の法則", "重力と落下運動", "摩擦力と空気抵抗", "万有引力"]
+      - say: 車のブレーキ、ボール投げ、ロケット、月の動き。身近な動きから宇宙まで、同じ法則で説明できることを見ていきましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "力と運動の関係を、身近な動きから宇宙までつなげて理解する" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は、「加速度」です。
+        show:
+          - { type: title, text: 加速度 }
+      - say: 加速度とは、速度の変化の速さです。1秒間に、速度がどれだけ変わるかを表します。
+        show:
+          - { type: text, size: l, text: "**加速度** ＝ 1秒間に、速度がどれだけ変わるか" }
+      - say: 単位は、メートル毎秒毎秒。速さの単位、メートル毎秒を、さらに時間の秒で割ったものです。
+        show:
+          - { type: formula, size: l, color: yellow, tex: '\text{m/s}^2 = (\text{m/s}) \div \text{s}' }
+
+  - board: whiteboard
+    steps:
+      - say: 車で考えてみましょう。止まっている車がアクセルをふんで、1秒後に秒速2メートル、2秒後に秒速4メートル、3秒後に秒速6メートル。1秒ごとに、秒速2メートルずつ速くなっています。
+        added: true
+        show:
+          - { type: title, text: 例：車の加速 }
+          - type: svg
+            w: 1100
+            h: 220
+            markup: |
+              <path d="M40 170 H1060" stroke="#9aa3ad"/>
+              <g fill="currentColor" stroke="none" font-size="26" text-anchor="middle"><text x="120" y="210">0秒</text><text x="400" y="210">1秒</text><text x="680" y="210">2秒</text><text x="960" y="210">3秒</text></g>
+              <g fill="#f3d77a" stroke="none" font-size="26" text-anchor="middle"><text x="120" y="60">0 m/s</text><text x="400" y="60">2 m/s</text><text x="680" y="60">4 m/s</text><text x="960" y="60">6 m/s</text></g>
+              <g stroke="#8fc4ff"><rect x="80" y="110" width="80" height="40" rx="8"/><rect x="360" y="110" width="80" height="40" rx="8"/><rect x="640" y="110" width="80" height="40" rx="8"/><rect x="920" y="110" width="80" height="40" rx="8"/></g>
+          - { type: text, color: yellow, text: "1秒ごとに 2m/s ずつ速くなる → 加速度 ＝ 2m/s²" }
+
+  - board: whiteboard
+    steps:
+      - say: 地球の上で、ものが落ちるときの加速度は、およそ9.8メートル毎秒毎秒。これを「重力加速度」といい、gで表します。
+        show:
+          - { type: title, text: 重力加速度 g }
+          - { type: formula, size: xl, color: yellow, tex: 'g \approx 9.8\ \text{m/s}^2' }
+      - say: 落ちるものは、1秒ごとに、秒速9.8メートルずつ速くなる、という意味です。1秒後に秒速9.8メートル、2秒後に秒速19.6メートル。数学の微分の練習問題で出てきた「10」は、この値を丸めたものです。
+        show:
+          - { type: text, text: "1秒後 9.8m/s → 2秒後 19.6m/s → 3秒後 29.4m/s …" }
+          - { type: text, size: s, color: gray, text: "数学（微分）の練習問題の「毎秒10m/sずつ速くなる」とつながる" }

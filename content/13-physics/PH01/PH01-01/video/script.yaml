@@ -1,0 +1,59 @@
+title: 物理とは何か
+scenes:
+  - board: slide
+    steps:
+      - say: ここから、物理の学習に入ります。最初の章は、「物理とは」です。
+        show:
+          - { type: title, text: 第1章　物理とは }
+      - say: この章では、物理がどんな学問なのか、そして、物理で欠かせない「単位」の考え方を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["物理とは何か", "単位と測定"]
+      - say: 物理は、身のまわりの「なぜ？」に答える学問です。リンゴはなぜ落ちるのか。空はなぜ青いのか。その答えの土台を、ここから作っていきます。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "物理の「ものの見方」と、単位の大切さを知る" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は、「物理とは何か」です。
+        show:
+          - { type: title, text: 物理とは何か }
+      - say: 物理とは、自然界で起きる現象を、できるだけ少ない法則で説明しようとする学問です。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "自然界の現象を、**できるだけ少ない法則** で説明する学問" }
+      - say: 物理のおもしろさは、たった一つの法則が、まったくちがう現象を説明できることにあります。
+        show:
+          - { type: text, text: "1つの法則 → まったくちがう現象をまとめて説明できる" }
+
+  - board: whiteboard
+    steps:
+      - say: 代表例が、ニュートンが発見した、万有引力の法則です。
+        show:
+          - { type: title, text: 例：万有引力の法則 }
+      - say: リンゴが木から落ちる理由。月が地球のまわりを回る理由。そして、海の潮の満ち引き。この3つは、一見ばらばらですが、すべて、同じ一つの式で説明できます。
+        show:
+          - type: svg
+            w: 1100
+            h: 360
+            markup: |
+              <rect x="420" y="20" width="260" height="90" rx="12" stroke="#f3d77a"/>
+              <text x="550" y="78" font-size="32" fill="#f3d77a" stroke="none" text-anchor="middle">万有引力</text>
+              <path d="M470 110 L200 230"/><path d="M550 110 V230"/><path d="M630 110 L900 230"/>
+              <g fill="currentColor" stroke="none" font-size="30" text-anchor="middle"><text x="180" y="280">リンゴが落ちる</text><text x="550" y="280">月が地球を回る</text><text x="910" y="280">潮の満ち引き</text></g>
+              <circle cx="180" cy="320" r="18" stroke="#f4a3b8"/><circle cx="550" cy="320" r="18" stroke="#9aa3ad"/><path d="M860 320 Q885 300 910 320 Q935 340 960 320" stroke="#8fc4ff"/>
+
+  - board: whiteboard
+    steps:
+      - say: 物理を知ると、当たり前の景色が、ちがって見えてきます。
+        show:
+          - { type: title, text: 物理を知ると… }
+      - say: 電子レンジで食べ物が温まるしくみ。虹が七色に見える理由。毎日見ているものの「なぜ」が、法則で説明できるようになります。
+        show:
+          - type: list
+            items: ["電子レンジで食べ物が温まるしくみ", "虹が七色に見える理由"]
+      - say: これから学ぶ、力、エネルギー、波、電気、原子。どれも、こうした身近な現象とつながっています。
+        added: true
+        show:
+          - { type: text, color: yellow, text: "力・エネルギー・波・電気・原子 → すべて身近な現象とつながる" }

@@ -1,0 +1,50 @@
+title: 摩擦力と空気抵抗
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「摩擦力と空気抵抗」です。
+        show:
+          - { type: title, text: 摩擦力と空気抵抗 }
+      - say: 摩擦は、面の、目に見えないほど小さなでこぼこが、引っかかり合うことで生まれます。どんなになめらかに見える面も、拡大すると、山と谷の連続です。
+        show:
+          - type: svg
+            w: 1000
+            h: 260
+            markup: |
+              <rect x="300" y="20" width="400" height="90" stroke="#8fc4ff"/>
+              <path d="M300 110 L330 130 L360 105 L390 135 L420 110 L450 132 L480 104 L510 128 L540 108 L570 134 L600 106 L630 130 L660 110 L700 125" stroke="#8fc4ff"/>
+              <path d="M40 160 L80 135 L120 165 L160 140 L200 168 L240 138 L280 160 L320 136 L360 166 L400 140 L440 162 L480 134 L520 166 L560 140 L600 160 L640 138 L680 168 L720 140 L760 162 L800 136 L840 166 L880 140 L960 160" stroke="#f3d77a"/>
+              <text x="40" y="240" font-size="26" fill="#9aa3ad" stroke="none">拡大すると、山と谷がかみ合って引っかかる</text>
+
+  - board: whiteboard
+    steps:
+      - say: 摩擦には、2種類あります。止まっているものを動かそうとするときに働く「静止摩擦力」と、動いているものに働く「動摩擦力」です。
+        show:
+          - { type: title, text: 2種類の摩擦 }
+          - { type: text, color: blue, text: "**静止摩擦力** … 止まっているものを動かそうとするとき" }
+          - { type: text, color: pink, text: "**動摩擦力** … 動いているとき" }
+      - say: 一般に、動摩擦力より、静止摩擦力のほうが大きいことが知られています。重いタンスを動かすとき、動かし始めがいちばん大変で、一度動き出すと少し楽になりますね。あの感覚と一致します。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "静止摩擦力 ＞ 動摩擦力 → 「動かし始め」がいちばん大変" }
+
+  - board: whiteboard
+    steps:
+      - say: 空気抵抗は、空気の中を動くものが、空気から受ける、動きをじゃまする力です。速く動くほど、大きくなります。
+        show:
+          - { type: title, text: 空気抵抗と終端速度 }
+          - { type: text, text: "**空気抵抗** … 空気から受ける、動きをじゃまする力（速いほど大きい）" }
+      - say: ものを落とすと、はじめは重力でどんどん速くなります。でも、速くなるほど空気抵抗も大きくなり、やがて重力と空気抵抗がつり合って、速さが一定になります。この速さを「終端速度」といいます。
+        show:
+          - type: svg
+            at: [160, 300]
+            w: 900
+            h: 330
+            markup: |
+              <path d="M60 300 H860" stroke="#9aa3ad"/><path d="M60 300 V20" stroke="#9aa3ad"/>
+              <path d="M60 300 C200 120 360 80 860 75" stroke="#f3d77a"/>
+              <path d="M60 75 H860" stroke="#f4a3b8" stroke-dasharray="8 8"/>
+              <g stroke="none" font-size="24"><text x="600" y="60" fill="#f4a3b8">終端速度（一定）</text><text x="760" y="325" fill="#9aa3ad">時間</text><text x="70" y="40" fill="#9aa3ad">速さ</text></g>
+      - say: 雨つぶが、高い空から落ちてきても人にけがをさせないのは、空気抵抗で終端速度が小さくおさえられているからです。
+        added: true
+        show:
+          - { type: text, at: [80, 650], size: s, color: gray, text: "雨つぶがけがをさせないのも、終端速度のおかげ" }

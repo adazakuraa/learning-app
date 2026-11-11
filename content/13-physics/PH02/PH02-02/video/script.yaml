@@ -1,0 +1,62 @@
+title: ニュートンの運動の法則
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「ニュートンの運動の法則」です。ニュートンは、ものの動きを決める、3つの法則を発見しました。
+        show:
+          - { type: title, text: ニュートンの運動の法則 }
+          - type: list
+            items: ["① 慣性の法則", "② 運動の法則（F ＝ ma）", "③ 作用・反作用の法則"]
+
+  - board: whiteboard
+    steps:
+      - say: 1つ目は、「慣性の法則」。外から力が加わらなければ、止まっているものは止まり続け、動いているものは、まっすぐ同じ速さで動き続ける、という法則です。
+        show:
+          - { type: title, text: "① 慣性の法則" }
+          - { type: box, color: yellow, w: 1100, text: "力が加わらなければ　止まっている → 止まり続ける　動いている → まっすぐ同じ速さで動き続ける" }
+      - say: バスが急ブレーキをかけると、乗客が前に倒れそうになりますね。体が、それまでの速さで動き続けようとするからです。この性質を、慣性といいます。
+        show:
+          - type: svg
+            w: 900
+            h: 220
+            markup: |
+              <rect x="40" y="40" width="460" height="140" rx="20" stroke="#8fc4ff"/>
+              <circle cx="300" cy="80" r="16"/><path d="M300 96 L330 150"/><path d="M300 110 L350 110"/>
+              <path d="M560 110 H760" stroke="#f3d77a"/><path d="M744 98 L760 110 L744 122" stroke="#f3d77a"/>
+              <g fill="currentColor" stroke="none" font-size="26"><text x="560" y="90" fill="#f3d77a">体は前へ動き続けようとする</text><text x="60" y="210" fill="#f4a3b8">急ブレーキ！</text></g>
+      - say: 宇宙空間では、空気の抵抗も摩擦もないので、エンジンを止めても、宇宙船は永遠に進み続けます。
+        show:
+          - { type: text, size: s, color: gray, text: "宇宙では、エンジンを止めても進み続ける" }
+
+  - board: whiteboard
+    steps:
+      - say: 2つ目は、「運動の法則」。運動方程式、F＝maで表されます。力は、質量×加速度です。
+        show:
+          - { type: title, text: "② 運動の法則" }
+          - { type: formula, size: xl, color: yellow, tex: 'F = ma' }
+          - { type: text, size: s, color: gray, text: "F：力　m：質量　a：加速度" }
+      - say: 力をかけた方向に、ものは加速します。そして、同じ力をかけても、重いものほど、加速しにくいのです。
+        show:
+          - { type: text, text: "力をかけた方向に加速する" }
+          - { type: text, text: "同じ力なら、重い（m が大きい）ほど加速しにくい" }
+      - say: 空のショッピングカートは軽く押すだけで動き出しますが、荷物でいっぱいのカートは、なかなか動きませんね。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "例：空のカートはすぐ動く／荷物満載のカートは動きにくい" }
+
+  - board: whiteboard
+    steps:
+      - say: 3つ目は、「作用・反作用の法則」。AがBに力を加えると、AもBから、同じ大きさで、逆向きの力を受ける、という法則です。
+        show:
+          - { type: title, text: "③ 作用・反作用の法則" }
+          - { type: box, color: yellow, w: 1000, text: "A が B を押すと、A も B から **同じ大きさ・逆向き** の力で押し返される" }
+      - say: 壁を押すと、壁から押し返される感じがしますね。ロケットは、噴射ガスを後ろに押し出し、その反作用で、前に進みます。
+        show:
+          - type: svg
+            w: 1000
+            h: 220
+            markup: |
+              <path d="M300 60 L520 60 L580 110 L520 160 L300 160 Z" stroke="#8fc4ff"/>
+              <path d="M290 90 H120" stroke="#f4a3b8"/><path d="M290 130 H140" stroke="#f4a3b8"/><path d="M136 80 L120 90 L136 100" stroke="#f4a3b8"/>
+              <path d="M600 110 H800" stroke="#f3d77a"/><path d="M784 98 L800 110 L784 122" stroke="#f3d77a"/>
+              <g stroke="none" font-size="26"><text x="80" y="200" fill="#f4a3b8">ガスを後ろへ（作用）</text><text x="620" y="200" fill="#f3d77a">ロケットは前へ（反作用）</text></g>
