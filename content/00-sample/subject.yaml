@@ -1,0 +1,4 @@
+id: sample
+title: サンプル教材
+description: アプリの動作確認用の教材です。実際の教材を取り込んだら削除します。
+order: 0
