@@ -1,0 +1,56 @@
+title: n進数
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「n進数」です。
+        show:
+          - { type: title, text: n進数 }
+      - say: 私たちがふだん使う数は、10進数です。0から9までの10種類の数字を使い、9の次で、桁が上がって10になります。
+        show:
+          - { type: text, text: "**10進数** … 0〜9 の10種類。9 の次で桁が上がる" }
+      - say: 10を基準にするのは、絶対のルールではありません。人間の都合で選んだもので、おそらく、指が10本あるからだと考えられています。
+        show:
+          - { type: text, size: s, color: gray, text: "10 を基準にするのは人間の都合（指が10本だから？）" }
+
+  - board: whiteboard
+    steps:
+      - say: コンピュータは、2進数を使います。使う数字は0と1だけ。1の次で、もう桁が上がります。
+        show:
+          - { type: title, text: 2進数 }
+          - { type: text, text: "**2進数** … 0 と 1 だけ。1 の次で桁が上がる" }
+      - say: 2は「10」、3は「11」、4は「100」、8は「1000」と書きます。
+        show:
+          - type: svg
+            w: 900
+            h: 220
+            markup: |
+              <g font-size="34" stroke="none"><g fill="#9aa3ad"><text x="20" y="50">10進数</text><text x="20" y="120">2進数</text></g>
+              <g fill="currentColor" text-anchor="middle"><text x="220" y="50">1</text><text x="330" y="50">2</text><text x="440" y="50">3</text><text x="560" y="50">4</text><text x="800" y="50">8</text><text x="680" y="50">…</text></g>
+              <g fill="#f3d77a" text-anchor="middle"><text x="220" y="120">1</text><text x="330" y="120">10</text><text x="440" y="120">11</text><text x="560" y="120">100</text><text x="680" y="120">…</text><text x="800" y="120">1000</text></g></g>
+      - say: 2進数では、いちばん右が1の位、その左が2の位、さらに左が4の位、8の位と、2倍ずつ大きくなります。
+        show:
+          - { type: text, color: blue, text: "位：… 8 の位　4 の位　2 の位　1 の位（2倍ずつ）" }
+      - say: コンピュータの中では、電気が流れているかいないか、オンとオフの2つの状態で情報を表します。だから、2進数が使いやすいのです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "コンピュータ：電気のオン（1）／オフ（0）で表す → 2進数がぴったり" }
+
+  - board: whiteboard
+    steps:
+      - say: プログラミングでよく使うのが、16進数です。0から9に加えて、10をA、11をB…15をFと表します。Fの次は、桁が上がって「10」。これが、10進数の16です。
+        show:
+          - { type: title, text: 16進数 }
+          - { type: text, text: "0〜9、A(10)、B(11)、C(12)、D(13)、E(14)、F(15)" }
+          - { type: text, color: yellow, text: "F の次 → 「10」（10進数の16）" }
+      - say: 2進数は桁数が多くなりすぎるので、4桁ずつまとめて16進数で書くと読みやすくなります。
+        show:
+          - { type: text, size: s, color: gray, text: "2進数4桁（0000〜1111）＝ 16進数1桁（0〜F）" }
+      - say: 色を表すカラーコード、たとえば「#FF5733」も、16進数の表現です。赤、緑、青の強さを、それぞれ2桁の16進数で表しています。
+        show:
+          - type: svg
+            w: 900
+            h: 140
+            markup: |
+              <rect x="20" y="20" width="160" height="100" rx="10" fill="#FF5733" stroke="none"/>
+              <g font-size="34" stroke="none"><text x="210" y="80" fill="currentColor">#</text><text x="240" y="80" fill="#f4a3b8">FF</text><text x="300" y="80" fill="#9be0b0">57</text><text x="360" y="80" fill="#8fc4ff">33</text></g>
+              <text x="450" y="80" font-size="24" fill="#9aa3ad" stroke="none">赤・緑・青 の強さ</text>
