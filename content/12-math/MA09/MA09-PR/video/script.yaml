@@ -1,0 +1,60 @@
+title: 練習問題 指数・対数
+scenes:
+  - board: slide
+    steps:
+      - say: 「指数・対数」の章の練習問題です。対数は、「底を何乗すればいいか」と言いかえて考えましょう。
+        show:
+          - { type: title, text: 練習問題　指数・対数 }
+          - { type: formula, size: l, tex: '\log_a b = \square \iff a^{\square} = b' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題1。log₃9は？
+        show:
+          - { type: title, text: "問題 ①②" }
+          - { type: formula, size: l, tex: '\text{①}\; \log_3 9 = \ ?' }
+        pause: 3
+      - say: 3を何乗すると9になるか。3の2乗が9なので、答えは2です。
+        show:
+          - { type: formula, color: green, tex: '3^2 = 9 \;\rightarrow\; 2' }
+      - say: 問題2。log₂16は？
+        show:
+          - { type: formula, size: l, tex: '\text{②}\; \log_2 16 = \ ?' }
+        pause: 3
+      - say: 2を4回かけると16。答えは4です。
+        show:
+          - { type: formula, color: green, tex: '2^4 = 16 \;\rightarrow\; 4' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題3。log₅30は、3より小さい。真か偽か。
+        show:
+          - { type: title, text: "問題 ③" }
+          - { type: formula, size: l, tex: '\log_5 30 < 3\ \ ?' }
+        pause: 3
+      - say: 5の2乗は25、5の3乗は125。30は、25と125のあいだにあるので、log₅30は、2と3のあいだ。だから、3より小さく、真です。
+        show:
+          - { type: formula, tex: '5^2 = 25 < 30 < 125 = 5^3' }
+          - { type: text, color: green, text: "2 ＜ log₅30 ＜ 3 → **真**" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題4。log₅125、log₃81、log₁₀81のうち、いちばん大きいのはどれでしょう。
+        show:
+          - { type: title, text: "問題 ④" }
+          - { type: formula, tex: '\log_5 125 \qquad \log_3 81 \qquad \log_{10} 81' }
+        pause: 4
+      - say: log₅125は、5の3乗が125なので3。log₃81は、3の4乗が81なので4。
+        show:
+          - { type: formula, tex: '\log_5 125 = 3 \qquad \log_3 81 = 4' }
+      - say: log₁₀81は、10の2乗が100なので、2より小さい数です。いちばん大きいのは、log₃81です。
+        show:
+          - { type: formula, tex: '\log_{10} 81 < \log_{10} 100 = 2' }
+          - { type: text, color: green, text: "答え：log₃81（＝4）" }
+
+  - board: whiteboard
+    steps:
+      - say: おつかれさまでした。間違えた問題は、テキストの解説で復習しましょう。
+        show:
+          - { type: title, text: おつかれさまでした }
+          - { type: text, text: "「何乗すればいい？」と言いかえるのがコツ" }
