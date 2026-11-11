@@ -1,0 +1,62 @@
+title: レンズと光学機器
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「レンズと光学機器」です。
+        show:
+          - { type: title, text: レンズと光学機器 }
+      - say: レンズは、光の屈折を利用して、光の進み方をコントロールする道具です。光が集まる点を、「焦点」といいます。
+        show:
+          - { type: text, text: "**レンズ** ＝ 屈折で光の進み方を変える道具　光の集まる点 ＝ **焦点**" }
+
+  - board: whiteboard
+    steps:
+      - say: 凸レンズは、真ん中が厚いレンズで、平行に入った光を、一点、つまり焦点に集めます。
+        show:
+          - { type: title, text: 凸レンズ }
+          - type: svg
+            at: [80, 160]
+            w: 900
+            h: 340
+            markup: |
+              <path d="M400 20 Q480 170 400 320 Q320 170 400 20 Z" stroke="#8fc4ff"/>
+              <g stroke="#f3d77a"><path d="M40 80 H400 L700 170"/><path d="M40 170 H700"/><path d="M40 260 H400 L700 170"/></g>
+              <circle cx="700" cy="170" r="10" fill="#f4a3b8" stroke="none"/>
+              <text x="715" y="160" font-size="26" fill="#f4a3b8" stroke="none">焦点</text>
+      - say: 虫めがね、カメラのレンズ、望遠鏡のレンズが、凸レンズです。虫めがねで太陽の光を集めると紙が燃えるのは、光のエネルギーが一点に集まるからです。
+        show:
+          - { type: text, at: [80, 530], text: "虫めがね・カメラ・望遠鏡（光を一点に集めると紙が燃える）" }
+
+  - board: whiteboard
+    steps:
+      - say: 凹レンズは、真ん中がうすいレンズで、光を広げる方向に曲げます。近視、つまり近眼のメガネに使われています。
+        show:
+          - { type: title, text: 凹レンズ }
+          - type: svg
+            at: [80, 160]
+            w: 900
+            h: 340
+            markup: |
+              <path d="M370 20 H430 Q400 170 430 320 H370 Q400 170 370 20 Z" stroke="#8fc4ff"/>
+              <g stroke="#f3d77a"><path d="M40 80 H400 L700 10"/><path d="M40 170 H700"/><path d="M40 260 H400 L700 330"/></g>
+          - { type: text, at: [80, 530], text: "光を広げる → 近視（近眼）のメガネ" }
+
+  - board: whiteboard
+    steps:
+      - say: 目のしくみも、光学の応用です。目の中の水晶体が、凸レンズの役割をして、目の奥の網膜に像を結びます。こうして、私たちはものを「見て」いるのです。
+        show:
+          - { type: title, text: 目のしくみ }
+          - type: svg
+            at: [80, 160]
+            w: 900
+            h: 360
+            markup: |
+              <circle cx="560" cy="180" r="160" stroke="#9aa3ad"/>
+              <ellipse cx="420" cy="180" rx="22" ry="70" stroke="#8fc4ff"/>
+              <path d="M700 80 Q730 180 700 280" stroke="#f4a3b8" stroke-width="6"/>
+              <g stroke="#f3d77a"><path d="M40 120 L420 150 L705 220"/><path d="M40 240 L420 210 L705 140"/></g>
+              <g stroke="none" font-size="24"><text x="360" y="290" fill="#8fc4ff">水晶体（凸レンズ）</text><text x="740" y="190" fill="#f4a3b8">網膜</text></g>
+      - say: 近視の人は、像が網膜より手前に結ばれてしまいます。凹レンズで光を少し広げることで、ちょうど網膜に像が結ばれるように調整しているのです。
+        added: true
+        show:
+          - { type: text, at: [80, 550], size: s, color: gray, text: "近視：像が網膜の手前に → 凹レンズで広げて調整" }
