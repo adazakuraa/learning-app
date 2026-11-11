@@ -4,32 +4,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import YAML from 'yaml';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const args = process.argv.slice(2);
 const jobs = Number(args.includes('--jobs') ? args[args.indexOf('--jobs') + 1] : 3);
 const filter = args.includes('--filter') ? args[args.indexOf('--filter') + 1] : '';
 
-const todo = [];
-const walk = (d, depth) => {
-  for (const n of fs.readdirSync(d)) {
-    const p = path.join(d, n);
-    if (!fs.statSync(p).isDirectory()) continue;
-    if (depth < 2) walk(p, depth + 1);
-    else {
-      const script = path.join(p, 'video', 'script.yaml');
-      const unitYaml = path.join(p, 'unit.yaml');
-      if (!fs.existsSync(script) || !fs.existsSync(unitYaml)) continue;
-      const id = YAML.parse(fs.readFileSync(unitYaml, 'utf8')).id;
-      if (filter && !id.startsWith(filter)) continue;
-      const mp4 = path.join(p, 'video.mp4');
-      const newest = Math.max(...fs.readdirSync(path.join(p, 'video'), { recursive: true }).map((f) => fs.statSync(path.join(p, 'video', String(f))).mtimeMs));
-      if (!fs.existsSync(mp4) || fs.statSync(mp4).mtimeMs < newest) todo.push(id);
-    }
-  }
-};
-walk(path.join(ROOT, 'content'), 0);
+import { staleUnits } from './stale.mjs';
+const todo = staleUnits(filter);
 console.log(`${todo.length} videos to render (${jobs} at a time)`);
 
 let failed = 0;

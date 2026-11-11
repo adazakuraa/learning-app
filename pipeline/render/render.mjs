@@ -15,6 +15,7 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 import YAML from 'yaml';
 import { compile, loadScript, toVtt } from './compile.mjs';
+import { renderHash } from './stale.mjs';
 
 const require = createRequire(import.meta.url);
 const { chromium } = require('playwright');
@@ -199,6 +200,7 @@ async function main() {
   console.log(`\r  done: ${frames} frames (${captured} captured) in ${Math.round((Date.now() - started) / 1000)}s -> video.mp4 ${mb}MB`);
 
   if (outOverride) return;
+  fs.writeFileSync(path.join(unitDir, 'video', 'render-hash.txt'), renderHash(unitDir) + '\n');
   // record in unit.yaml
   const unitYaml = path.join(unitDir, 'unit.yaml');
   const doc = YAML.parseDocument(fs.readFileSync(unitYaml, 'utf8'));

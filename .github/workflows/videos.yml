@@ -11,17 +11,14 @@ on:
     paths:
       - 'content/**/video/script.yaml'
       - '.github/workflows/videos.yml'
-      - 'pipeline/**'
+      - 'pipeline/render/**'
+      - 'pipeline/narrate.py'
   workflow_dispatch:
     inputs:
       filter:
         description: 'Unit id prefix (e.g. math-ma01). Empty = all units with scripts'
         required: false
         default: ''
-      rerender_all:
-        description: 'Re-render every matching video, even without new narration'
-        type: boolean
-        default: false
 
 permissions:
   contents: write
@@ -41,8 +38,6 @@ jobs:
           - 50021:50021
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -62,23 +57,7 @@ jobs:
         run: python3 pipeline/narrate.py --filter "${{ inputs.filter }}" --changed-list narrated.txt
       - name: Decide what to render
         run: |
-          ids_for() { while read f; do [ -f "$f" ] && python3 -c "import yaml,sys; print(yaml.safe_load(open(sys.argv[1]))['id'])" "$(dirname "$(dirname "$f")")/unit.yaml"; done; }
-          all_scripts() { find content -path '*/video/script.yaml' | sort; }
-          : > todo.txt
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            if [ "${{ inputs.rerender_all }}" = "true" ]; then all_scripts | ids_for | grep "^${{ inputs.filter }}" > todo.txt || true; fi
-          else
-            BEFORE="${{ github.event.before }}"
-            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then
-              all_scripts | ids_for > todo.txt
-            elif git diff --name-only "$BEFORE" "${{ github.sha }}" | grep -qE '^(pipeline/|\.github/workflows/videos.yml)'; then
-              all_scripts | ids_for > todo.txt      # renderer changed: re-render everything
-            else
-              git diff --name-only "$BEFORE" "${{ github.sha }}" | grep 'video/script.yaml$' | ids_for > todo.txt
-            fi
-          fi
-          cat narrated.txt >> todo.txt
-          sort -u todo.txt -o todo.txt
+          node pipeline/render/stale.mjs "${{ inputs.filter }}" > todo.txt
           echo "rendering $(wc -l < todo.txt) videos:"; cat todo.txt
       - name: Render
         run: cat todo.txt | xargs -r -P 2 -I{} node pipeline/render/render.mjs {}
