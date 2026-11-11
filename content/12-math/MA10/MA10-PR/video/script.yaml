@@ -1,0 +1,78 @@
+title: 練習問題 三角関数
+scenes:
+  - board: slide
+    steps:
+      - say: 「三角関数」の章の練習問題です。サインは斜辺分の高さ、コサインは斜辺分の底辺、タンジェントは底辺分の高さ。これを思い出しながら考えましょう。
+        show:
+          - { type: title, text: 練習問題　三角関数 }
+          - { type: formula, tex: '\sin\theta = \frac{a}{c} \quad \cos\theta = \frac{b}{c} \quad \tan\theta = \frac{a}{b}' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題1。30度、60度、90度の直角三角形があります。辺の長さの比は、斜辺が2、短い辺が1、長い辺が√3です。サイン30度、コサイン30度、タンジェント30度を求めましょう。
+        show:
+          - { type: title, text: "問題 ①" }
+          - type: svg
+            at: [80, 160]
+            w: 600
+            h: 380
+            markup: |
+              <path d="M40 320 L520 320 L520 43 Z"/><path d="M490 320 V290 H520" stroke="#9aa3ad"/>
+              <path d="M120 320 A80 80 0 0 0 110 280" stroke="#f3d77a"/>
+              <g fill="currentColor" stroke="none" font-size="30"><text x="140" y="305" fill="#f3d77a">30°</text><text x="440" y="110">60°</text><text x="230" y="160">2</text><text x="535" y="190">1</text><text x="260" y="365">√3</text></g>
+        pause: 4
+      - say: 30度から見ると、高さは1、底辺は√3、斜辺は2。だから、サイン30度は1/2、コサイン30度は√3/2、タンジェント30度は1/√3です。
+        show:
+          - { type: formula, at: [720, 200], color: green, tex: '\sin 30^\circ = \frac{1}{2}' }
+          - { type: formula, at: [720, 300], color: green, tex: '\cos 30^\circ = \frac{\sqrt{3}}{2}' }
+          - { type: formula, at: [720, 400], color: green, tex: '\tan 30^\circ = \frac{1}{\sqrt{3}}' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題2。同じ三角形で、サイン60度、コサイン60度、タンジェント60度は？
+        show:
+          - { type: title, text: "問題 ②" }
+        pause: 3
+      - say: 三角形を立てて、60度の角から見ます。すると、高さが√3、底辺が1、斜辺が2になります。サイン60度は√3/2、コサイン60度は1/2、タンジェント60度は√3です。
+        show:
+          - type: svg
+            at: [80, 140]
+            w: 500
+            h: 520
+            markup: |
+              <path d="M60 460 L260 460 L260 60 Z"/><path d="M230 460 V430 H260" stroke="#9aa3ad"/>
+              <path d="M130 460 A70 70 0 0 0 95 395" stroke="#f3d77a"/>
+              <g fill="currentColor" stroke="none" font-size="30"><text x="120" y="440" fill="#f3d77a">60°</text><text x="215" y="140">30°</text><text x="100" y="250">2</text><text x="275" y="270">√3</text><text x="150" y="500">1</text></g>
+          - { type: formula, at: [640, 200], color: green, tex: '\sin 60^\circ = \frac{\sqrt{3}}{2}' }
+          - { type: formula, at: [640, 300], color: green, tex: '\cos 60^\circ = \frac{1}{2}' }
+          - { type: formula, at: [640, 400], color: green, tex: '\tan 60^\circ = \sqrt{3}' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題3。八広駅からスカイツリーまでは、3キロメートル。駅からスカイツリーの先端を見上げると、地面との角度は12度でした。スカイツリーの高さは？タンジェント12度は、およそ0.213とします。
+        show:
+          - { type: title, text: "問題 ③　スカイツリーの高さ" }
+          - type: svg
+            at: [80, 180]
+            w: 760
+            h: 360
+            markup: |
+              <path d="M40 320 L700 320 L700 60 Z" stroke="#9aa3ad" stroke-dasharray="8 8"/>
+              <path d="M700 320 V40" stroke="#8fc4ff" stroke-width="8"/>
+              <path d="M120 320 A80 80 0 0 0 117 290" stroke="#f3d77a"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="140" y="305" fill="#f3d77a">12°</text><text x="320" y="360">3km ＝ 3000m</text><text x="720" y="200" fill="#8fc4ff">高さ a</text><text x="20" y="355">駅</text></g>
+        pause: 4
+      - say: タンジェントは、底辺分の高さ。だから、タンジェント12度＝高さa÷3000。aは、3000×0.213で、およそ639メートルです。
+        show:
+          - { type: formula, at: [80, 580], tex: '\tan 12^\circ = \frac{a}{3000} \;\rightarrow\; a = 3000 \times 0.213 = 639' }
+      - say: 実際のスカイツリーの高さは634メートル。角度と距離だけで、かなり正確に高さを求められました。これが、測量で三角関数が使われる理由です。
+        added: true
+        show:
+          - { type: text, at: [80, 650], color: green, text: "約639m（実際は634m）→ 角度と距離だけで高さがわかる！" }
+
+  - board: whiteboard
+    steps:
+      - say: おつかれさまでした。間違えた問題は、テキストの解説で復習しましょう。
+        show:
+          - { type: title, text: おつかれさまでした }
+          - { type: text, text: "三角関数で、届かない高さも計算できる" }

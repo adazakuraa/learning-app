@@ -1,0 +1,54 @@
+title: 微分の考え方
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「微分の考え方」です。
+        show:
+          - { type: title, text: 微分の考え方 }
+      - say: 車が走っているとき、「今この瞬間の速さ」は、どうやって決まるのでしょう。スピードメーターを見ればわかりますが、数学では、どう考えるのでしょうか。
+        show:
+          - { type: text, size: l, text: "「今この瞬間の速さ」って、どう決まる？" }
+      - say: 速さは、「進んだ距離÷かかった時間」で計算できます。5分で20キロ進んだなら、20÷5で、分速4キロ、時速にすると240キロです。
+        show:
+          - { type: formula, tex: '\text{速さ} = \frac{\text{距離}}{\text{時間}} \qquad \frac{20\ \text{km}}{5\ \text{分}} = \text{分速}\ 4\ \text{km}' }
+      - say: でも、これは「5分間の平均の速さ」です。途中で速くなったり、遅くなったりしているかもしれません。
+        show:
+          - { type: text, color: pink, text: "これは 5分間の **平均** の速さ" }
+
+  - board: whiteboard
+    steps:
+      - say: 「今この瞬間の速さ」を求めるには、時間の幅を、どんどん短くしていきます。5分間、1分間、1秒間、0.01秒間…。そして、限りなく0に近づける。つまり、極限をとるのです。
+        show:
+          - { type: title, text: 時間の幅を 0 に近づける }
+          - { type: text, color: yellow, text: "5分 → 1分 → 1秒 → 0.01秒 → … → 0（極限）" }
+      - say: 式にしてみましょう。x分までに進んだ距離をf（x）とします。そこから、さらにh分進むと、その間に進んだ距離は、f（x＋h）－f（x）。h分間の平均の速さは、それをhで割ったものです。
+        show:
+          - { type: formula, tex: '\text{平均の速さ} = \frac{f(x+h) - f(x)}{h}' }
+      - say: このhを、限りなく0に近づけたものが、瞬間の速さ。これが、微分の定義です。
+        show:
+          - { type: formula, size: l, color: yellow, tex: '\text{瞬間の速さ} = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}' }
+      - say: こうして求めた瞬間の速さを、「導関数」といい、f′（x）と書きます。f（x）から導関数を求めることを、「微分する」といいます。
+        show:
+          - { type: text, text: "**導関数** f′(x)　　求めること ＝ **微分する**" }
+
+  - board: whiteboard
+    steps:
+      - say: 実は、微分とは、グラフの傾きを求めることと同じです。2xを微分すると2、5xなら5。直線の傾きが、そのまま出てきます。
+        show:
+          - { type: title, text: 微分 ＝ グラフの傾き }
+          - { type: formula, tex: '(2x)^{\prime} = 2 \qquad (5x)^{\prime} = 5' }
+      - say: 直線なら、微分しなくても傾きはわかります。でも、二次関数のような曲線ではどうでしょう。場所によって傾きがちがい、式を見ても、すぐにはわかりません。
+        show:
+          - type: svg
+            at: [160, 230]
+            w: 900
+            h: 380
+            markup: |
+              <path d="M40 340 H860" stroke="#9aa3ad"/><path d="M450 370 V10" stroke="#9aa3ad"/>
+              <path d="M230 20 Q450 640 670 20" stroke="#f3d77a"/>
+              <path d="M450 330 H620" stroke="#8fc4ff"/>
+              <path d="M520 290 L700 80" stroke="#f4a3b8"/>
+              <g fill="currentColor" stroke="none" font-size="24"><text x="560" y="370" fill="#8fc4ff">ここはゆるやか</text><text x="700" y="140" fill="#f4a3b8">ここは急</text></g>
+      - say: そんなときに、微分を使います。定義どおりに計算すれば、どんな形の関数でも、好きな場所の傾き、つまり、その瞬間の変化の速さを求められるのです。
+        show:
+          - { type: box, at: [80, 630], w: 1100, color: yellow, text: "微分 → どんな曲線でも、各点の傾き（瞬間の変化）がわかる" }

@@ -1,0 +1,65 @@
+title: 練習問題 微分
+scenes:
+  - board: slide
+    steps:
+      - say: 「微分」の章の練習問題です。前半は極限、後半は落ちるボールの速さを、微分で求めます。
+        show:
+          - { type: title, text: 練習問題　微分 }
+          - { type: text, size: l, text: "極限 と 微分（瞬間の変化）" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題1。1、1/2、1/4、1/8…と続く数列があります。第n項までの和を、等比数列の和の公式で表しましょう。また、無限に足した和を、極限で表しましょう。
+        show:
+          - { type: title, text: "問題 ①②" }
+          - { type: text, text: "1 ＋ 1/2 ＋ 1/4 ＋ 1/8 ＋ …" }
+        pause: 4
+      - say: 初項1、公比1/2、項数nを公式に入れて、整理すると、2×（1－1/2のn乗）。無限に足した和は、これのnを無限大に近づけた極限です。
+        show:
+          - { type: formula, tex: 'S_n = 2\left(1 - \frac{1}{2^n}\right) \qquad \lim_{n \to \infty} 2\left(1 - \frac{1}{2^n}\right)' }
+      - say: 問題2。では、その無限和は、いくつでしょう。
+        show:
+          - { type: text, text: "② 無限に足すと、いくつ？" }
+        pause: 3
+      - say: nが大きくなると、2のn乗は限りなく大きくなるので、1/2のn乗は0に近づきます。だから、2×（1－0）で、2です。無限に足しても、2を超えないのです。
+        show:
+          - { type: formula, color: green, tex: '\lim_{n \to \infty} 2\left(1 - \frac{1}{2^n}\right) = 2(1 - 0) = 2' }
+      - say: 0から2までの道を、まず1進み、残りの半分、さらに残りの半分…と進んでいくイメージです。2にどこまでも近づくけれど、2を超えることはありません。
+        added: true
+        show:
+          - type: svg
+            w: 1000
+            h: 120
+            markup: |
+              <path d="M40 60 H960" stroke="#9aa3ad"/>
+              <path d="M40 60 H520" stroke="#8fc4ff" stroke-width="10"/><path d="M520 60 H760" stroke="#f3d77a" stroke-width="10"/><path d="M760 60 H880" stroke="#f4a3b8" stroke-width="10"/><path d="M880 60 H940" stroke="#9be0b0" stroke-width="10"/>
+              <g fill="currentColor" stroke="none" font-size="24" text-anchor="middle"><text x="40" y="105">0</text><text x="520" y="105">1</text><text x="960" y="105">2</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 問題3。高いところからボールを落とすと、落ちた距離xと、時間tのあいだには、x＝5t²の関係があることが知られています。この式の導関数は？
+        show:
+          - { type: title, text: "問題 ③④⑤　落ちるボール" }
+          - { type: formula, size: l, tex: 'x = 5t^2' }
+        pause: 4
+      - say: 定義どおり計算します。tからt＋hまでに落ちた距離は、5（t＋h）²－5t²で、10th＋5h²。hで割ると10t＋5h。hを0に近づけると、10tです。
+        show:
+          - { type: formula, tex: '\frac{5(t+h)^2 - 5t^2}{h} = \frac{10th + 5h^2}{h} = 10t + 5h' }
+          - { type: formula, color: green, tex: '\lim_{h \to 0}(10t + 5h) = 10t' }
+      - say: 問題4。ボールを離してから1秒後の速さは？導関数10tは、t秒後の速さを表しているので、t＝1を入れて、秒速10メートルです。
+        show:
+          - { type: formula, color: green, tex: '10 \times 1 = 10\ \text{m/s}' }
+      - say: 問題5。ボールの速さは、1秒ごとにどれだけ速くなるでしょう。速さの式10tの傾きを見ればよいので、10。毎秒、秒速10メートルずつ速くなります。
+        show:
+          - { type: text, color: green, text: "速さ 10t の傾き ＝ 10 → 1秒ごとに 10m/s ずつ速くなる" }
+      - say: これは、物理で学ぶ「重力加速度」、およそ9.8メートル毎秒毎秒を、10に丸めた値です。数学の微分と、物理の運動が、ここでつながりました。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, text: "10 ≒ 重力加速度 9.8（物理とつながる！）" }
+
+  - board: whiteboard
+    steps:
+      - say: おつかれさまでした。微分の計算は、テキストの解説でもう一度、ゆっくり確認しておきましょう。
+        show:
+          - { type: title, text: おつかれさまでした }
+          - { type: text, text: "微分 ＝ 瞬間の変化。速さ、そして速さの変化へ" }

@@ -1,0 +1,54 @@
+title: 極限
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「微分」の章です。
+        show:
+          - { type: title, text: 第11章　微分 }
+      - say: この章では、「限りなく近づく」という極限の考え方と、それを使って「ある瞬間の変化の速さ」を求める、微分の考え方を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["極限", "微分の考え方", "練習問題"]
+      - say: スピードメーターの速さ、ものが落ちる速さの変化。微分は、物理や経済など、変化を扱うあらゆる分野の土台になっています。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "「瞬間の変化」をとらえる微分の考え方を、イメージでつかむ" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「極限」です。微分を理解する準備として、「ある値に、限りなく近づく」という考え方を学びます。
+        show:
+          - { type: title, text: 極限 }
+          - { type: text, size: l, text: "**極限** ＝ ある値に「限りなく近づく」" }
+      - say: 0.9、0.99、0.999、0.9999。この数の並びは、どこに向かっているでしょう。どんどん、1に近づいていきますね。
+        show:
+          - { type: text, size: l, color: yellow, text: "0.9 → 0.99 → 0.999 → 0.9999 → … → 1" }
+
+  - board: whiteboard
+    steps:
+      - say: では、9が無限に続く0.999…は、1と同じでしょうか。直感的には、「1にちょっと足りない」と感じますね。
+        show:
+          - { type: title, text: "0.999… ＝ 1？" }
+          - { type: formula, size: l, tex: '0.999\cdots \;\overset{?}{=}\; 1' }
+        pause: 2
+      - say: 数学では、0.999…は、1と完全に等しいと考えます。9が無限に続くなら、1との差は限りなく小さく、もはやゼロとみなせるからです。
+        show:
+          - { type: formula, size: l, color: green, tex: '0.999\cdots = 1' }
+      - say: こんな見方もできます。1/3は0.333…。両方を3倍すると、1＝0.999…になりますね。
+        added: true
+        show:
+          - { type: formula, color: blue, tex: '\tfrac{1}{3} = 0.333\cdots \;\xrightarrow{\times 3}\; 1 = 0.999\cdots' }
+
+  - board: whiteboard
+    steps:
+      - say: 極限は、limという記号を使って表します。
+        show:
+          - { type: title, text: lim の記号 }
+      - say: 1/nという分数で、nを2、3、4と大きくしていくと、値は1/2、1/3、1/4と、どんどん小さくなります。
+        show:
+          - { type: text, text: "1/2 → 1/3 → 1/4 → … → 1/1000 → …（どんどん小さく）" }
+      - say: nを限りなく大きくすると、1/nは限りなく0に近づきます。これを、こう書きます。nの矢印無限大は、「nを限りなく大きくする」という意味です。
+        show:
+          - { type: formula, size: xl, color: yellow, tex: '\lim_{n \to \infty} \frac{1}{n} = 0' }
+          - { type: text, size: s, color: gray, text: "n → ∞ ：n を限りなく大きくする" }
