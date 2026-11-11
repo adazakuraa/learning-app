@@ -59,6 +59,7 @@ IMG_RE = re.compile(r'!\[([^\]]*)\]\(([^)\s]+)\)')
 MAX_W = 1600
 
 warnings: list[str] = []
+corrections: list[dict] = []
 
 
 def clean_title(t: str) -> str:
@@ -194,6 +195,13 @@ def import_subject(order: int, subj: dict, root_dir: Path, content: Path):
 
             body = '\n'.join(u['body']).strip('\n')
             body = IMG_RE.sub(repl, body)
+            uid = f'{slug}-{code.lower()}'
+            for c in corrections:
+                if c['unit'] != uid:
+                    continue
+                if c['find'] in body:
+                    body = body.replace(c['find'], c['replace'])
+                    c['applied'] = True
             (udir / 'source.md').write_text(f'# {u["title"]}\n\n{body}\n', encoding='utf-8')
             write_yaml(
                 udir / 'unit.yaml',
@@ -209,6 +217,9 @@ def main():
         sys.exit(__doc__)
     export = Path(sys.argv[1])
     content = Path(sys.argv[2] if len(sys.argv) > 2 else Path(__file__).resolve().parent.parent / 'content')
+    corr_file = content / 'corrections.yaml'
+    if corr_file.exists():
+        corrections.extend(yaml.safe_load(corr_file.read_text(encoding='utf-8')) or [])
     root_dir, subjects = parse_root(export)
     total_c = total_u = 0
     for i, s in enumerate(subjects, 1):
@@ -220,6 +231,12 @@ def main():
         total_u += u
         print(f'{s["title"]}: {c} 章 / {u} 単元')
     print(f'合計: {len(subjects)} 科目 / {total_c} 章 / {total_u} 単元')
+    applied = sum(1 for c in corrections if c.get('applied'))
+    if corrections:
+        print(f'訂正: {applied} / {len(corrections)} 件を適用')
+    for c in corrections:
+        if not c.get('applied'):
+            warnings.append(f'訂正が適用されませんでした（原本が直った可能性）: {c["unit"]} {c.get("note", "")}')
     if warnings:
         print('\n注意:')
         for w in warnings:

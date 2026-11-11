@@ -1,0 +1,19 @@
+# 教材の訂正（Notion の原本を直すまでの間、取り込み時に自動で適用される）
+# scripts/import_notion.py が source.md を作るときに find -> replace する。
+# find が見つからない場合（Notion 側で直された等）は警告が出るので、その項目は削除してよい。
+- unit: math-ma01-02
+  note: 問題②：-51 は整数で、-51/1 と分数で表せるので有理数
+  find: （答え）その他、自然数、無理数、有理数
+  replace: （答え）有理数、自然数、無理数、有理数
+- unit: math-ma01-02
+  note: 問題②の解説を補足
+  find: （解説）-51は負の数であって、自然数ではない。
+  replace: （解説）-51は負の数であって、自然数ではない。ただし整数であり、整数は -51/1 のように分数で表せるので、有理数である。
+- unit: math-ma01-02
+  note: 問題⑥：分速40m × 60分 = 2400m = 2.4km
+  find: （答え）時速24km
+  replace: （答え）時速2.4km
+- unit: math-ma01-02
+  note: 問題⑥の解説
+  find: これをkmに直すと24km。
+  replace: これをkmに直すと2.4km。
