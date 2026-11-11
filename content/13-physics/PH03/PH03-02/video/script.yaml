@@ -1,0 +1,59 @@
+title: 運動エネルギーと位置エネルギー
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「運動エネルギーと位置エネルギー」です。
+        show:
+          - { type: title, text: 運動エネルギーと位置エネルギー }
+      - say: エネルギーとは、「仕事をする能力」のことです。単位は、仕事と同じジュールです。
+        show:
+          - { type: text, size: l, text: "**エネルギー** ＝ 仕事をする能力（単位：J）" }
+      - say: 「エネルギー」というより、「ポテンシャル」、つまり、「仕事をする可能性を秘めている」と考えるとわかりやすいです。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "エネルギー ＝ 仕事をする「可能性（ポテンシャル）」" }
+
+  - board: whiteboard
+    steps:
+      - say: 運動エネルギーは、動いているものが持つエネルギーです。動いているだけでは、まだ仕事をしていません。でも、ほかのものに当たると、それを大きく動かす可能性を秘めています。
+        show:
+          - { type: title, text: 運動エネルギー }
+          - type: svg
+            w: 1000
+            h: 160
+            markup: |
+              <path d="M40 140 H960" stroke="#9aa3ad"/>
+              <circle cx="200" cy="100" r="40" stroke="#f3d77a"/>
+              <path d="M260 100 H500" stroke="#f3d77a"/><path d="M484 90 L500 100 L484 110" stroke="#f3d77a"/>
+              <rect x="620" y="60" width="160" height="80" stroke="#8fc4ff"/>
+              <text x="560" y="40" font-size="24" fill="#9aa3ad" stroke="none">当たれば動かせる！</text>
+      - say: 運動エネルギーは、2分の1、m、vの2乗で計算できます。質量に比例し、速さの2乗に比例します。
+        show:
+          - { type: formula, size: l, color: yellow, tex: 'K = \frac{1}{2}mv^2' }
+          - { type: text, size: s, color: gray, text: "m：質量　v：速さ" }
+      - say: 重いほど、速いほど、ぶつかったときの影響は大きいですね。特に速さは2乗で効くので、速さが2倍になると、エネルギーは4倍。車のスピードの出しすぎが危ないのは、このためです。
+        added: true
+        show:
+          - { type: text, color: pink, text: "速さ2倍 → エネルギー4倍（スピードの出しすぎは危険）" }
+
+  - board: whiteboard
+    steps:
+      - say: 位置エネルギーは、高いところにあるものが持つエネルギーです。高いところにあるだけでは仕事になりませんが、そこから落ちれば、ほかのものにぶつかって、大きな仕事をする可能性を秘めています。
+        show:
+          - { type: title, text: 位置エネルギー }
+          - { type: formula, size: l, color: yellow, tex: 'U = mgh' }
+          - { type: text, size: s, color: gray, text: "m：質量　g：重力加速度　h：高さ" }
+      - say: 位置エネルギーは、m、g、hで計算できます。高いほど、重いほど、大きくなります。
+        show:
+          - { type: text, text: "高いほど・重いほど 大きい" }
+      - say: ダムが水を高いところにためるのは、位置エネルギーをためているということ。放水すると、水が落ちる勢いで発電機を回し、位置エネルギーを電気エネルギーに変えることができます。
+        show:
+          - type: svg
+            w: 1000
+            h: 260
+            markup: |
+              <path d="M40 240 H960" stroke="#9aa3ad"/>
+              <path d="M200 40 L260 240" stroke="#9aa3ad"/>
+              <path d="M40 60 H200" stroke="#8fc4ff"/><path d="M40 60 V240" stroke="#8fc4ff"/>
+              <path d="M260 220 Q400 230 500 220" stroke="#8fc4ff"/>
+              <circle cx="560" cy="200" r="30" stroke="#f3d77a"/>
+              <g stroke="none" font-size="24"><text x="60" y="130" fill="#8fc4ff">高い所の水</text><text x="620" y="190" fill="#f3d77a">発電機 → 電気</text></g>

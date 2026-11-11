@@ -1,0 +1,68 @@
+title: エネルギー保存の法則
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「エネルギー保存の法則」です。物理で最も大切な法則のひとつです。かんたんに言うと、「エネルギーの合計は変わらない」という法則です。
+        show:
+          - { type: title, text: エネルギー保存の法則 }
+          - { type: box, color: yellow, w: 1000, text: "エネルギーは形を変えても、**合計は変わらない**" }
+
+  - board: whiteboard
+    steps:
+      - say: 振り子で考えましょう。いちばん高い点では、速さはゼロなので、運動エネルギーはゼロ。でも、位置エネルギーは最大です。
+        show:
+          - { type: title, text: 振り子で考える }
+          - type: svg
+            at: [80, 140]
+            w: 640
+            h: 480
+            markup: |
+              <path d="M320 20 L120 260" stroke="#9aa3ad"/><path d="M320 20 V380" stroke="#9aa3ad" stroke-dasharray="6 8"/><path d="M320 20 L520 260" stroke="#9aa3ad"/>
+              <path d="M120 260 Q320 470 520 260" stroke="#9aa3ad" stroke-dasharray="6 8"/>
+              <circle cx="120" cy="260" r="26" stroke="#f3d77a"/><circle cx="320" cy="380" r="26" stroke="#8fc4ff"/><circle cx="520" cy="260" r="26" stroke="#f3d77a"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="120" y="320" fill="#f3d77a">最高点</text><text x="320" y="440" fill="#8fc4ff">最下点</text></g>
+          - { type: text, at: [760, 180], color: yellow, w: 460, text: "最高点\n位置エネルギー 最大\n運動エネルギー 0" }
+      - say: いちばん低い点では、速さが最大なので、運動エネルギーが最大。そのかわり、位置エネルギーは最小です。
+        show:
+          - { type: text, at: [760, 360], color: blue, w: 460, text: "最下点\n運動エネルギー 最大\n位置エネルギー 最小" }
+      - say: 位置エネルギーと運動エネルギーが、たがいに入れかわり続け、その合計は、いつも一定です。
+        show:
+          - { type: text, at: [80, 640], color: green, text: "位置 ⇄ 運動 と入れかわっても、合計はいつも一定" }
+
+  - board: whiteboard
+    steps:
+      - say: 現実の振り子は、摩擦や空気抵抗で、だんだんふれはばが小さくなります。でも、エネルギーが「消えた」わけではありません。摩擦で熱に変わって、空気中に逃げていったのです。
+        show:
+          - { type: title, text: エネルギーは消えない }
+          - { type: text, text: "ふれはばが小さくなる → 熱エネルギーに変わって逃げた（消えてはいない）" }
+      - say: そもそも、振り子を動かすには、まず手でおもりを持ち上げますね。おもりの位置エネルギーは、手が持ち上げるという「仕事」をしたことで、手渡されたものです。
+        show:
+          - { type: text, text: "持ち上げる（仕事をする）→ おもりに位置エネルギーを渡す" }
+      - say: つまり、仕事をするとは、自分のエネルギーを使って、ほかのものにエネルギーを渡すこと。エネルギーと仕事は、たがいに形を変えながら、めぐっていくのです。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "仕事 ＝ エネルギーを、ほかのものに手渡すこと" }
+
+  - board: whiteboard
+    steps:
+      - say: ただし、持っているエネルギーを、100％仕事に変えることはできません。
+        show:
+          - { type: title, text: 100％は使えない }
+      - say: 100度のお湯で、0度の水を温めて、50度の水ができたとします。お湯はエネルギーを失い、水はエネルギーを得たので、合計は変わっていません。
+        show:
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <rect x="40" y="40" width="160" height="130" stroke="#f4a3b8"/><rect x="260" y="40" width="160" height="130" stroke="#8fc4ff"/>
+              <path d="M450 105 H560" stroke="#9aa3ad"/><path d="M546 95 L560 105 L546 115" stroke="#9aa3ad"/>
+              <rect x="600" y="40" width="320" height="130" stroke="#f3d77a"/>
+              <g stroke="none" font-size="30" text-anchor="middle"><text x="120" y="115" fill="#f4a3b8">100℃</text><text x="340" y="115" fill="#8fc4ff">0℃</text><text x="760" y="115" fill="#f3d77a">50℃</text></g>
+      - say: でも、この50度の水で、また0度の水を温めても、もう50度にはできません。エネルギーの合計は同じでも、使えるエネルギーは減ってしまったのです。
+        show:
+          - { type: text, color: pink, text: "合計は同じでも、「使えるエネルギー」は減っていく" }
+      - say: だから、一度エネルギーを与えれば、ずっと仕事をし続ける「永久機関」は、作れません。歴史上、たくさんの永久機関が考えられましたが、すべて失敗しています。
+        show:
+          - { type: box, color: pink, w: 1000, title: 永久機関は作れない, text: "使えないエネルギーが必ず生まれる → 無限に仕事はできない" }
+      - say: それでも、エネルギーを使うことは、私たちにとって、とても役に立ちます。電球は、電気のエネルギーを光に変えています。一部は熱として逃げてしまいますが、それでも、明かりとして十分に役立っていますね。
+        show:
+          - { type: text, size: s, color: gray, text: "電球：電気 → 光（一部は熱として逃げるが、役に立つ）" }
