@@ -2,3 +2,7 @@ id: math-ma03-02
 code: MA03-02
 title: 一次関数と直線
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 91

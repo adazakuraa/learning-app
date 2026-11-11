@@ -1,0 +1,56 @@
+title: 必要条件と十分条件
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「必要条件と十分条件」です。
+        show:
+          - { type: title, text: 必要条件と十分条件 }
+      - say: 「AならばB」が成り立つとき、AはBの「十分条件」、BはAの「必要条件」といいます。
+        show:
+          - { type: formula, size: l, color: yellow, tex: 'A \Rightarrow B' }
+          - { type: text, text: "A は B の **十分条件**　　B は A の **必要条件**" }
+      - say: 十分条件は、「それだけで十分」。必要条件は、「それがなければダメ」という意味です。
+        show:
+          - { type: text, color: blue, text: "十分条件 ＝ それだけで十分" }
+          - { type: text, color: pink, text: "必要条件 ＝ それがなければダメ" }
+
+  - board: whiteboard
+    steps:
+      - say: 例で考えましょう。「東京に住んでいるならば、日本に住んでいる」。
+        show:
+          - { type: title, text: 東京と日本で考える }
+          - { type: text, text: "東京に住んでいる ⇒ 日本に住んでいる" }
+      - say: 東京に住んでいれば、それだけで「日本に住んでいる」と言うのに十分です。だから、「東京に住んでいる」は、「日本に住んでいる」の十分条件です。
+        show:
+          - { type: text, color: blue, text: "「東京に住む」は「日本に住む」ための **十分条件**" }
+      - say: 逆に、東京に住むためには、少なくとも日本に住んでいる必要があります。だから、「日本に住んでいる」は、「東京に住んでいる」の必要条件です。
+        show:
+          - { type: text, color: pink, text: "「日本に住む」は「東京に住む」ための **必要条件**" }
+      - say: ベン図で言えば、小さい円が十分条件、それを包む大きい円が必要条件です。
+        added: true
+        show:
+          - type: svg
+            at: [740, 380]
+            w: 480
+            h: 300
+            color: pink
+            markup: |
+              <ellipse cx="240" cy="150" rx="220" ry="135"/>
+              <g fill="currentColor" stroke="none" font-size="24"><text x="300" y="80">日本（必要）</text></g>
+              <circle cx="170" cy="165" r="65" stroke="#8fc4ff"/>
+              <text x="170" y="173" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="middle">東京（十分）</text>
+
+  - board: whiteboard
+    steps:
+      - say: この2つの考え方は、日常の議論でもよく使えます。
+        show:
+          - { type: title, text: 日常の議論で使う }
+      - say: 「成功するには努力が必要か？」。努力は必要条件かもしれません。でも、十分条件ではありません。努力しても、成功しないことはあるからです。
+        show:
+          - { type: box, color: blue, w: 1100, title: "努力と成功", text: "努力は必要条件かもしれないが、十分条件ではない" }
+      - say: 「犯罪者は動機を持っているか？」。動機は必要条件かもしれません。でも十分条件ではありません。動機があっても、犯罪をしない人がほとんどだからです。
+        show:
+          - { type: box, color: pink, w: 1100, title: "動機と犯罪", text: "動機は必要条件かもしれないが、十分条件ではない" }
+      - say: 「必要なのか、十分なのか」を分けて考えると、議論をより正確に整理できます。
+        show:
+          - { type: text, color: yellow, text: "「必要」と「十分」を分けると、議論が整理できる" }

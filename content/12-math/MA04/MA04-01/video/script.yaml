@@ -1,0 +1,105 @@
+title: 集合の考え方
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「集合と論理」の章です。
+        show:
+          - { type: title, text: 第4章　集合と論理 }
+      - say: この章では、ものの集まりを図で整理する方法と、「AならばB」のような、筋道の通った考え方を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["集合の考え方", "命題と真偽", "逆・裏・対偶", "必要条件と十分条件", "練習問題"]
+      - say: 話の正しさを確かめたり、だまされにくくなったり。日常の議論を整理する力にもつながります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "ものごとを整理し、筋道を立てて正しく考えられるようになる" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「集合の考え方」です。
+        show:
+          - { type: title, text: 集合の考え方 }
+      - say: 集合とは、「ものの集まり」のことです。何かの条件を満たすものを、ひとまとめにしたものです。
+        show:
+          - { type: text, size: l, text: "**集合** ＝ 条件を満たすものの集まり" }
+      - say: たとえば、「1以上10以下の整数の集合」。「東京都民の集合」。「好きな食べ物がピザである人の集合」。どれも集合です。
+        show:
+          - type: list
+            items: ["1以上10以下の整数", "東京都民", "好きな食べ物がピザの人"]
+
+  - board: whiteboard
+    steps:
+      - say: 集合の関係を、目で見えるようにするのが「ベン図」です。集合に入るものを、円の中に描きます。
+        show:
+          - { type: title, text: ベン図 }
+          - type: svg
+            at: [80, 150]
+            w: 560
+            h: 400
+            color: gray
+            markup: |
+              <rect x="10" y="10" width="540" height="380" rx="8"/>
+              <g fill="currentColor" stroke="none" font-size="24"><text x="24" y="44">全体</text></g>
+          - type: svg
+            at: [80, 150]
+            w: 560
+            h: 400
+            color: blue
+            markup: |
+              <circle cx="280" cy="210" r="130" fill="currentColor" fill-opacity="0.15"/>
+              <g fill="currentColor" stroke="none" font-size="30" text-anchor="middle"><text x="280" y="215">ピザ好き</text></g>
+      - say: 集合に入らないものは、円の外側。これを「補集合」といいます。
+        show:
+          - { type: text, at: [700, 250], color: gray, text: "円の外側 ＝ **補集合**\n（ピザ好きではない人）" }
+
+  - board: whiteboard
+    steps:
+      - say: 円を2つ重ねてみましょう。
+        show:
+          - { type: title, text: 2つの集合 }
+          - type: svg
+            at: [80, 140]
+            w: 640
+            h: 420
+            color: blue
+            markup: |
+              <circle cx="240" cy="210" r="150"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="120" y="110">A：ピザ好き</text></g>
+          - type: svg
+            at: [80, 140]
+            w: 640
+            h: 420
+            color: pink
+            markup: |
+              <circle cx="420" cy="210" r="150"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="390" y="110">B：寿司好き</text></g>
+      - say: 重なった部分は、両方の集合に入るもの、つまり、ピザも寿司も好きな人です。これを「積集合」といいます。
+        show:
+          - type: svg
+            at: [80, 140]
+            w: 640
+            h: 420
+            color: yellow
+            markup: |
+              <path d="M330 90 A150 150 0 0 1 330 330 A150 150 0 0 1 330 90 Z" fill="currentColor" fill-opacity="0.35"/>
+          - { type: text, at: [760, 200], color: yellow, text: "重なり ＝ **積集合**\nA かつ B（A∩B）" }
+      - say: 2つの円全体は、どちらかの集合に入るもの。ピザか寿司、少なくともどちらかが好きな人です。これを「和集合」といいます。
+        show:
+          - { type: text, at: [760, 380], color: green, text: "2つの円全体 ＝ **和集合**\nA または B（A∪B）" }
+      - say: 記号では、「AかつB」をA∩B、「AまたはB」をA∪Bと書くことがあります。∩は「キャップ」、∪は「カップ」と読みます。
+        added: true
+        show:
+          - { type: text, at: [80, 600], size: s, color: gray, text: "∩（キャップ）＝ かつ　　∪（カップ）＝ または" }
+
+  - board: whiteboard
+    steps:
+      - say: まとめです。
+        show:
+          - { type: title, text: まとめ }
+      - say: 集合は、条件を満たすものの集まり。ベン図を使うと、関係が目で見えるようになります。
+        show:
+          - { type: text, text: "**集合** ＝ ものの集まり　→ **ベン図** で見える化" }
+      - say: 円の外が補集合、重なりが積集合、全体が和集合です。
+        show:
+          - { type: text, text: "外側：補集合　重なり：積集合（∩）　全体：和集合（∪）" }

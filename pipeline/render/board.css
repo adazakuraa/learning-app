@@ -4,6 +4,11 @@
   src: url('/node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-58-400-normal.woff2') format('woff2');
   unicode-range: U+221A, U+2260, U+2282, U+2283;
 }
+@font-face {
+  font-family: 'MathSym';
+  src: url('/node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-latin-400-normal.woff2') format('woff2');
+  unicode-range: U+00D7, U+00F7;
+}
 /* 1280x720 canvas. Dark "blackboard" look: easy on the eyes at night, matches the app. */
 :root {
   --ink: #eef0ea;

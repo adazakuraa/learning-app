@@ -1,0 +1,90 @@
+title: 関数とは何か
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「関数とグラフ」の章です。
+        show:
+          - { type: title, text: 第3章　関数とグラフ }
+      - say: この章では、「何かが変わると、それに合わせて別の何かが変わる」という関係を、式とグラフで表す方法を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["関数とは何か", "一次関数と直線", "二次関数と放物線", "練習問題"]
+      - say: 料金プランの比較や、ものの動きの予測など、世の中の変化を読み解くための道具になります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "変化の関係を「入力と出力」でとらえ、グラフで見えるようにする" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は、「関数とは何か」です。
+        show:
+          - { type: title, text: 関数とは何か }
+      - say: 関数とは、「何かを入力すると、それに対応する何かが出力される仕組み」のことです。
+        show:
+          - type: svg
+            w: 1100
+            h: 200
+            color: blue
+            markup: |
+              <rect x="400" y="30" width="300" height="140" rx="16"/>
+              <path d="M120 100 H390"/><path d="M374 90 L390 100 L374 110"/>
+              <path d="M710 100 H980"/><path d="M964 90 L980 100 L964 110"/>
+              <g fill="currentColor" stroke="none" font-size="34" text-anchor="middle">
+                <text x="550" y="112">関数</text><text x="240" y="80">入力</text><text x="850" y="80">出力</text>
+              </g>
+      - say: 自動販売機を想像してください。100円を入れると缶コーヒーが出てくる。120円を入れると、別の飲み物が出てくる。
+        show:
+          - type: svg
+            w: 1100
+            h: 240
+            color: pink
+            markup: |
+              <rect x="430" y="10" width="240" height="220" rx="10"/><rect x="460" y="40" width="180" height="90"/>
+              <rect x="520" y="170" width="60" height="30"/>
+              <g fill="currentColor" stroke="none" font-size="30" text-anchor="middle">
+                <text x="550" y="95">自販機</text>
+                <text x="230" y="90">100円</text><text x="230" y="170">120円</text>
+                <text x="880" y="90">缶コーヒー</text><text x="880" y="170">別の飲み物</text>
+              </g>
+              <path d="M300 80 H420"/><path d="M300 160 H420"/><path d="M680 80 H770"/><path d="M680 160 H770"/>
+      - say: 入力、つまりお金に対して、出力、つまり飲み物が対応している。この関係こそが、関数の本質です。
+        show:
+          - { type: box, color: yellow, w: 900, text: "入力（お金）に対して、出力（飲み物）が決まる ＝ **関数**" }
+
+  - board: whiteboard
+    steps:
+      - say: 中学の数学では、入力をx、出力をyで表すことが多いです。
+        show:
+          - { type: title, text: x と y で表す }
+          - { type: text, text: "入力 → **x**　　出力 → **y**" }
+      - say: たとえば、y＝2x。x＝1を入れるとy＝2、x＝3を入れるとy＝6が出てきます。「xを2倍にして返す機械」です。
+        show:
+          - { type: formula, size: l, tex: 'y = 2x' }
+          - { type: text, text: "x ＝ 1 → y ＝ 2　　x ＝ 3 → y ＝ 6" }
+          - { type: box, color: blue, w: 700, text: "「x を2倍にして返す機械」" }
+
+  - board: whiteboard
+    steps:
+      - say: 「yはxの関数である」ということを、y＝f（x）という形で書くことがあります。fは、関数を英語で言うfunctionの頭文字です。
+        show:
+          - { type: title, text: "y ＝ f(x) という書き方" }
+          - { type: formula, size: xl, color: yellow, tex: 'y = f(x)' }
+      - say: この書き方では、中身が2xなのか、3xの2乗＋2x＋1なのかはわかりません。「とにかく関数である」ということだけ伝えたいときに使う書き方です。
+        show:
+          - { type: text, text: "中身は 2x かもしれないし、3x² ＋ 2x ＋ 1 かもしれない" }
+          - { type: text, size: s, color: gray, text: "→「y は x で決まる」ことだけを表したいときに使う" }
+
+  - board: whiteboard
+    steps:
+      - say: 関数のおもしろさは、世の中のあらゆる現象を、「入力と出力の関係」としてとらえられることです。
+        show:
+          - { type: title, text: 身のまわりの関数 }
+      - say: 時間がたつほど温度が上がる。距離に応じて運賃が変わる。年とともに人口が増える。これらはすべて、関数として表せます。
+        show:
+          - type: list
+            items: ["時間 → 温度", "距離 → 運賃", "年 → 人口"]
+      - say: 次の単元からは、関数をグラフにして、変化の様子を目で見ていきます。
+        added: true
+        show:
+          - { type: text, color: yellow, text: "次は、関数をグラフで見てみよう" }

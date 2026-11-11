@@ -2,3 +2,7 @@ id: math-ma03-01
 code: MA03-01
 title: 関数とは何か
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 114

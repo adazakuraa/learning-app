@@ -2,3 +2,7 @@ id: math-ma02-03
 code: MA02-03
 title: 連立方程式
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 102

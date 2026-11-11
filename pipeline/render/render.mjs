@@ -131,7 +131,8 @@ async function main() {
   if (stillsArg) {
     const out = path.join(process.env.STILLS_DIR ?? os.tmpdir(), `stills-${id}`);
     fs.mkdirSync(out, { recursive: true });
-    for (const s of stillsArg.split(',').map(Number)) {
+    const times = stillsArg === 'auto' ? tl.scenes.map((sc) => Math.round((sc.end - 0.5) * 10) / 10) : stillsArg.split(',').map(Number);
+    for (const s of times) {
       await page.evaluate((t) => window.seek(t), s);
       const f = path.join(out, `t${String(s).padStart(5, '0')}.png`);
       await page.screenshot({ path: f });

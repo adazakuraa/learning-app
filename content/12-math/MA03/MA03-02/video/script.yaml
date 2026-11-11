@@ -1,0 +1,108 @@
+title: 一次関数と直線
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「一次関数と直線」です。
+        show:
+          - { type: title, text: 一次関数と直線 }
+      - say: y＝ax＋b。aとbは決まった数、つまり定数です。この形の関数を、一次関数といいます。
+        show:
+          - { type: formula, size: xl, color: yellow, tex: 'y = ax + b' }
+          - { type: text, size: s, color: gray, text: "a, b は決まった数（定数）" }
+      - say: 一次関数は、グラフにすると必ず直線になります。
+        show:
+          - { type: text, text: "グラフにすると **必ず直線**" }
+
+  - board: whiteboard
+    steps:
+      - say: aは「傾き」と呼ばれ、直線の急さを表します。xが1増えたとき、yがどれだけ変わるか、という値です。
+        show:
+          - { type: title, text: 傾きと切片 }
+          - type: svg
+            at: [80, 140]
+            w: 600
+            h: 560
+            color: gray
+            markup: |
+              <path d="M40 470 H560"/><path d="M544 460 L560 470 L544 480"/>
+              <path d="M180 540 V30"/><path d="M170 46 L180 30 L190 46"/>
+              <g fill="currentColor" stroke="none" font-size="26"><text x="540" y="510">x</text><text x="200" y="45">y</text><text x="150" y="505">O</text></g>
+          - type: svg
+            at: [80, 140]
+            w: 600
+            h: 560
+            markup: |
+              <path d="M60 470 L520 70"/>
+          - type: svg
+            at: [80, 140]
+            w: 600
+            h: 560
+            color: blue
+            markup: |
+              <path d="M300 261 H420 V157"/>
+              <g fill="currentColor" stroke="none" font-size="26"><text x="345" y="295">1</text><text x="430" y="220">a（傾き）</text></g>
+      - say: bは「y切片」。xが0のときのyの値で、直線がy軸と交わる点です。
+        show:
+          - type: svg
+            at: [80, 140]
+            w: 600
+            h: 560
+            color: pink
+            markup: |
+              <circle cx="180" cy="365" r="9" fill="currentColor"/>
+              <g fill="currentColor" stroke="none" font-size="26"><text x="20" y="360">b（切片）</text></g>
+      - say: aが大きいほど急な直線。aが0なら水平な直線。aがマイナスなら、右下がりの直線になります。そして切片bは、直線を上下にずらす役割です。
+        show:
+          - { type: text, at: [720, 170], text: "a が大きい → 急" }
+          - { type: text, at: [720, 240], text: "a ＝ 0 → 水平" }
+          - { type: text, at: [720, 310], text: "a がマイナス → 右下がり" }
+          - { type: text, at: [720, 400], color: pink, text: "b → 上下にずらす" }
+
+  - board: whiteboard
+    steps:
+      - say: 一次関数は、日常のいたるところにあります。たとえば、タクシーの料金が、「初乗り700円、1キロメートルごとに100円」なら、走った距離をxキロメートル、料金をy円として、y＝100x＋700と表せます。
+        show:
+          - { type: title, text: 身近な一次関数：タクシー }
+          - { type: formula, size: l, color: yellow, tex: 'y = 100x + 700' }
+          - { type: text, size: s, color: gray, text: "傾き 100 ＝ 1kmごとに100円　／　切片 700 ＝ 初乗り" }
+      - say: 携帯電話の料金プランや電気料金も、多くは一次関数で近い形に表せます。
+        show:
+          - { type: text, text: "携帯の料金プラン・電気料金 … 多くは一次関数で近似できる" }
+      - say: 2つのプランをグラフにすると、どこで料金が逆転するか、どちらがお得かが、ひと目でわかります。
+        added: true
+        show:
+          - type: svg
+            at: [160, 400]
+            w: 900
+            h: 300
+            markup: |
+              <path d="M40 270 H860"/><path d="M60 290 V20"/>
+          - type: svg
+            at: [160, 400]
+            w: 900
+            h: 300
+            color: blue
+            markup: |
+              <path d="M60 160 L840 40"/>
+              <g fill="currentColor" stroke="none" font-size="24"><text x="620" y="20">プランA（基本料が高い）</text></g>
+          - type: svg
+            at: [160, 400]
+            w: 900
+            h: 300
+            color: pink
+            markup: |
+              <path d="M60 240 L760 20"/>
+              <circle cx="558" cy="83" r="10" fill="currentColor"/>
+              <g fill="currentColor" stroke="none" font-size="24"><text x="420" y="60">ここで逆転</text><text x="600" y="150">プランB（基本料が安い）</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: まとめです。
+        show:
+          - { type: title, text: まとめ }
+      - say: y＝ax＋bの形の関数が一次関数で、グラフは必ず直線になります。
+        show:
+          - { type: formula, tex: 'y = ax + b \;\rightarrow\; \text{直線}' }
+      - say: aは傾き、つまりxが1増えたときのyの変化。bは切片、つまり直線がy軸と交わる点です。
+        show:
+          - { type: text, text: "**a：傾き**（x が1増えたときの y の変化）　**b：切片**（y軸と交わる点）" }

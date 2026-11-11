@@ -1,0 +1,122 @@
+title: 練習問題 文字と式・方程式
+scenes:
+  - board: slide
+    steps:
+      - say: 「文字と式・方程式」の章の練習問題です。問題を読んだら一時停止して、考えてみましょう。
+        show:
+          - { type: title, text: 練習問題　文字と式・方程式 }
+          - { type: text, size: l, text: "わからない数を x と置く → 式をつくる → 解く" }
+      - say: 文章題のコツは、「求めたいものをxと置いて、問題の条件を式にする」ことです。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, text: "コツ：求めたいものを x と置き、条件を等式にする" }
+
+  - board: whiteboard
+    steps:
+      - say: 一次方程式の問題1。弟が家を出て、毎分40メートルで歩きます。その5分後に、兄が毎分60メートルで追いかけます。兄が弟に追いつくのは、家から何メートルの地点でしょう。
+        show:
+          - { type: title, text: "問題 ①　追いかける兄" }
+          - { type: text, text: "弟：毎分40m　兄：5分後に出発、毎分60m\n追いつくのは家から何m？" }
+        pause: 4
+      - say: 追いつく地点までの距離をxメートルとします。弟がかかった時間は、x÷40分。兄は、x÷60分です。
+        show:
+          - { type: formula, tex: '\text{弟の時間}\; \tfrac{x}{40}\qquad \text{兄の時間}\; \tfrac{x}{60}' }
+      - say: 弟は兄より5分長く歩いているので、x/40＝5＋x/60。
+        show:
+          - { type: formula, color: yellow, tex: '\frac{x}{40} = 5 + \frac{x}{60}' }
+      - say: 両辺に120をかけると、3x＝600＋2x。よって、x＝600。答えは600メートルです。
+        show:
+          - { type: formula, tex: '3x = 600 + 2x' }
+          - { type: formula, size: l, color: green, tex: 'x = 600\ \text{m}' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題2。飲んだお酒の総カロリーが700キロカロリーでした。ビールは1杯140キロカロリー、ハイボールは1杯70キロカロリー。合わせて7杯飲んだとき、ビールは何杯でしょう。
+        show:
+          - { type: title, text: "問題 ②　お酒のカロリー" }
+          - { type: text, text: "ビール 140kcal／杯　ハイボール 70kcal／杯\n合計7杯で700kcal。ビールは何杯？" }
+        pause: 4
+      - say: ビールをx杯とすると、ハイボールは7－x杯。カロリーの合計で式をつくります。
+        show:
+          - { type: formula, color: yellow, tex: '140x + 70(7 - x) = 700' }
+      - say: 計算すると、140x＋490－70x＝700、70x＝210、x＝3。ビールは3杯です。
+        show:
+          - { type: formula, tex: '70x = 210' }
+          - { type: formula, size: l, color: green, tex: 'x = 3\ \text{杯}' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題3。アルコール濃度20％のお酒が100ミリリットルあります。濃度を5％にするには、水を何ミリリットル入れればよいでしょう。
+        show:
+          - { type: title, text: "問題 ③　濃度" }
+          - { type: text, text: "20％のお酒 100ml → 水を足して 5％ に。水は何ml？" }
+        pause: 4
+      - say: 濃度は、溶けているものの量を、全体の量で割ったものです。もともとアルコールは、100ミリリットルの20％で、20ミリリットル入っています。
+        show:
+          - { type: formula, tex: '100 \times 0.2 = 20\ \text{ml（アルコール）}' }
+      - say: 水をxミリリットル足すと、全体は100＋x。アルコールは20のままなので、20÷（100＋x）が0.05になればよいのです。
+        show:
+          - { type: formula, color: yellow, tex: '\frac{20}{100 + x} = 0.05' }
+      - say: 100＋x＝400なので、x＝300。水を300ミリリットル入れます。
+        show:
+          - { type: formula, size: l, color: green, tex: 'x = 300\ \text{ml}' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題4。全校生徒340人の学校。バス通学をしているのは、男子の5％と、女子の15％で、合わせて33人です。男子は何人でしょう。
+        show:
+          - { type: title, text: "問題 ④　バス通学" }
+          - { type: text, text: "全校340人。バス通学：男子の5％＋女子の15％＝33人\n男子は何人？" }
+        pause: 4
+      - say: 男子をx人とすると、女子は340－x人。バス通学の人数で式をつくります。
+        show:
+          - { type: formula, color: yellow, tex: '0.05x + 0.15(340 - x) = 33' }
+      - say: 計算すると、0.05x＋51－0.15x＝33、－0.1x＝－18、x＝180。男子は180人です。
+        show:
+          - { type: formula, tex: '-0.1x = -18' }
+          - { type: formula, size: l, color: green, tex: 'x = 180\ \text{人}' }
+
+  - board: whiteboard
+    steps:
+      - say: 連立方程式の問題。食事を、カロリー450キロカロリー、たんぱく質55グラムに、ぴったり合わせたい。使うのは鶏むね肉と白米だけです。
+        show:
+          - { type: title, text: "問題 ⑤　食事の計算（連立方程式）" }
+          - { type: text, size: s, text: "目標：450kcal・たんぱく質55g" }
+      - say: 鶏むね肉は100グラムあたり150キロカロリー、たんぱく質25グラム。白米は100グラムあたり150キロカロリー、たんぱく質5グラム。それぞれ何グラム食べればよいでしょう。
+        show:
+          - { type: text, size: s, text: "鶏むね肉 100g：150kcal・25g\n白米 100g：150kcal・5g" }
+        pause: 4
+      - say: 鶏むね肉をxグラム、白米をyグラムとします。1グラムあたりで考えると、カロリーは1.5x＋1.5y＝450。たんぱく質は0.25x＋0.05y＝55です。
+        show:
+          - { type: formula, color: yellow, tex: '1.5x + 1.5y = 450' }
+          - { type: formula, color: yellow, tex: '0.25x + 0.05y = 55' }
+      - say: 1つ目の式は、x＋y＝300。2つ目の式を20倍すると、5x＋y＝1100。上の式を引くと、4x＝800、x＝200。y＝100です。
+        added: true
+        show:
+          - { type: formula, tex: 'x + y = 300,\quad 5x + y = 1100 \;\rightarrow\; 4x = 800' }
+          - { type: formula, color: green, tex: '\text{鶏むね肉}\; 200\text{g}、\text{白米}\; 100\text{g}' }
+
+  - board: whiteboard
+    steps:
+      - say: 不等式の問題1。0.5x＞－2。この不等式を満たすxの範囲は？
+        show:
+          - { type: title, text: "問題 ⑥⑦　不等式" }
+          - { type: formula, size: l, tex: '\text{⑥}\; 0.5x > -2' }
+        pause: 3
+      - say: 両辺を0.5で割ります。0.5はプラスなので、向きはそのまま。x＞－4です。
+        show:
+          - { type: formula, color: green, tex: 'x > -4' }
+      - say: 問題2。－2x＜－12。
+        show:
+          - { type: formula, size: l, tex: '\text{⑦}\; -2x < -12' }
+        pause: 3
+      - say: 両辺を－2で割ります。マイナスで割るので、不等号の向きが逆になります。x＞6です。
+        show:
+          - { type: formula, color: green, tex: 'x > 6 \quad \text{（向きが逆になる！）}' }
+
+  - board: whiteboard
+    steps:
+      - say: おつかれさまでした。間違えた問題は、テキストの解説で復習しましょう。
+        show:
+          - { type: title, text: おつかれさまでした }
+          - { type: text, text: "間違えた問題は、テキストの解説で復習しよう" }

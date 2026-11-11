@@ -1,0 +1,145 @@
+title: 練習問題 関数とグラフ
+scenes:
+  - board: slide
+    steps:
+      - say: 「関数とグラフ」の章の練習問題です。問題を読んだら一時停止して、考えてみましょう。
+        show:
+          - { type: title, text: 練習問題　関数とグラフ }
+          - { type: text, size: l, text: "「x が決まると y が決まる」関係を式にしよう" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題1。分速2メートルで、x分進んだときの移動距離をyメートルとします。yをxの式で表しましょう。
+        show:
+          - { type: title, text: "問題 ①" }
+          - { type: text, text: "分速2mで x 分 → 距離 y m。y を x の式で" }
+        pause: 3
+      - say: 1分で2メートル、2分で4メートル。2倍ずつ増えるので、y＝2xです。
+        show:
+          - { type: formula, size: l, color: green, tex: 'y = 2x' }
+      - say: 問題2。底辺3センチ、高さxセンチの三角形の面積を、y平方センチとします。
+        show:
+          - { type: text, text: "② 底辺3cm、高さ x cm の三角形 → 面積 y cm²" }
+        pause: 3
+      - say: 三角形の面積は、底辺×高さ÷2。y＝3/2 xです。数学では、小数ではなく分数のまま書くことが多いです。
+        show:
+          - { type: formula, size: l, color: green, tex: 'y = \tfrac{3}{2}x' }
+      - say: 問題3。針金3メートルの重さが100グラム。この針金xメートルの重さをyグラムとします。
+        show:
+          - { type: text, text: "③ 針金3mで100g → x m の重さ y g" }
+        pause: 3
+      - say: 1メートルあたりの重さは100/3グラム。それにxをかけて、y＝100/3 xです。
+        show:
+          - { type: formula, size: l, color: green, tex: 'y = \tfrac{100}{3}x' }
+
+  - board: whiteboard
+    steps:
+      - say: 問題4。f（x）＝x＋2という関数があります。f（3）と、f（x＋1）を求めましょう。
+        show:
+          - { type: title, text: "問題 ④" }
+          - { type: formula, size: l, tex: 'f(x) = x + 2' }
+        pause: 3
+      - say: f（3）は、xに3を入れるという意味です。3＋2で、5。
+        show:
+          - { type: formula, color: green, tex: 'f(3) = 3 + 2 = 5' }
+      - say: f（x＋1）は、xのところに、x＋1を丸ごと入れます。x＋1＋2で、x＋3です。
+        show:
+          - { type: formula, color: green, tex: 'f(x+1) = (x+1) + 2 = x + 3' }
+
+  - board: whiteboard
+    steps:
+      - say: 一次関数の問題。y＝－3x＋12の、傾きとy切片はいくつでしょう。また、xが7増えると、yはどれだけ変わるでしょう。
+        show:
+          - { type: title, text: "問題 ⑤⑥" }
+          - { type: formula, size: l, tex: 'y = -3x + 12' }
+        pause: 3
+      - say: y＝ax＋bの形と比べると、傾きは－3、y切片は12です。
+        show:
+          - { type: text, color: green, text: "⑤ 傾き －3、y切片 12" }
+      - say: 傾きは、xが1増えたときのyの変化。xが7増えると、－3×7で、－21。yは21減ります。
+        show:
+          - { type: text, color: green, text: "⑥ －3 × 7 ＝ －21（21減る）" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題7。次の中から、x軸に平行な直線と、y軸に平行な直線を選びましょう。
+        show:
+          - { type: title, text: "問題 ⑦" }
+          - { type: text, text: "y＝x　y＝－4　y＝2x　x＝12　3x＋4y＝0　x＝－y" }
+        pause: 3
+      - say: y＝－4は、xがいくつでも、yはずっと－4。横にまっすぐ伸びるので、x軸に平行です。x＝12は、yがいくつでもxは12なので、縦にまっすぐ、y軸に平行です。
+        added: true
+        show:
+          - { type: text, color: green, text: "x軸に平行：y ＝ －4　　y軸に平行：x ＝ 12" }
+          - type: svg
+            at: [300, 400]
+            w: 700
+            h: 260
+            markup: |
+              <path d="M40 130 H660" stroke-opacity="0.4"/><path d="M200 250 V10" stroke-opacity="0.4"/>
+          - type: svg
+            at: [300, 400]
+            w: 700
+            h: 260
+            color: blue
+            markup: |
+              <path d="M40 200 H660"/><g fill="currentColor" stroke="none" font-size="24"><text x="560" y="190">y＝－4</text></g>
+          - type: svg
+            at: [300, 400]
+            w: 700
+            h: 260
+            color: pink
+            markup: |
+              <path d="M480 250 V10"/><g fill="currentColor" stroke="none" font-size="24"><text x="490" y="40">x＝12</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 問題8。古いエアコンは、1か月の電気代が8000円。最新の省エネ機種に買い替えると、最初に12万円かかりますが、電気代は1か月3000円に下がります。何か月より長く使えば、買い替えたほうがお得でしょう。
+        show:
+          - { type: title, text: "問題 ⑧　エアコンの買い替え" }
+          - { type: text, size: s, text: "古い：毎月8,000円　／　新しい：最初に120,000円＋毎月3,000円" }
+        pause: 4
+      - say: 使う月数をxとします。古いエアコンの費用は8000x円。新しいエアコンは、12万＋3000x円。どちらも一次関数ですね。
+        added: true
+        show:
+          - { type: formula, tex: '\text{古い}\; y = 8000x \qquad \text{新しい}\; y = 3000x + 120000' }
+      - say: 2つが等しくなるのは、8000x＝120000＋3000x。5000x＝120000で、x＝24。24か月より長く使えば、買い替えたほうがお得です。
+        added: true
+        show:
+          - { type: formula, color: yellow, tex: '8000x = 120000 + 3000x \;\rightarrow\; x = 24' }
+          - { type: text, color: green, text: "24か月（2年）より長く使うなら、買い替えがお得" }
+
+  - board: whiteboard
+    steps:
+      - say: 二次関数の問題1。次のうち、yがxの二次関数で表されるものを、すべて選びましょう。ア、y＝x²/3。イ、x²y＝12。ウ、2y＋4x²＝0。
+        show:
+          - { type: title, text: "問題 ⑨" }
+          - { type: formula, tex: '\text{ア}\; y = \tfrac{x^2}{3} \qquad \text{イ}\; x^2y = 12 \qquad \text{ウ}\; 2y + 4x^2 = 0' }
+        pause: 4
+      - say: アは、そのまま二次関数です。イとウを「y＝」の形に直すと、イはy＝12/x²、ウはy＝－2x²。イはxの2乗で割っているので、二次関数ではありません。答えはアとウです。
+        show:
+          - { type: formula, tex: '\text{イ}\; y = \tfrac{12}{x^2} \;(\times) \qquad \text{ウ}\; y = -2x^2 \;(\bigcirc)' }
+          - { type: text, color: green, text: "答え：ア、ウ" }
+
+  - board: whiteboard
+    steps:
+      - say: 問題10。ある二次関数で、x＝1のときy＝6、x＝2のときy＝11、x＝3のときy＝18です。yをxの式で表しましょう。
+        show:
+          - { type: title, text: "問題 ⑩" }
+          - { type: text, text: "x＝1 → y＝6　x＝2 → y＝11　x＝3 → y＝18" }
+        pause: 4
+      - say: 二次関数はy＝ax²＋bx＋cの形です。3つの組をそれぞれ代入すると、未知数a、b、cに対して、式が3つできます。
+        show:
+          - { type: formula, tex: 'a + b + c = 6' }
+          - { type: formula, tex: '4a + 2b + c = 11' }
+          - { type: formula, tex: '9a + 3b + c = 18' }
+      - say: 未知数が3つ、式も3つなので、解が決まります。連立方程式として解くと、a＝1、b＝2、c＝3。答えは、y＝x²＋2x＋3です。
+        show:
+          - { type: formula, size: l, color: green, tex: 'y = x^2 + 2x + 3' }
+
+  - board: whiteboard
+    steps:
+      - say: おつかれさまでした。間違えた問題は、テキストの解説で復習しましょう。
+        show:
+          - { type: title, text: おつかれさまでした }
+          - { type: text, text: "間違えた問題は、テキストの解説で復習しよう" }

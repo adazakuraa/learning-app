@@ -8,7 +8,8 @@
     "dev": "npm run content && vite",
     "build": "npm run content && tsc -b && vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "videos": "node pipeline/render/batch.mjs"
   },
   "dependencies": {
     "react": "^19.3.1",
