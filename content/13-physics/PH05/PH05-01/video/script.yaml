@@ -1,0 +1,60 @@
+title: 電気とは何か
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「電気と磁気」の章です。
+        show:
+          - { type: title, text: 第5章　電気と磁気 }
+      - say: この章では、電気の正体、電気回路のきまり、そして、電気と磁石の深い関係を学びます。最後に、電気が家に届くまでを見ていきます。
+        added: true
+        show:
+          - type: list
+            items: ["電気とは何か", "オームの法則と回路", "磁気と電磁誘導", "発電と送電"]
+      - say: スマホの充電、モーター、IHコンロ、発電所。私たちの暮らしを支える電気のしくみを、つなげて理解しましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "電気の正体と、電気と磁気のつながりを、身近な道具で理解する" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「電気とは何か」です。
+        show:
+          - { type: title, text: 電気とは何か }
+      - say: 電気の正体は、電気を帯びた粒、電子の流れです。電気の性質を「電荷」といいます。
+        show:
+          - { type: text, size: l, text: "電気の正体 ＝ **電子**（電荷をもつ粒）の流れ" }
+      - say: 電荷には、プラスとマイナスがあります。磁石のように、同じ符号どうしは反発し、ちがう符号どうしは引き合います。
+        show:
+          - type: svg
+            w: 1000
+            h: 160
+            markup: |
+              <circle cx="100" cy="80" r="36" stroke="#f4a3b8"/><circle cx="300" cy="80" r="36" stroke="#f4a3b8"/>
+              <circle cx="600" cy="80" r="36" stroke="#f4a3b8"/><circle cx="800" cy="80" r="36" stroke="#8fc4ff"/>
+              <g stroke="none" font-size="40" text-anchor="middle"><text x="100" y="94" fill="#f4a3b8">＋</text><text x="300" y="94" fill="#f4a3b8">＋</text><text x="600" y="94" fill="#f4a3b8">＋</text><text x="800" y="94" fill="#8fc4ff">－</text></g>
+              <path d="M150 80 H190 M210 80 H250" stroke="#9aa3ad"/><path d="M660 80 H740" stroke="#f3d77a"/>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="200" y="150" fill="#9aa3ad">反発する</text><text x="700" y="150" fill="#f3d77a">引き合う</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 電気には、3つの大事な量があります。水の流れにたとえると、わかりやすくなります。
+        show:
+          - { type: title, text: 電流・電圧・抵抗 }
+      - say: 電流は、電荷の流れで、単位はアンペア。水道でいえば、流れる水の量です。
+        show:
+          - { type: text, color: blue, text: "**電流**［A アンペア］… 電荷の流れ ＝ 水の量" }
+      - say: 電圧は、電荷を押し出す力で、単位はボルト。水でいえば、水圧です。電圧が高いほど、電流を流す力が強くなります。
+        show:
+          - { type: text, color: yellow, text: "**電圧**［V ボルト］… 押し出す力 ＝ 水圧" }
+      - say: 抵抗は、電流の流れにくさで、単位はオーム。水道管の細さのようなものです。電線の材料、太さ、長さで変わり、抵抗が大きいほど、電流は流れにくくなります。
+        show:
+          - { type: text, color: pink, text: "**抵抗**［Ω オーム］… 流れにくさ ＝ 水道管の細さ" }
+          - type: svg
+            w: 1000
+            h: 160
+            markup: |
+              <rect x="40" y="40" width="160" height="100" stroke="#f3d77a"/><text x="60" y="100" font-size="24" fill="#f3d77a" stroke="none">ポンプ</text>
+              <path d="M200 70 H500 M200 110 H500" stroke="#8fc4ff"/>
+              <path d="M500 70 L560 85 H760 L820 70 M500 110 L560 95 H760 L820 110" stroke="#f4a3b8"/>
+              <path d="M820 70 H960 M820 110 H960" stroke="#8fc4ff"/>
+              <g stroke="none" font-size="22"><text x="300" y="60" fill="#8fc4ff">水の流れ（電流）</text><text x="580" y="140" fill="#f4a3b8">細い管（抵抗）</text></g>

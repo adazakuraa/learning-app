@@ -1,0 +1,62 @@
+title: 磁気と電磁誘導
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「磁気と電磁誘導」です。
+        show:
+          - { type: title, text: 磁気と電磁誘導 }
+      - say: 磁石には、N極とS極があり、同じ極どうしは反発し、ちがう極どうしは引き合います。磁石の力がおよぶ空間を、磁場といいます。
+        show:
+          - { type: text, text: "N と S：同じ極は反発、ちがう極は引き合う　磁石の力がおよぶ空間 ＝ **磁場**" }
+      - say: 方位磁針のN極が、いつも北を向くのは、地球そのものが、ひとつの大きな磁石になっているからです。N極が引き寄せられるので、北極のあたりは、実はS極になっています。
+        show:
+          - type: svg
+            at: [80, 230]
+            w: 600
+            h: 440
+            markup: |
+              <circle cx="300" cy="220" r="160" stroke="#8fc4ff"/>
+              <path d="M300 40 V400" stroke="#9aa3ad" stroke-dasharray="6 8"/>
+              <g stroke="none" font-size="28" text-anchor="middle"><text x="300" y="30" fill="#9aa3ad">北極</text><text x="300" y="435" fill="#9aa3ad">南極</text>
+              <text x="300" y="100" fill="#8fc4ff">S極</text><text x="300" y="360" fill="#f4a3b8">N極</text></g>
+              <path d="M120 60 Q20 220 120 380" stroke="#9aa3ad" stroke-dasharray="4 8"/><path d="M480 60 Q580 220 480 380" stroke="#9aa3ad" stroke-dasharray="4 8"/>
+      - say: 地球の磁場は、太陽から飛んでくる有害な粒、太陽風から、地表を守るシールドの役割もしています。
+        show:
+          - { type: text, at: [740, 300], w: 480, color: yellow, text: "地球の磁場 ＝ 太陽風から守るシールド" }
+
+  - board: whiteboard
+    steps:
+      - say: 電気と磁気は、深く関係しています。電流が流れると、そのまわりに、自然と磁場が生まれます。
+        show:
+          - { type: title, text: 電流と磁場 }
+          - { type: text, text: "電流が流れる → まわりに **磁場** が生まれる" }
+      - say: また、磁場の中で電流が流れると、電線が力を受けます。これを、アンペール力といいます。
+        show:
+          - { type: text, text: "磁場の中で電流が流れる → 力を受ける（**アンペール力**）" }
+      - say: 電気モーターは、磁石ではさんだ電線に電流を流し、この力でぐるぐる回っています。扇風機も、洗濯機も、電気自動車も、モーターで動いています。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "電気モーター：電流 × 磁場 → 回る力（扇風機・洗濯機・電気自動車）" }
+
+  - board: whiteboard
+    steps:
+      - say: そして、その逆です。磁場を変化させると、それだけで、電流が流れ始めます。この現象を、電磁誘導といいます。ファラデーが発見しました。
+        show:
+          - { type: title, text: 電磁誘導 }
+          - { type: box, color: yellow, w: 1000, text: "磁場を **変化** させる → 電流が流れる ＝ **電磁誘導**（ファラデー）" }
+      - say: コイルに磁石を出し入れすると、そのたびに電流が流れます。磁石が止まっていると、電流は流れません。大事なのは「変化」なのです。
+        added: true
+        show:
+          - type: svg
+            w: 1000
+            h: 200
+            markup: |
+              <g stroke="#8fc4ff"><ellipse cx="500" cy="100" rx="20" ry="70"/><ellipse cx="540" cy="100" rx="20" ry="70"/><ellipse cx="580" cy="100" rx="20" ry="70"/><ellipse cx="620" cy="100" rx="20" ry="70"/></g>
+              <rect x="200" y="70" width="200" height="60" stroke="#f4a3b8"/><text x="220" y="112" font-size="28" fill="#f4a3b8" stroke="none">N　磁石</text>
+              <path d="M410 100 H460" stroke="#f3d77a"/><path d="M446 90 L460 100 L446 110" stroke="#f3d77a"/>
+              <text x="700" y="110" font-size="26" fill="#f3d77a" stroke="none">出し入れ → 電流が流れる</text>
+      - say: IHコンロも、電磁誘導を使っています。コンロの中のコイルに、向きが変わり続ける電流を流して、変化する磁場を作ります。すると、上に置いた鉄の鍋の底に電流が流れ、鍋そのものが、ジュール熱で熱くなるのです。
+        show:
+          - { type: text, text: "IHコンロ：変化する磁場 → 鍋の底に電流 → 鍋そのものが発熱" }
+      - say: 駅の自動改札で、ICカードをかざすだけで通れるのも、電磁誘導のおかげです。
+        show:
+          - { type: text, size: s, color: gray, text: "自動改札の IC カードも電磁誘導" }
