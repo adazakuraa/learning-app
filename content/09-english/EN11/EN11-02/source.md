@@ -1,0 +1,21 @@
+# よく出る接頭辞・接尾辞
+
+- 単語の最初（**接頭辞**）や最後（**接尾辞**）のパターンを知っていると、初めて見る単語でも意味が推測できます。
+- **un**-（否定・逆）
+    - unhappy、unlock（解錠）、unfair（フェアでない）
+- **re**-（再び）
+    - rebuild（再構築）、reconsider（再考）、refresh
+- **pre**-（前に）
+    - preview（プレビュー）、prevent（防ぐ）、prepare（準備）
+- **over**-（過度に）
+    - overwork
+- **mis**-（誤って）
+    - misunderstand（誤解）、mislead（誤解）
+- **dis**-（否定・分離）
+    - disagree（同意しない）、disappear（消える）、disconnect（切断）
+- **inter**-（間に）
+    - international、interview
+- **sub**-（下に・副）
+    - submarine（潜水艦）、subtitle（副題）、subway（地下鉄）
+- -**able**（できる）
+    - portable（持ち運びできる）, possible（可能）

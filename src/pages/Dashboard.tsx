@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import { ProgressBar } from '../components/ProgressBar';
+import { SubjectCards } from '../components/SubjectCards';
 import { StatusBadges, UnitCheck } from '../components/StatusBadges';
 import { useCatalog } from '../lib/catalog';
 import { totalSeconds, unitStatus } from '../lib/progress/model';
 import { useProgress } from '../lib/progress/ProgressProvider';
-import { countUnits, subjectCounts } from '../lib/stats';
+import { countUnits } from '../lib/stats';
 import { fmtDuration } from '../lib/vtt';
 
 export function Dashboard() {
@@ -59,21 +60,7 @@ export function Dashboard() {
 
       <section>
         <h2 className="section-title">科目</h2>
-        <div className="cards">
-          {catalog.subjects.map((s) => {
-            const c = subjectCounts(s, doc);
-            return (
-              <Link key={s.id} to={`/subjects/${s.id}`} className="card subject-card">
-                <div className="card-title">{s.title}</div>
-                <ProgressBar value={c.ratio} size="sm" label={`${s.title}の進捗`} />
-                <div className="muted small">
-                  {c.done} / {c.total} 単元 完了
-                </div>
-              </Link>
-            );
-          })}
-          {catalog.subjects.length === 0 && <p className="muted">まだ教材が登録されていません。</p>}
-        </div>
+        <SubjectCards subjects={catalog.subjects} />
       </section>
 
       {recent.length > 0 && (

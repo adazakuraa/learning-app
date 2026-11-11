@@ -1106,3 +1106,16 @@ a.card:hover {
     scroll-behavior: auto !important;
   }
 }
+
+.subject-group + .subject-group {
+  margin-top: 20px;
+}
+.group-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+.cards .subject-card {
+  padding: 14px 16px;
+}

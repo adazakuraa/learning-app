@@ -9,7 +9,7 @@ export type UnitMeta = {
   videoDuration: number | null;
 };
 export type Chapter = { id: string; title: string; description: string; units: UnitMeta[] };
-export type Subject = { id: string; title: string; description: string; chapters: Chapter[] };
+export type Subject = { id: string; title: string; description: string; group: string; chapters: Chapter[] };
 export type Catalog = { generatedAt: string; subjects: Subject[] };
 
 export type UnitContent = {

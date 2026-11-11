@@ -46,3 +46,19 @@ generation:                        # 動画生成時の追加指示（アプリ�
 
 - H.264 + AAC の MP4、`-movflags +faststart` 付き（Safari で確実に再生するため）。
 - 1ファイル 100MB 未満。リポジトリが大きくなったら動画専用リポジトリ（GitHub Pages 有効）に置き、`video.src` に URL を書く。
+
+## Notion からの取り込み（一括）
+
+1. Notion の「勉強用テキスト」ページで エクスポート → Markdown & CSV、サブページを含める
+2. zip を GitHub の Releases に添付する（スマホのブラウザから可）
+3. Claude Code に「Releases の zip を取り込んで」と依頼する。内部では次を実行する:
+
+```sh
+unzip export.zip -d /tmp/export
+python3 scripts/import_notion.py /tmp/export content
+```
+
+- 科目ページの `# XX01｜章名` が章、`### XX01-01｜単元名` が単元になる。
+- 画像は WebP に変換・縮小（最大幅1600px）して単元フォルダに置く。
+- 再実行しても `lesson.md`・動画・字幕・`unit.yaml` の追加項目（video, generation, summary）は消えない。
+- 単元 ID（例: `math-ma01-02`）は進捗データのキー。Notion 側で単元コードを変えると別単元扱いになるので注意。
