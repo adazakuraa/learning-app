@@ -1119,3 +1119,7 @@ a.card:hover {
 .cards .subject-card {
   padding: 14px 16px;
 }
+.credit {
+  margin: -4px 0 12px;
+  text-align: right;
+}

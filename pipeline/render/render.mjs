@@ -197,7 +197,10 @@ async function main() {
   // record in unit.yaml
   const unitYaml = path.join(unitDir, 'unit.yaml');
   const doc = YAML.parseDocument(fs.readFileSync(unitYaml, 'utf8'));
-  doc.set('video', { src: 'video.mp4', captions: 'captions.vtt', duration: Math.round(tl.duration) });
+  const video = { src: 'video.mp4', captions: 'captions.vtt', duration: Math.round(tl.duration) };
+  const manifest = path.join(unitDir, 'video', 'narration', 'manifest.json');
+  if (narrList.length && fs.existsSync(manifest)) video.narration = JSON.parse(fs.readFileSync(manifest, 'utf8'))._credit ?? 'VOICEVOX';
+  doc.set('video', video);
   fs.writeFileSync(unitYaml, doc.toString());
 }
 

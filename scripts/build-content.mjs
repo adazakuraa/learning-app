@@ -166,6 +166,7 @@ function build() {
             captions: resolve(v.captions ?? (fs.existsSync(path.join(uPath, 'captions.vtt')) ? 'captions.vtt' : null)),
             poster: resolve(v.poster),
             duration: v.duration ?? null,
+            narration: v.narration ?? null,
           };
         }
 

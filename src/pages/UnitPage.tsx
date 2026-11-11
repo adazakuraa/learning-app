@@ -79,6 +79,7 @@ export function UnitPage() {
       {content && tab === 'video' && content.video?.src && (
         <section>
           <VideoPlayer ref={player} key={meta.id} unitId={meta.id} src={content.video.src} captions={content.video.captions} poster={content.video.poster} />
+          {content.video.narration && <p className="credit muted small">ナレーション音声：{content.video.narration}</p>}
           {meta.hasText && (
             <button className="btn secondary block" onClick={() => setTab('text')}>
               <Icon name="text" size={18} /> テキストで復習する

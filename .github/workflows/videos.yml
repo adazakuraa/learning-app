@@ -1,0 +1,70 @@
+name: Narrate and render videos
+
+# Runs VOICEVOX (free speech synthesis) on GitHub's runner, generates narration for the
+# video scripts, re-renders the affected videos and commits them back to the branch.
+on:
+  workflow_dispatch:
+    inputs:
+      filter:
+        description: 'Unit id prefix (e.g. math-ma01). Empty = all units with scripts'
+        required: false
+        default: ''
+      rerender_all:
+        description: 'Re-render every matching video, even without new narration'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: videos-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  videos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    services:
+      voicevox:
+        image: voicevox/voicevox_engine:cpu-latest
+        ports:
+          - 50021:50021
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install
+        run: |
+          npm ci
+          npm i --no-save playwright
+          npx playwright install --with-deps chromium
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          pip install pyyaml
+      - name: Wait for VOICEVOX
+        run: |
+          for i in $(seq 1 60); do curl -sf http://localhost:50021/version && exit 0; sleep 5; done
+          echo "VOICEVOX engine did not start"; exit 1
+      - name: Narrate
+        run: python3 pipeline/narrate.py --filter "${{ inputs.filter }}" --changed-list narrated.txt
+      - name: Render
+        run: |
+          if [ "${{ inputs.rerender_all }}" = "true" ]; then
+            find content -path '*/video/script.yaml' | while read f; do
+              python3 -c "import yaml,sys; print(yaml.safe_load(open(sys.argv[1]))['id'])" "$(dirname "$(dirname "$f")")/unit.yaml"
+            done | grep "^${{ inputs.filter }}" > todo.txt || true
+          else
+            cp narrated.txt todo.txt
+          fi
+          echo "rendering $(wc -l < todo.txt) videos"
+          cat todo.txt | xargs -r -P 2 -I{} node pipeline/render/render.mjs {}
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "Narration and videos (${{ inputs.filter || 'all' }}) via VOICEVOX:青山龍星"
+          git push
