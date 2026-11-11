@@ -2,3 +2,7 @@ id: math-ma04-03
 code: MA04-03
 title: 逆・裏・対偶
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 91

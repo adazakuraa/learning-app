@@ -3,3 +3,4 @@ dist
 public/data
 *.tsbuildinfo
 .DS_Store
+*.tmp.mp4

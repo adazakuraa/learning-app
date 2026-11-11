@@ -2,3 +2,7 @@ id: math-ma04-04
 code: MA04-04
 title: 必要条件と十分条件
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 91
