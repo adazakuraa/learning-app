@@ -2,3 +2,8 @@ id: japanese-ja02-04
 code: JA02-04
 title: 品詞の種類
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 134
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: japanese-ja02-05
 code: JA02-05
 title: 主題と主語
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 75
+  narration: VOICEVOX:ずんだもん

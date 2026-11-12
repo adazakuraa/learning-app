@@ -2,3 +2,8 @@ id: japanese-ja02-03
 code: JA02-03
 title: 活用
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 81
+  narration: VOICEVOX:ずんだもん
