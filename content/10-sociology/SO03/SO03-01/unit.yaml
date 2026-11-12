@@ -2,3 +2,8 @@ id: sociology-so03-01
 code: SO03-01
 title: 社会移動と格差
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 106
+  narration: VOICEVOX:ずんだもん

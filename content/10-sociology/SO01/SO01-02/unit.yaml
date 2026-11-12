@@ -2,3 +2,8 @@ id: sociology-so01-02
 code: SO01-02
 title: 社会学的想像力
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 81
+  narration: VOICEVOX:ずんだもん
