@@ -3,3 +3,8 @@ code: MD05-05
 title: いろいろな感染症
 order: 5
 summary: 尿路感染、皮膚の感染、帯状疱疹、マダニ、海外帰り、性感染症の要点です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 164
+  narration: VOICEVOX:ずんだもん

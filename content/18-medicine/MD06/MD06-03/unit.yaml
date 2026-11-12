@@ -3,3 +3,8 @@ code: MD06-03
 title: 出血・切り傷・やけど
 order: 3
 summary: 出血は「強く押さえ続ける」。やけどは「すぐ流水で冷やす」。この2つが基本です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 158
+  narration: VOICEVOX:ずんだもん

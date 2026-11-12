@@ -3,3 +3,8 @@ code: MD06-01
 title: 発疹とかゆみ
 order: 1
 summary: 多くは湿疹やじんま疹ですが、全身の病気のサインになる発疹もあります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 166
+  narration: VOICEVOX:ずんだもん
