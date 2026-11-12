@@ -2,3 +2,7 @@ id: biology-bi03-05
 code: BI03-05
 title: ゲノムと遺伝子技術
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 88
