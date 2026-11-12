@@ -2,3 +2,8 @@ id: world-history-wh02-06
 code: WH02-06
 title: キリスト教の誕生と拡大
 order: 6
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 92
+  narration: VOICEVOX:ずんだもん

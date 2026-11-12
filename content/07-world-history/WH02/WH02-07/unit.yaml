@@ -2,3 +2,8 @@ id: world-history-wh02-07
 code: WH02-07
 title: ローマ帝国の分裂と滅亡
 order: 7
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 68
+  narration: VOICEVOX:ずんだもん
