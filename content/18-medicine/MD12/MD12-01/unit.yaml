@@ -3,3 +3,8 @@ code: MD12-01
 title: 心肺蘇生とAED
 order: 1
 summary: 倒れた人を見たら「119・AED・胸骨圧迫」。そばにいる人の行動が命を救います。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 178
+  narration: VOICEVOX:ずんだもん

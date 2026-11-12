@@ -3,3 +3,8 @@ code: MD11-01
 title: 心の不調：うつ・不安・不眠
 order: 1
 summary: 心の不調は誰にでも起こり、治療で良くなります。「死にたい」と感じたら、ひとりで抱えず相談を。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 170
+  narration: VOICEVOX:ずんだもん

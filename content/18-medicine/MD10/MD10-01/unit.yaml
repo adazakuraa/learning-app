@@ -3,3 +3,8 @@ code: MD10-01
 title: 高齢者の症状の特徴
 order: 1
 summary: 高齢者は典型的な症状が出にくく、「なんとなく元気がない」が重い病気のサインのことがあります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 172
+  narration: VOICEVOX:ずんだもん
