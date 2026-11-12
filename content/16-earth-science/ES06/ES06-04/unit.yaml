@@ -2,3 +2,8 @@ id: earth-science-es06-04
 code: ES06-04
 title: 恒星と銀河
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 82
+  narration: VOICEVOX:青山龍星
