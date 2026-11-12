@@ -2,3 +2,8 @@ id: japanese-history-jh09-06
 code: JH09-06
 title: 文明開化と西洋文化の受容
 order: 6
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 63
+  narration: VOICEVOX:ずんだもん
