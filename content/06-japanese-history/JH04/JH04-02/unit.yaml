@@ -2,3 +2,8 @@ id: japanese-history-jh04-02
 code: JH04-02
 title: 藤原氏の摂関政治
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 62
+  narration: VOICEVOX:ずんだもん

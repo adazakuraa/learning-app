@@ -2,3 +2,8 @@ id: japanese-history-jh04-04
 code: JH04-04
 title: 浄土信仰と末法思想
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 75
+  narration: VOICEVOX:ずんだもん
