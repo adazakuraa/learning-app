@@ -2,3 +2,8 @@ id: english-en02-01
 code: EN02-01
 title: 英語の語順
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 95
+  narration: VOICEVOX:ずんだもん

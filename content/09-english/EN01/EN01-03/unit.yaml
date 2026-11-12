@@ -2,3 +2,8 @@ id: english-en01-03
 code: EN01-03
 title: よく使う発音のルール
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 70
+  narration: VOICEVOX:ずんだもん

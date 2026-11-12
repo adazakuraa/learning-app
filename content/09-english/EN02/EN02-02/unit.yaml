@@ -2,3 +2,8 @@ id: english-en02-02
 code: EN02-02
 title: 動詞と否定文・疑問文
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 107
+  narration: VOICEVOX:ずんだもん
