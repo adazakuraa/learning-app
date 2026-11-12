@@ -3,3 +3,8 @@ code: MD04-03
 title: 下痢・便秘
 order: 3
 summary: 多くは自然に治りますが、血便・脱水・長く続く変化は受診が必要です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 160
+  narration: VOICEVOX:ずんだもん

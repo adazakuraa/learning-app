@@ -3,3 +3,8 @@ code: MD04-06
 title: 食中毒と脱水
 order: 6
 summary: 食中毒の予防の3原則と、下痢・嘔吐のときの脱水の見分け方を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 153
+  narration: VOICEVOX:ずんだもん

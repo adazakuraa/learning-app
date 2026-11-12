@@ -3,3 +3,8 @@ code: MD04-04
 title: 吐血・血便・黒い便
 order: 4
 summary: 消化管からの出血は、量が多いと命にかかわります。黒い便は胃や十二指腸からの出血のサインです。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 141
+  narration: VOICEVOX:ずんだもん

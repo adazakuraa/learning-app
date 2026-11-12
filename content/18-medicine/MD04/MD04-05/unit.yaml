@@ -3,3 +3,8 @@ code: MD04-05
 title: 胸やけ・飲み込みにくさ・黄疸
 order: 5
 summary: 逆流性食道炎はよくある病気です。飲み込みにくさと黄疸は、一度は検査が必要なサインです。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 157
+  narration: VOICEVOX:ずんだもん
