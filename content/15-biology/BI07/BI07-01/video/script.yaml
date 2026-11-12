@@ -1,0 +1,53 @@
+title: 生命の起源
+scenes:
+  - board: slide
+    steps:
+      - say: ここから、生物の最後の章、「進化と生物の歴史」です。
+        show:
+          - { type: title, text: 第7章　進化と生物の歴史 }
+      - say: 生命の始まりから、生き物の進化、そして私たち人類の誕生までを、たどっていきます。
+        added: true
+        show:
+          - type: list
+            items: ["生命の起源", "生物の進化の歴史", "人類の進化"]
+      - say: これまで学んだ細胞や遺伝子、生態系の話が、長い時間の流れの中でつながります。私たちが、どこから来たのかを知る章です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "生命の歴史の大きな流れと、人類の位置づけを知る" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「生命の起源」です。地球が誕生したのは、およそ46億年前です。
+        show:
+          - { type: title, text: 生命の起源 }
+          - type: svg
+            at: [80, 160]
+            w: 1100
+            h: 140
+            markup: |
+              <path d="M40 70 H1060" stroke="#9aa3ad"/>
+              <circle cx="60" cy="70" r="10" fill="#f3d77a" stroke="none"/><circle cx="250" cy="70" r="10" fill="#9be0b0" stroke="none"/><circle cx="1050" cy="70" r="10" fill="#8fc4ff" stroke="none"/>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="60" y="40" fill="#f3d77a">46億年前</text><text x="60" y="120" fill="#f3d77a">地球誕生</text><text x="250" y="40" fill="#9be0b0">38億年前</text><text x="250" y="120" fill="#9be0b0">最初の細胞</text><text x="1050" y="40" fill="#8fc4ff">いま</text></g>
+      - say: 最初の細胞が生まれたのは、およそ38億年前。核を持たない、原核細胞だったと考えられています。生まれた場所の候補のひとつは、深い海の底の、熱水噴出孔です。
+        show:
+          - { type: text, at: [80, 340], text: "最初の細胞（約38億年前）＝ **原核細胞**。候補地：深海の **熱水噴出孔**" }
+          - { type: image, src: 1000003009.webp, at: [540, 395], w: 200 }
+
+  - board: whiteboard
+    steps:
+      - say: 生命がどうやって生まれたのかは、まだ完全にはわかっていません。
+        show:
+          - { type: title, text: どうやって生まれた？ }
+      - say: 考えられているのは、こんな流れです。アミノ酸などの有機物が、雷や、熱水のエネルギーで化学反応を起こし、長い長い時間をかけて、自分と同じものをつくる、自己複製する分子が生まれた、というものです。
+        show:
+          - type: svg
+            w: 1100
+            h: 160
+            markup: |
+              <g stroke-width="3"><rect x="10" y="40" width="270" height="80" rx="14" stroke="#f3d77a"/><rect x="410" y="40" width="270" height="80" rx="14" stroke="#9be0b0"/><rect x="810" y="40" width="270" height="80" rx="14" stroke="#8fc4ff"/></g>
+              <path d="M285 80 H400 M685 80 H800" stroke="#9aa3ad"/><path d="M390 70 L400 80 L390 90 M790 70 L800 80 L790 90" stroke="#9aa3ad"/>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="145" y="88" fill="#f3d77a">アミノ酸など</text><text x="545" y="88" fill="#9be0b0">化学反応</text><text x="945" y="88" fill="#8fc4ff">自己複製する分子</text><text x="545" y="150" fill="#9aa3ad">雷・熱水のエネルギー＋長い時間</text></g>
+      - say: 自分のコピーをつくれる分子があらわれると、コピーのまちがいから、少しずつちがうものが生まれ、うまく増えるものが残っていきます。これが、進化の始まりです。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, text: "コピー ＋ 少しのまちがい ＋ よく増えるものが残る ＝ 進化の始まり" }

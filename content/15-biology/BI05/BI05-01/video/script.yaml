@@ -1,0 +1,75 @@
+title: 消化と吸収
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「人体の仕組み」の章です。
+        show:
+          - { type: title, text: 第5章　人体の仕組み }
+      - say: この章では、私たちの体の中で、栄養をとりこみ、運び、情報を伝え、体を守るしくみを、ひとつずつ見ていきます。
+        added: true
+        show:
+          - type: list
+            size: s
+            items: ["消化と吸収", "循環系（心臓と血液）", "呼吸系", "神経系と脳", "泌尿器", "ホルモンと内分泌系", "免疫の仕組み"]
+      - say: 健康診断の結果、病気や薬、ワクチンの話。自分の体を知ることは、健康を守ることにつながります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "体の各しくみの役割と、つながりを理解する" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「消化と吸収」です。食べ物を、体が使える栄養に分解して、とりこむのが、消化器の役割です。食べ物を分解する物質を、消化酵素といい、胃液などの消化液にとけています。
+        show:
+          - { type: title, text: 消化と吸収 }
+          - { type: text, text: "食べ物を分解する物質 ＝ **消化酵素**（消化液にふくまれる）" }
+      - say: 化学で学んだ、触媒の仲間です。体温ほどの温度でも、分解をすばやく進めてくれます。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "消化酵素は「触媒」の一種（化学の第4章）" }
+
+  - board: whiteboard
+    steps:
+      - say: 食べ物の通り道を、順に見ていきましょう。
+        show:
+          - { type: title, text: 消化の道すじ }
+          - type: svg
+            at: [80, 140]
+            w: 1100
+            h: 520
+            markup: |
+              <g stroke-width="3">
+              <rect x="20" y="20" width="200" height="70" rx="12" stroke="#f3d77a"/><rect x="20" y="150" width="200" height="70" rx="12" stroke="#f4a3b8"/><rect x="20" y="280" width="200" height="70" rx="12" stroke="#9be0b0"/><rect x="20" y="410" width="200" height="70" rx="12" stroke="#8fc4ff"/></g>
+              <g stroke="none" font-size="30" text-anchor="middle"><text x="120" y="66" fill="#f3d77a">口</text><text x="120" y="196" fill="#f4a3b8">胃</text><text x="120" y="326" fill="#9be0b0">小腸</text><text x="120" y="456" fill="#8fc4ff">大腸</text></g>
+              <path d="M120 90 V150 M120 220 V280 M120 350 V410" stroke="#9aa3ad"/>
+      - say: 口では、だ液にふくまれるアミラーゼが、デンプンを分解します。ご飯をよくかむと甘く感じるのは、このためです。
+        show:
+          - { type: text, at: [340, 165], w: 860, color: yellow, text: "口：アミラーゼがデンプンを分解（よくかむと甘い）" }
+      - say: 胃では、ペプシンがタンパク質を分解します。胃の中は、pH2ほどの強い酸性で、細菌を殺す役割もあります。
+        show:
+          - { type: text, at: [340, 295], w: 860, color: pink, text: "胃：ペプシンがタンパク質を分解。強い酸（pH2）で細菌を殺す" }
+      - say: 小腸では、すい臓から出る酵素で、糖、脂肪、タンパク質を、さらに細かく分解します。そして、小腸の壁から、栄養を吸収します。
+        show:
+          - { type: text, at: [340, 425], w: 860, color: green, text: "小腸：すい臓の酵素でさらに分解し、栄養を吸収" }
+      - say: 大腸では、水分を吸収して、便をつくります。
+        show:
+          - { type: text, at: [340, 555], w: 860, color: blue, text: "大腸：水分を吸収して便をつくる" }
+
+  - board: whiteboard
+    steps:
+      - say: 小腸の内側のかべには、じゅう毛という、細かい突起が無数にあります。これで表面積を大きくして、効率よく栄養を吸収しています。
+        show:
+          - { type: title, text: じゅう毛 }
+          - type: svg
+            w: 1000
+            h: 200
+            markup: |
+              <path d="M40 180 H960" stroke="#9be0b0"/>
+              <path d="M60 180 V80 Q80 50 100 80 V180 M140 180 V70 Q160 40 180 70 V180 M220 180 V80 Q240 50 260 80 V180 M300 180 V70 Q320 40 340 70 V180 M380 180 V80 Q400 50 420 80 V180 M460 180 V70 Q480 40 500 70 V180 M540 180 V80 Q560 50 580 80 V180 M620 180 V70 Q640 40 660 70 V180" stroke="#9be0b0"/>
+              <text x="700" y="110" font-size="24" fill="#9be0b0" stroke="none">表面積を大きくして吸収</text>
+      - say: 化学で学んだ、「表面積を増やすと反応しやすい」という話と同じ考え方ですね。小腸の表面積を広げると、テニスコート1面分ほどになるといわれます。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "広げるとテニスコート1面分ほど（表面積を増やす工夫）" }
+      - say: 吸収された栄養は、血液やリンパ管に入り、肝臓でたくわえられたり、作りかえられたりしてから、全身に配られます。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "吸収 → 血液・リンパ管 → **肝臓** でたくわえ・作りかえ → 全身へ" }
