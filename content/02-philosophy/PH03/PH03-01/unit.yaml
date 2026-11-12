@@ -2,3 +2,8 @@ id: philosophy-ph03-01
 code: PH03-01
 title: 自由意志はあるのか
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 143
+  narration: VOICEVOX:ずんだもん
