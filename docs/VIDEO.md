@@ -43,6 +43,11 @@ scenes:
 通常は GitHub Actions（`.github/workflows/videos.yml`）が VOICEVOX で自動生成する。話者は `pipeline/voice.json` で決める（現在：ずんだもん）。
 このファイルを変えると、すべての動画のナレーションが作り直され、動画も再書き出しされる。
 
+## 確認（静止画とレイアウトチェック）
+
+`STILLS_DIR=/tmp/x node pipeline/preview.mjs <unit-id> ...` で、各シーンの最後のコマを PNG に書き出し、要素どうしの重なりや画面外へのはみ出しを報告する（MP4 は作らない）。
+図の上にわざと重ねたラベルも報告されるので、画像で確認して判断する。`pipeline/render/` の外に置いてあるので、このスクリプトを直しても全動画の再書き出しは起きない。
+
 ## 容量
 
 1単元（5〜8分）で数MB〜十数MB。リポジトリが大きくなったら、動画専用リポジトリ（GitHub Pages 有効）に移し、`unit.yaml` の `video.src` を URL にする。

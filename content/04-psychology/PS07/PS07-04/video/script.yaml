@@ -1,0 +1,28 @@
+title: 心理療法の種類
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「心理療法」です。心の問題に、心理学の方法でアプローチするのが、心理療法です。薬による治療と、組み合わせることも多くあります。
+        show:
+          - { type: title, text: 認知行動療法 }
+          - { type: text, text: "**心理療法**：心理学の方法で心の問題にアプローチ（薬と組み合わせることも）" }
+      - say: 認知行動療法は、今、最も科学的な証拠がある心理療法で、うつ病や、不安の病気、PTSDなど、はば広い病気に効果があるとされています。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "**認知行動療法**：最も科学的証拠がある。うつ・不安・PTSD などに効果" }
+
+  - board: whiteboard
+    steps:
+      - say: 前提にあるのは、できごとそのものではなく、できごとの受けとめ方、つまり認知が、気持ちと行動を決める、という考えです。
+        show:
+          - { type: title, text: 受けとめ方が気持ちを決める }
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <g stroke-width="3"><rect x="10" y="60" width="260" height="80" rx="12" stroke="#9aa3ad"/><rect x="420" y="60" width="260" height="80" rx="12" stroke="#f3d77a"/><rect x="830" y="60" width="260" height="80" rx="12" stroke="#f4a3b8"/></g>
+              <path d="M275 100 H415 M400 90 L415 100 L400 110 M685 100 H825 M810 90 L825 100 L810 110" stroke="#9aa3ad"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="140" y="95" fill="#9aa3ad">できごと</text><text x="140" y="125" font-size="16" fill="#9aa3ad">メールの返事がない</text><text x="550" y="95" fill="#f3d77a">受けとめ方（認知）</text><text x="550" y="125" font-size="16" fill="#f3d77a">「きらわれた」</text><text x="960" y="95" fill="#f4a3b8">気持ち・行動</text><text x="960" y="125" font-size="16" fill="#f4a3b8">落ちこむ</text></g>
+      - say: 例えば、メールの返事が来ない。これを、きらわれた、と受けとめれば落ちこみますが、いそがしいのかな、と受けとめれば、気になりません。認知行動療法では、こうした、ゆがんだ受けとめ方のパターンを見つけて、変えていくことをめざします。
+        added: true
+        show:
+          - { type: box, color: green, w: 1100, text: "「いそがしいのかな」と受けとめ直す → ゆがんだ受けとめ方のパターンを見つけて変える" }

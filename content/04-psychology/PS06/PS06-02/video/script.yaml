@@ -1,0 +1,42 @@
+title: 同調と服従
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「同調と服従」です。人は、どれほど集団の圧力に従うのでしょうか。2つの歴史的な実験が、衝撃的な答えを示しました。
+        show:
+          - { type: title, text: アッシュの同調実験 }
+      - say: アッシュの同調実験では、長さのちがう3本の線のうち、どれが基準の線と同じ長さかを答えます。答えは、明らかです。
+        show:
+          - type: svg
+            w: 1000
+            h: 220
+            markup: |
+              <path d="M100 30 V180" stroke="#e8eef5" stroke-width="6"/>
+              <path d="M450 80 V180" stroke="#9aa3ad" stroke-width="6"/><path d="M600 30 V180" stroke="#9be0b0" stroke-width="6"/><path d="M750 60 V180" stroke="#9aa3ad" stroke-width="6"/>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="100" y="215" fill="#e8eef5">基準</text><text x="450" y="215" fill="#9aa3ad">A</text><text x="600" y="215" fill="#9be0b0">B（正解）</text><text x="750" y="215" fill="#9aa3ad">C</text></g>
+      - say: でも、ほかのメンバー、実はみんな仕かけ人が、全員まちがった答えを言うと、およそ75パーセントの人が、少なくとも1回は、まちがった答えに合わせてしまいました。多数派の圧力は、明らかなまちがいさえ、認めさせてしまうのです。
+        show:
+          - { type: box, color: pink, w: 1000, text: "まわりが全員まちがえると、約75％が少なくとも1回は合わせてしまった" }
+
+  - board: whiteboard
+    steps:
+      - say: ミルグラムの服従実験では、参加者は、学習の実験だと説明され、となりの部屋の学習者がまちがえるたびに、電気ショックをあたえるよう指示されます。実際には、電気は流れておらず、学習者は、演技をしている仕かけ人です。
+        show:
+          - { type: title, text: ミルグラムの服従実験 }
+          - { type: text, text: "まちがえるたびに電気ショック（実際は流れていない・学習者は演技）" }
+      - say: 電圧は、少しずつ上がり、学習者は、苦しむ声を上げます。それでも、白衣を着た実験者が、続けてください、あなたに責任はありません、と言い続けると、およそ65パーセントの人が、最高の450ボルト、危険なレベルまで、続けてしまいました。
+        show:
+          - { type: box, color: pink, w: 1100, text: "白衣の権威者が「続けて」と言うと、約65％が最高の450ボルトまで続けた" }
+
+  - board: whiteboard
+    steps:
+      - say: この実験は、ナチスによる、ユダヤ人の虐殺、ホロコーストを念頭においたものでした。
+        show:
+          - { type: title, text: ふつうの人でも }
+      - say: ふつうの人間でも、権威からの命令があれば、残酷な行為をしてしまう。この結論は、残酷なことは、特別な悪人しかしない、という常識を、くつがえしました。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "ふつうの人でも、権威の命令があれば残酷なことをしてしまう" }
+      - say: だからこそ、おかしいと思ったら、立ち止まって、ノーと言う勇気が、大切なのです。
+        added: true
+        show:
+          - { type: text, color: green, text: "おかしいと思ったら、立ち止まって「ノー」と言う勇気" }

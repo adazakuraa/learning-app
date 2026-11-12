@@ -1,0 +1,46 @@
+title: 記憶の仕組みと限界
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「記憶のしくみ」です。記憶は、ビデオのように、できごとを正確に保存して、再生するしくみではありません。体験したことを、組み立て直す、プロセスなのです。
+        show:
+          - { type: title, text: 記憶の3つの種類 }
+          - { type: text, color: pink, text: "記憶はビデオの録画ではなく、思い出すたびに「組み立て直す」もの" }
+      - say: 記憶には、感覚記憶、短期記憶、長期記憶の、3つの種類があります。
+        show:
+          - type: svg
+            w: 1100
+            h: 180
+            markup: |
+              <g stroke-width="3"><rect x="10" y="40" width="300" height="100" rx="14" stroke="#9aa3ad"/><rect x="400" y="40" width="300" height="100" rx="14" stroke="#f3d77a"/><rect x="790" y="40" width="300" height="100" rx="14" stroke="#8fc4ff"/></g>
+              <path d="M315 90 H395 M380 80 L395 90 L380 100 M705 90 H785 M770 80 L785 90 L770 100" stroke="#9aa3ad"/>
+              <g stroke="none" text-anchor="middle"><text x="160" y="85" font-size="26" fill="#9aa3ad">感覚記憶</text><text x="160" y="120" font-size="18" fill="#9aa3ad">1〜2秒</text><text x="550" y="85" font-size="26" fill="#f3d77a">短期記憶</text><text x="550" y="120" font-size="18" fill="#f3d77a">今使っている情報</text><text x="940" y="85" font-size="26" fill="#8fc4ff">長期記憶</text><text x="940" y="120" font-size="18" fill="#8fc4ff">ほぼ無制限</text><text x="355" y="170" font-size="18" fill="#9aa3ad">注意を向ける</text><text x="745" y="170" font-size="18" fill="#9aa3ad">くり返す</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 感覚記憶は、目や耳が受けとった情報を、1、2秒だけ保つ、一時置き場です。意識が向かなかったものは、すぐに消えます。
+        show:
+          - { type: title, text: 感覚記憶と短期記憶 }
+          - { type: box, color: gray, w: 1100, title: 感覚記憶, text: "受けとった情報を1〜2秒だけ保つ。意識が向かないとすぐ消える" }
+      - say: 短期記憶、ワーキングメモリーは、今、意識が使っている情報の、作業台のような場所です。一度に覚えられるのは、5つから9つほど、といわれます。電話番号を聞いて、すぐくり返す。計算の途中を、頭に置いておく。くり返さないと、すぐに消えます。
+        show:
+          - { type: box, color: yellow, w: 1100, title: 短期記憶（ワーキングメモリー）, text: "今使う情報の作業台。容量は5〜9個ほど（電話番号・計算の途中）" }
+      - say: 電話番号が、3つや4つのかたまりに区切って書かれているのは、この限界に合わせた工夫なのです。
+        added: true
+        show:
+          - { type: text, color: gray, text: "電話番号を区切って書く ＝ 短期記憶の限界に合わせた工夫" }
+
+  - board: whiteboard
+    steps:
+      - say: 長期記憶は、長い間保たれる記憶で、容量は、ほぼ無制限とされています。
+        show:
+          - { type: title, text: 長期記憶 }
+          - { type: text, text: "**長期記憶**：長く保たれる。容量はほぼ無制限" }
+      - say: 知識の記憶である、意味記憶。自分が体験したできごとの記憶である、エピソード記憶。そして、自転車の乗り方のように、体で覚える、手続き記憶などがあります。
+        show:
+          - { type: box, color: blue, at: [80, 220], w: 350, title: 意味記憶, text: "知識（首都の名前）" }
+          - { type: box, color: green, at: [460, 220], w: 350, title: エピソード記憶, text: "体験したできごと" }
+          - { type: box, color: pink, at: [840, 220], w: 350, title: 手続き記憶, text: "体で覚える（自転車）" }
+      - say: 大切なのは、記憶は、組み立て直される、という点です。思い出すたびに、記憶は変化します。あとからえた情報や、そのときの気分、ほかの人の言葉によって、記憶の中身は、書きかえられてしまうのです。
+        show:
+          - { type: box, at: [80, 440], w: 1100, color: yellow, text: "思い出すたびに変わる。あとの情報・気分・人の言葉で書きかえられる" }

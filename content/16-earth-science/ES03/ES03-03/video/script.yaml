@@ -8,8 +8,8 @@ scenes:
           - { type: text, text: "プレートの衝突で押し上げられる → 山がち（国土の約3/4 が山地・丘陵）" }
       - say: 中部地方の、飛騨山脈、木曽山脈、赤石山脈は、まとめて日本アルプスとよばれ、3000メートル級の山々が連なっています。
         show:
-          - { type: image, src: 1000002951.webp, at: [80, 220], w: 700 }
-          - { type: text, at: [820, 260], w: 400, color: yellow, text: "**日本アルプス**：飛騨・木曽・赤石山脈。3000m 級" }
+          - { type: image, src: 1000002951.webp, at: [80, 250], w: 640 }
+          - { type: text, at: [760, 290], w: 460, color: yellow, text: "**日本アルプス**：飛騨・木曽・赤石山脈。3000m 級" }
 
   - board: whiteboard
     steps:

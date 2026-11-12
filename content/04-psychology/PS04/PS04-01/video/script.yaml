@@ -1,0 +1,31 @@
+title: 感情とは何か
+scenes:
+  - board: slide
+    steps:
+      - say: 第4章、「感情と動機づけ」です。
+        show:
+          - { type: title, text: 第4章　感情と動機づけ }
+      - say: 感情はなぜあるのか。感情と考えの関係。やる気のしくみ。そして、ストレスと体の関係を学びます。
+        show:
+          - type: list
+            items: ["感情とは何か", "感情と認知の相互作用", "動機づけの理論", "ストレスと心身の関係"]
+      - say: 気分の波や、やる気が出ない日。自分の心とうまくつきあうためのヒントを見つけましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "感情・やる気・ストレスのしくみを知り、心とうまくつきあう" }
+
+  - board: whiteboard
+    steps:
+      - say: 感情は、なぜあるのでしょうか。進化の観点から見ると、感情は、生きのびて子孫を残すのに役立つ行動を、うながすしくみです。
+        show:
+          - { type: title, text: 感情の役割 }
+          - { type: box, color: yellow, w: 1100, text: "感情 ＝ 生きのびるのに役立つ行動をうながすしくみ" }
+      - say: 恐怖は、危険から逃げさせる。嫌悪は、有害なものをさけさせる。愛着は、子どもや仲間の世話をさせる。怒りは、不正に立ち向かわせます。
+        show:
+          - { type: text, color: blue, text: "**恐怖** → 危険から逃げる" }
+          - { type: text, color: green, text: "**嫌悪** → 有害なものをさける" }
+          - { type: text, color: pink, text: "**愛着** → 子ども・仲間の世話をする" }
+          - { type: text, color: yellow, text: "**怒り** → 不正に立ち向かう" }
+      - say: 感情のない、純粋に合理的な人間は、実は、生きのびるのに不利なのです。感情は、じゃまものではなく、大切な道具なのですね。
+        show:
+          - { type: text, color: gray, text: "感情がない人間は、むしろ生きのびるのに不利" }

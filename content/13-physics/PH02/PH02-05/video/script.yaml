@@ -45,11 +45,11 @@ scenes:
               <path d="M310 110 V190" stroke="#f4a3b8"/><path d="M300 176 L310 192 L320 176" stroke="#f4a3b8"/>
       - say: 月は、慣性の法則で、まっすぐ進もうとします。
         show:
-          - { type: text, at: [740, 200], color: yellow, w: 480, text: "① まっすぐ進もうとする（慣性）" }
+          - { type: text, at: [740, 170], color: yellow, w: 480, text: "① まっすぐ進もうとする（慣性）" }
       - say: 同時に、万有引力で、地球に引き寄せられて落ちていきます。
         show:
           - { type: text, at: [740, 290], color: pink, w: 480, text: "② 地球に引き寄せられる（万有引力）" }
       - say: まっすぐ進む分と、落ちる分がちょうど合わさって、地球のまわりを回り続けているのです。ずっと落ち続けているのに、地球の表面がその分カーブしていくので、ぶつからない。人工衛星も、同じしくみで回っています。
         show:
-          - { type: text, at: [740, 380], color: green, w: 480, text: "③ ①と②が合わさって、ぐるぐる回り続ける" }
-          - { type: text, at: [740, 500], size: s, color: gray, w: 480, text: "人工衛星も同じしくみ" }
+          - { type: text, at: [740, 410], color: green, w: 480, text: "③ ①と②が合わさって、ぐるぐる回り続ける" }
+          - { type: text, at: [740, 540], size: s, color: gray, w: 480, text: "人工衛星も同じしくみ" }
