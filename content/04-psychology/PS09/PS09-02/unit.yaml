@@ -2,3 +2,8 @@ id: psychology-ps09-02
 code: PS09-02
 title: レジリエンスと成長
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 51
+  narration: VOICEVOX:ずんだもん
