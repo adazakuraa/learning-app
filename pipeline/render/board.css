@@ -58,3 +58,9 @@ svg.draw { overflow: visible; display: block; }
 .ch { opacity: 0; }
 
 .t-formula.l { font-size: 52px; } .t-formula.s { font-size: 30px; }
+
+/* KATEX-CJK-START */
+/* Formulas may contain Japanese (\text{分}, （食塩）). KaTeX marks those characters `cjk_fallback` and has no glyphs for
+   them, so without this they render as empty boxes. Use the Japanese web fonts of the board instead. */
+.t-formula .katex .cjk_fallback { font-family: 'Noto Sans JP', 'Klee One', sans-serif; font-style: normal; font-weight: 500; }
+/* KATEX-CJK-END */
