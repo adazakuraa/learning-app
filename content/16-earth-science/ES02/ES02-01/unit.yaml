@@ -2,3 +2,8 @@ id: earth-science-es02-01
 code: ES02-01
 title: 火山の仕組みと種類
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 121
+  narration: VOICEVOX:青山龍星

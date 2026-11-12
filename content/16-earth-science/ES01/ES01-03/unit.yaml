@@ -2,3 +2,8 @@ id: earth-science-es01-03
 code: ES01-03
 title: 地球の歴史と地層
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 118
+  narration: VOICEVOX:青山龍星
