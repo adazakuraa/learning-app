@@ -2,3 +2,8 @@ id: sociology-so03-03
 code: SO03-03
 title: 人種・民族と差別の構造
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 74
+  narration: VOICEVOX:ずんだもん
