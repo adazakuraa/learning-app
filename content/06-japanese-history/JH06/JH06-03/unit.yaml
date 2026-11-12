@@ -2,3 +2,8 @@ id: japanese-history-jh06-03
 code: JH06-03
 title: 室町文化（能・茶・禅）
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 83
+  narration: VOICEVOX:ずんだもん
