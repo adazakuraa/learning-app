@@ -2,3 +2,8 @@ id: english-en07-01
 code: EN07-01
 title: There is / There are
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 72
+  narration: VOICEVOX:ずんだもん

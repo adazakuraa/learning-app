@@ -2,3 +2,8 @@ id: english-en06-03
 code: EN06-03
 title: その他の助動詞２
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 73
+  narration: VOICEVOX:ずんだもん
