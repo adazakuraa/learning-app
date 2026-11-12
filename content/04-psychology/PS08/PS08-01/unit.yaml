@@ -2,3 +2,8 @@ id: psychology-ps08-01
 code: PS08-01
 title: 犯罪者の心理と動機
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 132
+  narration: VOICEVOX:ずんだもん
