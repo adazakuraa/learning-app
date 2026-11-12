@@ -2,3 +2,8 @@ id: psychology-ps10-05
 code: PS10-05
 title: 地位・承認・排除への感受性
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 111
+  narration: VOICEVOX:ずんだもん
