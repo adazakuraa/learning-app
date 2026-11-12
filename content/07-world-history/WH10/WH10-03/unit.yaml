@@ -2,3 +2,8 @@ id: world-history-wh10-03
 code: WH10-03
 title: キューバ危機
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 68
+  narration: VOICEVOX:ずんだもん

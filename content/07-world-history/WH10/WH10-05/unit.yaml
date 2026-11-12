@@ -2,3 +2,8 @@ id: world-history-wh10-05
 code: WH10-05
 title: アフリカの独立とその後
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 89
+  narration: VOICEVOX:ずんだもん
