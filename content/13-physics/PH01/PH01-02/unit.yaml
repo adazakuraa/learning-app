@@ -2,3 +2,8 @@ id: physics-ph01-02
 code: PH01-02
 title: 単位と測定
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 90
+  narration: VOICEVOX:青山龍星

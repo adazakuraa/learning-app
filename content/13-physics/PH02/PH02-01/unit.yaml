@@ -2,3 +2,8 @@ id: physics-ph02-01
 code: PH02-01
 title: 加速度
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 83
+  narration: VOICEVOX:青山龍星
