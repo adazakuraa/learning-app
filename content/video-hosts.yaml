@@ -1,0 +1,10 @@
+# Where the MP4 videos are published.
+# Each GitHub Pages site may hold at most 1 GB, so the videos are split across two sites.
+# Subjects listed here are NOT copied into this app's site; the app links to
+#   <base>/videos/<unit-id>.mp4
+# instead. The other site (repo adazakuraa/learning-app-2) copies those MP4s from this
+# repo's main branch with its own workflow (hourly, or run it by hand after a merge).
+# Captions (.vtt) always stay in this app (a <track> must come from the same origin).
+external:
+  - base: https://adazakuraa.github.io/learning-app-2
+    subjects: [japanese-history, world-history, geography, politics-economics, philosophy, religion, sociology]

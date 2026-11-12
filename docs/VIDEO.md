@@ -51,3 +51,15 @@ scenes:
 ## 容量
 
 1単元（5〜8分）で数MB〜十数MB。リポジトリが大きくなったら、動画専用リポジトリ（GitHub Pages 有効）に移し、`unit.yaml` の `video.src` を URL にする。
+
+## 動画の置き場（2サイトに分割）
+
+GitHub Pages は 1 サイト 1GB までなので、動画を 2 つのサイトに分けている。
+
+- `content/video-hosts.yaml` に書いた科目の MP4 は、このアプリのサイトにはコピーされず、
+  `https://adazakuraa.github.io/learning-app-2/videos/<単元ID>.mp4` を参照する（`scripts/build-content.mjs`）。
+- その MP4 は、リポジトリ `adazakuraa/learning-app-2` の `Publish videos` ワークフローが
+  learning-app の **main** から集めて公開する（毎時。マージ直後は手動実行で即反映）。
+- 字幕（.vtt）は常にこのアプリ側に置く（`<track>` は同一オリジンが必要）。
+- 動画の生成・保存場所はこれまでどおり content/ のまま（CI の変更なし）。
+- どちらかのサイトが 1GB に近づいたら、video-hosts.yaml の科目を入れ替える。

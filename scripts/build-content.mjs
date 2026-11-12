@@ -105,11 +105,20 @@ function copyFile(from, to) {
   fs.copyFileSync(from, to);
 }
 
+/** Subjects whose MP4s are served from another site (see content/video-hosts.yaml). */
+function videoHosts() {
+  const cfg = readYaml(path.join(contentDir, 'video-hosts.yaml'));
+  const map = new Map();
+  for (const h of cfg?.external ?? []) for (const s of h.subjects ?? []) map.set(s, String(h.base).replace(/\/$/, ''));
+  return map;
+}
+
 function build() {
   fs.rmSync(outDir, { recursive: true, force: true });
   fs.mkdirSync(path.join(outDir, 'units'), { recursive: true });
   const unitIds = new Set();
   const subjects = [];
+  const hosts = videoHosts();
 
   if (!fs.existsSync(contentDir)) fs.mkdirSync(contentDir);
 
@@ -161,8 +170,10 @@ function build() {
             used.add(p);
             return `${assetBase}/${p}`;
           };
+          const host = hosts.get(subject.id);
+          const external = host && !isExternal(v.src) && fs.existsSync(path.join(uPath, v.src));
           video = {
-            src: resolve(v.src),
+            src: external ? `${host}/videos/${id}.mp4` : resolve(v.src),
             captions: resolve(v.captions ?? (fs.existsSync(path.join(uPath, 'captions.vtt')) ? 'captions.vtt' : null)),
             poster: resolve(v.poster),
             duration: v.duration ?? null,
