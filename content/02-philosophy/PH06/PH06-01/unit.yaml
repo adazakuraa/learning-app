@@ -2,3 +2,8 @@ id: philosophy-ph06-01
 code: PH06-01
 title: 他者を理解することはできるか
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 99
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: philosophy-ph05-03
 code: PH05-03
 title: 個人のアイデンティティ
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 114
+  narration: VOICEVOX:ずんだもん
