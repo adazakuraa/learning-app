@@ -2,3 +2,8 @@ id: politics-economics-pe01-03
 code: PE01-03
 title: 市場の失敗
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 141
+  narration: VOICEVOX:ずんだもん
