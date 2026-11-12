@@ -3,3 +3,8 @@ code: MD08-02
 title: 女性の症状：月経・不正出血・下腹部痛
 order: 2
 summary: 妊娠の可能性がある腹痛、閉経後の出血は見逃してはいけないサインです。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 147
+  narration: VOICEVOX:ずんだもん

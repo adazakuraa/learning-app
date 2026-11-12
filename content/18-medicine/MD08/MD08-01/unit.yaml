@@ -3,3 +3,8 @@ code: MD08-01
 title: 排尿の症状
 order: 1
 summary: 尿が出ない・血尿・陰嚢の激痛など、泌尿器の急ぐサインを学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 144
+  narration: VOICEVOX:ずんだもん

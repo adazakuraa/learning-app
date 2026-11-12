@@ -3,3 +3,8 @@ code: MD07-03
 title: 鼻血・鼻の症状
 order: 3
 summary: 鼻血は正しく押さえればほとんど止まります。上を向かないのがポイントです。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 122
+  narration: VOICEVOX:ずんだもん

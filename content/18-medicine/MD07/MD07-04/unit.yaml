@@ -3,3 +3,8 @@ code: MD07-04
 title: 口・歯・あごの症状
 order: 4
 summary: 歯の痛みは歯科へ。顔の腫れで息苦しいとき、治らない口内炎は要注意です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 124
+  narration: VOICEVOX:ずんだもん
