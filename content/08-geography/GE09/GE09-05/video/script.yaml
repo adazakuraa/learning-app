@@ -1,0 +1,27 @@
+title: 日本の農業・工業・貿易
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「日本の農業、工業、貿易」です。日本の食料自給率は、およそ38パーセントと低く、多くの食料を輸入にたよっています。
+        show:
+          - { type: title, text: 食料自給率 }
+          - type: svg
+            w: 1000
+            h: 120
+            markup: |
+              <g stroke="none"><rect x="40" y="30" width="350" height="60" fill="#9be0b0" fill-opacity="0.7"/><rect x="390" y="30" width="570" height="60" fill="#9aa3ad" fill-opacity="0.3"/></g>
+              <g stroke="none" font-size="22"><text x="70" y="68" fill="#1b2a24">国産 約38％</text><text x="560" y="68" fill="#e8eef5">輸入</text></g>
+      - say: もし輸入が止まったら、今の食卓の、6割以上が消えてしまう、ということです。食料の安全保障が議論されるのは、このためです。
+        added: true
+        show:
+          - { type: text, color: gray, text: "輸入が止まれば食卓の6割以上が消える → 食料安全保障の議論" }
+
+  - board: whiteboard
+    steps:
+      - say: 日本の工業は、東京から名古屋、大阪、北九州へと連なる、太平洋ベルトと呼ばれる、帯のような地域に集まっています。鉄鋼、自動車、電機、化学製品などが、主な産業です。
+        show:
+          - { type: title, text: 工業と貿易 }
+          - { type: box, color: yellow, w: 1100, title: 太平洋ベルト, text: "東京〜名古屋〜大阪〜北九州の帯に工業が集中（鉄鋼・自動車・電機・化学）" }
+      - say: 資源を輸入して、製品に加工して輸出する、加工貿易が、日本経済の基本のしくみです。主な貿易の相手国は、中国、アメリカ、韓国、台湾、オーストラリアで、中国への依存度が高いことが、リスクとして議論されています。
+        show:
+          - { type: box, color: blue, w: 1100, title: 加工貿易, text: "資源を輸入 → 加工 → 製品を輸出。相手国：中国・アメリカ・韓国・台湾・オーストラリア" }

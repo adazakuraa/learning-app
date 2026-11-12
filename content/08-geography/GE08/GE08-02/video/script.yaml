@@ -1,0 +1,27 @@
+title: 日本の山地・平野・河川
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「日本の山地、平野、川」です。日本の国土の、およそ73パーセントは、山地と丘陵です。平野は、全体のおよそ13パーセントしかありません。
+        show:
+          - { type: title, text: 山がちな日本 }
+          - type: svg
+            w: 1000
+            h: 120
+            markup: |
+              <g stroke="none"><rect x="40" y="30" width="657" height="60" fill="#9be0b0" fill-opacity="0.6"/><rect x="697" y="30" width="117" height="60" fill="#f3d77a" fill-opacity="0.7"/><rect x="814" y="30" width="126" height="60" fill="#9aa3ad" fill-opacity="0.4"/></g>
+              <g stroke="none" font-size="22"><text x="250" y="68" fill="#1b2a24">山地・丘陵 約73％</text><text x="702" y="68" fill="#1b2a24">平野13％</text><text x="820" y="68" fill="#e8eef5">その他</text></g>
+      - say: 日本の中央には、日本の屋根と呼ばれる、飛騨山脈、木曽山脈、赤石山脈、まとめて日本アルプスが、そびえています。
+        show:
+          - { type: image, src: 1000002951.webp, at: [80, 260], w: 560 }
+          - { type: text, at: [690, 290], w: 530, color: yellow, text: "**日本アルプス**（日本の屋根）：飛騨・木曽・赤石山脈" }
+
+  - board: whiteboard
+    steps:
+      - say: 主な平野は、どれも、川が運んだ土砂が積もってできた、沖積平野です。関東平野は、面積およそ1万7000平方キロメートルで、日本最大の平野です。ほかに、名古屋の濃尾平野、大阪の大阪平野も、大都市の土台になっています。
+        show:
+          - { type: title, text: 平野と川 }
+          - { type: box, color: green, w: 1100, text: "平野は川が運んだ土砂でできた **沖積平野**。最大は **関東平野**（約1万7000km²）。濃尾平野・大阪平野" }
+      - say: 日本の川は、長さが短く、流れが急なのが特徴です。いちばん長い信濃川でも、367キロメートルです。山から海までが近いので、雨が降ると一気に流れ下り、洪水が起きやすい一方、水力発電には向いています。
+        show:
+          - { type: box, color: blue, w: 1100, text: "日本の川：短く急（最長は **信濃川** 367km）→ 洪水が起きやすいが、水力発電に向く" }

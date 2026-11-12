@@ -1,0 +1,31 @@
+title: 地球温暖化と環境問題
+scenes:
+  - board: slide
+    steps:
+      - say: 地理の最後の章、「現代世界の地理的課題」です。
+        show:
+          - { type: title, text: 第10章　現代世界の地理的課題 }
+      - say: 環境問題、領土と地政学、水と食料の問題を学びます。
+        show:
+          - type: list
+            items: ["地球温暖化と環境問題", "領土問題と地政学", "水資源と食料問題"]
+      - say: これまで学んだ地形、気候、資源、人口の知識が、今の世界の問題を読みとく道具になります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "地理の知識で、今の世界の課題を読みとく" }
+
+  - board: whiteboard
+    steps:
+      - say: 海洋プラスチック汚染は、今の環境問題の象徴です。毎年800万トン以上のプラスチックが、海に流れこみ、細かくくだけた、マイクロプラスチックとして、食物連鎖に入りこんでいます。
+        show:
+          - { type: title, text: 海洋プラスチック }
+          - { type: box, color: pink, w: 1100, text: "毎年800万トン以上のプラスチックが海へ → **マイクロプラスチック** として食物連鎖に" }
+      - say: 小さな魚が飲みこみ、それを大きな魚が食べ、そして、その魚を私たちが食べる。海に捨てたものは、めぐりめぐって、私たちのもとに帰ってくるのです。
+        added: true
+        show:
+          - type: svg
+            w: 1000
+            h: 150
+            markup: |
+              <g stroke="none" font-size="26" text-anchor="middle"><text x="120" y="80" fill="#9aa3ad">プラスチック</text><text x="380" y="80" fill="#8fc4ff">小さな魚</text><text x="620" y="80" fill="#9be0b0">大きな魚</text><text x="860" y="80" fill="#f3d77a">私たち</text></g>
+              <path d="M220 72 H300 M460 72 H540 M700 72 H780" stroke="#9aa3ad"/><path d="M290 64 L300 72 L290 80 M530 64 L540 72 L530 80 M770 64 L780 72 L770 80" stroke="#9aa3ad"/>

@@ -1,0 +1,42 @@
+title: 日本の世界遺産
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「日本の世界遺産」です。北から南へ、代表的なものをめぐっていきましょう。
+        show:
+          - { type: title, text: 日本の世界遺産 }
+          - type: list
+            items: ["自然遺産：知床・白神山地・屋久島・奄美大島など・小笠原諸島", "文化遺産：寺社・城・遺跡・産業遺産など"]
+  - board: whiteboard
+    steps:
+      - say: 北海道と北東北の縄文遺跡群。奥州藤原氏が、仏の世界を表そうとした平泉の、中尊寺金色堂。徳川家康がまつられている、日光東照宮。明治の日本の発展を支えた、富岡製糸場です。北海道の知床や、青森と秋田にまたがる、ブナの森の白神山地も、世界遺産です。
+        show:
+          - { type: title, text: "北海道・東北・関東" }
+          - { type: image, src: 1000003031.webp, at: [159, 130], w: 381, caption: "三内丸山遺跡" }
+          - { type: image, src: 1000003032.webp, at: [857, 130], w: 146, caption: "中尊寺金色堂" }
+          - { type: image, src: 1000003033.webp, at: [178, 412], w: 344, caption: "日光東照宮" }
+          - { type: image, src: 1000003034.webp, at: [751, 412], w: 357, caption: "富岡製糸場" }
+  - board: whiteboard
+    steps:
+      - say: 雪に強い合掌造りの白川郷。古都京都の平等院。現存する世界最古の木造建築、法隆寺。そして、紀伊山地の霊場と参詣道の、那智です。富士山や、古都奈良、姫路城も、世界遺産です。
+        show:
+          - { type: title, text: "中部・近畿" }
+          - { type: image, src: 1000003035.webp, at: [177, 130], w: 346, caption: "白川郷（合掌造り）" }
+          - { type: image, src: 1000003036.webp, at: [733, 130], w: 393, caption: "平等院（古都京都）" }
+          - { type: image, src: 1000003037.webp, at: [139, 412], w: 421, caption: "法隆寺" }
+          - { type: image, src: 1000002070.webp, at: [844, 412], w: 171, caption: "那智（紀伊山地）" }
+  - board: whiteboard
+    steps:
+      - say: 大阪の、百舌鳥・古市古墳群。かつて日本の銀が世界の3分の1をしめたといわれる時代の、石見銀山。海にうかぶ大鳥居の、厳島神社です。広島の原爆ドームも、平和を願う世界遺産です。
+        show:
+          - { type: title, text: "近畿・中国" }
+          - { type: image, src: 1000003038.webp, at: [275, 130], w: 149, caption: "大阪の古墳群" }
+          - { type: image, src: 1000003039.webp, at: [756, 130], w: 348, caption: "石見銀山" }
+          - { type: image, src: 1000003040.webp, at: [172, 412], w: 356, caption: "厳島神社" }
+  - board: whiteboard
+    steps:
+      - say: 江戸時代に禁じられたキリスト教を守り続けた人々の、潜伏キリシタン関連遺産。そして、琉球王国の首里城の守礼門です。屋久島の縄文杉、アマミノクロウサギがすむ奄美大島、明治の産業革命を伝える軍艦島なども、世界遺産です。
+        show:
+          - { type: title, text: "九州・沖縄" }
+          - { type: image, src: 1000003041.webp, at: [80, 130], w: 540, caption: "崎津集落（天草）" }
+          - { type: image, src: 1000003043.webp, at: [660, 130], w: 540, caption: "首里城 守礼門" }
