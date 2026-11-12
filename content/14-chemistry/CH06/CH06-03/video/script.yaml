@@ -1,0 +1,30 @@
+title: カルボン酸
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「カルボン酸」です。カルボン酸は、カルボキシ基、COOHがついた有機物です。アルコールを酸化すると、できます。
+        show:
+          - { type: title, text: カルボン酸 }
+          - { type: text, size: l, text: "**カルボン酸** ＝ **COOH**（カルボキシ基）がついた有機物" }
+          - { type: text, text: "アルコール → 酸化 → カルボン酸" }
+      - say: 代表が、お酢の主成分、酢酸です。前の単元で、お酒が体の中で最後に変わったのも、この酢酸でしたね。
+        show:
+          - { type: formula, size: l, color: yellow, tex: '\text{CH}_3\text{COOH}\;（酢酸）' }
+
+  - board: whiteboard
+    steps:
+      - say: お酢づくりも、この反応を利用しています。酵母が、糖からアルコールをつくり、そのアルコールを酢酸菌が酸化させると、お酢ができます。これが、醸造酢のつくり方です。
+        show:
+          - { type: title, text: お酢ができるまで }
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <rect x="30" y="60" width="200" height="80" rx="12" stroke="#9aa3ad"/><rect x="400" y="60" width="260" height="80" rx="12" stroke="#8fc4ff"/><rect x="830" y="60" width="220" height="80" rx="12" stroke="#9be0b0"/>
+              <g stroke="none" font-size="28" text-anchor="middle"><text x="130" y="110" fill="#9aa3ad">糖</text><text x="530" y="110" fill="#8fc4ff">アルコール</text><text x="940" y="110" fill="#9be0b0">お酢（酢酸）</text></g>
+              <path d="M240 100 H390 M670 100 H820" stroke="#f3d77a"/>
+              <g stroke="none" font-size="22" text-anchor="middle" fill="#f3d77a"><text x="315" y="80">酵母</text><text x="745" y="80">酸化</text></g>
+      - say: ワインを置いておくと酸っぱくなるのも、同じしくみです。昔の人は、化学を知らなくても、この変化を上手に利用していたのですね。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "ワインを置いておくと酸っぱくなる ＝ 同じしくみ" }

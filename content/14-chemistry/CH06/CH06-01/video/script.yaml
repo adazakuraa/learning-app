@@ -1,0 +1,58 @@
+title: 炭素と有機物
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「身近な物質の化学」の章です。
+        show:
+          - { type: title, text: 第6章　身近な物質の化学 }
+      - say: この章では、炭素をふくむ物質、有機物を中心に、お酒、お酢、石けん、プラスチックなど、身近な物質の正体を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["炭素と有機物", "アルコールとアルデヒド", "カルボン酸", "油脂と石鹸", "プラスチックと高分子"]
+      - say: 二日酔いのしくみ、石けんが汚れを落とす理由、プラスチックごみの問題。生活とつながる化学です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "身のまわりの物質の正体を知り、生活や環境の話につなげる" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「炭素と有機物」です。有機物とは、炭素をふくむ化合物のことです。逆に、炭素をふくまないものを、無機物といいます。
+        show:
+          - { type: title, text: 有機物と無機物 }
+          - { type: text, color: yellow, text: "**有機物** … 炭素をふくむ化合物" }
+          - { type: text, color: gray, text: "**無機物** … 炭素をふくまない（水・食塩・金属など）" }
+      - say: 糖、タンパク質、脂質、DNA、プラスチック、アルコール、お酢。私たちのまわりの大部分は、有機物です。
+        show:
+          - { type: text, text: "糖・タンパク質・脂質・DNA・プラスチック・アルコール・お酢 … みんな有機物" }
+
+  - board: whiteboard
+    steps:
+      - say: 有機物の基本は、炭素と水素だけでできた、炭化水素です。
+        show:
+          - { type: title, text: 炭化水素 }
+      - say: メタンは、天然ガスの主成分。エタンやプロパンは、ガスの燃料です。ベンゼンは、炭素が輪のようにつながった形をしています。
+        show:
+          - type: list
+            items: ["メタン CH₄ … 天然ガスの主成分", "エタン C₂H₆、プロパン C₃H₈ … ガス燃料", "ベンゼン C₆H₆ … 輪の形"]
+          - type: svg
+            at: [800, 380]
+            w: 380
+            h: 300
+            markup: |
+              <path d="M190 30 L300 95 L300 215 L190 280 L80 215 L80 95 Z" stroke="#f3d77a"/>
+              <path d="M205 60 L285 105 M285 205 L205 250 M95 205 V105" stroke="#f3d77a"/>
+              <text x="190" y="165" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">ベンゼン</text>
+
+  - board: whiteboard
+    steps:
+      - say: 炭素の骨組みに、酸素や窒素などが結びついた部分を、「官能基」といいます。この官能基の種類で、化合物の性質が決まります。
+        show:
+          - { type: title, text: 官能基 }
+          - { type: box, color: yellow, w: 1000, text: "炭素の骨組み ＋ **官能基**（酸素・窒素などの部分）→ 官能基が性質を決める" }
+      - say: 次の単元からのアルコール、アルデヒド、カルボン酸は、すべてこの官能基のちがいで区別されます。人にたとえるなら、骨組みが体、官能基が服装のようなもの。服装で、役割が変わるのです。
+        show:
+          - { type: text, size: s, color: gray, text: "アルコール・アルデヒド・カルボン酸 ＝ 官能基のちがい" }
+      - say: 有機物の形は、構造式で表します。炭素と水素は、ふくまれているのが当たり前なので、省略して書くことが多く、ほかの元素がつくときだけ、書き足します。
+        show:
+          - { type: text, size: s, color: gray, text: "構造式：C と H は省略して書くことが多い" }

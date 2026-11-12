@@ -1,0 +1,49 @@
+title: 油脂と石鹸
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「油脂と石けん」です。油脂は、グリセリンに、脂肪酸と呼ばれる酸が3つ結びついた形の有機物です。バター、植物油、体の脂肪などが、油脂です。
+        show:
+          - { type: title, text: 油脂 }
+          - type: svg
+            w: 900
+            h: 220
+            markup: |
+              <rect x="40" y="30" width="160" height="170" rx="10" stroke="#f3d77a"/><text x="120" y="122" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">グリセリン</text>
+              <g stroke="#8fc4ff"><path d="M200 60 H700"/><path d="M200 115 H700"/><path d="M200 170 H700"/></g>
+              <text x="720" y="120" font-size="26" fill="#8fc4ff" stroke="none">脂肪酸 × 3</text>
+          - { type: text, size: s, color: gray, text: "バター・植物油・体の脂肪" }
+
+  - board: whiteboard
+    steps:
+      - say: 脂肪酸には、飽和脂肪酸と、不飽和脂肪酸があります。
+        show:
+          - { type: title, text: 飽和脂肪酸と不飽和脂肪酸 }
+      - say: 飽和脂肪酸は、ふつうの温度で固まりやすい。バターやラードです。不飽和脂肪酸は、ふつうの温度で液体で、酸化しやすい。植物油や魚の油です。
+        show:
+          - { type: box, color: yellow, w: 1000, title: 飽和脂肪酸, text: "常温で固まりやすい（バター・ラード）" }
+          - { type: box, color: blue, w: 1000, title: 不飽和脂肪酸, text: "常温で液体・酸化しやすい（植物油・魚の油）" }
+
+  - board: whiteboard
+    steps:
+      - say: 油脂と、アルカリの水酸化ナトリウムを合わせて作られるのが、石けんです。
+        show:
+          - { type: title, text: 石けんのしくみ }
+          - { type: text, text: "油脂 ＋ 水酸化ナトリウム → **石けん**" }
+      - say: 石けんの分子は、水になじむ部分と、油になじむ部分の、両方を持っています。マッチ棒のような形で、頭が水になじみ、しっぽが油になじみます。
+        show:
+          - type: svg
+            w: 1100
+            h: 300
+            markup: |
+              <circle cx="550" cy="150" r="70" stroke="#f3d77a" fill="#f3d77a" fill-opacity="0.15"/>
+              <text x="550" y="158" font-size="22" fill="#f3d77a" stroke="none" text-anchor="middle">油汚れ</text>
+              <g stroke="#f3d77a"><path d="M550 80 V30"/><path d="M620 150 H690"/><path d="M550 220 V270"/><path d="M480 150 H410"/><path d="M600 100 L640 60"/><path d="M500 200 L460 240"/></g>
+              <g fill="#8fc4ff" stroke="none"><circle cx="550" cy="22" r="12"/><circle cx="700" cy="150" r="12"/><circle cx="550" cy="278" r="12"/><circle cx="400" cy="150" r="12"/><circle cx="646" cy="54" r="12"/><circle cx="454" cy="246" r="12"/></g>
+              <g stroke="none" font-size="22"><text x="740" y="140" fill="#8fc4ff">水になじむ頭（外側）</text><text x="740" y="180" fill="#f3d77a">油になじむしっぽ（内側）</text></g>
+      - say: しっぽが油汚れを囲み、頭が外側の水の方を向くことで、油汚れを包みこんだまま、水で洗い流せるのです。
+        show:
+          - { type: text, color: green, text: "しっぽが油を囲み、頭が水を向く → 油汚れごと水で流せる" }
+      - say: このような性質を持つ分子を、界面活性剤といいます。洗剤、シャンプー、マヨネーズのように油と水を混ぜる乳化剤は、すべて界面活性剤の応用です。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "**界面活性剤**：洗剤・シャンプー・乳化剤（マヨネーズ）" }

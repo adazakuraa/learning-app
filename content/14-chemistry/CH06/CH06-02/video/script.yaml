@@ -1,0 +1,44 @@
+title: アルコールとアルデヒド
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「アルコールとアルデヒド」です。アルコールは、炭化水素の水素のひとつを、ヒドロキシ基、OHに置きかえたものです。
+        show:
+          - { type: title, text: アルコール }
+          - { type: text, size: l, text: "**アルコール** ＝ 炭化水素の H を **OH**（ヒドロキシ基）に置きかえたもの" }
+      - say: お酒にふくまれる、エタノールは、エタンの水素のひとつを、OHに変えたものです。
+        show:
+          - { type: formula, size: l, color: yellow, tex: '\text{C}_2\text{H}_6\;（エタン）\rightarrow \text{C}_2\text{H}_5\text{OH}\;（エタノール）' }
+
+  - board: whiteboard
+    steps:
+      - say: お酒を飲むと、エタノールは肝臓で、2段階で酸化されます。エタノールから、アセトアルデヒド、そして酢酸へ。
+        show:
+          - { type: title, text: お酒が体の中で変わるまで }
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <rect x="30" y="50" width="250" height="90" rx="12" stroke="#8fc4ff"/><rect x="420" y="50" width="300" height="90" rx="12" stroke="#f4a3b8"/><rect x="860" y="50" width="210" height="90" rx="12" stroke="#9be0b0"/>
+              <g stroke="none" font-size="28" text-anchor="middle"><text x="155" y="105" fill="#8fc4ff">エタノール</text><text x="570" y="105" fill="#f4a3b8">アセトアルデヒド</text><text x="965" y="105" fill="#9be0b0">酢酸</text></g>
+              <path d="M290 95 H410 M730 95 H850" stroke="#f3d77a"/>
+              <g stroke="none" font-size="22" text-anchor="middle" fill="#f3d77a"><text x="350" y="80">酸化</text><text x="790" y="80">酸化</text></g>
+              <text x="570" y="185" font-size="22" fill="#f4a3b8" stroke="none" text-anchor="middle">二日酔いの原因</text>
+      - say: 途中でできるアセトアルデヒドが、二日酔いの主な原因です。頭痛や吐き気、だるさは、アセトアルデヒドの毒によるものです。さらに酸化されて、お酢の成分の酢酸になると、害はなくなります。
+        show:
+          - { type: text, color: pink, text: "アセトアルデヒド → 頭痛・吐き気・だるさ（二日酔い）" }
+      - say: アセトアルデヒドを分解する速さは、人によってちがいます。分解する酵素の働きが、生まれつき弱い人が、「お酒に弱い」体質なのです。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "分解する酵素が生まれつき弱い ＝ お酒に弱い体質" }
+
+  - board: whiteboard
+    steps:
+      - say: アルコールには、ほかの種類もあります。メタノールは、木精とも呼ばれ、飲むと失明したり、命を落としたりする危険な毒です。イソプロパノールは、消毒用アルコールに使われます。
+        show:
+          - { type: title, text: いろいろなアルコール }
+          - { type: text, color: pink, text: "**メタノール** CH₃OH … 飲むと失明・死亡の危険（毒）" }
+          - { type: text, color: blue, text: "**イソプロパノール** … 消毒用" }
+      - say: 同じ「アルコール」でも、炭素の数が1つちがうだけで、性質がまったく変わる。化学のおもしろく、こわいところです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "炭素の数が1つちがうだけで、性質が大きく変わる" }
