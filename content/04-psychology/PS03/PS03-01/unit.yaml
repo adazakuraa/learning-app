@@ -2,3 +2,8 @@ id: psychology-ps03-01
 code: PS03-01
 title: システム1とシステム2
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 115
+  narration: VOICEVOX:ずんだもん
