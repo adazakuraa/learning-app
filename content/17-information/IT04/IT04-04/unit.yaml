@@ -2,3 +2,8 @@ id: information-it04-04
 code: IT04-04
 title: 生成AIへの効果的な質問の仕方
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 100
+  narration: VOICEVOX:青山龍星
