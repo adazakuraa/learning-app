@@ -2,3 +2,8 @@ id: politics-economics-pe06-01
 code: PE06-01
 title: 民主主義とは何か
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 104
+  narration: VOICEVOX:ずんだもん
