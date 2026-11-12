@@ -3,3 +3,8 @@ code: MD13-01
 title: 医療のかかり方とお金
 order: 1
 summary: かかりつけ医、薬の基本、医療費の制度など、医療を上手に使うための基礎です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 170
+  narration: VOICEVOX:ずんだもん

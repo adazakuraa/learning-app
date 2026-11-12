@@ -3,3 +3,8 @@ code: MD13-02
 title: 検査の基本：血液・CT・MRIなど
 order: 2
 summary: 有名な検査が何を見ているのか、ざっくり知っておきます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 187
+  narration: VOICEVOX:ずんだもん

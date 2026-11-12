@@ -3,3 +3,8 @@ code: MD12-03
 title: 中毒・薬の飲みすぎ・お酒
 order: 3
 summary: 薬の飲みすぎ、一酸化炭素、急性アルコール中毒への対応を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 149
+  narration: VOICEVOX:ずんだもん
