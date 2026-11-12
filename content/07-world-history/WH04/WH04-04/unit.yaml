@@ -2,3 +2,8 @@ id: world-history-wh04-04
 code: WH04-04
 title: シルクロードと東西交流
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 100
+  narration: VOICEVOX:ずんだもん
