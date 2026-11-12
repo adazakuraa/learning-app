@@ -2,3 +2,8 @@ id: philosophy-ph06-02
 code: PH06-02
 title: 承認と尊厳
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 104
+  narration: VOICEVOX:ずんだもん
