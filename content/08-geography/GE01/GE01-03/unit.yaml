@@ -2,3 +2,8 @@ id: geography-ge01-03
 code: GE01-03
 title: 地図の読み方
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 73
+  narration: VOICEVOX:ずんだもん
