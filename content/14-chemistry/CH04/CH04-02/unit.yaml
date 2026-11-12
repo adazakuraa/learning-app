@@ -2,3 +2,8 @@ id: chemistry-ch04-02
 code: CH04-02
 title: エントロピーとは何か
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 78
+  narration: VOICEVOX:青山龍星
