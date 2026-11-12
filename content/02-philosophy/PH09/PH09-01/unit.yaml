@@ -2,3 +2,8 @@ id: philosophy-ph09-01
 code: PH09-01
 title: AIと人間の違い
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 127
+  narration: VOICEVOX:ずんだもん

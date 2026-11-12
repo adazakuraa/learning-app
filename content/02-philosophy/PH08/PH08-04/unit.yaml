@@ -2,3 +2,8 @@ id: philosophy-ph08-04
 code: PH08-04
 title: よく生きるとは
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 40
+  narration: VOICEVOX:ずんだもん
