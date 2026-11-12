@@ -2,3 +2,8 @@ id: politics-economics-pe03-02
 code: PE03-02
 title: 日本の財政問題
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 89
+  narration: VOICEVOX:ずんだもん

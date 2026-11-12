@@ -2,3 +2,8 @@ id: politics-economics-pe04-01
 code: PE04-01
 title: 貿易と比較優位
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 124
+  narration: VOICEVOX:ずんだもん
