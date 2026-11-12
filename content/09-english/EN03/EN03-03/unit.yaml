@@ -2,3 +2,8 @@ id: english-en03-03
 code: EN03-03
 title: 未来表現
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 86
+  narration: VOICEVOX:ずんだもん

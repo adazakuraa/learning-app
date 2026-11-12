@@ -2,3 +2,8 @@ id: english-en04-02
 code: EN04-02
 title: 代名詞の格変化
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 78
+  narration: VOICEVOX:ずんだもん
