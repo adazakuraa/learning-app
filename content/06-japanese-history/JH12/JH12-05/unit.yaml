@@ -2,3 +2,8 @@ id: japanese-history-jh12-05
 code: JH12-05
 title: 安保闘争と戦後民主主義の試練
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 101
+  narration: VOICEVOX:ずんだもん
