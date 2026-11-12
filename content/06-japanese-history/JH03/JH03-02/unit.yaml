@@ -2,3 +2,8 @@ id: japanese-history-jh03-02
 code: JH03-02
 title: 平城京と都市文化
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 43
+  narration: VOICEVOX:ずんだもん
