@@ -3,3 +3,8 @@ code: MD02-03
 title: 脳卒中
 order: 3
 summary: 脳卒中は時間との勝負です。「BE-FAST」で疑い、発症時刻を確認してすぐ119。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 150
+  narration: VOICEVOX:ずんだもん

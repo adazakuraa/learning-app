@@ -3,3 +3,8 @@ code: MD02-01
 title: 頭痛
 order: 1
 summary: ほとんどの頭痛は心配ありませんが、くも膜下出血などの危険な頭痛は「突然」「最悪」が特徴です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 175
+  narration: VOICEVOX:ずんだもん
