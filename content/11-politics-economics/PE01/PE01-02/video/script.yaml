@@ -1,0 +1,38 @@
+title: 需要と供給・市場価格
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「需要と供給」です。市場経済の中心にあるのが、需要と供給のしくみです。
+        show:
+          - { type: title, text: 需要と供給 }
+      - say: 需要は、買いたい量です。値段が下がると、買いたい量は増え、値段が上がると、減ります。供給は、売りたい量です。値段が上がると、もうかるので、売りたい量が増え、値段が下がると、減ります。
+        show:
+          - type: svg
+            w: 1000
+            h: 400
+            markup: |
+              <path d="M80 20 V360 H900" stroke="#9aa3ad"/>
+              <path d="M140 60 Q400 260 820 330" stroke="#f4a3b8" stroke-width="4"/>
+              <path d="M140 330 Q500 260 820 60" stroke="#8fc4ff" stroke-width="4"/>
+              <circle cx="452" cy="230" r="10" fill="#f3d77a" stroke="none"/>
+              <path d="M80 230 H442" stroke="#f3d77a" stroke-dasharray="6 6"/>
+              <g stroke="none" font-size="22"><text x="20" y="40" fill="#9aa3ad">値段</text><text x="860" y="390" fill="#9aa3ad">量</text><text x="820" y="320" fill="#f4a3b8">需要（買いたい）</text><text x="760" y="50" fill="#8fc4ff">供給（売りたい）</text><text x="500" y="215" fill="#f3d77a">均衡価格</text></g>
+      - say: 需要と供給が、ちょうど一致する値段を、均衡価格といいます。2本の曲線の、交わる点で決まります。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "**均衡価格** ＝ 需要と供給が一致する値段（2本の線の交点）" }
+
+  - board: whiteboard
+    steps:
+      - say: 値段が均衡価格より高いと、売りたい量が多すぎて、売れ残りが出ます。安いと、買いたい量が多すぎて、品不足になります。だから、値段は自然と、均衡価格に向かって動いていきます。
+        show:
+          - { type: title, text: 神の見えざる手 }
+          - { type: image, src: 1000003213.webp, at: [80, 120], w: 640 }
+          - { type: text, at: [760, 135], w: 460, color: pink, text: "高すぎる → 売れ残り → 値下がり" }
+          - { type: text, at: [760, 250], w: 460, color: blue, text: "安すぎる → 品不足 → 値上がり" }
+      - say: だれかが命令しなくても、市場が、自然とちょうどよい値段に落ち着かせる。これを、アダム・スミスは、神の見えざる手、と表現しました。
+        show:
+          - { type: box, at: [760, 370], w: 460, color: yellow, text: "**アダム・スミス**：「**神の見えざる手**」" }
+      - say: 野菜が豊作の年に、値段が下がるのも、このしくみですね。
+        added: true
+        show:
+          - { type: text, at: [80, 500], w: 1120, color: gray, text: "例：野菜が豊作 → 売りたい量が増える → 値段が下がる" }

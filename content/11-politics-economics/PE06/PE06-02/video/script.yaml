@@ -1,0 +1,42 @@
+title: 国家の三要素と主権
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「国家の三要素」です。国家として認められるには、3つの要素が必要とされます。領土、国民、主権です。
+        show:
+          - { type: title, text: 国家の三要素 }
+          - type: svg
+            w: 1100
+            h: 160
+            markup: |
+              <g stroke-width="3"><rect x="40" y="30" width="300" height="100" rx="16" stroke="#9be0b0"/><rect x="400" y="30" width="300" height="100" rx="16" stroke="#8fc4ff"/><rect x="760" y="30" width="300" height="100" rx="16" stroke="#f3d77a"/></g>
+              <g stroke="none" font-size="32" text-anchor="middle"><text x="190" y="92" fill="#9be0b0">領土</text><text x="550" y="92" fill="#8fc4ff">国民</text><text x="910" y="92" fill="#f3d77a">主権</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 領土は、国が、ほかをしめ出して支配する、地理的な範囲です。陸地だけでなく、海岸から12海里、およそ22キロメートルの領海、200海里、およそ370キロメートルの、排他的経済水域、そして、上空の領空もふくまれます。
+        show:
+          - { type: title, text: 領土・領海・EEZ }
+          - type: svg
+            w: 1100
+            h: 220
+            markup: |
+              <rect x="20" y="80" width="200" height="120" fill="#9be0b0" fill-opacity="0.4" stroke="none"/>
+              <rect x="220" y="80" width="140" height="120" fill="#8fc4ff" fill-opacity="0.5" stroke="none"/>
+              <rect x="360" y="80" width="600" height="120" fill="#8fc4ff" fill-opacity="0.2" stroke="none"/>
+              <path d="M20 20 H360" stroke="#f3d77a" stroke-dasharray="6 6"/>
+              <g stroke="none" font-size="20"><text x="80" y="145" fill="#e8eef5">陸地</text><text x="225" y="135" fill="#e8eef5">領海</text><text x="225" y="160" font-size="16" fill="#e8eef5">12海里</text><text x="560" y="135" fill="#e8eef5">排他的経済水域（EEZ）</text><text x="600" y="160" font-size="16" fill="#e8eef5">200海里まで</text><text x="120" y="45" fill="#f3d77a">領空</text></g>
+      - say: 排他的経済水域では、漁業や資源を開発する権利が、その国だけに認められています。日本は、島国なので、国土は小さくても、排他的経済水域の広さは、世界6位です。
+        show:
+          - { type: box, color: blue, w: 1100, text: "EEZ：漁業・資源開発の権利はその国だけ。日本は国土は小さいが、EEZは世界6位" }
+
+  - board: whiteboard
+    steps:
+      - say: 国民は、国籍を持つ人々のことです。国籍の決め方には、その国で生まれた子どもに国籍をあたえる、出生地主義、アメリカなどと、親の国籍を引きつぐ、血統主義、日本やドイツなどがあります。
+        show:
+          - { type: title, text: 国民と主権 }
+          - { type: text, color: green, text: "**出生地主義**：その国で生まれたら国籍（アメリカなど）" }
+          - { type: text, color: green, text: "**血統主義**：親の国籍を引きつぐ（日本・ドイツなど）" }
+      - say: 主権は、国家の最高の権力のことで、2つの意味があります。国の内側では、国内の最高の支配権。外側に対しては、ほかの国から干渉されない、独立性です。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "**主権**：内には「国内の最高の支配権」、外には「他国から干渉されない独立性」" }
