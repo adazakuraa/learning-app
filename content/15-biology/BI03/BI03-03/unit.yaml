@@ -2,3 +2,7 @@ id: biology-bi03-03
 code: BI03-03
 title: 遺伝の法則
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 106
