@@ -1,0 +1,67 @@
+title: 地球の歴史と地層
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「地球の歴史と地層」です。地層は、地球の歴史の記録です。砂や泥、火山灰などが、水の底に積もって、固まってできます。
+        show:
+          - { type: title, text: 地層 }
+          - type: svg
+            at: [80, 140]
+            w: 520
+            h: 380
+            markup: |
+              <rect x="20" y="20" width="480" height="80" stroke="#f3d77a" fill="#f3d77a" fill-opacity="0.15"/>
+              <rect x="20" y="100" width="480" height="80" stroke="#9aa3ad" fill="#9aa3ad" fill-opacity="0.15"/>
+              <rect x="20" y="180" width="480" height="80" stroke="#f4a3b8" fill="#f4a3b8" fill-opacity="0.15"/>
+              <rect x="20" y="260" width="480" height="80" stroke="#8fc4ff" fill="#8fc4ff" fill-opacity="0.15"/>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="260" y="68" fill="#f3d77a">砂（新しい）</text><text x="260" y="148" fill="#9aa3ad">火山灰</text><text x="260" y="228" fill="#f4a3b8">泥</text><text x="260" y="308" fill="#8fc4ff">砂（古い）</text></g>
+      - say: 下の層ほど古く、上の層ほど新しい、という決まりがあります。本を積み重ねると、下にあるものほど先に置いたもの、というのと同じです。
+        show:
+          - { type: text, at: [660, 200], w: 560, text: "**下ほど古く、上ほど新しい**" }
+          - { type: text, at: [660, 290], w: 560, size: s, color: gray, text: "積み重ねた本と同じ：下ほど先に置いたもの" }
+
+  - board: whiteboard
+    steps:
+      - say: では、地層が何年前のものか、どうやって正確に測るのでしょう。使われるのが、放射性年代測定です。
+        show:
+          - { type: title, text: 放射性年代測定 }
+      - say: 放射性同位体という原子は、決まった速さでこわれて、別の物質に変わっていきます。もとの原子と、こわれてできた物質の割合を測れば、どのくらい時間がたったかがわかるのです。
+        show:
+          - { type: text, text: "**放射性同位体**：決まった速さでこわれて別の物質に変わる" }
+          - { type: box, color: yellow, w: 1000, text: "もとの原子 ： こわれてできた物質 の割合 → 経過した時間がわかる" }
+      - say: 砂時計で、上と下の砂の量を見れば、何分たったかがわかるのと同じ考え方です。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "砂時計の上下の砂の量から、何分たったかわかるのと同じ" }
+
+  - board: whiteboard
+    steps:
+      - say: 地球の歴史を、1年のカレンダーに置きかえてみると、こうなります。
+        show:
+          - { type: title, text: 地球の歴史カレンダー }
+          - { type: image, src: 1000003155.webp, at: [80, 125], w: 900 }
+      - say: 1月1日に地球が生まれ、恐竜があらわれるのは12月の中ごろ。人類の祖先が生まれるのは、なんと、12月31日の午前11時ごろです。人類の歴史は、地球の歴史のほんの最後の一瞬なのです。
+        show:
+          - { type: box, at: [80, 615], color: pink, w: 1000, text: "人類の誕生は「12月31日 午前11時ごろ」" }
+
+  - board: whiteboard
+    steps:
+      - say: 地球の歴史は、生き物の移り変わりをもとに、大きく4つの時代に分けられます。
+        show:
+          - { type: title, text: 4つの時代 }
+      - say: 先カンブリア時代は、46億年前から5億4千万年前まで。歴史のほとんどをしめる、小さな生き物の時代です。
+        show:
+          - { type: text, color: green, text: "**先カンブリア時代**（46億〜5.4億年前）：小さな生き物の時代" }
+      - say: 古生代は、5億4千万年前から2億5千万年前まで。三葉虫や、アノマロカリスなどがいました。
+        show:
+          - { type: text, color: blue, text: "**古生代**（5.4億〜2.5億年前）：三葉虫・アノマロカリス" }
+      - say: 中生代は、2億5千万年前から6600万年前まで。恐竜や、アンモナイトの時代です。
+        show:
+          - { type: text, color: yellow, text: "**中生代**（2.5億〜6600万年前）：恐竜・アンモナイト" }
+      - say: そして新生代は、6600万年前から今まで。マンモスや、サーベルタイガー、そして人類があらわれました。
+        show:
+          - { type: text, color: pink, text: "**新生代**（6600万年前〜現在）：マンモス・サーベルタイガー・人類" }
+      - say: 時代の区切りは、生き物が大きく入れかわったところです。例えば中生代の終わりには、巨大な隕石の衝突で、恐竜が絶滅したと考えられています。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "時代の区切り ＝ 生き物が大きく入れかわったとき（例：隕石で恐竜が絶滅）" }

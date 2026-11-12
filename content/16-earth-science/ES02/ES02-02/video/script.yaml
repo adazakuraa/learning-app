@@ -1,0 +1,49 @@
+title: 地震の仕組み
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「地震のしくみ」です。プレートが動くと、岩盤に、少しずつひずみ、つまり、ゆがみがたまっていきます。それが限界をこえて、一気にずれて元にもどるのが、地震です。
+        show:
+          - { type: title, text: 地震とは }
+          - { type: text, text: "プレートの動きでたまった **ひずみ** が、一気に解放される ＝ **地震**" }
+      - say: 下じきを、両手で曲げていくと、あるところで、バチンとはね返りますね。地震は、この、はね返りのようなものです。
+        added: true
+        show:
+          - type: svg
+            w: 900
+            h: 160
+            markup: |
+              <path d="M40 120 Q200 20 360 120" stroke="#8fc4ff"/><path d="M480 80 H600 M585 68 L600 80 L585 92" stroke="#9aa3ad"/><path d="M660 80 H860" stroke="#f4a3b8"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="200" y="155" fill="#8fc4ff">ひずみがたまる</text><text x="760" y="125" fill="#f4a3b8">バチン！（地震）</text></g>
+      - say: 岩盤がこわれて、ずれた面を、断層といいます。
+        show:
+          - { type: text, color: yellow, text: "岩盤がこわれてずれた面 ＝ **断層**" }
+
+  - board: whiteboard
+    steps:
+      - say: 日本は、北アメリカ、ユーラシア、太平洋、フィリピン海、という4枚のプレートが、ぶつかりあう場所にあります。だから、世界で最も地震が多い国のひとつなのです。
+        show:
+          - { type: title, text: 日本と4枚のプレート }
+          - { type: image, src: 1000002924.webp, at: [80, 130], w: 560 }
+          - type: list
+            at: [700, 170]
+            items: ["北アメリカプレート", "ユーラシアプレート", "太平洋プレート", "フィリピン海プレート"]
+          - { type: box, at: [700, 420], w: 520, color: pink, text: "4枚がぶつかる → 世界有数の地震国" }
+
+  - board: whiteboard
+    steps:
+      - say: 地震の規模、つまりエネルギーの大きさを表すのが、マグニチュード、Mです。
+        show:
+          - { type: title, text: マグニチュード }
+          - { type: text, text: "**マグニチュード（M）** ＝ 地震が出すエネルギーの大きさ" }
+      - say: マグニチュードが1大きくなると、エネルギーは、およそ32倍。2大きくなると、1000倍にもなります。数字が少しちがうだけで、大きなちがいなのです。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, text: "M が 1 上がる → エネルギー約32倍、2 上がる → 約1000倍" }
+      - say: 2011年の東日本大震災は、マグニチュード9.0。日本の観測史上、最大の地震でした。
+        show:
+          - { type: text, color: pink, text: "2011年 東日本大震災：M9.0（日本の観測史上最大）" }
+      - say: ちなみに、ある場所での揺れの強さを表すのは、震度です。同じ地震でも、震源から遠いほど、震度は小さくなります。電球の明るさがマグニチュード、離れた場所での明るさが震度、というイメージです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "震度 ＝ その場所での揺れの強さ（電球の明るさ ＝ M、離れた所での明るさ ＝ 震度）" }
