@@ -2,3 +2,8 @@ id: earth-science-es04-04
 code: ES04-04
 title: 日本の気候と季節風
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 80
+  narration: VOICEVOX:青山龍星
