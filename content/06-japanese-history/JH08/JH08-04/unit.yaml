@@ -2,3 +2,8 @@ id: japanese-history-jh08-04
 code: JH08-04
 title: 享保・寛政・天保の改革
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 77
+  narration: VOICEVOX:ずんだもん
