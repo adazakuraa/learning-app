@@ -1,0 +1,32 @@
+title: 活用
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「活用」です。いくつかの言葉は、あとに続く言葉によって、形が変わります。
+        show:
+          - { type: title, text: 活用とは }
+      - say: 例えば、「書く」は、書こう、書きたい、書いたら、のように形が変わります。「大きい」も、大きければ、大きかろう、大きかった、のように変わります。これを、活用といいます。
+        show:
+          - { type: text, color: blue, text: "書く → 書こう・書きたい・書いたら" }
+          - { type: text, color: green, text: "大きい → 大きければ・大きかろう・大きかった" }
+          - { type: box, color: yellow, w: 1000, text: "あとに続く言葉によって形が変わる ＝ **活用**" }
+
+  - board: whiteboard
+    steps:
+      - say: 活用の形は6つあり、それぞれ名前がついています。
+        show:
+          - { type: title, text: 6つの活用形 }
+      - say: 未然形、書かない、大きかろう。まだそうなっていない形です。連用形、書きます、大きく。用言、つまり動詞などに続く形です。終止形、書く、大きい。文を終えるふつうの形です。
+        show:
+          - { type: text, color: blue, text: "① **未然形**：書か（ない）・大きかろ（う）" }
+          - { type: text, color: blue, text: "② **連用形**：書き（ます）・大きく（なる）" }
+          - { type: text, color: blue, text: "③ **終止形**：書く・大きい（ふつうの形）" }
+      - say: 連体形、書くとき、大きいとき。名詞に続いて、くわしく説明する形です。仮定形、書けば、大きければ。もしも、の形です。命令形、書け。命令するときの形です。
+        show:
+          - { type: text, color: green, text: "④ **連体形**：書く（とき）・大きい（とき）→ 名詞に続く" }
+          - { type: text, color: green, text: "⑤ **仮定形**：書け（ば）・大きけれ（ば）→ もしも" }
+          - { type: text, color: green, text: "⑥ **命令形**：書け → 命令" }
+      - say: 覚え方は、「未然、連用、終止、連体、仮定、命令」と、順番に唱えることです。後ろにつく言葉、ない、ます、とき、ば、などを手がかりにすると、見分けやすくなります。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "見分けるコツ：後ろの言葉（ない・ます・とき・ば）を手がかりに" }

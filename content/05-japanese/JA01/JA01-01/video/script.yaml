@@ -1,0 +1,78 @@
+title: 漢字の成り立ち
+scenes:
+  - board: slide
+    steps:
+      - say: 国語の最初の章、「漢字の成り立ち」です。
+        show:
+          - { type: title, text: 第1章　漢字の成り立ち }
+      - say: 漢字が、どうやって生まれたのか。そして、漢字の部品である、部首を学びます。
+        show:
+          - type: list
+            items: ["漢字の成り立ち", "部首"]
+      - say: 成り立ちのしくみがわかると、知らない漢字でも、読み方や意味が、だいたい推測できるようになります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "漢字のしくみを知り、知らない漢字の読み・意味を推測できるようにする" }
+
+  - board: whiteboard
+    steps:
+      - say: 漢字の成り立ちは、大きく4つに分けられます。まずは、象形文字です。目に見えるものの形を、そのまま絵にして、文字にしたものです。漢字の中で、最も古い成り立ちです。
+        show:
+          - { type: title, text: ① 象形文字 }
+          - { type: image, src: 1000002896.webp, at: [80, 120], w: 600 }
+          - { type: text, at: [730, 160], w: 500, text: "**象形**：ものの形を絵にした文字" }
+      - say: 山、川、日、月、木、口などが、これにあたります。雨は、空から雨つぶが降る様子。火は、ほのおの形から生まれました。
+        show:
+          - { type: text, at: [730, 260], w: 500, color: yellow, text: "山・川・日・月・木・口・雨・火" }
+
+  - board: whiteboard
+    steps:
+      - say: 指事文字は、形に表しにくい、目に見えない考えを、記号で示した文字です。数は、あまり多くありません。
+        show:
+          - { type: title, text: ② 指事文字 }
+          - { type: text, text: "**指事**：形に表しにくいことを、記号で示した文字（上・下・一・二・本・末）" }
+      - say: 上と下は、基準の線の上や下に、しるしをつけて表しました。本という字は、木の根もとに、しるしをつけて、もと、という意味を表しました。末は、反対に、木の先っぽに、しるしをつけています。
+        show:
+          - type: svg
+            w: 1000
+            h: 240
+            markup: |
+              <g stroke="#9be0b0" stroke-width="4"><path d="M120 30 V200 M40 90 H200 M120 90 L50 160 M120 90 L190 160"/><path d="M420 30 V200 M340 90 H500 M420 90 L350 160 M420 90 L490 160"/></g>
+              <path d="M90 180 H150" stroke="#f4a3b8" stroke-width="7"/><path d="M370 50 H470" stroke="#f4a3b8" stroke-width="7"/>
+              <g stroke="none" font-size="26" text-anchor="middle"><text x="120" y="235" fill="#f3d77a">本（根もと）</text><text x="420" y="235" fill="#f3d77a">末（先っぽ）</text></g>
+              <text x="620" y="120" font-size="24" fill="#9aa3ad" stroke="none">木にしるしをつける</text>
+
+  - board: whiteboard
+    steps:
+      - say: 会意文字は、2つ以上の文字を組み合わせて、新しい意味を表した文字です。
+        show:
+          - { type: title, text: ③ 会意文字 }
+          - { type: text, text: "**会意**：文字を組み合わせて新しい意味を表す" }
+      - say: 木が3つで、森。日と月で、明るい。人が木に寄りかかって、休む。田んぼで力仕事をする人が、男です。まるで、パズルのようですね。
+        show:
+          - { type: text, size: l, color: green, text: "木＋木＋木 ＝ 森" }
+          - { type: text, size: l, color: yellow, text: "日＋月 ＝ 明" }
+          - { type: text, size: l, color: blue, text: "人（亻）＋木 ＝ 休" }
+          - { type: text, size: l, color: pink, text: "田＋力 ＝ 男" }
+
+  - board: whiteboard
+    steps:
+      - say: 形声文字は、音を表す部分と、意味を表す部分を、組み合わせた文字です。音を表す部分を、音符、意味を表す部分を、多くの場合、部首といいます。
+        show:
+          - { type: title, text: ④ 形声文字 }
+          - { type: box, color: yellow, w: 1100, text: "**形声**：音を表す部分（**音符**）＋ 意味を表す部分（多くは **部首**）" }
+      - say: 漢字全体の、およそ9割が、このタイプといわれ、最も大事な成り立ちです。
+        show:
+          - { type: text, color: pink, text: "漢字の約90％がこのタイプ！" }
+      - say: 例えば、晴、清、情、請は、すべて、青、という音符を共通に持っていて、どれも音読みが、セイ、です。意味は、部首で区別されます。日へんは天気、さんずいは水、りっしんべんは心、ごんべんは言葉に関係します。
+        show:
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <g stroke="none" font-size="64" text-anchor="middle"><text x="110" y="80" fill="currentColor">晴</text><text x="370" y="80" fill="currentColor">清</text><text x="630" y="80" fill="currentColor">情</text><text x="890" y="80" fill="currentColor">請</text></g>
+              <g stroke="none" font-size="20" text-anchor="middle" fill="#8fc4ff"><text x="110" y="125">日（天気）</text><text x="370" y="125">氵（水）</text><text x="630" y="125">忄（心）</text><text x="890" y="125">言（言葉）</text></g>
+              <text x="500" y="190" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">みんな「青」→ 音読みは「セイ」</text>
+      - say: 知らない漢字でも、この部分は音を表している、と気づけると、読み方が推測できることがあります。
+        show:
+          - { type: text, color: green, text: "音符に気づけば、知らない漢字も読み方が推測できる" }

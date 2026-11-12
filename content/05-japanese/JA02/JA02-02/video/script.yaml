@@ -1,0 +1,29 @@
+title: 文節
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「文節」です。文を、意味が通じる、いちばん小さな区切りで分けたものを、文節といいます。
+        show:
+          - { type: title, text: 文節 }
+          - { type: text, size: l, text: "私は ／ 毎朝 ／ 早く ／ 起きる。" }
+      - say: 分けるコツは、「ネ」を入れてみることです。私はネ、毎朝ネ、早くネ、起きる。「ネ」を入れて、不自然にならない場所で区切ります。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "コツ：「私は**ネ** 毎朝**ネ** 早く**ネ** 起きる」→「ネ」が自然に入る所で区切る" }
+
+  - board: whiteboard
+    steps:
+      - say: 文節を、さらに細かく分けて、それ以上分けられない、いちばん小さな単位にしたものが、単語です。
+        show:
+          - { type: title, text: 単語 }
+          - type: svg
+            w: 1100
+            h: 220
+            markup: |
+              <rect x="40" y="20" width="220" height="70" rx="10" stroke="#8fc4ff"/><rect x="600" y="20" width="260" height="70" rx="10" stroke="#8fc4ff"/>
+              <path d="M110 90 L80 140 M190 90 L220 140 M690 90 L660 140 M770 90 L800 140" stroke="#9aa3ad"/>
+              <rect x="20" y="140" width="120" height="60" rx="10" stroke="#f3d77a"/><rect x="170" y="140" width="100" height="60" rx="10" stroke="#f4a3b8"/><rect x="590" y="140" width="130" height="60" rx="10" stroke="#f3d77a"/><rect x="750" y="140" width="100" height="60" rx="10" stroke="#f4a3b8"/>
+              <g stroke="none" font-size="30" text-anchor="middle"><text x="150" y="66" fill="#8fc4ff">私は</text><text x="730" y="66" fill="#8fc4ff">起きる</text><text x="80" y="181" fill="#f3d77a">私</text><text x="220" y="181" fill="#f4a3b8">は</text><text x="655" y="181" fill="#f3d77a">起き</text><text x="800" y="181" fill="#f4a3b8">る</text></g>
+              <g stroke="none" font-size="20" fill="#9aa3ad"><text x="300" y="60">文節</text><text x="300" y="180">単語</text></g>
+      - say: 「私は」は、「私」と「は」。「起きる」は、「起き」と「る」に分けられます。文、文節、単語と、どんどん小さく分けていくイメージです。
+        show:
+          - { type: text, color: green, text: "文 → 文節 → 単語 と、小さく分けていく" }

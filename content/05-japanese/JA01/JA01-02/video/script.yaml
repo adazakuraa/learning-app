@@ -1,0 +1,57 @@
+title: 部首
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「部首」です。部首は、漢字の意味のグループを表す部品です。部首の意味がわかると、漢字の意味が推測しやすくなります。代表的な部首を、見ていきましょう。
+        show:
+          - { type: title, text: 部首（かんむり・たれ） }
+      - say: 上につくもの、かんむり。あみがしらは、あみ。あなかんむりは、あな。なべぶたは、特に決まった意味はありません。左上からたれ下がる、たれ。がんだれは、がけ。まだれは、家や建物。しかばねは、人の体や、家。やまいだれは、病気です。
+        show:
+          - { type: text, at: [80, 140], color: yellow, text: "亠 なべぶた" }
+          - { type: text, at: [80, 200], color: yellow, text: "罒 あみがしら（網）" }
+          - { type: text, at: [80, 260], color: yellow, text: "穴 あなかんむり（穴）" }
+          - { type: text, at: [660, 140], color: blue, text: "厂 がんだれ（がけ）" }
+          - { type: text, at: [660, 200], color: blue, text: "广 まだれ（家・建物）" }
+          - { type: text, at: [660, 260], color: blue, text: "尸 しかばね（人の体・家）" }
+          - { type: text, at: [660, 320], color: blue, text: "疒 やまいだれ（病気）" }
+      - say: 病院の病、痛い、の痛には、やまいだれがついていますね。
+        added: true
+        show:
+          - { type: text, at: [80, 420], color: gray, text: "例：病・痛・疲 → みんな「疒（病気）」" }
+
+  - board: whiteboard
+    steps:
+      - say: 左側につく、へん。そして、右側につく、つくりです。
+        show:
+          - { type: title, text: 部首（へん・つくり） }
+      - say: ぎょうにんべんは、移動や行くこと。けものへんは、動物。てへんは、手。りっしんべんは、心。おうへんは、玉、宝石。のぎへんは、穀物。しめすへんは、神様。ころもへんは、衣服。こざとへんは、おか、です。
+        show:
+          - { type: text, at: [80, 140], color: green, text: "彳 ぎょうにんべん（行く）" }
+          - { type: text, at: [80, 195], color: green, text: "犭 けものへん（動物）" }
+          - { type: text, at: [80, 250], color: green, text: "扌 てへん（手）" }
+          - { type: text, at: [80, 305], color: green, text: "忄 りっしんべん（心）" }
+          - { type: text, at: [80, 360], color: green, text: "⺩ おうへん（玉）" }
+          - { type: text, at: [660, 140], color: green, text: "禾 のぎへん（穀物）" }
+          - { type: text, at: [660, 195], color: green, text: "礻 しめすへん（神）" }
+          - { type: text, at: [660, 250], color: green, text: "衤 ころもへん（衣服）" }
+          - { type: text, at: [660, 305], color: green, text: "阝（左）こざとへん（丘）" }
+      - say: 右側では、りっとうは、刀。ふるとりは、鳥。おおざとは、村や町などの場所。そして、つきへんに見える、にくづきは、実は、体の肉を表します。
+        show:
+          - { type: text, at: [660, 380], color: pink, text: "刂 りっとう（刀）　隹 ふるとり（鳥）" }
+          - { type: text, at: [660, 435], color: pink, text: "阝（右）おおざと（場所）" }
+          - { type: text, at: [80, 435], color: pink, text: "月 にくづき（肉・体）" }
+      - say: 腕、脚、胸、肺。体に関係する漢字には、にくづきがたくさん使われていますね。
+        added: true
+        show:
+          - { type: text, at: [80, 530], color: gray, text: "例：腕・脚・胸・肺 → にくづき（体）" }
+
+  - board: whiteboard
+    steps:
+      - say: そのほか、下につく、れっか、またはれんがは、火を表します。照らす、熱い、などにありますね。そして、ぎょうがまえは、道路や、街を表します。
+        show:
+          - { type: title, text: その他の部首 }
+          - { type: text, color: pink, text: "灬 れっか・れんが（火）→ 照・熱・焼" }
+          - { type: text, color: blue, text: "行 ぎょうがまえ（道路・街）→ 街・術" }
+      - say: 部首は、漢字の意味のヒントです。知らない漢字に出会ったら、まず部首を見てみましょう。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "知らない漢字に出会ったら、まず部首を見る" }
