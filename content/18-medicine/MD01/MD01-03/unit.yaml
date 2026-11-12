@@ -3,3 +3,8 @@ code: MD01-03
 title: どこに相談する？119・#7119・診療科
 order: 3
 summary: 迷ったときの電話相談と、どの診療科に行けばいいかを学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 132
+  narration: VOICEVOX:ずんだもん

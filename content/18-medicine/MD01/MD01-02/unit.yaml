@@ -3,3 +3,8 @@ code: MD01-02
 title: 緊急度の見分け方
 order: 2
 summary: 意識・呼吸・顔色の3つと「いつもと違う」が、緊急度を見分ける最大の手がかりです。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 137
+  narration: VOICEVOX:ずんだもん

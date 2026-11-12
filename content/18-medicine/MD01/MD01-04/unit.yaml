@@ -3,3 +3,8 @@ code: MD01-04
 title: 119番のかけ方と症状の伝え方
 order: 4
 summary: 119番通報の流れと、受診のときに医師に伝えるべきことを学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 123
+  narration: VOICEVOX:ずんだもん

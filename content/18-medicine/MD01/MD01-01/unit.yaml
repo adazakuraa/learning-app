@@ -3,3 +3,8 @@ code: MD01-01
 title: この科目の目的と限界
 order: 1
 summary: 病名を当てるのではなく「どれくらい急ぐか」を判断する。この科目の考え方と使い方を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 149
+  narration: VOICEVOX:ずんだもん
