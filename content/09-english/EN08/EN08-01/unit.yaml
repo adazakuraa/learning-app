@@ -2,3 +2,8 @@ id: english-en08-01
 code: EN08-01
 title: 受動態（be + 過去分詞）
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 74
+  narration: VOICEVOX:ずんだもん
