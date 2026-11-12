@@ -2,3 +2,8 @@ id: english-en05-03
 code: EN05-03
 title: 前置詞
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 103
+  narration: VOICEVOX:ずんだもん

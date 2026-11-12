@@ -2,3 +2,8 @@ id: english-en05-01
 code: EN05-01
 title: 形容詞の使い方
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 127
+  narration: VOICEVOX:ずんだもん
