@@ -2,3 +2,8 @@ id: chemistry-ch02-02
 code: CH02-02
 title: 元素と周期表
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 57
+  narration: VOICEVOX:青山龍星

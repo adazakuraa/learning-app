@@ -2,3 +2,8 @@ id: chemistry-ch02-04
 code: CH02-04
 title: 化学式と化学反応式
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 68
+  narration: VOICEVOX:青山龍星
