@@ -1,0 +1,40 @@
+title: 封建制度と中世の社会
+scenes:
+  - board: whiteboard
+    steps:
+      - say: カール大帝の帝国が分かれたあと、ヨーロッパは、北からのヴァイキングなど、外からの侵入に苦しみます。
+        show:
+          - { type: title, text: 封建制度 }
+          - { type: text, at: [80, 140], w: 1120, text: "ヴァイキングなどの侵入 → 王だけでは守りきれない" }
+      - say: 国全体をまとめて守るのが難しいなかで生まれたのが、封建制度です。
+        show: []
+      - say: 王が、有力な貴族に土地を与え、貴族は、そのかわりに戦いで王に仕えることを約束する。こうした主従関係が、ピラミッドのように積み重なったしくみです。
+        show:
+          - type: svg
+            at: [80, 220]
+            w: 700
+            h: 340
+            anim: draw
+            markup: |
+              <path d="M350 10 L680 320 L20 320 Z" stroke="#f3d77a"/>
+              <path d="M240 112 L460 112 M135 216 L565 216" stroke="#9aa3ad"/>
+              <g stroke="none" font-size="26" fill="#e8eef5" text-anchor="middle"><text x="350" y="85">王</text><text x="350" y="175">貴族・諸侯</text><text x="350" y="278">騎士</text></g>
+              <g stroke="none" font-size="20" fill="#9aa3ad" text-anchor="middle"><text x="350" y="345">（その下で農奴が土地を耕す）</text></g>
+          - { type: box, at: [820, 230], w: 380, color: blue, title: 上から, text: "土地を与える" }
+          - { type: box, at: [820, 400], w: 380, color: green, title: 下から, text: "戦いで仕える" }
+      - say: 日本の鎌倉時代の、ご恩と奉公と、よく似ていますね。
+        added: true
+        show: []
+
+  - board: whiteboard
+    steps:
+      - say: 騎士は、封建制度の軍事の主役でした。馬に乗り、よろいを身につけた、当時のハイテク兵器です。
+        show:
+          - { type: title, text: 騎士と騎士道 }
+          - { type: box, at: [80, 140], w: 1120, color: blue, title: 騎士, text: "馬・よろい ＝ 当時の「ハイテク兵器」　装備が高く、土地と収入がある者だけ" }
+      - say: 装備にとてもお金がかかるので、一定の土地と収入がある人しか、なれませんでした。
+        show: []
+      - say: 礼儀、勇気、弱い者を守る、という騎士道の精神は、のちの時代に美化されたものです。実際の中世の戦争は、略奪や虐殺が当たり前の、容赦のないものでした。
+        show:
+          - { type: box, at: [80, 320], w: 540, color: yellow, title: 騎士道（理想）, text: "礼儀・勇気・弱者を守る" }
+          - { type: box, at: [660, 320], w: 540, color: pink, title: 実際の戦争, text: "略奪・虐殺が当たり前" }
