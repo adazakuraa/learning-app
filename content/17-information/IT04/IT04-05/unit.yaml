@@ -2,3 +2,8 @@ id: information-it04-05
 code: IT04-05
 title: AI画像・音声・動画の生成と見分け方
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 81
+  narration: VOICEVOX:青山龍星
