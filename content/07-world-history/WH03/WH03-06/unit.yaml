@@ -2,3 +2,8 @@ id: world-history-wh03-06
 code: WH03-06
 title: イスラム帝国の繁栄
 order: 6
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 78
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: world-history-wh03-05
 code: WH03-05
 title: ムハンマドとイスラム教の誕生
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 88
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: world-history-wh03-08
 code: WH03-08
 title: モンゴル帝国とチンギス・ハン
 order: 8
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 95
+  narration: VOICEVOX:ずんだもん
