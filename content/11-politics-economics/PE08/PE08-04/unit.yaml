@@ -2,3 +2,8 @@ id: politics-economics-pe08-04
 code: PE08-04
 title: 現代の人権問題
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 87
+  narration: VOICEVOX:ずんだもん
