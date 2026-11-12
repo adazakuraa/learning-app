@@ -2,3 +2,8 @@ id: chemistry-ch07-02
 code: CH07-02
 title: 気体の種類と性質
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 67
+  narration: VOICEVOX:青山龍星
