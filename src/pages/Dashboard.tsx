@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ProgressBar } from '../components/ProgressBar';
 import { SubjectCards } from '../components/SubjectCards';
+import { UnitSearch } from '../components/UnitSearch';
 import { StatusBadges, UnitCheck } from '../components/StatusBadges';
 import { useCatalog } from '../lib/catalog';
 import { totalSeconds, unitStatus } from '../lib/progress/model';
@@ -20,44 +21,47 @@ export function Dashboard() {
     .slice(0, 5);
   const resume = recent.find((u) => unitStatus(doc.units[u.id]) !== 'done');
 
+  // what to offer first: an unfinished unit you were on; else the next unfinished unit after the last one studied; else the very first
+  const notDone = (u: (typeof units)[number]) => unitStatus(doc.units[u.id]) !== 'done';
+  const last = recent[0];
+  const after = last ? units.slice(units.findIndex((u) => u.id === last.id) + 1).find(notDone) : undefined;
+  const lead = resume ?? after ?? units.find(notDone);
+  const leadLabel = resume ? '続きから学習' : recent.length > 0 ? '次の単元' : 'はじめる';
+
   return (
     <div className="page">
-      <section className="stats">
-        <div className="stat wide">
-          <div className="stat-label">全体の進捗</div>
-          <ProgressBar value={all.ratio} label="全体の進捗" />
-          <div className="stat-sub">
-            {all.done} / {all.total} 単元 完了
-          </div>
-        </div>
-        <div className="stat">
-          <div className="stat-label">完了</div>
-          <div className="stat-num">{all.done}</div>
-        </div>
-        <div className="stat">
-          <div className="stat-label">学習中</div>
-          <div className="stat-num">{all.inProgress}</div>
-        </div>
-        <div className="stat">
-          <div className="stat-label">未学習</div>
-          <div className="stat-num">{all.notStarted}</div>
-        </div>
-        <div className="stat">
-          <div className="stat-label">累計学習時間</div>
-          <div className="stat-num sm">{fmtDuration(totalSeconds(doc))}</div>
-        </div>
-      </section>
-
-      {resume && (
-        <Link to={`/units/${resume.id}`} className="resume card">
-          <div className="muted small">続きから学習</div>
-          <div className="resume-title">{resume.title}</div>
+      {lead && (
+        <Link to={`/units/${lead.id}`} className="resume card">
+          <div className="muted small">{leadLabel}</div>
+          <div className="resume-title">{lead.title}</div>
           <div className="muted small">
-            {resume.subject.title} › {resume.chapter.title}
+            {lead.subject.title} › {lead.chapter.title}
           </div>
         </Link>
       )}
 
+      <section className="card overall">
+        <div className="overall-head">
+          <span className="stat-label">全体の進捗</span>
+          <span className="stat-sub">
+            {all.done} / {all.total} 単元 完了
+          </span>
+        </div>
+        <ProgressBar value={all.ratio} label="全体の進捗" />
+        <div className="overall-nums">
+          <span>
+            学習中 <b>{all.inProgress}</b>
+          </span>
+          <span>
+            未学習 <b>{all.notStarted}</b>
+          </span>
+          <span>
+            累計 <b>{fmtDuration(totalSeconds(doc))}</b>
+          </span>
+        </div>
+      </section>
+
+      <UnitSearch>
       <section>
         <h2 className="section-title">科目</h2>
         <SubjectCards subjects={catalog.subjects} />
@@ -77,13 +81,14 @@ export function Dashboard() {
                       {u.subject.title} › {u.chapter.title} ・ {new Date(doc.units[u.id]!.lastStudiedAt!).toLocaleDateString('ja-JP')}
                     </span>
                   </span>
-                  <StatusBadges unit={u} p={doc.units[u.id]} />
+                  <StatusBadges unit={u} p={doc.units[u.id]} compact />
                 </Link>
               </li>
             ))}
           </ul>
         </section>
       )}
+      </UnitSearch>
     </div>
   );
 }

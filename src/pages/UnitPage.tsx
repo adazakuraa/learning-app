@@ -99,9 +99,16 @@ export function UnitPage() {
               <strong>この単元は完了しています</strong>
               {p?.unit?.updatedAt && <div className="muted small">{new Date(p.unit.updatedAt).toLocaleDateString('ja-JP')} に完了</div>}
             </div>
-            <button className="btn ghost" onClick={() => setUnitCompleted(meta.id, false)}>
-              完了を取り消す
-            </button>
+            <div className="complete-actions">
+              {next && (
+                <Link to={`/units/${next.id}`} className="btn primary">
+                  次へ：{next.title}
+                </Link>
+              )}
+              <button className="btn ghost" onClick={() => setUnitCompleted(meta.id, false)}>
+                完了を取り消す
+              </button>
+            </div>
           </>
         ) : (
           <>

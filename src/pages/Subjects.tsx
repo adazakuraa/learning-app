@@ -1,4 +1,5 @@
 import { SubjectCards } from '../components/SubjectCards';
+import { UnitSearch } from '../components/UnitSearch';
 import { useCatalog } from '../lib/catalog';
 
 export function Subjects() {
@@ -7,7 +8,9 @@ export function Subjects() {
   return (
     <div className="page">
       <h1 className="page-title">科目一覧</h1>
-      <SubjectCards subjects={catalog.subjects} detailed />
+      <UnitSearch>
+        <SubjectCards subjects={catalog.subjects} detailed />
+      </UnitSearch>
     </div>
   );
 }
