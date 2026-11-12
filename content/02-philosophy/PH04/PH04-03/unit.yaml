@@ -2,3 +2,8 @@ id: philosophy-ph04-03
 code: PH04-03
 title: 倫理的ジレンマ
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 104
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: philosophy-ph04-02
 code: PH04-02
 title: 義務論
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 157
+  narration: VOICEVOX:ずんだもん
