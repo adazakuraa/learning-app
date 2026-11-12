@@ -2,3 +2,8 @@ id: religion-re04-02
 code: RE04-02
 title: スンニ派とシーア派
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 81
+  narration: VOICEVOX:ずんだもん
