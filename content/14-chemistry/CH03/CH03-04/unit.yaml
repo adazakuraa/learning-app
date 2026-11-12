@@ -2,3 +2,8 @@ id: chemistry-ch03-04
 code: CH03-04
 title: 中和反応
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 49
+  narration: VOICEVOX:青山龍星

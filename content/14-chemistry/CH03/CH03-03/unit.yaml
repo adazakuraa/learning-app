@@ -2,3 +2,8 @@ id: chemistry-ch03-03
 code: CH03-03
 title: 酸と塩基（アルカリ）
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 81
+  narration: VOICEVOX:青山龍星

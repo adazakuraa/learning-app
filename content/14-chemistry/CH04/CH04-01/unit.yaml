@@ -2,3 +2,8 @@ id: chemistry-ch04-01
 code: CH04-01
 title: エネルギーと化学反応
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 107
+  narration: VOICEVOX:青山龍星

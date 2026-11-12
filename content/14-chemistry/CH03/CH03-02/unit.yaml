@@ -2,3 +2,8 @@ id: chemistry-ch03-02
 code: CH03-02
 title: 酸化と還元
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 65
+  narration: VOICEVOX:青山龍星
