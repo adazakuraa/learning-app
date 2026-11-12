@@ -2,3 +2,8 @@ id: psychology-ps05-01
 code: PS05-01
 title: 自己概念と自尊心
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 108
+  narration: VOICEVOX:ずんだもん

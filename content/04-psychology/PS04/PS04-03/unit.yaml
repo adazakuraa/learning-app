@@ -2,3 +2,8 @@ id: psychology-ps04-03
 code: PS04-03
 title: 動機づけの理論
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 116
+  narration: VOICEVOX:ずんだもん
