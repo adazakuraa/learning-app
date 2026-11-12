@@ -1,0 +1,34 @@
+title: There is / There are
+scenes:
+  - board: slide
+    steps:
+      - say: 第7章、「よく使う文型と表現」です。
+        show:
+          - { type: title, text: 第7章　よく使う文型と表現 }
+      - say: 「〜がある」の表現、形だけの主語のit、不定詞、動名詞、そして接続詞を学びます。
+        read: 「何々がある」の表現、形だけの主語のイット、不定詞、動名詞、そして接続詞を学びます。
+        show:
+          - type: list
+            items: ["There is / There are", "It is ... to / that", "不定詞（to ＋ 動詞の原形）", "動名詞（-ing）", "接続詞"]
+      - say: よく使う型を知っておくと、長い文も、パーツに分けて読めるようになります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "よく使う型を知り、長い文もパーツに分けて読めるようにする" }
+
+  - board: whiteboard
+    steps:
+      - say: There is、There areは、何々がある、いる、と、存在を表す表現です。あとに来る名詞が、ひとつならis、2つ以上ならareを使います。
+        read: ゼア、イズ、ゼア、アーは、何々がある、いる、と、存在を表す表現です。あとに来る名詞が、ひとつならイズ、2つ以上ならアーを使います。
+        show:
+          - { type: title, text: There is / There are }
+          - { type: box, color: yellow, w: 1100, text: "**There is** ＋ ひとつのもの ／ **There are** ＋ 2つ以上のもの ＝「〜がある・いる」" }
+      - say: There is a pharmacy near the station. 駅の近くに薬局があります。There are several options to choose from. いくつかの選択肢があります。
+        read: ゼア、イズ、ア、ファーマシー、ニア、ザ、ステーション。駅の近くに薬局があります。ゼア、アー、セベラル、オプションズ。いくつかの選択肢があります。
+        show:
+          - { type: text, color: blue, text: "**There is** a pharmacy near the station.（駅の近くに薬局がある）" }
+          - { type: text, color: blue, text: "**There are** several options.（いくつかの選択肢がある）" }
+      - say: 疑問文は、isやareを前に出します。Is there a vending machine on this floor? このフロアに自動販売機はありますか。否定は、There aren't any seats left. もう席が残っていません。
+        read: 疑問文は、イズやアーを前に出します。イズ、ゼア、ア、ベンディング、マシーン。自動販売機はありますか。否定は、ゼア、アーント、エニー、シーツ、レフト。もう席が残っていません。
+        show:
+          - { type: text, color: green, text: "**Is there** a vending machine on this floor?（自販機はある？）" }
+          - { type: text, color: pink, text: "**There aren't** any seats left.（もう席がない）" }

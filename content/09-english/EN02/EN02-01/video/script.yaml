@@ -1,0 +1,53 @@
+title: 英語の語順
+scenes:
+  - board: slide
+    steps:
+      - say: 第2章、「基本の文構造」です。
+        show:
+          - { type: title, text: 第2章　基本の文構造 }
+      - say: 英語の語順、動詞、否定文と疑問文、三単現のs、そして疑問詞を学びます。
+        show:
+          - type: list
+            items: ["英語の語順", "動詞と否定文・疑問文", "三単現のs・複数形", "疑問詞（5W1H）"]
+      - say: 英語の文の骨組みがわかれば、あとは、そこに言葉を当てはめていくだけです。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "英語の文の骨組みをつかむ" }
+
+  - board: whiteboard
+    steps:
+      - say: 英語と日本語の、いちばん大きなちがいは、語順です。日本語は、「私は、りんごを、食べる」。主語、目的語、動詞の順番です。
+        show:
+          - { type: title, text: SOV と SVO }
+          - type: svg
+            w: 1100
+            h: 230
+            markup: |
+              <g stroke-width="3"><rect x="20" y="20" width="220" height="70" rx="10" stroke="#8fc4ff"/><rect x="270" y="20" width="260" height="70" rx="10" stroke="#9be0b0"/><rect x="560" y="20" width="200" height="70" rx="10" stroke="#f3d77a"/>
+              <rect x="20" y="140" width="220" height="70" rx="10" stroke="#8fc4ff"/><rect x="270" y="140" width="200" height="70" rx="10" stroke="#f3d77a"/><rect x="500" y="140" width="260" height="70" rx="10" stroke="#9be0b0"/></g>
+              <g stroke="none" font-size="28" text-anchor="middle"><text x="130" y="65" fill="#8fc4ff">私は（S）</text><text x="400" y="65" fill="#9be0b0">りんごを（O）</text><text x="660" y="65" fill="#f3d77a">食べる（V）</text>
+              <text x="130" y="185" fill="#8fc4ff">I（S）</text><text x="370" y="185" fill="#f3d77a">eat（V）</text><text x="630" y="185" fill="#9be0b0">an apple（O）</text></g>
+              <g stroke="none" font-size="22"><text x="800" y="65" fill="#9aa3ad">日本語：SOV</text><text x="800" y="185" fill="#9aa3ad">英語：SVO</text></g>
+      - say: 英語は、I eat an apple. 動詞が、主語のすぐあとに来ます。主語、動詞、目的語の順番です。
+        read: 英語は、アイ、イート、アン、アップル。動詞が、主語のすぐあとに来ます。主語、動詞、目的語の順番です。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "英語は「だれが → どうする → 何を」の順（**SVO**）" }
+      - say: 例えば、I like music. 私は音楽が好きです。She drinks coffee every morning. 彼女は毎朝コーヒーを飲みます。
+        read: 例えば、アイ、ライク、ミュージック。私は音楽が好きです。シー、ドリンクス、コーヒー、エブリ、モーニング。彼女は毎朝コーヒーを飲みます。
+        show:
+          - { type: text, color: blue, text: "I like music.（私は音楽が好きです）" }
+          - { type: text, color: blue, text: "She drinks coffee every morning.（彼女は毎朝コーヒーを飲みます）" }
+
+  - board: whiteboard
+    steps:
+      - say: 日本語では、「りんごを私は食べた」と、順番を入れかえても意味が通じます。でも英語では、語順を変えると、意味が変わってしまいます。
+        show:
+          - { type: title, text: 語順が意味を決める }
+      - say: The dog bit the man. 犬が人をかんだ。The man bit the dog. 人が犬をかんだ。語順だけで、意味が逆になるのです。
+        read: ザ、ドッグ、ビット、ザ、マン。犬が人をかんだ。ザ、マン、ビット、ザ、ドッグ。人が犬をかんだ。語順だけで、意味が逆になるのです。
+        show:
+          - { type: text, size: l, color: green, text: "The dog bit the man.（犬が人をかんだ）" }
+          - { type: text, size: l, color: pink, text: "The man bit the dog.（人が犬をかんだ）" }
+      - say: また、英語では、主語を省略できません。日本語では、「私は」と言わなくても伝わりますが、英語では、必ず主語が必要です。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "英語は主語を省略できない（日本語の「食べた」→ 英語は I ate.）" }

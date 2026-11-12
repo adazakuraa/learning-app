@@ -1,0 +1,47 @@
+title: 日常会話フレーズ
+scenes:
+  - board: slide
+    steps:
+      - say: 第10章、「日常英語の語彙と表現」です。
+        show:
+          - { type: title, text: 第10章　日常英語の語彙と表現 }
+      - say: 日常会話の決まり文句、道案内、気持ちを表す言葉、そして、ゲームやスマホでよく見る英単語を学びます。
+        show:
+          - type: list
+            items: ["日常会話フレーズ", "場所・方向の表現", "感情・状態を表す形容詞", "ゲームや日常でよく見る英単語"]
+      - say: 文法がわからなくても、決まり文句を知っていれば、すぐに意味がとれます。身近なところから、英語を味方につけましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "決まり文句と身近な単語で、見聞きした英語をすぐに理解する" }
+
+  - board: whiteboard
+    steps:
+      - say: あいさつと別れです。How's it going? How have you been? What's up? どれも、調子どう？ It's been a while. 久しぶり。Take care. Have a good one. Catch you later. またね、よい一日を。
+        read: あいさつと別れです。ハウズ、イット、ゴーイング。ハウ、ハブ、ユー、ビーン。ワッツ、アップ。どれも、調子どう？ イッツ、ビーン、ア、ホワイル。久しぶり。テイク、ケア。ハブ、ア、グッド、ワン。キャッチ、ユー、レイター。またね、よい一日を。
+        show:
+          - { type: title, text: あいさつ・お礼・おわび }
+          - { type: text, color: blue, text: "How's it going? / What's up?（調子どう？）　It's been a while.（久しぶり）" }
+          - { type: text, color: blue, text: "Take care. / Have a good one. / Catch you later.（またね）" }
+      - say: お礼とおわびです。Thanks a lot. I really appreciate it. 本当にありがとう。No worries. No problem. Anytime. 気にしないで、いつでもどうぞ。I'm sorry about that. My bad. ごめん、私のミス。
+        read: お礼とおわびです。サンクス、ア、ロット。アイ、リアリー、アプリシエイト、イット。本当にありがとう。ノー、ウォーリーズ。ノー、プロブレム。エニタイム。気にしないで、いつでもどうぞ。アイム、ソーリー、アバウト、ザット。マイ、バッド。ごめん、私のミス。
+        show:
+          - { type: text, color: green, text: "Thanks a lot. / I really appreciate it.（本当にありがとう）" }
+          - { type: text, color: green, text: "No worries. / No problem. / Anytime.（気にしないで）" }
+          - { type: text, color: pink, text: "I'm sorry about that. / My bad.（ごめん・私のミス）" }
+
+  - board: whiteboard
+    steps:
+      - say: お願いと許可です。Could you do me a favor? お願いがあるのですが。Do you mind if I…? 〜してもいいですか。Feel free to…、遠慮なく〜してください。
+        read: お願いと許可です。クッド、ユー、ドゥー、ミー、ア、フェイバー。お願いがあるのですが。ドゥー、ユー、マインド、イフ、アイ。何々してもいいですか。フィール、フリー、トゥー。遠慮なく何々してください。
+        show:
+          - { type: title, text: お願い・聞き返し・あいづち }
+          - { type: text, color: yellow, text: "Could you do me a favor?（お願いがあるのですが）／ Do you mind if I …?（〜してもいい？）" }
+      - say: 聞き返しです。Sorry, what was that? Could you repeat that? すみません、何と言いましたか。What do you mean by…? 〜とはどういう意味ですか。Got it. That makes sense. わかりました、なるほど。
+        read: 聞き返しです。ソーリー、ワット、ワズ、ザット。クッド、ユー、リピート、ザット。すみません、何と言いましたか。ワット、ドゥー、ユー、ミーン、バイ。何々とはどういう意味ですか。ガット、イット。ザット、メイクス、センス。わかりました、なるほど。
+        show:
+          - { type: text, color: blue, text: "Sorry, what was that? / Could you repeat that?（何と言いました？）" }
+          - { type: text, color: blue, text: "Got it. / That makes sense.（わかりました・なるほど）" }
+      - say: あいづちです。That sounds great! いいね！ Oh no, that's too bad. それは残念。Exactly. Absolutely. まさにその通り。
+        read: あいづちです。ザット、サウンズ、グレイト。いいね！ オウ、ノー、ザッツ、トゥー、バッド。それは残念。イグザクトリー。アブソリュートリー。まさにその通り。
+        show:
+          - { type: text, color: green, text: "That sounds great!（いいね）／ That's too bad.（残念）／ Exactly.（その通り）" }

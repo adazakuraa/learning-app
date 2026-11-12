@@ -1,0 +1,46 @@
+title: 動詞と否定文・疑問文
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「動詞と、否定文、疑問文」です。英語の動詞は、大きく2種類に分かれます。be動詞と、一般動詞です。
+        read: 「動詞と、否定文、疑問文」です。英語の動詞は、大きく2種類に分かれます。ビー動詞と、一般動詞です。
+        show:
+          - { type: title, text: be動詞 }
+      - say: be動詞は、「です」「にいる」という状態を表します。主語によって、am、is、areを使い分けます。Iならam。he、she、itならis。you、we、theyならareです。
+        read: ビー動詞は、「です」「にいる」という状態を表します。主語によって、アム、イズ、アーを使い分けます。アイならアム。ヒー、シー、イットならイズ。ユー、ウィー、ゼイならアーです。
+        show:
+          - { type: text, color: blue, text: "I → **am**　　he / she / it → **is**　　you / we / they → **are**" }
+      - say: I am a student. 私は学生です。He is tall. 彼は背が高いです。They are in the park. 彼らは公園にいます。
+        read: アイ、アム、ア、スチューデント。私は学生です。ヒー、イズ、トール。彼は背が高いです。ゼイ、アー、イン、ザ、パーク。彼らは公園にいます。
+        show:
+          - { type: text, text: "I **am** a student.（私は学生です）" }
+          - { type: text, text: "He **is** tall.（彼は背が高いです）" }
+          - { type: text, text: "They **are** in the park.（彼らは公園にいます）" }
+
+  - board: whiteboard
+    steps:
+      - say: 一般動詞は、動作や状態を表す、いわゆるふつうの動詞です。I play the guitar. 私はギターをひきます。She studies French. 彼女はフランス語を勉強しています。
+        read: 一般動詞は、動作や状態を表す、いわゆるふつうの動詞です。アイ、プレイ、ザ、ギター。私はギターをひきます。シー、スタディーズ、フレンチ。彼女はフランス語を勉強しています。
+        show:
+          - { type: title, text: 一般動詞 }
+          - { type: text, color: green, text: "I **play** the guitar.（私はギターをひきます）" }
+          - { type: text, color: green, text: "She **studies** French.（彼女はフランス語を勉強しています）" }
+
+  - board: whiteboard
+    steps:
+      - say: 否定文は、be動詞なら、うしろにnotを置きます。一般動詞なら、動詞の前に、do not、短くするとdon'tを置きます。
+        read: 否定文は、ビー動詞なら、うしろにノットを置きます。一般動詞なら、動詞の前に、ドゥー、ノット、短くするとドントを置きます。
+        show:
+          - { type: title, text: 否定文と疑問文 }
+          - { type: text, color: pink, text: "I am **not** from Tokyo.（私は東京出身ではない）" }
+          - { type: text, color: pink, text: "I **don't** like coffee.（私はコーヒーが好きではない）" }
+      - say: 疑問文は、be動詞なら、主語の前に出します。一般動詞なら、文の頭にDoを置きます。Are you tired? 疲れていますか。Do you like spicy food? からい食べ物は好きですか。
+        read: 疑問文は、ビー動詞なら、主語の前に出します。一般動詞なら、文の頭にドゥーを置きます。アー、ユー、タイアード。疲れていますか。ドゥー、ユー、ライク、スパイシー、フード。からい食べ物は好きですか。
+        show:
+          - { type: text, color: blue, text: "**Are** you tired?（疲れていますか？）" }
+          - { type: text, color: blue, text: "**Do** you like spicy food?（からい食べ物は好き？）" }
+      - say: 否定はnot、疑問は前に出す。この2つを覚えれば、文のバリエーションが、一気に広がります。
+        read: 否定はノット、疑問は前に出す。この2つを覚えれば、文のバリエーションが、一気に広がります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, text: "否定は not、疑問は be動詞・Do を前に出す" }

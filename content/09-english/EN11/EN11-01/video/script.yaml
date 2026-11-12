@@ -1,0 +1,44 @@
+title: 知らない単語の推測の仕方
+scenes:
+  - board: slide
+    steps:
+      - say: 英語の最後の章、「読解のための基礎」です。
+        show:
+          - { type: title, text: 第11章　読解のための基礎 }
+      - say: 知らない単語に出会ったとき、意味を推測する方法を学びます。
+        show:
+          - type: list
+            items: ["知らない単語の推測の仕方", "よく出る接頭辞・接尾辞"]
+      - say: 全部の単語を知っている必要はありません。推測する力があれば、英語は、ぐっと身近になります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "知らない単語の意味を推測する力をつける" }
+
+  - board: whiteboard
+    steps:
+      - say: 英語を読んでいて、わからない単語に出会ったら、辞書を引く前に、推測する習慣をつけると、読むスピードが、格段に上がります。まずは、前後の文脈から推測する方法です。
+        show:
+          - { type: title, text: 文脈から推測する }
+          - { type: text, size: l, color: blue, text: "The weather was gloomy — dark clouds, no sunshine, and a cold wind." }
+      - say: The weather was gloomy、dark clouds、no sunshine、and a cold wind. 天気がgloomyだった。雲は暗く、太陽の光もなく、冷たい風。この流れから、gloomyは、暗くてどんよりした、という、マイナスの意味だと推測できます。
+        read: ザ、ウェザー、ワズ、グルーミー。ダーク、クラウズ、ノー、サンシャイン、アンド、ア、コールド、ウィンド。天気がグルーミーだった。雲は暗く、太陽の光もなく、冷たい風。この流れから、グルーミーは、暗くてどんよりした、という、マイナスの意味だと推測できます。
+        show:
+          - { type: text, text: "天気が gloomy だった。暗い雲、日差しなし、冷たい風" }
+          - { type: box, color: yellow, w: 1100, text: "→ gloomy ＝「暗くてどんよりした」（マイナスの意味）と推測できる" }
+
+  - board: whiteboard
+    steps:
+      - say: 次に、語根から推測する方法です。英語の単語は、共通の根っこ、語根を持つものが多く、それを知っていると、初めて見る単語でも、意味が想像できます。
+        show:
+          - { type: title, text: 語根から推測する }
+      - say: portは、運ぶ。transport、輸送。export、輸出。import、輸入。portable、持ち運べる。dictは、言う。predict、予測する。dictionary、辞書。visは、見る。visible、見える。vision、視覚。
+        read: ポートは、運ぶ。トランスポート、輸送。エクスポート、輸出。インポート、輸入。ポータブル、持ち運べる。ディクトは、言う。プレディクト、予測する。ディクショナリー、辞書。ビズは、見る。ビジブル、見える。ビジョン、視覚。
+        show:
+          - { type: text, color: blue, text: "**port**（運ぶ）→ transport（輸送）・export（輸出）・import（輸入）・portable（持ち運べる）" }
+          - { type: text, color: green, text: "**dict**（言う）→ predict（予測する ＝ 前もって言う）・dictionary（辞書）" }
+          - { type: text, color: pink, text: "**vis**（見る）→ visible（見える）・vision（視覚）・supervise（監督する）" }
+      - say: predictは、preの、前もって、と、dictの、言う、で、前もって言う、つまり、予測する、なのですね。
+        read: プレディクトは、プリーの、前もって、と、ディクトの、言う、で、前もって言う、つまり、予測する、なのですね。
+        added: true
+        show:
+          - { type: text, color: yellow, text: "pre（前もって）＋ dict（言う）＝ predict（予測する）" }

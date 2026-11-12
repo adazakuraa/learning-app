@@ -1,0 +1,37 @@
+title: 疑問詞（5W1H）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「疑問詞」です。何を、だれが、いつ、どこで、なぜ、どうやって、を聞く言葉が、5W1Hです。
+        read: 「疑問詞」です。何を、だれが、いつ、どこで、なぜ、どうやって、を聞く言葉が、ファイブダブリューワンエイチです。
+        show:
+          - { type: title, text: 5W1H }
+      - say: What、何。What do you need? 何が必要？ Who、だれ。Who called you last night? 昨夜あなたに電話したのはだれ？ When、いつ。When does the train arrive? 電車はいつ来る？
+        read: ワット、何。ワット、ドゥー、ユー、ニード。何が必要？ フー、だれ。フー、コールド、ユー、ラスト、ナイト。昨夜あなたに電話したのはだれ？ ウェン、いつ。ウェン、ダズ、ザ、トレイン、アライブ。電車はいつ来る？
+        show:
+          - { type: text, color: blue, text: "**What**（何）：What do you need?" }
+          - { type: text, color: blue, text: "**Who**（だれ）：Who called you last night?" }
+          - { type: text, color: blue, text: "**When**（いつ）：When does the train arrive?" }
+      - say: Where、どこ。Where did you grow up? どこで育ったの？ Why、なぜ。Why are you laughing? なんで笑ってるの？ How、どうやって。How do you spell your name? 名前、どうつづるの？
+        read: ウェア、どこ。ウェア、ディッド、ユー、グロウ、アップ。どこで育ったの？ ワイ、なぜ。ワイ、アー、ユー、ラフィング。なんで笑ってるの？ ハウ、どうやって。ハウ、ドゥー、ユー、スペル、ユア、ネーム。名前、どうつづるの？
+        show:
+          - { type: text, color: green, text: "**Where**（どこ）：Where did you grow up?" }
+          - { type: text, color: green, text: "**Why**（なぜ）：Why are you laughing?" }
+          - { type: text, color: green, text: "**How**（どうやって）：How do you spell your name?" }
+
+  - board: whiteboard
+    steps:
+      - say: Howは、すぐうしろに、形容詞や副詞をつけて、どのくらい、と聞くこともできます。
+        read: ハウは、すぐうしろに、形容詞や副詞をつけて、どのくらい、と聞くこともできます。
+        show:
+          - { type: title, text: How ＋ 形容詞 }
+      - say: How old are you? 何歳ですか。How much does this cost? これはいくらですか。How far is the station? 駅までどのくらいですか。
+        read: ハウ、オールド、アー、ユー。何歳ですか。ハウ、マッチ、ダズ、ディス、コスト。これはいくらですか。ハウ、ファー、イズ、ザ、ステーション。駅までどのくらいですか。
+        show:
+          - { type: text, size: l, color: yellow, text: "**How old** are you?（何歳？）" }
+          - { type: text, size: l, color: yellow, text: "**How much** does this cost?（いくら？）" }
+          - { type: text, size: l, color: yellow, text: "**How far** is the station?（駅までどのくらい？）" }
+      - say: 旅行先で、ハウマッチ、と聞くだけでも、値段をたずねられますね。
+        added: true
+        show:
+          - { type: text, color: gray, text: "旅先では「How much?」だけでも値段が聞ける" }

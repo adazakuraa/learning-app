@@ -1,0 +1,37 @@
+title: 現在完了形
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「現在完了形」です。haveかhasと、過去分詞で表し、過去のできごとが、今とつながっていることを表します。日本語に、ぴったり合う形がないので、苦手な人が多い時制です。
+        read: 「現在完了形」です。ハブかハズと、過去分詞で表し、過去のできごとが、今とつながっていることを表します。日本語に、ぴったり合う形がないので、苦手な人が多い時制です。
+        show:
+          - { type: title, text: 現在完了形とは }
+          - { type: box, color: yellow, w: 1100, text: "**have / has ＋ 過去分詞** ＝ 過去のできごとが「今」とつながっている" }
+          - type: svg
+            w: 1000
+            h: 140
+            markup: |
+              <path d="M40 80 H960" stroke="#9aa3ad"/><path d="M945 70 L960 80 L945 90" stroke="#9aa3ad"/>
+              <circle cx="300" cy="80" r="10" fill="#8fc4ff" stroke="none"/><circle cx="800" cy="80" r="10" fill="#f3d77a" stroke="none"/>
+              <path d="M300 60 Q550 0 800 60" stroke="#f4a3b8" stroke-width="4"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="300" y="125" fill="#8fc4ff">過去</text><text x="800" y="125" fill="#f3d77a">今</text><text x="550" y="30" fill="#f4a3b8">つながっている</text></g>
+      - say: 過去分詞は、多くの場合、過去形と同じ形ですが、ちがうものもあります。be動詞の過去分詞は、beenです。
+        read: 過去分詞は、多くの場合、過去形と同じ形ですが、ちがうものもあります。ビー動詞の過去分詞は、ビーンです。
+        show:
+          - { type: text, color: gray, text: "過去分詞は過去形と同じことが多い（be動詞は **been**）" }
+
+  - board: whiteboard
+    steps:
+      - say: 現在完了には、3つの意味があります。ひとつ目は、経験、したことがある、です。I have been to New Zealand. ニュージーランドに行ったことがあります。Have you ever tried sushi? すしを食べたことはありますか。everは、これまでに、という意味です。
+        read: 現在完了には、3つの意味があります。ひとつ目は、経験、したことがある、です。アイ、ハブ、ビーン、トゥー、ニュージーランド。ニュージーランドに行ったことがあります。ハブ、ユー、エバー、トライド、スシ。すしを食べたことはありますか。エバーは、これまでに、という意味です。
+        show:
+          - { type: title, text: 3つの意味 }
+          - { type: box, color: blue, w: 1100, title: ① 経験「〜したことがある」, text: "I have been to New Zealand. ／ Have you ever tried sushi?" }
+      - say: ふたつ目は、完了、したところだ、し終えた、です。She has just finished her report. 彼女はちょうどレポートを書き終えました。
+        read: ふたつ目は、完了、したところだ、し終えた、です。シー、ハズ、ジャスト、フィニッシュト、ハー、リポート。彼女はちょうどレポートを書き終えました。
+        show:
+          - { type: box, color: green, w: 1100, title: ② 完了「〜し終えた」, text: "She has just finished her report.（ちょうど書き終えた）" }
+      - say: みっつ目は、継続、ずっと〜している、です。He has lived in this city for ten years. 彼はこの街に10年間住んでいます。10年前から今まで、ずっと続いているのですね。
+        read: みっつ目は、継続、ずっと〜している、です。ヒー、ハズ、リブド、イン、ディス、シティ、フォー、テン、イヤーズ。彼はこの街に10年間住んでいます。10年前から今まで、ずっと続いているのですね。
+        show:
+          - { type: box, color: pink, w: 1100, title: ③ 継続「ずっと〜している」, text: "He has lived in this city for ten years.（10年間住んでいる）" }

@@ -1,0 +1,47 @@
+title: 受動態（be + 過去分詞）
+scenes:
+  - board: slide
+    steps:
+      - say: 第8章、「受動態と比較表現」です。
+        show:
+          - { type: title, text: 第8章　受動態と比較表現 }
+      - say: 〜される、という受け身の表現を学びます。
+        show:
+          - type: list
+            items: ["受動態（be ＋ 過去分詞）"]
+      - say: ニュースや説明書、論文では、受け身の文がたくさん使われます。読むための大事な形です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "ニュースや説明文に多い「受け身」の形を読めるようにする" }
+
+  - board: whiteboard
+    steps:
+      - say: 受動態は、〜される、〜された、という表現で、be動詞と過去分詞の形で表します。
+        read: 受動態は、何々される、何々された、という表現で、ビー動詞と過去分詞の形で表します。
+        show:
+          - { type: title, text: 受動態 }
+          - { type: box, color: yellow, w: 1100, text: "**be動詞 ＋ 過去分詞** ＝「〜される・〜された」" }
+          - type: svg
+            w: 1100
+            h: 180
+            markup: |
+              <g stroke="none" font-size="32"><text x="40" y="50" fill="#9be0b0">Bell</text><text x="140" y="50" fill="currentColor">invented</text><text x="310" y="50" fill="#8fc4ff">the telephone.</text>
+              <text x="40" y="140" fill="#8fc4ff">The telephone</text><text x="290" y="140" fill="#f3d77a">was invented</text><text x="510" y="140" fill="#9be0b0">by Bell.</text></g>
+              <g stroke="none" font-size="20" fill="#9aa3ad"><text x="680" y="50">ベルが電話を発明した（ふつうの文）</text><text x="680" y="140">電話はベルによって発明された（受け身）</text></g>
+      - say: The telephone was invented in 1876. 電話は、1876年に発明された。This novel was written by a teenage author. この小説は、10代の作家によって書かれた。だれによって、を言いたいときは、byを使います。
+        read: ザ、テレフォン、ワズ、インベンティッド、イン、エイティーンセブンティシックス。電話は、1876年に発明された。ディス、ノベル、ワズ、リトゥン、バイ、ア、ティーンエイジ、オーサー。この小説は、10代の作家によって書かれた。だれによって、を言いたいときは、バイを使います。
+        show:
+          - { type: text, color: blue, text: "The telephone **was invented** in 1876.（電話は1876年に発明された）" }
+          - { type: text, color: blue, text: "This novel **was written by** a teenage author.（10代の作家によって書かれた）" }
+
+  - board: whiteboard
+    steps:
+      - say: The package will be delivered by tomorrow. 荷物は、明日までに届けられます。未来の受け身は、will beと、過去分詞です。
+        read: ザ、パッケージ、ウィル、ビー、デリバード、バイ、トゥモロー。荷物は、明日までに届けられます。未来の受け身は、ウィル、ビーと、過去分詞です。
+        show:
+          - { type: title, text: 未来の受け身 }
+          - { type: text, color: green, text: "The package **will be delivered** by tomorrow.（明日までに届けられる）" }
+      - say: 受け身は、だれがしたかより、何がどうなったかを、主役にしたいときに使います。
+        added: true
+        show:
+          - { type: box, color: gray, w: 1000, text: "受け身 ＝「だれが」より「何がどうなったか」を主役にしたいとき" }

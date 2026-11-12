@@ -1,0 +1,27 @@
+title: 不定詞（to + 動詞の原形）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「不定詞」です。動詞のあとに、さらに動詞を続けたいときなどに、2つ目の動詞の前に、toをつける方法があります。このtoと動詞の原形の形を、不定詞といいます。
+        read: 「不定詞」です。動詞のあとに、さらに動詞を続けたいときなどに、2つ目の動詞の前に、トゥーをつける方法があります。このトゥーと動詞の原形の形を、不定詞といいます。
+        show:
+          - { type: title, text: 不定詞 }
+          - { type: box, color: yellow, w: 1100, text: "**to ＋ 動詞の原形** ＝ 不定詞（2つ目の動詞をつなぐ）" }
+      - say: 不定詞には、大きく3つの使い方があります。ひとつ目は、〜すること。I want to learn chess. チェスを学びたい、つまり、学ぶことを望む。She decided to quit her part-time job. 彼女は、アルバイトをやめることにした。
+        read: 不定詞には、大きく3つの使い方があります。ひとつ目は、何々すること。アイ、ウォント、トゥー、ラーン、チェス。チェスを学びたい、つまり、学ぶことを望む。シー、ディサイディッド、トゥー、クイット。彼女は、アルバイトをやめることにした。
+        show:
+          - { type: text, color: blue, text: "①「〜すること」：I want **to learn** chess. ／ She decided **to quit** her job." }
+
+  - board: whiteboard
+    steps:
+      - say: ふたつ目は、〜するために、〜して。He went to the library to return some books. 本を返すために図書館に行った。I was thrilled to receive your message. あなたのメッセージを受けとって、とてもうれしかった。
+        read: ふたつ目は、何々するために、何々して。ヒー、ウェント、トゥー、ザ、ライブラリー、トゥー、リターン、サム、ブックス。本を返すために図書館に行った。アイ、ワズ、スリルド、トゥー、リシーブ、ユア、メッセージ。メッセージを受けとって、とてもうれしかった。
+        show:
+          - { type: title, text: 3つの使い方 }
+          - { type: text, color: green, text: "②「〜するために・〜して」：He went to the library **to return** some books." }
+          - { type: text, color: green, text: "I was thrilled **to receive** your message.（受けとってうれしかった）" }
+      - say: みっつ目は、〜するための、〜すべき、と名詞をくわしくする使い方。Do you have anything to declare? 申告するものはありますか。空港の税関で聞かれる言葉ですね。She has a lot of homework to finish. 彼女には、終わらせなければならない宿題がたくさんある。
+        read: みっつ目は、何々するための、何々すべき、と名詞をくわしくする使い方。ドゥー、ユー、ハブ、エニシング、トゥー、ディクレア。申告するものはありますか。空港の税関で聞かれる言葉ですね。シー、ハズ、ア、ロット、オブ、ホームワーク、トゥー、フィニッシュ。終わらせなければならない宿題がたくさんある。
+        show:
+          - { type: text, color: pink, text: "③「〜するための」：Do you have anything **to declare**?（申告するものは？）" }
+          - { type: text, color: pink, text: "She has a lot of homework **to finish**.（終わらせるべき宿題）" }

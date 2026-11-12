@@ -1,0 +1,27 @@
+title: 動名詞（-ing）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「動名詞」です。toを使わなくても、動詞をing形にすることで、〜すること、という意味の名詞のように使えます。これを、動名詞と呼びます。
+        read: 「動名詞」です。トゥーを使わなくても、動詞をアイエヌジー形にすることで、何々すること、という意味の名詞のように使えます。これを、動名詞と呼びます。
+        show:
+          - { type: title, text: 動名詞 }
+          - { type: box, color: yellow, w: 1100, text: "動詞の **ing** 形 ＝「〜すること」（名詞のように使う）" }
+      - say: 主語になる例です。Swimming every day improved his stamina. 毎日泳ぐことで、彼の体力が上がった。Giving feedback takes courage. 意見を伝えるには、勇気がいる。
+        read: 主語になる例です。スイミング、エブリデイ、インプルーブド、ヒズ、スタミナ。毎日泳ぐことで、彼の体力が上がった。ギビング、フィードバック、テイクス、カレッジ。意見を伝えるには、勇気がいる。
+        show:
+          - { type: text, color: blue, text: "**Swimming** every day improved his stamina.（毎日泳ぐこと）" }
+          - { type: text, color: blue, text: "**Giving** feedback takes courage.（意見を伝えること）" }
+
+  - board: whiteboard
+    steps:
+      - say: 動詞のあとに置く例です。I enjoy cooking for my friends. 友だちのために料理するのが好きです。She avoided making eye contact. 彼女は目を合わせるのをさけた。enjoyやavoidのあとは、不定詞ではなく、動名詞を使います。
+        read: 動詞のあとに置く例です。アイ、エンジョイ、クッキング、フォー、マイ、フレンズ。友だちのために料理するのが好きです。シー、アボイディッド、メイキング、アイ、コンタクト。彼女は目を合わせるのをさけた。エンジョイや、アボイドのあとは、不定詞ではなく、動名詞を使います。
+        show:
+          - { type: title, text: 動詞・前置詞のあとで }
+          - { type: text, color: green, text: "I enjoy **cooking** for my friends.（料理するのが好き）" }
+          - { type: text, color: green, text: "She avoided **making** eye contact.（目を合わせるのをさけた）" }
+      - say: 前置詞のあとも、動名詞です。He left without saying goodbye. あいさつもせずに去った。Thank you for listening. 聞いてくれてありがとう。She is good at organizing events. 彼女はイベントの企画が得意です。
+        read: 前置詞のあとも、動名詞です。ヒー、レフト、ウィズアウト、セイイング、グッバイ。あいさつもせずに去った。サンキュー、フォー、リスニング。聞いてくれてありがとう。シー、イズ、グッド、アット、オーガナイジング、イベンツ。イベントの企画が得意です。
+        show:
+          - { type: text, color: pink, text: "前置詞のあと：without **saying** ／ Thank you for **listening**. ／ good at **organizing**" }

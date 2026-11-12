@@ -1,0 +1,26 @@
+title: 未来表現
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「未来の表現」です。未来を表す方法は、主に2つあります。willと、be going toです。
+        read: 「未来の表現」です。未来を表す方法は、主に2つあります。ウィルと、ビー、ゴーイング、トゥーです。
+        show:
+          - { type: title, text: will と be going to }
+      - say: willは、その場で決めたことや、予測を表します。I'll help you with that. 手伝いますよ、と、その場で決めた感じです。It will probably rain tomorrow. 明日はたぶん雨でしょう。
+        read: ウィルは、その場で決めたことや、予測を表します。アイル、ヘルプ、ユー、ウィズ、ザット。手伝いますよ、と、その場で決めた感じです。イット、ウィル、プロバブリー、レイン、トゥモロー。明日はたぶん雨でしょう。
+        show:
+          - { type: box, color: blue, w: 1100, title: will, text: "その場で決めたこと・予測：I'll help you with that.（手伝いますよ）" }
+      - say: be going toは、もう計画していることや、根拠のある予測を表します。I'm going to visit my grandmother next weekend. 来週末、祖母をたずねるつもりです。Look at those clouds. It's going to rain. あの雲を見て。雨になりそうだ。
+        read: ビー、ゴーイング、トゥーは、もう計画していることや、根拠のある予測を表します。アイム、ゴーイング、トゥー、ビジット、マイ、グランドマザー。祖母をたずねるつもりです。ルック、アット、ゾーズ、クラウズ。イッツ、ゴーイング、トゥー、レイン。あの雲を見て、雨になりそうだ。
+        show:
+          - { type: box, color: green, w: 1100, title: be going to, text: "前からの計画・根拠のある予測：I'm going to visit my grandmother.（たずねるつもり）" }
+
+  - board: whiteboard
+    steps:
+      - say: 疑問文と否定文です。Will you join us for lunch? 昼食にいっしょに来ますか。She won't be there. 彼女はそこにいないでしょう。won'tは、will notを短くした形です。Are you going to apply for that job? その仕事に応募するつもりですか。
+        read: 疑問文と否定文です。ウィル、ユー、ジョイン、アス、フォー、ランチ。昼食にいっしょに来ますか。シー、ウォウント、ビー、ゼア。彼女はそこにいないでしょう。ウォウントは、ウィル、ノットを短くした形です。アー、ユー、ゴーイング、トゥー、アプライ。応募するつもりですか。
+        show:
+          - { type: title, text: 疑問文と否定文 }
+          - { type: text, color: blue, text: "**Will** you join us for lunch?（いっしょに来る？）" }
+          - { type: text, color: pink, text: "She **won't**（＝ will not）be there.（いないでしょう）" }
+          - { type: text, color: green, text: "**Are you going to** apply for that job?（応募するつもり？）" }

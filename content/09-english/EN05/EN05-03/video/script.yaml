@@ -1,0 +1,37 @@
+title: 前置詞
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「前置詞」です。前置詞は、名詞の前に置いて、時間、場所、方向、手段などの関係を表します。まずは、in、on、atです。
+        read: 「前置詞」です。前置詞は、名詞の前に置いて、時間、場所、方向、手段などの関係を表します。まずは、イン、オン、アットです。
+        show:
+          - { type: title, text: in / on / at }
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <rect x="40" y="40" width="200" height="140" stroke="#8fc4ff"/><circle cx="140" cy="110" r="18" fill="#f3d77a" stroke="none"/>
+              <path d="M440 150 H660" stroke="#9be0b0" stroke-width="4"/><circle cx="550" cy="128" r="18" fill="#f3d77a" stroke="none"/>
+              <circle cx="920" cy="110" r="8" fill="#f4a3b8" stroke="none"/><circle cx="920" cy="110" r="30" stroke="#f4a3b8" stroke-dasharray="4 4"/>
+              <g stroke="none" font-size="28" text-anchor="middle"><text x="140" y="30" fill="#8fc4ff">in（中）</text><text x="550" y="30" fill="#9be0b0">on（接して上）</text><text x="920" y="30" fill="#f4a3b8">at（点）</text></g>
+      - say: inは、空間の中。in the box、in Japan、時間ならin the morning。onは、表面にくっついている。on the table、on the wall、曜日ならon Monday。atは、地点や点。at the station、at school、時刻ならat 7 o'clockです。
+        read: インは、空間の中。イン、ザ、ボックス、イン、ジャパン。時間なら、イン、ザ、モーニング。オンは、表面にくっついている。オン、ザ、テーブル。曜日なら、オン、マンデー。アットは、地点や点。アット、ザ、ステーション。時刻なら、アット、セブン、オクロックです。
+        show:
+          - { type: text, color: blue, text: "**in**：中（in the box・in Japan・in the morning）" }
+          - { type: text, color: green, text: "**on**：くっついている（on the table・on the wall・on Monday）" }
+          - { type: text, color: pink, text: "**at**：点（at the station・at school・at 7 o'clock）" }
+
+  - board: whiteboard
+    steps:
+      - say: 方向や移動を表す前置詞です。toは、〜へ。go to the gym、ジムに行く。fromは、〜から。a letter from my cousin、いとこからの手紙。
+        read: 方向や移動を表す前置詞です。トゥーは、何々へ。ゴー、トゥー、ザ、ジム、ジムに行く。フロムは、何々から。ア、レター、フロム、マイ、カズン、いとこからの手紙。
+        show:
+          - { type: title, text: そのほかの前置詞 }
+          - { type: text, color: yellow, text: "**to**（〜へ）：go to the gym　**from**（〜から）：a letter from my cousin" }
+      - say: forは、目的や期間。a gift for you、wait for an hour。withは、いっしょに、使って。travel with a friend、write with a pen。byは、手段、期限、そば。go by bus、finish by Friday、sit by the window。aboutは、〜について。withoutは、〜なしに、です。
+        read: フォーは、目的や期間。ア、ギフト、フォー、ユー。ウェイト、フォー、アン、アワー。ウィズは、いっしょに、使って。トラベル、ウィズ、ア、フレンド。ライト、ウィズ、ア、ペン。バイは、手段、期限、そば。ゴー、バイ、バス。フィニッシュ、バイ、フライデー。アバウトは、何々について。ウィズアウトは、何々なしに、です。
+        show:
+          - { type: text, color: blue, text: "**for**：目的・期間（a gift for you ／ wait for an hour）" }
+          - { type: text, color: green, text: "**with**：いっしょに・使って（with a friend ／ with a pen）" }
+          - { type: text, color: pink, text: "**by**：手段・期限・そば（by bus ／ by Friday ／ by the window）" }
+          - { type: text, color: gray, text: "**about**（〜について）・**without**（〜なしに）" }

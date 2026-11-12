@@ -15,5 +15,4 @@
     - on the corner（角に）
 - **例文**：
     - The bookstore is right across from the post office.（書店は郵便局の真向かいにあります）
-    - Go straight down this street and turn right at the traffic
-    light.（この道をまっすぐ進み、信号で右に曲がってください）
+    - Go straight down this street and turn right at the traffic light.（この道をまっすぐ進み、信号で右に曲がってください）

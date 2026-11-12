@@ -1,0 +1,49 @@
+title: 関係代名詞（who・which・that）
+scenes:
+  - board: slide
+    steps:
+      - say: 第9章、「関係詞」です。
+        show:
+          - { type: title, text: 第9章　関係詞・間接疑問文 }
+      - say: 名詞を、うしろから説明する、関係代名詞を学びます。
+        show:
+          - type: list
+            items: ["関係代名詞（who・which・that）"]
+      - say: 英語は、大事なものを先に言って、説明をうしろにつけ足していく言葉です。その感覚をつかみましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "名詞をうしろから説明する英語の感覚をつかむ" }
+
+  - board: whiteboard
+    steps:
+      - say: 関係代名詞は、名詞を、うしろから説明するときに使います。2つの文を、ひとつにまとめる、接着剤のような役割です。
+        show:
+          - { type: title, text: 関係代名詞 }
+          - { type: box, color: yellow, w: 1100, text: "名詞をうしろから説明する ＝ 2つの文をまとめる接着剤" }
+      - say: I have a friend. She lives in Canada. この2つの文を、関係代名詞のwhoでつなぐと、I have a friend who lives in Canada. カナダに住んでいる友だちがいます、となります。
+        read: アイ、ハブ、ア、フレンド。シー、リブズ、イン、カナダ。この2つの文を、関係代名詞のフーでつなぐと、アイ、ハブ、ア、フレンド、フー、リブズ、イン、カナダ。カナダに住んでいる友だちがいます、となります。
+        show:
+          - type: svg
+            w: 1100
+            h: 160
+            markup: |
+              <g stroke="none" font-size="30"><text x="40" y="50" fill="currentColor">I have</text><text x="160" y="50" fill="#8fc4ff">a friend</text><text x="300" y="50" fill="#f3d77a">who</text><text x="380" y="50" fill="#9be0b0">lives in Canada.</text></g>
+              <path d="M600 65 Q420 140 230 65" stroke="#9be0b0" stroke-dasharray="6 6"/><path d="M245 72 L230 65 L240 55" stroke="#9be0b0"/>
+              <text x="620" y="120" font-size="20" fill="#9be0b0" stroke="none">うしろから「友だち」を説明</text>
+
+  - board: whiteboard
+    steps:
+      - say: 説明するものが人なら、who。それ以外なら、whichか、thatを使います。This is the book that changed my life. これが、私の人生を変えた本です。
+        read: 説明するものが人なら、フー。それ以外なら、ウィッチか、ザットを使います。ディス、イズ、ザ、ブック、ザット、チェンジド、マイ、ライフ。これが、私の人生を変えた本です。
+        show:
+          - { type: title, text: who / which / that }
+          - { type: text, color: blue, text: "人 → **who**：I have a friend **who** lives in Canada." }
+          - { type: text, color: green, text: "人以外 → **which / that**：This is the book **that** changed my life." }
+      - say: 省略されることもあります。The movie I watched last night was fascinating. 昨夜見た映画は、とてもおもしろかった。movieのあとに、thatが省略されています。
+        read: 省略されることもあります。ザ、ムービー、アイ、ウォッチト、ラスト、ナイト、ワズ、ファシネイティング。昨夜見た映画は、とてもおもしろかった。ムービーのあとに、ザットが省略されています。
+        show:
+          - { type: text, color: gray, text: "省略も：The movie (that) I watched last night was fascinating." }
+      - say: 時ならwhen、場所ならwhereも使えます。この2つは、正確には、関係副詞と呼ばれます。Do you remember the cafe where we met? 私たちが出会ったカフェを、覚えていますか。
+        read: 時ならウェン、場所ならウェアも使えます。この2つは、正確には、関係副詞と呼ばれます。ドゥー、ユー、リメンバー、ザ、カフェ、ウェア、ウィー、メット。私たちが出会ったカフェを、覚えていますか。
+        show:
+          - { type: text, color: pink, text: "時 → **when**、場所 → **where**（関係副詞）：the café **where** we met" }

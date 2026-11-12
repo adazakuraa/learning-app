@@ -1,0 +1,29 @@
+title: その他の助動詞１
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「その他の助動詞」です。mustは、しなければならない、という強い義務や命令と、ちがいない、という強い推量を表します。You must wear a helmet. ヘルメットを着けなければなりません。She must be exhausted after that long journey. あの長旅のあとでは、彼女はきっと疲れ果てているにちがいない。
+        read: 「その他の助動詞」です。マストは、しなければならない、という強い義務や命令と、ちがいない、という強い推量を表します。ユー、マスト、ウェア、ア、ヘルメット。ヘルメットを着けなければなりません。シー、マスト、ビー、イグゾースティッド。彼女はきっと疲れ果てているにちがいない。
+        show:
+          - { type: title, text: must と have to }
+          - { type: box, color: pink, w: 1100, title: must, text: "強い義務「しなければならない」／ 強い推量「ちがいない」" }
+          - { type: text, text: "You **must** wear a helmet. ／ She **must** be exhausted." }
+      - say: have toも、しなければならない、ですが、外のルールや状況による義務を表します。I have to submit the form by tomorrow. 明日までに書類を出さなければなりません。
+        read: ハブ、トゥーも、しなければならない、ですが、外のルールや状況による義務を表します。アイ、ハフ、トゥー、サブミット、ザ、フォーム、バイ、トゥモロー。明日までに書類を出さなければなりません。
+        show:
+          - { type: box, color: blue, w: 1100, title: have to, text: "外のルール・状況による義務：I **have to** submit the form by tomorrow." }
+
+  - board: whiteboard
+    steps:
+      - say: shouldは、すべきだ、したほうがいい、というアドバイスや提案を表します。mustより、強制する力が弱い言い方です。You should get more sleep. もっと寝たほうがいいですよ。We shouldn't judge people by appearance. 見た目で人を判断すべきではない。
+        read: シュッドは、すべきだ、したほうがいい、というアドバイスや提案を表します。マストより、強制する力が弱い言い方です。ユー、シュッド、ゲット、モア、スリープ。もっと寝たほうがいいですよ。ウィー、シュドゥント、ジャッジ、ピープル、バイ、アピアランス。見た目で人を判断すべきではない。
+        show:
+          - { type: title, text: should }
+          - { type: box, color: green, w: 1100, title: should, text: "アドバイス「〜したほうがいい」（must より弱い）" }
+          - { type: text, text: "You **should** get more sleep.（もっと寝たほうがいい）" }
+          - { type: text, text: "We **shouldn't** judge people by appearance.（見た目で判断すべきでない）" }
+      - say: 強さの順にならべると、must、have to、should、という感じです。人にアドバイスするときは、shouldを使うと、角が立ちません。
+        read: 強さの順にならべると、マスト、ハフトゥー、シュッド、という感じです。人にアドバイスするときは、シュッドを使うと、角が立ちません。
+        added: true
+        show:
+          - { type: text, color: gray, text: "強さ：must ＞ have to ＞ should（アドバイスは should で）" }

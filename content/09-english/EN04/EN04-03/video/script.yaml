@@ -1,0 +1,32 @@
+title: 可算名詞と不可算名詞
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「数えられる名詞と、数えられない名詞」です。英語の名詞は、数えられる可算名詞と、数えられない不可算名詞に分かれます。
+        show:
+          - { type: title, text: 可算名詞と不可算名詞 }
+      - say: 可算名詞は、ひとつならaかan、2つ以上なら、複数形にします。a ticket、two tickets。an idea、three ideas。
+        read: 可算名詞は、ひとつならエーかアン、2つ以上なら、複数形にします。ア、チケット、トゥー、チケッツ。アン、アイディア、スリー、アイディアズ。
+        show:
+          - { type: box, color: blue, w: 1100, title: 可算名詞（数えられる）, text: "a ticket / two tickets、an idea / three ideas" }
+      - say: 不可算名詞は、そのままの形で使い、aや、数字をつけません。water、水。information、情報。advice、アドバイスなどです。
+        read: 不可算名詞は、そのままの形で使い、エーや、数字をつけません。ウォーター、水。インフォメーション、情報。アドバイス、などです。
+        show:
+          - { type: box, color: pink, w: 1100, title: 不可算名詞（数えられない）, text: "water（水）・information（情報）・advice（アドバイス）→ a や数字をつけない" }
+      - say: 水や情報は、はっきりした形や区切りがないので、数えられない、と考えるのです。日本語でも、水ひとつ、とは言いませんね。
+        added: true
+        show:
+          - { type: text, color: gray, text: "形や区切りがないもの ＝ 数えられない（「水ひとつ」とは言わない）" }
+
+  - board: whiteboard
+    steps:
+      - say: 不可算名詞を、量として表したいときは、入れ物などの単位を使います。a glass of water、水一杯。a piece of advice、アドバイスひとつ。two bags of rice、お米二袋。
+        read: 不可算名詞を、量として表したいときは、入れ物などの単位を使います。ア、グラス、オブ、ウォーター、水一杯。ア、ピース、オブ、アドバイス、アドバイスひとつ。トゥー、バッグズ、オブ、ライス、お米二袋。
+        show:
+          - { type: title, text: 単位と some / any }
+          - { type: text, color: green, text: "a glass of water（水一杯）／ a piece of advice（アドバイスひとつ）／ two bags of rice（米二袋）" }
+      - say: someは、いくつかの、いくらかの、という意味です。anyは、否定文や疑問文で使います。I need some help. 助けが必要です。Do you have any questions? 質問はありますか。I don't have any cash. 現金をまったく持っていません。
+        read: サムは、いくつかの、いくらかの、という意味です。エニーは、否定文や疑問文で使います。アイ、ニード、サム、ヘルプ。助けが必要です。ドゥー、ユー、ハブ、エニー、クエスチョンズ。質問はありますか。アイ、ドント、ハブ、エニー、キャッシュ。現金をまったく持っていません。
+        show:
+          - { type: text, color: yellow, text: "**some**：いくつか・いくらか（I need **some** help.）" }
+          - { type: text, color: yellow, text: "**any**：否定文・疑問文で（Do you have **any** questions?）" }

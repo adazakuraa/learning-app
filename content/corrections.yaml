@@ -385,3 +385,95 @@
   note: 掲載されている図は「カフェウォール錯視」（チェルナー錯視の仲間）
   find: "チェルナーの錯視では"
   replace: "カフェウォール錯視（チェルナー錯視の仲間）では"
+- unit: english-en01-03
+  note: 「二重母音」は別の意味の用語（diphthong）なので、ここは「母音が2つ並ぶときのルール」
+  find: "- **二重母音**のルール：母音が二つ並ぶとき、"
+  replace: "- **母音が2つ並ぶ**ときのルール：母音が二つ並ぶとき、"
+- unit: english-en03-02
+  note: 例文の主語と訳がずれていた
+  find: "    - he **didn't** answer my question.（彼女は私の質問に答えなかった）"
+  replace: "    - She **didn't** answer my question.（彼女は私の質問に答えなかった）"
+- unit: english-en04-01
+  note: anになるのは「母音の音」で始まる語の前（an hour / a university）
+  find: "次の単語が母音で始まる場合はの前はanになります。"
+  replace: "次の単語が母音の「音」で始まる場合はanになります（an apple、an hour。universityは「ユ」の音なので a university）。"
+- unit: english-en04-02
+  note: 並び順を他の行（主格-目的格-所有格-所有代名詞）とそろえる
+  find: "    - I - my - me - mine"
+  replace: "    - I - me - my - mine"
+- unit: english-en04-02
+  note: 並び順の説明を追加
+  find: "- 使い分けの例："
+  replace: "    - （左から、主格 - 目的格 - 所有格 - 所有代名詞）\n- 使い分けの例："
+- unit: english-en05-01
+  note: 例文の誤り（「クジラ」全体ではなくシロナガスクジラ／冠詞）
+  find: "    - Whale is **the biggest** animal.（クジラは最も大きい生き物だ）"
+  replace: "    - The blue whale is **the biggest** animal.（シロナガスクジラは最も大きい動物だ）"
+- unit: english-en05-01
+  note: 文の途中で切れていた
+  find: "長い形容詞なら、前にmost（the most comfortable）"
+  replace: "長い形容詞なら、前にmostをつけます（the most comfortable）。"
+- unit: english-en06-03
+  note: 訳の誤記
+  find: "（今午後雨が降るかもしれません）"
+  replace: "（今日の午後、雨が降るかもしれません）"
+- unit: english-en06-03
+  note: 例文にmightが抜けていた
+  find: "    - I join you later, but I'm not sure.（後で合流するかもしれません）"
+  replace: "    - I **might** join you later, but I'm not sure.（後で合流するかもしれませんが、わかりません）"
+- unit: english-en07-03
+  note: 説明の言いすぎと誤字を修正
+  find: "- 1つの文に2つ以上の動詞を入れたいときは、2つ目の動詞の前にに、「to」をつけなければいけない、というルールがあります。"
+  replace: "- 動詞のあとにさらに動詞を続けたいときなどに、2つ目の動詞の前に「to」をつける方法があります。"
+- unit: english-en07-03
+  note: 強調するtoの位置（前置詞のtoではなく不定詞のto）
+  find: "    - He went **to** the library to return some books."
+  replace: "    - He went to the library **to** return some books."
+- unit: english-en07-04
+  note: 脱字
+  find: "一方の動詞ing形にする"
+  replace: "一方の動詞をing形にする"
+- unit: english-en09-01
+  note: when・whereは関係副詞
+  find: "修飾するものが人の場合はwho, 時間ならwhen, 場所ならwhere, それ以外は、whichか thatを使います。省略されることもあります。"
+  replace: "修飾するものが人の場合はwho、それ以外は、whichかthatを使います。省略されることもあります。時間ならwhen、場所ならwhereも使えます（この2つは正確には**関係副詞**と呼ばれます）。"
+- unit: english-en10-01
+  note: 改行の崩れ
+  find: "No\n    problem."
+  replace: "No problem."
+- unit: english-en10-01
+  note: 改行の崩れ
+  find: "My\n    bad."
+  replace: "My bad."
+- unit: english-en10-01
+  note: 改行の崩れ
+  find: "Do you\n    mind"
+  replace: "Do you mind"
+- unit: english-en10-01
+  note: 改行の崩れ
+  find: "What\n    do you mean"
+  replace: "What do you mean"
+- unit: english-en10-01
+  note: 改行の崩れ
+  find: "That makes\n    sense."
+  replace: "That makes sense."
+- unit: english-en10-02
+  note: 改行の崩れ
+  find: "traffic\n    light."
+  replace: "traffic light."
+- unit: english-en10-05
+  note: 改行の崩れ
+  find: "subscribe（登録する）/\n    unsubscribe"
+  replace: "subscribe（登録する）/ unsubscribe"
+- unit: english-en10-05
+  note: ゲームでのinventoryは「持ち物」
+  find: "inventory（在庫）"
+  replace: "inventory（持ち物）"
+- unit: english-en11-02
+  note: misleadの意味
+  find: "mislead（誤解）"
+  replace: "mislead（誤解させる）"
+- unit: english-en11-02
+  note: possibleは-ible（-ableの仲間）
+  find: "possible（可能）"
+  replace: "possible（可能な。-ibleも同じ仲間）"

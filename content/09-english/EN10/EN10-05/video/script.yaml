@@ -1,0 +1,30 @@
+title: ゲームや日常でよく見る英単語
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「ゲームや日常でよく見る英単語」です。ゲームでよく出る言葉。continue、続ける。quit、やめる。restart、やり直す。save、保存する。load、読みこむ。inventory、持ち物。equip、装備する。defeat、敗北、または倒す。achievement、実績。unlock、解除する。reward、報酬。
+        read: 「ゲームや日常でよく見る英単語」です。ゲームでよく出る言葉。コンティニュー、続ける。クイット、やめる。リスタート、やり直す。セーブ、保存する。ロード、読みこむ。インベントリー、持ち物。イクイップ、装備する。ディフィート、敗北、または倒す。アチーブメント、実績。アンロック、解除する。リワード、報酬。
+        show:
+          - { type: title, text: ゲーム }
+          - { type: text, color: yellow, text: "continue（続ける）/ quit（やめる）/ restart（やり直す）/ save（保存）/ load（読みこむ）" }
+          - { type: text, color: yellow, text: "inventory（持ち物）/ equip（装備する）/ defeat（敗北・倒す）" }
+          - { type: text, color: yellow, text: "achievement（実績）/ unlock（解除する）/ reward（報酬）" }
+
+  - board: whiteboard
+    steps:
+      - say: スマホやアプリでよく出る言葉。settings、設定。notifications、通知。permissions、許可。update、更新。loading、読みこみ中。subscribe、登録する。unsubscribe、登録解除する。
+        read: スマホやアプリでよく出る言葉。セッティングズ、設定。ノティフィケーションズ、通知。パーミッションズ、許可。アップデート、更新。ローディング、読みこみ中。サブスクライブ、登録する。アンサブスクライブ、登録解除する。
+        show:
+          - { type: title, text: スマホ・ウェブ }
+          - { type: text, color: blue, text: "settings（設定）/ notifications（通知）/ permissions（許可）" }
+          - { type: text, color: blue, text: "update（更新）/ loading（読みこみ中）/ subscribe・unsubscribe（登録・解除）" }
+      - say: ウェブやSNSでよく出る言葉。share、シェアする。featured、注目の。recommended、おすすめの。privacy、プライバシー。terms of service、利用規約。attachment、添付ファイルです。
+        read: ウェブやエスエヌエスでよく出る言葉。シェア、シェアする。フィーチャード、注目の。レコメンディッド、おすすめの。プライバシー。タームズ、オブ、サービス、利用規約。アタッチメント、添付ファイルです。
+        show:
+          - { type: text, color: green, text: "share（シェア）/ featured（注目の）/ recommended（おすすめ）" }
+          - { type: text, color: green, text: "privacy / terms of service（利用規約）/ attachment（添付ファイル）" }
+      - say: unsubscribeのunや、restartのreは、次の章で学ぶ、接頭辞です。身近な単語にも、英語のしくみがかくれています。
+        read: アンサブスクライブのアンや、リスタートのリーは、次の章で学ぶ、接頭辞です。身近な単語にも、英語のしくみがかくれています。
+        added: true
+        show:
+          - { type: text, color: gray, text: "un-subscribe、re-start ＝ 次の章の「接頭辞」" }

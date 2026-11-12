@@ -1,0 +1,24 @@
+title: 副詞の使い方
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「副詞」です。副詞は、動詞、形容詞、ほかの副詞、そして、文全体をくわしく説明します。多くは、形容詞に、lyをつけてつくります。quickはquickly、速く。carefulはcarefully、注意深く。suddenはsuddenly、突然。
+        read: 「副詞」です。副詞は、動詞、形容詞、ほかの副詞、そして、文全体をくわしく説明します。多くは、形容詞に、エルワイをつけてつくります。クイックは、クイックリー、速く。ケアフルは、ケアフリー、注意深く。サドンは、サドンリー、突然。
+        show:
+          - { type: title, text: 副詞のつくり方 }
+          - { type: box, color: yellow, w: 1100, text: "多くは 形容詞 ＋ **ly**：quick → quickly、careful → carefully、sudden → suddenly" }
+      - say: 形が変わるものもあります。goodはwell、上手に。fastは、そのままfast、hardも、そのままhardで、一生懸命に、です。
+        read: 形が変わるものもあります。グッドは、ウェル、上手に。ファストは、そのままファスト、ハードも、そのままハードで、一生懸命に、です。
+        show:
+          - { type: text, color: pink, text: "good → **well**（上手に）／ fast → fast ／ hard → hard（一生懸命に）" }
+
+  - board: whiteboard
+    steps:
+      - say: 例文です。She sings beautifully. 彼女は美しく歌う。He always arrives early. 彼はいつも早く来る。She is usually calm. 彼女はふだん落ち着いている。Fortunately, no one was injured. 幸いにも、だれもけがをしなかった。
+        read: 例文です。シー、シングズ、ビューティフリー。彼女は美しく歌う。ヒー、オールウェイズ、アライブズ、アーリー。彼はいつも早く来る。シー、イズ、ユージュアリー、カーム。彼女はふだん落ち着いている。フォーチュネットリー、ノー、ワン、ワズ、インジャード。幸いにも、だれもけがをしなかった。
+        show:
+          - { type: title, text: 例文 }
+          - { type: text, color: blue, text: "She sings **beautifully**.（美しく歌う）← 動詞を説明" }
+          - { type: text, color: blue, text: "He **always** arrives **early**.（いつも早く来る）" }
+          - { type: text, color: blue, text: "She is **usually** calm.（ふだん落ち着いている）" }
+          - { type: text, color: green, text: "**Fortunately**, no one was injured.（幸いにも…）← 文全体を説明" }
