@@ -1,0 +1,55 @@
+title: デジタルとは何か
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「デジタルとは何か」です。デジタルとは、情報を、0と1の、2つの状態だけで表す方法です。電気が流れていない、流れている、のように、スイッチのオフとオンで表します。
+        show:
+          - { type: title, text: デジタル }
+          - { type: text, size: l, text: "**デジタル** ＝ 情報を 0 と 1 だけで表す" }
+      - say: 0か1かを表す、情報のいちばん小さな単位を、ビットといいます。そして、8ビットのまとまりを、1バイトといいます。
+        show:
+          - type: svg
+            w: 1000
+            h: 140
+            markup: |
+              <g stroke="#8fc4ff" stroke-width="3"><rect x="20" y="20" width="80" height="80"/><rect x="100" y="20" width="80" height="80"/><rect x="180" y="20" width="80" height="80"/><rect x="260" y="20" width="80" height="80"/><rect x="340" y="20" width="80" height="80"/><rect x="420" y="20" width="80" height="80"/><rect x="500" y="20" width="80" height="80"/><rect x="580" y="20" width="80" height="80"/></g>
+              <g stroke="none" font-size="36" fill="#f3d77a" text-anchor="middle"><text x="60" y="73">0</text><text x="140" y="73">1</text><text x="220" y="73">0</text><text x="300" y="73">0</text><text x="380" y="73">0</text><text x="460" y="73">0</text><text x="540" y="73">0</text><text x="620" y="73">1</text></g>
+              <g stroke="none" font-size="24"><text x="700" y="55" fill="#8fc4ff">1マス ＝ 1ビット</text><text x="700" y="95" fill="#f3d77a">8ビット ＝ 1バイト</text></g>
+      - say: 1バイトで、256通りを表せます。文字も、色も、音も、すべて、この0と1の並びに置きかえて扱っているのです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "1バイト ＝ 256通り。文字も色も音も、0と1の並びで表す" }
+
+  - board: whiteboard
+    steps:
+      - say: 画像の細かさを表すのが、解像度です。画像は、ピクセルという、小さな点の集まりでできています。
+        show:
+          - { type: title, text: 解像度 }
+          - { type: text, text: "**解像度** ＝ 画像の点（**ピクセル**）の数" }
+      - say: フルHDは、横1920個、縦1080個の点で画像をつくります。4Kは、その約4倍の点を使うので、ずっときめ細かくなります。
+        show:
+          - type: svg
+            w: 900
+            h: 230
+            markup: |
+              <rect x="20" y="40" width="240" height="135" stroke="#8fc4ff"/>
+              <rect x="400" y="10" width="480" height="270" stroke="#f3d77a"/>
+              <path d="M400 145 H880 M640 10 V280" stroke="#f3d77a" stroke-dasharray="8 8"/>
+              <g stroke="none" font-size="24"><text x="40" y="215" fill="#8fc4ff">フルHD 1920×1080</text><text x="420" y="45" fill="#f3d77a">4K（約4倍の点）</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 圧縮は、データの大きさを小さくする技術です。保存や送信が、速く、軽くなります。圧縮には、2種類あります。
+        show:
+          - { type: title, text: 圧縮 }
+          - { type: text, text: "**圧縮** ＝ データを小さくする → 保存・送信が速くなる" }
+      - say: JPEGは、写真を圧縮する形式で、人の目に目立たない情報を一部捨てて、小さくします。元にはもどせないので、非可逆圧縮といいます。くり返し保存すると、だんだん画質が落ちます。
+        show:
+          - { type: box, color: pink, w: 1100, title: 非可逆圧縮（JPEG など）, text: "一部の情報を捨てて小さく。元にもどせない。くり返すと画質が落ちる" }
+      - say: ZIPは、ファイルを圧縮しても、完全に元にもどせる形式です。これを、可逆圧縮といいます。
+        show:
+          - { type: box, color: blue, w: 1100, title: 可逆圧縮（ZIP など）, text: "完全に元にもどせる" }
+      - say: 布団圧縮袋にたとえると、可逆圧縮は空気をぬくだけ。非可逆圧縮は、中の布団を少し切りとって小さくするようなものです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "布団圧縮袋：空気をぬくだけ（可逆）／布団を少し切って小さく（非可逆）" }

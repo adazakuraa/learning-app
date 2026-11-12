@@ -1,0 +1,62 @@
+title: 侵食・運搬・堆積
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 地形は、水や氷のはたらきによって、つくられていきます。そのはたらきは、侵食、運搬、堆積の3つです。
+        show:
+          - { type: title, text: 侵食・運搬・堆積 }
+          - type: svg
+            w: 1100
+            h: 140
+            markup: |
+              <g stroke-width="3"><rect x="10" y="30" width="260" height="80" rx="14" stroke="#f4a3b8"/><rect x="420" y="30" width="260" height="80" rx="14" stroke="#f3d77a"/><rect x="830" y="30" width="260" height="80" rx="14" stroke="#8fc4ff"/></g>
+              <path d="M275 70 H410 M395 58 L410 70 L395 82 M685 70 H820 M805 58 L820 70 L805 82" stroke="#9aa3ad"/>
+              <g stroke="none" font-size="28" text-anchor="middle"><text x="140" y="80" fill="#f4a3b8">侵食（けずる）</text><text x="550" y="80" fill="#f3d77a">運搬（運ぶ）</text><text x="960" y="80" fill="#8fc4ff">堆積（積もる）</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 侵食は、岩や地面がけずられることです。主に、雨水や川、波、氷河がけずります。
+        show:
+          - { type: title, text: 侵食 }
+          - { type: image, src: 1000002983.webp, at: [80, 130], w: 620 }
+          - { type: text, at: [740, 150], w: 480, text: "**侵食**：雨水・川・波・氷河がけずる" }
+      - say: アメリカのグランドキャニオンは、川が長い年月をかけて、岩盤をけずってできました。深さはおよそ1600メートル。そのがけには、およそ20億年分の、地球の歴史がきざまれています。
+        show:
+          - { type: box, at: [740, 300], w: 480, color: yellow, text: "グランドキャニオン：川がけずった深さ約1600m の谷。約20億年分の地層" }
+
+  - board: whiteboard
+    steps:
+      - say: リアス海岸も、侵食がつくった地形です。
+        show:
+          - { type: title, text: リアス海岸 }
+          - { type: image, src: 1000002986.webp, at: [80, 125], w: 1000 }
+      - say: まず、川が山地をけずって、深いV字の谷をつくります。そのあと、土地が沈んだり、海面が上がったりして、谷の奥まで海水が入りこみます。こうしてできた、ギザギザに入り組んだ海岸が、リアス海岸です。東北の三陸海岸などが有名です。
+        show:
+          - { type: text, at: [80, 545], w: 1120, text: "川がけずった **V字谷** に海水が入りこむ → 入り組んだ **リアス海岸**（三陸海岸など）" }
+      - say: 湾が奥深く入り組んでいるので、波がおだやかで、カキやワカメの養殖に向いています。ただ、津波が来ると、湾の奥で波が高くなりやすいという、こわい面もあります。
+        added: true
+        show:
+          - { type: text, at: [80, 665], size: s, color: gray, text: "波がおだやかで養殖に向く。ただし津波は湾の奥で高くなりやすい" }
+
+  - board: whiteboard
+    steps:
+      - say: 運搬は、けずられたものが、水に運ばれていくことです。下流に行くほど、運ばれる石は、小さく、丸くなっていきます。
+        show:
+          - { type: title, text: 運搬と堆積 }
+          - { type: text, text: "**運搬**：下流ほど、石は小さく丸くなる" }
+      - say: 堆積は、運ばれたものが積もることです。流れがゆるやかになる場所で起こります。川が山から平地に出る所には、扇状地ができます。川が海や湖に注ぐ所には、三角州ができます。
+        show:
+          - { type: text, text: "**堆積**：流れがゆるやかになる所で積もる" }
+          - { type: image, src: 1000002984.webp, at: [300, 260], w: 620 }
+
+  - board: whiteboard
+    steps:
+      - say: 氷河も、強い侵食の力を持っています。昔、氷河がけずった谷に、海水が入りこんでできたのが、フィヨルドです。ノルウェーや、ニュージーランドが有名です。
+        show:
+          - { type: title, text: フィヨルド }
+          - { type: image, src: 1000002985.webp, at: [80, 130], w: 620 }
+          - { type: text, at: [740, 160], w: 480, text: "**氷河** がけずった谷に海水が入りこむ ＝ **フィヨルド**（ノルウェー・ニュージーランド）" }
+      - say: 川がけずった谷ならリアス海岸、氷河がけずった谷ならフィヨルド、と覚えておきましょう。
+        added: true
+        show:
+          - { type: box, at: [740, 380], w: 480, color: yellow, text: "川の谷 → リアス海岸　氷河の谷 → フィヨルド" }

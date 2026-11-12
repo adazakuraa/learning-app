@@ -2,3 +2,8 @@ id: psychology-ps08-02
 code: PS08-02
 title: サイコパスとダークトライアド
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 106
+  narration: VOICEVOX:ずんだもん

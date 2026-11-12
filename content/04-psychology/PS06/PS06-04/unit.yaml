@@ -2,3 +2,8 @@ id: psychology-ps06-04
 code: PS06-04
 title: 態度と説得・プロパガンダ
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 115
+  narration: VOICEVOX:ずんだもん

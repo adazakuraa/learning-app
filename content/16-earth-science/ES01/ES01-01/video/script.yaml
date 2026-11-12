@@ -1,0 +1,69 @@
+title: 地球の誕生と構造
+scenes:
+  - board: slide
+    steps:
+      - say: 地学の最初の章、「地球の構造と歴史」です。
+        show:
+          - { type: title, text: 第1章　地球の構造と歴史 }
+      - say: 私たちが立っている地球が、どうやって生まれ、中はどうなっていて、どんな歴史をたどってきたのかを学びます。
+        show:
+          - type: list
+            items: ["地球の誕生と構造", "プレートテクトニクス", "地球の歴史と地層"]
+      - say: 地震や火山、山や海の形。身のまわりの大地のできごとは、すべてこの章の話につながっています。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "地球の中のつくりと、大地が動くしくみ、46億年の歴史の流れをつかむ" }
+
+  - board: whiteboard
+    steps:
+      - say: 地球が生まれたのは、およそ46億年前です。太陽系ができるとき、岩石でできた小さな星が、ぶつかって合体することをくり返して、地球になりました。
+        show:
+          - { type: title, text: 地球の誕生 }
+          - type: svg
+            w: 1000
+            h: 200
+            markup: |
+              <g stroke="#9aa3ad"><circle cx="80" cy="100" r="18"/><circle cx="150" cy="60" r="12"/><circle cx="160" cy="140" r="20"/><circle cx="230" cy="100" r="14"/></g>
+              <path d="M300 100 H420 M405 88 L420 100 L405 112" stroke="#9aa3ad"/>
+              <circle cx="560" cy="100" r="80" stroke="#f4a3b8" fill="#f4a3b8" fill-opacity="0.25"/>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="150" y="195" fill="#9aa3ad">小さな星が衝突・合体</text><text x="560" y="108" fill="#f4a3b8">マグマの海</text><text x="820" y="108" fill="currentColor">約46億年前</text></g>
+      - say: 生まれたばかりの地球は、ぶつかったときの熱で、全体がどろどろにとけた、マグマの海の状態でした。
+        show:
+          - { type: text, color: pink, text: "誕生直後：衝突の熱で全体がとけた「マグマの海」" }
+
+  - board: whiteboard
+    steps:
+      - say: 地球の中は、どうなっているのでしょう。地球の半径は、およそ6400キロメートル。ゆで卵のように、層になっています。
+        show:
+          - { type: title, text: 地球の中のつくり }
+          - type: svg
+            at: [80, 130]
+            w: 560
+            h: 560
+            markup: |
+              <circle cx="280" cy="280" r="260" stroke="#9be0b0"/><circle cx="280" cy="280" r="245" stroke="#f3d77a" fill="#f3d77a" fill-opacity="0.12"/><circle cx="280" cy="280" r="120" stroke="#f4a3b8" fill="#f4a3b8" fill-opacity="0.25"/>
+              <g stroke="none" font-size="26" text-anchor="middle"><text x="280" y="290" fill="#f4a3b8">核（鉄）</text><text x="280" y="105" fill="#f3d77a">マントル</text></g>
+      - say: 真ん中が、鉄でできた核。そのまわりが、岩石でできたマントル。いちばん外側の、うすい皮が、地殻です。私たちは、この地殻の上に住んでいます。
+        show:
+          - { type: text, at: [700, 200], color: pink, text: "核：鉄（中心）" }
+          - { type: text, at: [700, 270], color: yellow, text: "マントル：岩石" }
+          - { type: text, at: [700, 340], color: green, text: "地殻：いちばん外のうすい皮" }
+      - say: 卵でいえば、黄身が核、白身がマントル、殻が地殻です。地殻は、卵の殻くらい、とてもうすいのです。
+        added: true
+        show:
+          - { type: box, at: [700, 440], color: blue, w: 500, text: "黄身 ＝ 核、白身 ＝ マントル、殻 ＝ 地殻" }
+
+  - board: whiteboard
+    steps:
+      - say: 地球の核は、磁場、つまり磁石のような力をつくっています。方位磁石が北を指すのは、このためです。
+        show:
+          - { type: title, text: 地球の磁場 }
+          - { type: image, src: 1000002978.webp, at: [80, 130], w: 620 }
+          - { type: text, at: [740, 160], w: 480, text: "核が **磁場** をつくる → 方位磁石が北を指す" }
+      - say: この磁場は、太陽からふき出す、有害な粒子の流れ、太陽風から、地球を守るバリアになっています。
+        show:
+          - { type: box, at: [740, 320], w: 480, color: yellow, text: "磁場は **太陽風**（有害な粒子）から地球を守るバリア" }
+      - say: 北極や南極の近くで見られるオーロラは、このバリアのすき間から入りこんだ粒子が、空気とぶつかって光る現象です。
+        added: true
+        show:
+          - { type: text, at: [740, 500], w: 480, size: s, color: gray, text: "オーロラ：入りこんだ粒子が空気とぶつかって光る" }

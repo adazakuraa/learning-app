@@ -2,3 +2,8 @@ id: physics-ph06-01
 code: PH06-01
 title: 原子の構造と原子核
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 106
+  narration: VOICEVOX:ずんだもん

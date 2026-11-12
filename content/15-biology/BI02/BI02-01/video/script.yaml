@@ -1,0 +1,78 @@
+title: 細胞の基本構造
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「細胞」の章です。
+        show:
+          - { type: title, text: 第2章　細胞 }
+      - say: この章では、生き物の基本の単位、細胞のつくりと、細胞の種類、そして、細胞が増えるしくみを学びます。
+        added: true
+        show:
+          - type: list
+            items: ["細胞の基本構造", "原核細胞と真核細胞", "細胞分裂"]
+      - say: 私たちの体は、およそ37兆個の細胞でできているといわれます。そのひとつひとつの中で、何が起きているのかを見ていきましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "生き物の基本単位「細胞」のつくりと働きをイメージする" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「細胞の基本構造」です。細胞は、生命の基本の単位です。ただし、動物と植物では、つくりが少しちがいます。
+        show:
+          - { type: title, text: 細胞の基本構造 }
+          - type: svg
+            at: [80, 160]
+            w: 1100
+            h: 380
+            markup: |
+              <ellipse cx="260" cy="190" rx="220" ry="160" stroke="#f4a3b8"/>
+              <circle cx="260" cy="190" r="50" stroke="#8fc4ff"/>
+              <ellipse cx="150" cy="120" rx="34" ry="16" stroke="#f3d77a"/><ellipse cx="360" cy="260" rx="34" ry="16" stroke="#f3d77a"/>
+              <rect x="620" y="40" width="440" height="300" stroke="#9be0b0" stroke-width="6"/>
+              <rect x="640" y="60" width="400" height="260" stroke="#f4a3b8"/>
+              <circle cx="840" cy="190" r="50" stroke="#8fc4ff"/>
+              <ellipse cx="720" cy="120" rx="34" ry="16" stroke="#f3d77a"/>
+              <g fill="#9be0b0" fill-opacity="0.6" stroke="#9be0b0"><ellipse cx="960" cy="110" rx="30" ry="18"/><ellipse cx="720" cy="270" rx="30" ry="18"/><ellipse cx="960" cy="270" rx="30" ry="18"/></g>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="260" y="380" fill="currentColor">動物細胞</text><text x="840" y="380" fill="currentColor">植物細胞</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: まず、動物の細胞と植物の細胞に、共通するつくりを見ていきます。
+        show:
+          - { type: title, text: 共通するつくり }
+      - say: 核は、細胞のコントロールセンター。生き物の設計図である、DNAがしまわれています。
+        show:
+          - { type: box, color: blue, w: 1100, title: 核, text: "細胞のコントロールセンター。DNA（設計図）が入っている" }
+      - say: ミトコンドリアは、「細胞の発電所」と呼ばれます。糖を分解して、ATPという、エネルギーの通貨を作ります。
+        show:
+          - { type: box, color: yellow, w: 1100, title: ミトコンドリア, text: "細胞の発電所。糖を分解してエネルギー（ATP）をつくる" }
+
+  - board: whiteboard
+    steps:
+      - say: 植物の細胞にしかないものが、2つあります。
+        show:
+          - { type: title, text: 植物細胞だけにあるもの }
+      - say: 葉緑体は、光合成を行う場所です。葉緑体が緑色なので、植物は緑に見えます。
+        show:
+          - { type: box, color: green, w: 1100, title: 葉緑体, text: "光合成を行う。緑色なので、植物は緑に見える" }
+      - say: 細胞壁は、細胞膜の外側にある、かたい壁です。セルロースでできていて、私たちが食べると、食物繊維になります。植物がしっかり立っていられるのも、細胞壁のおかげです。
+        show:
+          - { type: box, color: pink, w: 1100, title: 細胞壁, text: "細胞膜の外の、かたい壁（セルロース ＝ 食物繊維）" }
+
+  - board: whiteboard
+    steps:
+      - say: おもしろいことに、葉緑体もミトコンドリアも、もともとは、べつの生き物だったと考えられています。大昔に、ほかの細胞にとりこまれて、そのまま中で暮らすようになった。これを、細胞内共生といいます。
+        show:
+          - { type: title, text: 細胞内共生 }
+          - type: svg
+            w: 1000
+            h: 220
+            markup: |
+              <ellipse cx="200" cy="110" rx="140" ry="90" stroke="#f4a3b8"/>
+              <ellipse cx="420" cy="110" rx="40" ry="22" stroke="#f3d77a"/>
+              <path d="M470 110 H560" stroke="#9aa3ad"/><path d="M546 100 L560 110 L546 120" stroke="#9aa3ad"/>
+              <ellipse cx="760" cy="110" rx="140" ry="90" stroke="#f4a3b8"/><ellipse cx="760" cy="110" rx="40" ry="22" stroke="#f3d77a"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="420" y="170" fill="#f3d77a">べつの生き物</text><text x="760" y="230" fill="currentColor">とりこまれて共に暮らす</text></g>
+      - say: その証拠に、葉緑体とミトコンドリアは、核とはべつに、自分だけのDNAを持っています。
+        show:
+          - { type: text, color: yellow, text: "証拠：葉緑体・ミトコンドリアは独自の DNA をもつ" }

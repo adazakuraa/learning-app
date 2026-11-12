@@ -1,0 +1,40 @@
+title: 電池と電気分解
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「電池と電気分解」です。電池は、化学反応を使って、電気をとり出す装置です。反応で生まれる電子の流れを、電流としてとり出します。
+        show:
+          - { type: title, text: 電池 }
+          - { type: text, size: l, text: "**電池** ＝ 化学反応で生まれる電子の流れを、電流としてとり出す" }
+      - say: 乾電池では、中の亜鉛が、亜鉛イオンに変わるときに電子を放出します。その電子が、回路を通って、マイナス極からプラス極へと移動します。これが電流です。
+        show:
+          - type: svg
+            w: 1000
+            h: 260
+            markup: |
+              <rect x="80" y="80" width="220" height="120" rx="10" stroke="#9aa3ad"/><text x="190" y="150" font-size="26" fill="currentColor" stroke="none" text-anchor="middle">乾電池</text>
+              <path d="M300 110 H700 V40 H40 V110 H80" stroke="#8fc4ff"/>
+              <circle cx="560" cy="40" r="24" stroke="#f3d77a"/>
+              <g fill="#f3d77a" stroke="none"><circle cx="420" cy="110" r="8"/><circle cx="640" cy="110" r="8"/><circle cx="200" cy="40" r="8"/></g>
+              <g stroke="none" font-size="22"><text x="320" y="230" fill="#8fc4ff">亜鉛 → 亜鉛イオン ＋ 電子（−極から＋極へ）</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: スマホのリチウムイオン電池は、充電や放電のたびに、リチウムイオンが電極のあいだを行き来するしくみです。軽くて、たくさんのエネルギーをためられるのが特徴です。
+        show:
+          - { type: title, text: リチウムイオン電池 }
+          - { type: box, color: blue, w: 1000, text: "充電・放電でリチウムイオンが行き来する → 軽くてたくさんためられる" }
+
+  - board: whiteboard
+    steps:
+      - say: 電池とは逆に、電気のエネルギーを使って化学反応を起こすことを、電気分解といいます。水に電気を流すと、水素と酸素に分けることができます。
+        show:
+          - { type: title, text: 電気分解 }
+          - { type: text, text: "電池：化学反応 → 電気　　**電気分解**：電気 → 化学反応" }
+          - { type: formula, color: yellow, tex: '2\text{H}_2\text{O} \rightarrow 2\text{H}_2 + \text{O}_2' }
+      - say: 電気分解の身近な応用が、アルミニウムづくりです。アルミニウムは、ボーキサイトという鉱石にふくまれていて、電気分解でとり出します。そのとき、とても多くの電気を使います。
+        show:
+          - { type: text, text: "アルミニウム：ボーキサイトから電気分解でつくる（大量の電気が必要）" }
+      - say: アルミ缶のリサイクルが勧められるのは、電気分解で新しく作るより、ずっと少ないエネルギーで済むからです。
+        show:
+          - { type: box, color: green, w: 1000, text: "アルミ缶のリサイクル → 新しく作るより大幅に省エネ" }

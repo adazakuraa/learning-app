@@ -1,0 +1,42 @@
+title: can
+scenes:
+  - board: slide
+    steps:
+      - say: 第6章、「助動詞」です。
+        show:
+          - { type: title, text: 第6章　助動詞 }
+      - say: 動詞に、できる、しなければならない、かもしれない、といった気持ちをそえる、助動詞を学びます。
+        show:
+          - type: list
+            items: ["can", "その他の助動詞１（must・have to・should）", "その他の助動詞２（may・might・would）"]
+      - say: 助動詞を使いこなすと、ていねいなお願いや、やわらかい言い方ができるようになります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "動詞に気持ちをそえる助動詞で、ていねい・やわらかい表現をする" }
+
+  - board: whiteboard
+    steps:
+      - say: canは、できる、という能力、してもよい、という許可、かもしれない、という可能性を表します。canのように、主語と動詞の間に入って、意味をおぎなうものを、助動詞と呼びます。助動詞のうしろの動詞は、必ず原形になります。
+        read: キャンは、できる、という能力、してもよい、という許可、かもしれない、という可能性を表します。キャンのように、主語と動詞の間に入って、意味をおぎなうものを、助動詞と呼びます。助動詞のうしろの動詞は、必ず原形になります。
+        show:
+          - { type: title, text: can の3つの意味 }
+          - { type: box, color: yellow, w: 1100, text: "**助動詞**：主語と動詞の間に入る。うしろの動詞は必ず **原形**" }
+      - say: She can speak three languages. 彼女は3つの言葉を話せます。Can I borrow your charger? 充電器を借りてもいいですか。This road can get very icy in winter. この道は、冬にとても凍ることがあります。
+        read: シー、キャン、スピーク、スリー、ラングウィッジズ。彼女は3つの言葉を話せます。キャン、アイ、バロウ、ユア、チャージャー。充電器を借りてもいいですか。ディス、ロード、キャン、ゲット、ベリー、アイシー。この道は、冬にとても凍ることがあります。
+        show:
+          - { type: text, color: blue, text: "能力：She **can** speak three languages.（話せる）" }
+          - { type: text, color: green, text: "許可：**Can** I borrow your charger?（借りてもいい？）" }
+          - { type: text, color: pink, text: "可能性：This road **can** get very icy.（凍ることがある）" }
+
+  - board: whiteboard
+    steps:
+      - say: couldは、canの過去形です。I could swim when I was five. 5歳のとき泳げました。また、今のことでも、ていねいなお願いに使います。Could you explain that again? もう一度説明していただけますか。
+        read: クッドは、キャンの過去形です。アイ、クッド、スイム、ウェン、アイ、ワズ、ファイブ。5歳のとき泳げました。また、今のことでも、ていねいなお願いに使います。クッド、ユー、エクスプレイン、ザット、アゲイン。もう一度説明していただけますか。
+        show:
+          - { type: title, text: could と否定 }
+          - { type: text, color: blue, text: "過去：I **could** swim when I was five.（5歳で泳げた）" }
+          - { type: text, color: green, text: "ていねい：**Could** you explain that again?（もう一度説明していただけますか）" }
+      - say: 否定文は、canのあとにnotをつけます。I can't find my keys anywhere. どこにも鍵が見つからない。That can't be true. それが本当のはずがない。
+        read: 否定文は、キャンのあとにノットをつけます。アイ、キャント、ファインド、マイ、キーズ。鍵が見つからない。ザット、キャント、ビー、トゥルー。それが本当のはずがない。
+        show:
+          - { type: text, color: pink, text: "I **can't** find my keys.（見つからない）／ That **can't** be true.（本当のはずがない）" }

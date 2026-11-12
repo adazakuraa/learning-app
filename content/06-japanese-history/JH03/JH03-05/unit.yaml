@@ -2,3 +2,8 @@ id: japanese-history-jh03-05
 code: JH03-05
 title: おまけ（和気清麻呂 ）
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 34
+  narration: VOICEVOX:ずんだもん

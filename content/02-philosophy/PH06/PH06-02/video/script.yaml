@@ -1,0 +1,36 @@
+title: 承認と尊厳
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「承認と尊厳」です。人はなぜ、他人から認められたいのでしょうか。この問いへの、哲学の答えが、承認論です。
+        show:
+          - { type: title, text: ヘーゲルの承認論 }
+      - say: ヘーゲルは、自分という意識は、ほかの人との、おたがいの承認によってのみ、成り立つ、と考えました。無人島でひとりきりで暮らす人には、自分というものが、成り立たない。自分は、人との関係の中で生まれる、というのです。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "自分という意識は、ほかの人とおたがいに認め合うことで成り立つ" }
+
+  - board: whiteboard
+    steps:
+      - say: ヘーゲルの有名な、主人と奴隷の弁証法を見てみましょう。2人の人間が出会い、争い、一方が主人、もう一方が奴隷になります。
+        show:
+          - { type: title, text: 主人と奴隷の弁証法 }
+          - type: svg
+            w: 1000
+            h: 200
+            markup: |
+              <rect x="40" y="40" width="300" height="110" rx="14" stroke="#f3d77a"/><rect x="660" y="40" width="300" height="110" rx="14" stroke="#8fc4ff"/>
+              <path d="M350 75 H650 M635 63 L650 75 L635 87" stroke="#9aa3ad"/><path d="M650 120 H350 M365 108 L350 120 L365 132" stroke="#f4a3b8"/>
+              <g stroke="none" text-anchor="middle"><text x="190" y="88" font-size="28" fill="#f3d77a">主人</text><text x="190" y="125" font-size="18" fill="#f3d77a">奴隷の承認にたよる</text><text x="810" y="88" font-size="28" fill="#8fc4ff">奴隷</text><text x="810" y="125" font-size="18" fill="#8fc4ff">労働で自分を育てる</text><text x="500" y="65" font-size="18" fill="#9aa3ad">支配</text><text x="500" y="160" font-size="18" fill="#f4a3b8">承認</text></g>
+      - say: ところが、奴隷は、労働を通じて、世界に自分のしるしをきざみ、逆に、自分という意識を育てていきます。一方、主人は、奴隷に認められることに、たよっているので、本当の意味では、自由ではありません。支配することで、相手にたよってしまう、という逆説です。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "支配する主人は、奴隷の承認にたよる → 本当は自由ではない" }
+
+  - board: whiteboard
+    steps:
+      - say: 現代の哲学者ホネットは、承認が欠けていることが、社会の苦しみや、抵抗、社会運動を生む原動力だ、と論じました。無視されたり、見下されたりすることは、ただの感情的な痛みではなく、自分の根っこを傷つける体験なのです。
+        show:
+          - { type: title, text: 承認欲求は弱さではない }
+          - { type: box, color: pink, w: 1100, title: ホネット, text: "無視・軽蔑は、自分の根っこを傷つける。承認の欠如が社会運動を生む" }
+      - say: なぜ自分は、認められたいのか。その答えがここにあります。承認欲求は、弱さや見栄ではなく、人間の、根本的な社会的な性質から来るものなのです。だからこそ、相手を認めることは、相手の尊厳を守ることにつながります。
+        show:
+          - { type: box, color: green, w: 1100, text: "承認欲求は弱さではなく、人間の根本的な性質。相手を認めることは、尊厳を守ること" }

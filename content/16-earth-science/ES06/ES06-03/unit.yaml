@@ -2,3 +2,8 @@ id: earth-science-es06-03
 code: ES06-03
 title: 月と地球の関係
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 130
+  narration: VOICEVOX:ずんだもん

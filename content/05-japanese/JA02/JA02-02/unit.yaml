@@ -2,3 +2,8 @@ id: japanese-ja02-02
 code: JA02-02
 title: 文節
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 46
+  narration: VOICEVOX:ずんだもん

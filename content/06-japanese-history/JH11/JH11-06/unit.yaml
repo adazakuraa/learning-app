@@ -2,3 +2,8 @@ id: japanese-history-jh11-06
 code: JH11-06
 title: 敗戦と原爆・東京大空襲
 order: 6
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 90
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: biology-bi06-01
 code: BI06-01
 title: 有性生殖と無性生殖
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 103
+  narration: VOICEVOX:ずんだもん

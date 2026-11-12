@@ -1,0 +1,37 @@
+title: サイコパスとダークトライアド
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「サイコパス」です。サイコパスというと、冷酷な殺人犯を思いうかべがちですが、心理学では、もっと複雑な考え方です。共感の欠如、後悔や罪悪感のうすさ、表面的な魅力、反社会的な行動が特徴で、人口のおよそ1パーセントとされています。
+        show:
+          - { type: title, text: サイコパス }
+          - { type: box, color: pink, w: 1100, text: "共感がない・後悔しない・表面的な魅力・反社会的な行動。人口の約1％" }
+      - say: 大事なのは、サイコパスの全員が、凶悪な犯罪者ではない、という点です。犯罪に至らない、成功したサイコパスもいて、共感のなさと、魅力、冷静さを組み合わせて、経営者や外科医、政治家、弁護士として、活躍している場合もあります。
+        show:
+          - { type: text, color: yellow, text: "全員が犯罪者ではない。冷静さを生かして経営者・外科医・政治家になる人も" }
+
+  - board: whiteboard
+    steps:
+      - say: ダークトライアドは、3つの暗い性格の特徴の組み合わせです。サイコパシー、つまり共感の欠如。ナルシシズム、つまり大きすぎる自己像。そして、マキャベリアニズム、つまり、目的のために、他人をあやつることを、なんとも思わないことです。
+        show:
+          - { type: title, text: ダークトライアド }
+          - type: svg
+            w: 1000
+            h: 260
+            markup: |
+              <g stroke-width="3" fill-opacity="0.12"><circle cx="380" cy="100" r="95" stroke="#f4a3b8" fill="#f4a3b8"/><circle cx="620" cy="100" r="95" stroke="#f3d77a" fill="#f3d77a"/><circle cx="500" cy="170" r="95" stroke="#8fc4ff" fill="#8fc4ff"/></g>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="330" y="80" fill="#f4a3b8">サイコパシー</text><text x="330" y="105" font-size="16" fill="#f4a3b8">共感がない</text><text x="670" y="80" fill="#f3d77a">ナルシシズム</text><text x="670" y="105" font-size="16" fill="#f3d77a">大きすぎる自己像</text><text x="500" y="215" fill="#8fc4ff">マキャベリアニズム</text><text x="500" y="240" font-size="16" fill="#8fc4ff">平気で人をあやつる</text></g>
+      - say: これらの特徴には、程度の差があり、少し高い人は、日常に、ふつうにいます。表面的な魅力や自信があるので、短い間は印象がよく、採用や恋愛で、有利なこともあります。
+        show:
+          - { type: text, color: gray, text: "少し高い人は日常にいる。最初は印象がよく、採用や恋愛で有利なことも" }
+
+  - board: whiteboard
+    steps:
+      - say: でも、長いつきあいになると、人をあやつる行動や、共感のなさが、あらわになってきます。なぜ、あんな人にひかれてしまったのだろう、という経験の背景に、ダークトライアドが関わっていることもあるのです。
+        show:
+          - { type: title, text: 長いつきあいで見えてくる }
+          - { type: box, color: pink, w: 1100, text: "長いつきあいで、あやつる行動・共感のなさがあらわに" }
+      - say: 第一印象の魅力だけでなく、時間をかけて、相手の行動を見ることが、自分を守ることにつながります。
+        added: true
+        show:
+          - { type: box, color: green, w: 1100, text: "第一印象だけでなく、時間をかけて行動を見る" }

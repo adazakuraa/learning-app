@@ -2,3 +2,8 @@ id: math-ma10-01
 code: MA10-01
 title: 三角形と三角関数
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 84
+  narration: VOICEVOX:ずんだもん

@@ -1,0 +1,23 @@
+title: 泌尿器
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「泌尿器」です。腎臓などの泌尿器は、血液から老廃物や、余分な水分をこしとって尿をつくり、体の外へ出す役割を持っています。
+        show:
+          - { type: title, text: 泌尿器 }
+          - { type: box, color: yellow, w: 1000, text: "血液から老廃物・余分な水分をこしとる → **尿** をつくって外へ" }
+      - say: 腎臓でつくられた尿は、尿管を通ってぼうこうにたまり、体の外へ出されます。
+        added: true
+        show:
+          - type: svg
+            w: 1000
+            h: 320
+            markup: |
+              <ellipse cx="300" cy="90" rx="60" ry="80" stroke="#f4a3b8"/><ellipse cx="700" cy="90" rx="60" ry="80" stroke="#f4a3b8"/>
+              <path d="M320 165 Q420 230 470 250 M680 165 Q580 230 530 250" stroke="#f3d77a"/>
+              <ellipse cx="500" cy="270" rx="70" ry="40" stroke="#8fc4ff"/>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="300" y="98" fill="#f4a3b8">腎臓</text><text x="700" y="98" fill="#f4a3b8">腎臓</text><text x="500" y="278" fill="#8fc4ff">ぼうこう</text><text x="380" y="240" fill="#f3d77a">尿管</text></g>
+      - say: 腎臓は、1日に、およそ150リットルもの血液をこしとっていますが、必要なものはほとんど吸収し直すので、尿になるのは、1.5リットルほどです。体の中のきれいさと、水分の量を、一定に保つ大切な臓器です。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "1日に約150L をこして、尿になるのは約1.5L（必要なものは吸収し直す）" }

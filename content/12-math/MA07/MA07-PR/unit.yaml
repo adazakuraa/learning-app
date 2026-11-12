@@ -1,0 +1,11 @@
+id: math-ma07-practice
+code: MA07-PR
+title: 練習問題
+summary: フィボナッチ数列 の問題
+order: 999
+practice: true
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 160
+  narration: VOICEVOX:ずんだもん

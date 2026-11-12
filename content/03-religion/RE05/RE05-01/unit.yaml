@@ -2,3 +2,8 @@ id: religion-re05-01
 code: RE05-01
 title: ヒンドゥー教
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 105
+  narration: VOICEVOX:ずんだもん

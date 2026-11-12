@@ -1,0 +1,11 @@
+id: math-ma10-practice
+code: MA10-PR
+title: 練習問題
+summary: 三角関数の波 の問題
+order: 999
+practice: true
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 136
+  narration: VOICEVOX:ずんだもん

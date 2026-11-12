@@ -2,3 +2,8 @@ id: information-it01-04
 code: IT01-04
 title: ファイル・クラウド・同期
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 65
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: english-en04-01
 code: EN04-01
 title: 冠詞（a, an, the）
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 114
+  narration: VOICEVOX:ずんだもん

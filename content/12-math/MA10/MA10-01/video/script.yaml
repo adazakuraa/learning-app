@@ -1,0 +1,60 @@
+title: 三角形と三角関数
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「三角関数」の章です。
+        show:
+          - { type: title, text: 第10章　三角関数 }
+      - say: この章では、直角三角形の辺の比から始めて、ぐるぐる回る円の動き、そして「波」を表す道具として、三角関数を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["三角形と三角関数", "単位円と三角関数", "三角関数の波", "練習問題"]
+      - say: 測量で高さを測ったり、音や電波のような「波」を表したり。三角関数は、科学技術のいたるところで使われています。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "角度と長さの関係をつかみ、「波」を数で表す考え方を知る" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は、「三角形と三角関数」です。
+        show:
+          - { type: title, text: 三角形と三角関数 }
+      - say: 三角関数とは、直角三角形の、辺の長さの比のことです。角度をθ、シータとします。
+        show:
+          - type: svg
+            at: [80, 160]
+            w: 600
+            h: 380
+            markup: |
+              <path d="M40 320 L520 320 L520 60 Z"/>
+              <path d="M490 320 V290 H520" stroke="#9aa3ad"/>
+              <path d="M110 320 A70 70 0 0 0 102 287" stroke="#f3d77a"/>
+              <g fill="currentColor" stroke="none" font-size="34"><text x="130" y="305" fill="#f3d77a">θ</text><text x="250" y="170">c（斜辺）</text><text x="535" y="200">a</text><text x="270" y="365">b</text></g>
+      - say: 斜辺分の高さ、a/cを、サインθ。斜辺分の底辺、b/cを、コサインθ。底辺分の高さ、a/bを、タンジェントθといいます。
+        show:
+          - { type: formula, at: [740, 200], color: yellow, tex: '\sin\theta = \frac{a}{c}' }
+          - { type: formula, at: [740, 320], color: blue, tex: '\cos\theta = \frac{b}{c}' }
+          - { type: formula, at: [740, 440], color: pink, tex: '\tan\theta = \frac{a}{b}' }
+
+  - board: whiteboard
+    steps:
+      - say: 大事なのは、三角形の大きさが変わっても、角度θが同じなら、三角関数の値は変わらない、ということです。
+        show:
+          - { type: title, text: 大きさが変わっても同じ }
+          - type: svg
+            w: 1000
+            h: 300
+            color: blue
+            markup: |
+              <path d="M20 260 L260 260 L260 120 Z"/>
+              <path d="M360 260 L840 260 L840 -20 Z" stroke="#f3d77a"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="60" y="250">θ</text></g>
+              <text x="410" y="250" font-size="28" fill="#f3d77a" stroke="none">θ</text>
+      - say: 形が同じなら、辺の比も同じだからです。坂道の傾き具合のように、角度だけで決まる値だと考えるとよいでしょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, text: "角度 θ が同じ → 辺の比（三角関数の値）も同じ" }
+      - say: いろいろな角度の三角関数の値は、表にまとめられていて、必要なときに見て計算に使います。
+        show:
+          - { type: text, size: s, color: gray, text: "角度ごとの値は「三角関数表」にまとめられている" }

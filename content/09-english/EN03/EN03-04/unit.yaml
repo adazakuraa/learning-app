@@ -2,3 +2,8 @@ id: english-en03-04
 code: EN03-04
 title: 現在完了形
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 86
+  narration: VOICEVOX:ずんだもん

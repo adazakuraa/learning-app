@@ -2,3 +2,8 @@ id: chemistry-ch01-02
 code: CH01-02
 title: 物質の三態
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 100
+  narration: VOICEVOX:ずんだもん

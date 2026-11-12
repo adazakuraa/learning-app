@@ -1,0 +1,40 @@
+title: 日明貿易と琉球
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 足利義満は、中国の明と正式な国交を開き、貿易を始めました。幕府には、ばく大な利益がもたらされます。
+        read: あしかがよしみつは、中国のみんと正式な国交を開き、貿易を始めました。幕府には、ばく大な利益がもたらされます。
+        show:
+          - { type: title, text: 日明貿易 }
+          - { type: text, at: [80, 140], w: 1120, text: "足利義満 × **明**（中国）　→ 幕府に大きな利益" }
+      - say: ただし、義満は、明の皇帝に貢ぎ物を持ってあいさつする、朝貢という形をとりました。将軍が外国の皇帝に頭を下げるのか、という反発は、当時からありました。
+        read: ただし、義満は、明の皇帝にみつぎ物を持ってあいさつする、ちょうこうという形をとりました。将軍が外国の皇帝に頭を下げるのか、という反発は、当時からありました。
+        show:
+          - { type: box, at: [80, 230], w: 1120, color: yellow, title: 朝貢, text: "貢ぎ物を持って皇帝にあいさつする外交の形" }
+      - say: 義満は、見返りの利益が大きければそれでいい、という実利主義者だったようです。プライドを取るか、実利を取るか。今の外交でも、よくある問題ですね。
+        show:
+          - { type: text, at: [80, 410], w: 1120, color: gray, text: "プライドか、実利か　← 今の外交にも通じる問題" }
+
+  - board: whiteboard
+    steps:
+      - say: 同じころ、今の沖縄では、琉球王国が独自に栄えていました。
+        show:
+          - { type: title, text: 琉球王国 }
+          - type: svg
+            at: [80, 130]
+            w: 640
+            h: 420
+            anim: draw
+            markup: |
+              <circle cx="320" cy="210" r="46" stroke="#f3d77a"/>
+              <rect x="420" y="30" width="190" height="70" rx="10" stroke="#9fc7ff"/>
+              <rect x="20" y="30" width="190" height="70" rx="10" stroke="#9be0b0"/>
+              <rect x="210" y="330" width="220" height="70" rx="10" stroke="#f4a3b8"/>
+              <path d="M355 180 L460 102"/><path d="M285 180 L180 102"/><path d="M320 256 L320 326"/>
+              <g stroke="none" font-size="26" fill="#e8eef5" text-anchor="middle"><text x="320" y="219">琉球</text><text x="515" y="74">日本</text><text x="115" y="74">中国</text><text x="320" y="374">東南アジア</text></g>
+      - say: 琉球は、日本、中国、東南アジアのちょうど真ん中という位置を生かし、ある国の品物を別の国へ運ぶ、中継貿易で栄えました。世界のかけ橋を名乗ったほどです。
+        show:
+          - { type: box, at: [760, 150], w: 440, color: yellow, title: 中継貿易, text: "A国の品物を\nB国へ運んで売る" }
+      - say: 沖縄の文化が、本土とも中国とも少し違う、独特の雰囲気を持っているのは、この長い独自の歴史があるからです。
+        show:
+          - { type: text, at: [760, 380], w: 440, color: gray, text: "沖縄独特の文化の\nルーツ" }

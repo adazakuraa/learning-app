@@ -1,0 +1,38 @@
+title: 免疫の仕組み
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「免疫のしくみ」です。免疫は、体に入ってきた病原体や異物を見つけて、とりのぞくシステムです。
+        show:
+          - { type: title, text: 免疫 }
+          - { type: text, size: l, text: "**免疫** ＝ 病原体・異物を見つけて、とりのぞくしくみ" }
+      - say: 免疫には、2つのしくみがあります。自然免疫は、生まれつき持っている守りです。皮ふや粘膜が、壁になって入りこむのを防ぎ、白血球が、病原体を食べてやっつけます。
+        show:
+          - { type: box, color: blue, w: 1100, title: 自然免疫, text: "生まれつきの守り。皮ふ・粘膜の壁、白血球が病原体を食べる" }
+
+  - board: whiteboard
+    steps:
+      - say: 獲得免疫は、特定の病原体に合わせて、専用の攻撃をするしくみです。白血球が、病原体の目印、抗原を見つけると、その抗原にぴったりくっつく、抗体というタンパク質を作って、攻撃します。
+        show:
+          - { type: title, text: 獲得免疫 }
+          - type: svg
+            w: 1000
+            h: 220
+            markup: |
+              <circle cx="200" cy="110" r="60" stroke="#f4a3b8"/>
+              <g fill="#f4a3b8" stroke="none"><rect x="135" y="70" width="18" height="18"/><rect x="250" y="70" width="18" height="18"/><rect x="190" y="160" width="18" height="18"/></g>
+              <g stroke="#8fc4ff" stroke-width="4"><path d="M400 70 V110 L370 140 M400 110 L430 140"/><path d="M500 140 V100 L470 70 M500 100 L530 70"/></g>
+              <g stroke="none" font-size="22"><text x="140" y="210" fill="#f4a3b8">病原体（目印 ＝ 抗原）</text><text x="380" y="200" fill="#8fc4ff">抗体（ぴったりくっつく）</text></g>
+      - say: 一度かかった病原体の情報は、記憶として残ります。次に同じ病原体が来ると、すばやく、強く反応できるのです。
+        show:
+          - { type: text, color: yellow, text: "一度かかると記憶が残る → 次はすばやく強く反応" }
+      - say: これが、ワクチンのしくみです。弱めたり、働かなくしたりした病原体や、その目印を、前もって体に入れておくことで、本当にかかる前に、免疫の記憶を作っておくのです。
+        show:
+          - { type: box, color: green, w: 1000, title: ワクチン, text: "弱めた病原体や目印を前もって入れる → 本番の前に免疫の記憶をつくる" }
+
+  - board: whiteboard
+    steps:
+      - say: アレルギーは、花粉や食べ物のような、害のないものに対して、免疫が反応しすぎてしまう現象です。本来、体を守るはずの免疫が、まちがった相手を攻撃してしまっている状態なのです。
+        show:
+          - { type: title, text: アレルギー }
+          - { type: box, color: pink, w: 1000, text: "害のないもの（花粉・食べ物）に免疫が反応しすぎる ＝ **アレルギー**" }

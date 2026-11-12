@@ -1,0 +1,39 @@
+title: 社会学的想像力
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「社会学的想像力」です。アメリカの社会学者ミルズが示した考え方で、個人的な悩みと、社会の問題を、結びつけて考える力のことです。
+        show:
+          - { type: title, text: 社会学的想像力 }
+          - { type: box, color: yellow, w: 1100, text: "**社会学的想像力** ＝ 個人的な悩みと、社会の問題を結びつけて考える力" }
+      - say: ミルズは、個人的な困りごとと、公共の問題を、区別しました。
+        show:
+          - { type: box, color: blue, at: [80, 300], w: 540, title: 個人的な困りごと, text: "その人個人に関わる問題" }
+          - { type: box, color: pink, at: [660, 300], w: 540, title: 公共の問題, text: "社会のしくみに関わる問題" }
+
+  - board: whiteboard
+    steps:
+      - say: 例えば、ひとりの人が失業したとき、それは、その人の努力不足という、個人的な困りごとかもしれません。でも、何百万人もが失業しているとき、それは、個人の問題ではなく、経済のしくみや、雇用の制度の問題、つまり、公共の問題です。
+        show:
+          - { type: title, text: 失業を例に }
+          - type: svg
+            w: 1100
+            h: 180
+            markup: |
+              <circle cx="150" cy="80" r="25" stroke="#8fc4ff"/>
+              <g stroke="#f4a3b8"><circle cx="560" cy="60" r="16"/><circle cx="600" cy="60" r="16"/><circle cx="640" cy="60" r="16"/><circle cx="680" cy="60" r="16"/><circle cx="720" cy="60" r="16"/><circle cx="760" cy="60" r="16"/><circle cx="580" cy="100" r="16"/><circle cx="620" cy="100" r="16"/><circle cx="660" cy="100" r="16"/><circle cx="700" cy="100" r="16"/><circle cx="740" cy="100" r="16"/></g>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="150" y="150" fill="#8fc4ff">1人の失業</text><text x="150" y="175" fill="#8fc4ff" font-size="18">個人的な困りごと？</text><text x="660" y="150" fill="#f4a3b8">何百万人の失業</text><text x="660" y="175" fill="#f4a3b8" font-size="18">公共の問題（経済・雇用のしくみ）</text></g>
+      - say: 「なぜ自分は、こんなに疲れているのか」。これも、個人の問題に見えますが、長時間働くのが当たり前、という、社会のしくみの問題かもしれません。
+        show:
+          - { type: text, color: yellow, text: "「なぜ自分はこんなに疲れている？」→ 長時間労働が当たり前の社会のしくみかも" }
+
+  - board: whiteboard
+    steps:
+      - say: 「なぜ自分は、こう感じるのか」という問いへの、心理学の答えと、「なぜこの社会では、こう感じるのが、ふつうになっているのか」という、社会学の答えは、おたがいを補い合います。
+        show:
+          - { type: title, text: 心理学と社会学 }
+          - { type: text, color: blue, text: "心理学：なぜ自分はこう感じるのか" }
+          - { type: text, color: green, text: "社会学：なぜこの社会では、こう感じるのがふつうなのか" }
+      - say: 社会学は、個人の問題を、社会のせいにするのではありません。個人の経験が、社会のしくみと、どうつながっているかを、見るのです。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "「社会のせいにする」のではなく、「個人の経験と社会のしくみのつながり」を見る" }

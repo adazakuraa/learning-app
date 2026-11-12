@@ -1,0 +1,43 @@
+title: イスラム教の誕生
+scenes:
+  - board: slide
+    steps:
+      - say: 第4章、「イスラム教」です。
+        show:
+          - { type: title, text: 第4章　イスラム教 }
+      - say: イスラム教の誕生、スンニ派とシーア派のちがい、そして現代の世界との関係を学びます。
+        show:
+          - type: list
+            items: ["イスラム教の誕生", "スンニ派とシーア派", "イスラム教と現代世界"]
+      - say: 世界で2番目に信者の多い宗教です。中東のニュースを理解するうえでも、偏見なく、正しく知っておきたい宗教です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "イスラム教を偏見なく正しく知り、中東のニュースを理解する" }
+
+  - board: whiteboard
+    steps:
+      - say: イスラム教は、7世紀のはじめ、アラビア半島で、ムハンマドが始めた宗教です。
+        show:
+          - { type: title, text: イスラム教の誕生 }
+          - { type: text, text: "7世紀はじめ、アラビア半島で **ムハンマド** が始めた" }
+      - say: ムハンマドは、洞窟で瞑想していたとき、天使ジブリールから、唯一の神、アッラーの言葉を受けとった、とされます。これを、啓示といいます。この言葉をまとめたのが、聖典コーランです。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "天使ジブリールから、唯一神 **アッラー** の言葉（啓示）を受ける → 聖典 **コーラン**" }
+      - say: アッラーは、アラビア語で、神という意味で、ユダヤ教やキリスト教と、同じ神を指しています。
+        added: true
+        show:
+          - { type: text, color: gray, text: "アッラー ＝ アラビア語で「神」。ユダヤ教・キリスト教と同じ神" }
+
+  - board: whiteboard
+    steps:
+      - say: その後の、およそ100年で、イスラム勢力は、シリア、エジプト、ペルシャ、北アフリカ、そして、スペインにまで、広がりました。
+        show:
+          - { type: title, text: 急速な拡大 }
+          - type: svg
+            w: 1100
+            h: 220
+            markup: |
+              <circle cx="700" cy="140" r="16" fill="#f3d77a" stroke="none"/>
+              <path d="M690 130 Q600 60 560 70 M685 140 Q560 150 480 160 M690 150 Q450 210 200 190 M715 130 Q780 80 850 90" stroke="#9be0b0" stroke-dasharray="8 6"/>
+              <g stroke="none" font-size="22"><text x="660" y="190" fill="#f3d77a">アラビア半島</text><text x="520" y="60" fill="#9be0b0">シリア</text><text x="420" y="150" fill="#9be0b0">エジプト</text><text x="80" y="185" fill="#9be0b0">北アフリカ・スペイン</text><text x="860" y="95" fill="#9be0b0">ペルシャ</text></g>
+          - { type: text, color: yellow, text: "約100年で、シリア・エジプト・ペルシャ・北アフリカ・スペインまで広がる" }

@@ -1,0 +1,28 @@
+title: その他の助動詞２
+scenes:
+  - board: whiteboard
+    steps:
+      - say: mayは、かもしれない、という可能性と、してもよい、という許可を表します。It may rain this afternoon. 今日の午後、雨が降るかもしれません。May I use the restroom? お手洗いを使ってもよいですか。
+        read: メイは、かもしれない、という可能性と、してもよい、という許可を表します。イット、メイ、レイン、ディス、アフタヌーン。今日の午後、雨が降るかもしれません。メイ、アイ、ユーズ、ザ、レストルーム。お手洗いを使ってもよいですか。
+        show:
+          - { type: title, text: may と might }
+          - { type: box, color: blue, w: 1100, title: may, text: "可能性「かもしれない」／ 許可「してもよい」（May I …? はていねい）" }
+      - say: mightは、mayより、可能性が低いときに使います。I might join you later, but I'm not sure. あとで合流するかもしれませんが、わかりません。
+        read: マイトは、メイより、可能性が低いときに使います。アイ、マイト、ジョイン、ユー、レイター、バット、アイム、ノット、シュア。あとで合流するかもしれませんが、わかりません。
+        show:
+          - { type: box, color: gray, w: 1100, title: might, text: "may より可能性が低い：I **might** join you later.（合流するかも…）" }
+
+  - board: whiteboard
+    steps:
+      - say: wouldは、willの過去形ですが、ていねいなお願いや、すすめにも使います。Would you like some tea? お茶はいかがですか。Would you mind closing the door? ドアを閉めていただけますか。
+        read: ウッドは、ウィルの過去形ですが、ていねいなお願いや、すすめにも使います。ウッド、ユー、ライク、サム、ティー。お茶はいかがですか。ウッド、ユー、マインド、クロージング、ザ、ドア。ドアを閉めていただけますか。
+        show:
+          - { type: title, text: would }
+          - { type: box, color: yellow, w: 1100, title: would, text: "ていねいなお願い・すすめ" }
+          - { type: text, text: "**Would** you like some tea?（お茶はいかがですか）" }
+          - { type: text, text: "**Would** you mind closing the door?（ドアを閉めていただけますか）" }
+      - say: 英語では、過去形を使うと、少し距離をおいた、ていねいな言い方になります。could、wouldが、ていねいなのは、このためです。
+        read: 英語では、過去形を使うと、少し距離をおいた、ていねいな言い方になります。クッド、ウッドが、ていねいなのは、このためです。
+        added: true
+        show:
+          - { type: text, color: green, text: "過去形 ＝ 少し距離をおいた、ていねいな言い方（could・would）" }

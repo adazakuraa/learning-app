@@ -10,7 +10,7 @@
 - **over**-（過度に）
     - overwork
 - **mis**-（誤って）
-    - misunderstand（誤解）、mislead（誤解）
+    - misunderstand（誤解）、mislead（誤解させる）
 - **dis**-（否定・分離）
     - disagree（同意しない）、disappear（消える）、disconnect（切断）
 - **inter**-（間に）
@@ -18,4 +18,4 @@
 - **sub**-（下に・副）
     - submarine（潜水艦）、subtitle（副題）、subway（地下鉄）
 - -**able**（できる）
-    - portable（持ち運びできる）, possible（可能）
+    - portable（持ち運びできる）, possible（可能な。-ibleも同じ仲間）

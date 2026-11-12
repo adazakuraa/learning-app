@@ -1,0 +1,47 @@
+title: 電磁波とその種類
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「電磁波とその種類」です。
+        show:
+          - { type: title, text: 電磁波とその種類 }
+      - say: 光は、電磁波の一種です。電磁波とは、電場と磁場がふるえながら伝わる波のことです。電場と磁場については、次の章でくわしく学びます。
+        show:
+          - { type: text, size: l, text: "**電磁波** ＝ 電場と磁場がふるえながら伝わる波（光もその仲間）" }
+
+  - board: whiteboard
+    steps:
+      - say: 電磁波は、波長によって分類されます。名前はいろいろですが、すべて同じ種類の波で、ちがうのは波長だけです。
+        show:
+          - { type: title, text: 電磁波の種類 }
+          - type: svg
+            w: 1120
+            h: 260
+            markup: |
+              <path d="M20 120 H1100" stroke="#9aa3ad"/>
+              <g stroke="none" font-size="24" text-anchor="middle">
+                <text x="100" y="100" fill="#8fc4ff">電波</text><text x="270" y="100" fill="#8fc4ff">マイクロ波</text><text x="430" y="100" fill="#f4a3b8">赤外線</text>
+                <text x="560" y="100" fill="#f3d77a">可視光</text><text x="690" y="100" fill="#b39ddb">紫外線</text><text x="830" y="100" fill="#eef0ea">X線</text><text x="980" y="100" fill="#eef0ea">γ線</text>
+              </g>
+              <path d="M40 170 H1080" stroke="#f3d77a"/><path d="M1064 160 L1080 170 L1064 180" stroke="#f3d77a"/>
+              <g stroke="none" font-size="24"><text x="40" y="215" fill="#9aa3ad">波長が長い</text><text x="880" y="215" fill="#f3d77a">波長が短い・エネルギー大</text></g>
+      - say: 波長が長いほうから、電波、マイクロ波、赤外線、目に見える光、紫外線、エックス線、ガンマ線。波長が短いほど、エネルギーが大きくなります。
+        show:
+          - { type: text, color: yellow, text: "波長が短いほど、エネルギーが大きい" }
+      - say: だから、エックス線やガンマ線は、体を通り抜け、体の組織を傷つける力もあります。病院でレントゲンを撮るときに、浴びる量に気をつけるのはそのためです。
+        show:
+          - { type: text, color: pink, text: "X線・γ線：体を通り抜け、組織を傷つける力もある" }
+
+  - board: whiteboard
+    steps:
+      - say: 電子レンジは、電波の一種であるマイクロ波を使って、食べ物の中の水の分子をふるわせ、熱を出させています。熱の正体は分子の運動、という前の章の話とつながりますね。
+        show:
+          - { type: title, text: 身近な電磁波 }
+          - { type: text, text: "電子レンジ：マイクロ波で水分子をふるわせる → 熱（分子の運動）" }
+      - say: Wi-Fiも、同じマイクロ波の帯域を使っています。そのため、Wi-Fiのルーターの近くで電子レンジを使うと、通信が乱れることがあります。
+        show:
+          - { type: text, text: "Wi-Fi も同じマイクロ波の帯域 → 電子レンジの近くで通信が乱れることも" }
+      - say: ほかにも、テレビやラジオは電波、リモコンは赤外線、日焼けは紫外線。身のまわりは、さまざまな電磁波であふれています。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, text: "テレビ・ラジオ（電波）、リモコン（赤外線）、日焼け（紫外線）" }

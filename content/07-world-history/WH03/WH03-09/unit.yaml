@@ -2,3 +2,8 @@ id: world-history-wh03-09
 code: WH03-09
 title: ペストと中世の終わり
 order: 9
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 86
+  narration: VOICEVOX:ずんだもん

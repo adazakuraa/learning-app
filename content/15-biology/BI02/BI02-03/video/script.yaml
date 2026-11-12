@@ -1,0 +1,52 @@
+title: 細胞分裂
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「細胞分裂」です。細胞が増えるしくみが、細胞分裂です。1つの細胞が分かれて、2つになります。
+        show:
+          - { type: title, text: 細胞分裂 }
+          - { type: text, size: l, text: "1つの細胞が分かれて2つになる ＝ **細胞分裂**" }
+
+  - board: whiteboard
+    steps:
+      - say: 体細胞分裂は、体をつくる細胞が増えるときの分裂です。まず、DNAをコピーして2倍にしてから分かれるので、もとの細胞と同じDNAを持つ細胞が、2つできます。
+        show:
+          - { type: title, text: 体細胞分裂 }
+          - type: svg
+            w: 1100
+            h: 220
+            markup: |
+              <circle cx="120" cy="110" r="80" stroke="#8fc4ff"/><path d="M100 90 V130 M140 90 V130" stroke="#f3d77a" stroke-width="5"/>
+              <path d="M220 110 H300" stroke="#9aa3ad"/>
+              <circle cx="400" cy="110" r="80" stroke="#8fc4ff"/><path d="M370 90 V130 M390 90 V130 M410 90 V130 M430 90 V130" stroke="#f3d77a" stroke-width="5"/>
+              <path d="M500 110 H580" stroke="#9aa3ad"/>
+              <circle cx="700" cy="110" r="70" stroke="#8fc4ff"/><circle cx="900" cy="110" r="70" stroke="#8fc4ff"/>
+              <path d="M680 90 V130 M720 90 V130 M880 90 V130 M920 90 V130" stroke="#f3d77a" stroke-width="5"/>
+              <g stroke="none" font-size="22" text-anchor="middle" fill="#9aa3ad"><text x="400" y="215">DNA をコピー</text><text x="800" y="215">同じ DNA の細胞が2つ</text></g>
+      - say: けがが治る、体が成長する、古い細胞が入れかわる。どれも、体細胞分裂のおかげです。
+        show:
+          - { type: text, color: blue, text: "けがの修復・成長・組織の入れかわり" }
+
+  - board: whiteboard
+    steps:
+      - say: 減数分裂は、精子や卵子といった、生殖細胞を作るときの、特別な分裂です。ふつうの分裂とちがって、染色体の数が半分になります。
+        show:
+          - { type: title, text: 減数分裂 }
+          - { type: text, text: "精子・卵子（**生殖細胞**）をつくる → 染色体の数が **半分** に" }
+      - say: 染色体とは、DNAが折りたたまれたものです。ヒトの染色体は46本。減数分裂で半分になるので、精子と卵子は、それぞれ23本ずつ持っています。
+        show:
+          - { type: text, text: "**染色体** ＝ DNA が折りたたまれたもの。ヒトは46本" }
+      - say: 受精すると、父からの23本と、母からの23本で、合わせて46本に戻ります。あらかじめ半分にしておくから、受精しても数が増えすぎないのです。
+        show:
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <circle cx="150" cy="100" r="60" stroke="#8fc4ff"/><circle cx="400" cy="100" r="80" stroke="#f4a3b8"/>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="150" y="108" fill="#8fc4ff">精子 23</text><text x="400" y="108" fill="#f4a3b8">卵子 23</text></g>
+              <path d="M520 100 H640" stroke="#f3d77a"/><path d="M626 90 L640 100 L626 110" stroke="#f3d77a"/>
+              <circle cx="800" cy="100" r="90" stroke="#9be0b0"/><text x="800" y="108" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">受精卵 46</text>
+      - say: 父と母から半分ずつ受けつぐので、子どもは、両親のどちらとも少しずつ似て、少しずつちがうのです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "父と母から半分ずつ → 両親に少しずつ似て、少しずつちがう" }

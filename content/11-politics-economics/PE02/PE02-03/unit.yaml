@@ -2,3 +2,8 @@ id: politics-economics-pe02-03
 code: PE02-03
 title: 金融と中央銀行
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 100
+  narration: VOICEVOX:ずんだもん

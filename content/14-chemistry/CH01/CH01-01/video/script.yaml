@@ -1,0 +1,52 @@
+title: 化学とは
+scenes:
+  - board: slide
+    steps:
+      - say: ここから、化学の学習に入ります。最初の章は、「化学とは何か」です。
+        show:
+          - { type: title, text: 第1章　化学とは何か }
+      - say: この章では、化学がどんな学問か、そして、ものの状態や、ものの分け方といった、化学の基本の見方を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["化学とは", "物質の三態", "純物質と混合物・単体と化合物"]
+      - say: 料理、さび、花火、洗剤。化学は、毎日の暮らしの中にあふれています。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "身のまわりのものを「粒」と「変化」の目で見られるようになる" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「化学とは」です。化学とは、ものが何からできていて、どう変化するのかを研究する学問です。
+        show:
+          - { type: title, text: 化学とは }
+          - { type: box, color: yellow, w: 1000, text: "**化学** ＝ ものが何からできていて、どう変化するかを調べる学問" }
+      - say: 物理が、力やエネルギー、運動を扱うのに対して、化学は、ものそのものの性質と、その変化を扱います。
+        show:
+          - { type: text, color: blue, text: "物理 … 力・エネルギー・運動" }
+          - { type: text, color: pink, text: "化学 … もの自体の性質と変化" }
+
+  - board: whiteboard
+    steps:
+      - say: 化学は、日常のあらゆる場所にあります。
+        show:
+          - { type: title, text: 身のまわりの化学 }
+      - say: 卵を焼くと固まるのは、卵のタンパク質が、熱で形を変える化学変化です。
+        show:
+          - { type: text, text: "卵が固まる → タンパク質が熱で変化" }
+      - say: 鉄がさびるのは、鉄が酸素と結びつく、酸化という反応です。
+        show:
+          - { type: text, text: "鉄がさびる → 酸化（酸素と結びつく）" }
+      - say: 花火の色は、ふくまれる金属の種類によって、燃えたときに出る光の色がちがうからです。
+        show:
+          - { type: text, text: "花火の色 → 金属の種類で光の色がちがう" }
+
+  - board: whiteboard
+    steps:
+      - say: 化学の本質は、「なぜそうなるのか」を、原子や分子という、目に見えない小さな粒のレベルで理解することです。
+        show:
+          - { type: title, text: 化学の見方 }
+          - { type: box, color: yellow, w: 1000, text: "「なぜ？」を **原子・分子（小さな粒）** のレベルで考える" }
+      - say: むずかしい計算をしなくても、ものの世界のしくみを知ると、毎日の景色の見え方が、大きく変わります。
+        show:
+          - { type: text, color: gray, size: s, text: "計算抜きでも、しくみを知ると日常の見え方が変わる" }

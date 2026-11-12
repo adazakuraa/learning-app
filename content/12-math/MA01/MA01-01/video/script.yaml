@@ -1,0 +1,128 @@
+# MA01-01 指数と累乗（章 MA01 の1本目：章の概要つき）
+title: 指数と累乗
+scenes:
+  # ---------- 章の概要 ----------
+  - board: slide
+    steps:
+      - say: ここから「数と計算の基礎」の章に入ります。
+        show:
+          - { type: title, text: 第1章　数と計算の基礎 }
+      - say: この章では、とても大きな数やとても小さな数の書き方と、数の「種類」を整理します。
+        added: true
+        show:
+          - type: list
+            items: ["指数と累乗 … 大きな数・小さな数の書き方", "数の種類 … 整数・有理数・無理数など", "練習問題"]
+      - say: ニュースや科学の話には、「ギガ」や「10のマイナス7乗」のような表現がよく出てきます。この章は、そうした数を読みこなすための、数学のいちばんの土台です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "大きな数・小さな数に慣れて、数学の「ことば」の土台をつくる" }
+
+  # ---------- 指数とは ----------
+  - board: whiteboard
+    steps:
+      - say: では、1本目、「指数と累乗」です。
+        show:
+          - { type: title, text: 指数と累乗 }
+      - say: 2×2のように、同じ数を何回もかけ算することがあります。これを、2の2乗と書きます。
+        show:
+          - { type: formula, size: l, tex: '2 \times 2 = 2^2' }
+      - say: 2×2×2なら、2を3回かけるので、2の3乗です。
+        show:
+          - { type: formula, size: l, tex: '2 \times 2 \times 2 = 2^3' }
+      - say: 右上の小さな数は、「何回かけたか」を表しています。この「何乗」を表す数を「指数」といいます。
+        show:
+          - { id: shisu, type: text, color: yellow, text: "右上の小さな数 ＝ **指数**（かけた回数）" }
+        mark: []
+      - say: 同じ数をかけ合わせることを「累乗」とよびます。言葉はむずかしく聞こえますが、「同じ数のかけ算をくり返す」というだけです。
+        added: true
+        show:
+          - { type: box, color: blue, w: 900, title: 累乗, text: "同じ数を何回もかけること（2³ ＝ 2×2×2）" }
+
+  # ---------- 爆発的な増加：折り紙 ----------
+  - board: whiteboard
+    steps:
+      - say: 一見地味ですが、指数は「爆発的な増加」を表します。折り紙で考えてみましょう。
+        show:
+          - { type: title, text: 折り紙を折ると… }
+      - say: 1回折ると2枚重ね、2回で4枚、3回で8枚。1回折るごとに、重なりは2倍になります。
+        show:
+          - type: svg
+            at: [80, 150]
+            w: 1120
+            h: 420
+            color: blue
+            markup: |
+              <path d="M40 380 H1100"/>
+              <rect x="70" y="370" width="70" height="10" fill="currentColor"/>
+              <rect x="200" y="360" width="70" height="20" fill="currentColor"/>
+              <rect x="330" y="340" width="70" height="40" fill="currentColor"/>
+              <rect x="460" y="300" width="70" height="80" fill="currentColor"/>
+              <rect x="590" y="220" width="70" height="160" fill="currentColor"/>
+              <rect x="720" y="60" width="70" height="320" fill="currentColor"/>
+              <g fill="currentColor" stroke="none" font-size="24" text-anchor="middle">
+                <text x="105" y="415">1回</text><text x="235" y="415">2回</text><text x="365" y="415">3回</text>
+                <text x="495" y="415">4回</text><text x="625" y="415">5回</text><text x="755" y="415">6回</text>
+                <text x="105" y="355">2</text><text x="235" y="345">4</text><text x="365" y="325">8</text>
+                <text x="495" y="285">16</text><text x="625" y="205">32</text><text x="755" y="45">64</text>
+              </g>
+      - say: 10回折ると、2の10乗で、1024枚重ねです。
+        show:
+          - { type: formula, at: [960, 200], size: l, color: yellow, tex: '2^{10} = 1024' }
+      - say: そして、42回折ることができれば、その厚さは月まで届くと言われています。最初はゆっくりでも、くり返すと急激に大きくなる。これが指数の力です。
+        show:
+          - { type: text, at: [960, 300], w: 300, color: yellow, text: "42回折ると…\n月まで届く厚さ！" }
+          - { type: box, at: [80, 600], w: 1100, color: gray, text: "2倍・2倍…とくり返すと、あっという間に大きくなる（爆発的な増加）" }
+
+  # ---------- 小さな数 ----------
+  - board: whiteboard
+    steps:
+      - say: 逆に、指数は、とても小さな数を表すときにも使われます。
+        show:
+          - { type: title, text: とても小さな数も }
+      - say: たとえば、ウイルスの大きさは、およそ0.0000001メートル。0がたくさんで、数えるのが大変ですね。
+        show:
+          - { type: text, size: l, text: "ウイルスの大きさ ≒ 0.0000001 m" }
+      - say: これを、10のマイナス7乗メートル、と書くとすっきりします。
+        show:
+          - { type: formula, size: l, color: yellow, tex: '0.0000001\ \text{m} = 10^{-7}\ \text{m}' }
+      - say: マイナスの指数は、「1を10で何回割ったか」と考えるとイメージしやすいです。10のマイナス1乗は0.1、マイナス2乗は0.01。7回割ると、0.0000001になります。
+        added: true
+        show:
+          - type: list
+            size: m
+            items: ["10⁻¹ ＝ 0.1（1を10で1回割る）", "10⁻² ＝ 0.01（2回割る）", "10⁻⁷ ＝ 0.0000001（7回割る）"]
+
+  # ---------- 身近な単位 ----------
+  - board: whiteboard
+    steps:
+      - say: 10の何乗かを表す言葉は、日常にもあふれています。
+        show:
+          - { type: title, text: 身近な「10の何乗」 }
+      - say: キロは10の3乗、つまり1000。1キロメートルは1000メートル、1キログラムは1000グラムです。
+        show:
+          - { type: text, text: "**キロ**（k） ＝ 10³ ＝ 1,000　例：1km ＝ 1,000m" }
+      - say: メガは10の6乗で100万、ギガは10の9乗で10億、テラは10の12乗で1兆です。
+        show:
+          - { type: text, text: "**メガ**（M） ＝ 10⁶ ＝ 100万" }
+          - { type: text, text: "**ギガ**（G） ＝ 10⁹ ＝ 10億" }
+          - { type: text, text: "**テラ**（T） ＝ 10¹² ＝ 1兆" }
+      - say: スマホの容量やデータ通信量で、「ギガ」という言葉を聞いたことがあると思います。あれも、10の9乗を表す言葉なんです。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, text: "スマホの「〇〇ギガ」も、10⁹ を表すことば" }
+
+  # ---------- まとめ ----------
+  - board: whiteboard
+    steps:
+      - say: まとめです。
+        show:
+          - { type: title, text: まとめ }
+      - say: 同じ数をくり返しかけることを累乗といい、何回かけたかを表す数を指数といいます。
+        show:
+          - { type: formula, tex: '2 \times 2 \times 2 = 2^3' }
+      - say: 指数は、2倍2倍とくり返す爆発的な増加を表し、マイナスの指数を使えば、とても小さな数もすっきり書けます。
+        show:
+          - { type: text, text: "爆発的な増加（折り紙）／小さな数（10⁻⁷ m）" }
+      - say: キロ、メガ、ギガ、テラ。身近な言葉の中にも、指数がかくれています。
+        show:
+          - { type: text, text: "キロ 10³ → メガ 10⁶ → ギガ 10⁹ → テラ 10¹²" }

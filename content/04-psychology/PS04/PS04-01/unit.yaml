@@ -2,3 +2,8 @@ id: psychology-ps04-01
 code: PS04-01
 title: 感情とは何か
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 56
+  narration: VOICEVOX:ずんだもん

@@ -1,0 +1,47 @@
+title: 神経系と脳
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「神経系と脳」です。神経系は、体の内と外の情報を集めて処理し、どう反応するかを指令するシステムです。中枢神経と、末梢神経からなります。
+        show:
+          - { type: title, text: 神経系 }
+          - { type: box, color: yellow, w: 1100, title: 中枢神経, text: "脳と脊髄。情報処理の中心（司令塔）" }
+          - { type: box, color: blue, w: 1100, title: 末梢神経, text: "中枢神経と全身をつなぐ（連絡網）" }
+
+  - board: whiteboard
+    steps:
+      - say: 神経の基本の単位は、ニューロン、神経細胞です。ニューロンは、電気の信号で、情報をとなりへ伝えます。
+        show:
+          - { type: title, text: ニューロンとシナプス }
+          - type: svg
+            w: 1100
+            h: 240
+            markup: |
+              <circle cx="120" cy="120" r="50" stroke="#f3d77a"/><path d="M70 100 L20 70 M75 150 L25 190 M130 70 L140 20" stroke="#f3d77a"/>
+              <path d="M170 120 H520" stroke="#f3d77a"/><path d="M520 120 L560 90 M520 120 L560 150" stroke="#f3d77a"/>
+              <circle cx="680" cy="120" r="50" stroke="#8fc4ff"/><path d="M630 120 H590" stroke="#8fc4ff"/>
+              <g fill="#f4a3b8" stroke="none"><circle cx="575" cy="105" r="5"/><circle cx="582" cy="125" r="5"/><circle cx="572" cy="140" r="5"/></g>
+              <g stroke="none" font-size="22"><text x="260" y="100" fill="#f3d77a">電気信号 →</text><text x="510" y="220" fill="#f4a3b8">シナプス（化学物質で受けわたし）</text></g>
+      - say: ニューロンとニューロンのつなぎ目を、シナプスといいます。ここでは、電気の信号が、神経伝達物質という化学物質に変わって、情報が渡されます。
+        show:
+          - { type: text, text: "つなぎ目 ＝ **シナプス**：電気信号 → **神経伝達物質**（化学物質）で受けわたす" }
+      - say: ドーパミンやセロトニンは、神経伝達物質の一種です。ドーパミンは、うれしいこと、ごほうびがあったときに出ます。セロトニンは、ドーパミンなどの暴走をおさえて、心を落ち着かせる役割があります。
+        show:
+          - { type: text, color: yellow, text: "ドーパミン：ごほうび・快楽" }
+          - { type: text, color: blue, text: "セロトニン：暴走をおさえて落ち着かせる" }
+
+  - board: whiteboard
+    steps:
+      - say: 反射は、脳を通さずに、脊髄で行われる、すばやい反応です。
+        show:
+          - { type: title, text: 反射 }
+          - { type: text, size: l, text: "**反射** ＝ 脳を通さず、脊髄で起こるすばやい反応" }
+      - say: 熱いものにさわって、思わず手を引っこめる。これは、信号が脳に届く前に、脊髄で処理されるので、すばやく起こります。「熱い」と感じるのは、手を引っこめたあとなのです。
+        show:
+          - type: svg
+            w: 1000
+            h: 220
+            markup: |
+              <path d="M60 180 H360 V60" stroke="#f4a3b8"/><path d="M360 60 H640" stroke="#9aa3ad" stroke-dasharray="8 8"/>
+              <path d="M360 120 H200 V200" stroke="#8fc4ff"/>
+              <g stroke="none" font-size="24"><text x="40" y="215" fill="#f4a3b8">熱い！</text><text x="330" y="45" fill="currentColor">脊髄</text><text x="660" y="65" fill="#9aa3ad">脳（あとで「熱い」と感じる）</text><text x="80" y="110" fill="#8fc4ff">手を引っこめる</text></g>

@@ -1,0 +1,41 @@
+title: 過去形
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「過去形」です。過去のできごとを表すときは、動詞を過去形に変えます。ふつうは、最後にedをつけるだけですが、planがplanned、studyがstudiedのように、少し形が変わるものもあります。
+        read: 「過去形」です。過去のできごとを表すときは、動詞を過去形に変えます。ふつうは、最後にイーディーをつけるだけですが、プランがプランド、スタディーがスタディードのように、少し形が変わるものもあります。
+        show:
+          - { type: title, text: 過去形 }
+          - { type: text, text: "ふつうは ed をつける：walk → walked" }
+          - { type: text, color: gray, text: "plan → planned、study → studied" }
+
+  - board: whiteboard
+    steps:
+      - say: 形が大きく変わるものを、不規則動詞といいます。よく使うものを覚えておきましょう。goはwent。comeはcame。getはgot。seeはsaw。eatはate。sayはsaid。makeはmadeです。
+        read: 形が大きく変わるものを、不規則動詞といいます。よく使うものを覚えておきましょう。ゴーはウェント。カムはケイム。ゲットはゴット。シーはソー。イートはエイト。セイはセッド。メイクはメイドです。
+        show:
+          - { type: title, text: 不規則動詞 }
+          - { type: text, at: [80, 140], color: yellow, text: "go（行く）→ **went**" }
+          - { type: text, at: [80, 200], color: yellow, text: "come（来る）→ **came**" }
+          - { type: text, at: [80, 260], color: yellow, text: "get（得る）→ **got**" }
+          - { type: text, at: [80, 320], color: yellow, text: "see（見る）→ **saw**" }
+          - { type: text, at: [660, 140], color: yellow, text: "eat（食べる）→ **ate**" }
+          - { type: text, at: [660, 200], color: yellow, text: "say（言う）→ **said**" }
+          - { type: text, at: [660, 260], color: yellow, text: "make（作る）→ **made**" }
+
+  - board: whiteboard
+    steps:
+      - say: 過去形の否定文は、did notを使い、動詞は、元の形、原形にもどします。She didn't answer my question. 彼女は、私の質問に答えなかった。
+        read: 過去形の否定文は、ディッド、ノットを使い、動詞は、元の形、原形にもどします。シー、ディドゥント、アンサー、マイ、クエスチョン。彼女は、私の質問に答えなかった。
+        show:
+          - { type: title, text: 否定文と疑問文 }
+          - { type: text, color: pink, text: "She **didn't** answer my question.（答えなかった）← answer は原形" }
+      - say: 疑問文は、Didを文の頭に置きます。動詞は、やはり原形です。Did you sleep well? よく眠れましたか。
+        read: 疑問文は、ディッドを文の頭に置きます。動詞は、やはり原形です。ディッド、ユー、スリープ、ウェル。よく眠れましたか。
+        show:
+          - { type: text, color: blue, text: "**Did** you sleep well?（よく眠れた？）← sleep は原形" }
+      - say: 過去を表すのは、didが引き受けてくれるので、動詞は、元の形にもどる、と考えると覚えやすいですね。
+        read: 過去を表すのは、ディッドが引き受けてくれるので、動詞は、元の形にもどる、と考えると覚えやすいですね。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, text: "「過去」は did が引き受ける → 動詞は原形にもどる" }

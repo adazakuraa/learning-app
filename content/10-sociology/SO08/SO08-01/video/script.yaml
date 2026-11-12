@@ -1,0 +1,54 @@
+title: 構造と主体の問題
+scenes:
+  - board: slide
+    steps:
+      - say: 社会学の最後の章、「社会学と哲学の接点」です。
+        show:
+          - { type: title, text: 第8章　社会学と哲学の接点 }
+      - say: 人は社会に決められるのか、それとも社会を変えられるのか、という大きな問いを考えます。
+        show:
+          - type: list
+            items: ["構造と主体の問題"]
+      - say: 社会のせいにするのか、自分のせいにするのか。その間で、どうバランスをとるかを考える章です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "「社会のしくみ」と「自分の力」のバランスを考える" }
+
+  - board: whiteboard
+    steps:
+      - say: 社会学の、最大の理論的な問題のひとつが、構造と主体の問題です。人間は、社会に決められるのか、それとも、社会を変えられるのか、という問いです。
+        show:
+          - { type: title, text: 構造か、主体か }
+      - say: 構造決定論は、人間の行動や意識は、経済や文化、制度といった、社会の構造によって決まる、と考えます。一人ひとりの自由な選択も、その構造の産物にすぎない、という見方です。
+        show:
+          - { type: box, color: gray, w: 1100, title: 構造決定論, text: "行動・意識は社会の構造（経済・文化・制度）で決まる。自由な選択も構造の産物" }
+      - say: 主体論は、人間は、構造に影響されながらも、自分から行動し、社会を変える力を持つ、と考えます。歴史は、構造だけでなく、具体的な人々の行動や選択、抵抗によって、変わってきました。
+        show:
+          - { type: box, color: green, w: 1100, title: 主体論, text: "人は構造に影響されつつ、行動して社会を変える力を持つ" }
+
+  - board: whiteboard
+    steps:
+      - say: イギリスの社会学者ギデンズの、構造化理論は、この対立を乗りこえようとした試みです。構造は、人々の行動によって、くり返し生み出され、また変えられていく、という見方です。
+        show:
+          - { type: title, text: 構造化理論 }
+          - type: svg
+            w: 1000
+            h: 200
+            markup: |
+              <rect x="80" y="60" width="260" height="80" rx="14" stroke="#8fc4ff"/><rect x="660" y="60" width="260" height="80" rx="14" stroke="#9be0b0"/>
+              <path d="M340 80 Q500 20 660 80 M645 70 L660 80 L645 88" stroke="#9aa3ad"/><path d="M660 120 Q500 180 340 120 M355 130 L340 120 L355 112" stroke="#9aa3ad"/>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="210" y="108" fill="#8fc4ff">構造</text><text x="790" y="108" fill="#9be0b0">人々の行動</text><text x="500" y="35" fill="#9aa3ad" font-size="18">行動をしばる</text><text x="500" y="185" fill="#9aa3ad" font-size="18">構造を生み出し・変える</text></g>
+      - say: 構造は、行動をしばりますが、人は、構造を利用し、変えることもできます。構造と行動は、おたがいをつくり合う関係なのです。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "構造と行動は、おたがいをつくり合う関係" }
+
+  - board: whiteboard
+    steps:
+      - say: この問いは、実践的でもあります。社会のしくみのせいで、自分はこうなった、という視点と、自分は変われる、という視点を、どうバランスよく持つか。
+        show:
+          - { type: title, text: 2つの視点のバランス }
+          - { type: text, color: blue, text: "「社会のしくみのせいで、こうなった」" }
+          - { type: text, color: green, text: "「それでも、自分は変われる」" }
+      - say: 社会への批判と、自分への責任。その間で揺れることは、生きることそのものの問題でもあります。両方の視点を持つことが、社会も自分も、よりよく変えていく力になるのです。これで、社会学はおしまいです。おつかれさまでした。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "社会への批判と、自分への責任。両方の視点が、社会も自分も変える力になる" }

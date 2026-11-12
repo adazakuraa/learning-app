@@ -2,3 +2,8 @@ id: japanese-history-jh02-04
 code: JH02-04
 title: 大化の改新
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 73
+  narration: VOICEVOX:ずんだもん

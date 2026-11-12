@@ -2,3 +2,8 @@ id: english-en06-01
 code: EN06-01
 title: can
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 104
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: religion-re01-02
 code: RE01-02
 title: 世界の宗教の分布
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 72
+  narration: VOICEVOX:ずんだもん

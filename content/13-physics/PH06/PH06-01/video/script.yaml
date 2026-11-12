@@ -1,0 +1,64 @@
+title: 原子の構造と原子核
+scenes:
+  - board: slide
+    steps:
+      - say: ここから、物理の最後の章、「原子と放射線」です。
+        show:
+          - { type: title, text: 第6章　原子と放射線 }
+      - say: この章では、ものをつくる原子の中身と、放射線、そして、原子力発電や太陽のエネルギーのもとになる、核分裂と核融合を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["原子の構造と原子核", "放射線の種類と性質", "核分裂と核融合"]
+      - say: 原子力発電やエネルギー問題、医療での放射線の利用。ニュースを理解し、自分で考えるための土台になる知識です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "原子の中身と放射線を知り、エネルギー問題を考える土台をつくる" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「原子の構造と原子核」です。原子は、中心の原子核と、そのまわりを回る電子でできています。原子核は、陽子と中性子でできています。
+        show:
+          - { type: title, text: 原子の構造 }
+          - type: svg
+            at: [80, 160]
+            w: 560
+            h: 460
+            markup: |
+              <circle cx="280" cy="230" r="200" stroke="#9aa3ad" stroke-dasharray="6 8"/>
+              <circle cx="262" cy="222" r="22" fill="#f4a3b8" stroke="none"/><circle cx="298" cy="222" r="22" fill="#8fc4ff" stroke="none"/>
+              <circle cx="262" cy="252" r="22" fill="#8fc4ff" stroke="none"/><circle cx="298" cy="252" r="22" fill="#f4a3b8" stroke="none"/>
+              <circle cx="480" cy="230" r="12" fill="#f3d77a" stroke="none"/><circle cx="80" cy="230" r="12" fill="#f3d77a" stroke="none"/>
+          - { type: text, at: [700, 200], color: pink, w: 520, text: "**陽子** … プラスの電気" }
+          - { type: text, at: [700, 270], color: blue, w: 520, text: "**中性子** … 電気をもたない" }
+          - { type: text, at: [700, 340], color: yellow, w: 520, text: "**電子** … マイナスの電気、まわりを回る" }
+      - say: 陽子の数を、原子番号といい、元素の種類を決めます。陽子が1つなら水素、2つならヘリウムです。
+        show:
+          - { type: text, at: [700, 440], w: 520, text: "陽子の数 ＝ 原子番号 → 元素の種類が決まる" }
+
+  - board: whiteboard
+    steps:
+      - say: 原子核の大きさは、原子全体のおよそ10万分の1です。原子を東京ドームの大きさとすると、原子核は、その中のビー玉1個くらい。原子のほとんどは、空っぽなのです。
+        show:
+          - { type: title, text: 原子はほとんど空っぽ }
+          - type: svg
+            w: 1000
+            h: 320
+            markup: |
+              <ellipse cx="500" cy="170" rx="420" ry="140" stroke="#9aa3ad"/>
+              <circle cx="500" cy="170" r="5" fill="#f4a3b8" stroke="none"/>
+              <g stroke="none" font-size="26" text-anchor="middle"><text x="500" y="70" fill="#9aa3ad">原子 ＝ 東京ドーム</text><text x="500" y="220" fill="#f4a3b8">原子核 ＝ ビー玉1個</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 陽子の数が同じ、つまり同じ元素でも、中性子の数がちがう原子があります。これを、同位体といいます。
+        show:
+          - { type: title, text: 同位体 }
+          - { type: text, text: "陽子の数は同じ、**中性子の数がちがう** ＝ **同位体**" }
+      - say: 水素なら、ふつうの水素は陽子1個だけ。重水素は、陽子1個と中性子1個。三重水素は、陽子1個と中性子2個です。
+        show:
+          - type: list
+            items: ["水素：陽子1", "重水素：陽子1 ＋ 中性子1", "三重水素：陽子1 ＋ 中性子2"]
+      - say: 同位体は、化学的な性質はほとんど同じです。でも、中には不安定なものがあり、余分なものを放射線として出しながら、より安定な別の原子に変わっていきます。これを崩壊といい、こうした同位体を、放射性同位体といいます。
+        show:
+          - { type: box, color: pink, w: 1000, text: "不安定な同位体 → 放射線を出して別の原子へ（**崩壊**）＝ **放射性同位体**" }

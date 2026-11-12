@@ -1,0 +1,45 @@
+title: プラスチックと高分子
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「プラスチックと高分子」です。高分子、ポリマーとは、小さな分子、モノマーが、たくさんくり返し結びついてできた、巨大な分子です。
+        show:
+          - { type: title, text: 高分子（ポリマー） }
+          - type: svg
+            w: 1100
+            h: 160
+            markup: |
+              <g stroke="#8fc4ff"><circle cx="60" cy="80" r="26"/><circle cx="130" cy="80" r="26"/><circle cx="200" cy="80" r="26"/><circle cx="270" cy="80" r="26"/><circle cx="340" cy="80" r="26"/><circle cx="410" cy="80" r="26"/><circle cx="480" cy="80" r="26"/><circle cx="550" cy="80" r="26"/><circle cx="620" cy="80" r="26"/><circle cx="690" cy="80" r="26"/></g>
+              <text x="740" y="90" font-size="30" fill="#8fc4ff" stroke="none">… ずっと続く</text>
+              <text x="60" y="150" font-size="22" fill="#9aa3ad" stroke="none">モノマー（小さな分子）がたくさんつながる → ポリマー</text>
+      - say: 鎖のように、同じ輪がずっとつながっているイメージです。ポリは「たくさん」という意味です。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "ポリ ＝ たくさん（鎖のイメージ）" }
+
+  - board: whiteboard
+    steps:
+      - say: 自然にある高分子には、デンプン、タンパク質、DNA、天然ゴムがあります。人工の高分子の代表が、プラスチック、合成繊維、合成ゴムです。
+        show:
+          - { type: title, text: 天然と人工の高分子 }
+          - { type: text, color: green, text: "天然：デンプン・タンパク質・DNA・天然ゴム" }
+          - { type: text, color: blue, text: "人工：プラスチック・合成繊維・合成ゴム" }
+      - say: 身近なプラスチックを見てみましょう。ポリエチレンはレジ袋。PETはペットボトル。ポリプロピレンは弁当箱やマスク。ポリスチレンは発泡スチロール。そしてナイロンは、合成繊維の先がけです。
+        show:
+          - type: list
+            size: s
+            items: ["ポリエチレン（PE）：レジ袋", "PET：ペットボトル", "ポリプロピレン（PP）：弁当箱・マスク", "ポリスチレン（PS）：発泡スチロール", "ナイロン：合成繊維の先がけ"]
+
+  - board: whiteboard
+    steps:
+      - say: プラスチックが自然に分解されにくいのは、それを分解できる微生物が、ほとんどいないからです。
+        show:
+          - { type: title, text: プラスチックごみの問題 }
+          - { type: text, text: "プラスチックを分解できる微生物は、ほとんどいない" }
+      - say: 自然の微生物は、木や落ち葉、動物の死がいのような、天然の高分子を分解する酵素を持っています。でも、人工の高分子は、生まれてまだ100年ほど。それに対応する酵素が進化するほどの時間は、まだたっていないのです。
+        show:
+          - { type: box, color: pink, w: 1000, text: "天然の高分子 → 分解する酵素あり　人工の高分子 → 歴史が浅く、分解できる酵素がまだない" }
+      - say: だから、海にたまるプラスチックごみが、世界的な問題になっています。最後の章の、化学と環境問題にもつながる話です。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "→ 海洋プラスチックごみ問題へ（第7章「化学と環境問題」）" }

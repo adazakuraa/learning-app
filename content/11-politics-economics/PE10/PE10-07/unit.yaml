@@ -2,3 +2,8 @@ id: politics-economics-pe10-07
 code: PE10-07
 title: ナショナリズムとポピュリズム
 order: 7
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 121
+  narration: VOICEVOX:ずんだもん

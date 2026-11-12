@@ -2,3 +2,8 @@ id: japanese-history-jh12-09
 code: JH12-09
 title: 戦後の有名な総理大臣
 order: 9
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 83
+  narration: VOICEVOX:ずんだもん

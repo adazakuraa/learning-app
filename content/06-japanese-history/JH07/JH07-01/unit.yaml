@@ -2,3 +2,8 @@ id: japanese-history-jh07-01
 code: JH07-01
 title: 織田信長の統一事業
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 144
+  narration: VOICEVOX:ずんだもん

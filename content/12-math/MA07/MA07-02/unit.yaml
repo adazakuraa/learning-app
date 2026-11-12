@@ -2,3 +2,8 @@ id: math-ma07-02
 code: MA07-02
 title: 等比数列
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 104
+  narration: VOICEVOX:ずんだもん

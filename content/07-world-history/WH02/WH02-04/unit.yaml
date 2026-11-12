@@ -2,3 +2,8 @@ id: world-history-wh02-04
 code: WH02-04
 title: ローマとカエサル
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 119
+  narration: VOICEVOX:ずんだもん

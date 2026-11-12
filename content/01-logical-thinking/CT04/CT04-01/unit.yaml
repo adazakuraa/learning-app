@@ -2,3 +2,8 @@ id: logical-thinking-ct04-01
 code: CT04-01
 title: 自分の思考を疑う
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 96
+  narration: VOICEVOX:ずんだもん

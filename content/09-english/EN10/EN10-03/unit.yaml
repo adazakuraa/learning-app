@@ -2,3 +2,8 @@ id: english-en10-03
 code: EN10-03
 title: 感情・状態を表す形容詞
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 97
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: chemistry-ch01-03
 code: CH01-03
 title: 純物質と混合物・単体と化合物
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 84
+  narration: VOICEVOX:ずんだもん

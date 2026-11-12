@@ -2,3 +2,8 @@ id: world-history-wh10-07
 code: WH10-07
 title: 湾岸戦争
 order: 7
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 64
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: japanese-history-jh09-01
 code: JH09-01
 title: 黒船来航と開国
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 126
+  narration: VOICEVOX:ずんだもん

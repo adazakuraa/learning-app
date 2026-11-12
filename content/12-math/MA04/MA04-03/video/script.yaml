@@ -1,0 +1,63 @@
+title: 逆・裏・対偶
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「逆・裏・対偶」です。
+        show:
+          - { type: title, text: 逆・裏・対偶 }
+      - say: 「AならばB」という命題から、3つの変形した命題を作ることができます。
+        show:
+          - { type: text, size: l, color: yellow, text: "もとの命題：A ならば B" }
+      - say: 1つ目は「逆」。AとBを入れかえて、「BならばA」。
+        show:
+          - { type: text, text: "**逆**：B ならば A" }
+      - say: 2つ目は「裏」。両方を否定して、「AでなければBでない」。
+        show:
+          - { type: text, text: "**裏**：A でなければ B でない" }
+      - say: 3つ目は「対偶」。入れかえて、さらに否定して、「BでなければAでない」です。
+        show:
+          - { type: text, text: "**対偶**：B でなければ A でない" }
+
+  - board: whiteboard
+    steps:
+      - say: 具体例で確かめましょう。もとの命題は、「東京に住んでいる、ならば、日本に住んでいる」。これは真です。
+        added: true
+        show:
+          - { type: title, text: 例で確かめよう }
+          - { type: text, color: green, text: "もと：東京に住む ⇒ 日本に住む（真）" }
+      - say: 逆は、「日本に住んでいるならば、東京に住んでいる」。大阪の人もいるので、偽です。
+        added: true
+        show:
+          - { type: text, color: pink, text: "逆：日本に住む ⇒ 東京に住む（偽：大阪の人もいる）" }
+      - say: 裏は、「東京に住んでいないならば、日本に住んでいない」。これも、大阪の人がいるので偽です。
+        added: true
+        show:
+          - { type: text, color: pink, text: "裏：東京に住まない ⇒ 日本に住まない（偽）" }
+      - say: 対偶は、「日本に住んでいないならば、東京に住んでいない」。これは真ですね。
+        added: true
+        show:
+          - { type: text, color: green, text: "対偶：日本に住まない ⇒ 東京に住まない（真）" }
+
+  - board: whiteboard
+    steps:
+      - say: このように、もとの命題が真でも、逆と裏は、真とは限りません。
+        show:
+          - { type: title, text: いちばん大事なのは「対偶」 }
+      - say: 一方、もとの命題が真なら、対偶も必ず真になります。もとの命題と対偶は、同じことを別の言い方で言っているのです。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "もとの命題が真 → 対偶も **必ず真**（同じことの言いかえ）" }
+      - say: 図で見ると、東京の円は日本の円にすっぽり入っています。日本の円の外にいる人は、当然、東京の円の外にもいますね。
+        added: true
+        show:
+          - type: svg
+            w: 900
+            h: 260
+            color: blue
+            markup: |
+              <ellipse cx="300" cy="130" rx="260" ry="115"/>
+              <g fill="currentColor" stroke="none" font-size="26"><text x="390" y="80">日本</text><text x="600" y="250">外側 ＝ 日本以外</text></g>
+              <circle cx="200" cy="140" r="65" stroke="#f3d77a"/>
+              <text x="200" y="148" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">東京</text>
+      - say: 「A ならば B」が言いにくいときに、対偶で考えると、問題が解きやすくなることがよくあります。
+        show:
+          - { type: text, size: s, color: gray, text: "→ 練習問題でも、対偶を使う問題が出てきます" }

@@ -2,3 +2,8 @@ id: politics-economics-pe05-04
 code: PE05-04
 title: ゲーム理論
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 136
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: physics-ph05-03
 code: PH05-03
 title: 磁気と電磁誘導
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 117
+  narration: VOICEVOX:ずんだもん

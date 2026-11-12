@@ -1,0 +1,31 @@
+title: OSとアプリの関係
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「OSとアプリの関係」です。OSは、コンピュータの基本的な動きを管理する、土台のソフトウェアです。パソコンならWindowsやmacOS、スマートフォンならiOSやAndroidです。
+        show:
+          - { type: title, text: OS とアプリ }
+          - type: svg
+            w: 1000
+            h: 300
+            markup: |
+              <g stroke-width="3"><rect x="40" y="20" width="200" height="90" rx="10" stroke="#9be0b0"/><rect x="280" y="20" width="200" height="90" rx="10" stroke="#9be0b0"/><rect x="520" y="20" width="200" height="90" rx="10" stroke="#9be0b0"/><rect x="760" y="20" width="200" height="90" rx="10" stroke="#9be0b0"/>
+              <rect x="40" y="130" width="920" height="70" rx="10" stroke="#f3d77a"/><rect x="40" y="220" width="920" height="60" rx="10" stroke="#9aa3ad"/></g>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="140" y="72" fill="#9be0b0">ブラウザ</text><text x="380" y="72" fill="#9be0b0">メール</text><text x="620" y="72" fill="#9be0b0">地図</text><text x="860" y="72" fill="#9be0b0">ゲーム</text><text x="500" y="175" fill="#f3d77a">OS（Windows・macOS・iOS・Android）</text><text x="500" y="260" fill="#9aa3ad">機械（CPU・メモリ・ストレージ）</text></g>
+      - say: アプリケーションは、OSの上で動く、特定の目的のためのソフトウェアです。ブラウザ、メール、地図、ゲームなどですね。OSが土地と道路で、アプリは、その上に建てられた建物のイメージです。
+        show:
+          - { type: text, text: "OS ＝ 土地と道路（土台）、アプリ ＝ その上の建物" }
+
+  - board: whiteboard
+    steps:
+      - say: OSのアップデートが大切な理由は、3つあります。
+        show:
+          - { type: title, text: アップデートが大切な理由 }
+      - say: 1つ目は、セキュリティの修正。見つかった弱点、つまり脆弱性をふさぎます。2つ目は、バグ、つまり不具合の修正。3つ目は、新しい機能の追加です。
+        show:
+          - { type: text, color: pink, text: "① **セキュリティの修正**：見つかった弱点（脆弱性）をふさぐ" }
+          - { type: text, color: yellow, text: "② バグ（不具合）の修正" }
+          - { type: text, color: green, text: "③ 新しい機能の追加" }
+      - say: 特に、セキュリティの修正は、すぐに適用しましょう。弱点が公表されると、攻撃者は、まだ修正していない人をねらってきます。家のかぎがこわれていると知れわたったら、すぐ直すのと同じです。
+        show:
+          - { type: box, color: pink, w: 1100, text: "弱点が知れわたると、修正していない人がねらわれる → アップデートは早めに" }

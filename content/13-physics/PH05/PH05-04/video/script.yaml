@@ -1,0 +1,37 @@
+title: 発電と送電
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「発電と送電」です。
+        show:
+          - { type: title, text: 発電と送電 }
+      - say: 発電所の多くは、前の単元で学んだ電磁誘導で電気を作っています。タービンで磁石やコイルを回して、磁場を変化させるのです。
+        added: true
+        show:
+          - { type: text, text: "発電 ＝ タービンで回して磁場を変化させる（電磁誘導）" }
+      - say: 発電所から家に電気を届けるとき、電圧を、数十万ボルトという、とても高い電圧にして送ります。
+        show:
+          - { type: text, color: yellow, text: "送電：数十万ボルトの高電圧で送る" }
+      - say: その理由は、消費電力の式です。同じ電力を送るなら、電圧を高くすると電流が小さくなります。電線で熱として失われるエネルギーは、電流の2乗に比例するので、電流を小さくすれば、むだが大きく減るのです。
+        show:
+          - { type: formula, tex: '\text{損失} = RI^2 \;\rightarrow\; \text{電流 } I \text{ を小さく}' }
+          - { type: text, size: s, color: gray, text: "電圧を高く → 電流が小さく → 電線での熱のむだが減る" }
+
+  - board: whiteboard
+    steps:
+      - say: 発電所から送られてくるのは、交流、ACと呼ばれる電気です。電流の向きが、周期的に入れかわります。
+        show:
+          - { type: title, text: 交流と直流 }
+          - type: svg
+            w: 1100
+            h: 260
+            markup: |
+              <path d="M20 90 H520" stroke="#9aa3ad"/><path d="M40 90 C90 10 140 10 190 90 C240 170 290 170 340 90 C390 10 440 10 490 90" stroke="#f3d77a"/>
+              <path d="M600 90 H1080" stroke="#9aa3ad"/><path d="M620 40 H1060" stroke="#8fc4ff"/>
+              <g stroke="none" font-size="26"><text x="120" y="230" fill="#f3d77a">交流（AC）向きが入れかわる</text><text x="680" y="230" fill="#8fc4ff">直流（DC）向きが一定</text></g>
+      - say: 向きが一定の直流、DCよりも、交流は、変圧器で電圧を変えやすい、という特徴があります。だから、送電に使われているのです。
+        show:
+          - { type: text, text: "交流は変圧器で電圧を変えやすい → 送電に便利" }
+      - say: 家庭では、変圧器で100ボルトに下げてから使います。スマホの充電器、ACアダプターは、交流を直流に変える装置です。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "発電所 →（数十万V）→ 変電所・変圧器 →（100V）→ 家庭　充電器：AC → DC" }

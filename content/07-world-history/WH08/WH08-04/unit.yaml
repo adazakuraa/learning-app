@@ -2,3 +2,8 @@ id: world-history-wh08-04
 code: WH08-04
 title: ウィーン体制とその動揺
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 70
+  narration: VOICEVOX:ずんだもん

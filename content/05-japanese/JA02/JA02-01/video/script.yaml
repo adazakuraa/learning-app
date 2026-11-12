@@ -1,0 +1,49 @@
+title: 文の構成要素
+scenes:
+  - board: slide
+    steps:
+      - say: 第2章、「文法の基礎」です。
+        show:
+          - { type: title, text: 第2章　文法の基礎 }
+      - say: 文の組み立て、文節と単語、活用、品詞、そして、主題と主語を学びます。章の最後には、練習問題の動画もあります。
+        show:
+          - type: list
+            items: ["文の構成要素", "文節", "活用", "品詞の種類", "主題と主語"]
+      - say: 文法は、文章を正確に読み、わかりやすく書くための、ルールブックです。メールや報告書を書くときにも、役に立ちます。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "文章を正確に読み、わかりやすく書くためのルールを知る" }
+
+  - board: whiteboard
+    steps:
+      - say: 文は、いくつかの部品、構成要素に分けることができます。例文で見ていきましょう。
+        show:
+          - { type: title, text: 主語・述語・修飾語 }
+          - type: svg
+            w: 1000
+            h: 200
+            markup: |
+              <g stroke="none" font-size="56"><text x="80" y="100" fill="#8fc4ff">桜が</text><text x="330" y="100" fill="#9be0b0">綺麗に</text><text x="620" y="100" fill="#f3d77a">咲いた。</text></g>
+              <g stroke="none" font-size="22"><text x="100" y="160" fill="#8fc4ff">主語（何が）</text><text x="340" y="160" fill="#9be0b0">修飾語（どのように）</text><text x="640" y="160" fill="#f3d77a">述語（どうした）</text></g>
+              <path d="M470 120 Q560 190 650 120" stroke="#9be0b0" stroke-dasharray="6 6"/>
+      - say: 主語は、何が、だれが、にあたる部分で、動作や状態の主人公です。「桜が綺麗に咲いた」の、「桜」が主語です。述語は、どうする、どんなだ、何だ、にあたる部分で、「咲いた」が述語です。
+        show:
+          - { type: text, color: blue, text: "**主語**：何が・だれが（桜）" }
+          - { type: text, color: yellow, text: "**述語**：どうする・どんなだ・何だ（咲いた）" }
+      - say: 修飾語は、ほかの言葉を、くわしく説明する部分です。「綺麗に」は、「咲いた」を、くわしく説明しています。
+        show:
+          - { type: text, color: green, text: "**修飾語**：ほかの言葉をくわしく説明（綺麗に → 咲いた）" }
+
+  - board: whiteboard
+    steps:
+      - say: 目的語は、動作の相手や対象を示す、何を、にあたる部分です。「私は本を読む」の、「本」が目的語です。
+        show:
+          - { type: title, text: 目的語・接続詞 }
+          - { type: text, color: pink, text: "**目的語**：何を（「私は **本** を読む」）" }
+      - say: 接続詞は、前とあとの文をつなぐ言葉です。「雨が降った。しかし、試合は続いた」の、「しかし」がこれです。
+        show:
+          - { type: text, text: "**接続詞**：文と文をつなぐ（「雨が降った。**しかし**、試合は続いた」）" }
+      - say: 「しかし」のように、前の文から予想されることとは、反対の内容を続けるものを、逆接といいます。「だから」のように、予想どおりの内容を続けるものを、順接といいます。
+        show:
+          - { type: box, color: blue, at: [80, 340], w: 540, title: 順接, text: "予想どおりに続く（だから・それで）" }
+          - { type: box, color: pink, at: [660, 340], w: 540, title: 逆接, text: "予想と反対に続く（しかし・けれども）" }

@@ -2,3 +2,8 @@ id: geography-ge10-02
 code: GE10-02
 title: 領土問題と地政学
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 62
+  narration: VOICEVOX:ずんだもん

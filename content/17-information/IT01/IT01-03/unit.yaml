@@ -2,3 +2,8 @@ id: information-it01-03
 code: IT01-03
 title: OSとアプリの関係
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 68
+  narration: VOICEVOX:ずんだもん

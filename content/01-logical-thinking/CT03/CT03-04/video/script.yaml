@@ -1,0 +1,52 @@
+title: 統計的誤謬
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「統計的誤謬」です。数字や統計を使った主張は、説得力があるように見えますが、いろいろな形で、まちがいをふくむことがあります。
+        show:
+          - { type: title, text: 相関と因果 }
+      - say: まず、相関と因果の混同です。2つの値が、いっしょに動く、つまり相関しているからといって、一方が、もう一方の原因だとは言えません。
+        show:
+          - { type: image, src: 1000003115.webp, at: [80, 130], w: 560 }
+          - { type: text, at: [690, 150], w: 540, text: "最高気温が高いほど、水難事故が多い" }
+      - say: 例えば、最高気温が高い日ほど、水難事故が増える、というデータがあります。でも、気温が高いから、おぼれるわけではありません。気温が高いと、海や川に行く人が増える。その結果、事故が増えるのです。
+        show:
+          - type: svg
+            at: [680, 260]
+            w: 560
+            h: 200
+            markup: |
+              <rect x="170" y="10" width="220" height="60" rx="10" stroke="#9be0b0"/>
+              <rect x="10" y="130" width="200" height="60" rx="10" stroke="#f4a3b8"/><rect x="350" y="130" width="200" height="60" rx="10" stroke="#8fc4ff"/>
+              <path d="M240 70 L110 130 M320 70 L450 130" stroke="#9aa3ad"/><path d="M210 160 H350" stroke="#9aa3ad" stroke-dasharray="6 6"/>
+              <g stroke="none" font-size="20" text-anchor="middle"><text x="280" y="48" fill="#9be0b0">海・川に行く人が増える</text><text x="110" y="168" fill="#f4a3b8">気温が高い</text><text x="450" y="168" fill="#8fc4ff">水難事故</text></g>
+      - say: このように、第三の原因によって、見かけ上の関係が生まれることを、疑似相関といいます。相関は、因果を意味しない。これは、統計の、最も大事な原則です。
+        show:
+          - { type: box, at: [80, 560], w: 1100, color: yellow, text: "**疑似相関**：第三の原因で見かけの関係が生まれる。「相関は因果を意味しない」" }
+
+  - board: whiteboard
+    steps:
+      - say: サンプリングバイアス。調べた人たちが、調べたい全体を代表していないことです。SNSでアンケートをとったら、8割がAを支持した。でも、SNSを使う人が、国民全体を代表しているとは限りません。
+        show:
+          - { type: title, text: かたよった観察 }
+          - { type: box, color: blue, w: 1100, title: サンプリングバイアス, text: "調べた人が全体を代表していない（例：SNSアンケート、病院の患者だけを調べる）" }
+      - say: 生存者バイアス。成功した例、生き残った例だけを見て、一般化することです。「独立すれば、収入が上がる」。収入が上がった人の声ばかりが目立ち、失敗した人の声は、聞こえにくいのです。
+        show:
+          - { type: box, color: pink, w: 1100, title: 生存者バイアス, text: "成功した人の声だけを見る（例：「独立すれば収入が上がる」）。失敗者の声は聞こえにくい" }
+
+  - board: whiteboard
+    steps:
+      - say: 絶対リスクと、相対リスクの混同。「この薬で、がんのリスクが50パーセント減る」。でも、もともとのリスクが0.02パーセントなら、半分になっても、0.01パーセントです。差は、1万人に1人です。
+        show:
+          - { type: title, text: リスクの数字と平均 }
+          - { type: box, color: yellow, w: 1100, title: 相対リスクの見せ方, text: "「リスクが50％減」→ 0.02％ が 0.01％ になっただけ（1万人に1人の差）" }
+      - say: 平均のわな。「平均年収は〇〇万円」。平均は、極端な値に引っぱられます。少数の、とても高い収入の人がいると、平均が上がり、多くの人は平均以下になります。真ん中の人の値、中央値のほうが、実態を表すことが多いのです。
+        show:
+          - type: svg
+            w: 1000
+            h: 170
+            markup: |
+              <g fill="#8fc4ff" stroke="none"><rect x="40" y="110" width="50" height="40"/><rect x="110" y="100" width="50" height="50"/><rect x="180" y="95" width="50" height="55"/><rect x="250" y="90" width="50" height="60"/><rect x="320" y="85" width="50" height="65"/></g>
+              <rect x="390" y="0" width="50" height="150" fill="#f4a3b8" stroke="none"/>
+              <path d="M20 60 H460" stroke="#f3d77a" stroke-dasharray="8 6"/><path d="M20 95 H460" stroke="#9be0b0" stroke-dasharray="8 6"/>
+              <g stroke="none" font-size="22"><text x="480" y="66" fill="#f3d77a">平均（高い1人に引っぱられる）</text><text x="480" y="101" fill="#9be0b0">中央値（真ん中の人）</text></g>

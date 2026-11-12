@@ -1,0 +1,58 @@
+title: 仕事
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「仕事とエネルギー」の章です。
+        show:
+          - { type: title, text: 第3章　仕事とエネルギー }
+      - say: この章では、物理でいう「仕事」と「エネルギー」、そして、物理で最も大切な法則のひとつ、エネルギー保存の法則を学びます。最後に、熱の正体にもせまります。
+        added: true
+        show:
+          - type: list
+            items: ["仕事", "運動エネルギーと位置エネルギー", "エネルギー保存の法則", "熱とエネルギー", "練習問題"]
+      - say: 電気代、ダムの発電、永久機関はなぜ作れないのか。エネルギーの考え方は、社会や環境の問題を考える土台にもなります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "エネルギーは形を変えても総量は変わらない、という見方を身につける" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「仕事」です。
+        show:
+          - { type: title, text: 仕事 }
+      - say: 物理では、「力を加えて、ものを動かした」とき、「仕事をした」といいます。ふだん使う「仕事」とは、別の意味です。
+        show:
+          - { type: text, size: l, text: "力を加えて、ものを動かす ＝ **仕事をした**" }
+      - say: 仕事は、「力×力の向きに動いた距離」で表します。単位は、ジュールです。
+        show:
+          - { type: formula, size: l, color: yellow, tex: '\text{仕事 [J]} = \text{力 [N]} \times \text{距離 [m]}' }
+      - say: たとえば、10ニュートンの力で荷物を押して、5メートル動かしたら、仕事は50ジュールです。
+        show:
+          - type: svg
+            w: 1000
+            h: 160
+            markup: |
+              <path d="M40 140 H960" stroke="#9aa3ad"/>
+              <rect x="120" y="60" width="120" height="80" stroke="#8fc4ff"/><rect x="700" y="60" width="120" height="80" stroke="#8fc4ff" stroke-dasharray="8 8"/>
+              <path d="M60 100 H110" stroke="#f3d77a"/><path d="M96 90 L110 100 L96 110" stroke="#f3d77a"/>
+              <path d="M180 30 H760" stroke="#f4a3b8"/>
+              <g stroke="none" font-size="24"><text x="20" y="80" fill="#f3d77a">10N</text><text x="420" y="22" fill="#f4a3b8">5m</text></g>
+          - { type: formula, color: green, tex: '10\ \text{N} \times 5\ \text{m} = 50\ \text{J}' }
+      - say: 逆に、重い荷物を持って、じっと立っているだけなら、どんなに疲れても、ものは動いていないので、物理の「仕事」はゼロです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "荷物を持って立っているだけ → 動いていないので仕事は 0" }
+
+  - board: whiteboard
+    steps:
+      - say: 仕事率は、1秒あたりにする仕事の量で、仕事の「速さ」を表します。単位は、ワットです。
+        show:
+          - { type: title, text: 仕事率 }
+          - { type: formula, size: l, color: yellow, tex: '\text{仕事率 [W]} = \frac{\text{仕事 [J]}}{\text{時間 [s]}}' }
+      - say: 電球の「60ワット」は、このワットのことで、1秒間に、60ジュールのエネルギーを使う、という意味です。
+        show:
+          - { type: text, text: "電球 60W ＝ 1秒間に 60J のエネルギーを使う" }
+      - say: 同じ仕事でも、短い時間でやるほど、仕事率は大きくなります。階段をゆっくり上るより、かけ上がるほうが、たいへんなのはそのためです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "同じ階段でも、かけ上がるほうが仕事率が大きい（たいへん）" }

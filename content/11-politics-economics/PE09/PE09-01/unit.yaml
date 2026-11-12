@@ -2,3 +2,8 @@ id: politics-economics-pe09-01
 code: PE09-01
 title: 国際社会の仕組み
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 106
+  narration: VOICEVOX:ずんだもん

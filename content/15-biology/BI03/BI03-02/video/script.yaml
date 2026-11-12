@@ -1,0 +1,58 @@
+title: タンパク質合成（転写・翻訳）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「タンパク質合成」です。DNAの情報から、どのように体、つまりタンパク質がつくられるのか。この流れを、セントラルドグマといいます。
+        show:
+          - { type: title, text: セントラルドグマ }
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <rect x="30" y="60" width="200" height="80" rx="12" stroke="#8fc4ff"/><rect x="430" y="60" width="200" height="80" rx="12" stroke="#f4a3b8"/><rect x="830" y="60" width="240" height="80" rx="12" stroke="#9be0b0"/>
+              <g stroke="none" font-size="30" text-anchor="middle"><text x="130" y="112" fill="#8fc4ff">DNA</text><text x="530" y="112" fill="#f4a3b8">mRNA</text><text x="950" y="112" fill="#9be0b0">タンパク質</text></g>
+              <path d="M240 100 H420 M640 100 H820" stroke="#f3d77a"/>
+              <g stroke="none" font-size="26" text-anchor="middle" fill="#f3d77a"><text x="330" y="80">転写</text><text x="730" y="80">翻訳</text></g>
+      - say: DNAの情報をコピーするのが「転写」。そのコピーをもとに、タンパク質をつくるのが「翻訳」です。
+        show:
+          - { type: text, text: "コピーする ＝ **転写**　　タンパク質をつくる ＝ **翻訳**" }
+
+  - board: whiteboard
+    steps:
+      - say: 転写では、まず2本鎖のDNAを、ほどいて1本にします。その1本の情報をもとに、RNAという、DNAによく似た1本鎖のコピーをつくります。このコピーを、メッセンジャーRNA、mRNAといいます。
+        show:
+          - { type: title, text: 転写 }
+          - { type: box, color: pink, w: 1100, text: "DNA の2本鎖をほどく → 片方を型にして **mRNA**（1本鎖のコピー）をつくる" }
+      - say: 大切な設計図の原本は、核の中にしまったまま。必要な部分だけを、コピーして持ち出す。図書館の貴重な本を、コピーして使うようなイメージです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "原本（DNA）は核の中に保管、コピー（mRNA）を持ち出して使う" }
+
+  - board: whiteboard
+    steps:
+      - say: mRNAができると、その情報を読みとって、タンパク質がつくられます。これが翻訳です。塩基の並びには、それぞれに対応するアミノ酸が決まっています。その対応にしたがって、アミノ酸をつないでいきます。
+        show:
+          - { type: title, text: 翻訳 }
+          - type: svg
+            w: 1100
+            h: 220
+            markup: |
+              <path d="M40 60 H1060" stroke="#f4a3b8" stroke-width="4"/>
+              <g stroke="none" font-size="24" fill="#f4a3b8"><text x="60" y="45">AUG</text><text x="200" y="45">GCU</text><text x="340" y="45">UUC</text><text x="480" y="45">…</text></g>
+              <g stroke="#9be0b0"><circle cx="90" cy="160" r="30"/><circle cx="230" cy="160" r="30"/><circle cx="370" cy="160" r="30"/></g>
+              <path d="M120 160 H200 M260 160 H340" stroke="#9be0b0"/>
+              <g stroke="#9aa3ad" stroke-dasharray="4 6"><path d="M90 70 V130"/><path d="M230 70 V130"/><path d="M370 70 V130"/></g>
+              <text x="440" y="170" font-size="24" fill="#9be0b0" stroke="none">アミノ酸がつながる → タンパク質</text>
+      - say: アミノ酸は全部で20種類。どのアミノ酸を、どの順番でつなぐかで、タンパク質の形と働きが決まります。20種類の文字で、ちがう文章をつくるようなものです。
+        show:
+          - { type: text, color: yellow, text: "アミノ酸は20種類 → つなぐ順番で形と働きが決まる" }
+
+  - board: whiteboard
+    steps:
+      - say: タンパク質は、酵素、ホルモン、筋肉、皮ふ、髪の毛など、体のほとんどすべての働きと構造をになっています。
+        show:
+          - { type: title, text: タンパク質の役割 }
+          - { type: text, text: "酵素・ホルモン・筋肉・皮ふ・髪 … 体のほぼすべて" }
+      - say: 「DNAが体をつくる」というのは、つまり、「DNAが、タンパク質の設計図になっている」ということなのです。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "DNA が体をつくる ＝ DNA がタンパク質の設計図" }

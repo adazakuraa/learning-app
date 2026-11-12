@@ -2,3 +2,8 @@ id: math-ma05-05
 code: MA05-05
 title: 期待値
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 66
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: geography-ge09-00
 code: GE09-00
 title: 日本地図
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 54
+  narration: VOICEVOX:ずんだもん

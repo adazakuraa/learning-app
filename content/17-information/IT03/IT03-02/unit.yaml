@@ -2,3 +2,8 @@ id: information-it03-02
 code: IT03-02
 title: パスワードと認証の現在
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 109
+  narration: VOICEVOX:ずんだもん

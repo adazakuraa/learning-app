@@ -3,3 +3,9 @@ dist
 public/data
 *.tsbuildinfo
 .DS_Store
+*.tmp.mp4
+narrated.txt
+todo.txt
+stale.txt
+todo.txt
+chunk_*

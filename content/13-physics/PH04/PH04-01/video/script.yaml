@@ -1,0 +1,88 @@
+title: 波とは何か
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「波・音・光」の章です。
+        show:
+          - { type: title, text: 第4章　波・音・光 }
+      - say: この章では、波の基本と、身近な波である、音と光の性質を学びます。最後に、光の仲間である電磁波を見ていきます。
+        added: true
+        show:
+          - type: list
+            items: ["波とは何か", "音の正体と性質", "光の性質", "レンズと光学機器", "電磁波とその種類"]
+      - say: 雷の音が遅れて聞こえる理由、虹ができるしくみ、メガネやスマホの電波。どれも波の性質で説明できます。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "音も光も電波も「波」としてひとつにつなげて理解する" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「波とは何か」です。
+        show:
+          - { type: title, text: 波とは何か }
+      - say: 波とは、「ふるえ、つまり振動が、次々と伝わっていく現象」です。
+        show:
+          - { type: text, size: l, text: "**波** ＝ 振動が次々と伝わっていく現象" }
+      - say: 水面に石を投げると、波紋が広がりますね。でも、水そのものが遠くへ流れていくわけではありません。その場で上下にゆれる動きが、となりへ、となりへと伝わっているのです。
+        show:
+          - type: svg
+            w: 1000
+            h: 220
+            markup: |
+              <path d="M20 110 Q70 50 120 110 T220 110 T320 110 T420 110 T520 110 T620 110 T720 110 T820 110 T920 110" stroke="#8fc4ff"/>
+              <circle cx="320" cy="110" r="14" stroke="#f3d77a"/>
+              <path d="M320 40 V80" stroke="#f3d77a"/><path d="M320 140 V180" stroke="#f3d77a"/>
+              <path d="M600 200 H880" stroke="#f4a3b8"/><path d="M866 190 L880 200 L866 210" stroke="#f4a3b8"/>
+              <g stroke="none" font-size="24"><text x="340" y="40" fill="#f3d77a">水はその場で上下するだけ</text><text x="620" y="190" fill="#f4a3b8">伝わるのは「ゆれ」</text></g>
+      - say: スタジアムのウェーブも同じです。一人ひとりは、その場で立ったり座ったりするだけなのに、波が会場を一周していきます。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "例：スタジアムのウェーブ（人は動かず、立つ・座るの動きが伝わる）" }
+
+  - board: whiteboard
+    steps:
+      - say: 波を表す、基本の言葉を整理しましょう。
+        show:
+          - { type: title, text: 波の基本用語 }
+          - type: svg
+            at: [80, 140]
+            w: 1100
+            h: 300
+            markup: |
+              <path d="M20 150 H1080" stroke="#9aa3ad" stroke-dasharray="6 8"/>
+              <path d="M40 150 C100 30 180 30 240 150 C300 270 380 270 440 150 C500 30 580 30 640 150 C700 270 780 270 840 150 C900 30 980 30 1040 150" stroke="#8fc4ff"/>
+              <path d="M140 60 H540" stroke="#f3d77a"/><path d="M140 50 V70"/><path d="M540 50 V70"/>
+              <path d="M940 150 V60" stroke="#f4a3b8"/>
+              <g stroke="none" font-size="26"><text x="290" y="45" fill="#f3d77a">波長</text><text x="955" y="110" fill="#f4a3b8">振幅</text></g>
+      - say: 振幅は、ふるえの大きさ、つまり波の高さ。音なら音の大きさ、光なら明るさにあたります。
+        show:
+          - { type: text, at: [80, 470], color: pink, text: "**振幅** … 波の高さ（音 → 大きさ、光 → 明るさ）" }
+      - say: 波長は、となり合う山と山の間隔。振動数、または周波数は、1秒間にふるえる回数で、単位はヘルツです。
+        show:
+          - { type: text, at: [80, 540], color: yellow, text: "**波長** … 山と山の間隔" }
+          - { type: text, at: [80, 610], color: blue, text: "**振動数（周波数）** … 1秒間にふるえる回数［Hz（ヘルツ）］" }
+
+  - board: whiteboard
+    steps:
+      - say: 波の大切な性質に、「重ね合わせ」、または「干渉」があります。2つの波が重なると、足し合わされるのです。
+        show:
+          - { type: title, text: 波の重ね合わせ（干渉） }
+      - say: 山と山が重なると、大きな山に。山と谷が重なると、打ち消し合って、平らになります。
+        show:
+          - type: svg
+            w: 1100
+            h: 300
+            markup: |
+              <path d="M20 70 C70 10 120 10 170 70 C220 130 270 130 320 70" stroke="#8fc4ff"/>
+              <text x="340" y="80" font-size="30" fill="currentColor" stroke="none">＋</text>
+              <path d="M380 70 C430 10 480 10 530 70 C580 130 630 130 680 70" stroke="#8fc4ff"/>
+              <text x="700" y="80" font-size="30" fill="currentColor" stroke="none">＝</text>
+              <path d="M740 70 C790 -40 840 -40 890 70 C940 180 990 180 1040 70" stroke="#f3d77a"/>
+              <path d="M20 230 C70 170 120 170 170 230 C220 290 270 290 320 230" stroke="#8fc4ff"/>
+              <text x="340" y="240" font-size="30" fill="currentColor" stroke="none">＋</text>
+              <path d="M380 230 C430 290 480 290 530 230 C580 170 630 170 680 230" stroke="#f4a3b8"/>
+              <text x="700" y="240" font-size="30" fill="currentColor" stroke="none">＝</text>
+              <path d="M740 230 H1040" stroke="#f3d77a"/>
+      - say: ノイズキャンセリングのイヤホンは、この打ち消し合いを利用しています。まわりの雑音と、山と谷が逆の音を出して、雑音を消しているのです。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "ノイズキャンセリング ＝ 逆の波をぶつけて雑音を打ち消す" }

@@ -2,3 +2,8 @@ id: japanese-history-jh11-07
 code: JH11-07
 title: 戦争を生きた人物たち
 order: 7
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 202
+  narration: VOICEVOX:ずんだもん

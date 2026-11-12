@@ -2,3 +2,8 @@ id: politics-economics-pe10-04
 code: PE10-04
 title: リバタリアニズム
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 101
+  narration: VOICEVOX:ずんだもん

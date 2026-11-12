@@ -2,3 +2,8 @@ id: earth-science-es02-03
 code: ES02-03
 title: 地震波と地球内部
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 69
+  narration: VOICEVOX:ずんだもん

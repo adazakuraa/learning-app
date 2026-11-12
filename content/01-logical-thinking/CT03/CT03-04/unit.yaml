@@ -2,3 +2,8 @@ id: logical-thinking-ct03-04
 code: CT03-04
 title: 統計的誤謬
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 130
+  narration: VOICEVOX:ずんだもん

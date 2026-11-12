@@ -2,3 +2,8 @@ id: logical-thinking-ct06-01
 code: CT06-01
 title: 主張を特定する
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 123
+  narration: VOICEVOX:ずんだもん

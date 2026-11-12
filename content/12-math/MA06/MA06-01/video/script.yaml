@@ -1,0 +1,66 @@
+title: 平均・中央値・最頻値
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「統計の基礎」の章です。
+        show:
+          - { type: title, text: 第6章　統計の基礎 }
+      - say: この章では、たくさんのデータから特徴を読み取る方法と、データを正しく読むための注意点を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["平均・中央値・最頻値", "分散と標準偏差", "相関と因果", "有意差と統計的検定", "練習問題"]
+      - say: ニュースや広告にあふれる数字を、うのみにせず、自分で読み解けるようになることが目標です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "データの数字にだまされず、正しく読み解けるようになる" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は、「平均・中央値・最頻値」です。
+        show:
+          - { type: title, text: 平均・中央値・最頻値 }
+      - say: データの特徴を、ひとつの数で表したもの。これを「代表値」といいます。代表的なものが、平均、中央値、最頻値です。
+        show:
+          - { type: text, size: l, text: "**代表値** ＝ データの特徴を1つの数で表す" }
+      - say: 平均は、データを全部足して、個数で割ったもの。
+        show:
+          - { type: text, text: "**平均** … 全部足して、個数で割る" }
+      - say: 中央値は、小さい順に並べたとき、ちょうど真ん中にくる値。
+        show:
+          - { type: text, text: "**中央値** … 小さい順に並べた、真ん中の値" }
+      - say: 最頻値は、いちばん多く出てくる値です。
+        show:
+          - { type: text, text: "**最頻値** … いちばん多く出てくる値" }
+      - say: たとえば、2、3、3、4、8というデータなら、平均は20÷5で4、中央値は真ん中の3、最頻値は2回出てくる3です。
+        added: true
+        show:
+          - { type: text, color: gray, text: "例：2, 3, 3, 4, 8 → 平均4　中央値3　最頻値3" }
+
+  - board: whiteboard
+    steps:
+      - say: この3つが大きくちがう例として、年収の話が有名です。
+        show:
+          - { type: title, text: 年収で考える }
+      - say: 10人のグループで、9人の年収が300万円、1人だけが1億円だとします。
+        show:
+          - type: svg
+            w: 1100
+            h: 330
+            color: blue
+            markup: |
+              <rect x="20" y="270" width="70" height="10" fill="currentColor"/><rect x="110" y="270" width="70" height="10" fill="currentColor"/>
+              <rect x="200" y="270" width="70" height="10" fill="currentColor"/><rect x="290" y="270" width="70" height="10" fill="currentColor"/>
+              <rect x="380" y="270" width="70" height="10" fill="currentColor"/><rect x="470" y="270" width="70" height="10" fill="currentColor"/>
+              <rect x="560" y="270" width="70" height="10" fill="currentColor"/><rect x="650" y="270" width="70" height="10" fill="currentColor"/>
+              <rect x="740" y="270" width="70" height="10" fill="currentColor"/>
+              <rect x="860" y="10" width="70" height="270" fill="#f4a3b8" stroke="#f4a3b8"/>
+              <path d="M10 280 H960" stroke="#9aa3ad"/>
+              <g fill="currentColor" stroke="none" font-size="24"><text x="300" y="320">300万円 × 9人</text></g>
+              <text x="950" y="60" font-size="24" fill="#f4a3b8" stroke="none">1億円</text>
+      - say: 平均は、およそ1270万円。でも、中央値は300万円です。
+        show:
+          - { type: text, text: "平均 ≒ **1270万円**　　中央値 ＝ **300万円**" }
+      - say: 「平均年収1270万円のグループ」と聞くと、豊かに見えます。でも実際は、9人が300万円。極端な値、つまり「外れ値」があると、平均は実態をゆがめてしまうのです。
+        show:
+          - { type: box, color: pink, w: 1000, text: "**外れ値** があると、平均は実態をゆがめる → 中央値も見よう" }

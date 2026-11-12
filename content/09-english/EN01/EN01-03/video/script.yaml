@@ -1,0 +1,34 @@
+title: よく使う発音のルール
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「よく使う発音のルール」です。英語の発音には、いくつかのパターンがあり、知っておくと、知らない単語でも、読める確率が上がります。
+        show:
+          - { type: title, text: サイレントe }
+      - say: サイレントeのルール。単語の最後のeは、読まずに、その前の母音を、アルファベットの名前の音、つまり、長い音にすることがあります。capはキャップ、capeはケイプ。bitはビット、biteはバイト。hopはホップ、hopeはホウプです。
+        read: サイレントイーのルール。単語の最後のイーは、読まずに、その前の母音を、アルファベットの名前の音、つまり、長い音にすることがあります。キャップに、イーがつくと、ケイプ。ビットは、バイト。ホップは、ホウプです。
+        show:
+          - { type: text, size: l, color: blue, text: "cap（キャップ）→ cape（ケイプ）" }
+          - { type: text, size: l, color: green, text: "bit（ビット）→ bite（バイト）" }
+          - { type: text, size: l, color: yellow, text: "hop（ホップ）→ hope（ホウプ）" }
+          - { type: text, color: gray, text: "最後の e は読まず、前の母音を「名前の音」にする" }
+
+  - board: whiteboard
+    steps:
+      - say: 母音が2つ並ぶときのルール。母音が2つ並ぶと、最初の母音を、アルファベットの名前の音で読み、2つ目は、読まないことが多いです。rainはレイン、sleepはスリープ、boatはボウトです。
+        read: 母音が2つ並ぶときのルール。母音が2つ並ぶと、最初の母音を、アルファベットの名前の音で読み、2つ目は、読まないことが多いです。レイン、スリープ、ボウト、といった具合です。
+        show:
+          - { type: title, text: そのほかのルール }
+          - { type: text, color: blue, text: "母音が2つ並ぶ：最初を名前の音で、2つ目は読まない → rain（レイン）・boat（ボウト）" }
+      - say: phは、fの音になります。phone、photo、elephant、alphabetなどです。
+        read: ピーエイチは、エフの音になります。フォン、フォト、エレファント、アルファベットなどです。
+        show:
+          - { type: text, color: green, text: "ph ＝ f の音：phone・photo・elephant・alphabet" }
+      - say: ckは、kの音ひとつです。back、checkなどですね。
+        read: シーケーは、ケーの音ひとつです。バック、チェックなどですね。
+        show:
+          - { type: text, color: yellow, text: "ck ＝ k の音ひとつ：back・check" }
+      - say: もちろん例外もたくさんありますが、こうしたパターンを知っているだけで、初めて見る単語にも、ぐっと立ち向かいやすくなります。
+        added: true
+        show:
+          - { type: box, color: gray, w: 1000, text: "例外も多いが、パターンを知るだけで読める単語がぐっと増える" }

@@ -1,0 +1,44 @@
+title: 酸化と還元
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「酸化と還元」です。酸化とは、酸素と結びつくことです。
+        show:
+          - { type: title, text: 酸化 }
+          - { type: text, size: l, text: "**酸化** ＝ 酸素と結びつくこと" }
+      - say: 身近な酸化の例です。鉄がさびて、酸化鉄になる。炭素をふくむものが燃えて、二酸化炭素になる。切ったリンゴが茶色くなるのも、切り口の成分が、空気中の酸素で酸化するからです。
+        show:
+          - type: list
+            items: ["鉄がさびる → 酸化鉄", "ものが燃える：C ＋ O₂ → CO₂", "切ったリンゴが茶色くなる"]
+
+  - board: whiteboard
+    steps:
+      - say: 燃焼は、とても速い酸化です。ゆっくり進む酸化がさびで、速く進む酸化が燃焼。本質的には、同じ反応なのです。
+        show:
+          - { type: title, text: さびと燃焼は同じ仲間 }
+          - type: svg
+            w: 1000
+            h: 160
+            markup: |
+              <path d="M40 100 H960" stroke="#9aa3ad"/><path d="M944 90 L960 100 L944 110" stroke="#9aa3ad"/>
+              <g stroke="none" font-size="28"><text x="40" y="60" fill="#8fc4ff">ゆっくり：さび</text><text x="420" y="60" fill="#f3d77a">中くらい：カイロ</text><text x="780" y="60" fill="#f4a3b8">速い：燃焼</text></g>
+              <text x="380" y="150" font-size="24" fill="#9aa3ad" stroke="none">酸化の速さ</text>
+      - say: 使い捨てカイロは、袋の中の鉄の粉が、空気にふれて酸化するときの熱を使っています。さびる反応を、わざと少し速くしているのです。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "使い捨てカイロ ＝ 鉄の粉がさびる（酸化）ときの熱" }
+
+  - board: whiteboard
+    steps:
+      - say: 酸化の逆で、酸素を失うことを、還元といいます。そして、酸化と還元は、必ず同時に起こります。一方が酸素をもらえば、もう一方は酸素を失うからです。
+        show:
+          - { type: title, text: 還元 }
+          - { type: text, size: l, text: "**還元** ＝ 酸素を失うこと" }
+          - { type: text, color: yellow, text: "酸化と還元は **必ず同時に** 起こる" }
+      - say: 還元の身近な例が、鉄づくりです。鉄鉱石、つまり酸化鉄を、炭素のかたまりであるコークスといっしょに高温で熱すると、炭素が酸素をうばって、鉄がとり出せます。
+        show:
+          - { type: formula, size: l, tex: '2\text{Fe}_2\text{O}_3 + 3\text{C} \rightarrow 4\text{Fe} + 3\text{CO}_2' }
+          - type: svg
+            w: 1000
+            h: 120
+            markup: |
+              <g stroke="none" font-size="26"><text x="40" y="40" fill="#8fc4ff">酸化鉄：酸素を失う → 還元</text><text x="40" y="100" fill="#f4a3b8">炭素：酸素をもらう → 酸化</text></g>

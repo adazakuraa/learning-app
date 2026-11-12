@@ -2,3 +2,8 @@ id: english-en02-04
 code: EN02-04
 title: 疑問詞（5W1H）
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 95
+  narration: VOICEVOX:ずんだもん

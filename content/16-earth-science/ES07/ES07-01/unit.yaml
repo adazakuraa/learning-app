@@ -2,3 +2,8 @@ id: earth-science-es07-01
 code: ES07-01
 title: 自然災害と防災
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 89
+  narration: VOICEVOX:ずんだもん

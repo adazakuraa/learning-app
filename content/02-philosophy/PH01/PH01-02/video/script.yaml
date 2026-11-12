@@ -1,0 +1,26 @@
+title: 哲学の問いの地図
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「哲学の問いの地図」です。哲学は、いくつかの大きな領域に分かれます。全体の地図を持っておくと、いろいろな問いが、どこに位置するかがわかります。
+        show:
+          - { type: title, text: 哲学の3つの大きな領域 }
+          - type: svg
+            w: 1100
+            h: 220
+            markup: |
+              <g stroke-width="3"><circle cx="190" cy="110" r="100" stroke="#f3d77a"/><circle cx="550" cy="110" r="100" stroke="#8fc4ff"/><circle cx="910" cy="110" r="100" stroke="#f4a3b8"/></g>
+              <g stroke="none" text-anchor="middle"><text x="190" y="105" font-size="30" fill="#f3d77a">存在論</text><text x="190" y="140" font-size="20" fill="#f3d77a">何が「ある」か</text><text x="550" y="105" font-size="30" fill="#8fc4ff">認識論</text><text x="550" y="140" font-size="20" fill="#8fc4ff">何を「知れる」か</text><text x="910" y="105" font-size="30" fill="#f4a3b8">倫理学</text><text x="910" y="140" font-size="20" fill="#f4a3b8">どう「生きる」か</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 存在論は、何が存在するのか、存在するとはどういうことか、を問います。神は存在するか。自由意志はあるのか。時間とは何か。現実ばなれして見えますが、自分とは何か、意識とは何か、という身近な問いも、ここに入ります。
+        show:
+          - { type: title, text: 3つの領域の問い }
+          - { type: box, color: yellow, w: 1100, title: 存在論, text: "神は存在するか・自由意志はあるか・時間とは何か・自分とは何か" }
+      - say: 認識論は、何を、どのように知ることができるか、を問います。客観的な真実はあるのか。科学の知識は、なぜ信頼できるのか。自分の記憶や感覚は、信頼できるのか。
+        show:
+          - { type: box, color: blue, w: 1100, title: 認識論, text: "客観的な真実はあるか・科学はなぜ信頼できるか・記憶や感覚は信頼できるか" }
+      - say: 倫理学は、何がよいことか、どう生きるべきか、を問います。この講座で学ぶ問いも、だいたいこの3つのどこかに入ります。地図を頭に置いて、進んでいきましょう。
+        show:
+          - { type: box, color: pink, w: 1100, title: 倫理学, text: "何がよいことか・どう生きるべきか" }

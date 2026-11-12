@@ -2,3 +2,8 @@ id: physics-ph05-01
 code: PH05-01
 title: 電気とは何か
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 91
+  narration: VOICEVOX:ずんだもん

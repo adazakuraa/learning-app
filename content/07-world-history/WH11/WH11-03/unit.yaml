@@ -2,3 +2,8 @@ id: world-history-wh11-03
 code: WH11-03
 title: 民主主義の危機とポピュリズム
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 93
+  narration: VOICEVOX:ずんだもん

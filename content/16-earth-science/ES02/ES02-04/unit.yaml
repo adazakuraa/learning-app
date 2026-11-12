@@ -2,3 +2,8 @@ id: earth-science-es02-04
 code: ES02-04
 title: 津波
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 61
+  narration: VOICEVOX:ずんだもん

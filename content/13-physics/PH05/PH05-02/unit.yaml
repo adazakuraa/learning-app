@@ -2,3 +2,8 @@ id: physics-ph05-02
 code: PH05-02
 title: オームの法則と回路
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 105
+  narration: VOICEVOX:ずんだもん

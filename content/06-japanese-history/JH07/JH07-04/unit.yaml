@@ -2,3 +2,8 @@ id: japanese-history-jh07-04
 code: JH07-04
 title: キリスト教の伝来と弾圧
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 66
+  narration: VOICEVOX:ずんだもん

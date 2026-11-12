@@ -2,3 +2,8 @@ id: information-it04-01
 code: IT04-01
 title: 今のAIは何ができて何ができないか
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 164
+  narration: VOICEVOX:ずんだもん

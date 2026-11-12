@@ -1,0 +1,62 @@
+title: 自由意志はあるのか
+scenes:
+  - board: slide
+    steps:
+      - say: 第3章、「自由意志」です。
+        show:
+          - { type: title, text: 第3章　自由意志 }
+      - say: 私たちは、本当に自分で選んでいるのか。責任とは何か。そして、人生における運について考えます。
+        show:
+          - type: list
+            items: ["自由意志はあるのか", "自由意志と道徳的責任", "運と人生・道徳的運"]
+      - say: 「自己責任」という言葉を、よく耳にします。その言葉が、どこまで正しいのかを考える手がかりになります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "「自分で選ぶ」「責任」「運」の関係を考える" }
+
+  - board: whiteboard
+    steps:
+      - say: 自分の行動は、自分で選んでいる。この感覚は、毎日の基本ですが、哲学や脳科学で、最も議論のある問いのひとつです。
+        show:
+          - { type: title, text: 決定論 }
+      - say: 宇宙のすべてのできごとは、前の原因によって、すでに決まっている。この立場を、決定論といいます。物理法則に従うなら、あなたが今この動画を見ていることも、次に何を思うかも、宇宙の始まりの状態から、決まっていたことになります。
+        show:
+          - { type: box, color: blue, w: 1100, text: "**決定論**：すべてのできごとは、前の原因によってすでに決まっている" }
+          - type: svg
+            w: 1000
+            h: 100
+            markup: |
+              <g stroke="#8fc4ff"><circle cx="60" cy="50" r="22"/><circle cx="300" cy="50" r="22"/><circle cx="540" cy="50" r="22"/><circle cx="780" cy="50" r="22"/></g>
+              <path d="M85 50 H275 M325 50 H515 M565 50 H755 M805 50 H960" stroke="#9aa3ad"/><path d="M945 40 L960 50 L945 60" stroke="#9aa3ad"/>
+              <g stroke="none" font-size="18" fill="#9aa3ad" text-anchor="middle"><text x="60" y="95">宇宙の始まり</text><text x="900" y="90">今のあなた</text></g>
+      - say: ただし、現代物理学の量子力学では、ミクロのできごとは、確率的にしか決まらないと考えられていて、厳密な決定論には、否定的な見方が多いです。とはいえ、偶然に左右されることが、自由だというわけでもありません。
+        show:
+          - { type: text, size: s, color: gray, text: "量子力学では確率的 → 厳密な決定論には否定的。ただし「偶然 ＝ 自由」でもない" }
+
+  - board: whiteboard
+    steps:
+      - say: 自由意志について、衝撃的な実験があります。リベットの実験です。
+        show:
+          - { type: title, text: リベットの実験 }
+      - say: 手を動かそう、と意識したときより、およそ0.35秒前、実際に手が動くおよそ0.5秒前に、脳の神経が、すでに動き出していることがわかったのです。自分で決めた、という感覚は、実は、脳が先に決めたあとの、あと付けかもしれない、ということです。
+        show:
+          - type: svg
+            w: 1100
+            h: 160
+            markup: |
+              <path d="M40 80 H1060" stroke="#9aa3ad"/>
+              <g stroke="none"><circle cx="200" cy="80" r="12" fill="#f4a3b8"/><circle cx="620" cy="80" r="12" fill="#f3d77a"/><circle cx="900" cy="80" r="12" fill="#8fc4ff"/></g>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="200" y="50" fill="#f4a3b8">脳が動き出す</text><text x="620" y="50" fill="#f3d77a">「動かそう」と意識</text><text x="900" y="50" fill="#8fc4ff">手が動く</text><text x="410" y="125" fill="#9aa3ad">約0.35秒</text><text x="760" y="125" fill="#9aa3ad">約0.2秒</text></g>
+      - say: ただし、この実験の解釈には、批判もあります。測っている脳の電気が、本当に、決定を意味しているのか、はっきりしません。また、人は、動き出した行動を、途中で止めることもできるのです。
+        show:
+          - { type: text, color: gray, text: "批判：測った電気が「決定」なのか不明。途中で止めることもできる" }
+
+  - board: whiteboard
+    steps:
+      - say: 自由意志とは、脳が先に動き始めたあと、それを認めたり、止めたりして、コントロールする、はたらきなのかもしれません。
+        show:
+          - { type: title, text: 自由意志とは何か }
+          - { type: box, color: yellow, w: 1100, text: "自由意志 ＝ 脳が動き始めたあと、それを認めたり止めたりするはたらき？" }
+      - say: 自由意志の問いは、何が正しいか、よりも、この問いが、毎日の生活にどう影響するか、という視点で考えるのが、実用的です。次の単元では、それを、責任という観点から考えます。
+        show:
+          - { type: text, color: green, text: "「この問いが毎日にどう影響するか」という視点で考える" }

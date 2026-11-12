@@ -2,3 +2,8 @@ id: religion-re04-01
 code: RE04-01
 title: イスラム教の誕生
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 64
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: politics-economics-pe10-03
 code: PE10-03
 title: リベラリズム（自由主義）
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 112
+  narration: VOICEVOX:ずんだもん

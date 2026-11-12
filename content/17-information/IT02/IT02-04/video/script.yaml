@@ -1,0 +1,27 @@
+title: クラウドサービスの実態
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「クラウド」です。クラウドとは、インターネットを通して、どこかにあるコンピュータの力を使うサービスの、まとめた呼び名です。
+        show:
+          - { type: title, text: クラウドとは }
+          - { type: text, text: "**クラウド** ＝ ネット経由で、どこかのコンピュータ（サーバー・保存場所・ソフト）を使う" }
+      - say: クラウドに保存した写真やファイルは、空の上にあるわけではありません。どこかの会社の、データセンターという建物にある、たくさんのサーバーに保存されているのです。
+        show:
+          - type: svg
+            w: 1000
+            h: 220
+            markup: |
+              <rect x="20" y="80" width="160" height="100" rx="12" stroke="#8fc4ff"/>
+              <path d="M200 130 H420 M405 118 L420 130 L405 142" stroke="#9aa3ad"/>
+              <g stroke="#f3d77a"><rect x="460" y="40" width="80" height="150"/><rect x="560" y="40" width="80" height="150"/><rect x="660" y="40" width="80" height="150"/></g>
+              <g stroke="#f3d77a"><path d="M470 70 H530 M470 100 H530 M470 130 H530 M570 70 H630 M570 100 H630 M570 130 H630 M670 70 H730 M670 100 H730 M670 130 H730"/></g>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="100" y="138" fill="#8fc4ff">自分の端末</text><text x="310" y="115" fill="#9aa3ad">ネット</text><text x="600" y="220" fill="#f3d77a">データセンターのサーバー</text></g>
+      - say: 銀行にお金を預けるのと似ています。手元になくても、必要なときに、どこからでも引き出せます。そのかわり、預け先の会社が、データを守ってくれることが前提になります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, text: "銀行にお金を預けるイメージ：どこからでも使えるが、預け先を信頼することが前提" }
+      - say: だから、パソコンがこわれても、データは残ります。一方で、サービスが終わったり、アカウントにログインできなくなったりすると、データにアクセスできなくなることもあります。大事なデータは、二か所以上に保存しておくと安心です。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "大事なデータは二か所以上に保存しておくと安心" }

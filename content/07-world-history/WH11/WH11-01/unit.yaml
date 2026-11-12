@@ -2,3 +2,8 @@ id: world-history-wh11-01
 code: WH11-01
 title: 9.11とテロリズム・中東の戦争
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 112
+  narration: VOICEVOX:ずんだもん

@@ -1,0 +1,39 @@
+title: 元素と周期表
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「元素と周期表」です。元素とは、原子の種類のことです。今、118種類の元素が見つかっていて、それを整理した表が、周期表です。
+        show:
+          - { type: title, text: 元素と周期表 }
+          - { type: text, text: "**元素** ＝ 原子の種類（118種類）→ 整理した表 ＝ **周期表**" }
+      - say: 周期表の縦の列を「族」、横の行を「周期」と呼びます。
+        show:
+          - type: svg
+            w: 1000
+            h: 300
+            markup: |
+              <g stroke="#9aa3ad"><rect x="100" y="40" width="60" height="60"/><rect x="940" y="40" width="60" height="60" transform="translate(-100 0)"/>
+              <rect x="100" y="100" width="60" height="60"/><rect x="160" y="100" width="60" height="60"/><rect x="580" y="100" width="60" height="60"/><rect x="640" y="100" width="60" height="60"/><rect x="700" y="100" width="60" height="60"/><rect x="760" y="100" width="60" height="60"/><rect x="820" y="100" width="60" height="60"/><rect x="880" y="100" width="60" height="60"/>
+              <rect x="100" y="160" width="60" height="60"/><rect x="160" y="160" width="60" height="60"/><rect x="580" y="160" width="60" height="60"/><rect x="640" y="160" width="60" height="60"/><rect x="700" y="160" width="60" height="60"/><rect x="760" y="160" width="60" height="60"/><rect x="820" y="160" width="60" height="60"/><rect x="880" y="160" width="60" height="60"/></g>
+              <rect x="94" y="34" width="72" height="192" stroke="#f3d77a" stroke-width="4"/>
+              <rect x="94" y="154" width="852" height="72" stroke="#8fc4ff" stroke-width="4"/>
+              <g stroke="none" font-size="26"><text x="20" y="270" fill="#f3d77a">縦 ＝ 族（似た性質の仲間）</text><text x="500" y="270" fill="#8fc4ff">横 ＝ 周期</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 覚えておくとよい、主な元素を紹介します。
+        show:
+          - { type: title, text: 主な元素 }
+      - say: Hは水素、いちばん軽い元素です。Cは炭素。Nは窒素で、空気のおよそ78％。Oは酸素で、空気のおよそ21％です。
+        show:
+          - type: list
+            items: ["H 水素 … いちばん軽い", "C 炭素", "N 窒素 … 空気の約78％", "O 酸素 … 空気の約21％"]
+      - say: Naはナトリウム、Mgはマグネシウム、Alはアルミニウム、Feは鉄、Cuは銅。これらは金属です。Clは塩素で、気体です。
+        show:
+          - type: list
+            at: [640, 150]
+            items: ["Na ナトリウム（金属）", "Mg マグネシウム（金属）", "Al アルミニウム（金属）", "Fe 鉄（金属）", "Cu 銅（金属）", "Cl 塩素（気体）"]
+      - say: 元素記号は、ラテン語などの名前の頭文字から来ているものが多いです。ナトリウムのNa、鉄のFeは、日本語や英語の名前とはちがうので、注意しましょう。
+        added: true
+        show:
+          - { type: text, at: [80, 600], size: s, color: gray, text: "Na（ナトリウム）・Fe（鉄）は英語名とちがう記号なので注意" }

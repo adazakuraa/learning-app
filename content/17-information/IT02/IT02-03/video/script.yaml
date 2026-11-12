@@ -1,0 +1,27 @@
+title: WiFiとモバイル通信
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「WiFiとモバイル通信」です。WiFiは、電波を使って、インターネットにつなぐ、無線通信のしくみです。ルーターが出す電波に、端末がつながることで、ケーブルなしで通信できます。
+        show:
+          - { type: title, text: WiFi とモバイル通信 }
+          - { type: box, color: blue, w: 1100, title: WiFi, text: "ルーターの電波につなぐ。届くのは10〜30mほどで、壁や床、家電で弱まる" }
+      - say: WiFiの電波が届くのは、ふつう10メートルから30メートルほど。壁や床、電子レンジなどの家電で、弱くなります。ルーターは、家の真ん中の、高い所に置くのがおすすめです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "ルーターは家の中心の、高い所に置くのがおすすめ" }
+      - say: モバイル通信、4Gや5Gは、携帯電話会社の基地局を通す通信です。WiFiより電波が遠くまで届き、外でも使えます。
+        show:
+          - { type: box, color: green, w: 1100, title: モバイル通信（4G・5G）, text: "携帯会社の基地局を通す。遠くまで届き、外でも使える" }
+
+  - board: whiteboard
+    steps:
+      - say: 注意したいのが、カフェや空港、ホテルの、無料WiFiです。
+        show:
+          - { type: title, text: 無料WiFi の危険 }
+      - say: 無料WiFiは、通信が暗号化されていない場合があり、同じWiFiにつないでいる悪い人に、通信の中身を盗み見られるおそれがあります。
+        show:
+          - { type: box, color: pink, w: 1100, text: "暗号化されていないことがある → 同じWiFiの悪意ある人に盗み見られるおそれ" }
+      - say: 公共のWiFiでは、銀行の操作や、パスワードの入力のような、大事な操作はさけましょう。どうしても使うときは、VPNを使うか、スマホのモバイル通信に切りかえるのが安心です。
+        show:
+          - { type: box, color: yellow, w: 1100, title: 対策, text: "大事な操作（銀行・パスワード）はさける。VPN かモバイル通信を使う" }

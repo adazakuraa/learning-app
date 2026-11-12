@@ -2,3 +2,8 @@ id: world-history-wh03-07
 code: WH03-07
 title: 十字軍
 order: 7
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 94
+  narration: VOICEVOX:ずんだもん

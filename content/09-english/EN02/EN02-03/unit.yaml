@@ -2,3 +2,8 @@ id: english-en02-03
 code: EN02-03
 title: 三単現のs・複数形
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 69
+  narration: VOICEVOX:ずんだもん

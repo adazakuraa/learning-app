@@ -2,3 +2,8 @@ id: information-it02-03
 code: IT02-03
 title: WiFiとモバイル通信
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 75
+  narration: VOICEVOX:ずんだもん

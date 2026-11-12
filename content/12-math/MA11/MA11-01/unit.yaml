@@ -2,3 +2,8 @@ id: math-ma11-01
 code: MA11-01
 title: 極限
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 120
+  narration: VOICEVOX:ずんだもん

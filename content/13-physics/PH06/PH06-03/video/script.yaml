@@ -1,0 +1,56 @@
+title: 核分裂と核融合
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「核分裂と核融合」です。原子核が変わる反応は、ふつうの化学反応とは、けたちがいのエネルギーを生み出します。
+        show:
+          - { type: title, text: 核分裂と核融合 }
+          - { type: text, size: l, text: "原子核の反応 → 化学反応と **けたちがい** のエネルギー" }
+      - say: ふつうの化学反応では、ものの質量は変わりません。これを、質量保存の法則といいます。原子どうしが、くっついたり離れたりするだけです。
+        show:
+          - { type: text, text: "化学反応：質量は変わらない（**質量保存の法則**）" }
+      - say: 一方、核分裂や核融合では、反応のあとで、質量がほんの少し減ります。そして、その減った質量が、エネルギーに変わるのです。アインシュタインが示した、E＝mc²という式で表される関係です。
+        show:
+          - { type: text, color: yellow, text: "核分裂・核融合：減った質量 → エネルギーに変わる" }
+          - { type: formula, color: yellow, tex: 'E = mc^2' }
+
+  - board: whiteboard
+    steps:
+      - say: 核分裂は、ウランやプルトニウムのような、重くて不安定な原子が、分かれて、小さな原子になる反応です。分かれたあとの質量の合計は、分かれる前より少なく、その差がエネルギーとして出てきます。
+        show:
+          - { type: title, text: 核分裂 }
+          - type: svg
+            w: 1100
+            h: 260
+            markup: |
+              <circle cx="120" cy="130" r="12" fill="#9be0b0" stroke="none"/><path d="M140 130 H260" stroke="#9be0b0"/>
+              <circle cx="350" cy="130" r="80" stroke="#f4a3b8"/><text x="350" y="140" font-size="28" fill="#f4a3b8" stroke="none" text-anchor="middle">ウラン</text>
+              <path d="M440 130 H560" stroke="#9aa3ad"/>
+              <circle cx="660" cy="80" r="50" stroke="#8fc4ff"/><circle cx="660" cy="190" r="45" stroke="#8fc4ff"/>
+              <g fill="#9be0b0" stroke="none"><circle cx="800" cy="60" r="12"/><circle cx="820" cy="130" r="12"/><circle cx="800" cy="200" r="12"/></g>
+              <text x="880" y="140" font-size="28" fill="#f3d77a" stroke="none">＋ エネルギー</text>
+              <text x="60" y="110" font-size="22" fill="#9be0b0" stroke="none">中性子</text>
+      - say: 分裂のときに出た中性子が、次の原子の核分裂を起こし、それがまた次を起こす。この連鎖反応を、ゆっくり、制御しながら続けるのが、原子力発電です。一方、これを一気に起こすのが原子爆弾で、すさまじい破壊力をもちます。
+        show:
+          - { type: box, color: blue, w: 1000, title: 連鎖反応, text: "ゆっくり制御 → 原子力発電　　一気に起こす → 原子爆弾" }
+
+  - board: whiteboard
+    steps:
+      - say: 核融合は、水素の同位体のような軽い原子を、高い温度と圧力で合体させて、重い原子にする反応です。合体したあとの原子核は、元の合計より少し軽く、その差がエネルギーとして出てきます。
+        show:
+          - { type: title, text: 核融合 }
+          - type: svg
+            w: 1000
+            h: 220
+            markup: |
+              <circle cx="120" cy="110" r="45" stroke="#8fc4ff"/><circle cx="300" cy="110" r="45" stroke="#8fc4ff"/>
+              <g stroke="none" font-size="22" text-anchor="middle" fill="#8fc4ff"><text x="120" y="118">重水素</text><text x="300" y="118">三重水素</text></g>
+              <path d="M370 110 H480" stroke="#9aa3ad"/>
+              <circle cx="580" cy="110" r="60" stroke="#f3d77a"/><text x="580" y="118" font-size="22" fill="#f3d77a" stroke="none" text-anchor="middle">ヘリウム</text>
+              <text x="680" y="118" font-size="28" fill="#f3d77a" stroke="none">＋ エネルギー</text>
+      - say: 太陽が輝いているのも、この核融合のおかげです。
+        show:
+          - { type: text, color: yellow, text: "太陽が輝くのも核融合" }
+      - say: 核融合は、核分裂より大きなエネルギーが得られ、燃料の重水素は、海水から豊富にとれます。核のゴミも少ないため、「夢のエネルギー」と呼ばれています。でも、制御して続けることがとてもむずかしく、今も世界中で研究が続いています。
+        show:
+          - { type: box, color: green, w: 1000, title: 夢のエネルギー, text: "大きなエネルギー・燃料は海水から・核のゴミが少ない　→ でも制御がとてもむずかしい（研究中）" }

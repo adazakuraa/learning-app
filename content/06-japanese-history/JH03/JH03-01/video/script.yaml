@@ -1,0 +1,58 @@
+title: 律令国家の成立
+scenes:
+  - board: slide
+    steps:
+      - say: 第3章、「奈良時代」です。
+        show:
+          - { type: title, text: 第3章　奈良時代 }
+      - say: 法律にもとづく国、律令国家ができ、奈良に都が置かれます。仏教と政治の関係、そして日本最古の歌集、万葉集を見ていきます。
+        show:
+          - type: list
+            items: ["律令国家の成立", "平城京と都市文化", "仏教と国家", "万葉集", "おまけ：和気清麻呂"]
+      - say: 「日本」という国の名前や、「天皇」という呼び名が決まったのも、この時代です。国のかたちが、文書のルールとして整います。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "ルール（律令）で動く国家ができ、仏教が国を支える流れをつかむ" }
+
+  - board: whiteboard
+    steps:
+      - say: 大化の改新から続いた改革の集大成として、701年、大宝律令が完成しました。
+        read: 大化の改新から続いた改革の集大成として、701年、たいほうりつりょうが完成しました。
+        show:
+          - { type: title, text: 701年　大宝律令 }
+          - { type: text, at: [80, 140], w: 1120, text: "大化の改新（645）→ … → **大宝律令**（701）" }
+      - say: 律は、今でいう刑法、令は、国の仕事や税のルールです。国を動かすルールを、はじめて文書としてまとめたものです。
+        read: りつは、今でいう刑法、りょうは、国の仕事や税のルールです。国を動かすルールを、はじめて文書としてまとめたものです。
+        show:
+          - { type: box, at: [80, 230], w: 540, color: pink, title: 律, text: "罰のルール（今の刑法）" }
+          - { type: box, at: [660, 230], w: 540, color: blue, title: 令, text: "役所・税などのルール" }
+
+  - board: whiteboard
+    steps:
+      - say: 農民には田んぼが与えられ、そのかわりに、税や労働を国に納める義務が課されました。
+        show:
+          - { type: title, text: 農民のくらし }
+          - type: svg
+            at: [80, 140]
+            w: 1120
+            h: 200
+            anim: draw
+            markup: |
+              <rect x="20" y="50" width="300" height="100" rx="12" stroke="#9fc7ff"/>
+              <rect x="800" y="50" width="300" height="100" rx="12" stroke="#9be0b0"/>
+              <path d="M330 80 L790 80"/><path d="M772 68 L792 80 L772 92"/>
+              <path d="M790 130 L330 130"/><path d="M348 118 L328 130 L348 142"/>
+              <g stroke="none" font-size="30" fill="#e8eef5" text-anchor="middle"><text x="170" y="110">国</text><text x="950" y="110">農民</text><text x="560" y="68" font-size="24">田んぼを与える</text><text x="560" y="178" font-size="24">税・労働を納める</text></g>
+      - say: 聞こえはいいのですが、農民にとっては、かなり重い負担でした。それでも、律令国家ができたことで、日本という国の骨組みが、はじめて整ったのです。
+        show:
+          - { type: text, at: [80, 380], w: 1120, text: "農民には **重い負担**。でも国の **骨組み** が整った" }
+
+  - board: whiteboard
+    steps:
+      - say: ちなみに、「日本」という国の名前と、「天皇」という呼び名も、このころ正式に決まったとされています。それまでは、倭、そして大王と呼ばれていました。
+        read: ちなみに、「日本」という国の名前と、「天皇」という呼び名も、このころ正式に決まったとされています。それまでは、わ、そしておおきみと呼ばれていました。
+        show:
+          - { type: title, text: 国の名前が決まる }
+          - { type: box, at: [80, 140], w: 540, color: gray, title: それまで, text: "倭（わ）\n大王（おおきみ）" }
+          - { type: arrow, from: [630, 210], to: [650, 210] }
+          - { type: box, at: [660, 140], w: 540, color: yellow, title: このころから, text: "**日本**\n**天皇**" }

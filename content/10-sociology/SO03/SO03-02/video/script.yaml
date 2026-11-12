@@ -1,0 +1,37 @@
+title: 文化資本と社会関係資本
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「文化資本と社会関係資本」です。社会の不平等が、どのようにくり返されるのかを説明する言葉として、資本、という考え方があります。お金のような財産、経済資本のほかにも、目に見えない資本がある、というのです。
+        show:
+          - { type: title, text: 3つの資本 }
+          - type: svg
+            w: 1100
+            h: 180
+            markup: |
+              <g stroke-width="3"><rect x="20" y="20" width="320" height="140" rx="16" stroke="#f3d77a"/><rect x="390" y="20" width="320" height="140" rx="16" stroke="#8fc4ff"/><rect x="760" y="20" width="320" height="140" rx="16" stroke="#9be0b0"/></g>
+              <g stroke="none" text-anchor="middle"><text x="180" y="80" font-size="28" fill="#f3d77a">経済資本</text><text x="180" y="120" font-size="20" fill="#f3d77a">お金・財産</text><text x="550" y="80" font-size="28" fill="#8fc4ff">文化資本</text><text x="550" y="120" font-size="20" fill="#8fc4ff">教養・話し方・学歴</text><text x="920" y="80" font-size="28" fill="#9be0b0">社会関係資本</text><text x="920" y="120" font-size="20" fill="#9be0b0">人とのつながり</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 文化資本とは、文化的な知識や趣味、身についた教養や話し方、学歴、資格などのことです。フランスの社会学者ブルデューが示した考え方です。
+        show:
+          - { type: title, text: 文化資本 }
+          - { type: box, color: blue, w: 1100, text: "**文化資本**：文化的な知識・趣味・身についた教養や話し方・学歴・資格" }
+      - say: 豊かな家庭で育つと、本や美術、クラシック音楽など、いわゆる高い文化に、自然と親しむようになります。これが、学校での評価や、社会での信頼をえるときに、有利にはたらくのです。
+        show:
+          - { type: text, text: "豊かな家庭 → 本・美術・音楽に自然と親しむ → 学校の評価・社会の信頼で有利に" }
+      - say: 本人は、自分の実力だと思っていても、実は、家庭から受けついだ資本が、ものを言っていることがあるのです。
+        added: true
+        show:
+          - { type: text, color: gray, text: "「自分の実力」の中に、家庭から受けついだ資本がふくまれている" }
+
+  - board: whiteboard
+    steps:
+      - say: 社会関係資本は、人とのつながりから、えられる資源です。だれを知っているか、どんな集まりに入っているかが、情報や、機会、助けを、えられるかどうかを左右します。
+        show:
+          - { type: title, text: 社会関係資本 }
+          - { type: box, color: green, w: 1100, text: "**社会関係資本**：人とのつながり → 情報・機会・助けが手に入るかを左右する" }
+      - say: いい仕事の話が、知り合いから回ってくる、というのは、よくあることですね。人とのつながりも、立派な資本なのです。
+        show:
+          - { type: text, color: gray, text: "例：いい仕事の話が知り合いから回ってくる" }

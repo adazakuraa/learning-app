@@ -1,0 +1,40 @@
+title: 代名詞の格変化
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「代名詞の形の変化」です。I、youなどの人称代名詞は、文の中での役割によって、形が変わります。
+        read: 「代名詞の形の変化」です。アイ、ユーなどの人称代名詞は、文の中での役割によって、形が変わります。
+        show:
+          - { type: title, text: 代名詞の4つの形 }
+      - say: 例えば、私は、なら、I。私を、私に、ならme。私の、ならmy。私のもの、ならmineです。
+        read: 例えば、私は、なら、アイ。私を、私に、ならミー。私の、ならマイ。私のもの、ならマインです。
+        show:
+          - type: svg
+            w: 1100
+            h: 330
+            markup: |
+              <g stroke="none" font-size="22" fill="#9aa3ad" text-anchor="middle"><text x="150" y="30">〜は</text><text x="400" y="30">〜を・に</text><text x="650" y="30">〜の</text><text x="900" y="30">〜のもの</text></g>
+              <g stroke="none" font-size="30" text-anchor="middle">
+              <text x="150" y="80" fill="#f3d77a">I</text><text x="400" y="80" fill="#f3d77a">me</text><text x="650" y="80" fill="#f3d77a">my</text><text x="900" y="80" fill="#f3d77a">mine</text>
+              <text x="150" y="125" fill="#e8eef5">you</text><text x="400" y="125" fill="#e8eef5">you</text><text x="650" y="125" fill="#e8eef5">your</text><text x="900" y="125" fill="#e8eef5">yours</text>
+              <text x="150" y="170" fill="#8fc4ff">he</text><text x="400" y="170" fill="#8fc4ff">him</text><text x="650" y="170" fill="#8fc4ff">his</text><text x="900" y="170" fill="#8fc4ff">his</text>
+              <text x="150" y="215" fill="#f4a3b8">she</text><text x="400" y="215" fill="#f4a3b8">her</text><text x="650" y="215" fill="#f4a3b8">her</text><text x="900" y="215" fill="#f4a3b8">hers</text>
+              <text x="150" y="260" fill="#9be0b0">we</text><text x="400" y="260" fill="#9be0b0">us</text><text x="650" y="260" fill="#9be0b0">our</text><text x="900" y="260" fill="#9be0b0">ours</text>
+              <text x="150" y="305" fill="#c9a7f0">they</text><text x="400" y="305" fill="#c9a7f0">them</text><text x="650" y="305" fill="#c9a7f0">their</text><text x="900" y="305" fill="#c9a7f0">theirs</text></g>
+      - say: 左から、主格、目的格、所有格、所有代名詞、といいます。表で、ほかの代名詞も確認しておきましょう。
+        show:
+          - { type: text, color: gray, text: "左から：主格（〜は）・目的格（〜を）・所有格（〜の）・所有代名詞（〜のもの）" }
+
+  - board: whiteboard
+    steps:
+      - say: 使い分けの例です。He called me yesterday. 彼は昨日、私に電話した。Is this your bag? Yes, it's mine. これはあなたのバッグ？ そう、私のもの。
+        read: 使い分けの例です。ヒー、コールド、ミー、イエスタデイ。彼は昨日、私に電話した。イズ、ディス、ユア、バッグ。イエス、イッツ、マイン。これはあなたのバッグ？ そう、私のもの。
+        show:
+          - { type: title, text: 使い分けと再帰代名詞 }
+          - { type: text, color: blue, text: "**He** called **me** yesterday.（彼は昨日私に電話した）" }
+          - { type: text, color: blue, text: "Is this **your** bag? — Yes, it's **mine**.（あなたの？ — 私のもの）" }
+      - say: そして、自分自身、を表す、再帰代名詞も便利です。myself、yourself、himself、themselvesなどです。He made this table himself. 彼は自分でこのテーブルを作った。Take care of yourself. 体に気をつけてね。
+        read: そして、自分自身、を表す、再帰代名詞も便利です。マイセルフ、ユアセルフ、ヒムセルフ、ゼムセルブズなどです。ヒー、メイド、ディス、テーブル、ヒムセルフ。彼は自分でこのテーブルを作った。テイク、ケア、オブ、ユアセルフ。体に気をつけてね。
+        show:
+          - { type: box, color: green, w: 1100, title: 再帰代名詞（〜自身）, text: "myself・yourself・himself・themselves" }
+          - { type: text, color: yellow, text: "Take care of **yourself**.（体に気をつけてね）" }

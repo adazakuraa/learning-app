@@ -2,3 +2,8 @@ id: politics-economics-pe10-08
 code: PE10-08
 title: 緑の政治・フェミニスト政治・アナーキズム
 order: 8
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 108
+  narration: VOICEVOX:ずんだもん

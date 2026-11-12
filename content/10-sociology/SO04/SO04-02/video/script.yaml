@@ -1,0 +1,38 @@
+title: ラベリング理論
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「ラベリング理論」です。逸脱の原因ではなく、社会が、どのように逸脱を決めて、あつかうのか、に注目する理論です。逸脱は、行動そのものではなく、逸脱だ、とラベル、つまりレッテルを、はられることで成り立つ、と考えます。
+        show:
+          - { type: title, text: ラベリング理論 }
+          - { type: box, color: yellow, w: 1100, text: "逸脱は「逸脱だ」とラベル（レッテル）をはられることで成り立つ" }
+
+  - board: whiteboard
+    steps:
+      - say: ある行動をした人が、逸脱者とされると、犯罪者、問題児、といったラベルがはられます。これが、一次的逸脱です。
+        show:
+          - { type: title, text: ラベルが人を変える }
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <rect x="10" y="60" width="240" height="80" rx="12" stroke="#8fc4ff"/><rect x="310" y="60" width="240" height="80" rx="12" stroke="#f3d77a"/><rect x="610" y="60" width="240" height="80" rx="12" stroke="#f4a3b8"/><rect x="900" y="60" width="190" height="80" rx="12" stroke="#f4a3b8"/>
+              <path d="M255 100 H305 M555 100 H605 M855 100 H895" stroke="#9aa3ad"/>
+              <path d="M995 145 Q700 200 430 145" stroke="#f4a3b8" stroke-dasharray="6 6"/>
+              <g stroke="none" font-size="20" text-anchor="middle"><text x="130" y="108" fill="#8fc4ff">ある行動</text><text x="430" y="95" fill="#f3d77a">ラベルをはる</text><text x="430" y="122" font-size="16" fill="#f3d77a">（一次的逸脱）</text><text x="730" y="95" fill="#f4a3b8">自分のイメージが</text><text x="730" y="122" fill="#f4a3b8">ラベルに合っていく</text><text x="995" y="95" fill="#f4a3b8">逸脱が増える</text><text x="995" y="122" font-size="16" fill="#f4a3b8">（二次的逸脱）</text></g>
+      - say: すると、その人は、自分のイメージを、ラベルに合わせて変えていき、ラベルどおりの行動が増えてしまう。これが、二次的逸脱です。
+        show:
+          - { type: text, color: pink, text: "自分のイメージがラベルに合っていき、ラベルどおりの行動が増える（**二次的逸脱**）" }
+      - say: 一度、不良と呼ばれると、本当に不良になっていく。少年院に送られた若者が、より深く犯罪に関わっていくのも、犯罪者という自己像が、強められるためだ、と解釈できます。
+        show:
+          - { type: text, color: gray, text: "「不良」と呼ばれると本当に不良に／少年院のあと、より深く犯罪に関わる" }
+
+  - board: whiteboard
+    steps:
+      - say: スティグマとは、社会的に、傷ついた、汚れた、と見なされる特徴のことです。精神の病気、犯罪歴、特定の民族、障害などが、スティグマになりえます。
+        show:
+          - { type: title, text: スティグマ }
+          - { type: box, color: pink, w: 1100, text: "**スティグマ**：社会的に「傷ついた」「汚れた」と見なされる特徴（精神の病気・犯罪歴・障害など）" }
+      - say: スティグマを持つ人は、人と関わるとき、いつもそれを意識してしまい、ふつうの会話や関係が、むずかしくなります。私たちが、何気なく使う言葉や、まなざしが、だれかにラベルをはっていないか、気をつけたいですね。
+        show:
+          - { type: text, color: yellow, text: "何気ない言葉やまなざしが、だれかにラベルをはっていないか" }

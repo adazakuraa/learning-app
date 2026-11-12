@@ -1,0 +1,49 @@
+title: 熱とエネルギー
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「熱とエネルギー」です。
+        show:
+          - { type: title, text: 熱とエネルギー }
+      - say: 熱の正体は、分子の運動エネルギーです。「温度が高い」とは、そのものをつくる分子や原子が、激しくふるえたり、動き回ったりしている、ということです。
+        show:
+          - type: svg
+            w: 1100
+            h: 260
+            markup: |
+              <rect x="40" y="20" width="440" height="220" stroke="#8fc4ff"/><rect x="620" y="20" width="440" height="220" stroke="#f4a3b8"/>
+              <g fill="#8fc4ff" stroke="none"><circle cx="120" cy="80" r="12"/><circle cx="240" cy="150" r="12"/><circle cx="380" cy="90" r="12"/><circle cx="160" cy="200" r="12"/><circle cx="330" cy="200" r="12"/></g>
+              <g stroke="#8fc4ff"><path d="M132 80 H150"/><path d="M252 150 H268"/></g>
+              <g fill="#f4a3b8" stroke="none"><circle cx="700" cy="80" r="12"/><circle cx="840" cy="150" r="12"/><circle cx="980" cy="70" r="12"/><circle cx="740" cy="200" r="12"/><circle cx="950" cy="200" r="12"/></g>
+              <g stroke="#f4a3b8"><path d="M712 80 H780"/><path d="M852 150 L920 110"/><path d="M968 70 L900 40"/><path d="M752 200 H820"/><path d="M938 200 L880 170"/></g>
+              <g stroke="none" font-size="26" text-anchor="middle"><text x="260" y="270" fill="#8fc4ff">冷たい：ゆっくり</text><text x="840" y="270" fill="#f4a3b8">熱い：激しく動く</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 分子ひとつひとつの速さは、ばらばらです。そこで、その激しさの平均を、「温度」で表します。
+        show:
+          - { type: title, text: 温度 }
+          - { type: text, text: "**温度** ＝ 分子の動きの激しさの平均" }
+      - say: 私たちがふだん使う摂氏、度Cは、氷がとけるときを0度、水が沸騰して水蒸気になるときを100度と決めた目盛りです。
+        show:
+          - { type: text, text: "**摂氏（℃）** … 氷がとける ＝ 0℃、水が沸騰する ＝ 100℃" }
+      - say: 物理や化学でよく使うケルビンは、絶対温度とも呼ばれ、分子の動きが完全に止まる状態を0とします。0ケルビンは、マイナス273.15度C。これより低い温度は存在しません。これを絶対零度といいます。
+        show:
+          - { type: text, text: "**ケルビン（K）** … 分子の動きが止まる ＝ 0K（絶対零度）" }
+          - { type: formula, color: yellow, tex: '0\ \text{K} = -273.15\ {}^\circ\text{C}' }
+
+  - board: whiteboard
+    steps:
+      - say: 熱は、温度差があると、自然に移動します。必ず、温度の高いものから、低いものへ。逆向きは、自然には起きません。
+        show:
+          - { type: title, text: 熱の伝わり方 }
+          - { type: box, color: yellow, w: 1000, text: "熱は必ず、高温 → 低温 へ移動する（逆は自然には起きない）" }
+      - say: 熱の伝わり方は、3種類あります。1つ目は「伝導」。金属の棒の端を熱すると、反対側も熱くなるように、物質の中を伝わります。
+        show:
+          - { type: text, color: pink, text: "**伝導** … 物質の中を伝わる（金属の棒の端を熱する）" }
+      - say: 2つ目は「対流」。液体や気体が動いて、熱を運びます。なべの底で温められた水は上へ、上の冷たい水は下へ。こうしてぐるぐる回りながら、全体が温まります。
+        show:
+          - { type: text, color: blue, text: "**対流** … 液体・気体が動いて運ぶ（なべの水がぐるぐる回る）" }
+      - say: 3つ目は「放射」。物質を通らずに、電磁波として、直接伝わります。太陽の熱が、真空の宇宙をこえて地球に届くのは、放射のおかげです。たき火に当たると、顔だけ熱く感じるのも放射です。
+        show:
+          - { type: text, color: yellow, text: "**放射** … 電磁波として直接伝わる（太陽の熱・たき火）" }

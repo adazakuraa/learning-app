@@ -2,3 +2,8 @@ id: world-history-wh08-07
 code: WH08-07
 title: ナショナリズム
 order: 7
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 100
+  narration: VOICEVOX:ずんだもん

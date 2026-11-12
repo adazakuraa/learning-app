@@ -2,3 +2,8 @@ id: chemistry-ch05-02
 code: CH05-02
 title: 溶解と濃度
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 85
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: logical-thinking-ct01-01
 code: CT01-01
 title: 批判的思考の定義と目的
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 105
+  narration: VOICEVOX:ずんだもん

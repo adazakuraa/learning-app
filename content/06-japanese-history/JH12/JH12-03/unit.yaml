@@ -2,3 +2,8 @@ id: japanese-history-jh12-03
 code: JH12-03
 title: 朝鮮戦争と再軍備
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 88
+  narration: VOICEVOX:ずんだもん

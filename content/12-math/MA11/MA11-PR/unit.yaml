@@ -1,0 +1,11 @@
+id: math-ma11-practice
+code: MA11-PR
+title: 練習問題
+summary: 微分の考え方 の問題
+order: 999
+practice: true
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 168
+  narration: VOICEVOX:ずんだもん

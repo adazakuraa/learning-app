@@ -2,3 +2,8 @@ id: english-en03-01
 code: EN03-01
 title: 現在形と現在進行形
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 102
+  narration: VOICEVOX:ずんだもん

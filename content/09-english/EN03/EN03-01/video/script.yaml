@@ -1,0 +1,48 @@
+title: 現在形と現在進行形
+scenes:
+  - board: slide
+    steps:
+      - say: 第3章、「時制の基本」です。
+        show:
+          - { type: title, text: 第3章　時制の基本 }
+      - say: 現在形と進行形、過去形、未来の表現、そして、日本語にない、現在完了形を学びます。
+        show:
+          - type: list
+            items: ["現在形と現在進行形", "過去形", "未来表現", "現在完了形"]
+      - say: いつのことなのかを、動詞の形で表す。それが英語の時制です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "「いつのことか」を動詞の形で表すしくみを知る" }
+
+  - board: whiteboard
+    steps:
+      - say: 英語の現在形は、今この瞬間ではなく、習慣や、くり返し、事実を表します。I drink tea every morning. 毎朝お茶を飲む、という習慣。The sun rises in the east. 太陽は東からのぼる、という事実です。
+        read: 英語の現在形は、今この瞬間ではなく、習慣や、くり返し、事実を表します。アイ、ドリンク、ティー、エブリ、モーニング。毎朝お茶を飲む、という習慣。ザ、サン、ライジズ、イン、ジ、イースト。太陽は東からのぼる、という事実です。
+        show:
+          - { type: title, text: 現在形 }
+          - { type: box, color: blue, w: 1100, text: "現在形 ＝ 今この瞬間ではなく「習慣・くり返し・事実」" }
+          - { type: text, text: "I **drink** tea every morning.（毎朝お茶を飲む ＝ 習慣）" }
+          - { type: text, text: "The sun **rises** in the east.（太陽は東からのぼる ＝ 事実）" }
+
+  - board: whiteboard
+    steps:
+      - say: 今まさにしている最中、を表すのが、現在進行形です。be動詞と、動詞のing形で表します。I am watching a video right now. 今ちょうど動画を見ています。He is cooking dinner. 彼は夕食をつくっています。
+        read: 今まさにしている最中、を表すのが、現在進行形です。ビー動詞と、動詞のアイエヌジー形で表します。アイ、アム、ウォッチング、ア、ビデオ、ライト、ナウ。今ちょうど動画を見ています。ヒー、イズ、クッキング、ディナー。彼は夕食をつくっています。
+        show:
+          - { type: title, text: 現在進行形 }
+          - { type: box, color: green, w: 1100, text: "現在進行形 ＝ be動詞 ＋ 動詞の **ing** 形（今まさに〜している）" }
+          - { type: text, text: "I **am watching** a video right now.（今ちょうど動画を見ている）" }
+          - { type: text, text: "He **is cooking** dinner.（彼は夕食をつくっている）" }
+      - say: ing形は、ふつうは、そのままingをつけますが、makeはmaking、runはrunningのように、形が少し変わるものもあります。
+        read: アイエヌジー形は、ふつうは、そのままアイエヌジーをつけますが、メイクはメイキング、ランはランニングのように、形が少し変わるものもあります。
+        show:
+          - { type: text, color: gray, text: "make → making、run → running（形が少し変わるものも）" }
+
+  - board: whiteboard
+    steps:
+      - say: know、知っている。like、好き。want、ほしい。understand、理解している。こうした、状態を表す動詞は、ふつう進行形にしません。I am knowingとは言わず、I knowと言います。
+        read: ノウ、知っている。ライク、好き。ウォント、ほしい。アンダースタンド、理解している。こうした、状態を表す動詞は、ふつう進行形にしません。アイ、アム、ノウイング、とは言わず、アイ、ノウ、と言います。
+        show:
+          - { type: title, text: 状態動詞 }
+          - { type: box, color: pink, w: 1100, text: "**状態動詞**（know・like・want・understand）は進行形にしない" }
+          - { type: text, text: "× I am knowing.　○ I know." }

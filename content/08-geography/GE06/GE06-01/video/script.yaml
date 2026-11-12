@@ -1,0 +1,89 @@
+title: 西ヨーロッパ
+scenes:
+  - board: slide
+    steps:
+      - say: 第6章、「ヨーロッパとロシア」です。
+        show:
+          - { type: title, text: 第6章　ヨーロッパ・ロシア }
+      - say: 西ヨーロッパ、北と東のヨーロッパ、EU、そしてロシアを学びます。
+        read: 西ヨーロッパ、北と東のヨーロッパ、イーユー、そしてロシアを学びます。
+        show:
+          - type: list
+            items: ["西ヨーロッパ", "北・東ヨーロッパ", "EU", "ロシアの地理"]
+      - say: 近代の世界をリードしてきたヨーロッパ。その国々の個性と、国をこえた結びつきを見ていきましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "ヨーロッパの国々の個性と、国をこえた結びつきを知る" }
+
+  - board: whiteboard
+    steps:
+      - say: 西ヨーロッパは、面積は小さいながら、歴史的に世界をリードしてきた地域です。
+        show:
+          - { type: title, text: 西ヨーロッパ }
+          - { type: image, src: 1000002943.webp, at: [80, 115], w: 440 }
+      - say: イギリスは、グレートブリテン島と、アイルランド島の北部からなる島国で、かつて、日の沈まない帝国、と呼ばれるほどの植民地を持っていました。EUからの離脱、ブレグジットを決め、2020年に正式に離脱しました。
+        read: イギリスは、グレートブリテン島と、アイルランド島の北部からなる島国で、かつて、日の沈まない帝国、と呼ばれるほどの植民地を持っていました。イーユーからの離脱、ブレグジットを決め、2020年に正式に離脱しました。
+        show:
+          - { type: box, at: [570, 140], w: 650, color: blue, title: イギリス, text: "かつて「**日の沈まない帝国**」。2020年にEUを離脱（ブレグジット）" }
+      - say: フランスは、西ヨーロッパで最も面積の広い国で、農業の大国でありながら、発電の、およそ7割を原子力にたよる、めずらしいエネルギーの国です。外国からの観光客の数は、国別で世界一です。
+        show:
+          - { type: box, at: [570, 320], w: 650, color: pink, title: フランス, text: "西欧最大の面積。農業大国。発電の約7割が原子力。観光客数は世界一" }
+  - board: whiteboard
+    steps:
+      - say: イギリスの名所です。ロンドンのビッグベン。なぞの古代遺跡、ストーンヘンジ。そして、王室のバッキンガム宮殿です。
+        show:
+          - { type: title, text: "イギリスの名所" }
+          - { type: image, src: 1000003069.webp, at: [175, 130], w: 350, caption: "ビッグベン（ロンドン）" }
+          - { type: image, src: 1000003070.webp, at: [754, 130], w: 351, caption: "ストーンヘンジ" }
+          - { type: image, src: 1000003071.webp, at: [173, 412], w: 353, caption: "バッキンガム宮殿" }
+  - board: whiteboard
+    steps:
+      - say: フランスの名所です。パリのエッフェル塔、海にうかぶ修道院、モン・サン・ミシェル、ルーブル美術館、そして、ヴェルサイユ宮殿です。
+        show:
+          - { type: title, text: "フランスの名所" }
+          - { type: image, src: 1000003072.webp, at: [177, 130], w: 346, caption: "エッフェル塔とセーヌ川" }
+          - { type: image, src: 1000003073.webp, at: [753, 130], w: 354, caption: "モン・サン・ミシェル" }
+          - { type: image, src: 1000003074.webp, at: [140, 412], w: 420, caption: "ルーブル美術館" }
+          - { type: image, src: 1000003075.webp, at: [743, 412], w: 373, caption: "ヴェルサイユ宮殿" }
+  - board: whiteboard
+    steps:
+      - say: パリには、ほかにも、凱旋門、ノートルダム大聖堂、オペラ座など、歴史的な建物がたくさんあります。
+        show:
+          - { type: title, text: "パリの名所" }
+          - { type: image, src: 1000003076.webp, at: [112, 130], w: 476, caption: "凱旋門" }
+          - { type: image, src: 1000003078.webp, at: [774, 130], w: 312, caption: "ノートルダム大聖堂" }
+          - { type: image, src: 1000003079.webp, at: [174, 412], w: 351, caption: "オペラ座" }
+
+  - board: whiteboard
+    steps:
+      - say: ドイツは、ヨーロッパ最大の経済大国です。自動車、機械、化学製品などの、ものづくりが強く、輸出の大国として知られます。イタリアとスペインは、地中海に面していて、夏は乾燥し、冬は暖かい、地中海性気候のもとで、オリーブ、ワイン、柑橘類の生産がさかんです。
+        show:
+          - { type: title, text: ドイツ・イタリア・スペイン }
+          - { type: box, color: yellow, w: 1100, title: ドイツ, text: "ヨーロッパ最大の経済大国。自動車・機械・化学の輸出大国" }
+          - { type: box, color: green, w: 1100, title: イタリア・スペイン, text: "**地中海性気候**（夏乾燥・冬温暖）→ オリーブ・ワイン・柑橘類" }
+  - board: whiteboard
+    steps:
+      - say: ドイツの名所です。おとぎ話のような、ノイシュヴァンシュタイン城。巨大なケルン大聖堂。ベルリンのブランデンブルク門と、ベルリン大聖堂です。
+        show:
+          - { type: title, text: "ドイツの名所" }
+          - { type: image, src: 1000003080.webp, at: [167, 130], w: 365, caption: "ノイシュヴァンシュタイン城" }
+          - { type: image, src: 1000003081.webp, at: [752, 130], w: 355, caption: "ケルン大聖堂" }
+          - { type: image, src: 1000003082.webp, at: [182, 412], w: 336, caption: "ブランデンブルク門" }
+          - { type: image, src: 1000003083.webp, at: [756, 412], w: 348, caption: "ベルリン大聖堂" }
+  - board: whiteboard
+    steps:
+      - say: イタリアの名所です。古代ローマのコロッセオ、トレビの泉、水の都ベネチア、そして、真実の口です。
+        show:
+          - { type: title, text: "イタリアの名所" }
+          - { type: image, src: 1000003084.webp, at: [191, 130], w: 317, caption: "コロッセオ" }
+          - { type: image, src: 1000003085.webp, at: [775, 130], w: 310, caption: "トレビの泉" }
+          - { type: image, src: 1000003087.webp, at: [135, 412], w: 429, caption: "ベネチア" }
+          - { type: image, src: 1000003088.webp, at: [754, 412], w: 351, caption: "真実の口" }
+  - board: whiteboard
+    steps:
+      - say: ローマの中にある、世界一小さな国、バチカン市国。そして、スペインの、サグラダ・ファミリアと、アルハンブラ宮殿です。
+        show:
+          - { type: title, text: "バチカンとスペインの名所" }
+          - { type: image, src: 1000003086.webp, at: [170, 130], w: 359, caption: "バチカン市国" }
+          - { type: image, src: 1000003089.webp, at: [774, 130], w: 312, caption: "サグラダ・ファミリア（スペイン）" }
+          - { type: image, src: 1000003090.webp, at: [191, 412], w: 318, caption: "アルハンブラ宮殿（スペイン）" }

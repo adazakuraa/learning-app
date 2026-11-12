@@ -1,0 +1,59 @@
+name: Voice samples
+
+on:
+  push:
+    branches: ['ccr-*']
+    paths: ['pipeline/voice-samples.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install npm packages
+        run: npm ci
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      # No apt here: Ubuntu mirrors have been unreachable from runners at times.
+      - name: Install Playwright Chromium, ffmpeg, PyYAML
+        run: |
+          npm i --no-save playwright ffmpeg-static ffprobe-static
+          npx playwright install chromium
+          sudo ln -sf "$(node -p "require('ffmpeg-static')")" /usr/local/bin/ffmpeg
+          sudo ln -sf "$(node -p "require('ffprobe-static').path")" /usr/local/bin/ffprobe
+          pip install pyyaml
+          ffmpeg -version | head -1; ffprobe -version | head -1; python3 -c "import yaml; print('pyyaml', yaml.__version__)"
+      - name: Start VOICEVOX engine
+        run: |
+          docker run -d --name voicevox -p 50021:50021 voicevox/voicevox_engine:cpu-latest > /dev/null
+          for i in $(seq 1 60); do curl -sf http://localhost:50021/version && exit 0; sleep 5; done
+          docker logs voicevox | tail -30; exit 1
+      - name: Render samples
+        run: |
+          UNIT=$(python3 -c "import yaml; print(yaml.safe_load(open('pipeline/voice-samples.yml'))['unit'])")
+          python3 -c "
+          import yaml
+          for v in yaml.safe_load(open('pipeline/voice-samples.yml'))['voices']: print(v['speaker'] + '\t' + v['style'])
+          " | while IFS=$'\t' read SPK STY; do
+            python3 pipeline/narrate.py --filter "$UNIT" --speaker "$SPK" --style "$STY" --out-root "/tmp/narr/$SPK"
+            node pipeline/render/render.mjs "$UNIT" --narration-dir "/tmp/narr/$SPK/$UNIT" --out "samples/voices/$SPK.mp4"
+          done
+          ls -la samples/voices
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add samples
+          git diff --cached --quiet && exit 0
+          git commit -m "Voice samples [skip ci]"
+          git pull --rebase
+          git push

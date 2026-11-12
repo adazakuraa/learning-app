@@ -2,3 +2,8 @@ id: earth-science-es04-02
 code: ES04-02
 title: 気圧と風
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 104
+  narration: VOICEVOX:ずんだもん

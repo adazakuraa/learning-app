@@ -2,3 +2,8 @@ id: biology-bi04-02
 code: BI04-02
 title: 呼吸（細胞呼吸）
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 99
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: chemistry-ch07-01
 code: CH07-01
 title: 金属の性質と利用
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 104
+  narration: VOICEVOX:ずんだもん

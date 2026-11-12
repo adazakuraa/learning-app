@@ -2,3 +2,8 @@ id: math-ma07-01
 code: MA07-01
 title: 等差数列
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 135
+  narration: VOICEVOX:ずんだもん

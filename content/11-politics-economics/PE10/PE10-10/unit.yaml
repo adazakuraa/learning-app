@@ -2,3 +2,8 @@ id: politics-economics-pe10-10
 code: PE10-10
 title: 政治思想をどう使うか
 order: 10
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 95
+  narration: VOICEVOX:ずんだもん

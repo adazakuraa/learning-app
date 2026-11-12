@@ -2,3 +2,8 @@ id: psychology-ps03-04
 code: PS03-04
 title: ヒューリスティックと判断の歪み
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 90
+  narration: VOICEVOX:ずんだもん

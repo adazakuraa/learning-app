@@ -1,0 +1,56 @@
+title: AIと人間の違い
+scenes:
+  - board: slide
+    steps:
+      - say: 哲学の最後の章、「現代の哲学的問題」です。
+        show:
+          - { type: title, text: 第9章　現代の哲学的問題 }
+      - say: AIと人間のちがい、そして、動物の権利という、今まさに問われている問題を考えます。
+        show:
+          - type: list
+            items: ["AIと人間の違い", "動物の権利"]
+      - say: これまで学んだ、意識、自己、倫理の考え方が、現代の新しい問題にどう生きるかを見ていきましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "これまでの哲学を、現代の新しい問題に生かす" }
+
+  - board: whiteboard
+    steps:
+      - say: AIの発展は、哲学の問いを、現実の問題として、つきつけています。
+        show:
+          - { type: title, text: チューリングテスト }
+      - say: チューリングテストは、AIの知性を判定する基準です。人間と会話をして、相手に、人間だと思わせることができれば、そのAIは、人間と同じように考えている、といえる、というものです。でも、人間のようにふるまえることと、本当に考えたり、意識を持ったりすることは、同じでしょうか。
+        show:
+          - { type: box, color: blue, w: 1100, text: "**チューリングテスト**：会話で人間だと思わせられたら「考えている」とみなす" }
+          - { type: text, color: pink, text: "でも「人間のようにふるまえる」＝「本当に考えている」？" }
+
+  - board: whiteboard
+    steps:
+      - say: 中国語の部屋、という思考実験が、この問題を鋭く示します。
+        show:
+          - { type: title, text: 中国語の部屋 }
+          - type: svg
+            w: 1100
+            h: 220
+            markup: |
+              <rect x="350" y="20" width="400" height="180" stroke="#9aa3ad"/>
+              <circle cx="550" cy="90" r="25" stroke="#f3d77a"/><path d="M550 115 V160" stroke="#f3d77a"/>
+              <rect x="620" y="110" width="90" height="60" stroke="#8fc4ff"/><text x="665" y="148" font-size="18" fill="#8fc4ff" stroke="none" text-anchor="middle">手順書</text>
+              <path d="M80 80 H340 M325 68 L340 80 L325 92 M760 140 H1020 M1005 128 L1020 140 L1005 152" stroke="#9aa3ad"/>
+              <g stroke="none" font-size="22"><text x="90" y="65" fill="#f4a3b8">中国語の質問</text><text x="780" y="125" fill="#9be0b0">中国語の答え</text><text x="410" y="190" fill="#f3d77a">中国語がわからない人</text></g>
+      - say: 英語しか知らない人が、部屋に閉じこめられ、中国語で書かれた質問を受けとります。その人は、決められた手順書に従って、中国語の答えを返します。外から見ると、中国語を理解しているように見えますが、中の人は、何も理解していません。
+        show:
+          - { type: text, color: yellow, text: "外からは「理解している」ように見える。でも中の人は何も理解していない" }
+      - say: コンピュータも同じで、記号を処理しているだけで、理解はないのではないか、と考えられます。ChatGPTのような大規模言語モデルも、とても人間らしく答えますが、理解しているか、意識があるかは、まったく別の問題です。
+        show:
+          - { type: text, color: gray, text: "AIも記号を処理しているだけで「理解」はない？" }
+
+  - board: whiteboard
+    steps:
+      - say: 一方で、人間もまた、脳の電気信号によって、考え、情報を処理しています。その点では、コンピュータと変わらない、という見方もあります。これを、人間機械論といいます。
+        show:
+          - { type: title, text: 人間も機械？ }
+          - { type: box, color: blue, w: 1100, text: "**人間機械論**：人間も脳の電気信号で情報を処理している → コンピュータと変わらない？" }
+      - say: そうなると、物質のしくみだけから、クオリア、つまり、内側の体験が生まれるのかどうか、という、第5章の問いが、ふたたび重要になってくるのです。
+        show:
+          - { type: text, color: yellow, text: "物質のしくみだけから「感じ（クオリア）」は生まれるのか？（第5章の問い）" }

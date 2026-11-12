@@ -2,3 +2,8 @@ id: geography-ge07-02
 code: GE07-02
 title: アメリカ合衆国
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 75
+  narration: VOICEVOX:ずんだもん

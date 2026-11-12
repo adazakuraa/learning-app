@@ -1,0 +1,34 @@
+title: 三角関数の波
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「三角関数の波」です。
+        show:
+          - { type: title, text: 三角関数の波 }
+      - say: 三角関数が、現代の科学でいちばん大事な役割を果たすのが、「波を表すこと」です。
+        show:
+          - { type: text, size: l, text: "三角関数のいちばん大事な役割 ＝ **波を表す**" }
+      - say: サインの値の変化をグラフにすると、一定の周期でくり返す波の形が現れます。これを、「正弦波」といいます。正弦とは、サインの日本語名です。
+        show:
+          - type: svg
+            w: 1100
+            h: 260
+            markup: |
+              <path d="M20 130 H1080" stroke="#9aa3ad"/>
+              <path d="M40 130 C110 0 190 0 260 130 C330 260 410 260 480 130 C550 0 630 0 700 130 C770 260 850 260 920 130 C990 0 1050 20 1080 70" stroke="#f3d77a"/>
+              <path d="M260 230 H700" stroke="#8fc4ff"/><path d="M260 220 V240"/><path d="M700 220 V240"/>
+              <text x="430" y="255" font-size="24" fill="#8fc4ff" stroke="none">1周期</text>
+          - { type: text, color: yellow, text: "一定の周期でくり返す波 ＝ **正弦波**（正弦 ＝ サイン）" }
+
+  - board: whiteboard
+    steps:
+      - say: 身のまわりには、波がたくさんあります。音は空気のふるえの波。光や電波も波。家のコンセントに来ている交流の電気も、電圧がプラスとマイナスを行き来する波です。
+        added: true
+        show:
+          - { type: title, text: 身のまわりの波 }
+          - type: list
+            items: ["音 … 空気のふるえ", "光・電波（スマホ・ラジオ）", "交流の電気（コンセント）"]
+      - say: 波の高さ、つまり振幅は音の大きさに、波の細かさ、つまり周期は音の高さに関係しています。三角関数を使うと、こうした波を、数式で正確に表すことができます。
+        added: true
+        show:
+          - { type: box, color: blue, w: 1000, text: "振幅（波の高さ）→ 音の大きさ　　周期（波の細かさ）→ 音の高さ" }

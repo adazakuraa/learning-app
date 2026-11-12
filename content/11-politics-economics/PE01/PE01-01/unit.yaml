@@ -2,3 +2,8 @@ id: politics-economics-pe01-01
 code: PE01-01
 title: 経済とは何か・希少性と選択
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 126
+  narration: VOICEVOX:ずんだもん

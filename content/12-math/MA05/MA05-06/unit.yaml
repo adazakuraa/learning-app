@@ -2,3 +2,8 @@ id: math-ma05-06
 code: MA05-06
 title: 正規分布
 order: 6
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 43
+  narration: VOICEVOX:ずんだもん

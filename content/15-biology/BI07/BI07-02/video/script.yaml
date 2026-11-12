@@ -1,0 +1,52 @@
+title: 生物の進化の歴史
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「生物の進化の歴史」です。地球の生命は、およそ38億年をかけて、大きく変わってきました。主なできごとを、年表で見てみましょう。
+        show:
+          - { type: title, text: 進化の年表 }
+          - type: svg
+            at: [80, 150]
+            w: 1100
+            h: 160
+            markup: |
+              <path d="M40 80 H1060" stroke="#9aa3ad"/>
+              <circle cx="60" cy="80" r="10" fill="#9be0b0" stroke="none"/><circle cx="900" cy="80" r="10" fill="#f3d77a" stroke="none"/><circle cx="960" cy="80" r="10" fill="#8fc4ff" stroke="none"/><circle cx="1050" cy="80" r="10" fill="#f4a3b8" stroke="none"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="60" y="50" fill="#9be0b0">38億年前</text><text x="880" y="40" fill="#f3d77a">5.4億</text><text x="960" y="130" fill="#8fc4ff">3.7億</text><text x="1050" y="50" fill="#f4a3b8">700万</text></g>
+      - say: 38億年前に、最初の原核生物が生まれました。そのあと、とても長いあいだ、生き物はほとんど小さな単細胞のままでした。
+        show:
+          - { type: text, at: [80, 330], color: green, text: "約38億年前：最初の原核生物（長いあいだ小さな生き物だけ）" }
+      - say: 5億4千万年前ごろ、カンブリア爆発が起こります。動物の主なグループが、ほぼいっせいにあらわれました。
+        show:
+          - { type: text, at: [80, 390], color: yellow, text: "約5.4億年前：**カンブリア爆発**。動物の主なグループがいっせいに出現" }
+      - say: 3億7千万年前ごろ、魚類から両生類が進化して、陸に上がります。そして、700万年前ごろ、人類とチンパンジーの祖先が分かれました。
+        show:
+          - { type: text, at: [80, 450], color: blue, text: "約3.7億年前：魚類から両生類が進化し、陸上へ" }
+          - { type: text, at: [80, 510], color: pink, text: "約700万年前：人類とチンパンジーの祖先が分かれる" }
+      - say: 年表を見ると、生き物の歴史のほとんどは、目に見えない小さな生き物の時代だったことがわかりますね。
+        added: true
+        show:
+          - { type: text, at: [80, 590], size: s, color: gray, text: "歴史の大半は「小さな生き物だけ」の時代だった" }
+
+  - board: whiteboard
+    steps:
+      - say: 背骨を持つ、脊椎動物の進化を見てみましょう。いちばん古いのは魚類で、そこから両生類が生まれました。
+        show:
+          - { type: title, text: 脊椎動物の進化 }
+          - type: svg
+            at: [80, 140]
+            w: 1100
+            h: 400
+            markup: |
+              <g stroke-width="3"><rect x="20" y="160" width="160" height="70" rx="12" stroke="#8fc4ff"/><rect x="260" y="160" width="160" height="70" rx="12" stroke="#9be0b0"/><rect x="500" y="160" width="200" height="70" rx="12" stroke="#f3d77a"/><rect x="800" y="60" width="160" height="70" rx="12" stroke="#f4a3b8"/><rect x="800" y="270" width="160" height="70" rx="12" stroke="#c9a7f0"/><rect x="800" y="0" width="0" height="0"/></g>
+              <path d="M180 195 H260 M420 195 H500 M700 180 L800 95 M700 210 L800 305" stroke="#9aa3ad"/>
+              <path d="M960 95 H1000 V20 H1040" stroke="#f4a3b8"/>
+              <g stroke="none" font-size="26" text-anchor="middle"><text x="100" y="205" fill="#8fc4ff">魚類</text><text x="340" y="205" fill="#9be0b0">両生類</text><text x="880" y="105" fill="#f4a3b8">爬虫類</text><text x="880" y="315" fill="#c9a7f0">哺乳類</text></g>
+              <g stroke="none" font-size="20" text-anchor="middle"><text x="600" y="190" fill="#f3d77a">陸で卵を</text><text x="600" y="218" fill="#f3d77a">産める仲間</text><text x="1060" y="28" fill="#f4a3b8">鳥類</text></g>
+              <text x="40" y="390" font-size="20" fill="#9aa3ad" stroke="none">両生類：カエル・サンショウウオ　爬虫類：トカゲ・カメ・ヘビ・ワニ</text>
+      - say: 両生類は、カエルやサンショウウオの仲間です。卵は水の中に産みます。その後、両生類に近い祖先から、殻のある卵を、陸の上に産める仲間が生まれ、そこから、爬虫類と哺乳類の系統が分かれました。
+        show:
+          - { type: text, at: [80, 560], text: "両生類に近い祖先 → 陸で卵を産める仲間 → **爬虫類** と **哺乳類** に分かれる" }
+      - say: そして、鳥類は、爬虫類の一部、恐竜が進化したものです。スズメも、ニワトリも、恐竜の子孫なのです。
+        show:
+          - { type: box, at: [80, 620], color: pink, w: 1000, text: "鳥類 ＝ 恐竜の子孫" }

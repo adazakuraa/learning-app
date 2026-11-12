@@ -2,3 +2,8 @@ id: world-history-wh09-02
 code: WH09-02
 title: ロシア革命とソ連の成立
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 82
+  narration: VOICEVOX:ずんだもん

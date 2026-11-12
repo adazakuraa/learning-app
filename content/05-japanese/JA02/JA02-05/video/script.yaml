@@ -1,0 +1,34 @@
+title: 主題と主語
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「主題と主語」です。助詞の中でも、「は」と「が」の使い分けは、特にまちがいやすいポイントです。
+        show:
+          - { type: title, text: 「は」と「が」 }
+      - say: 「は」は、主題、つまり、話の中心として取り上げるものを表し、「が」は、主語、つまり、動作や状態の主人公を表すことが多いです。
+        show:
+          - { type: box, color: blue, at: [80, 140], w: 540, title: 「は」＝ 主題, text: "話の中心として取り上げる" }
+          - { type: box, color: yellow, at: [660, 140], w: 540, title: 「が」＝ 主語, text: "動作・状態の主人公" }
+      - say: 例えば、「私は、田中です」は、私について話しますよ、という主題を示しています。「私が、田中です」は、田中はだれか、と聞かれて、それは私です、と答えるときの言い方ですね。
+        added: true
+        show:
+          - { type: text, at: [80, 340], color: gray, text: "「私は田中です」→ 私について話す" }
+          - { type: text, at: [80, 400], color: gray, text: "「私が田中です」→「田中さんはだれ？」への答え" }
+
+  - board: whiteboard
+    steps:
+      - say: 有名な例文があります。「象は、鼻が長い」。
+        show:
+          - { type: title, text: 象は鼻が長い }
+          - type: svg
+            w: 1000
+            h: 200
+            markup: |
+              <g stroke="none" font-size="64"><text x="60" y="110" fill="#8fc4ff">象は</text><text x="330" y="110" fill="#f3d77a">鼻が</text><text x="600" y="110" fill="#9be0b0">長い。</text></g>
+              <g stroke="none" font-size="22"><text x="70" y="170" fill="#8fc4ff">主題（何の話？）</text><text x="340" y="170" fill="#f3d77a">主語</text><text x="610" y="170" fill="#9be0b0">述語</text></g>
+      - say: この文で、主語は、象でしょうか、鼻でしょうか。長いのは、あくまで鼻であって、象そのものではありません。だから、鼻が主語です。象は、この文のテーマ、つまり主題を表しています。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "長いのは「鼻」→ 主語は **鼻**。「象」は文のテーマ ＝ **主題**" }
+      - say: このように、主題と主語が分かれることがあるのは、英語などにはない、日本語の特徴です。この章の練習問題は、このあとの、練習問題の動画で、取り組みましょう。
+        show:
+          - { type: text, color: gray, text: "主題と主語が分かれる ＝ 日本語の特徴（練習問題は次の動画で）" }

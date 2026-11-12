@@ -1,0 +1,41 @@
+title: ファイル・クラウド・同期
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「ファイル」です。ファイルは、コンピュータの中のデータのまとまりです。文書も、画像も、音楽も、プログラムも、すべてファイルとして管理されます。
+        show:
+          - { type: title, text: ファイルとフォルダ }
+          - { type: text, text: "**ファイル** ＝ データのまとまり（文書・画像・音楽・プログラム）" }
+      - say: フォルダは、ファイルを整理するための箱です。フォルダの中に、さらにフォルダを入れて、階層にして整理できます。
+        show:
+          - type: svg
+            w: 900
+            h: 260
+            markup: |
+              <rect x="20" y="20" width="200" height="60" rx="8" stroke="#f3d77a"/>
+              <path d="M120 80 V220 M120 130 H260 M120 210 H260" stroke="#9aa3ad"/>
+              <rect x="260" y="100" width="200" height="60" rx="8" stroke="#f3d77a"/><rect x="260" y="180" width="200" height="60" rx="8" stroke="#f3d77a"/>
+              <path d="M460 130 H560" stroke="#9aa3ad"/><rect x="560" y="105" width="260" height="50" rx="8" stroke="#8fc4ff"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="120" y="58" fill="#f3d77a">写真</text><text x="360" y="138" fill="#f3d77a">2025年</text><text x="360" y="218" fill="#f3d77a">2026年</text><text x="690" y="138" fill="#8fc4ff">旅行.jpg</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 拡張子は、ファイル名のおしりについている、ドット・jpg、ドット・pdf、のような文字で、そのファイルの種類を表します。
+        show:
+          - { type: title, text: 拡張子 }
+          - { type: text, text: "旅行**.jpg**　← この部分が **拡張子**（ファイルの種類）" }
+      - say: よく見る拡張子を、まとめておきます。
+        show:
+          - { type: text, at: [80, 230], color: blue, text: ".jpg / .png / .gif：画像" }
+          - { type: text, at: [80, 290], color: blue, text: ".mp4 / .mov：動画" }
+          - { type: text, at: [80, 350], color: blue, text: ".mp3 / .aac：音声" }
+          - { type: text, at: [660, 230], color: green, text: ".pdf：文書" }
+          - { type: text, at: [660, 290], color: green, text: ".docx / .xlsx：Word・Excel" }
+          - { type: text, at: [660, 350], color: green, text: ".zip：圧縮ファイル" }
+      - say: そして、ドット・exeは、Windowsで、プログラムを実行するファイルです。開くと、そのプログラムが動き出します。メールに添付されてきた、心当たりのないexeファイルは、ウイルスの可能性があるので、絶対に開かないでください。
+        show:
+          - { type: box, at: [80, 440], color: pink, w: 1100, text: ".exe：Windows の実行ファイル。心当たりのないものは **絶対に開かない**" }
+      - say: 写真だと思ったら、実はexeだった、という手口もあります。ファイルの種類を見分けられることが、身を守る力になります。
+        added: true
+        show:
+          - { type: text, at: [80, 580], size: s, color: gray, text: "写真に見せかけた .exe の手口もある → 拡張子を確かめる習慣を" }

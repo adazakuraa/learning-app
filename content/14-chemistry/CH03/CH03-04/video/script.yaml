@@ -1,0 +1,35 @@
+title: 中和反応
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「中和反応」です。酸と塩基を混ぜると、たがいの性質を打ち消し合う、中和反応が起こります。
+        show:
+          - { type: title, text: 中和反応 }
+          - { type: text, size: l, text: "酸 ＋ 塩基 → 打ち消し合う ＝ **中和**" }
+      - say: 酸が出すH⁺と、塩基が出すOH⁻が結びついて、水になるからです。
+        show:
+          - { type: formula, size: l, color: yellow, tex: '\text{H}^+ + \text{OH}^- \rightarrow \text{H}_2\text{O}' }
+      - say: たとえば、塩酸と水酸化ナトリウムが中和すると、食塩と水ができます。
+        show:
+          - { type: formula, size: l, tex: '\text{HCl} + \text{NaOH} \rightarrow \text{NaCl} + \text{H}_2\text{O}' }
+          - type: svg
+            w: 1000
+            h: 120
+            markup: |
+              <g stroke="none" font-size="26"><text x="40" y="50" fill="#f4a3b8">H⁺ と OH⁻ → 水</text><text x="500" y="50" fill="#8fc4ff">Na⁺ と Cl⁻ → 食塩</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 中和は、身近なところでたくさん使われています。
+        show:
+          - { type: title, text: 身近な中和 }
+      - say: 胃酸が出すぎて胃がもたれるときは、重曹や水酸化マグネシウムなどの、塩基性の胃薬、制酸剤で中和します。
+        show:
+          - { type: box, color: blue, w: 1000, title: 胃薬, text: "胃酸（酸性）を、制酸剤（塩基性：重曹・水酸化マグネシウム）で中和" }
+      - say: 畑の土が酸性になると、植物が育ちにくくなります。そこで、塩基性の石灰をまいて中和します。
+        show:
+          - { type: box, color: green, w: 1000, title: 畑の土, text: "酸性になった土を、石灰（塩基性）で中和" }
+      - say: 虫に刺されたときにアンモニアをぬる、という昔からの知恵も、酸性の毒を中和しようという考え方から来ています。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "昔の知恵：虫さされにアンモニア（中和の考え方）" }

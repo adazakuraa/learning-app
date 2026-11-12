@@ -2,3 +2,8 @@ id: politics-economics-pe09-03
 code: PE09-03
 title: 日本の外交と安全保障
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 85
+  narration: VOICEVOX:ずんだもん

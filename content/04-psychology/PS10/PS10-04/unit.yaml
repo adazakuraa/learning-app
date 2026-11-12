@@ -2,3 +2,8 @@ id: psychology-ps10-04
 code: PS10-04
 title: 感情・恐怖・嫌悪の進化的役割
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 110
+  narration: VOICEVOX:ずんだもん

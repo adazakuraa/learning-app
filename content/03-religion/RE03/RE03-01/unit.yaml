@@ -2,3 +2,8 @@ id: religion-re03-01
 code: RE03-01
 title: キリスト教と現代世界
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 108
+  narration: VOICEVOX:ずんだもん

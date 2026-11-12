@@ -1,0 +1,58 @@
+title: 重力と落下運動
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「重力と落下運動」です。
+        show:
+          - { type: title, text: 重力と落下運動 }
+      - say: 重力とは、地球がものを引っぱる力です。質量mのものにかかる重力の大きさは、m×g。これを「重さ」と呼びます。
+        show:
+          - { type: formula, size: l, color: yellow, tex: '\text{重さ} = mg' }
+          - { type: text, size: s, color: gray, text: "m：質量　g：重力加速度（約9.8 m/s²）" }
+
+  - board: whiteboard
+    steps:
+      - say: 「質量」と「重さ」。ふだんの言葉では混ざりがちですが、物理では別のものです。
+        show:
+          - { type: title, text: 質量と重さはちがう }
+      - say: 質量は、そのもの自体が持つ量で、場所が変わっても変わりません。重さは、そのものにかかる重力の大きさなので、場所によって変わります。
+        show:
+          - { type: box, color: blue, w: 1000, title: 質量, text: "もの自体の量。どこへ行っても変わらない" }
+          - { type: box, color: pink, w: 1000, title: 重さ, text: "かかる重力の大きさ。場所によって変わる" }
+      - say: 月では、重力が地球のおよそ6分の1。体重計の数字、つまり重さは6分の1になりますが、体そのもの、つまり質量は、何も変わっていません。
+        show:
+          - { type: text, color: yellow, text: "月の上：体重計の値 ×1/6（重さ）　体そのもの（質量）は同じ" }
+
+  - board: whiteboard
+    steps:
+      - say: ものを、まっすぐ下に落とすことを、自由落下といいます。そして、すべてのものは、同じ加速度gで落ちます。重いものも、軽いものも、同じ速さで落ちるのです。
+        show:
+          - { type: title, text: 自由落下 }
+          - { type: box, color: yellow, w: 1000, text: "空気の抵抗がなければ、重いものも軽いものも **同じ速さで落ちる**" }
+      - say: 「重いほうが速く落ちそう」と感じるかもしれません。羽根がゆっくり落ちるのは、空気の抵抗を受けるからです。空気のない月面で、ハンマーと羽根を同時に落とす実験では、2つは同時に地面に着きました。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "羽根が遅いのは空気の抵抗のせい。月面の実験ではハンマーと羽根が同時に落ちた" }
+      - say: これを最初に確かめたとされるのが、ガリレオです。ピサの斜塔から重さのちがう球を落とした、という伝説がありますが、実際にやったかどうかは、わかっていません。
+        show:
+          - { type: text, size: s, color: gray, text: "ガリレオ：ピサの斜塔の実験は「伝説」（実際は不明）" }
+
+  - board: whiteboard
+    steps:
+      - say: ものを横に投げると、放物線を描きます。
+        show:
+          - { type: title, text: 放物線運動 }
+          - type: svg
+            at: [80, 160]
+            w: 1100
+            h: 420
+            markup: |
+              <path d="M40 390 H1080" stroke="#9aa3ad"/>
+              <path d="M60 60 Q500 60 900 390" stroke="#f3d77a" stroke-dasharray="10 10"/>
+              <g fill="#f3d77a" stroke="none"><circle cx="60" cy="60" r="12"/><circle cx="260" cy="75" r="12"/><circle cx="460" cy="120" r="12"/><circle cx="660" cy="200" r="12"/></g>
+              <path d="M60 30 H260" stroke="#8fc4ff"/><path d="M260 30 H460" stroke="#8fc4ff"/><path d="M460 30 H660" stroke="#8fc4ff"/>
+              <text x="700" y="40" font-size="26" fill="#8fc4ff" stroke="none">横：同じ間隔（等速）</text>
+              <text x="700" y="280" font-size="26" fill="#f4a3b8" stroke="none">たて：だんだん速く落ちる</text>
+      - say: 横の方向は、同じ速さのまま進む、等速直線運動。たての方向は、自由落下。この2つが同時に起きた結果が、放物線なのです。数学の二次関数で見た、あの形ですね。
+        show:
+          - { type: text, at: [80, 620], color: yellow, text: "横：等速直線運動 ＋ たて：自由落下 ＝ 放物線（数学の二次関数の形）" }

@@ -2,3 +2,8 @@ id: geography-ge03-04
 code: GE03-04
 title: 経済格差
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 87
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: philosophy-ph09-02
 code: PH09-02
 title: 動物の権利
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 82
+  narration: VOICEVOX:ずんだもん

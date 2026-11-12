@@ -1,0 +1,47 @@
+title: ゲノムと遺伝子技術
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「ゲノムと遺伝子技術」です。ゲノムとは、ある生き物が持つ、DNAの全部の情報のことです。
+        show:
+          - { type: title, text: ゲノム }
+          - { type: text, size: l, text: "**ゲノム** ＝ ある生き物がもつ DNA の全情報" }
+      - say: 2003年に、ヒトのゲノムがすべて読み解かれました。遺伝子と病気の関係、人類の進化、薬の開発など、さまざまな分野に、大きな変化が起きました。今では、個人のゲノムを、数万円で読み解けるようになっています。
+        show:
+          - { type: text, text: "2003年 ヒトゲノムの全解読 → 病気・進化・薬の研究が大きく進む" }
+          - { type: text, size: s, color: gray, text: "今は個人のゲノムを数万円で解読できる" }
+
+  - board: whiteboard
+    steps:
+      - say: 遺伝子組み換え技術は、ある遺伝子をとり出して、べつの生き物に組みこむ技術です。
+        show:
+          - { type: title, text: 遺伝子組み換え }
+          - { type: text, text: "特定の遺伝子をとり出して、べつの生き物に組みこむ" }
+      - say: たとえば、インスリンを作る遺伝子を細菌に組みこんで、糖尿病の薬であるインスリンを大量に作る。害虫に強い作物を作る。そうした形で使われています。
+        show:
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <path d="M60 100 C100 60 140 140 180 100" stroke="#f3d77a" stroke-width="5"/>
+              <text x="40" y="170" font-size="22" fill="#f3d77a" stroke="none">インスリンの遺伝子</text>
+              <path d="M240 100 H380" stroke="#9aa3ad"/><path d="M366 90 L380 100 L366 110" stroke="#9aa3ad"/>
+              <ellipse cx="520" cy="100" rx="110" ry="60" stroke="#8fc4ff"/><path d="M490 100 C510 80 530 120 550 100" stroke="#f3d77a" stroke-width="5"/>
+              <text x="470" y="190" font-size="22" fill="#8fc4ff" stroke="none">細菌に組みこむ</text>
+              <path d="M650 100 H790" stroke="#9aa3ad"/><path d="M776 90 L790 100 L776 110" stroke="#9aa3ad"/>
+              <text x="820" y="110" font-size="26" fill="#9be0b0" stroke="none">インスリンを大量生産</text>
+
+  - board: whiteboard
+    steps:
+      - say: 2012年に登場した、クリスパー・キャスナインは、「ゲノム編集」の技術に革命を起こしました。DNAの特定の場所をねらって、切ったり、書きかえたりできるのです。文章の一部を、ピンポイントで書き直すようなイメージです。
+        show:
+          - { type: title, text: ゲノム編集 }
+          - { type: box, color: yellow, w: 1000, title: "CRISPR-Cas9（2012年）", text: "DNA の特定の場所をねらって切り、書きかえる" }
+      - say: 遺伝病の治療や、作物の改良への応用が進む一方で、受精卵のゲノムを編集して、親の望む特徴を持った子どもを作る、「デザイナーベビー」のような、倫理の問題も議論されています。
+        show:
+          - { type: text, color: green, text: "応用：遺伝病の治療、作物の改良" }
+          - { type: text, color: pink, text: "問題：受精卵の編集、「デザイナーベビー」の倫理" }
+      - say: 技術でできることと、してよいこと。科学が進むほど、この2つを社会全体で考えることが、大切になっています。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "「できること」と「してよいこと」を社会で考える" }

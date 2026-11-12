@@ -2,3 +2,8 @@ id: japanese-history-jh12-01
 code: JH12-01
 title: GHQによる占領と民主化
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 115
+  narration: VOICEVOX:ずんだもん

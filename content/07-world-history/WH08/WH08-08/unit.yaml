@@ -2,3 +2,8 @@ id: world-history-wh08-08
 code: WH08-08
 title: 帝国主義と植民地支配
 order: 8
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 89
+  narration: VOICEVOX:ずんだもん

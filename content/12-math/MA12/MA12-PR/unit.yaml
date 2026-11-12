@@ -1,0 +1,11 @@
+id: math-ma12-practice
+code: MA12-PR
+title: 練習問題
+summary: フェルミ推定 の問題
+order: 999
+practice: true
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 121
+  narration: VOICEVOX:ずんだもん

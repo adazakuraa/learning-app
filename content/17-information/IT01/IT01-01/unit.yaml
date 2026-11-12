@@ -2,3 +2,8 @@ id: information-it01-01
 code: IT01-01
 title: コンピュータの三層構造
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 116
+  narration: VOICEVOX:ずんだもん

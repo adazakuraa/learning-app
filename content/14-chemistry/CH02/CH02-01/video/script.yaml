@@ -1,0 +1,72 @@
+title: 原子とは何か
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「原子・分子・元素」の章です。
+        show:
+          - { type: title, text: 第2章　原子・分子・元素 }
+      - say: この章では、ものをつくる最小の粒、原子のしくみと、原子どうしがどうやって結びつくのか、そして、それを表す化学式を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["原子とは何か", "元素と周期表", "分子とイオン", "化学式と化学反応式"]
+      - say: 食塩はなぜ結晶になるのか。スポーツドリンクの「電解質」とは何か。化学のすべての土台になる章です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "原子のしくみから、「ものがくっつく理由」を理解する" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「原子とは何か」です。ものを細かく分けていくと、それ以上化学的に分けられない、最小の粒になります。これが原子です。大きさは、1億分の1センチメートルほどです。
+        show:
+          - { type: title, text: 原子とは何か }
+          - { type: text, text: "**原子** ＝ それ以上化学的に分けられない最小の粒（約1億分の1cm）" }
+      - say: 物理でも学んだように、原子は、中心の原子核と、まわりを回る電子でできています。原子核は、陽子と中性子でできています。電子はマイナス、陽子はプラスの電気、つまり電荷を持ち、中性子は電荷を持ちません。
+        show:
+          - { type: text, color: pink, text: "陽子 ＋　　中性子 ±0（電荷なし）　　電子 －" }
+
+  - board: whiteboard
+    steps:
+      - say: 陽子、電子、中性子の数には、それぞれ意味があります。
+        show:
+          - { type: title, text: 数の意味 }
+      - say: 陽子の数は、その元素が何かを決めます。これが原子番号です。
+        show:
+          - { type: text, color: pink, text: "陽子の数 → 元素の種類（**原子番号**）" }
+      - say: 電子の数は、ふつうは陽子と同じで、プラスとマイナスがつり合って、電気的に中性になっています。
+        show:
+          - { type: text, color: yellow, text: "電子の数 → ふつうは陽子と同じ（電気的に中性）" }
+      - say: 中性子の数は、同じ元素でもちがう場合があります。これが同位体で、重さは少しちがいますが、化学的な性質はほとんど同じです。
+        show:
+          - { type: text, color: blue, text: "中性子の数 → ちがうことがある（**同位体**、性質はほぼ同じ）" }
+
+  - board: whiteboard
+    steps:
+      - say: 電子は、原子核のまわりの、「電子殻」と呼ばれるいくつかの層に、内側から順に入っていきます。いちばん内側のK殻には2個まで、その外側のL殻には8個まで入ります。
+        show:
+          - { type: title, text: 電子殻 }
+          - type: svg
+            at: [80, 150]
+            w: 520
+            h: 520
+            markup: |
+              <circle cx="260" cy="260" r="30" fill="#f4a3b8" stroke="none"/>
+              <circle cx="260" cy="260" r="90" stroke="#8fc4ff"/><circle cx="260" cy="260" r="160" stroke="#9be0b0"/><circle cx="260" cy="260" r="230" stroke="#9aa3ad"/>
+              <g fill="#f3d77a" stroke="none"><circle cx="170" cy="260" r="10"/><circle cx="350" cy="260" r="10"/>
+              <circle cx="260" cy="100" r="10"/><circle cx="260" cy="420" r="10"/><circle cx="100" cy="260" r="10"/><circle cx="420" cy="260" r="10"/><circle cx="147" cy="147" r="10"/><circle cx="373" cy="147" r="10"/><circle cx="147" cy="373" r="10"/><circle cx="373" cy="373" r="10"/></g>
+          - { type: text, at: [660, 220], color: blue, text: "K殻 … 2個まで" }
+          - { type: text, at: [660, 290], color: green, text: "L殻 … 8個まで" }
+          - { type: text, at: [660, 360], color: gray, text: "M殻 … …" }
+      - say: いちばん外側の電子、最外殻電子の数が、その原子の化学的な性質を決めます。だから、最外殻電子の数が同じ元素どうしは、似た性質を持ちます。
+        show:
+          - { type: box, at: [660, 450], w: 560, color: yellow, text: "**最外殻電子** の数が\n性質を決める" }
+
+  - board: whiteboard
+    steps:
+      - say: 周期表は、最外殻電子の数が同じ元素が、縦に並ぶように作られています。だから、縦の列を見れば、似た性質の仲間がひと目でわかります。
+        show:
+          - { type: title, text: 周期表とオクテット則 }
+          - { type: text, text: "周期表：最外殻電子の数が同じ元素が **縦に並ぶ** → 似た性質の仲間" }
+      - say: そして、最外殻電子が8個、またはK殻だけなら2個になると、原子は安定することが知られています。これを、オクテット則といいます。次の単元以降で、とても大切になる考え方です。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "最外殻電子が **8個**（K殻なら2個）→ 安定 ＝ **オクテット則**" }

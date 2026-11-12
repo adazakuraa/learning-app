@@ -2,3 +2,8 @@ id: chemistry-ch06-03
 code: CH06-03
 title: カルボン酸
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 46
+  narration: VOICEVOX:ずんだもん

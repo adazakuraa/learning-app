@@ -2,3 +2,8 @@ id: earth-science-es03-03
 code: ES03-03
 title: 日本の地形の特徴
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 61
+  narration: VOICEVOX:ずんだもん

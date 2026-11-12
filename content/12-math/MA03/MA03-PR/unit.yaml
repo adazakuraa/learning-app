@@ -1,0 +1,11 @@
+id: math-ma03-practice
+code: MA03-PR
+title: 練習問題
+summary: 関数とは何か、一次関数と直線、二次関数と放物線 の問題
+order: 999
+practice: true
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 329
+  narration: VOICEVOX:ずんだもん

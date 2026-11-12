@@ -2,3 +2,8 @@ id: earth-science-es04-01
 code: ES04-01
 title: 大気の構造
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 91
+  narration: VOICEVOX:ずんだもん

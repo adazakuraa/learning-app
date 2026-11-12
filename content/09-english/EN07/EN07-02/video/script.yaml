@@ -1,0 +1,32 @@
+title: It is ... to / that
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「It is 何々 to」の形です。〜することは、…だ、と言うとき、itを、形だけの主語として、文の頭に置きます。本当の主語にあたる部分は、文の最後に来ます。
+        read: 「イット、イズ、何々、トゥー」の形です。何々することは、何々だ、と言うとき、イットを、形だけの主語として、文の頭に置きます。本当の主語にあたる部分は、文の最後に来ます。
+        show:
+          - { type: title, text: 形だけの主語 it }
+          - type: svg
+            w: 1100
+            h: 170
+            markup: |
+              <g stroke="none" font-size="40"><text x="40" y="70" fill="#f3d77a">It</text><text x="110" y="70" fill="currentColor">is important</text><text x="430" y="70" fill="#9be0b0">to stay hydrated.</text></g>
+              <path d="M60 85 Q300 160 560 85" stroke="#9aa3ad" stroke-dasharray="6 6"/>
+              <g stroke="none" font-size="20"><text x="40" y="140" fill="#f3d77a">形だけの主語</text><text x="560" y="140" fill="#9be0b0">本当の主語（水分をとること）</text></g>
+      - say: It is important to stay hydrated. 水分をとることは大切です。It is difficult to master a new skill overnight. 新しい技術をひと晩で身につけるのは、難しい。頭が重くなるのをさけて、大事な結論を先に言うのが、英語らしい形です。
+        read: イット、イズ、インポータント、トゥー、ステイ、ハイドレイティッド。水分をとることは大切です。イット、イズ、ディフィカルト、トゥー、マスター、ア、ニュー、スキル。新しい技術を身につけるのは、難しい。頭が重くなるのをさけて、大事な結論を先に言うのが、英語らしい形です。
+        show:
+          - { type: text, color: blue, text: "It is important **to stay hydrated**.（水分をとることは大切）" }
+          - { type: text, color: blue, text: "It is difficult **to master a new skill overnight**.（ひと晩で身につけるのは難しい）" }
+
+  - board: whiteboard
+    steps:
+      - say: toのかわりに、thatと文を続けることもできます。It is surprising that she passed the exam. 彼女が試験に合格したのは、おどろきです。
+        read: トゥーのかわりに、ザットと文を続けることもできます。イット、イズ、サプライジング、ザット、シー、パスト、ジ、イグザム。彼女が試験に合格したのは、おどろきです。
+        show:
+          - { type: title, text: that でも／時間の It }
+          - { type: text, color: green, text: "It is surprising **that she passed the exam**.（合格したのはおどろき）" }
+      - say: また、時間がかかる、と言うときにも、itを使います。It takes about twenty minutes to walk there. そこまで歩いて、およそ20分かかります。
+        read: また、時間がかかる、と言うときにも、イットを使います。イット、テイクス、アバウト、トゥエンティ、ミニッツ、トゥー、ウォーク、ゼア。そこまで歩いて、およそ20分かかります。
+        show:
+          - { type: text, color: yellow, text: "It takes about twenty minutes to walk there.（歩いて約20分かかる）" }

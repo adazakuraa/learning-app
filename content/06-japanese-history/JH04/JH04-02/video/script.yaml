@@ -1,0 +1,47 @@
+title: 藤原氏の摂関政治
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 平安時代の政治で外せないのが、藤原氏です。藤原氏の権力の握り方は、とてもスマートでした。
+        show:
+          - { type: title, text: 藤原氏の作戦 }
+      - say: まず、娘を天皇と結婚させます。生まれた子どもを、次の天皇にします。
+        show:
+          - type: svg
+            at: [80, 130]
+            w: 1120
+            h: 260
+            anim: draw
+            markup: |
+              <rect x="10" y="20" width="240" height="70" rx="10" stroke="#f3d77a"/>
+              <rect x="10" y="160" width="240" height="70" rx="10" stroke="#f4a3b8"/>
+              <rect x="430" y="160" width="240" height="70" rx="10" stroke="#9fc7ff"/>
+              <rect x="850" y="160" width="250" height="70" rx="10" stroke="#9be0b0"/>
+              <path d="M130 90 L130 155"/><path d="M118 137 L130 157 L142 137"/>
+              <path d="M260 195 L420 195"/><path d="M402 183 L422 195 L402 207"/>
+              <path d="M680 195 L840 195"/><path d="M822 183 L842 195 L822 207"/>
+              <g stroke="none" font-size="26" fill="#e8eef5" text-anchor="middle"><text x="130" y="64">藤原氏</text><text x="130" y="204">娘</text><text x="550" y="204">天皇と結婚</text><text x="975" y="204">孫が天皇に</text><text x="340" y="182" font-size="20">嫁がせる</text><text x="760" y="182" font-size="20">子が生まれる</text></g>
+      - say: その天皇が幼いうちは、摂政として、大人になってからは、関白として、おじいさんである自分が実権を握る。これが、摂関政治です。
+        read: その天皇が幼いうちは、せっしょうとして、大人になってからは、かんぱくとして、おじいさんである自分が実権を握る。これが、せっかん政治です。
+        show:
+          - { type: box, at: [80, 420], w: 540, color: blue, title: 摂政, text: "天皇が幼いとき、代わりに政治" }
+          - { type: box, at: [660, 420], w: 540, color: green, title: 関白, text: "天皇が大人になってから、補佐" }
+      - say: 武力ではなく、結婚と血のつながりで頂点に立つ。戦わずに勝つ作戦です。
+        added: true
+        show:
+          - { type: text, at: [80, 600], w: 1120, color: gray, text: "武力ではなく、**結婚と血縁** で頂点に立つ" }
+
+  - board: whiteboard
+    steps:
+      - say: その頂点が、藤原道長です。娘3人が、次々と天皇の后になりました。
+        read: その頂点が、ふじわらのみちながです。娘3人が、次々と天皇のきさきになりました。
+        show:
+          - { type: title, text: 藤原道長 }
+          - { type: text, at: [80, 140], w: 1120, text: "娘3人が次々と天皇の **后**（きさき）に" }
+      - say: そして、この世をば、わが世とぞ思う、もちづきの、かけたることも、なしと思えば、という歌をよみました。
+        read: そして、このよをば、わがよとぞおもう、もちづきの、かけたることも、なしとおもえば、という歌をよみました。
+        show:
+          - { type: box, at: [80, 230], w: 1120, color: yellow, text: "この世をば　我が世とぞ思ふ　望月の　欠けたることも　なしと思へば" }
+      - say: この世は自分のものだ。満月のように、欠けているものは何もない。という意味で、権力者のおごりを表す歌として有名です。
+        show:
+          - { type: text, at: [80, 400], w: 1120, text: "「この世は自分のもの。満月のように **何も欠けていない**」" }

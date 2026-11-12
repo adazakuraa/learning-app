@@ -2,3 +2,8 @@ id: geography-ge07-03
 code: GE07-03
 title: 中南米
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 81
+  narration: VOICEVOX:ずんだもん

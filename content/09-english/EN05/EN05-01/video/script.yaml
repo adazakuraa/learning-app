@@ -1,0 +1,52 @@
+title: 形容詞の使い方
+scenes:
+  - board: slide
+    steps:
+      - say: 第5章、「形容詞、副詞、前置詞」です。
+        show:
+          - { type: title, text: 第5章　形容詞・副詞・前置詞 }
+      - say: 名詞や動詞を、くわしく説明する言葉と、場所や時間を表す、前置詞を学びます。
+        show:
+          - type: list
+            items: ["形容詞の使い方", "副詞の使い方", "前置詞"]
+      - say: 文の骨組みに、色や、様子や、場所をつけ加えて、伝えたいことを、より豊かにしていきましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "文の骨組みに、様子・程度・場所をつけ加える" }
+
+  - board: whiteboard
+    steps:
+      - say: 形容詞は、名詞をくわしくしたり、be動詞のうしろに置いて、主語の様子を説明したりします。a delicious meal、おいしい食事。The soup is hot、スープは熱い。
+        read: 形容詞は、名詞をくわしくしたり、ビー動詞のうしろに置いて、主語の様子を説明したりします。ア、デリシャス、ミール、おいしい食事。ザ、スープ、イズ、ホット、スープは熱い。
+        show:
+          - { type: title, text: 形容詞 }
+          - { type: text, text: "a **delicious** meal（おいしい食事）← 名詞をくわしく" }
+          - { type: text, text: "The soup is **hot**.（スープは熱い）← 主語の様子を説明" }
+
+  - board: whiteboard
+    steps:
+      - say: 比較級は、〜より…だ、という比べる言い方です。短い形容詞なら、最後にerをつけます。fastはfaster。長い形容詞なら、前にmoreをつけます。interestingは、more interesting。goodはbetter、badはworseと、形が変わるものもあります。
+        read: 比較級は、何々より、何々だ、という比べる言い方です。短い形容詞なら、最後にイーアールをつけます。ファストはファスター。長い形容詞なら、前にモアをつけます。インタレスティングは、モア、インタレスティング。グッドはベター、バッドはワースと、形が変わるものもあります。
+        show:
+          - { type: title, text: 比較級 }
+          - { type: text, color: blue, text: "短い語：fast → **faster**　長い語：interesting → **more interesting**" }
+          - { type: text, color: pink, text: "不規則：good → **better**、bad → **worse**" }
+      - say: I am taller than you. 私はあなたより背が高い。She is a better swimmer than her sister. 彼女は妹より泳ぎがうまい。比べる相手は、thanのうしろに置きます。
+        read: アイ、アム、トーラー、ザン、ユー。私はあなたより背が高い。シー、イズ、ア、ベター、スイマー、ザン、ハー、シスター。彼女は妹より泳ぎがうまい。比べる相手は、ザンのうしろに置きます。
+        show:
+          - { type: text, color: green, text: "I am **taller than** you.（あなたより背が高い）" }
+          - { type: text, color: green, text: "She is a **better** swimmer **than** her sister." }
+
+  - board: whiteboard
+    steps:
+      - say: 最上級は、最も〜だ、を表し、theをつけます。短い形容詞なら、estをつけて、the tallest。長い形容詞なら、mostをつけて、the most comfortable。goodはthe best、badはthe worstです。
+        read: 最上級は、最も何々だ、を表し、ザをつけます。短い形容詞なら、イーエスティーをつけて、ザ、トーレスト。長い形容詞なら、モーストをつけて、ザ、モースト、カンファタブル。グッドはザ、ベスト。バッドはザ、ワーストです。
+        show:
+          - { type: title, text: 最上級 }
+          - { type: text, color: blue, text: "短い語：tall → **the tallest**　長い語：**the most** comfortable" }
+          - { type: text, color: pink, text: "不規則：good → **the best**、bad → **the worst**" }
+      - say: The blue whale is the biggest animal. シロナガスクジラは、最も大きい動物です。This is the most convenient route. これが最も便利なルートです。
+        read: ザ、ブルー、ホエール、イズ、ザ、ビッゲスト、アニマル。シロナガスクジラは、最も大きい動物です。ディス、イズ、ザ、モースト、コンビニエント、ルート。これが最も便利なルートです。
+        show:
+          - { type: text, color: green, text: "The blue whale is **the biggest** animal.（最も大きい動物）" }
+          - { type: text, color: green, text: "This is **the most convenient** route.（最も便利なルート）" }

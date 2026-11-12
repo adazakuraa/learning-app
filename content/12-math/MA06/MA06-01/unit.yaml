@@ -2,3 +2,8 @@ id: math-ma06-01
 code: MA06-01
 title: 平均・中央値・最頻値
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 101
+  narration: VOICEVOX:ずんだもん

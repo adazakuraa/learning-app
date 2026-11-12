@@ -1,0 +1,21 @@
+title: 関東・首都圏
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「関東と首都圏」です。関東地方は、東京、神奈川、埼玉、千葉、茨城、栃木、群馬の7都県で、人口はおよそ4300万人。日本全体の、およそ35パーセントが集まっています。
+        show:
+          - { type: title, text: 関東地方 }
+          - type: svg
+            w: 1000
+            h: 120
+            markup: |
+              <g stroke="none"><rect x="40" y="30" width="320" height="60" fill="#f4a3b8" fill-opacity="0.7"/><rect x="360" y="30" width="600" height="60" fill="#9aa3ad" fill-opacity="0.3"/></g>
+              <g stroke="none" font-size="22"><text x="70" y="68" fill="#1b2a24">関東 約35％</text><text x="560" y="68" fill="#e8eef5">その他の地域</text></g>
+          - { type: text, text: "7都県、人口 約4300万人（日本の約35％）" }
+      - say: 東京湾の沿岸の、京浜工業地帯は、日本で最大級の工業地帯のひとつで、鉄鋼、石油化学、機械が集まっています。千葉県の京葉工業地域も、石油化学や鉄鋼の、一大拠点です。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "**京浜工業地帯**（東京湾岸）：鉄鋼・石油化学・機械 ／ **京葉工業地域**（千葉）：石油化学・鉄鋼" }
+      - say: 人も会社も、情報も東京に集まる一極集中は、便利な一方で、大きな災害のときのもろさや、地方の過疎化といった問題も生んでいます。
+        added: true
+        show:
+          - { type: text, color: gray, text: "東京への一極集中：便利だが、災害時のもろさ・地方の過疎化も" }

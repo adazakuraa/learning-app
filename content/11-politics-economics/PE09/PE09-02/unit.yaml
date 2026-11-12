@@ -2,3 +2,8 @@ id: politics-economics-pe09-02
 code: PE09-02
 title: 国際連合の役割と限界
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 84
+  narration: VOICEVOX:ずんだもん

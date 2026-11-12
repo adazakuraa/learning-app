@@ -2,3 +2,8 @@ id: japanese-history-jh11-01
 code: JH11-01
 title: 世界恐慌と日本の対応
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 117
+  narration: VOICEVOX:ずんだもん

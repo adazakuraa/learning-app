@@ -1,0 +1,59 @@
+title: ヒンドゥー教
+scenes:
+  - board: slide
+    steps:
+      - say: 第5章、「ヒンドゥー教とその他の宗教」です。
+        show:
+          - { type: title, text: 第5章　ヒンドゥー教とその他の宗教 }
+      - say: インドのヒンドゥー教と、シク教、ゾロアスター教、儒教、道教などを学びます。
+        show:
+          - type: list
+            items: ["ヒンドゥー教", "その他の主要宗教"]
+      - say: 一神教とは、まったくちがう世界の見方にふれることで、宗教の多様さが見えてきます。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "一神教とはちがう世界の見方にふれ、宗教の多様さを知る" }
+
+  - board: whiteboard
+    steps:
+      - say: ヒンドゥー教は、インドを中心に、およそ12億人が信じる、世界で3番目に大きな宗教です。特定の創始者も、統一された聖典も、組織もない、独特の宗教です。
+        show:
+          - { type: title, text: ヒンドゥー教とは }
+          - { type: text, text: "約12億人（世界第3位）。創始者・統一された聖典・組織がない" }
+      - say: 多神教で、ブラフマー、創造の神。ヴィシュヌ、維持の神。シヴァ、破壊の神。この3つの神を中心に、数えきれないほどの神々がいます。
+        show:
+          - { type: box, color: yellow, at: [80, 230], w: 340, title: ブラフマー, text: "創造の神" }
+          - { type: box, color: blue, at: [460, 230], w: 340, title: ヴィシュヌ, text: "維持の神" }
+          - { type: box, color: pink, at: [840, 230], w: 340, title: シヴァ, text: "破壊の神" }
+      - say: 牛を神聖なものとするので、牛肉を食べることができません。ちなみに、イスラム教では、豚肉が禁じられています。
+        show:
+          - { type: text, at: [80, 420], color: gray, text: "牛は神聖 → 牛肉を食べない（イスラム教では豚肉が禁止）" }
+
+  - board: whiteboard
+    steps:
+      - say: ヒンドゥー教の中心にある考えが、輪廻と、カルマ、つまり業です。魂は、死んだあとも、別の生き物として、生まれ変わり続け、今の人生での行いが、次の人生の生まれを決める、という考え方です。
+        show:
+          - { type: title, text: 輪廻とカルマ }
+          - type: svg
+            w: 900
+            h: 230
+            markup: |
+              <circle cx="300" cy="115" r="95" stroke="#f3d77a" stroke-dasharray="10 6"/>
+              <path d="M385 70 L400 95 L372 95" stroke="#f3d77a"/>
+              <g stroke="none" font-size="22" text-anchor="middle" fill="#f3d77a"><text x="300" y="105">生まれ変わり</text><text x="300" y="135">（輪廻）</text></g>
+              <path d="M400 115 H560 M545 103 L560 115 L545 127" stroke="#9be0b0"/>
+              <text x="580" y="105" font-size="24" fill="#9be0b0" stroke="none">解脱：輪廻から</text><text x="580" y="140" font-size="24" fill="#9be0b0" stroke="none">ぬけ出す</text>
+      - say: そして、解脱とは、この、生まれ変わりの輪から、ぬけ出すことを指します。
+        show:
+          - { type: text, color: yellow, text: "**輪廻**：生まれ変わり続ける　**カルマ**：今の行いが次の生まれを決める　**解脱**：輪からぬけ出す" }
+
+  - board: whiteboard
+    steps:
+      - say: カースト制度、つまり身分の制度は、ヒンドゥー教と深く結びついていて、生まれによって、職業や結婚相手が決まる習慣は、今のインドでも、根強く残っています。
+        show:
+          - { type: title, text: カースト制度 }
+          - { type: box, color: pink, w: 1100, text: "**カースト制度**：生まれで職業・結婚相手が決まる身分の習慣。今も根強く残る" }
+      - say: インドの憲法では、カーストによる差別は禁止されていますが、社会の中の習慣として、なかなか消えないのです。
+        added: true
+        show:
+          - { type: text, color: gray, text: "憲法では差別は禁止。でも習慣として残っている" }

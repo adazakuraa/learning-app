@@ -2,3 +2,8 @@ id: world-history-wh08-01
 code: WH08-01
 title: アメリカ独立革命
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 133
+  narration: VOICEVOX:ずんだもん

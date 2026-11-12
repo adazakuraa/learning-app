@@ -1,0 +1,76 @@
+title: 指数の拡張
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「指数・対数」の章です。
+        show:
+          - { type: title, text: 第9章　指数・対数 }
+      - say: 第1章で学んだ指数を、マイナスや分数にまで広げます。そして、その逆の考え方である、対数を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["指数の拡張", "対数の意味", "練習問題"]
+      - say: 音の大きさのデシベル、地震のマグニチュード。対数は、桁ちがいに大きさが変わるものを、あつかいやすくする道具です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "「何倍」「何乗」の世界を、指数と対数で自由に行き来できるようになる" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は、「指数の拡張」です。
+        show:
+          - { type: title, text: 指数の拡張 }
+      - say: 2の3乗は8、2の4乗は16。指数が1、2、3のような自然数なら、わかりやすいですね。でも、指数は自然数だけに限りません。
+        show:
+          - { type: text, text: "2³ ＝ 8、2⁴ ＝ 16 … 指数は自然数だけじゃない" }
+
+  - board: whiteboard
+    steps:
+      - say: まずは、マイナスの指数です。2のマイナス1乗は、いくつでしょう。
+        show:
+          - { type: title, text: マイナスの指数 }
+      - say: 指数を1つ減らすと、値は半分になります。2の3乗は8、2乗は4、1乗は2、0乗は1。そして、マイナス1乗は、1/2です。
+        show:
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <g fill="currentColor" stroke="none" font-size="38" text-anchor="middle"><text x="80" y="60">2³</text><text x="300" y="60">2²</text><text x="520" y="60">2¹</text><text x="740" y="60">2⁰</text></g>
+              <text x="960" y="60" font-size="38" fill="#f3d77a" stroke="none" text-anchor="middle">2⁻¹</text>
+              <g fill="currentColor" stroke="none" font-size="38" text-anchor="middle"><text x="80" y="160">8</text><text x="300" y="160">4</text><text x="520" y="160">2</text><text x="740" y="160">1</text></g>
+              <text x="960" y="160" font-size="38" fill="#f3d77a" stroke="none" text-anchor="middle">1/2</text>
+              <g stroke="#8fc4ff"><path d="M120 140 Q190 100 260 140"/><path d="M340 140 Q410 100 480 140"/><path d="M560 140 Q630 100 700 140"/><path d="M780 140 Q850 100 920 140"/></g>
+              <g fill="#8fc4ff" stroke="none" font-size="22" text-anchor="middle"><text x="190" y="100">÷2</text><text x="410" y="100">÷2</text><text x="630" y="100">÷2</text><text x="850" y="100">÷2</text></g>
+      - say: つまり、2のマイナスn乗は、1/2のn乗。マイナスの指数は、「割り算」を表しているのです。
+        show:
+          - { type: formula, size: l, color: yellow, tex: '2^{-n} = \frac{1}{2^n}' }
+          - { type: text, size: s, color: gray, text: "第1章の 10⁻⁷ m（ウイルスの大きさ）も、この考え方" }
+
+  - board: whiteboard
+    steps:
+      - say: 次は、分数の指数です。2の1/2乗は、いくつでしょう。
+        show:
+          - { type: title, text: 分数の指数 }
+      - say: ヒントは、2回かけると2に戻ることです。2の1/2乗を2回かけると、指数を足して、2の1乗、つまり2になります。
+        show:
+          - { type: formula, tex: '2^{\frac{1}{2}} \times 2^{\frac{1}{2}} = 2^{\frac{1}{2}+\frac{1}{2}} = 2^1 = 2' }
+      - say: 2乗して2になる数。それは、√2の定義そのものです。つまり、1/2乗は、平方根を表しています。
+        show:
+          - { type: formula, size: l, color: yellow, tex: '2^{\frac{1}{2}} = \sqrt{2}' }
+
+  - board: whiteboard
+    steps:
+      - say: このように広げていくと、指数は、あらゆる実数で考えられるようになります。2の0.7乗や、2のπ乗のような数も計算できます。
+        show:
+          - { type: title, text: 指数関数 }
+          - { type: formula, tex: '2^{0.7} \text{ や } 2^{\pi} \text{ も計算できる}' }
+      - say: グラフにすると、なめらかな曲線になります。これが、指数関数です。右に行くほど、ぐんぐん急に増えていきます。
+        show:
+          - type: svg
+            at: [160, 260]
+            w: 900
+            h: 420
+            markup: |
+              <path d="M40 380 H880" stroke="#9aa3ad"/><path d="M450 410 V10" stroke="#9aa3ad"/>
+              <polyline stroke="#f3d77a" points="60,377 150,375 240,372 330,366 390,358 450,345 510,320 570,268 610,215 650,140 680,60 695,15"/>
+              <g fill="currentColor" stroke="none" font-size="26"><text x="700" y="80">y ＝ 2ˣ</text><text x="460" y="340">1</text></g>

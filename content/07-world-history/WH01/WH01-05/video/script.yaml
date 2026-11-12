@@ -1,0 +1,57 @@
+title: フェニキア・ヘブライと地中海
+scenes:
+  - board: whiteboard
+    steps:
+      - say: フェニキア人は、今のレバノンのあたりを本拠地にした、海の民です。地中海全体に、交易のネットワークを広げました。
+        show:
+          - { type: title, text: フェニキア人とアルファベット }
+          - { type: text, at: [80, 140], w: 1120, text: "**フェニキア人**：今のレバノンあたりの、海の商人" }
+      - say: 彼らが作った、22文字のフェニキア文字は、ギリシャ文字を経て、ラテン文字、つまり今のABCへと発展しました。
+        read: 彼らが作った、にじゅうに文字のフェニキア文字は、ギリシャ文字を経て、ラテン文字、つまり今のエービーシーへと発展しました。
+        show:
+          - type: svg
+            at: [80, 230]
+            w: 1120
+            h: 130
+            anim: draw
+            markup: |
+              <rect x="10" y="30" width="300" height="70" rx="10" stroke="#f3d77a"/>
+              <rect x="410" y="30" width="300" height="70" rx="10" stroke="#9fc7ff"/>
+              <rect x="810" y="30" width="300" height="70" rx="10" stroke="#9be0b0"/>
+              <path d="M320 65 L400 65"/><path d="M382 53 L402 65 L382 77"/>
+              <path d="M720 65 L800 65"/><path d="M782 53 L802 65 L782 77"/>
+              <g stroke="none" font-size="26" fill="#e8eef5" text-anchor="middle"><text x="160" y="74">フェニキア文字</text><text x="560" y="74">ギリシャ文字</text><text x="960" y="74">ラテン文字（ABC）</text></g>
+      - say: 今あなたが目にしているアルファベットの起源は、地中海の商人たちが、取引を記録するために作った文字なのです。
+        show:
+          - { type: text, at: [80, 400], w: 1120, color: gray, text: "ABCのルーツ ＝ 商人の取引メモ" }
+
+  - board: whiteboard
+    steps:
+      - say: ヘブライ人、つまりユダヤ人の祖先は、ただ一人の神、ヤハウェを信じる、一神教を確立した民族です。
+        show:
+          - { type: title, text: ヘブライ人と一神教 }
+          - { type: box, at: [80, 140], w: 540, color: gray, title: 古代世界の常識, text: "たくさんの神々（多神教）" }
+          - { type: box, at: [660, 140], w: 540, color: yellow, title: ヘブライ人, text: "神は **一人だけ**（一神教）" }
+      - say: これがユダヤ教となり、のちのキリスト教と、イスラム教の母体になります。今、世界でおよそ40億人の信者がいる二大宗教は、どちらも古代ヘブライ人の一神教から生まれたのです。
+        show:
+          - type: svg
+            at: [80, 330]
+            w: 1120
+            h: 200
+            anim: draw
+            markup: |
+              <rect x="420" y="10" width="280" height="64" rx="10" stroke="#f3d77a"/>
+              <rect x="160" y="126" width="280" height="64" rx="10" stroke="#9fc7ff"/>
+              <rect x="680" y="126" width="280" height="64" rx="10" stroke="#9be0b0"/>
+              <path d="M520 76 L330 122"/><path d="M600 76 L790 122"/>
+              <g stroke="none" font-size="26" fill="#e8eef5" text-anchor="middle"><text x="560" y="51">ユダヤ教</text><text x="300" y="167">キリスト教</text><text x="820" y="167">イスラム教</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: ユダヤ教の聖典、旧約聖書には、モーセの出エジプトという物語があります。エジプトで奴隷だったヘブライ人が、モーセに率いられて、脱出する物語です。
+        show:
+          - { type: title, text: 出エジプト }
+          - { type: box, at: [80, 140], w: 1120, color: blue, title: 出エジプト（旧約聖書）, text: "エジプトで奴隷だったヘブライ人が、モーセに率いられて脱出" }
+      - say: 史実としての証拠はとぼしいのですが、ユダヤ教、キリスト教、イスラム教の、三つの宗教に共通する記憶として、今も生きています。
+        show:
+          - { type: text, at: [80, 320], w: 1120, text: "史実の証拠はとぼしい → でも **三つの宗教の共通の記憶**" }

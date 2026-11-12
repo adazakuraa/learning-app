@@ -2,3 +2,8 @@ id: geography-ge03-02
 code: GE03-02
 title: 鉱物資源とレアメタル
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 83
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: information-it02-04
 code: IT02-04
 title: クラウドサービスの実態
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 55
+  narration: VOICEVOX:ずんだもん

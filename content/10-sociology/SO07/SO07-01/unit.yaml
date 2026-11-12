@@ -2,3 +2,8 @@ id: sociology-so07-01
 code: SO07-01
 title: 宗教の社会学
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 95
+  narration: VOICEVOX:ずんだもん

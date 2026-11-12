@@ -1,0 +1,52 @@
+title: 数学的帰納法
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「数学的帰納法」です。
+        show:
+          - { type: title, text: 数学的帰納法 }
+      - say: 「すべての自然数nについて、1＋2＋…＋n＝n（n＋1）÷2が成り立つことを証明せよ」という問題があったとします。
+        show:
+          - { type: formula, size: l, color: yellow, tex: '1 + 2 + \cdots + n = \frac{1}{2}n(n+1)' }
+      - say: 自然数は無限にあるので、1つずつ全部確かめることはできません。
+        show:
+          - { type: text, text: "自然数は無限 → 全部は確かめられない" }
+
+  - board: whiteboard
+    steps:
+      - say: そこで使うのが、数学的帰納法です。次の2つを証明します。
+        show:
+          - { type: title, text: 証明する2つのこと }
+      - say: 1つ目。n＝1のとき、成り立つ。
+        show:
+          - { type: box, color: blue, w: 1000, title: ①, text: "n ＝ 1 のとき成り立つ" }
+      - say: 2つ目。n＝kのときに成り立つと仮定すると、n＝k＋1のときも成り立つ。
+        show:
+          - { type: box, color: pink, w: 1000, title: ②, text: "n ＝ k で成り立つなら、n ＝ k＋1 でも成り立つ" }
+      - say: この2つが示せれば、①からn＝1で成り立ち、②からn＝2でも成り立つ。さらにn＝3でも…と、どこまでも続いていきます。
+        show:
+          - { type: text, color: yellow, text: "1 で成り立つ → 2 でも → 3 でも → … すべての自然数で！" }
+
+  - board: whiteboard
+    steps:
+      - say: ドミノ倒しをイメージしてください。
+        show:
+          - { type: title, text: ドミノ倒しのイメージ }
+          - type: svg
+            at: [80, 180]
+            w: 1100
+            h: 300
+            markup: |
+              <path d="M20 260 H1080" stroke="#9aa3ad"/>
+              <rect x="60" y="120" width="26" height="140" transform="rotate(40 86 260)" stroke="#8fc4ff"/>
+              <rect x="190" y="120" width="26" height="140" transform="rotate(32 216 260)"/>
+              <rect x="320" y="120" width="26" height="140" transform="rotate(20 346 260)"/>
+              <rect x="450" y="120" width="26" height="140" transform="rotate(8 476 260)"/>
+              <rect x="580" y="120" width="26" height="140"/><rect x="710" y="120" width="26" height="140"/>
+              <rect x="840" y="120" width="26" height="140"/><rect x="970" y="120" width="26" height="140"/>
+      - say: 最初の1枚が倒れること。これが①です。
+        show:
+          - { type: text, at: [80, 520], color: blue, text: "① 最初の1枚が倒れる" }
+      - say: そして、どれか1枚が倒れれば、必ず次の1枚も倒れること。これが②です。この2つが確かめられれば、すべてのドミノが倒れると言えますね。
+        show:
+          - { type: text, at: [80, 590], color: pink, text: "② 1枚倒れれば、次の1枚も必ず倒れる → **全部倒れる**" }

@@ -2,3 +2,8 @@ id: politics-economics-pe01-04
 code: PE01-04
 title: 労働市場と賃金
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 54
+  narration: VOICEVOX:ずんだもん

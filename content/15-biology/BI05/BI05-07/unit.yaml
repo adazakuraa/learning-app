@@ -2,3 +2,8 @@ id: biology-bi05-07
 code: BI05-07
 title: 免疫の仕組み
 order: 7
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 84
+  narration: VOICEVOX:ずんだもん

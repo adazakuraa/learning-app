@@ -2,3 +2,8 @@ id: politics-economics-pe02-01
 code: PE02-01
 title: GDPと経済成長
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 107
+  narration: VOICEVOX:ずんだもん

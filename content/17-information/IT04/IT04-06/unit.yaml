@@ -2,3 +2,8 @@ id: information-it04-06
 code: IT04-06
 title: AIの社会的影響と向き合い方
 order: 6
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 125
+  narration: VOICEVOX:ずんだもん

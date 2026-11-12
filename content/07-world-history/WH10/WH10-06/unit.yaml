@@ -2,3 +2,8 @@ id: world-history-wh10-06
 code: WH10-06
 title: 中東戦争とイスラエル・パレスチナ問題
 order: 6
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 106
+  narration: VOICEVOX:ずんだもん

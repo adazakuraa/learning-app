@@ -13,10 +13,10 @@
     - Japanese is **more interesting** than English.（国語は英語よりも面白い）
     - She is a **better** swimmer than her sister.（彼女は妹より水泳が上手い）
 
-- **最上級**は「最も〜だ」を表し、the をつけます。短い形容詞なら、語尾に-est（tall→the tallest）をつけます。長い形容詞なら、前にmost（the most comfortable）
+- **最上級**は「最も〜だ」を表し、the をつけます。短い形容詞なら、語尾に-est（tall→the tallest）をつけます。長い形容詞なら、前にmostをつけます（the most comfortable）。
 - 不規則な変化もあります。
     - good→the best（最高）
     - bad→the worst（最悪）
 - 例：
-    - Whale is **the biggest** animal.（クジラは最も大きい生き物だ）
+    - The blue whale is **the biggest** animal.（シロナガスクジラは最も大きい動物だ）
     - This is **the most convenient** route.（これが最も便利なルートです）

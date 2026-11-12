@@ -2,3 +2,8 @@ id: chemistry-ch06-04
 code: CH06-04
 title: 油脂と石鹸
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 76
+  narration: VOICEVOX:ずんだもん

@@ -1,0 +1,78 @@
+name: Narrate and render videos
+
+# Generates narration with VOICEVOX (free speech synthesis) and renders every stale video
+# (see pipeline/render/stale.mjs), one job per subject in parallel. Results are committed back
+# in small batches so progress survives timeouts. Runs on pushes of video scripts to the working
+# branches; locally rendered MP4s are not needed.
+on:
+  push:
+    branches: ['ccr-*']
+    paths:
+      - 'content/**/video/script.yaml'
+      - '.github/workflows/videos.yml'
+      - 'pipeline/render/**'
+      - 'pipeline/narrate.py'
+      - 'pipeline/voice.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: videos-v2-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  videos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        subject: [math, physics, chemistry, biology, earth-science, information, japanese-ja, japanese-history, english, world-history, geography, politics-economics, philosophy, psychology, sociology, religion, logical-thinking]
+    steps:
+      # check out the branch head (not the triggering commit) so work already pushed is reused
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Anything to do?
+        id: todo
+        run: |
+          npm ci --silent
+          node pipeline/render/stale.mjs "${{ matrix.subject }}" > stale.txt
+          echo "count=$(grep -c . stale.txt || true)" >> "$GITHUB_OUTPUT"
+          echo "stale videos:"; cat stale.txt
+      - uses: actions/setup-python@v5
+        if: steps.todo.outputs.count != '0'
+        with:
+          python-version: '3.12'
+      - name: Install Playwright Chromium, ffmpeg, PyYAML
+        if: steps.todo.outputs.count != '0'
+        run: |
+          npm i --no-save playwright ffmpeg-static ffprobe-static
+          npx playwright install chromium
+          sudo ln -sf "$(node -p "require('ffmpeg-static')")" /usr/local/bin/ffmpeg
+          sudo ln -sf "$(node -p "require('ffprobe-static').path")" /usr/local/bin/ffprobe
+          pip install -q pyyaml
+      - name: Start VOICEVOX engine
+        if: steps.todo.outputs.count != '0'
+        run: |
+          docker run -d --name voicevox -p 50021:50021 voicevox/voicevox_engine:cpu-latest > /dev/null
+          for i in $(seq 1 60); do curl -sf http://localhost:50021/version && exit 0; sleep 5; done
+          docker logs voicevox | tail -30; exit 1
+      - name: Narrate
+        if: steps.todo.outputs.count != '0'
+        run: |
+          python3 pipeline/narrate.py --filter "${{ matrix.subject }}"
+          pipeline/ci-commit.sh "Narration: ${{ matrix.subject }}"
+      - name: Render (committing every few videos)
+        if: steps.todo.outputs.count != '0'
+        run: |
+          node pipeline/render/stale.mjs "${{ matrix.subject }}" > todo.txt
+          echo "rendering $(grep -c . todo.txt) videos"
+          split -l 4 todo.txt chunk_
+          for c in chunk_*; do
+            cat "$c" | xargs -r -P 2 -I{} node pipeline/render/render.mjs {}
+            pipeline/ci-commit.sh "Videos: ${{ matrix.subject }}"
+          done

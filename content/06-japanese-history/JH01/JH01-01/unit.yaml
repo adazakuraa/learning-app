@@ -2,3 +2,8 @@ id: japanese-history-jh01-01
 code: JH01-01
 title: 縄文文化の特徴
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 119
+  narration: VOICEVOX:ずんだもん

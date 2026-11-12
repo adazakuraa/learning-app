@@ -2,3 +2,8 @@ id: earth-science-es05-01
 code: ES05-01
 title: 海流と気候への影響
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 83
+  narration: VOICEVOX:ずんだもん

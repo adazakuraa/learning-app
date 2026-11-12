@@ -1,0 +1,71 @@
+title: 命題と真偽
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「命題と真偽」です。
+        show:
+          - { type: title, text: 命題と真偽 }
+      - say: 命題とは、正しいか、正しくないかを、はっきり判定できる文のことです。正しいことを「真」、正しくないことを「偽」といいます。
+        show:
+          - { type: text, size: l, text: "**命題** ＝ 正しい（**真**）か 正しくない（**偽**）か 決められる文" }
+      - say: 「東京は日本の首都だ」は真。「2＋2＝5だ」は偽。どちらも、はっきり決められるので、命題です。
+        show:
+          - { type: text, color: green, text: "「東京は日本の首都だ」 → 真" }
+          - { type: text, color: pink, text: "「2 ＋ 2 ＝ 5 だ」 → 偽" }
+      - say: 一方、「数学はおもしろい」は、人によって答えが違います。判定できないので、命題とはいいません。
+        show:
+          - { type: text, color: gray, text: "「数学はおもしろい」 → 人による（命題ではない）" }
+
+  - board: whiteboard
+    steps:
+      - say: 数学で特に大事なのは、「AならばB」という形の命題です。
+        show:
+          - { type: title, text: "「A ならば B」" }
+          - { type: formula, size: l, color: yellow, tex: 'A \Rightarrow B' }
+      - say: たとえば、「三角形ならば、内角の和は180度だ」。三角形であれば、必ずそうなる、という意味です。
+        show:
+          - { type: text, text: "三角形 ⇒ 内角の和は180°" }
+
+  - board: whiteboard
+    steps:
+      - say: 注意したいのは、「AならばB」が正しくても、ひっくり返した「BならばA」、つまり「逆」は、正しいとは限らないことです。
+        show:
+          - { type: title, text: 逆は正しいとは限らない }
+      - say: 「雨が降る、ならば、地面がぬれる」は正しいですね。
+        show:
+          - { type: text, color: green, text: "雨が降る ⇒ 地面がぬれる（真）" }
+      - say: でも、「地面がぬれている、ならば、雨が降った」とは言えません。だれかが水をまいたのかもしれないからです。
+        show:
+          - { type: text, color: pink, text: "地面がぬれている ⇒ 雨が降った（？）" }
+          - { type: text, size: s, color: gray, text: "水まきかもしれない！" }
+      - say: ベン図で見ると、雨の日はすべて地面がぬれる日の中に入っていますが、地面がぬれる日の中には、雨以外の日もふくまれています。
+        added: true
+        show:
+          - type: svg
+            at: [700, 180]
+            w: 520
+            h: 360
+            color: blue
+            markup: |
+              <ellipse cx="260" cy="180" rx="240" ry="160"/>
+              <g fill="currentColor" stroke="none" font-size="24"><text x="320" y="110">地面がぬれる</text><text x="330" y="260">（水まき など）</text></g>
+          - type: svg
+            at: [700, 180]
+            w: 520
+            h: 360
+            color: yellow
+            markup: |
+              <circle cx="180" cy="190" r="80"/>
+              <g fill="currentColor" stroke="none" font-size="26" text-anchor="middle"><text x="180" y="198">雨</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: まとめです。
+        show:
+          - { type: title, text: まとめ }
+      - say: 命題は、真か偽かを決められる文。特に大事なのが、「AならばB」の形です。
+        show:
+          - { type: text, text: "**命題**：真か偽か決められる文　／　大事な形：A ⇒ B" }
+      - say: 「AならばB」が正しくても、その逆「BならばA」が正しいとは限りません。
+        show:
+          - { type: text, text: "A ⇒ B が真でも、B ⇒ A（逆）は真とは限らない" }

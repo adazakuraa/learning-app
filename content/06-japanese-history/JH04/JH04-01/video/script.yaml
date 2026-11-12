@@ -1,0 +1,52 @@
+title: 平安京遷都
+scenes:
+  - board: slide
+    steps:
+      - say: 第4章、「平安時代」です。
+        show:
+          - { type: title, text: 第4章　平安時代 }
+      - say: 都が京都に移り、藤原氏が力をふるいます。ひらがなが生まれ、源氏物語が書かれ、やがて武士が登場するまでの、およそ400年です。
+        show:
+          - type: list
+            items: ["平安京遷都", "藤原氏の摂関政治", "国風文化と仮名文字", "浄土信仰と末法思想", "武士の台頭と院政", "平氏政権"]
+      - say: 中国のまねから、日本らしい文化へ。そして、貴族の時代から、武士の時代へ。二つの大きな切りかわりに注目してください。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "「中国風 → 日本風」「貴族 → 武士」という二つの転換をつかむ" }
+
+  - board: whiteboard
+    steps:
+      - say: 784年、桓武天皇は、奈良を出て、長岡京へ都を移します。
+        read: 784年、かんむてんのうは、奈良を出て、長岡京へ都を移します。
+        show:
+          - { type: title, text: 都が京都へ }
+          - type: svg
+            at: [80, 150]
+            w: 1120
+            h: 160
+            anim: draw
+            markup: |
+              <rect x="10" y="40" width="260" height="80" rx="12" stroke="#9aa3ad"/>
+              <rect x="430" y="40" width="260" height="80" rx="12" stroke="#9aa3ad"/>
+              <rect x="850" y="40" width="260" height="80" rx="12" stroke="#f3d77a"/>
+              <path d="M280 80 L420 80"/><path d="M402 68 L422 80 L402 92"/>
+              <path d="M700 80 L840 80"/><path d="M822 68 L842 80 L822 92"/>
+              <g stroke="none" font-size="28" fill="#e8eef5" text-anchor="middle"><text x="140" y="90">平城京（奈良）</text><text x="560" y="90">長岡京</text><text x="980" y="90">平安京（京都）</text><text x="350" y="30" font-size="22">784年</text><text x="770" y="30" font-size="22">794年</text></g>
+      - say: そしてわずか10年後の794年、今度は平安京、今の京都へ移ります。ここから、およそ1100年ものあいだ、京都が都であり続けました。
+        show:
+          - { type: text, at: [80, 340], w: 1120, size: l, text: "**794年** 平安京 → 約 **1100年** 都であり続ける" }
+
+  - board: whiteboard
+    steps:
+      - say: なぜ奈良を出たかったのでしょうか。理由の一つは、奈良のお寺の勢力が、政治に口を出しすぎるようになっていたからです。
+        show:
+          - { type: title, text: なぜ奈良を出た？ }
+          - { type: box, at: [80, 140], w: 1120, color: yellow, title: 理由の一つ, text: "奈良の大寺院（東大寺など）が **政治に口を出しすぎ**" }
+      - say: お坊さんが権力を持ちすぎると困る、という教訓は、前の章の道鏡の事件で、身にしみていたわけです。
+        read: お坊さんが権力を持ちすぎると困る、という教訓は、前の章のどうきょうの事件で、身にしみていたわけです。
+        show:
+          - { type: text, at: [80, 320], w: 1120, text: "教訓：道鏡の事件（奈良時代）" }
+      - say: 古い人間関係から離れて、一から出直すために、引っ越す。会社や個人でも、よくある判断ですね。
+        added: true
+        show:
+          - { type: text, at: [80, 420], w: 1120, color: gray, text: "しがらみを断ち切るための「引っ越し」" }

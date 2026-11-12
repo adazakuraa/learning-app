@@ -2,3 +2,8 @@ id: biology-bi02-02
 code: BI02-02
 title: 原核細胞と真核細胞
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 80
+  narration: VOICEVOX:ずんだもん

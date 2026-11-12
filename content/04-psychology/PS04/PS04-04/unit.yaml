@@ -2,3 +2,8 @@ id: psychology-ps04-04
 code: PS04-04
 title: ストレスと心身の関係
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 104
+  narration: VOICEVOX:ずんだもん

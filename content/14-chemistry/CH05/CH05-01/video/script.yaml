@@ -1,0 +1,85 @@
+title: 水の特別な性質
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「水溶液と身近な化学」の章です。
+        show:
+          - { type: title, text: 第5章　水溶液と身近な化学 }
+      - say: この章では、身近でとても特別な物質、水の性質と、ものが水にとけるしくみ、そして、電池と電気分解を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["水の特別な性質", "溶解と濃度", "電池と電気分解"]
+      - say: 氷が水に浮くこと、油が水にとけないこと、スマホの電池。当たり前の現象の裏にある、化学のしくみを見ていきましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "水の特別さと、「とける」「電池」のしくみを理解する" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「水の特別な性質」です。水は、化学的に見ると、とても特殊な物質です。分子の重さから予想すると、沸点はマイナス80度くらいのはず。でも実際は、100度です。
+        show:
+          - { type: title, text: 水は特別 }
+          - { type: text, text: "分子の重さから予想される沸点：約 −80℃　→　実際は **100℃**" }
+      - say: これは、水の分子どうしが、「水素結合」という特別な力で、強く引き合っているからです。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "水の分子どうしが **水素結合** で強く引き合っている" }
+
+  - board: whiteboard
+    steps:
+      - say: 水素結合とは、水の分子の中の、プラスに偏った水素が、となりの水の分子の、マイナスに偏った酸素と引き合う結びつきです。
+        show:
+          - { type: title, text: 水素結合 }
+          - type: svg
+            w: 1000
+            h: 260
+            markup: |
+              <circle cx="250" cy="130" r="50" stroke="#f4a3b8"/><circle cx="180" cy="200" r="30"/><circle cx="330" cy="190" r="30"/>
+              <circle cx="650" cy="110" r="50" stroke="#f4a3b8"/><circle cx="720" cy="40" r="30"/><circle cx="740" cy="160" r="30"/>
+              <path d="M365 180 L600 125" stroke="#f3d77a" stroke-dasharray="8 8"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="250" y="138" fill="#f4a3b8">O（−）</text><text x="330" y="198">H（＋）</text><text x="650" y="118" fill="#f4a3b8">O（−）</text><text x="480" y="130" fill="#f3d77a">水素結合</text></g>
+      - say: ふつうの分子どうしの引力より強いので、水は、沸点や融点、表面張力、そして、温まりにくく冷めにくい性質が、予想よりずっと高くなっています。
+        show:
+          - { type: text, text: "沸点・融点・表面張力・温まりにくさ（比熱）が予想より高い" }
+      - say: 海のそばの町が、夏は涼しく冬は暖かいのも、海の水が温まりにくく、冷めにくいからです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "海辺の町が夏涼しく冬暖かいのも、水の温まりにくさのおかげ" }
+
+  - board: whiteboard
+    steps:
+      - say: 水のいちばん身近な、ふしぎな性質が、「氷が水に浮く」ことです。ほとんどのものは、固体のほうが液体より詰まっていて重いので、沈みます。
+        show:
+          - { type: title, text: 氷は水に浮く }
+      - say: でも氷は、水素結合のせいで、すき間の多い形に並びます。そのため、水より軽くなって、浮くのです。冬の池が、表面から凍って、下の魚が生きのびられるのも、このおかげです。
+        show:
+          - type: svg
+            w: 1000
+            h: 240
+            markup: |
+              <path d="M40 100 H960" stroke="#8fc4ff"/><rect x="40" y="100" width="920" height="130" fill="#8fc4ff" fill-opacity="0.12" stroke="none"/>
+              <rect x="380" y="60" width="240" height="70" stroke="#eef0ea"/>
+              <text x="500" y="105" font-size="26" fill="currentColor" stroke="none" text-anchor="middle">氷（すき間が多い）</text>
+              <text x="760" y="190" font-size="24" fill="#8fc4ff" stroke="none">魚は下で生きのびる</text>
+          - { type: text, color: yellow, text: "氷はすき間が多い → 水より軽い → 浮く" }
+
+  - board: whiteboard
+    steps:
+      - say: 水は、「万能溶媒」と呼ばれ、いろいろなものをとかします。それは、水が「極性分子」だからです。極性とは、電気の偏りのことです。
+        show:
+          - { type: title, text: 水は「万能溶媒」 }
+          - { type: text, text: "水は **極性分子**（電気の偏りがある）→ いろいろなものをとかす" }
+      - say: 食塩を水に入れると、水の分子のマイナス側、酸素の側がナトリウムイオンを、プラス側、水素の側が塩化物イオンを取り囲み、イオンがばらばらになって、水の中に散らばります。これが、「とける」ということです。
+        show:
+          - type: svg
+            w: 1000
+            h: 220
+            markup: |
+              <circle cx="250" cy="110" r="36" stroke="#8fc4ff"/><text x="250" y="120" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">Na⁺</text>
+              <circle cx="700" cy="110" r="40" stroke="#9be0b0"/><text x="700" y="120" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">Cl⁻</text>
+              <g stroke="#f4a3b8"><circle cx="160" cy="60" r="18"/><circle cx="340" cy="60" r="18"/><circle cx="160" cy="165" r="18"/><circle cx="340" cy="165" r="18"/></g>
+              <g stroke="#eef0ea"><circle cx="610" cy="60" r="14"/><circle cx="790" cy="60" r="14"/><circle cx="610" cy="165" r="14"/><circle cx="790" cy="165" r="14"/></g>
+              <g stroke="none" font-size="20" fill="#9aa3ad"><text x="120" y="215">水の O 側（−）が囲む</text><text x="580" y="215">水の H 側（＋）が囲む</text></g>
+      - say: 一方、油は電気の偏りがない分子なので、水にとけません。「水と油」という言葉は、ここから来ています。
+        show:
+          - { type: text, color: pink, text: "油は偏りがない（無極性）→ 水にとけない" }

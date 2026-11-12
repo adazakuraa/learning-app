@@ -2,3 +2,8 @@ id: biology-bi03-01
 code: BI03-01
 title: DNAの構造と役割
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 99
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: psychology-ps06-01
 code: PS06-01
 title: 他者の存在が行動を変える
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 118
+  narration: VOICEVOX:ずんだもん

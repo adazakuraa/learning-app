@@ -1,0 +1,92 @@
+title: 文字式の意味
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「文字と式・方程式」の章です。
+        show:
+          - { type: title, text: 第2章　文字と式・方程式 }
+      - say: この章では、xやyといった文字を使って、まだわからない数を式で表し、それを求める方法を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["文字式の意味", "一次方程式", "連立方程式", "不等式", "練習問題"]
+      - say: 「わからない数を文字で置いて、条件から答えを出す」。これは、買い物の計算から仕事の見積もりまで使える、とても便利な考え方です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "わからない数を文字で表し、条件から答えを求められるようになる" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「文字式の意味」です。
+        show:
+          - { type: title, text: 文字式の意味 }
+      - say: 算数が「数学」に変わる、いちばん大きな変化。それが、文字の登場です。
+        show:
+          - { type: text, size: l, text: "算数 → 数学　最大の変化は **文字の登場**" }
+      - say: xやyのような文字のことを「変数」といいます。中に入る数が変わる、入れ物のようなものです。
+        show:
+          - type: svg
+            w: 700
+            h: 170
+            color: yellow
+            markup: |
+              <rect x="20" y="20" width="160" height="120" rx="12"/>
+              <g fill="currentColor" stroke="none" font-size="64" text-anchor="middle"><text x="100" y="105">x</text></g>
+              <g fill="currentColor" stroke="none" font-size="30"><text x="220" y="70">＝ 変数</text><text x="220" y="120">（いろいろな数が入る入れ物）</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: たとえば、りんご1個の値段をx円とします。
+        show:
+          - { type: title, text: りんごで考えよう }
+          - type: svg
+            at: [80, 150]
+            w: 600
+            h: 140
+            color: pink
+            markup: |
+              <circle cx="60" cy="70" r="45"/><path d="M60 25 Q66 10 80 6"/>
+              <g fill="currentColor" stroke="none" font-size="34"><text x="130" y="82">1個 ＝ x 円</text></g>
+      - say: 3個買うと、x円が3つなので、3x円と表せます。
+        show:
+          - type: svg
+            at: [80, 310]
+            w: 700
+            h: 140
+            color: pink
+            markup: |
+              <circle cx="60" cy="70" r="45"/><circle cx="170" cy="70" r="45"/><circle cx="280" cy="70" r="45"/>
+              <g fill="currentColor" stroke="none" font-size="34"><text x="350" y="82">3個 ＝ 3x 円</text></g>
+      - say: xが100なら、3xは300円。xが200なら、600円。値段が変わっても、「3x」という同じ式で表せるのが、文字を使う便利なところです。
+        show:
+          - { type: text, at: [80, 480], text: "x ＝ 100 → 3x ＝ **300円**" }
+          - { type: text, at: [80, 550], text: "x ＝ 200 → 3x ＝ **600円**" }
+          - { type: box, at: [700, 470], w: 500, color: yellow, text: "値段が変わっても\n同じ式「3x」で表せる" }
+
+  - board: whiteboard
+    steps:
+      - say: 文字式には、書き方のルールがあります。
+        show:
+          - { type: title, text: 文字式の書き方 }
+      - say: かけ算の記号は省略します。2×xは、「2x」と書きます。
+        show:
+          - { type: formula, size: l, tex: '2 \times x \;\rightarrow\; 2x' }
+      - say: また、1×xは、1を省略して、ただの「x」と書きます。
+        show:
+          - { type: formula, size: l, tex: '1 \times x \;\rightarrow\; x' }
+      - say: 数字は文字の前に書くのが決まりです。x×3も、3xと書きます。
+        added: true
+        show:
+          - { type: formula, size: l, tex: 'x \times 3 \;\rightarrow\; 3x' }
+
+  - board: whiteboard
+    steps:
+      - say: まとめです。
+        show:
+          - { type: title, text: まとめ }
+      - say: xやyのような文字を変数といい、いろいろな数を入れられる入れ物のように使えます。
+        show:
+          - { type: text, text: "**変数**（x, y）＝ いろいろな数が入る入れ物" }
+      - say: 文字を使うと、数が変わっても同じ式で表せます。書くときは、かけ算の記号と1を省略します。
+        show:
+          - { type: text, text: "りんご3個 → 3x 円　／　2×x → 2x、1×x → x" }

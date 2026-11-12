@@ -1,0 +1,71 @@
+title: 不等式
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「不等式」です。
+        show:
+          - { type: title, text: 不等式 }
+      - say: 方程式は「等しい」関係を表しましたが、不等式は、「大きい・小さい」の関係を表します。
+        show:
+          - { type: text, text: "方程式 … **等しい**（＝）" }
+          - { type: text, text: "不等式 … **大小**（＞、≦ など）" }
+      - say: x＞3は、「xは3より大きい」。x≦5は、「xは5以下」、つまり5も含めて5より小さいという意味です。
+        show:
+          - { type: formula, tex: 'x > 3 \quad \text{（3より大きい）}' }
+          - { type: formula, tex: 'x \leqq 5 \quad \text{（5以下）}' }
+      - say: たとえば、「身長120センチ以上の人だけ乗れる乗り物」は、身長をxとすると、x≧120と書けます。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "例：身長120cm以上 → x ≧ 120" }
+
+  - board: whiteboard
+    steps:
+      - say: 不等式の解は、ひとつの数ではなく、「範囲」になります。
+        show:
+          - { type: title, text: 解は「範囲」 }
+      - say: x＞3の解は、「3より大きいすべての数」。数直線で表すと、3から右側全部です。3そのものは含まないので、白い丸で表します。
+        added: true
+        show:
+          - type: svg
+            at: [80, 220]
+            w: 1120
+            h: 180
+            markup: |
+              <path d="M20 100 H1100"/><path d="M1084 90 L1100 100 L1084 110"/>
+              <path d="M170 88 V112"/><path d="M370 88 V112"/><path d="M570 88 V112"/><path d="M770 88 V112"/><path d="M970 88 V112"/>
+              <g fill="currentColor" stroke="none" font-size="28" text-anchor="middle"><text x="170" y="150">1</text><text x="370" y="150">2</text><text x="570" y="150">3</text><text x="770" y="150">4</text><text x="970" y="150">5</text></g>
+          - type: svg
+            at: [80, 220]
+            w: 1120
+            h: 180
+            color: yellow
+            markup: |
+              <circle cx="570" cy="60" r="12"/><path d="M582 60 H1080" stroke-width="6"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="700" y="35">x ＞ 3</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: ひとつだけ、注意が必要なことがあります。不等式の両辺にマイナスをかけたり、マイナスで割ったりすると、大小の向きが逆になります。
+        show:
+          - { type: title, text: 注意！マイナスをかけると逆転 }
+      - say: たとえば、－x＞－3の両辺に－1をかけると、x＜3になります。どちらの不等式も、言っていることは同じです。
+        show:
+          - { type: formula, size: l, tex: '-x > -3' }
+          - { type: formula, size: l, color: pink, tex: '\downarrow \; \times(-1)' }
+          - { type: formula, size: l, color: green, tex: 'x < 3' }
+      - say: なぜ逆転するのか。2と5なら、5のほうが大きいですね。でも、マイナスをつけると、－2と－5では、－2のほうが大きくなります。マイナスをかけると、大小が入れかわるのです。
+        added: true
+        show:
+          - { type: box, at: [640, 160], w: 560, color: gray, text: "2 ＜ 5\n－2 ＞ －5（大小が逆に）" }
+
+  - board: whiteboard
+    steps:
+      - say: まとめです。
+        show:
+          - { type: title, text: まとめ }
+      - say: 不等式は大小関係を表し、その解は、ひとつの数ではなく範囲になります。
+        show:
+          - { type: text, text: "**不等式** ＝ 大小関係　／　解は **範囲**" }
+      - say: マイナスをかけたり割ったりするときは、不等号の向きが逆になることに注意しましょう。
+        show:
+          - { type: text, text: "マイナスをかける・割る → **不等号の向きが逆**" }

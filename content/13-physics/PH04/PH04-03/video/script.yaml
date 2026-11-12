@@ -1,0 +1,53 @@
+title: 光の性質
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「光の性質」です。
+        show:
+          - { type: title, text: 光の性質 }
+      - say: 光は、真空の中を秒速およそ30万キロメートルで進む、電磁波です。電磁波については、この章の最後でくわしく学びます。光も、波の一種なのです。
+        show:
+          - { type: text, size: l, text: "**光** ＝ 秒速 約30万km で進む電磁波（波の一種）" }
+      - say: 1秒間に、地球を7周半するほどの速さです。光は宇宙で最も速く、何ものも、光より速く進むことはできないことが知られています。
+        show:
+          - { type: text, text: "1秒で地球を約7周半　→ 宇宙で最速。何ものも光をこえられない" }
+
+  - board: whiteboard
+    steps:
+      - say: 光が、ちがう物質の境目を通るときに、進む向きが曲がる現象を、「屈折」といいます。
+        show:
+          - { type: title, text: 屈折 }
+          - type: svg
+            at: [80, 160]
+            w: 600
+            h: 440
+            markup: |
+              <path d="M20 200 H580" stroke="#9aa3ad"/>
+              <rect x="20" y="200" width="560" height="230" fill="#8fc4ff" fill-opacity="0.12" stroke="none"/>
+              <path d="M80 20 L300 200" stroke="#f3d77a"/><path d="M300 200 L400 420" stroke="#f3d77a"/>
+              <g stroke="none" font-size="26"><text x="40" y="190" fill="#9aa3ad">空気</text><text x="40" y="420" fill="#8fc4ff">水</text></g>
+      - say: 水の中に棒を入れると、折れ曲がって見えますね。これは、水の中から出てくる光が、水面で曲がるためです。
+        show:
+          - { type: text, at: [740, 240], w: 480, text: "水に入れた棒が折れて見える ＝ 屈折" }
+
+  - board: whiteboard
+    steps:
+      - say: 白い光が、プリズムなどを通って、いくつもの色に分かれる現象を、「分散」といいます。
+        show:
+          - { type: title, text: 分散と虹 }
+          - type: svg
+            at: [80, 150]
+            w: 900
+            h: 330
+            markup: |
+              <path d="M300 300 L420 60 L540 300 Z"/>
+              <path d="M40 200 L380 180" stroke="#eef0ea"/>
+              <path d="M470 175 L860 60" stroke="#ff6b6b"/><path d="M475 182 L860 100" stroke="#ffb347"/><path d="M478 190 L860 140" stroke="#f3d77a"/>
+              <path d="M480 198 L860 180" stroke="#9be0b0"/><path d="M482 206 L860 220" stroke="#8fc4ff"/><path d="M484 214 L860 260" stroke="#b39ddb"/>
+              <text x="40" y="240" font-size="24" fill="#9aa3ad" stroke="none">白い光</text>
+      - say: 光の色は、波長で決まります。そして、波長によって、屈折する角度が少しずつちがうので、プリズムを通ると、色ごとに分かれるのです。
+        show:
+          - { type: text, at: [80, 510], text: "色は **波長** で決まる → 曲がり方がちがう → 色ごとに分かれる" }
+      - say: 虹は、空気中の水のつぶが、プリズムの役割をして、太陽の光を分散させたものです。
+        show:
+          - { type: text, at: [80, 590], color: yellow, text: "**虹** ＝ 空の水滴がプリズムになって、太陽光を分けたもの" }

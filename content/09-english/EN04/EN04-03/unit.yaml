@@ -2,3 +2,8 @@ id: english-en04-03
 code: EN04-03
 title: 可算名詞と不可算名詞
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 98
+  narration: VOICEVOX:ずんだもん

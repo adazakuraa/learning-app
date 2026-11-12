@@ -2,3 +2,8 @@ id: philosophy-ph03-03
 code: PH03-03
 title: 運と人生・道徳的運
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 111
+  narration: VOICEVOX:ずんだもん

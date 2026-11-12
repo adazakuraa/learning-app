@@ -2,3 +2,8 @@ id: world-history-wh06-02
 code: WH06-02
 title: コロンブスと大航海時代
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 121
+  narration: VOICEVOX:ずんだもん

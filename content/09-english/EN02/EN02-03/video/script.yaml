@@ -1,0 +1,33 @@
+title: 三単現のs・複数形
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「三単現のs」です。まず、人称を整理しましょう。I、私、やwe、私たちのような、自分たちのことを一人称。you、あなたを二人称。それ以外を三人称と呼びます。
+        read: 「三単現のエス」です。まず、人称を整理しましょう。アイ、私、やウィー、私たちのような、自分たちのことを一人称。ユー、あなたを二人称。それ以外を三人称と呼びます。
+        show:
+          - { type: title, text: 三単現の s }
+          - { type: text, color: blue, text: "一人称：I・we　二人称：you　三人称：それ以外（he・she・it・Tom…）" }
+      - say: 主語が、三人称で、単数で、現在の文のとき、一般動詞の最後に、sかesをつけます。これを、三単現のsといいます。
+        read: 主語が、三人称で、単数で、現在の文のとき、一般動詞の最後に、エスかイーエスをつけます。これを、三単現のエスといいます。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "**三**人称・**単**数・**現**在 → 動詞に s / es（三単現の s）" }
+      - say: I walk to school が、She walks to school. You watch movies が、He watches movies. They study English が、My brother studies English. 少し形が変わることもあります。
+        read: アイ、ウォーク、トゥー、スクールが、シー、ウォークス、トゥー、スクール。ユー、ウォッチ、ムービーズが、ヒー、ウォッチーズ、ムービーズ。スタディーは、スタディーズのように、少し形が変わることもあります。
+        show:
+          - { type: text, color: green, text: "I walk → She **walks**" }
+          - { type: text, color: green, text: "You watch → He **watches**" }
+          - { type: text, color: green, text: "They study → My brother **studies**" }
+
+  - board: whiteboard
+    steps:
+      - say: 名詞の複数形も、同じようなルールでつくります。多くは、sをつけるだけですが、形が大きく変わるものもあります。
+        read: 名詞の複数形も、同じようなルールでつくります。多くは、エスをつけるだけですが、形が大きく変わるものもあります。
+        show:
+          - { type: title, text: 複数形 }
+          - { type: text, text: "ふつうは s をつける：book → books" }
+      - say: child、子どもはchildren。foot、足はfeet。sheep、羊は、そのまま変わりません。
+        read: チャイルド、子どもは、チルドレン。フット、足は、フィート。シープ、羊は、そのまま変わりません。
+        show:
+          - { type: text, color: pink, text: "child（子ども）→ **children**" }
+          - { type: text, color: pink, text: "foot（足）→ **feet**" }
+          - { type: text, color: pink, text: "sheep（羊）→ **sheep**（変わらない）" }

@@ -2,3 +2,8 @@ id: japanese-history-jh01-03
 code: JH01-03
 title: 邪馬台国と卑弥呼
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 67
+  narration: VOICEVOX:ずんだもん

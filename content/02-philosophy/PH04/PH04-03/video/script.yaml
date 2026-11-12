@@ -1,0 +1,44 @@
+title: 倫理的ジレンマ
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「倫理的ジレンマ」です。トロッコ問題という、有名な思考実験があります。暴走するトロッコが、線路の先の5人に向かっています。あなたがレバーを引けば、進路を変えて、別の線路の1人のほうへ向かわせることができます。レバーを引くべきでしょうか。
+        show:
+          - { type: title, text: トロッコ問題 }
+          - type: svg
+            w: 1100
+            h: 260
+            markup: |
+              <path d="M20 130 H500 L1000 60 M500 130 L1000 200" stroke="#9aa3ad" stroke-width="4"/>
+              <rect x="60" y="100" width="90" height="50" rx="8" stroke="#f3d77a"/>
+              <g fill="#f4a3b8" stroke="none"><circle cx="880" cy="55" r="12"/><circle cx="910" cy="60" r="12"/><circle cx="940" cy="55" r="12"/><circle cx="970" cy="60" r="12"/><circle cx="1000" cy="55" r="12"/></g>
+              <circle cx="960" cy="200" r="12" fill="#8fc4ff" stroke="none"/>
+              <path d="M480 160 L460 220" stroke="#9be0b0" stroke-width="5"/>
+              <g stroke="none" font-size="22"><text x="860" y="30" fill="#f4a3b8">5人</text><text x="980" y="240" fill="#8fc4ff">1人</text><text x="380" y="250" fill="#9be0b0">レバー</text></g>
+      - say: 多くの人は、1人の犠牲で5人が救われるなら、引く、と答えます。結果を重視する、功利主義的な判断ですね。
+        show:
+          - { type: text, color: yellow, text: "多くの人は「引く」（功利主義的な判断）" }
+
+  - board: whiteboard
+    steps:
+      - say: 変形版に、歩道橋問題があります。歩道橋の上から、体の大きな人をつき落とせば、その体でトロッコを止めて、5人を救えます。トロッコ問題と同じ、1人対5人の構造ですが、多くの人は、つき落とさない、と答えます。
+        show:
+          - { type: title, text: 歩道橋問題 }
+          - { type: box, color: pink, w: 1100, text: "歩道橋から人をつき落とせば5人が助かる → 多くの人は「つき落とさない」" }
+      - say: なぜ、このちがいが生まれるのでしょうか。心理学者グリーンの研究では、自分の手で直接おす行為が、強い感情の反応を引き起こすためだ、とされています。
+        show:
+          - { type: text, text: "グリーンの研究：自分の手で直接おす → 強い感情の反応" }
+
+  - board: whiteboard
+    steps:
+      - say: この実験が示しているのは、私たちの道徳的な直感は、状況の表面的なちがいに、左右される、ということです。本質が同じでも、ちがう判断をすることがあるのです。
+        show:
+          - { type: title, text: 直感は大切。でも万能ではない }
+          - { type: box, color: yellow, w: 1100, text: "道徳的な直感は、表面的なちがいに左右される" }
+      - say: 直感は、大事な道徳の情報をふくんでいます。でも、いつも正しいとは限りません。直感と、理屈の両方を照らし合わせながら考えることが、大切なのです。
+        show:
+          - { type: text, color: green, text: "直感と理屈、両方を照らし合わせて考える" }
+      - say: ちなみに、自動運転の車が、事故をさけられないとき、どちらをさけるようにプログラムするか、という形で、この問題は、現実の課題にもなっています。
+        added: true
+        show:
+          - { type: text, color: gray, text: "現代版：自動運転の車は、さけられない事故でどう動くべきか" }

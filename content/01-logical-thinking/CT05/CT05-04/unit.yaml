@@ -2,3 +2,8 @@ id: logical-thinking-ct05-04
 code: CT05-04
 title: SNSと情報の生態系
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 61
+  narration: VOICEVOX:ずんだもん

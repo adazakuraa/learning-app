@@ -2,3 +2,8 @@ id: japanese-history-jh06-04
 code: JH06-04
 title: 応仁の乱と戦国時代
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 61
+  narration: VOICEVOX:ずんだもん

@@ -1,0 +1,63 @@
+title: オームの法則と回路
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「オームの法則と回路」です。
+        show:
+          - { type: title, text: オームの法則と回路 }
+      - say: 電圧、電流、抵抗の関係を表す、基本の法則が、オームの法則です。電圧＝電流×抵抗。V＝IRです。
+        show:
+          - { type: formula, size: xl, color: yellow, tex: 'V = IR' }
+          - { type: text, size: s, color: gray, text: "V：電圧　I：電流　R：抵抗" }
+      - say: 電圧が大きいほど、電流はたくさん流れ、抵抗が大きいほど、電流は流れにくい、ということを表しています。
+        show:
+          - { type: text, text: "電圧 ↑ → 電流 ↑　　抵抗 ↑ → 電流 ↓" }
+      - say: たとえば、100ボルトの電圧に、50オームの抵抗をつなぐと、電流は100÷50で、2アンペアです。
+        added: true
+        show:
+          - { type: formula, color: green, tex: 'I = \frac{V}{R} = \frac{100}{50} = 2\ \text{A}' }
+
+  - board: whiteboard
+    steps:
+      - say: 電気回路には、2つの基本のつなぎ方があります。1つ目は、部品を一列につなぐ「直列回路」。電流の通り道がひとつなので、どこでも同じ電流が流れます。そして、1か所切れると、全体が止まります。
+        show:
+          - { type: title, text: 直列回路と並列回路 }
+          - type: svg
+            at: [80, 160]
+            w: 500
+            h: 300
+            color: blue
+            markup: |
+              <rect x="40" y="40" width="420" height="220"/>
+              <circle cx="180" cy="40" r="24" fill="#1d2622"/><circle cx="320" cy="40" r="24" fill="#1d2622"/>
+              <path d="M30 140 H50 M38 120 V160 M50 130 V150" stroke="#f3d77a"/>
+              <text x="160" y="320" font-size="28" fill="currentColor" stroke="none">直列回路</text>
+      - say: 古いクリスマスツリーの電球が、1個切れると全部消えてしまったのは、このためです。
+        show:
+          - { type: text, at: [80, 520], size: s, w: 500, color: gray, text: "1か所切れると全部止まる（古いクリスマスツリーの電球）" }
+      - say: 2つ目は、部品を何本かの道に分けてつなぐ「並列回路」。電流はそれぞれの道に分かれて流れ、1か所が切れても、ほかの道は生きています。
+        show:
+          - type: svg
+            at: [680, 160]
+            w: 500
+            h: 300
+            color: pink
+            markup: |
+              <path d="M40 40 H460 V260 H40 Z"/><path d="M180 40 V260"/><path d="M320 40 V260"/>
+              <circle cx="180" cy="150" r="24" fill="#1d2622"/><circle cx="320" cy="150" r="24" fill="#1d2622"/>
+              <path d="M30 140 H50 M38 120 V160 M50 130 V150" stroke="#f3d77a"/>
+              <text x="160" y="320" font-size="28" fill="currentColor" stroke="none">並列回路</text>
+      - say: 家のコンセントは並列回路です。だから、電子レンジが壊れても、部屋の照明は消えません。
+        show:
+          - { type: text, at: [680, 520], size: s, w: 500, color: gray, text: "1か所切れても他は動く（家のコンセント）" }
+
+  - board: whiteboard
+    steps:
+      - say: 電気製品が1秒間に使う電気の量、消費電力は、P＝RI²、抵抗×電流の2乗で計算できます。
+        show:
+          - { type: title, text: 消費電力とジュール熱 }
+          - { type: formula, size: l, color: yellow, tex: 'P = RI^2' }
+      - say: 電流が抵抗の中を流れるとき、電子が抵抗の中の原子にぶつかって、熱が生まれます。これを、ジュール熱といいます。電気ストーブやドライヤーは、この熱を利用しています。
+        show:
+          - { type: text, text: "電子が原子にぶつかる → 熱（**ジュール熱**）" }
+          - { type: text, size: s, color: gray, text: "電気ストーブ・ドライヤー・トースターはこの熱を利用" }

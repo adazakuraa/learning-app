@@ -1,0 +1,53 @@
+title: 単位円と三角関数
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「単位円と三角関数」です。
+        show:
+          - { type: title, text: 単位円と三角関数 }
+      - say: 直角三角形を使った定義では、90度より大きい角度を扱えません。そこで、少し考え方を広げます。鍵になるのが、半径1の円、「単位円」です。
+        show:
+          - { type: text, text: "直角三角形だと 90° 以上が扱えない → **単位円**（半径1の円）で広げる" }
+
+  - board: whiteboard
+    steps:
+      - say: グラフの上に、単位円をかきます。円の上の点Pと原点を結び、Pからx軸に垂直な線を下ろすと、斜辺が1の直角三角形ができます。
+        show:
+          - { type: title, text: 単位円 }
+          - type: svg
+            at: [100, 140]
+            w: 560
+            h: 560
+            markup: |
+              <path d="M20 280 H540" stroke="#9aa3ad"/><path d="M280 540 V20" stroke="#9aa3ad"/>
+              <circle cx="280" cy="280" r="200"/>
+              <path d="M280 280 L422 139" stroke="#f3d77a"/><path d="M422 139 V280" stroke="#f4a3b8" stroke-dasharray="8 8"/>
+              <circle cx="422" cy="139" r="9" fill="#f3d77a" stroke="none"/>
+              <path d="M330 280 A50 50 0 0 0 315 245" stroke="#f3d77a"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="432" y="125">P</text><text x="330" y="265">θ</text><text x="320" y="200">1</text><text x="510" y="310">x</text><text x="290" y="40">y</text></g>
+      - say: x軸と斜辺の角度をθとすると、点Pのx座標がコサインθ、y座標がサインθになります。斜辺cを1にしただけで、前の定義と同じことを言っています。
+        show:
+          - { type: formula, at: [740, 220], color: blue, tex: 'x\text{座標} = \cos\theta' }
+          - { type: formula, at: [740, 320], color: pink, tex: 'y\text{座標} = \sin\theta' }
+          - { type: text, at: [740, 430], size: s, color: gray, w: 460, text: "斜辺 c ＝ 1 にしただけ（前の定義と同じ）" }
+
+  - board: whiteboard
+    steps:
+      - say: この定義なら、点Pを左回りにぐるぐる回して、θが90度を超えても、三角関数の値が決まります。
+        show:
+          - { type: title, text: ぐるぐる回すと「波」になる }
+      - say: 点Pが回るにつれて、サインの値、つまり点の高さは、0から1へ上がり、0に戻り、マイナス1まで下がり、また0へ。マイナス1から1のあいだを、規則正しく行ったり来たりします。
+        show:
+          - type: svg
+            at: [80, 160]
+            w: 1120
+            h: 360
+            markup: |
+              <path d="M20 180 H1100" stroke="#9aa3ad"/>
+              <path d="M60 180 C150 20 250 20 330 180 C410 340 510 340 600 180 C690 20 790 20 870 180 C950 340 1050 340 1100 260" stroke="#f4a3b8"/>
+              <g fill="#9aa3ad" stroke="none" font-size="24"><text x="30" y="40">1</text><text x="20" y="340">−1</text><text x="180" y="210">90°</text><text x="310" y="210">180°</text><text x="440" y="210">270°</text><text x="580" y="210">360°</text></g>
+              <text x="900" y="60" font-size="28" fill="#f4a3b8" stroke="none">y ＝ sin θ</text>
+      - say: これが、三角関数が描く「波」です。観覧車のゴンドラの高さが、上がったり下がったりをくり返すのと同じイメージです。
+        added: true
+        show:
+          - { type: text, at: [80, 560], color: yellow, text: "観覧車のゴンドラの高さ ＝ 上がって下がってをくり返す「波」" }

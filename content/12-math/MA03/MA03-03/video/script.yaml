@@ -1,0 +1,92 @@
+title: 二次関数と放物線
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「二次関数と放物線」です。
+        show:
+          - { type: title, text: 二次関数と放物線 }
+      - say: y＝ax²＋bx＋c。a、b、cは定数です。このように、xの2乗が出てくる関数を、二次関数といいます。
+        show:
+          - { type: formula, size: xl, color: yellow, tex: 'y = ax^2 + bx + c' }
+          - { type: text, text: "x の **2乗** が出てくる関数" }
+      - say: いちばんシンプルなのは、y＝x²。xが1なら1、2なら4、3なら9。xが大きくなるにつれて、yはどんどん速く増えていきます。
+        added: true
+        show:
+          - { type: text, text: "y ＝ x²：x ＝ 1, 2, 3 → y ＝ 1, 4, 9" }
+
+  - board: whiteboard
+    steps:
+      - say: 二次関数をグラフにすると、「放物線」と呼ばれる、U字型の曲線になります。
+        show:
+          - { type: title, text: グラフは「放物線」 }
+          - type: svg
+            at: [80, 150]
+            w: 520
+            h: 480
+            color: gray
+            markup: |
+              <path d="M20 330 H500"/><path d="M260 470 V20"/>
+          - type: svg
+            at: [80, 150]
+            w: 520
+            h: 480
+            color: blue
+            markup: |
+              <path d="M110 30 Q260 630 410 30"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="280" y="440">y ＝ x²（a ＞ 0）</text></g>
+      - say: aがプラスなら、下に出っぱった形。「下に凸」といいます。
+        show:
+          - { type: text, at: [80, 650], color: blue, text: "a がプラス → 下に凸（U字）" }
+      - say: aがマイナスなら、上に出っぱった形、「上に凸」になります。
+        show:
+          - type: svg
+            at: [680, 150]
+            w: 520
+            h: 480
+            color: gray
+            markup: |
+              <path d="M20 150 H500"/><path d="M260 470 V20"/>
+          - type: svg
+            at: [680, 150]
+            w: 520
+            h: 480
+            color: pink
+            markup: |
+              <path d="M110 450 Q260 -150 410 450"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="290" y="70">y ＝ －x²（a ＜ 0）</text></g>
+          - { type: text, at: [680, 650], color: pink, text: "a がマイナス → 上に凸（∩字）" }
+
+  - board: whiteboard
+    steps:
+      - say: 放物線は、自然界にもよく登場します。
+        show:
+          - { type: title, text: 身のまわりの放物線 }
+      - say: ボールを投げたときの軌跡。
+        show:
+          - type: svg
+            w: 1100
+            h: 280
+            color: yellow
+            markup: |
+              <path d="M40 260 Q330 -180 620 260" stroke-dasharray="10 12"/>
+              <circle cx="40" cy="250" r="12" fill="currentColor"/>
+              <g fill="currentColor" stroke="none" font-size="28"><text x="660" y="140">ボールの軌跡</text></g>
+      - say: 噴水の水の形や、吊り橋のケーブルの形も、放物線です。
+        show:
+          - { type: text, text: "噴水の水の形　／　吊り橋のケーブル" }
+      - say: ボールが放物線を描くのは、横には同じ速さで進みながら、重力で、下向きの速さがだんだん増えていくからです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "横はまっすぐ一定、たては重力でだんだん速く → 放物線になる（物理ともつながる）" }
+
+  - board: whiteboard
+    steps:
+      - say: まとめです。
+        show:
+          - { type: title, text: まとめ }
+      - say: xの2乗が出てくる関数が二次関数で、グラフは放物線になります。
+        show:
+          - { type: formula, tex: 'y = ax^2 + bx + c \;\rightarrow\; \text{放物線}' }
+      - say: aがプラスなら下に凸、マイナスなら上に凸。ボールの軌跡など、身近なところにも放物線があります。
+        show:
+          - { type: text, text: "a ＞ 0：下に凸　／　a ＜ 0：上に凸" }

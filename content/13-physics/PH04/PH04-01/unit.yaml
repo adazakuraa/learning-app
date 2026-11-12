@@ -2,3 +2,8 @@ id: physics-ph04-01
 code: PH04-01
 title: 波とは何か
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 112
+  narration: VOICEVOX:ずんだもん

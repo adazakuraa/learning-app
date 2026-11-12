@@ -1,0 +1,46 @@
+title: エルサレムをめぐる争いの歴史
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「エルサレムをめぐる争いの歴史」です。エルサレムは、古代から、何度も支配者が変わってきました。
+        show:
+          - { type: title, text: 支配者が変わり続けた都市 }
+      - say: 紀元前10世紀に、ソロモン王が神殿を建てましたが、西暦70年に、ローマが神殿を破壊し、ユダヤ人は、エルサレムを追われて、散らばりました。
+        show:
+          - { type: text, color: blue, text: "紀元前10世紀：ソロモン王の神殿 → 西暦70年：ローマが破壊、ユダヤ人は離散" }
+      - say: 7世紀に、イスラム勢力がエルサレムを征服すると、岩のドームが建てられました。11世紀から13世紀には、十字軍が、キリスト教の聖地を取りもどす、とかかげて、一時エルサレムを占領しましたが、イスラム軍が取りもどしました。
+        show:
+          - { type: text, color: yellow, text: "7世紀：イスラム勢力が征服、岩のドームを建設" }
+          - { type: text, color: pink, text: "11〜13世紀：十字軍が一時占領 → イスラム軍が取りもどす" }
+
+  - board: whiteboard
+    steps:
+      - say: 今の混乱の出発点は、第一次世界大戦中の、イギリスの外交です。
+        show:
+          - { type: title, text: イギリスの三枚舌外交 }
+      - say: エルサレムをふくむ、パレスチナなど中東の土地について、イギリスは、アラブ人には、独立国家を認めると約束し、ユダヤ人には、パレスチナにユダヤ人の郷土をつくることを支持すると約束し、さらにフランスとは、中東を分け合う秘密の協定を結びました。
+        show:
+          - type: svg
+            w: 1100
+            h: 240
+            markup: |
+              <rect x="420" y="10" width="260" height="70" rx="12" stroke="#f3d77a"/>
+              <path d="M480 80 L200 150 M550 80 V150 M620 80 L900 150" stroke="#9aa3ad"/>
+              <rect x="60" y="150" width="280" height="80" rx="12" stroke="#9be0b0"/><rect x="410" y="150" width="280" height="80" rx="12" stroke="#8fc4ff"/><rect x="760" y="150" width="280" height="80" rx="12" stroke="#f4a3b8"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="550" y="53" fill="#f3d77a">イギリス</text><text x="200" y="185" fill="#9be0b0">アラブ人へ</text><text x="200" y="215" font-size="18" fill="#9be0b0">「独立国家を認める」</text><text x="550" y="185" fill="#8fc4ff">ユダヤ人へ</text><text x="550" y="215" font-size="18" fill="#8fc4ff">「郷土づくりを支持」</text><text x="900" y="185" fill="#f4a3b8">フランスと</text><text x="900" y="215" font-size="18" fill="#f4a3b8">「中東を分け合う」密約</text></g>
+      - say: 同じ土地を、いくつもの相手に約束した、三枚舌外交。これが、今に続く混乱の出発点です。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "同じ土地をいくつもの相手に約束 ＝「**三枚舌外交**」→ 今の混乱の出発点" }
+
+  - board: whiteboard
+    steps:
+      - say: 1948年に、イスラエルが建国されると、エルサレムをめぐる戦争が、くり返されます。
+        show:
+          - { type: title, text: イスラエル建国後 }
+      - say: 1948年の第一次中東戦争で、イスラエルは西エルサレムを、1967年の第三次中東戦争で、旧市街をふくむ東エルサレムを占領し、今は、エルサレム全体を実効支配しています。
+        show:
+          - { type: text, color: blue, text: "1948年 第一次中東戦争：西エルサレムを占領" }
+          - { type: text, color: pink, text: "1967年 第三次中東戦争：旧市街をふくむ東エルサレムを占領 → 全体を実効支配" }
+      - say: 国際社会の多くは、これを認めていません。エルサレムがだれのものか、という問題は、今の中東問題の、核心のひとつなのです。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "国際社会の多くは認めていない。「エルサレムの地位」は中東問題の核心" }

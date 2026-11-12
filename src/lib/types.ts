@@ -18,7 +18,7 @@ export type UnitContent = {
   /** original material, present only when lesson.md differs from source.md */
   sourceHtml: string | null;
   toc: TocItem[];
-  video: { src: string | null; captions: string | null; poster: string | null; duration: number | null } | null;
+  video: { src: string | null; captions: string | null; poster: string | null; duration: number | null; narration?: string | null } | null;
 };
 
 /** Flattened unit with its location, handy for lists. */

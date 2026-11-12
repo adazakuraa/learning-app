@@ -2,3 +2,8 @@ id: physics-ph04-05
 code: PH04-05
 title: 電磁波とその種類
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 89
+  narration: VOICEVOX:ずんだもん

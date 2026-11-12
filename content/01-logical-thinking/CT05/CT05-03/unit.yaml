@@ -2,3 +2,8 @@ id: logical-thinking-ct05-03
 code: CT05-03
 title: メディアリテラシー
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 107
+  narration: VOICEVOX:ずんだもん

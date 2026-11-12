@@ -1,0 +1,28 @@
+title: エルサレムとユダヤ教
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「エルサレムとユダヤ教」です。エルサレムは、ユダヤ教にとって、最も神聖な都市です。紀元前10世紀に、ユダヤ人のソロモン王が、神殿を建てた場所で、神が宿る場所とされました。
+        show:
+          - { type: title, text: 神殿と嘆きの壁 }
+          - { type: text, text: "紀元前10世紀：**ソロモン王** が神殿を建てる → 神が宿る場所" }
+      - say: 今、エルサレムに残る、嘆きの壁は、のちに建て直された、第二神殿の外壁の一部です。ユダヤ人は、ここに集まり、破壊された神殿をしのんで、祈ります。
+        show:
+          - { type: box, color: yellow, w: 1100, title: 嘆きの壁, text: "第二神殿の外壁の一部。破壊された神殿をしのんで祈る場所" }
+
+  - board: whiteboard
+    steps:
+      - say: 神殿が建っていた丘、神殿の丘には、今、イスラム教の聖地、岩のドームが建っています。
+        show:
+          - { type: title, text: 重なり合う聖地 }
+          - type: svg
+            w: 1000
+            h: 220
+            markup: |
+              <path d="M100 200 Q500 40 900 200" stroke="#9aa3ad"/>
+              <path d="M420 120 Q500 50 580 120 Z" stroke="#f3d77a"/><rect x="430" y="120" width="140" height="40" stroke="#f3d77a"/>
+              <rect x="300" y="160" width="400" height="40" stroke="#8fc4ff"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="500" y="30" fill="#f3d77a">岩のドーム（イスラム教）</text><text x="500" y="188" fill="#8fc4ff">嘆きの壁（ユダヤ教）</text></g>
+      - say: ユダヤ教、キリスト教、イスラム教の聖地が、このせまい場所に重なり合っている。それが、エルサレム問題の複雑さの、根本の原因になっています。くわしくは、第6章で学びます。
+        show:
+          - { type: box, color: pink, w: 1000, text: "3つの宗教の聖地が、せまい場所に重なり合う → エルサレム問題の根本（第6章で）" }

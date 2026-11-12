@@ -2,3 +2,8 @@ id: physics-ph04-02
 code: PH04-02
 title: 音の正体と性質
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 73
+  narration: VOICEVOX:ずんだもん

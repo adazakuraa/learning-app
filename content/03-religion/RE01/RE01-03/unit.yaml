@@ -2,3 +2,8 @@ id: religion-re01-03
 code: RE01-03
 title: 一神教と多神教
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 80
+  narration: VOICEVOX:ずんだもん

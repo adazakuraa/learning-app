@@ -2,3 +2,8 @@ id: chemistry-ch03-01
 code: CH03-01
 title: 化学結合の種類
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 87
+  narration: VOICEVOX:ずんだもん

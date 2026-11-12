@@ -2,3 +2,8 @@ id: math-ma05-04
 code: MA05-04
 title: 条件付き確率
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 88
+  narration: VOICEVOX:ずんだもん

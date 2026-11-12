@@ -1,0 +1,64 @@
+title: 約数・倍数・素数
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「整数」の章です。
+        show:
+          - { type: title, text: 第8章　整数 }
+      - say: この章では、約数や倍数、素数といった、整数の性質と、ふだんとはちがう数の表し方、n進数を学びます。
+        added: true
+        show:
+          - type: list
+            items: ["約数・倍数・素数", "最大公約数と最小公倍数", "n進数", "練習問題"]
+      - say: タイルの敷きつめ、バスの時刻、コンピュータのしくみ。整数の性質は、身近なところで役立っています。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "整数の「割り切れる・割り切れない」の性質を、身近な場面で使えるようにする" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は、「約数・倍数・素数」です。
+        show:
+          - { type: title, text: 約数・倍数・素数 }
+      - say: ある整数を割り切ることができる数を、約数といいます。12の約数は、1、2、3、4、6、12です。
+        show:
+          - { type: text, text: "**約数** … 割り切れる数　例：12 の約数 → 1, 2, 3, 4, 6, 12" }
+      - say: 12個のお菓子を、余りなく同じ数ずつ分けられる人数、と考えるとわかりやすいですね。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "12個のお菓子を余りなく分けられる人数 ＝ 12 の約数" }
+      - say: ある整数を、整数倍した数を、倍数といいます。12の倍数は、12、24、36…と続きます。
+        show:
+          - { type: text, text: "**倍数** … 整数倍した数　例：12 の倍数 → 12, 24, 36 …" }
+
+  - board: whiteboard
+    steps:
+      - say: 素数とは、1と自分自身以外に約数を持たない、2以上の整数のことです。2、3、5、7、11、13、17…と続きます。
+        show:
+          - { type: title, text: 素数 }
+          - { type: text, size: l, color: yellow, text: "2, 3, 5, 7, 11, 13, 17 …" }
+          - { type: text, text: "**素数** ＝ 1 と自分自身でしか割り切れない（2以上）" }
+      - say: 4は2で割り切れるので、素数ではありません。1は、2以上ではないので、素数ではありません。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "4 は 2 で割り切れる → 素数ではない　1 も素数ではない" }
+
+  - board: whiteboard
+    steps:
+      - say: 2以上の整数は、すべて素数のかけ算で表せます。これを、素因数分解といいます。
+        show:
+          - { type: title, text: 素因数分解 }
+          - { type: text, text: "整数を **素数のかけ算** で表す ＝ **素因数分解**" }
+      - say: たとえば12は、2で割って6、さらに2で割って3。だから、12＝2²×3です。
+        show:
+          - type: svg
+            w: 700
+            h: 260
+            markup: |
+              <g fill="currentColor" stroke="none" font-size="40" text-anchor="middle"><text x="120" y="60">12</text><text x="60" y="150">2</text><text x="180" y="150">6</text><text x="120" y="240">2</text><text x="240" y="240">3</text></g>
+              <path d="M110 75 L70 115"/><path d="M130 75 L170 115"/><path d="M170 165 L130 205"/><path d="M190 165 L230 205"/>
+              <g fill="#f3d77a" stroke="none" font-size="40"><text x="340" y="150">12 ＝ 2² × 3</text></g>
+      - say: 30は、2×3×5です。素数は、整数をつくる「部品」のような存在なのです。
+        show:
+          - { type: formula, tex: '30 = 2 \times 3 \times 5' }
+          - { type: box, color: yellow, w: 800, text: "素数 ＝ 整数をつくる「部品」" }

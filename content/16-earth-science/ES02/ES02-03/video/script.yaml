@@ -1,0 +1,39 @@
+title: 地震波と地球内部
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「地震波」です。地震が起きると、揺れが波となって、四方八方に広がります。地震波には、P波とS波の、2種類があります。
+        show:
+          - { type: title, text: P波とS波 }
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <circle cx="60" cy="100" r="14" fill="#f4a3b8" stroke="none"/>
+              <path d="M80 70 H700 M685 58 L700 70 L685 82" stroke="#8fc4ff"/>
+              <path d="M80 140 H420 M405 128 L420 140 L405 152" stroke="#f3d77a"/>
+              <g stroke="none" font-size="24"><text x="30" y="190" fill="#f4a3b8">震源</text><text x="720" y="78" fill="#8fc4ff">P波：約6km/s（速い）</text><text x="440" y="148" fill="#f3d77a">S波：約3.5km/s（遅い）</text></g>
+      - say: P波は、秒速およそ6キロメートルと速く、最初に届きます。はじめの小さな揺れ、初期微動を起こします。
+        show:
+          - { type: text, color: blue, text: "**P波**：速い。先に届き、小さな揺れ（**初期微動**）" }
+      - say: S波は、秒速およそ3.5キロメートルと遅く、あとから届きます。大きな揺れ、主要動を起こします。
+        show:
+          - { type: text, color: yellow, text: "**S波**：遅い。あとから届き、大きな揺れ（**主要動**）" }
+      - say: 雷で、光が先に見えて、音があとから聞こえるのに似ていますね。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "雷の光（先）と音（あと）に似ている" }
+
+  - board: whiteboard
+    steps:
+      - say: この時間差を利用したのが、緊急地震速報です。
+        show:
+          - { type: title, text: 緊急地震速報 }
+      - say: 震源の近くでP波をとらえたら、すぐに計算して、S波が届く前に、警報を出します。その差は、数秒から数十秒。短いですが、机の下にもぐったり、火を止めたりするには、十分な時間です。
+        show:
+          - { type: box, color: pink, w: 1100, text: "P波をとらえる → S波が来る前に警報（数秒〜数十秒の差）" }
+          - { type: text, color: yellow, text: "その数秒で：机の下にもぐる・火を止める・頭を守る" }
+      - say: ちなみに、地震波の伝わり方を調べることで、人が直接見ることのできない、地球の内部のつくりも、わかってきたのです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "地震波の伝わり方から、地球の内部のつくりもわかった" }

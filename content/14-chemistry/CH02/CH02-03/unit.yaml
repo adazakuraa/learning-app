@@ -2,3 +2,8 @@ id: chemistry-ch02-03
 code: CH02-03
 title: 分子とイオン
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 106
+  narration: VOICEVOX:ずんだもん

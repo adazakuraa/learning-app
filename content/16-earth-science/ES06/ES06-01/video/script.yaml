@@ -1,0 +1,52 @@
+title: 太陽系の構造
+scenes:
+  - board: slide
+    steps:
+      - say: 第6章、「宇宙と太陽系」です。
+        show:
+          - { type: title, text: 第6章　宇宙と太陽系 }
+      - say: 地球をとびだして、太陽系の惑星、太陽、月、そして、星や銀河の世界へと、視野を広げていきます。
+        show:
+          - type: list
+            items: ["太陽系の構造", "太陽の構造と活動", "月と地球の関係", "恒星と銀河"]
+      - say: 月の満ち欠けや日食のしくみ、そして、私たちの体が、星のかけらでできている、という話まで。宇宙の中での、私たちの位置を知りましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "宇宙の中での地球と私たちの位置を知る" }
+
+  - board: whiteboard
+    steps:
+      - say: 太陽系は、太陽と、その重力にとらえられた天体の集まりです。太陽系全体の重さの、およそ99.86パーセントを、太陽がしめています。
+        show:
+          - { type: title, text: 太陽系 }
+          - { type: text, text: "太陽系の重さの約 **99.86％** は太陽" }
+      - say: 8つの惑星は、内側から順に、水星、金星、地球、火星、木星、土星、天王星、海王星です。「すい、きん、ち、か、もく、ど、てん、かい」と覚えましょう。
+        show:
+          - { type: image, src: 1000003166.webp, at: [40, 250], w: 140 }
+          - { type: image, src: 1000003165.webp, at: [190, 270], w: 140 }
+          - { type: image, src: 1000003159.webp, at: [490, 250], w: 140 }
+          - { type: image, src: 1000003161.webp, at: [640, 250], w: 140 }
+          - { type: image, src: 1000003162.webp, at: [790, 250], w: 140 }
+          - { type: image, src: 1000003163.webp, at: [940, 250], w: 140 }
+          - { type: image, src: 1000003164.webp, at: [1090, 250], w: 140 }
+          - { type: text, at: [340, 280], w: 140, color: blue, text: "地球" }
+          - { type: text, at: [40, 400], w: 1200, size: l, text: "水・金・地・火・木・土・天・海" }
+
+  - board: whiteboard
+    steps:
+      - say: 特徴のある惑星を、いくつか見てみましょう。
+        show:
+          - { type: title, text: 惑星の特徴 }
+      - say: 水星は、いちばん小さな惑星です。
+        show:
+          - { type: text, color: gray, text: "**水星**：いちばん小さい" }
+      - say: 金星は、二酸化炭素の温室効果で、灼熱の世界です。硫酸の雲におおわれています。地球から最も明るく見える惑星で、明け方に見えるものを明けの明星、夕方に見えるものを、よいの明星とよびます。
+        show:
+          - { type: text, color: yellow, text: "**金星**：温室効果で灼熱。いちばん明るく見える（明けの明星・よいの明星）" }
+      - say: 木星は、いちばん大きな惑星で、ガスでできています。土星は、大きな輪が有名で、これもガスの惑星です。
+        show:
+          - { type: text, color: pink, text: "**木星**：いちばん大きい。ガスでできている" }
+          - { type: text, color: green, text: "**土星**：輪が有名。ガスの惑星" }
+      - say: ちなみに、かつて9番目の惑星だった冥王星は、2006年に、惑星から、準惑星に分類が変わりました。
+        show:
+          - { type: text, size: s, color: gray, text: "冥王星：2006年に惑星から「準惑星」へ" }

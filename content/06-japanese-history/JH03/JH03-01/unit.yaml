@@ -2,3 +2,8 @@ id: japanese-history-jh03-01
 code: JH03-01
 title: 律令国家の成立
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 79
+  narration: VOICEVOX:ずんだもん

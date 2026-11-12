@@ -1,0 +1,32 @@
+title: よく出る接頭辞・接尾辞
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「よく出る接頭辞と接尾辞」です。単語の最初につく接頭辞や、最後につく接尾辞のパターンを知っていると、初めて見る単語でも、意味が推測できます。
+        show:
+          - { type: title, text: 接頭辞 }
+      - say: unは、否定や逆。unhappy、unlock、unfair。reは、再び。rebuild、reconsider、refresh。preは、前に。preview、prevent、prepare。overは、過度に。overwork、働きすぎ。misは、誤って。misunderstand、誤解する。mislead、誤解させる。
+        read: アンは、否定や逆。アンハッピー、アンロック、アンフェア。リーは、再び。リビルド、リコンシダー、リフレッシュ。プリーは、前に。プレビュー、プリベント、プリペア。オーバーは、過度に。オーバーワーク、働きすぎ。ミスは、誤って。ミスアンダースタンド、誤解する。ミスリード、誤解させる。
+        show:
+          - { type: text, color: blue, text: "**un-**（否定・逆）：unhappy・unlock・unfair" }
+          - { type: text, color: blue, text: "**re-**（再び）：rebuild・reconsider・refresh" }
+          - { type: text, color: blue, text: "**pre-**（前に）：preview・prevent・prepare" }
+          - { type: text, color: blue, text: "**over-**（過度に）：overwork ／ **mis-**（誤って）：misunderstand・mislead" }
+
+  - board: whiteboard
+    steps:
+      - say: disは、否定や分離。disagree、同意しない。disappear、消える。disconnect、切断する。interは、間に。international、interview。subは、下に、副。submarine、潜水艦。subtitle、字幕や副題。subway、地下鉄です。
+        read: ディスは、否定や分離。ディスアグリー、同意しない。ディスアピア、消える。ディスコネクト、切断する。インターは、間に。インターナショナル、インタビュー。サブは、下に、副。サブマリン、潜水艦。サブタイトル、字幕や副題。サブウェイ、地下鉄です。
+        show:
+          - { type: title, text: 接頭辞と接尾辞 }
+          - { type: text, color: green, text: "**dis-**（否定・分離）：disagree・disappear・disconnect" }
+          - { type: text, color: green, text: "**inter-**（間に）：international（国と国の間）・interview" }
+          - { type: text, color: green, text: "**sub-**（下に）：submarine（潜水艦）・subtitle・subway（地下鉄）" }
+      - say: そして、接尾辞のableは、できる、です。portable、持ち運べる。ibleも同じ仲間で、possible、可能な、です。
+        read: そして、接尾辞のエイブルは、できる、です。ポータブル、持ち運べる。イブルも同じ仲間で、ポッシブル、可能な、です。
+        show:
+          - { type: text, color: pink, text: "**-able / -ible**（できる）：portable（持ち運べる）・possible（可能な）" }
+      - say: 単語を、部品に分けて見るくせをつけると、覚える単語の数が、ぐんと減ります。これで、英語はおしまいです。おつかれさまでした。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1100, text: "単語を部品に分けて見るくせで、覚える量がぐんと減る" }

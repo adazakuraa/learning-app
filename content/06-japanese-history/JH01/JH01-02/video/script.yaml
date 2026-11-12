@@ -1,0 +1,43 @@
+title: 弥生時代と稲作の始まり
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 縄文時代が終わり、弥生時代が始まります。紀元前3世紀ごろから、3世紀ごろまでです。
+        show:
+          - { type: title, text: 弥生時代のはじまり }
+          - { type: text, at: [80, 140], w: 1120, text: "**弥生時代**：紀元前3世紀ごろ 〜 3世紀ごろ" }
+      - say: 最大のきっかけは、大陸から稲作が伝わったことです。中国や朝鮮半島から渡ってきた、渡来人が、お米づくりの技術をもたらしました。
+        read: 最大のきっかけは、大陸から稲作が伝わったことです。中国や朝鮮半島から渡ってきた、とらいじんが、お米づくりの技術をもたらしました。
+        show:
+          - type: svg
+            at: [80, 230]
+            w: 1120
+            h: 160
+            anim: draw
+            markup: |
+              <rect x="20" y="40" width="300" height="90" rx="12" stroke="#f3d77a"/>
+              <rect x="800" y="40" width="300" height="90" rx="12" stroke="#9be0b0"/>
+              <path d="M340 85 L770 85"/><path d="M752 72 L772 85 L752 98"/>
+              <g stroke="none" font-size="28" fill="#e8eef5" text-anchor="middle"><text x="170" y="95">中国・朝鮮半島</text><text x="950" y="95">日本列島</text><text x="555" y="70">渡来人が稲作を伝える</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 稲作は、暮らしを根本から変えました。お米は、長く保存できます。食べ物を、たくわえられるようになったのです。
+        show:
+          - { type: title, text: たくわえが社会を変える }
+          - { type: box, at: [80, 130], w: 320, color: green, title: ①たくわえ, text: "お米は保存できる" }
+      - say: たくわえがあると、自分では田んぼで働かない人も生まれます。つまり、支配する人と、支配される人。身分の差が生まれ始めます。
+        show:
+          - { type: arrow, from: [408, 200], to: [472, 200] }
+          - { type: box, at: [480, 130], w: 320, color: yellow, title: ②身分の差, text: "支配する・される" }
+      - say: さらに、土地や水、たくわえをめぐって、ムラ同士の争いも起きます。戦争のあとが見られるようになるのも、この時代からです。
+        show:
+          - { type: arrow, from: [808, 200], to: [872, 200] }
+          - { type: box, at: [880, 130], w: 320, color: pink, title: ③争い, text: "土地・水・たくわえの奪い合い" }
+      - say: 豊かになることと、争いが生まれることは、セットだったのです。
+        show:
+          - { type: text, at: [80, 380], w: 1120, size: l, text: "豊かさ と 争い は **セット** で生まれた" }
+      - say: これは今にも通じます。貯金や財産がある社会だからこそ、格差や、奪い合いが問題になるのです。
+        added: true
+        show:
+          - { type: text, at: [80, 480], w: 1120, color: gray, text: "現代の「格差」の問題も、たくわえのある社会ならでは" }

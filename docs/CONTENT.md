@@ -77,3 +77,8 @@ generation:
 ```
 
 AI に渡す指示一式は `python3 scripts/video_prompt.py <単元ID>` で確認できる。
+
+## 練習問題（章末）
+
+`python3 scripts/build_practice.py` で、各単元の「- 問題」「- 答え/解答」をまとめた「練習問題」単元（`<章>-PR`）を章の最後に作る。
+問題がない章には作られない。教材の取り込み・訂正のあとに実行する。

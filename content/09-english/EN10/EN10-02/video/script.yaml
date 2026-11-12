@@ -1,0 +1,41 @@
+title: 場所・方向の表現
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「場所と方向の表現」です。道案内でよく使う言葉です。turn left、turn right、左、右に曲がる。go straight、まっすぐ進む。go past、〜を通り過ぎる。take the second right、2つ目の角を右に曲がる。It's on your left. 左手にあります。
+        read: 「場所と方向の表現」です。道案内でよく使う言葉です。ターン、レフト、ターン、ライト、左、右に曲がる。ゴー、ストレート、まっすぐ進む。ゴー、パスト、何々を通り過ぎる。テイク、ザ、セカンド、ライト、2つ目の角を右に曲がる。イッツ、オン、ユア、レフト。左手にあります。
+        show:
+          - { type: title, text: 道案内 }
+          - type: svg
+            at: [700, 130]
+            w: 520
+            h: 300
+            markup: |
+              <path d="M100 290 V40 M100 200 H300 M100 110 H300" stroke="#9aa3ad" stroke-width="10" opacity="0.5"/>
+              <path d="M100 280 V115 Q100 110 110 110 H280" stroke="#f3d77a" stroke-width="4"/><path d="M265 100 L280 110 L265 120" stroke="#f3d77a"/>
+              <g stroke="none" font-size="18"><text x="120" y="260" fill="#f3d77a">go straight</text><text x="310" y="205" fill="#9aa3ad">1st right</text><text x="310" y="115" fill="#f3d77a">2nd right</text></g>
+          - { type: text, at: [80, 150], w: 600, color: yellow, text: "turn left / right（左・右に曲がる）" }
+          - { type: text, at: [80, 215], w: 600, color: yellow, text: "go straight（まっすぐ）／ go past 〜（〜を通り過ぎる）" }
+          - { type: text, at: [80, 320], w: 600, color: yellow, text: "take the second right（2つ目を右）" }
+          - { type: text, at: [80, 380], w: 600, color: yellow, text: "It's on your left.（左手にあります）" }
+      - say: You can't miss it. 見のがすことはないですよ、すぐわかりますよ、という決まり文句です。
+        read: ユー、キャント、ミス、イット。見のがすことはないですよ、すぐわかりますよ、という決まり文句です。
+        show:
+          - { type: text, at: [80, 450], w: 600, color: green, text: "You can't miss it.（すぐわかりますよ）" }
+
+  - board: whiteboard
+    steps:
+      - say: 場所の位置を表す言葉です。next to、besideは、〜のとなりに。across from、oppositeは、〜の向かいに。in front ofは、〜の前に。behindは、〜のうしろに。between A and Bは、AとBの間に。at the corner ofは、〜の角に、です。
+        read: 場所の位置を表す言葉です。ネクスト、トゥー、ビサイドは、何々のとなりに。アクロス、フロム、オポジットは、何々の向かいに。イン、フロント、オブは、何々の前に。ビハインドは、何々のうしろに。ビトウィーン、エー、アンド、ビーは、エーとビーの間に。アット、ザ、コーナー、オブは、何々の角に、です。
+        show:
+          - { type: title, text: 位置の表現 }
+          - { type: text, at: [80, 140], color: blue, text: "next to / beside（となり）" }
+          - { type: text, at: [80, 200], color: blue, text: "across from / opposite（向かい）" }
+          - { type: text, at: [80, 260], color: blue, text: "in front of（前）／ behind（うしろ）" }
+          - { type: text, at: [660, 140], color: green, text: "between A and B（AとBの間）" }
+          - { type: text, at: [660, 200], color: green, text: "at the corner of（〜の角に）" }
+      - say: The bookstore is right across from the post office. 書店は、郵便局の真向かいにあります。Go straight down this street and turn right at the traffic light. この道をまっすぐ進んで、信号を右に曲がってください。
+        read: ザ、ブックストア、イズ、ライト、アクロス、フロム、ザ、ポスト、オフィス。書店は、郵便局の真向かいにあります。ゴー、ストレート、ダウン、ディス、ストリート、アンド、ターン、ライト、アット、ザ、トラフィック、ライト。この道をまっすぐ進んで、信号を右に曲がってください。
+        show:
+          - { type: text, at: [80, 340], w: 1120, color: yellow, text: "The bookstore is right **across from** the post office.（郵便局の真向かい）" }
+          - { type: text, at: [80, 450], w: 1120, color: yellow, text: "Go straight down this street and **turn right** at the traffic light.（信号を右）" }

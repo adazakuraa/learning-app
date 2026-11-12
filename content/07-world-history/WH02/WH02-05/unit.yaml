@@ -2,3 +2,8 @@ id: world-history-wh02-05
 code: WH02-05
 title: ローマ帝国の繁栄
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 98
+  narration: VOICEVOX:ずんだもん

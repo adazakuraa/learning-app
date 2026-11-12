@@ -2,3 +2,8 @@ id: psychology-ps10-01
 code: PS10-01
 title: 進化心理学とは
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 110
+  narration: VOICEVOX:ずんだもん

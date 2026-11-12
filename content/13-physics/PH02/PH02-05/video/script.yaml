@@ -1,0 +1,55 @@
+title: 万有引力
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「万有引力」です。
+        show:
+          - { type: title, text: 万有引力 }
+      - say: ニュートンがリンゴの落ちるのを見て、万有引力を発見した、という話は有名です。本当かどうかはあやしいのですが、「なぜリンゴは落ちるのに、月は落ちてこないのか」という問いが、研究のきっかけになったのは確かなようです。
+        show:
+          - { type: text, text: "「なぜリンゴは落ちるのに、月は落ちないのか？」" }
+          - { type: text, size: s, color: gray, text: "リンゴの逸話は真偽不明。でも、この問いがきっかけ" }
+
+  - board: whiteboard
+    steps:
+      - say: ニュートンの万有引力の法則は、「すべてのものは、たがいに引き合う」というものです。
+        show:
+          - { type: title, text: 万有引力の法則 }
+          - { type: box, color: yellow, w: 1000, text: "すべてのものは、**たがいに引き合う**" }
+      - say: 引き合う力の大きさは、2つのものの質量が大きいほど大きく、距離が離れるほど、距離の2乗に反比例して小さくなります。Gは、万有引力定数です。
+        show:
+          - { type: formula, size: l, color: yellow, tex: 'F = G\frac{Mm}{r^2}' }
+          - { type: text, size: s, color: gray, text: "M, m：2つの質量　r：距離　G：万有引力定数" }
+      - say: 万有引力定数はとても小さい数なので、身のまわりのもの同士の引力は、ほとんどゼロです。でも、地球のように、とても大きな質量になると引力は強くなり、これが重力の原因になっています。
+        show:
+          - { type: text, text: "身のまわりのもの同士 → ほぼゼロ　地球ほど重いと → 強い（重力の原因）" }
+      - say: 正確には、地球の上のものには、地球の自転による遠心力もかかっています。万有引力から遠心力を差し引いた、実際にかかっている力を、重力と呼んでいます。
+        show:
+          - { type: text, size: s, color: gray, text: "重力 ＝ 万有引力 － 自転による遠心力（の合わさった力）" }
+
+  - board: whiteboard
+    steps:
+      - say: では、月はなぜ落ちてこないのでしょう。実は、月も地球に向かって「落ちて」いるのです。
+        show:
+          - { type: title, text: 月はなぜ落ちてこない？ }
+          - type: svg
+            at: [80, 150]
+            w: 620
+            h: 540
+            markup: |
+              <circle cx="310" cy="300" r="70" stroke="#8fc4ff"/>
+              <text x="310" y="310" font-size="28" fill="#8fc4ff" stroke="none" text-anchor="middle">地球</text>
+              <circle cx="310" cy="300" r="220" stroke="#9aa3ad" stroke-dasharray="8 10"/>
+              <circle cx="310" cy="80" r="26" stroke="#f3d77a"/>
+              <path d="M340 80 H540" stroke="#f3d77a"/><path d="M524 70 L540 80 L524 90" stroke="#f3d77a"/>
+              <path d="M310 110 V190" stroke="#f4a3b8"/><path d="M300 176 L310 192 L320 176" stroke="#f4a3b8"/>
+      - say: 月は、慣性の法則で、まっすぐ進もうとします。
+        show:
+          - { type: text, at: [740, 170], color: yellow, w: 480, text: "① まっすぐ進もうとする（慣性）" }
+      - say: 同時に、万有引力で、地球に引き寄せられて落ちていきます。
+        show:
+          - { type: text, at: [740, 290], color: pink, w: 480, text: "② 地球に引き寄せられる（万有引力）" }
+      - say: まっすぐ進む分と、落ちる分がちょうど合わさって、地球のまわりを回り続けているのです。ずっと落ち続けているのに、地球の表面がその分カーブしていくので、ぶつからない。人工衛星も、同じしくみで回っています。
+        show:
+          - { type: text, at: [740, 410], color: green, w: 480, text: "③ ①と②が合わさって、ぐるぐる回り続ける" }
+          - { type: text, at: [740, 540], size: s, color: gray, w: 480, text: "人工衛星も同じしくみ" }

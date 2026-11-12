@@ -2,3 +2,8 @@ id: physics-ph04-03
 code: PH04-03
 title: 光の性質
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 74
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: world-history-wh06-01
 code: WH06-01
 title: ルネサンスと人文主義
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 114
+  narration: VOICEVOX:ずんだもん

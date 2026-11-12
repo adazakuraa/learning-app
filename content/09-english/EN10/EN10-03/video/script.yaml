@@ -1,0 +1,37 @@
+title: 感情・状態を表す形容詞
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「気持ちや状態を表す形容詞」です。まずは、前向きな気持ち。happy、cheerful、delighted、うれしい、陽気な、大喜びの。excited、thrilled、わくわくしている。proud、satisfied、relieved、ほこりに思う、満足した、ほっとした。calm、relaxed、落ち着いた、リラックスした。
+        read: 「気持ちや状態を表す形容詞」です。まずは、前向きな気持ち。ハッピー、チアフル、ディライティッド、うれしい、陽気な、大喜びの。エキサイティッド、スリルド、わくわくしている。プラウド、サティスファイド、リリーブド、ほこりに思う、満足した、ほっとした。カーム、リラックスト、落ち着いた、リラックスした。
+        show:
+          - { type: title, text: 前向きな気持ち }
+          - { type: text, color: yellow, text: "happy / cheerful / delighted（うれしい・陽気な・大喜び）" }
+          - { type: text, color: yellow, text: "excited / thrilled（わくわく）" }
+          - { type: text, color: yellow, text: "proud / satisfied / relieved（ほこり・満足・ほっとした）" }
+          - { type: text, color: yellow, text: "calm / relaxed / content（落ち着いた・リラックス・満ち足りた）" }
+
+  - board: whiteboard
+    steps:
+      - say: うしろ向きな気持ち。sad、upset、disappointed、悲しい、動揺した、がっかりした。anxious、nervous、stressed、不安な、緊張した、ストレスを感じている。angry、frustrated、irritated、怒っている、いらいらした。exhausted、drained、overwhelmed、へとへと、疲れ果てた、いっぱいいっぱい。
+        read: うしろ向きな気持ち。サッド、アップセット、ディサポインティッド、悲しい、動揺した、がっかりした。アングシャス、ナーバス、ストレスト、不安な、緊張した、ストレスを感じている。アングリー、フラストレイティッド、イリテイティッド、怒っている、いらいらした。イグゾースティッド、ドレインド、オーバーウェルムド、へとへと、疲れ果てた、いっぱいいっぱい。
+        show:
+          - { type: title, text: うしろ向きな気持ち }
+          - { type: text, color: blue, text: "sad / upset / disappointed（悲しい・動揺・がっかり）" }
+          - { type: text, color: blue, text: "anxious / nervous / stressed（不安・緊張・ストレス）" }
+          - { type: text, color: pink, text: "angry / frustrated / irritated（怒り・いらいら）" }
+          - { type: text, color: gray, text: "exhausted / drained / overwhelmed（へとへと・いっぱいいっぱい）" }
+
+  - board: whiteboard
+    steps:
+      - say: 状態を表す言葉。confused、混乱している。surprised、shocked、おどろいた、衝撃を受けた。embarrassed、はずかしい。bored、退屈な。lonely、さみしい。motivated、やる気がある。
+        read: 状態を表す言葉。コンフューズド、混乱している。サプライズド、ショックト、おどろいた、衝撃を受けた。エンバラスト、はずかしい。ボアード、退屈な。ロンリー、さみしい。モチベイティッド、やる気がある。
+        show:
+          - { type: title, text: 状態 }
+          - { type: text, color: green, text: "confused（混乱）／ surprised・shocked（おどろいた）／ embarrassed（はずかしい）" }
+          - { type: text, color: green, text: "bored（退屈）／ lonely（さみしい）／ motivated（やる気がある）" }
+      - say: ちなみに、I'm boringと言うと、わたしは退屈な人間です、という意味になってしまいます。退屈している、は、I'm boredです。edは、そう感じている側、ingは、そう感じさせる側、と覚えましょう。
+        read: ちなみに、アイム、ボーリングと言うと、わたしは退屈な人間です、という意味になってしまいます。退屈している、は、アイム、ボアードです。イーディーは、そう感じている側、アイエヌジーは、そう感じさせる側、と覚えましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1100, text: "I'm **bored**.（退屈している）／ I'm **boring**.（私は退屈な人間だ）→ -ed は感じる側、-ing は感じさせる側" }

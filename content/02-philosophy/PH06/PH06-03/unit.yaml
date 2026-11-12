@@ -2,3 +2,8 @@ id: philosophy-ph06-03
 code: PH06-03
 title: ケアの倫理
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 108
+  narration: VOICEVOX:ずんだもん

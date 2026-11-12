@@ -2,3 +2,8 @@ id: japanese-history-jh01-02
 code: JH01-02
 title: 弥生時代と稲作の始まり
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 66
+  narration: VOICEVOX:ずんだもん

@@ -2,3 +2,8 @@ id: japanese-history-jh10-04
 code: JH10-04
 title: 大正文化と近代思想
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 54
+  narration: VOICEVOX:ずんだもん

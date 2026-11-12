@@ -1,0 +1,58 @@
+title: 物質の三態
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「物質の三態」です。
+        show:
+          - { type: title, text: 物質の三態 }
+      - say: 同じものでも、温度を変えると、固体、液体、気体という、3つのちがう状態になります。これを三態といいます。水なら、氷、水、水蒸気です。
+        show:
+          - type: svg
+            w: 1100
+            h: 160
+            markup: |
+              <g stroke="none" font-size="34" text-anchor="middle"><text x="150" y="70" fill="#8fc4ff">固体</text><text x="550" y="70" fill="#9be0b0">液体</text><text x="950" y="70" fill="#f4a3b8">気体</text>
+              <text x="150" y="130" fill="#9aa3ad">氷</text><text x="550" y="130" fill="#9aa3ad">水</text><text x="950" y="130" fill="#9aa3ad">水蒸気</text></g>
+              <path d="M250 60 H450" stroke="#f3d77a"/><path d="M436 50 L450 60 L436 70" stroke="#f3d77a"/>
+              <path d="M650 60 H850" stroke="#f3d77a"/><path d="M836 50 L850 60 L836 70" stroke="#f3d77a"/>
+              <text x="550" y="20" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">温める</text>
+
+  - board: whiteboard
+    steps:
+      - say: なぜ、温度で状態が変わるのでしょう。ものは、数えきれないほどの小さな粒、粒子でできています。温度が高いほど、熱のエネルギーをもらった粒子の動きが激しくなります。
+        show:
+          - { type: title, text: 粒子の動きで考える }
+          - type: svg
+            w: 1100
+            h: 300
+            markup: |
+              <rect x="20" y="20" width="320" height="240" stroke="#8fc4ff"/><rect x="390" y="20" width="320" height="240" stroke="#9be0b0"/><rect x="760" y="20" width="320" height="240" stroke="#f4a3b8"/>
+              <g fill="#8fc4ff" stroke="none"><circle cx="80" cy="80" r="16"/><circle cx="130" cy="80" r="16"/><circle cx="180" cy="80" r="16"/><circle cx="230" cy="80" r="16"/><circle cx="280" cy="80" r="16"/>
+              <circle cx="80" cy="130" r="16"/><circle cx="130" cy="130" r="16"/><circle cx="180" cy="130" r="16"/><circle cx="230" cy="130" r="16"/><circle cx="280" cy="130" r="16"/>
+              <circle cx="80" cy="180" r="16"/><circle cx="130" cy="180" r="16"/><circle cx="180" cy="180" r="16"/><circle cx="230" cy="180" r="16"/><circle cx="280" cy="180" r="16"/></g>
+              <g fill="#9be0b0" stroke="none"><circle cx="440" cy="200" r="16"/><circle cx="480" cy="225" r="16"/><circle cx="530" cy="195" r="16"/><circle cx="575" cy="228" r="16"/><circle cx="620" cy="200" r="16"/><circle cx="665" cy="225" r="16"/><circle cx="455" cy="160" r="16"/><circle cx="560" cy="160" r="16"/><circle cx="650" cy="160" r="16"/></g>
+              <g fill="#f4a3b8" stroke="none"><circle cx="800" cy="60" r="16"/><circle cx="1000" cy="90" r="16"/><circle cx="880" cy="160" r="16"/><circle cx="1040" cy="220" r="16"/><circle cx="820" cy="230" r="16"/></g>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="180" y="290" fill="#8fc4ff">規則正しく並び、少しゆれる</text><text x="550" y="290" fill="#9be0b0">ある程度自由に動く</text><text x="920" y="290" fill="#f4a3b8">ばらばらに飛び回る</text></g>
+      - say: 固体では、粒子がきちんと並んで、少しゆれているだけ。熱すると、粒子がある程度自由に動けるようになり、液体になります。さらに熱すると、粒子がばらばらに飛び回る、気体になります。
+        show:
+          - { type: text, color: yellow, text: "固体 → 液体 → 気体：粒子の動きがどんどん激しく" }
+
+  - board: whiteboard
+    steps:
+      - say: 水を熱すると沸騰するのも、同じ理屈です。水の粒子が、ばらばらになって飛び出そうとする力が、まわりの空気が押す力、つまり大気圧をこえたとき、沸騰が起こります。
+        show:
+          - { type: title, text: 沸騰と気圧 }
+          - { type: text, text: "粒子が飛び出す力 ＞ 大気圧 → **沸騰**" }
+      - say: だから、富士山の山頂のように、気圧の低いところでは、100度より低い温度で沸騰します。山の上でお米を炊くと、うまく炊けないのはこのためです。
+        show:
+          - { type: text, color: yellow, text: "気圧が低い富士山の山頂 → 100℃より低い温度で沸騰" }
+
+  - board: whiteboard
+    steps:
+      - say: ただし、ものは必ず液体になるわけではありません。熱すると、固体から、いきなり気体になるものもあります。これを、昇華といいます。ドライアイスがよい例です。
+        show:
+          - { type: title, text: 昇華 }
+          - { type: box, color: blue, w: 1000, text: "固体 → いきなり気体 ＝ **昇華**（例：ドライアイス）" }
+      - say: ドライアイスは、二酸化炭素の固体です。粒子どうしのつながりが弱いので、ふつうの気圧では液体の状態を保てず、すぐに気体になってしまうのです。
+        show:
+          - { type: text, size: s, color: gray, text: "ドライアイス ＝ 二酸化炭素の固体。粒子のつながりが弱く、すぐ気体に" }

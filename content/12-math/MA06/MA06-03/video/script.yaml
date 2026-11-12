@@ -1,0 +1,68 @@
+title: 相関と因果
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「相関と因果」です。
+        show:
+          - { type: title, text: 相関と因果 }
+      - say: 2つのデータに、「一方が増えると、もう一方も増える」ような関係があるとき、「相関がある」といいます。
+        show:
+          - { type: text, size: l, text: "一方が増えると、もう一方も増える → **相関がある**" }
+      - say: たとえば、身長が高い人ほど、体重も重い傾向がありますね。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "例：身長が高いほど、体重も重い傾向" }
+
+  - board: whiteboard
+    steps:
+      - say: 相関の強さは、マイナス1から1の値をとる「相関係数」で表します。
+        show:
+          - { type: title, text: 相関係数 }
+      - say: 1に近いほど、強い正の相関。一方が増えると、もう一方も増えます。マイナス1に近いほど、強い負の相関。一方が増えると、もう一方は減ります。0に近いほど、相関はありません。
+        show:
+          - type: svg
+            w: 1120
+            h: 300
+            markup: |
+              <rect x="10" y="10" width="320" height="240" stroke="#9aa3ad"/><rect x="400" y="10" width="320" height="240" stroke="#9aa3ad"/><rect x="790" y="10" width="320" height="240" stroke="#9aa3ad"/>
+              <g fill="#8fc4ff" stroke="none"><circle cx="50" cy="220" r="7"/><circle cx="90" cy="190" r="7"/><circle cx="120" cy="175" r="7"/><circle cx="160" cy="140" r="7"/><circle cx="200" cy="120" r="7"/><circle cx="240" cy="90" r="7"/><circle cx="270" cy="60" r="7"/><circle cx="300" cy="40" r="7"/><circle cx="140" cy="165" r="7"/><circle cx="220" cy="95" r="7"/></g>
+              <g fill="#9aa3ad" stroke="none"><circle cx="450" cy="60" r="7"/><circle cx="500" cy="200" r="7"/><circle cx="540" cy="110" r="7"/><circle cx="580" cy="220" r="7"/><circle cx="620" cy="50" r="7"/><circle cx="660" cy="150" r="7"/><circle cx="690" cy="90" r="7"/><circle cx="470" cy="140" r="7"/><circle cx="600" cy="130" r="7"/><circle cx="520" cy="40" r="7"/></g>
+              <g fill="#f4a3b8" stroke="none"><circle cx="830" cy="40" r="7"/><circle cx="870" cy="70" r="7"/><circle cx="900" cy="90" r="7"/><circle cx="940" cy="120" r="7"/><circle cx="980" cy="150" r="7"/><circle cx="1020" cy="170" r="7"/><circle cx="1050" cy="200" r="7"/><circle cx="1080" cy="220" r="7"/><circle cx="920" cy="100" r="7"/><circle cx="1000" cy="165" r="7"/></g>
+              <g font-size="24" stroke="none" text-anchor="middle"><text x="170" y="290" fill="#8fc4ff">正の相関（1に近い）</text><text x="560" y="290" fill="#9aa3ad">相関なし（0に近い）</text><text x="950" y="290" fill="#f4a3b8">負の相関（－1に近い）</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: ここが、いちばん大事なポイントです。相関があっても、因果関係、つまり原因と結果の関係があるとは限りません。
+        show:
+          - { type: title, text: 相関 ≠ 因果 }
+          - { type: box, color: yellow, w: 1000, text: "相関があっても、**原因と結果の関係（因果）** とは限らない" }
+      - say: 有名な例があります。アイスクリームの売り上げと、水の事故の件数には、強い正の相関があります。では、「アイスを食べると、おぼれやすくなる」のでしょうか。
+        show:
+          - { type: text, text: "アイスの売り上げ ↑　と　水の事故 ↑　→　アイスのせい？" }
+        pause: 2
+      - say: もちろん、ちがいます。共通の原因は、「気温が高い」こと。暑いからアイスが売れ、暑いから海に行く人が増えて、事故も増える。それだけです。
+        show:
+          - type: svg
+            w: 1000
+            h: 250
+            markup: |
+              <rect x="380" y="10" width="240" height="70" rx="10" stroke="#f3d77a"/>
+              <text x="500" y="56" font-size="30" fill="#f3d77a" stroke="none" text-anchor="middle">気温が高い</text>
+              <path d="M430 80 L250 170" stroke="#f3d77a"/><path d="M570 80 L750 170" stroke="#f3d77a"/>
+              <g fill="currentColor" stroke="none" font-size="28" text-anchor="middle"><text x="200" y="210">アイスが売れる</text><text x="800" y="210">水の事故が増える</text></g>
+              <path d="M330 200 H670" stroke="#9aa3ad" stroke-dasharray="10 10"/>
+              <text x="500" y="240" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">見かけの相関</text>
+      - say: このように、第3の原因によって生まれる、見かけだけの相関を、「疑似相関」といいます。
+        show:
+          - { type: text, color: pink, text: "第3の原因による見かけの相関 ＝ **疑似相関**" }
+
+  - board: whiteboard
+    steps:
+      - say: 「〇〇をすると年収が上がる」。「△△を食べる地域は、がんが少ない」。世の中にあふれる統計の主張の多くは、相関であって、因果ではありません。
+        show:
+          - { type: title, text: ニュースを読むときに }
+          - { type: text, text: "「〇〇をすると年収が上がる」" }
+          - { type: text, text: "「△△を食べる地域は、がんが少ない」" }
+      - say: ニュースや広告の統計を見たら、「これは相関？それとも因果？」と問い返してみましょう。それだけで、だまされにくくなります。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "「これは相関？ 因果？」と問い返そう" }

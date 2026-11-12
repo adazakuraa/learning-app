@@ -2,3 +2,8 @@ id: math-ma12-02
 code: MA12-02
 title: フェルミ推定
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 88
+  narration: VOICEVOX:ずんだもん

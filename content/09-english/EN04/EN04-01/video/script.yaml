@@ -1,0 +1,44 @@
+title: 冠詞（a, an, the）
+scenes:
+  - board: slide
+    steps:
+      - say: 第4章、「名詞、代名詞、冠詞」です。
+        show:
+          - { type: title, text: 第4章　名詞・代名詞・冠詞 }
+      - say: 日本語にない冠詞、形が変わる代名詞、そして、数えられる名詞と数えられない名詞を学びます。
+        show:
+          - type: list
+            items: ["冠詞（a, an, the）", "代名詞の格変化", "可算名詞と不可算名詞"]
+      - say: どれも、日本語にはない考え方です。「英語では、ものをこう見るんだ」という、ものの見方のちがいを楽しみましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "日本語にない「名詞の見方」を知る" }
+
+  - board: whiteboard
+    steps:
+      - say: 冠詞は、日本語にない考え方のひとつです。aは、どれでもいい、ひとつ、を表します。I saw a cat in the garden. 庭でねこを見かけた。どのねこでもない、あるねこ一匹、という感じです。
+        read: 冠詞は、日本語にない考え方のひとつです。エーは、どれでもいい、ひとつ、を表します。アイ、ソー、ア、キャット、イン、ザ、ガーデン。庭でねこを見かけた。どのねこでもない、あるねこ一匹、という感じです。
+        show:
+          - { type: title, text: a と an }
+          - { type: box, color: blue, w: 1100, text: "**a**：どれでもいい「ひとつ」（I saw **a** cat.）" }
+      - say: 次の単語が、母音の音で始まるときは、anになります。an apple、an hour。hourは、hの文字ではなく、アの音で始まるからです。逆に、universityは、ユの音で始まるので、a universityです。
+        read: 次の単語が、母音の音で始まるときは、アンになります。アン、アップル。アン、アワー。アワーは、エイチの文字ではなく、アの音で始まるからです。逆に、ユニバーシティは、ユの音で始まるので、ア、ユニバーシティです。
+        show:
+          - { type: box, color: green, w: 1100, text: "母音の「音」で始まる語の前は **an**：an apple、an hour（hは読まない）／ a university（ユの音）" }
+
+  - board: whiteboard
+    steps:
+      - say: theは、すでに話に出てきたもの、または、聞き手もわかる、特定のものを指します。The cat was sleeping under the bench. そのねこは、ベンチの下で眠っていました。Please close the window. どの窓かわかっているときの、窓を閉めて、です。
+        read: ザは、すでに話に出てきたもの、または、聞き手もわかる、特定のものを指します。ザ、キャット、ワズ、スリーピング。そのねこは、眠っていました。プリーズ、クローズ、ザ、ウィンドウ。どの窓かわかっているときの、窓を閉めて、です。
+        show:
+          - { type: title, text: the と冠詞なし }
+          - { type: box, color: yellow, w: 1100, text: "**the**：話に出た・聞き手もわかる「その」もの（Please close **the** window.）" }
+      - say: そして、一般的なものや、固有名詞、複数の不特定のものには、冠詞をつけません。I love animals. 動物が好きです。She studied biology at university. 大学で生物学を学びました。
+        read: そして、一般的なものや、固有名詞、複数の不特定のものには、冠詞をつけません。アイ、ラブ、アニマルズ。動物が好きです。シー、スタディード、バイオロジー。生物学を学びました。
+        show:
+          - { type: box, color: gray, w: 1100, text: "冠詞なし：一般的なもの・固有名詞・複数（I love **animals**.）" }
+      - say: aは、はじめまして、theは、例のあれ、という感覚で覚えると、つかみやすいですよ。
+        read: エーは、はじめまして、ザは、例のあれ、という感覚で覚えると、つかみやすいですよ。
+        added: true
+        show:
+          - { type: text, color: gray, text: "a ＝「はじめまして」、the ＝「例のあれ」" }

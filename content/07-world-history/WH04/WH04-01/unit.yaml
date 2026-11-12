@@ -2,3 +2,8 @@ id: world-history-wh04-01
 code: WH04-01
 title: 中国の統一王朝（秦・漢）
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 135
+  narration: VOICEVOX:ずんだもん

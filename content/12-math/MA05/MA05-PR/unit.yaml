@@ -1,0 +1,11 @@
+id: math-ma05-practice
+code: MA05-PR
+title: 練習問題
+summary: 正規分布 の問題
+order: 999
+practice: true
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 396
+  narration: VOICEVOX:ずんだもん

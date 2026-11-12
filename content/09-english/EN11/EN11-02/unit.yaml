@@ -2,3 +2,8 @@ id: english-en11-02
 code: EN11-02
 title: よく出る接頭辞・接尾辞
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 88
+  narration: VOICEVOX:ずんだもん

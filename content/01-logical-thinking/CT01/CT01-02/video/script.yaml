@@ -1,0 +1,43 @@
+title: 良い論証とは何か
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「よい論証とは何か」です。論証は、主張と、それをささえる根拠からできています。よい議論をするには、この組み立てを意識することが基本です。
+        show:
+          - { type: title, text: 論証の組み立て }
+          - type: svg
+            w: 1000
+            h: 260
+            markup: |
+              <rect x="300" y="20" width="400" height="80" rx="14" stroke="#f3d77a" stroke-width="3"/>
+              <rect x="80" y="170" width="340" height="70" rx="14" stroke="#8fc4ff"/><rect x="580" y="170" width="340" height="70" rx="14" stroke="#8fc4ff"/>
+              <path d="M250 170 L420 100 M750 170 L580 100" stroke="#9aa3ad"/>
+              <g stroke="none" font-size="28" text-anchor="middle"><text x="500" y="70" fill="#f3d77a">主張</text><text x="250" y="215" fill="#8fc4ff">根拠</text><text x="750" y="215" fill="#8fc4ff">根拠</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 有名な例が、三段論法です。根拠の1、すべての人間は、いつか死ぬ。根拠の2、ソクラテスは人間である。だから主張、ソクラテスは、いつか死ぬ。
+        show:
+          - { type: title, text: 三段論法 }
+          - { type: text, color: blue, text: "根拠①：すべての人間はいつか死ぬ" }
+          - { type: text, color: blue, text: "根拠②：ソクラテスは人間である" }
+          - { type: text, color: yellow, text: "主張：ゆえに、ソクラテスはいつか死ぬ" }
+      - say: これは、正しい論証です。根拠が本当で、しかも、根拠から主張が、論理的に導かれているからです。
+        show:
+          - { type: box, color: green, w: 1000, text: "根拠が本当 ＋ 根拠から主張が論理的に導かれる ＝ 正しい論証" }
+
+  - board: whiteboard
+    steps:
+      - say: 論証を評価するには、2つの物差しがあります。
+        show:
+          - { type: title, text: 2つの物差し }
+      - say: ひとつは、根拠が正しければ、主張も必ず正しくなるのか、という、論理のつながりの問題です。
+        show:
+          - { type: box, color: blue, w: 1100, title: ① つながり, text: "根拠が正しければ、主張も必ず正しくなるか？（論理が妥当か）" }
+      - say: もうひとつは、その根拠が、実際に正しいのか、という問題です。
+        show:
+          - { type: box, color: yellow, w: 1100, title: ② 中身, text: "その根拠は、実際に正しいか？" }
+      - say: たとえば、「魚はみんな空を飛ぶ。マグロは魚だ。だからマグロは空を飛ぶ」。つながりは完ぺきですが、根拠がまちがっているので、主張もまちがいです。両方を満たして、はじめて正しい主張になるのです。
+        added: true
+        show:
+          - { type: text, color: gray, text: "例：「魚はみな空を飛ぶ。マグロは魚。ゆえにマグロは飛ぶ」→ つながりは正しいが根拠がうそ" }

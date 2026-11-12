@@ -1,0 +1,58 @@
+title: 品詞の種類
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「品詞の種類」です。単語は、意味や形、はたらきによって、10種類の品詞に分けられます。
+        show:
+          - { type: title, text: 10の品詞 }
+          - type: svg
+            w: 1100
+            h: 300
+            markup: |
+              <rect x="20" y="20" width="700" height="260" rx="14" stroke="#8fc4ff" stroke-dasharray="8 6"/><rect x="760" y="20" width="320" height="260" rx="14" stroke="#f4a3b8" stroke-dasharray="8 6"/>
+              <g stroke="none" font-size="24"><text x="40" y="55" fill="#8fc4ff">自立語（それだけで意味がわかる）</text><text x="780" y="55" fill="#f4a3b8">付属語</text>
+              <text x="50" y="110" fill="#f3d77a">名詞</text><text x="200" y="110" fill="#f3d77a">動詞</text><text x="350" y="110" fill="#f3d77a">形容詞</text><text x="520" y="110" fill="#f3d77a">形容動詞</text>
+              <text x="50" y="180" fill="#9be0b0">副詞</text><text x="200" y="180" fill="#9be0b0">連体詞</text><text x="350" y="180" fill="#9be0b0">接続詞</text><text x="520" y="180" fill="#9be0b0">感動詞</text>
+              <text x="800" y="120" fill="#f4a3b8">助詞</text><text x="800" y="180" fill="#f4a3b8">助動詞</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 名詞は、人や物、考えなどを表す言葉で、主語や目的語になります。活用はしません。机、幸せ、文法、これ、2人などです。
+        show:
+          - { type: title, text: 名詞・動詞・形容詞・形容動詞 }
+          - { type: text, color: yellow, text: "**名詞**：人・物・考え（机・幸せ・これ・2人）。活用しない" }
+      - say: 動詞は、動作や存在を表し、主に述語になります。活用します。食べる、動く、考える、ある、いる、などです。
+        show:
+          - { type: text, color: yellow, text: "**動詞**：動作・存在（食べる・動く・ある・いる）。活用する" }
+      - say: 形容詞と形容動詞は、性質や状態を表します。「い」で終わるものが形容詞、「だ」で終わるものが、形容動詞です。どちらも活用します。大きい、冷たいは形容詞。綺麗だ、元気だは、形容動詞です。
+        show:
+          - { type: text, color: yellow, text: "**形容詞**：「〜い」（大きい・冷たい）　**形容動詞**：「〜だ」（綺麗だ・元気だ）" }
+
+  - board: whiteboard
+    steps:
+      - say: 副詞は、主に動詞や形容詞をくわしくする言葉です。とても、ゆっくり、すぐに、などです。連体詞は、名詞だけをくわしくする言葉で、この、あらゆる、大きな、などです。
+        show:
+          - { type: title, text: 活用しない自立語 }
+          - { type: text, color: green, text: "**副詞**：主に動詞・形容詞をくわしく（とても・ゆっくり）" }
+          - { type: text, color: green, text: "**連体詞**：名詞だけをくわしく（この・あらゆる・大きな）" }
+      - say: 接続詞は、文や言葉をつなぐ言葉。しかし、だから、そして、などです。感動詞は、感動や呼びかけを表す言葉で、ああ、はい、もしもし、などです。これらは、どれも活用しません。
+        show:
+          - { type: text, color: green, text: "**接続詞**：つなぐ（しかし・だから・そして）" }
+          - { type: text, color: green, text: "**感動詞**：感動・呼びかけ（ああ・はい・もしもし）" }
+      - say: ちなみに、「大きな」は連体詞、「大きい」は形容詞です。似ていますが、「大きな」は活用しないので、別の品詞なのです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "「大きな」＝ 連体詞（活用しない）／「大きい」＝ 形容詞（活用する）" }
+
+  - board: whiteboard
+    steps:
+      - say: 最後に、付属語です。助詞は、言葉と言葉の関係を示すもので、それだけでは意味がわかりません。活用もしません。て、に、を、は、だけ、けれど、などです。
+        show:
+          - { type: title, text: 付属語 }
+          - { type: text, color: pink, text: "**助詞**：言葉の関係を示す。活用しない（て・に・を・は・だけ）" }
+      - say: 助動詞は、活用する付属語で、意味をそえるはたらきをします。た、ない、れる、です、などです。
+        show:
+          - { type: text, color: pink, text: "**助動詞**：意味をそえる。活用する（た・ない・れる・です）" }
+      - say: 助詞と助動詞は、それだけでは意味をなさないので、ほかの品詞、自立語と比べて、付属語と呼ばれます。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "それだけで意味がわかる ＝ **自立語**、ほかの言葉にくっつく ＝ **付属語**" }
