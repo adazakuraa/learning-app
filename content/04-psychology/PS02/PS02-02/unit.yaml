@@ -2,3 +2,8 @@ id: psychology-ps02-02
 code: PS02-02
 title: 注意と意識
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 92
+  narration: VOICEVOX:ずんだもん
