@@ -2,3 +2,8 @@ id: physics-ph06-03
 code: PH06-03
 title: 核分裂と核融合
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 105
+  narration: VOICEVOX:青山龍星
