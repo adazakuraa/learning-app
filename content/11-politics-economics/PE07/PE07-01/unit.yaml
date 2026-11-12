@@ -2,3 +2,8 @@ id: politics-economics-pe07-01
 code: PE07-01
 title: 日本国憲法の基本原則
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 114
+  narration: VOICEVOX:ずんだもん

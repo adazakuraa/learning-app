@@ -2,3 +2,8 @@ id: politics-economics-pe08-01
 code: PE08-01
 title: 基本的人権の種類
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 99
+  narration: VOICEVOX:ずんだもん
