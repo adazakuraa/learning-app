@@ -2,3 +2,8 @@ id: japanese-ja01-01
 code: JA01-01
 title: 漢字の成り立ち
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 144
+  narration: VOICEVOX:ずんだもん

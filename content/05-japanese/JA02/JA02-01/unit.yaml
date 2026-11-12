@@ -2,3 +2,8 @@ id: japanese-ja02-01
 code: JA02-01
 title: 文の構成要素
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 98
+  narration: VOICEVOX:ずんだもん
