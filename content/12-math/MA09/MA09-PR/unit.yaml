@@ -4,3 +4,8 @@ title: 練習問題
 summary: 対数の意味 の問題
 order: 999
 practice: true
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 86
+  narration: VOICEVOX:青山龍星
