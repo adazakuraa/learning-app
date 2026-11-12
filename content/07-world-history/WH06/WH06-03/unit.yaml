@@ -2,3 +2,8 @@ id: world-history-wh06-03
 code: WH06-03
 title: アステカ・インカ帝国の滅亡
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 95
+  narration: VOICEVOX:ずんだもん
