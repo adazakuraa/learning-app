@@ -4,3 +4,8 @@ title: 練習問題
 summary: フェルミ推定 の問題
 order: 999
 practice: true
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 109
+  narration: VOICEVOX:青山龍星
