@@ -2,3 +2,8 @@ id: information-it02-01
 code: IT02-01
 title: インターネットの基本
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 104
+  narration: VOICEVOX:青山龍星
