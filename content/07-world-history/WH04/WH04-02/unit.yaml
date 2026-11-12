@@ -2,3 +2,8 @@ id: world-history-wh04-02
 code: WH04-02
 title: 分裂と再統一（隋・唐・宋）
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 119
+  narration: VOICEVOX:ずんだもん

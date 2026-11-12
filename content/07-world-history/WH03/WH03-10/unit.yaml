@@ -2,3 +2,8 @@ id: world-history-wh03-10
 code: WH03-10
 title: 教皇権の衰退・マグナカルタ・百年戦争
 order: 10
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 158
+  narration: VOICEVOX:ずんだもん
