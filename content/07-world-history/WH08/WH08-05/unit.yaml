@@ -2,3 +2,8 @@ id: world-history-wh08-05
 code: WH08-05
 title: 産業革命とその影響
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 72
+  narration: VOICEVOX:ずんだもん
