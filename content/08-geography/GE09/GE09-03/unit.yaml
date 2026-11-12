@@ -2,3 +2,8 @@ id: geography-ge09-03
 code: GE09-03
 title: 中部・近畿
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 91
+  narration: VOICEVOX:ずんだもん
