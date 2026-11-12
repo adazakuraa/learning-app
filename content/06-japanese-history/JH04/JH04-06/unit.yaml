@@ -2,3 +2,8 @@ id: japanese-history-jh04-06
 code: JH04-06
 title: 平氏政権
 order: 6
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 73
+  narration: VOICEVOX:ずんだもん
