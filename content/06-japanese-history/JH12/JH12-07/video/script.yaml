@@ -1,0 +1,32 @@
+title: 沖縄返還と日米関係
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 太平洋戦争の終わりごろ、沖縄は、日本とアメリカの軍がぶつかる、地上戦の舞台になりました。
+        show:
+          - { type: title, text: 沖縄戦 }
+          - { type: text, at: [80, 140], w: 1120, text: "1945年　住民を巻きこんだ **地上戦**" }
+      - say: 一般の住民をふくむ、およそ20万人が亡くなったとされる沖縄戦は、鉄の暴風と呼ばれるほど、すさまじいものでした。
+        show:
+          - { type: box, at: [80, 230], w: 1120, color: pink, title: 鉄の暴風, text: "住民をふくむ 約 **20万人** が死亡" }
+      - say: 生き残った住民のなかには、集団自決を強いられた例もあり、戦後の沖縄の人々の記憶に、深く刻まれています。
+        show: []
+
+  - board: whiteboard
+    steps:
+      - say: 戦後、沖縄はアメリカの統治下に置かれ、日本に返されたのは、1972年のことでした。
+        show:
+          - { type: title, text: 1972年　沖縄返還 }
+          - { type: text, at: [80, 140], w: 1120, text: "戦後 アメリカが統治 → **1972年** 日本に返還" }
+      - say: 返還のあとも、広いアメリカ軍の基地が残り、今も、沖縄本島の面積のおよそ15%を、米軍基地が占めています。
+        show:
+          - type: svg
+            at: [80, 230]
+            w: 1000
+            h: 120
+            markup: |
+              <g stroke="none"><rect x="40" y="30" width="138" height="60" fill="#f4a3b8" fill-opacity="0.7"/><rect x="178" y="30" width="782" height="60" fill="#9aa3ad" fill-opacity="0.3"/></g>
+              <g stroke="none" font-size="22"><text x="50" y="68" fill="#1b2a24">基地 約15%</text><text x="480" y="68" fill="#e8eef5">沖縄本島のその他の土地</text></g>
+      - say: 基地の周りでは、騒音や事故、事件といった問題が今も続いています。なぜ沖縄だけが、これほど基地を負担しなければならないのか。この問いは、日本全体が向き合うべき問題として、残っています。
+        show:
+          - { type: box, at: [80, 390], w: 1120, color: yellow, text: "「なぜ沖縄だけが基地を負担するのか」← 日本全体の問題" }
