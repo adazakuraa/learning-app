@@ -2,3 +2,8 @@ id: religion-re07-01
 code: RE07-01
 title: 宗教を持たない人々
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 85
+  narration: VOICEVOX:ずんだもん
