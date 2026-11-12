@@ -1,0 +1,34 @@
+title: 動機づけられた推論
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「動機づけられた推論」です。これは、結論を先に決めて、それを支える根拠を探す、という考え方のパターンです。
+        show:
+          - { type: title, text: 動機づけられた推論 }
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <rect x="20" y="60" width="300" height="80" rx="12" stroke="#9be0b0"/><path d="M330 100 H440 M425 88 L440 100 L425 112" stroke="#9aa3ad"/><rect x="450" y="60" width="200" height="80" rx="12" stroke="#f3d77a"/>
+              <rect x="20" y="0" width="0" height="0"/>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="170" y="108" fill="#9be0b0">証拠を見る</text><text x="550" y="108" fill="#f3d77a">結論</text><text x="335" y="185" fill="#9aa3ad">ふつうの推論</text></g>
+              <rect x="720" y="60" width="160" height="80" rx="12" stroke="#f4a3b8"/><path d="M890 100 H960" stroke="#9aa3ad"/><rect x="965" y="60" width="130" height="80" rx="12" stroke="#f4a3b8"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="800" y="108" fill="#f4a3b8">結論が先</text><text x="1030" y="98" fill="#f4a3b8">都合のよい</text><text x="1030" y="125" fill="#f4a3b8">証拠を探す</text><text x="900" y="185" fill="#f4a3b8">動機づけられた推論</text></g>
+      - say: 見た目は、証拠にもとづいて考えているようですが、実際には、望む結論に向けて、証拠を選んだり、解釈したりしています。
+        show:
+          - { type: text, text: "見た目は証拠にもとづく。でも実際は、望む結論に向けて証拠を選んでいる" }
+
+  - board: whiteboard
+    steps:
+      - say: これは、うそをつくこととは、ちがいます。本人は、誠実に考えているつもりなのです。でも、知らないうちに、都合のよい証拠を重く見て、都合の悪い証拠を、見ないようにしてしまいます。
+        show:
+          - { type: title, text: 起きやすい場面 }
+          - { type: box, color: blue, w: 1100, text: "うそではない。本人は誠実なつもり。でも無意識に証拠を選んでいる" }
+      - say: 起きやすいのは、こんなときです。お金や、自分のイメージがかかっているとき。信念や価値観に、強く関わっているとき。そして、すでに多くを、つぎこんでしまっているとき。
+        show:
+          - type: list
+            items: ["お金・自分のイメージがかかっている", "信念・価値観に強く関わっている", "すでに多くをつぎこんでいる"]
+      - say: 例えば、高いお金を出して買った商品の、悪い評判は、なかなか信じたくないですよね。自分にかかわりが強いときほど、要注意です。
+        added: true
+        show:
+          - { type: text, color: gray, text: "例：高く買った商品の悪い評判は信じたくない" }

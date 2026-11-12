@@ -1,0 +1,47 @@
+title: 形式的誤謬
+scenes:
+  - board: slide
+    steps:
+      - say: 第3章、「誤謬」です。
+        show:
+          - { type: title, text: 第3章　誤謬（ごびゅう） }
+      - say: 誤謬とは、論理や推論のまちがいのことです。よくあるまちがいのパターンを、4つの単元で学びます。
+        show:
+          - type: list
+            items: ["形式的誤謬", "非形式的誤謬①", "非形式的誤謬②", "統計的誤謬"]
+      - say: まちがいのパターンを知っておくと、だまされにくくなり、自分の考えのまちがいにも、気づきやすくなります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "まちがいのパターンを知り、だまされず、自分のまちがいにも気づく" }
+
+  - board: whiteboard
+    steps:
+      - say: 形式的誤謬は、論理の形そのものが、まちがっている誤謬です。前提が本当でも、結論がまちがっている可能性があります。例を見てみましょう。
+        show:
+          - { type: title, text: 例1：逆は正しいとは限らない }
+          - { type: text, color: blue, text: "前提1：もし雨が降ったら、地面がぬれる" }
+          - { type: text, color: blue, text: "前提2：地面がぬれている" }
+          - { type: text, color: pink, text: "結論：ゆえに、雨が降った ← ×" }
+      - say: これは、まちがいです。地面がぬれる原因は、雨以外にもあります。水まきかもしれません。AならばB、が正しくても、BならばA、が正しいとは限らないのです。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "「A ならば B」が正しくても、「B ならば A」は正しいとは限らない" }
+      - say: 身近な例で言えば、「犬ならば動物だ」は正しいですが、「動物ならば犬だ」は、まちがいですね。
+        added: true
+        show:
+          - { type: text, color: gray, text: "「犬 → 動物」は正しい。でも「動物 → 犬」はまちがい" }
+
+  - board: whiteboard
+    steps:
+      - say: もうひとつの例です。前提1、もし勉強すれば、合格する。前提2、勉強しなかった。結論、だから、合格しない。
+        show:
+          - { type: title, text: 例2：裏も正しいとは限らない }
+          - { type: text, color: blue, text: "前提1：もし勉強すれば、合格する" }
+          - { type: text, color: blue, text: "前提2：勉強しなかった" }
+          - { type: text, color: pink, text: "結論：ゆえに、合格しない ← ×" }
+      - say: これもまちがいです。勉強しなくても、もともと実力があって合格することは、ありえます。AならばB、が正しくても、AでないならBでない、とは限らないのです。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "「A ならば B」が正しくても、「A でないなら B でない」とは限らない" }
+      - say: 数学の、命題の逆と裏で学んだ話と、同じですね。形だけ見て、正しそうと思わないことが大切です。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "数学の「命題の逆・裏」と同じ" }

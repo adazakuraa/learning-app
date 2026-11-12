@@ -1,0 +1,39 @@
+title: 不確実性と判断
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「不確実性と判断」です。完全な情報と、確実さを手に入れてから判断する、ということは、ほとんどの場合、できません。批判的思考は、不確かな中で、どう判断するか、という問いでもあります。
+        show:
+          - { type: title, text: 知的謙虚さ }
+          - { type: text, text: "完全な情報がそろうことはほとんどない → 不確かな中でどう判断するか" }
+      - say: 知的謙虚さとは、自分の知識や判断の限界を、認める姿勢です。わからない、確信がない、まちがっているかもしれない、と言える勇気は、弱さではなく、強さです。
+        show:
+          - { type: box, color: yellow, w: 1100, title: 知的謙虚さ, text: "「わからない」「まちがっているかも」と言える勇気 ＝ 強さ" }
+
+  - board: whiteboard
+    steps:
+      - say: 確率で考えることも大切です。多くの問いは、白か黒か、ではなく、どのくらい確からしいか、という問題です。
+        show:
+          - { type: title, text: 確率で考える }
+          - type: svg
+            w: 1000
+            h: 120
+            markup: |
+              <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#e8eef5"/><stop offset="1" stop-color="#3a3f45"/></linearGradient></defs>
+              <rect x="20" y="20" width="960" height="50" fill="url(#g)" stroke="#9aa3ad"/>
+              <path d="M700 10 V80" stroke="#f3d77a" stroke-width="4"/>
+              <g stroke="none" font-size="22"><text x="20" y="105" fill="#9aa3ad">ありえない</text><text x="860" y="105" fill="#9aa3ad">確実</text><text x="620" y="105" fill="#f3d77a">たぶん正しい（70%）</text></g>
+      - say: 〇〇は絶対正しい、〇〇は絶対まちがい、と考えるより、〇〇が正しい可能性は高いと思う、でも、この証拠が出たら考えを改める、という考え方のほうが、現実に合っています。
+        show:
+          - { type: text, color: pink, text: "×「絶対に正しい」「絶対にまちがい」" }
+          - { type: text, color: green, text: "○「たぶん正しい。でもこの証拠が出たら考えを改める」" }
+
+  - board: whiteboard
+    steps:
+      - say: 新しい証拠や議論にふれたとき、前の判断を更新していくこと。それが、批判的思考の目標のひとつです。
+        show:
+          - { type: title, text: 判断のアップデート }
+          - { type: box, color: blue, w: 1100, text: "新しい証拠にふれたら、判断を更新する" }
+      - say: この証拠は、自分の確信を、どのくらい変えるだろうか、と問いかけることが、判断の更新をうながします。スマホのアプリを、こまめにアップデートするように、自分の考えも、アップデートしていきましょう。
+        show:
+          - { type: text, color: yellow, text: "「この証拠で、確信はどのくらい変わる？」と問いかける" }

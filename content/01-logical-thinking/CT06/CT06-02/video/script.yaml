@@ -1,0 +1,32 @@
+title: 前提を明示化する
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「前提を明らかにする」です。議論の中にかくれた前提を見つけることは、批判的思考の、中心となる技術です。多くの議論の弱点は、根拠と結論の間に、当然のこととして、見えない前提が、はさまっているところにあります。
+        show:
+          - { type: title, text: かくれた前提 }
+      - say: 例えば、「この候補者は、ビジネスで成功している。だから、よい市長になるだろう」。ここには、「ビジネスで成功する力と、市政を動かす力は、同じだ」という、かくれた前提があります。
+        show:
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <rect x="10" y="60" width="320" height="80" rx="12" stroke="#8fc4ff"/><rect x="770" y="60" width="320" height="80" rx="12" stroke="#f3d77a"/>
+              <path d="M340 100 H760 M745 88 L760 100 L745 112" stroke="#9aa3ad"/>
+              <rect x="390" y="0" width="320" height="70" rx="12" stroke="#f4a3b8" stroke-dasharray="8 6"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="170" y="108" fill="#8fc4ff">ビジネスで成功</text><text x="930" y="108" fill="#f3d77a">よい市長になる</text><text x="550" y="32" fill="#f4a3b8">かくれた前提：</text><text x="550" y="58" fill="#f4a3b8">必要な力は同じ</text></g>
+      - say: この前提をはっきりさせて、はじめて、主張を評価できるようになります。ビジネスと市政は、本当に同じ力が必要なのでしょうか。
+        show:
+          - { type: text, color: yellow, text: "前提をはっきりさせて、はじめて評価できる" }
+
+  - board: whiteboard
+    steps:
+      - say: かくれた前提を見つける方法は、根拠と結論の間に、「なぜ」という問いを入れることです。
+        show:
+          - { type: title, text: 見つけ方 }
+      - say: AだからCだ、という議論に、なぜAから、Cが言えるのか、と問うと、Bがあるから、という答えが見えてきます。そのBが、かくれた前提です。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "「A だから C」→「なぜ A から C が言える？」→「B があるから」→ B ＝ かくれた前提" }
+      - say: 前提がわかると、議論の評価が、大きく変わることがあります。そのBは本当か、私はBを認めない、となれば、議論全体がくずれます。政治や倫理の議論の、多くのすれちがいは、前提のちがいに気づかないことが原因です。
+        show:
+          - { type: text, color: pink, text: "すれちがいの多くは、前提のちがいに気づかないことが原因" }
