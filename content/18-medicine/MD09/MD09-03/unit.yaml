@@ -3,3 +3,8 @@ code: MD09-03
 title: 子どもの事故：誤飲・窒息・転落・溺水
 order: 3
 summary: 子どもの事故は、予防が一番の対策です。起きたときの対応も覚えておきます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 156
+  narration: VOICEVOX:ずんだもん

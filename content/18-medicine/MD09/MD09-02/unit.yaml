@@ -3,3 +3,8 @@ code: MD09-02
 title: 子どもの発熱・けいれん・咳
 order: 2
 summary: 熱性けいれん、クループ、川崎病など、子どもに多い病気の要点です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 169
+  narration: VOICEVOX:ずんだもん
