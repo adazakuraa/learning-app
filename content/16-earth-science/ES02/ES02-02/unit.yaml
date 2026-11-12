@@ -2,3 +2,8 @@ id: earth-science-es02-02
 code: ES02-02
 title: 地震の仕組み
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 81
+  narration: VOICEVOX:青山龍星

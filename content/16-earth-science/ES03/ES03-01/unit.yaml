@@ -2,3 +2,8 @@ id: earth-science-es03-01
 code: ES03-01
 title: 岩石の三種類
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 89
+  narration: VOICEVOX:青山龍星
