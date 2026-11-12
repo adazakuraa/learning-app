@@ -3,3 +3,8 @@ code: MD05-04
 title: 重症感染症のサイン：敗血症・髄膜炎
 order: 4
 summary: 感染症が全身に広がる「敗血症」は、早く治療しないと命にかかわります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 135
+  narration: VOICEVOX:ずんだもん

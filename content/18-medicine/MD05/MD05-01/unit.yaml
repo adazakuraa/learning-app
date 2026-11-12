@@ -3,3 +3,8 @@ code: MD05-01
 title: 発熱
 order: 1
 summary: 熱の高さより「全身の状態」が大切です。熱そのものは体が戦っているしるしです。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 153
+  narration: VOICEVOX:ずんだもん
