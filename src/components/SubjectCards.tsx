@@ -27,8 +27,8 @@ export function SubjectCards({ subjects, detailed = false }: { subjects: Subject
                   {detailed && s.description && <p className="muted small">{s.description}</p>}
                   <ProgressBar value={c.ratio} size="sm" label={`${s.title}の進捗`} />
                   <div className="muted small">
-                    {detailed && `${s.chapters.length} 章 ・ `}
-                    {c.done} / {c.total} 単元 完了
+                    {detailed && `${s.chapters.length}章 ・ `}
+                    {c.done}/{c.total} 完了
                   </div>
                 </Link>
               );
