@@ -2,3 +2,8 @@ id: japanese-history-jh10-05
 code: JH10-05
 title: 関東大震災
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 83
+  narration: VOICEVOX:ずんだもん
