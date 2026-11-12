@@ -2,3 +2,8 @@ id: politics-economics-pe02-04
 code: PE02-04
 title: 財政と税
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 100
+  narration: VOICEVOX:ずんだもん
