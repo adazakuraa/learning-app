@@ -1,0 +1,45 @@
+title: 突然変異と進化への影響
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「突然変異と進化への影響」です。突然変異とは、DNAの塩基の並びが変わることです。
+        show:
+          - { type: title, text: 突然変異 }
+          - { type: text, size: l, text: "**突然変異** ＝ DNA の塩基の並びが変わること" }
+      - say: DNAのコピーはとても正確ですが、完ぺきではありません。ごくまれに、写しまちがいが起こります。また、紫外線や放射線、ある種の化学物質も、DNAを傷つけて、突然変異を起こします。
+        show:
+          - type: svg
+            w: 1000
+            h: 160
+            markup: |
+              <g stroke="none" font-size="40" font-family="monospace"><text x="60" y="60" fill="#8fc4ff">A T G C C A T</text><text x="60" y="140" fill="#8fc4ff">A T G </text><text x="232" y="140" fill="#f4a3b8">T</text><text x="262" y="140" fill="#8fc4ff"> C A T</text></g>
+              <text x="560" y="140" font-size="24" fill="#f4a3b8" stroke="none">← 1文字だけ写しまちがい</text>
+          - { type: text, size: s, color: gray, text: "原因：コピーのミス、紫外線、放射線、化学物質" }
+
+  - board: whiteboard
+    steps:
+      - say: 突然変異のほとんどは、何も変わらないか、害になるものです。でも、ごくまれに、生きるのに有利な変化が起こることがあります。
+        show:
+          - { type: title, text: 自然選択 }
+          - { type: text, text: "ほとんどは「変化なし」か「不利」。ごくまれに「有利」な変化" }
+      - say: 有利な変化を持った個体が、その環境で、ほかより多くの子孫を残すと、その遺伝子は、集団の中に広まっていきます。これが、自然選択、自然淘汰のしくみです。
+        show:
+          - type: svg
+            w: 1100
+            h: 260
+            markup: |
+              <g stroke="none" font-size="22" fill="#9aa3ad"><text x="20" y="40">はじめ</text><text x="20" y="130">数世代後</text><text x="20" y="220">さらに後</text></g>
+              <g fill="#9aa3ad" stroke="none"><circle cx="200" cy="35" r="14"/><circle cx="250" cy="35" r="14"/><circle cx="300" cy="35" r="14"/><circle cx="350" cy="35" r="14"/><circle cx="450" cy="35" r="14"/>
+              <circle cx="200" cy="125" r="14"/><circle cx="250" cy="125" r="14"/><circle cx="300" cy="125" r="14"/>
+              <circle cx="200" cy="215" r="14"/></g>
+              <g fill="#f3d77a" stroke="none"><circle cx="400" cy="35" r="14"/>
+              <circle cx="350" cy="125" r="14"/><circle cx="400" cy="125" r="14"/><circle cx="450" cy="125" r="14"/>
+              <circle cx="250" cy="215" r="14"/><circle cx="300" cy="215" r="14"/><circle cx="350" cy="215" r="14"/><circle cx="400" cy="215" r="14"/><circle cx="450" cy="215" r="14"/></g>
+              <text x="540" y="130" font-size="24" fill="#f3d77a" stroke="none">有利な変化をもつ個体が増えていく</text>
+      - say: これが長い時間積み重なって、生き物は少しずつ姿を変えていきます。これが進化です。ダーウィンが、「種の起源」という本で発表した、進化論です。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "突然変異 → 自然選択 → 積み重なって **進化**（ダーウィン『種の起源』）" }
+      - say: たとえば、薬が効かない細菌、耐性菌が生まれるのも、このしくみです。薬をあびても生き残る変異を持った菌だけが増えていくのです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "例：薬が効かない耐性菌（生き残った変異をもつ菌が増える）" }

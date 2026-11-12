@@ -1,0 +1,55 @@
+title: 遺伝の法則
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「遺伝の法則」です。メンデルは、エンドウ豆を使った実験から、遺伝の法則を発見しました。
+        show:
+          - { type: title, text: メンデルの実験 }
+      - say: メンデルは、丸い種のエンドウと、しわのある種のエンドウを、かけ合わせました。すると、子どもの代は、すべて丸い種になりました。
+        show:
+          - { type: text, text: "丸 × しわ → 子の代：**すべて丸**" }
+      - say: さらに、子どもどうしをかけ合わせると、孫の代では、丸としわが、3対1の割合で現れました。
+        show:
+          - { type: text, text: "子 × 子 → 孫の代：丸 ： しわ ＝ **3 ： 1**" }
+        pause: 2
+
+  - board: whiteboard
+    steps:
+      - say: ここから何がわかるでしょう。種を丸くする遺伝子をA、しわにする遺伝子を小文字のaとします。遺伝子は、父と母から1つずつ受けつぐので、2つで1セットです。丸い種はAA、しわの種はaaと考えます。
+        show:
+          - { type: title, text: 遺伝子で考える }
+          - type: svg
+            at: [80, 140]
+            w: 760
+            h: 520
+            markup: |
+              <g stroke="none" font-size="22" fill="#9aa3ad"><text x="0" y="60">親</text><text x="0" y="220">子</text><text x="0" y="400">孫</text></g>
+              <circle cx="200" cy="50" r="44" stroke="#9be0b0"/><text x="200" y="60" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">AA</text>
+              <circle cx="500" cy="50" r="44" stroke="#f4a3b8" stroke-dasharray="6 6"/><text x="500" y="60" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="middle">aa</text>
+              <path d="M245 50 H455 M350 50 V160" stroke="#9aa3ad"/>
+              <circle cx="260" cy="210" r="44" stroke="#9be0b0"/><text x="260" y="220" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">Aa</text>
+              <circle cx="440" cy="210" r="44" stroke="#9be0b0"/><text x="440" y="220" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">Aa</text>
+              <path d="M305 210 H395 M350 210 V310 M110 310 H650 M110 310 V350 M290 310 V350 M470 310 V350 M650 310 V350" stroke="#9aa3ad"/>
+              <circle cx="110" cy="395" r="44" stroke="#9be0b0"/><circle cx="290" cy="395" r="44" stroke="#9be0b0"/><circle cx="470" cy="395" r="44" stroke="#9be0b0"/><circle cx="650" cy="395" r="44" stroke="#f4a3b8" stroke-dasharray="6 6"/>
+              <g stroke="none" font-size="30" text-anchor="middle"><text x="110" y="405" fill="#9be0b0">AA</text><text x="290" y="405" fill="#9be0b0">Aa</text><text x="470" y="405" fill="#9be0b0">aA</text><text x="650" y="405" fill="#f4a3b8">aa</text></g>
+              <text x="300" y="490" font-size="26" fill="#f3d77a" stroke="none">丸 3 ： しわ 1</text>
+      - say: 子どもは、Aaしかありえません。でも、実際は丸でした。つまり、Aとaが両方あるときは、Aのほうが優先されるのです。
+        show:
+          - { type: text, at: [860, 220], w: 380, color: yellow, text: "子 Aa は丸\n→ A が優先される" }
+      - say: 孫は、Aa×Aaなので、組み合わせは、AA、Aa、aA、aaの4通り。丸としわが3対1だったことから、aaのときだけ、しわになる、と考えれば、つじつまが合います。
+        show:
+          - { type: text, at: [860, 400], w: 380, color: pink, text: "aa のときだけ\nしわになる → 3：1" }
+
+  - board: whiteboard
+    steps:
+      - say: これらの結果をまとめたものが、遺伝の法則です。
+        show:
+          - { type: title, text: 遺伝の法則 }
+      - say: 1、生き物の特徴は、遺伝によって決まること。2、遺伝子の組み合わせは、かたよりなく、ランダムに決まること。3、丸としわのように、競い合う遺伝子があるときは、どちらかだけが表に出ることがあること。
+        show:
+          - type: list
+            items: ["① 生物の特徴は遺伝で決まる", "② 遺伝子の組み合わせは、かたよりなくランダム", "③ 競い合う遺伝子があると、片方だけが表に出ることがある"]
+      - say: たとえば、血液型も、この考え方で説明できます。A型どうしの両親から、O型の子どもが生まれることがあるのは、両親が、表に出ていないO型の遺伝子を持っていることがあるからです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "例：A型どうしの親から O型の子が生まれることも（隠れていた O の遺伝子）" }

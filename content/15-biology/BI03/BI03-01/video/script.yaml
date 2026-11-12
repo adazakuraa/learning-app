@@ -1,0 +1,68 @@
+title: DNAの構造と役割
+scenes:
+  - board: slide
+    steps:
+      - say: ここから「遺伝とDNA」の章です。
+        show:
+          - { type: title, text: 第3章　遺伝とDNA }
+      - say: この章では、生命の設計図DNAのしくみ、そこから体がつくられる流れ、親から子へ形が受けつがれるきまり、そして進化や、最新の遺伝子技術までを学びます。
+        added: true
+        show:
+          - type: list
+            items: ["DNAの構造と役割", "タンパク質合成（転写・翻訳）", "遺伝の法則", "突然変異と進化への影響", "ゲノムと遺伝子技術"]
+      - say: 親子が似る理由、遺伝子検査、ゲノム編集。ニュースでもよく聞く話題の、土台になる章です。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "DNA から体ができる流れと、遺伝・進化のしくみをつなげて理解する" }
+
+  - board: whiteboard
+    steps:
+      - say: 1本目は「DNAの構造と役割」です。DNAは、生命の設計図です。
+        show:
+          - { type: title, text: DNAの構造 }
+          - { type: text, size: l, text: "**DNA** ＝ 生命の設計図" }
+      - say: DNAは、塩基と呼ばれる4種類の物質、アデニンA、チミンT、グアニンG、シトシンCが並んだ2本の鎖が、らせん状にねじれた、「二重らせん」の形をしています。
+        show:
+          - type: svg
+            w: 1100
+            h: 260
+            markup: |
+              <path d="M40 60 C190 60 190 200 340 200 C490 200 490 60 640 60 C790 60 790 200 940 200 C1000 200 1040 160 1060 130" stroke="#8fc4ff" stroke-width="4"/>
+              <path d="M40 200 C190 200 190 60 340 60 C490 60 490 200 640 200 C790 200 790 60 940 60 C1000 60 1040 100 1060 130" stroke="#f4a3b8" stroke-width="4"/>
+              <g stroke="#9aa3ad"><path d="M90 66 V194"/><path d="M140 80 V180"/><path d="M240 80 V180"/><path d="M290 66 V194"/><path d="M390 66 V194"/><path d="M440 80 V180"/><path d="M540 80 V180"/><path d="M590 66 V194"/><path d="M690 66 V194"/><path d="M740 80 V180"/><path d="M840 80 V180"/><path d="M890 66 V194"/></g>
+              <text x="380" y="250" font-size="24" fill="#f3d77a" stroke="none">二重らせん（A・T・G・C の並び）</text>
+
+  - board: whiteboard
+    steps:
+      - say: 2本の鎖では、AとT、GとCが、必ずペアになって結びつく、というきまりがあります。
+        show:
+          - { type: title, text: ペアのきまり }
+          - type: svg
+            w: 1000
+            h: 220
+            markup: |
+              <g stroke="none" font-size="40" text-anchor="middle">
+                <text x="150" y="70" fill="#8fc4ff">A</text><text x="300" y="70" fill="#8fc4ff">G</text><text x="450" y="70" fill="#8fc4ff">C</text><text x="600" y="70" fill="#8fc4ff">T</text><text x="750" y="70" fill="#8fc4ff">A</text>
+                <text x="150" y="190" fill="#f4a3b8">T</text><text x="300" y="190" fill="#f4a3b8">C</text><text x="450" y="190" fill="#f4a3b8">G</text><text x="600" y="190" fill="#f4a3b8">A</text><text x="750" y="190" fill="#f4a3b8">T</text>
+              </g>
+              <g stroke="#9aa3ad"><path d="M150 85 V150"/><path d="M300 85 V150"/><path d="M450 85 V150"/><path d="M600 85 V150"/><path d="M750 85 V150"/></g>
+          - { type: text, color: yellow, text: "A と T、G と C が必ずペア" }
+      - say: だから、片方の鎖があれば、もう片方を、正確に作り直すことができます。片方が「型」になっているのです。これが、DNAをコピーしたり、情報を読み取ったりするときに、とても大切になります。
+        show:
+          - { type: box, color: blue, w: 1000, text: "片方があれば、もう片方を正確に復元できる → コピー（複製）や読み取りに使う" }
+
+  - board: whiteboard
+    steps:
+      - say: 塩基の並びのうち、実際にタンパク質の情報を表している部分を、遺伝子といいます。
+        show:
+          - { type: title, text: 遺伝子 }
+          - { type: text, size: l, text: "**遺伝子** ＝ タンパク質の情報を表している部分" }
+      - say: おどろくことに、ヒトのDNAのうち、タンパク質の情報を表す遺伝子は、全体のおよそ1.5％しかありません。残りの部分が何をしているのかは、今も研究が続いています。
+        show:
+          - type: svg
+            w: 1000
+            h: 140
+            markup: |
+              <rect x="40" y="40" width="900" height="60" stroke="#9aa3ad"/>
+              <rect x="40" y="40" width="14" height="60" fill="#f3d77a" stroke="none"/>
+              <g stroke="none" font-size="24"><text x="70" y="130" fill="#f3d77a">遺伝子 約1.5％</text><text x="600" y="130" fill="#9aa3ad">残り：研究中</text></g>

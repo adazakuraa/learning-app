@@ -1,0 +1,41 @@
+title: 呼吸（細胞呼吸）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「呼吸」です。光合成の逆で、糖を使って、エネルギー、ATPをとり出す活動を、呼吸といいます。光合成の式の向きを、反対にすると、呼吸の式になります。
+        show:
+          - { type: title, text: 呼吸 }
+          - { type: formula, color: green, tex: '\text{光合成：}\; 6\text{CO}_2 + 6\text{H}_2\text{O} + \text{光} \rightarrow \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2' }
+          - { type: formula, color: yellow, tex: '\text{呼吸：}\; \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2 \rightarrow 6\text{CO}_2 + 6\text{H}_2\text{O} + \text{ATP}' }
+      - say: 私たちが、酸素を吸って、二酸化炭素をはき出すのは、体の中で、この反応が起きているからです。
+        show:
+          - { type: text, text: "酸素を吸い、二酸化炭素をはく → 体の中でこの反応が起きている" }
+
+  - board: whiteboard
+    steps:
+      - say: 呼吸は、肺だけで起きているのではありません。体のひとつひとつの細胞の中で、行われています。これを、細胞呼吸といいます。
+        show:
+          - { type: title, text: 細胞呼吸の3段階 }
+      - say: 細胞呼吸は、3つの段階で進みます。1、解糖系。2、クエン酸回路。3、電子伝達系。解糖系は、細胞の中の液体の部分、細胞質基質で起こり、残りの2つは、ミトコンドリアの中で起こります。
+        show:
+          - type: svg
+            w: 1100
+            h: 200
+            markup: |
+              <rect x="30" y="60" width="280" height="80" rx="12" stroke="#8fc4ff"/><rect x="410" y="60" width="280" height="80" rx="12" stroke="#f3d77a"/><rect x="790" y="60" width="280" height="80" rx="12" stroke="#f3d77a"/>
+              <g stroke="none" font-size="26" text-anchor="middle"><text x="170" y="110" fill="#8fc4ff">① 解糖系</text><text x="550" y="110" fill="#f3d77a">② クエン酸回路</text><text x="930" y="110" fill="#f3d77a">③ 電子伝達系</text></g>
+              <path d="M320 100 H400 M700 100 H780" stroke="#9aa3ad"/>
+              <g stroke="none" font-size="20" text-anchor="middle" fill="#9aa3ad"><text x="170" y="175">細胞質基質（酸素なしでもOK）</text><text x="740" y="175">ミトコンドリア（酸素が必要・たくさんATP）</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: このうち、解糖系だけは、酸素を使いません。だから、全力で走るときのように、酸素が足りない運動、無酸素運動のときでも、ATPを作れます。ただし、効率が悪いので、長くは続きません。
+        show:
+          - { type: title, text: 無酸素運動と発酵 }
+          - { type: box, color: blue, w: 1000, text: "解糖系は酸素なしでも ATP をつくれる（無酸素運動）。でも効率が悪く長く続かない" }
+      - say: 乳酸は、解糖系の化学反応でできる物質です。短距離走のあとに、体にたまるのが、この乳酸です。
+        show:
+          - { type: text, text: "**乳酸** … 解糖系でできる物質（全力疾走のあとにたまる）" }
+      - say: 微生物が、解糖系のしくみで生きることを、発酵といいます。そのときにできる物質として、アルコールなどがあります。お酒や、ヨーグルト、パンづくりは、この発酵を利用しています。
+        show:
+          - { type: text, color: yellow, text: "**発酵** … 微生物の解糖系（お酒・ヨーグルト・パン）" }
