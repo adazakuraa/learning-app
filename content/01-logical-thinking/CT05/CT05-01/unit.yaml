@@ -2,3 +2,8 @@ id: logical-thinking-ct05-01
 code: CT05-01
 title: 情報源の評価
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 82
+  narration: VOICEVOX:青山龍星
