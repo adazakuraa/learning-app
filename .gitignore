@@ -6,3 +6,6 @@ public/data
 *.tmp.mp4
 narrated.txt
 todo.txt
+stale.txt
+todo.txt
+chunk_*

@@ -1,10 +1,9 @@
 name: Narrate and render videos
 
-# Runs VOICEVOX (free speech synthesis) on GitHub's runner, generates narration for the
-# video scripts, re-renders the affected videos and commits them back to the branch.
-# On the working branches it runs automatically when video scripts are pushed: changed scripts
-# (and steps whose narration text changed) are re-rendered. Locally rendered MP4s are therefore
-# not needed any more; push the script and let this workflow produce the video.
+# Generates narration with VOICEVOX (free speech synthesis) and renders every stale video
+# (see pipeline/render/stale.mjs), one job per subject in parallel. Results are committed back
+# in small batches so progress survives timeouts. Runs on pushes of video scripts to the working
+# branches; locally rendered MP4s are not needed.
 on:
   push:
     branches: ['ccr-*']
@@ -14,11 +13,6 @@ on:
       - 'pipeline/render/**'
       - 'pipeline/narrate.py'
   workflow_dispatch:
-    inputs:
-      filter:
-        description: 'Unit id prefix (e.g. math-ma01). Empty = all units with scripts'
-        required: false
-        default: ''
 
 permissions:
   contents: write
@@ -31,45 +25,53 @@ jobs:
   videos:
     runs-on: ubuntu-latest
     timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        subject: [math, physics, chemistry, biology, earth-science, information, japanese-ja, japanese-history, english, world-history, geography, politics-economics, philosophy, psychology, sociology, religion, logical-thinking]
     steps:
+      # check out the branch head (not the triggering commit) so work already pushed is reused
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
         with:
-          node-version: 22
-          cache: npm
-      - name: Install npm packages
-        run: npm ci
+          ref: ${{ github.ref_name }}
+      - name: Anything to do?
+        id: todo
+        run: |
+          npm ci --silent
+          node pipeline/render/stale.mjs "${{ matrix.subject }}" > stale.txt
+          echo "count=$(grep -c . stale.txt || true)" >> "$GITHUB_OUTPUT"
+          echo "stale videos:"; cat stale.txt
       - uses: actions/setup-python@v5
+        if: steps.todo.outputs.count != '0'
         with:
           python-version: '3.12'
-      # No apt here: Ubuntu mirrors have been unreachable from runners at times.
       - name: Install Playwright Chromium, ffmpeg, PyYAML
+        if: steps.todo.outputs.count != '0'
         run: |
           npm i --no-save playwright ffmpeg-static ffprobe-static
           npx playwright install chromium
           sudo ln -sf "$(node -p "require('ffmpeg-static')")" /usr/local/bin/ffmpeg
           sudo ln -sf "$(node -p "require('ffprobe-static').path")" /usr/local/bin/ffprobe
-          pip install pyyaml
-          ffmpeg -version | head -1; ffprobe -version | head -1; python3 -c "import yaml; print('pyyaml', yaml.__version__)"
+          pip install -q pyyaml
       - name: Start VOICEVOX engine
+        if: steps.todo.outputs.count != '0'
         run: |
           docker run -d --name voicevox -p 50021:50021 voicevox/voicevox_engine:cpu-latest > /dev/null
           for i in $(seq 1 60); do curl -sf http://localhost:50021/version && exit 0; sleep 5; done
           docker logs voicevox | tail -30; exit 1
       - name: Narrate
-        run: python3 pipeline/narrate.py --filter "${{ inputs.filter }}" --changed-list narrated.txt
-      - name: Decide what to render
+        if: steps.todo.outputs.count != '0'
         run: |
-          node pipeline/render/stale.mjs "${{ inputs.filter }}" > todo.txt
-          echo "rendering $(wc -l < todo.txt) videos:"; cat todo.txt
-      - name: Render
-        run: cat todo.txt | xargs -r -P 2 -I{} node pipeline/render/render.mjs {}
-      - name: Commit
+          python3 pipeline/narrate.py --filter "${{ matrix.subject }}"
+          pipeline/ci-commit.sh "Narration: ${{ matrix.subject }}"
+      - name: Render (committing every few videos)
+        if: steps.todo.outputs.count != '0'
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content
-          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
-          git commit -m "Render videos with narration (VOICEVOX:青山龍星) [skip ci]"
-          git pull --rebase
-          git push
+          node pipeline/render/stale.mjs "${{ matrix.subject }}" > todo.txt
+          echo "rendering $(grep -c . todo.txt) videos"
+          split -l 4 todo.txt chunk_
+          for c in chunk_*; do
+            cat "$c" | xargs -r -P 2 -I{} node pipeline/render/render.mjs {}
+            pipeline/ci-commit.sh "Videos: ${{ matrix.subject }}"
+          done
