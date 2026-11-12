@@ -40,6 +40,9 @@ scenes:
 `video/narration/<シーン番号>-<ステップ番号>.wav` を置くと、その長さに合わせて字幕と映像のタイミングが調整され、音声付きで書き出される。
 音声合成ツールは固定しない（VOICEVOX などで生成して置く）。音声がなければ字幕のみの動画になる。
 
+通常は GitHub Actions（`.github/workflows/videos.yml`）が VOICEVOX で自動生成する。話者は `pipeline/voice.json` で決める（現在：ずんだもん）。
+このファイルを変えると、すべての動画のナレーションが作り直され、動画も再書き出しされる。
+
 ## 容量
 
 1単元（5〜8分）で数MB〜十数MB。リポジトリが大きくなったら、動画専用リポジトリ（GitHub Pages 有効）に移し、`unit.yaml` の `video.src` を URL にする。

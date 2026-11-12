@@ -12,6 +12,7 @@ on:
       - '.github/workflows/videos.yml'
       - 'pipeline/render/**'
       - 'pipeline/narrate.py'
+      - 'pipeline/voice.json'
   workflow_dispatch:
 
 permissions:

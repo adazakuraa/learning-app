@@ -8,7 +8,8 @@ times captions and animation to them, and mixes them into the MP4.
 
 Usage:
   python3 pipeline/narrate.py [--filter math-ma01] [--engine http://localhost:50021]
-                              [--speaker 青山龍星] [--style ノーマル]
+                              [--speaker ずんだもん] [--style ノーマル]
+The default voice is set in pipeline/voice.json (changing it re-narrates and re-renders everything).
 Requires: ffmpeg, PyYAML, a running VOICEVOX engine (see .github/workflows/videos.yml)
 """
 import argparse
@@ -73,12 +74,13 @@ def speaker_id(engine: str, name: str, style: str) -> int:
 
 
 def main():
+    voice = json.loads((ROOT / 'pipeline' / 'voice.json').read_text(encoding='utf-8'))
     ap = argparse.ArgumentParser()
     ap.add_argument('--filter', default='')
     ap.add_argument('--engine', default='http://localhost:50021')
-    ap.add_argument('--speaker', default='青山龍星')
-    ap.add_argument('--style', default='ノーマル')
-    ap.add_argument('--speed', type=float, default=1.05)
+    ap.add_argument('--speaker', default=voice['speaker'])
+    ap.add_argument('--style', default=voice['style'])
+    ap.add_argument('--speed', type=float, default=voice['speed'])
     ap.add_argument('--changed-list', default='', help='write ids of units with new audio to this file')
     ap.add_argument('--out-root', default='', help='write clips to <out-root>/<unit-id>/ instead of the unit (voice samples)')
     a = ap.parse_args()

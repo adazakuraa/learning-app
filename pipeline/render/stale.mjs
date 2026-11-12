@@ -1,6 +1,6 @@
 // Decide which videos need (re-)rendering, independent of git history or file times.
 // A video is up to date when video/render-hash.txt matches the hash of:
-//   its script.yaml + its narration clips' manifest + the renderer source (pipeline/render/*)
+//   its script.yaml + its narration clips' manifest + the renderer source (pipeline/render/*) + pipeline/voice.json
 //   node pipeline/render/stale.mjs [prefix]   -> prints stale unit ids
 import crypto from 'node:crypto';
 import fs from 'node:fs';
@@ -12,6 +12,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const RENDER_DIR = path.join(ROOT, 'pipeline/render');
 const rendererHash = crypto.createHash('sha1');
 for (const f of fs.readdirSync(RENDER_DIR).sort()) if (/\.(mjs|js|css|html)$/.test(f) && f !== 'stale.mjs' && f !== 'batch.mjs') rendererHash.update(fs.readFileSync(path.join(RENDER_DIR, f)));
+rendererHash.update(fs.readFileSync(path.join(ROOT, 'pipeline/voice.json'))); // a new voice re-narrates and re-renders everything
 const RENDERER = rendererHash.digest('hex');
 
 export function renderHash(unitDir) {
