@@ -2,3 +2,8 @@ id: geography-ge05-04
 code: GE05-04
 title: 中東・西アジア
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 107
+  narration: VOICEVOX:ずんだもん

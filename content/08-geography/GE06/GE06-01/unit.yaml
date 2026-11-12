@@ -2,3 +2,8 @@ id: geography-ge06-01
 code: GE06-01
 title: 西ヨーロッパ
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 151
+  narration: VOICEVOX:ずんだもん
