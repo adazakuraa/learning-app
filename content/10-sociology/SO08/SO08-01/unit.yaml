@@ -2,3 +2,8 @@ id: sociology-so08-01
 code: SO08-01
 title: 構造と主体の問題
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 128
+  narration: VOICEVOX:ずんだもん
