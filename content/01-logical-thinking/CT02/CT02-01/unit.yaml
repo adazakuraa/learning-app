@@ -2,3 +2,8 @@ id: logical-thinking-ct02-01
 code: CT02-01
 title: 演繹と帰納
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 105
+  narration: VOICEVOX:青山龍星
