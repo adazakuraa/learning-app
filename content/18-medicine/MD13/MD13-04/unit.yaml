@@ -3,3 +3,8 @@ code: MD13-04
 title: ワクチン
 order: 4
 summary: ワクチンは、病気そのものや重症化を防ぐ、効果と安全性が確かめられた方法です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 157
+  narration: VOICEVOX:ずんだもん

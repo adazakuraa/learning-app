@@ -3,3 +3,8 @@ code: MD13-05
 title: 予防医学：生活習慣と健康情報の読み方
 order: 5
 summary: 病気になる前に防ぐ。効果が確かな生活習慣と、健康情報を見分ける目を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 180
+  narration: VOICEVOX:ずんだもん
