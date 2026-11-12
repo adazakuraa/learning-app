@@ -2,3 +2,8 @@ id: biology-bi07-03
 code: BI07-03
 title: 人類の進化
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 102
+  narration: VOICEVOX:青山龍星
