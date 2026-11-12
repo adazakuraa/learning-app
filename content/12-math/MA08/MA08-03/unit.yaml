@@ -2,3 +2,8 @@ id: math-ma08-03
 code: MA08-03
 title: n進数
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 92
+  narration: VOICEVOX:青山龍星

@@ -2,3 +2,8 @@ id: math-ma08-02
 code: MA08-02
 title: 最大公約数と最小公倍数
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 65
+  narration: VOICEVOX:青山龍星

@@ -2,3 +2,8 @@ id: math-ma08-01
 code: MA08-01
 title: 約数・倍数・素数
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 96
+  narration: VOICEVOX:青山龍星
