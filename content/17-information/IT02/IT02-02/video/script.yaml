@@ -1,0 +1,40 @@
+title: URLとブラウザの仕組み
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「URLとブラウザのしくみ」です。URLは、インターネット上の情報がある場所を示す、住所です。分解してみましょう。
+        show:
+          - { type: title, text: URL の読み方 }
+          - { type: text, size: l, text: "https://www.example.com/news/article" }
+      - say: 最初の https は、プロトコル、つまり通信の方法です。最後のSは、セキュア、安全という意味です。
+        show:
+          - { type: text, color: green, text: "**https**：通信の方法（S ＝ Secure、安全）" }
+      - say: www.example.com は、ドメイン名。サーバーの住所です。そして、そのあとの /news/article は、パス。サーバーの中の、ファイルの場所です。住所でいえば、建物の名前と、部屋番号のようなものですね。
+        show:
+          - { type: text, color: yellow, text: "**www.example.com**：ドメイン名（建物 ＝ サーバーの住所）" }
+          - { type: text, color: blue, text: "**/news/article**：パス（部屋番号 ＝ サーバー内の場所）" }
+
+  - board: whiteboard
+    steps:
+      - say: ブラウザは、ウェブページを表示するアプリです。URLを入力すると、裏ではこんなことが起きています。
+        show:
+          - { type: title, text: ブラウザのしくみ }
+      - say: まず、DNSというしくみで、ドメイン名からIPアドレスを調べます。次に、そのサーバーに、ページをくださいとお願いします。そして、HTMLというデータを受けとり、人間が読めるページとして表示します。
+        show:
+          - type: list
+            items: ["① DNS でドメイン名から IPアドレスを調べる", "② サーバーに「ページをください」とお願い（HTTPS）", "③ HTML というデータを受けとる", "④ 読めるページとして表示する"]
+
+  - board: whiteboard
+    steps:
+      - say: キャッシュと、クッキーを知っておきましょう。
+        show:
+          - { type: title, text: キャッシュとクッキー }
+      - say: キャッシュは、一度読みこんだデータを、一時的に保存しておくしくみです。同じサイトを開くとき、変わっていない部分はキャッシュから読むので、速く表示されます。古い情報が表示されるときは、キャッシュを消すと直ることがあります。
+        show:
+          - { type: box, color: blue, w: 1100, title: キャッシュ, text: "一度読んだデータの一時保存 → 速く表示。古い表示はキャッシュを消すと直ることも" }
+      - say: クッキーは、ウェブサイトがブラウザに保存する、小さなメモです。ログイン状態を保ったり、買い物かごの中身を覚えておいたりするのに使われます。
+        show:
+          - { type: box, color: yellow, w: 1100, title: クッキー（Cookie）, text: "サイトがブラウザに残す小さなメモ。ログイン状態・買い物かご" }
+      - say: 一方で、追跡にも使われています。あるサイトで見た商品の広告が、別のサイトでも出てくるのは、このしくみのためです。
+        show:
+          - { type: text, color: pink, text: "追跡にも使われる：見た商品の広告が別のサイトでも出る" }

@@ -1,0 +1,44 @@
+title: 暗号化とHTTPS
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「暗号化」です。暗号化は、情報を、第三者に読めない形に変える技術です。正しいかぎがなければ、元にもどせません。
+        show:
+          - { type: title, text: 南京錠のたとえ }
+          - { type: text, text: "**暗号化** ＝ 正しいかぎがないと読めない形に変える" }
+      - say: 南京錠でたとえてみましょう。Aさんは、開いた状態の南京錠を、みんなに配っておきます。あなたは、秘密のものを箱に入れて、その南京錠をかけて送ります。南京錠は、だれでもかけられますが、開けられるのは、かぎを持っているAさんだけです。これが、公開鍵暗号の基本の考え方です。
+        show:
+          - type: svg
+            w: 1100
+            h: 220
+            markup: |
+              <rect x="30" y="80" width="140" height="100" stroke="#8fc4ff"/><path d="M75 80 V50 Q100 20 125 50 V60" stroke="#f3d77a"/>
+              <path d="M200 130 H420 M405 118 L420 130 L405 142" stroke="#9aa3ad"/>
+              <rect x="450" y="80" width="140" height="100" stroke="#8fc4ff"/><path d="M495 80 V50 Q520 20 545 50 V80" stroke="#f3d77a"/>
+              <path d="M620 130 H840 M825 118 L840 130 L825 142" stroke="#9aa3ad"/>
+              <circle cx="900" cy="120" r="22" stroke="#f4a3b8"/><path d="M922 120 H1000 M980 120 V140 M995 120 V135" stroke="#f4a3b8"/>
+              <g stroke="none" font-size="20" text-anchor="middle"><text x="100" y="210" fill="#f3d77a">Aさんの南京錠（開いた状態）</text><text x="520" y="210" fill="#8fc4ff">秘密を入れてカチッ</text><text x="940" y="200" fill="#f4a3b8">開けられるのはAさんだけ</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: HTTPSのSは、セキュア、安全という意味で、ウェブサイトとの通信が暗号化されていることを示します。アドレスバーのかぎマークが目印です。
+        show:
+          - { type: title, text: HTTPS と VPN }
+          - { type: box, color: green, w: 1100, title: HTTPS（🔒）, text: "ウェブサイトとの通信が暗号化されている。パスワード・カード番号を入れる前に必ず確認" }
+      - say: ただし、かぎマークは、通信が暗号化されているという意味で、そのサイトが本物で安全だという保証ではありません。にせサイトでも、かぎマークがつくことはあります。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "🔒 ＝ 通信が暗号化されている、という意味。サイトが本物という保証ではない" }
+      - say: VPNは、インターネットの通信を、暗号化したトンネルに通す技術です。公共WiFiでの盗み見を防いだり、会社のネットワークに安全につないだりするのに使います。ただし、VPNの会社自体は、あなたの通信を見ることができます。無料のVPNには、データを売っているものもあるので、信頼できるサービスを選びましょう。
+        show:
+          - { type: box, color: blue, w: 1100, title: VPN, text: "通信を暗号化したトンネルに通す。ただし VPN 会社は見られる → 信頼できるものを" }
+
+  - board: whiteboard
+    steps:
+      - say: エンドツーエンド暗号化は、サービスの会社でさえ、中身を読めない暗号化です。送る人の端末で暗号化して、受けとる人の端末で、はじめて元にもどします。
+        show:
+          - { type: title, text: エンドツーエンド暗号化 }
+          - { type: text, text: "**エンドツーエンド暗号化**：サービスの会社でさえ中身を読めない" }
+      - say: LINEのトークや、iMessageは、この方式なので、LINEやAppleも、内容を読めません。大事なやりとりは、エンドツーエンド暗号化に対応したアプリを使うのがおすすめです。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "例：LINE のトーク、iMessage → 大事なやりとりはこうしたアプリで" }

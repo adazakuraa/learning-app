@@ -1,0 +1,58 @@
+title: インターネットの基本
+scenes:
+  - board: slide
+    steps:
+      - say: 第2章、「インターネットとネットワーク」です。
+        show:
+          - { type: title, text: 第2章　インターネットとネットワーク }
+      - say: インターネットで、データがどうやって届くのか。ブラウザ、WiFi、クラウドのしくみを学びます。
+        show:
+          - type: list
+            items: ["インターネットの基本", "URLとブラウザの仕組み", "WiFiとモバイル通信", "クラウドサービスの実態"]
+      - say: ふだん何気なく使っているネットのしくみを知ると、通信のトラブルにも、安全面の注意にも、自分で気づけるようになります。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "ネットのしくみを知り、トラブルや危険に自分で気づけるようにする" }
+
+  - board: whiteboard
+    steps:
+      - say: IPアドレスは、インターネットの上の、住所にあたる番号です。世界中のコンピュータやスマートフォンに、割り当てられています。
+        show:
+          - { type: title, text: IPアドレスとドメイン名 }
+          - { type: text, text: "**IPアドレス** ＝ ネット上の住所（例：203.0.113.25）" }
+      - say: インターネットにつながっている、自分のIPアドレスは、アクセスしたサービスの提供者に見えています。ちなみに、192.168で始まるような番号は、家の中のネットワークだけで使われる番号です。
+        show:
+          - { type: text, size: s, color: gray, text: "自分のIPアドレスは、アクセス先に見えている（192.168… は家の中だけの番号）" }
+      - say: でも、数字の並びは、人間には覚えにくいですね。そこで、google.com のような、ドメイン名という、名前に置きかえて使います。電話帳で、名前から電話番号を調べるようなものです。
+        show:
+          - { type: box, color: yellow, w: 1100, text: "**ドメイン名**（google.com）⇄ IPアドレス　　電話帳の「名前 ⇄ 番号」と同じ" }
+
+  - board: whiteboard
+    steps:
+      - say: インターネットでは、大きなデータを、そのまま送りません。パケットという、小さなかたまりに分けて送り、受けとった側で、組み立て直します。
+        show:
+          - { type: title, text: パケット }
+          - type: svg
+            w: 1100
+            h: 180
+            markup: |
+              <rect x="10" y="50" width="200" height="80" stroke="#8fc4ff"/>
+              <path d="M220 90 H300" stroke="#9aa3ad"/>
+              <g stroke="#f3d77a"><rect x="320" y="30" width="60" height="40"/><rect x="420" y="110" width="60" height="40"/><rect x="520" y="50" width="60" height="40"/><rect x="620" y="120" width="60" height="40"/></g>
+              <path d="M700 90 H780" stroke="#9aa3ad"/>
+              <rect x="800" y="50" width="200" height="80" stroke="#9be0b0"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="110" y="98" fill="#8fc4ff">大きなデータ</text><text x="500" y="20" fill="#f3d77a">パケットに分けて送る</text><text x="900" y="98" fill="#9be0b0">組み立て直す</text></g>
+      - say: 大きな家具を、分解して何箱かに分けて送り、届いた先で組み立てるイメージです。ひとつの通信が、回線をずっと独占しないので、たくさんの人が同時に使えるのです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "家具を分解して送るイメージ。回線をみんなで分け合える" }
+
+  - board: whiteboard
+    steps:
+      - say: ルーターは、家や会社のネットワークと、インターネットをつなぐ機器です。プロバイダから届いた回線を、家の中のパソコンやスマホに分ける、交差点の役割をしています。
+        show:
+          - { type: title, text: ルーター }
+          - { type: text, text: "**ルーター** ＝ 家のネットワークとインターネットをつなぐ交差点" }
+      - say: WiFiルーターは、これに、無線でつなぐ機能を合わせたものです。ルーターが古いと、回線が速くても、通信速度が頭打ちになることがあります。
+        show:
+          - { type: box, color: yellow, w: 1000, text: "WiFiルーター ＝ ルーター ＋ 無線。古いと速度の頭打ちの原因に" }
