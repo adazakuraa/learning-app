@@ -2,3 +2,8 @@ id: world-history-wh07-08
 code: WH07-08
 title: オーストリア継承戦争と七年戦争
 order: 8
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 79
+  narration: VOICEVOX:ずんだもん
