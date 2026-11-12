@@ -7,6 +7,44 @@ scenes:
           - { type: title, text: 神経系 }
           - { type: box, color: yellow, w: 1100, title: 中枢神経, text: "脳と脊髄。情報処理の中心（司令塔）" }
           - { type: box, color: blue, w: 1100, title: 末梢神経, text: "中枢神経と全身をつなぐ（連絡網）" }
+  - gen: body
+    board: whiteboard
+    steps:
+      - say: 神経系の全体を、図で見てみましょう。頭の中の脳から、背骨の中を通る脊髄が、下へのびています。この二つを、中枢神経といいます。
+        show:
+          - { type: title, text: 脳と神経の位置 }
+          - type: svg
+            id: body
+            at: &a1
+              - 90
+              - 100
+            w: 1100
+            h: 615
+            anim: fade
+            markup: |-
+              <g transform="translate(70,42) scale(0.86)" stroke="#c9d1cc" stroke-width="2.5" fill="#ffffff" fill-opacity="0.07">
+              <ellipse cx="200" cy="62" rx="46" ry="56"/>
+              <path d="M184 114 L184 140 M216 114 L216 140" fill="none"/>
+              <path d="M184 140 C150 146 112 150 94 172 L70 330 L62 432 L86 436 L98 334 L116 232 L120 300 C126 350 120 400 116 446 L124 606 L190 606 L198 474 L202 474 L210 606 L276 606 L284 446 C280 400 274 350 280 300 L284 232 L302 334 L314 436 L338 432 L330 330 L306 172 C288 150 250 146 216 140 Z"/>
+              </g>
+          - type: svg
+            id: org0
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#f3d77a" fill-opacity="0.85" stroke="#f3d77a" stroke-width="2"><path d="M164 58 C160 26 190 12 205 14 C232 14 244 34 238 58 C236 74 168 76 164 58 Z"/></g><path d="M272.96000000000004 76.4 L440 50 L548 50" stroke="#f3d77a" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="272.96000000000004" cy="76.4" r="4" fill="#f3d77a" stroke="none"/><text x="560" y="59" fill="#f3d77a" stroke="none" font-size="28">脳</text><text x="560" y="92" fill="#c9d1cc" stroke="none" font-size="21">頭蓋骨に守られている</text><g transform="translate(70,42) scale(0.86)" fill="#f4a3b8" fill-opacity="0.85" stroke="#f4a3b8" stroke-width="2"><path d="M200 96 L200 440" stroke-width="7" fill="none"/></g><path d="M242 325.8 L440 200 L548 200" stroke="#f4a3b8" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="242" cy="325.8" r="4" fill="#f4a3b8" stroke="none"/><text x="560" y="209" fill="#f4a3b8" stroke="none" font-size="28">脊髄</text><text x="560" y="242" fill="#c9d1cc" stroke="none" font-size="21">背骨の中を通る。脳とあわせて中枢神経</text>
+        added: true
+      - say: 脊髄からは、体のすみずみまで、枝分かれした神経がのびています。これを、末しょう神経といいます。
+        show:
+          - type: svg
+            id: org1
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#8fc4ff" fill-opacity="0.85" stroke="#8fc4ff" stroke-width="2"><path d="M200 200 L106 250 L80 420 M200 200 L294 250 L322 420 M200 440 L158 520 L156 600 M200 440 L242 520 L244 600 M200 300 L130 330 M200 300 L270 330" stroke-width="3" fill="none"/></g><path d="M328 291.4 L440 330 L548 330" stroke="#8fc4ff" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="328" cy="291.4" r="4" fill="#8fc4ff" stroke="none"/><text x="560" y="339" fill="#8fc4ff" stroke="none" font-size="28">末しょう神経</text><text x="560" y="372" fill="#c9d1cc" stroke="none" font-size="21">脊髄から全身へ枝分かれ</text>
+        added: true
 
   - board: whiteboard
     steps:

@@ -20,6 +20,44 @@ scenes:
         added: true
         show:
           - { type: text, size: s, color: gray, text: "小さな袋をたくさん → 表面積を広げる（小腸のじゅう毛と同じ工夫）" }
+  - gen: body
+    board: whiteboard
+    steps:
+      - say: 呼吸器が、体のどこにあるのか、図で確認しましょう。鼻や口から入った空気は、のどの気管を通り、胸の中で左右に分かれて、肺に入ります。
+        show:
+          - { type: title, text: 呼吸器の位置 }
+          - type: svg
+            id: body
+            at: &a1
+              - 90
+              - 100
+            w: 1100
+            h: 615
+            anim: fade
+            markup: |-
+              <g transform="translate(70,42) scale(0.86)" stroke="#c9d1cc" stroke-width="2.5" fill="#ffffff" fill-opacity="0.07">
+              <ellipse cx="200" cy="62" rx="46" ry="56"/>
+              <path d="M184 114 L184 140 M216 114 L216 140" fill="none"/>
+              <path d="M184 140 C150 146 112 150 94 172 L70 330 L62 432 L86 436 L98 334 L116 232 L120 300 C126 350 120 400 116 446 L124 606 L190 606 L198 474 L202 474 L210 606 L276 606 L284 446 C280 400 274 350 280 300 L284 232 L302 334 L314 436 L338 432 L330 330 L306 172 C288 150 250 146 216 140 Z"/>
+              </g>
+          - type: svg
+            id: org0
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#f3d77a" fill-opacity="0.85" stroke="#f3d77a" stroke-width="2"><path d="M200 60 L194 82 L206 82 Z"/></g><path d="M247.16 105.64 L440 70 L548 70" stroke="#f3d77a" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="247.16" cy="105.64" r="4" fill="#f3d77a" stroke="none"/><text x="560" y="79" fill="#f3d77a" stroke="none" font-size="28">鼻</text><g transform="translate(70,42) scale(0.86)" fill="#f3d77a" fill-opacity="0.85" stroke="#f3d77a" stroke-width="2"><path d="M200 106 L200 196 M200 196 L174 218 M200 196 L226 218" stroke-width="8" fill="none"/></g><path d="M242 171 L440 150 L548 150" stroke="#f3d77a" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="242" cy="171" r="4" fill="#f3d77a" stroke="none"/><text x="560" y="159" fill="#f3d77a" stroke="none" font-size="28">気管・気管支</text><text x="560" y="192" fill="#c9d1cc" stroke="none" font-size="21">のどから胸へ。胸で左右に分かれる</text>
+        added: true
+      - say: 肺は、肋骨にかこまれた胸の中を、大きくしめています。肺の下には、ドーム形の筋肉、横隔膜があり、これが下がることで、肺に空気が入ります。
+        show:
+          - type: svg
+            id: org1
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#8fc4ff" fill-opacity="0.85" stroke="#8fc4ff" stroke-width="2"><path d="M192 178 C160 172 136 200 132 250 C130 280 136 298 150 300 C170 300 190 292 192 280 Z"/></g><g transform="translate(70,42) scale(0.86)" fill="#8fc4ff" fill-opacity="0.85" stroke="#8fc4ff" stroke-width="2"><path d="M208 178 C240 172 264 200 268 250 C270 280 264 298 250 300 C238 300 226 296 224 286 C236 270 230 248 208 240 Z"/></g><path d="M190.39999999999998 248.4 L440 250 L548 250" stroke="#8fc4ff" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="190.39999999999998" cy="248.4" r="4" fill="#8fc4ff" stroke="none"/><text x="560" y="259" fill="#8fc4ff" stroke="none" font-size="28">肺</text><text x="560" y="292" fill="#c9d1cc" stroke="none" font-size="21">肋骨にかこまれた胸の中</text><g transform="translate(70,42) scale(0.86)" fill="#9be0b0" fill-opacity="0.85" stroke="#9be0b0" stroke-width="2"><path d="M128 306 Q200 266 272 306" stroke-width="5" fill="none"/></g><path d="M180.07999999999998 305.15999999999997 L440 350 L548 350" stroke="#9be0b0" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="180.07999999999998" cy="305.15999999999997" r="4" fill="#9be0b0" stroke="none"/><text x="560" y="359" fill="#9be0b0" stroke="none" font-size="28">横隔膜</text><text x="560" y="392" fill="#c9d1cc" stroke="none" font-size="21">肺の下のドーム形の筋肉</text>
+        added: true
 
   - board: whiteboard
     steps:

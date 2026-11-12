@@ -21,3 +21,41 @@ scenes:
         added: true
         show:
           - { type: text, size: s, color: gray, text: "1日に約150L をこして、尿になるのは約1.5L（必要なものは吸収し直す）" }
+  - gen: body
+    board: whiteboard
+    steps:
+      - say: 泌尿器の位置を、図で確認しましょう。腎臓は、腰の少し上、背中側に、左右一つずつあります。そら豆のような形で、大きさは、にぎりこぶしくらいです。
+        show:
+          - { type: title, text: 泌尿器の位置 }
+          - type: svg
+            id: body
+            at: &a1
+              - 90
+              - 100
+            w: 1100
+            h: 615
+            anim: fade
+            markup: |-
+              <g transform="translate(70,42) scale(0.86)" stroke="#c9d1cc" stroke-width="2.5" fill="#ffffff" fill-opacity="0.07">
+              <ellipse cx="200" cy="62" rx="46" ry="56"/>
+              <path d="M184 114 L184 140 M216 114 L216 140" fill="none"/>
+              <path d="M184 140 C150 146 112 150 94 172 L70 330 L62 432 L86 436 L98 334 L116 232 L120 300 C126 350 120 400 116 446 L124 606 L190 606 L198 474 L202 474 L210 606 L276 606 L284 446 C280 400 274 350 280 300 L284 232 L302 334 L314 436 L338 432 L330 330 L306 172 C288 150 250 146 216 140 Z"/>
+              </g>
+          - type: svg
+            id: org0
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#f4a3b8" fill-opacity="0.85" stroke="#f4a3b8" stroke-width="2"><path d="M150 352 C140 360 140 392 152 402 C160 408 168 398 164 388 C160 378 164 366 168 360 C164 350 156 348 150 352 Z"/></g><g transform="translate(70,42) scale(0.86)" fill="#f4a3b8" fill-opacity="0.85" stroke="#f4a3b8" stroke-width="2"><path d="M250 352 C260 360 260 392 248 402 C240 408 232 398 236 388 C240 378 236 366 232 360 C236 350 244 348 250 352 Z"/></g><path d="M197.28 368.8 L440 230 L548 230" stroke="#f4a3b8" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="197.28" cy="368.8" r="4" fill="#f4a3b8" stroke="none"/><text x="560" y="239" fill="#f4a3b8" stroke="none" font-size="28">腎臓</text><text x="560" y="272" fill="#c9d1cc" stroke="none" font-size="21">腰の少し上の背中側に左右1つずつ</text>
+        added: true
+      - say: 腎臓でつくられた尿は、細い尿管を通って、下腹部のぼうこうにたまり、尿道から体の外へ出されます。
+        show:
+          - type: svg
+            id: org1
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#f3d77a" fill-opacity="0.85" stroke="#f3d77a" stroke-width="2"><path d="M160 398 C168 430 180 448 192 462 M240 398 C232 430 220 448 208 462" stroke-width="4" fill="none"/></g><path d="M269.52 411.8 L440 330 L548 330" stroke="#f3d77a" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="269.52" cy="411.8" r="4" fill="#f3d77a" stroke="none"/><text x="560" y="339" fill="#f3d77a" stroke="none" font-size="28">尿管</text><g transform="translate(70,42) scale(0.86)" fill="#8fc4ff" fill-opacity="0.85" stroke="#8fc4ff" stroke-width="2"><ellipse cx="200" cy="466" rx="22" ry="15"/></g><path d="M260.91999999999996 442.76 L440 420 L548 420" stroke="#8fc4ff" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="260.91999999999996" cy="442.76" r="4" fill="#8fc4ff" stroke="none"/><text x="560" y="429" fill="#8fc4ff" stroke="none" font-size="28">ぼうこう</text><text x="560" y="462" fill="#c9d1cc" stroke="none" font-size="21">下腹部。尿をためる</text><g transform="translate(70,42) scale(0.86)" fill="#9be0b0" fill-opacity="0.85" stroke="#9be0b0" stroke-width="2"><path d="M200 480 L200 498" stroke-width="5" fill="none"/></g><path d="M242 466.84 L440 510 L548 510" stroke="#9be0b0" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="242" cy="466.84" r="4" fill="#9be0b0" stroke="none"/><text x="560" y="519" fill="#9be0b0" stroke="none" font-size="28">尿道</text>
+        added: true
