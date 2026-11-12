@@ -2,3 +2,8 @@ id: information-it03-04
 code: IT03-04
 title: 詐欺・フィッシングの見分け方
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 99
+  narration: VOICEVOX:青山龍星

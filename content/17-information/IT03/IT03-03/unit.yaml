@@ -2,3 +2,8 @@ id: information-it03-03
 code: IT03-03
 title: 暗号化とHTTPS
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 103
+  narration: VOICEVOX:青山龍星
