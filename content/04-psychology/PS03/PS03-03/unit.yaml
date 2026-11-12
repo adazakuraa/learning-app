@@ -2,3 +2,8 @@ id: psychology-ps03-03
 code: PS03-03
 title: 意思決定と合理性の限界
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 120
+  narration: VOICEVOX:ずんだもん
