@@ -1,0 +1,41 @@
+title: 原核細胞と真核細胞
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「原核細胞と真核細胞」です。地球上の生き物は、細胞のつくりによって、大きく2種類に分けられます。
+        show:
+          - { type: title, text: 原核細胞と真核細胞 }
+          - type: svg
+            w: 1100
+            h: 300
+            markup: |
+              <ellipse cx="260" cy="150" rx="200" ry="110" stroke="#8fc4ff"/>
+              <path d="M180 130 Q220 100 260 140 T340 150 T300 190" stroke="#f3d77a"/>
+              <ellipse cx="800" cy="150" rx="250" ry="130" stroke="#f4a3b8"/>
+              <circle cx="800" cy="150" r="56" stroke="#8fc4ff"/><path d="M770 140 Q790 120 810 145 T840 160" stroke="#f3d77a"/>
+              <ellipse cx="660" cy="100" rx="34" ry="16" stroke="#9be0b0"/><ellipse cx="940" cy="210" rx="34" ry="16" stroke="#9be0b0"/>
+              <g stroke="none" font-size="26" text-anchor="middle"><text x="260" y="295" fill="#8fc4ff">原核細胞（核なし）</text><text x="800" y="295" fill="#f4a3b8">真核細胞（核あり）</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: 原核細胞は、核を持たない細胞です。DNAは、膜に包まれずに、細胞の中にそのままあります。細菌、つまりバクテリアと、アーキアが、このタイプです。
+        show:
+          - { type: title, text: 原核細胞 }
+          - { type: box, color: blue, w: 1100, text: "核がない。DNA は細胞の中にそのまま（細菌・アーキア）" }
+      - say: つくりがシンプルな分、増えるのが速いのが特徴です。大腸菌は、条件がよければ、20分で2つに分かれます。
+        show:
+          - { type: text, text: "大腸菌：条件がよければ 20分で2つに分裂" }
+      - say: 20分ごとに2倍になると、1時間で8倍、10時間で、およそ10億倍。数学で学んだ、指数の爆発的な増加ですね。食べ物を常温に放っておくと、すぐに傷むのは、このためです。
+        added: true
+        show:
+          - { type: text, size: s, color: gray, text: "20分ごとに2倍 → 10時間で約10億倍（数学の「指数」）→ 食べ物が傷む" }
+
+  - board: whiteboard
+    steps:
+      - say: 真核細胞は、核を持つ細胞です。DNAが核の中にしまわれていて、ミトコンドリアなどの、複雑な器官を持っています。動物、植物、キノコなどの真核生物が、このタイプです。
+        show:
+          - { type: title, text: 真核細胞 }
+          - { type: box, color: pink, w: 1100, text: "核がある。DNA は核の中。ミトコンドリアなど複雑なつくり（動物・植物・キノコ）" }
+      - say: 前の章の、3つのドメインを思い出してください。バクテリアとアーキアは原核生物、残りの真核生物は、その名のとおり、真核細胞でできています。
+        show:
+          - { type: text, size: s, color: gray, text: "第1章の3ドメイン：バクテリア・アーキア ＝ 原核　真核生物 ＝ 真核" }
