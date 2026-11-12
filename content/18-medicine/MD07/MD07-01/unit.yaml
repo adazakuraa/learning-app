@@ -3,3 +3,8 @@ code: MD07-01
 title: 目の症状
 order: 1
 summary: 目は、時間がたつと視力が戻らない病気が多い臓器です。急な見え方の変化は急いで眼科へ。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 154
+  narration: VOICEVOX:ずんだもん

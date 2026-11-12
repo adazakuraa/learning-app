@@ -3,3 +3,8 @@ code: MD07-02
 title: 耳の症状
 order: 2
 summary: 急に片耳が聞こえなくなる「突発性難聴」は、早く治療を始めるほど回復しやすい病気です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 119
+  narration: VOICEVOX:ずんだもん

@@ -3,3 +3,8 @@ code: MD06-05
 title: かまれた・刺された・異物
 order: 5
 summary: ハチ・ヘビ・動物にかまれた、目に物が入った、などの対応を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 133
+  narration: VOICEVOX:ずんだもん
