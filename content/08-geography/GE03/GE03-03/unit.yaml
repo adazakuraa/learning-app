@@ -2,3 +2,8 @@ id: geography-ge03-03
 code: GE03-03
 title: 世界の農業と食料
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 88
+  narration: VOICEVOX:ずんだもん

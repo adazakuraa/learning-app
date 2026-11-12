@@ -2,3 +2,8 @@ id: geography-ge03-01
 code: GE03-01
 title: 石油・天然ガスの分布
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 107
+  narration: VOICEVOX:ずんだもん
