@@ -2,3 +2,8 @@ id: world-history-wh03-01
 code: WH03-01
 title: ビザンツ帝国
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 71
+  narration: VOICEVOX:ずんだもん
