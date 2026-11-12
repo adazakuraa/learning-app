@@ -1,0 +1,35 @@
+title: スンニ派とシーア派
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「スンニ派とシーア派」です。ムハンマドが亡くなったあと、イスラム共同体は、だれが指導者、カリフになるか、をめぐって分かれました。これが、スンニ派とシーア派の始まりです。
+        show:
+          - { type: title, text: 分かれたきっかけ }
+          - type: svg
+            w: 1000
+            h: 200
+            markup: |
+              <rect x="380" y="10" width="240" height="60" rx="10" stroke="#f3d77a"/>
+              <path d="M450 70 L220 120 M550 70 L780 120" stroke="#9aa3ad"/>
+              <rect x="60" y="120" width="320" height="70" rx="10" stroke="#8fc4ff"/><rect x="620" y="120" width="320" height="70" rx="10" stroke="#9be0b0"/>
+              <g stroke="none" font-size="22" text-anchor="middle"><text x="500" y="48" fill="#f3d77a">ムハンマドの死</text><text x="220" y="152" fill="#8fc4ff">スンニ派</text><text x="220" y="180" font-size="18" fill="#8fc4ff">話し合いで選ばれた指導者</text><text x="780" y="152" fill="#9be0b0">シーア派</text><text x="780" y="180" font-size="18" fill="#9be0b0">ムハンマドの血筋のアリー</text></g>
+
+  - board: whiteboard
+    steps:
+      - say: スンニ派は、ムハンマドの死後、共同体の話し合いで選ばれた、アブー・バクルを、カリフとして認めた宗派です。今、イスラム教徒全体の、およそ85から90パーセントをしめます。サウジアラビア、トルコ、エジプト、インドネシアなどが、主にスンニ派の国です。
+        show:
+          - { type: title, text: 2つの宗派 }
+          - { type: box, color: blue, w: 1100, title: スンニ派（約85〜90％）, text: "話し合いで選ばれたアブー・バクルを認める。サウジアラビア・トルコ・エジプト・インドネシア" }
+      - say: シーア派は、アリーの党派、という意味です。ムハンマドのいとこで、娘の夫でもあるアリーこそが、正しい後継者だ、と主張した少数派です。イランは、国民の大多数がシーア派の国で、イラク、レバノン、バーレーンにも、多くのシーア派の信者がいます。
+        show:
+          - { type: box, color: green, w: 1100, title: シーア派（少数派）, text: "ムハンマドのいとこ・娘婿の **アリー** こそ後継者。**イラン** が中心。イラク・レバノン・バーレーンにも" }
+
+  - board: whiteboard
+    steps:
+      - say: 両派の歴史的な対立の感情は深く、今の中東の紛争に、大きく影響しています。
+        show:
+          - { type: title, text: 現代の中東への影響 }
+      - say: イランとサウジアラビアの対立は、まさに、シーア派対スンニ派の構図です。シリアの内戦、イエメンの内戦、レバノンの情勢などにも、この対立が、影を落としています。
+        show:
+          - { type: box, color: pink, w: 1100, text: "イラン（シーア派） ⇔ サウジアラビア（スンニ派）の対立" }
+          - { type: text, color: gray, text: "シリア内戦・イエメン内戦・レバノン情勢にも影響" }

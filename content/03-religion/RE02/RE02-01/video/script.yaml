@@ -1,0 +1,48 @@
+title: ユダヤ教の誕生と歴史
+scenes:
+  - board: slide
+    steps:
+      - say: 第2章、「ユダヤ教」です。
+        show:
+          - { type: title, text: 第2章　ユダヤ教 }
+      - say: ユダヤ教の誕生と歴史、教え、迫害の歴史、そして聖地エルサレムを学びます。
+        show:
+          - type: list
+            items: ["ユダヤ教の誕生と歴史", "ユダヤ教の教えと聖典", "ユダヤ人の迫害の歴史", "エルサレムとユダヤ教"]
+      - say: ユダヤ教は、キリスト教とイスラム教の、ルーツにあたる宗教です。そして、今の中東の問題を理解するうえでも、欠かせません。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "キリスト教・イスラム教のルーツと、中東問題の背景を知る" }
+
+  - board: whiteboard
+    steps:
+      - say: ユダヤ教は、世界で最も古い一神教のひとつで、紀元前2000年ごろのアブラハムを、始まりの人とします。
+        show:
+          - { type: title, text: ユダヤ教とは }
+          - { type: text, text: "世界最古の一神教のひとつ。始祖は **アブラハム**（紀元前2000年ごろ）" }
+      - say: 中心にあるのは、神ヤハウェが、イスラエルの民、つまりユダヤ人を選び、特別な契約を結んだ、という選民思想です。また、いつか救世主があらわれる、という信仰もあります。
+        show:
+          - { type: box, color: yellow, w: 1100, title: 選民思想, text: "神 **ヤハウェ** がユダヤ人を選び、特別な契約を結んだ" }
+          - { type: box, color: blue, w: 1100, title: 救世主（メシア）, text: "いつか救世主があらわれる" }
+
+  - board: whiteboard
+    steps:
+      - say: 歴史の中で、ユダヤ人は、くり返し苦難を経験しました。
+        show:
+          - { type: title, text: 苦難の歴史 }
+      - say: エジプトでの奴隷の生活から、モーセに率いられてぬけ出した、出エジプト。バビロニアに国をほろぼされ、バビロンに連れて行かれた、バビロン捕囚。そして、西暦70年に、ローマ帝国にエルサレムを破壊されたあと、世界各地に散らばった、ディアスポラです。
+        show:
+          - type: svg
+            w: 1100
+            h: 160
+            markup: |
+              <path d="M40 70 H1060" stroke="#9aa3ad"/>
+              <g fill="#f3d77a" stroke="none"><circle cx="180" cy="70" r="10"/><circle cx="550" cy="70" r="10"/><circle cx="920" cy="70" r="10"/></g>
+              <g stroke="none" text-anchor="middle"><text x="180" y="45" font-size="24" fill="#f3d77a">出エジプト</text><text x="550" y="45" font-size="24" fill="#f3d77a">バビロン捕囚</text><text x="920" y="45" font-size="24" fill="#f3d77a">ディアスポラ</text>
+              <text x="180" y="110" font-size="18" fill="#9aa3ad">モーセに率いられ</text><text x="180" y="135" font-size="18" fill="#9aa3ad">奴隷からぬけ出す</text><text x="550" y="110" font-size="18" fill="#9aa3ad">国をほろぼされ</text><text x="550" y="135" font-size="18" fill="#9aa3ad">バビロンへ</text><text x="920" y="110" font-size="18" fill="#9aa3ad">西暦70年 ローマが破壊</text><text x="920" y="135" font-size="18" fill="#9aa3ad">世界各地へ散らばる</text></g>
+      - say: こうした苦難の歴史が、ユダヤ人の、強い民族的、宗教的なアイデンティティを育てました。
+        show:
+          - { type: text, color: yellow, text: "苦難の歴史 → 強い民族的・宗教的アイデンティティ" }
+      - say: ディアスポラのあと、ユダヤ人は、およそ2000年の間、自分たちの国を持たず、ヨーロッパ各地で、少数派として暮らしました。この歴史が、自分たちの国をつくろうという、シオニズム、イスラエル建国の運動へと、つながっていきます。
+        show:
+          - { type: box, color: pink, w: 1100, text: "約2000年、国を持たず少数派として暮らす → **シオニズム**（イスラエル建国運動）へ" }

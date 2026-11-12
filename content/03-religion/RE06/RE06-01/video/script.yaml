@@ -1,0 +1,31 @@
+title: エルサレムとは
+scenes:
+  - board: slide
+    steps:
+      - say: 第6章、「エルサレムと宗教対立」です。
+        show:
+          - { type: title, text: 第6章　エルサレムと宗教対立 }
+      - say: 3つの宗教の聖地、エルサレムと、それをめぐる争いの歴史を学びます。
+        show:
+          - type: list
+            items: ["エルサレムとは", "エルサレムをめぐる争いの歴史"]
+      - say: ニュースでよく聞く、イスラエルとパレスチナの問題。その根っこにある歴史を、知っておきましょう。
+        added: true
+        show:
+          - { type: box, color: yellow, w: 1000, title: この章の目的, text: "イスラエル・パレスチナ問題の根っこにある歴史を知る" }
+
+  - board: whiteboard
+    steps:
+      - say: エルサレムは、イスラエルとパレスチナが、ともに自分たちのものだと主張している都市です。そして、ユダヤ教、キリスト教、イスラム教という、3つの一神教すべての聖地が、一か所に集まる、世界で最も宗教的に複雑な場所です。
+        show:
+          - { type: title, text: 3つの聖地 }
+          - { type: text, text: "イスラエルとパレスチナがともに主張する都市。3つの一神教の聖地が集まる" }
+      - say: 旧市街は、わずか1平方キロメートルほど。そこに、ユダヤ教の嘆きの壁、イエスが処刑されたとされる、キリスト教の聖墳墓教会、イスラム教の岩のドームが、歩いて数分の距離に、ならんでいます。
+        show:
+          - type: svg
+            w: 1000
+            h: 280
+            markup: |
+              <rect x="150" y="20" width="700" height="240" stroke="#9aa3ad" stroke-dasharray="8 6"/>
+              <circle cx="320" cy="110" r="40" stroke="#f4a3b8"/><circle cx="640" cy="100" r="40" stroke="#f3d77a"/><circle cx="600" cy="190" r="34" stroke="#8fc4ff"/>
+              <g stroke="none" font-size="20" text-anchor="middle"><text x="320" y="175" fill="#f4a3b8">聖墳墓教会</text><text x="320" y="200" fill="#f4a3b8">（キリスト教）</text><text x="760" y="95" fill="#f3d77a">岩のドーム</text><text x="760" y="120" fill="#f3d77a">（イスラム教）</text><text x="740" y="210" fill="#8fc4ff">嘆きの壁</text><text x="740" y="235" fill="#8fc4ff">（ユダヤ教）</text><text x="500" y="250" fill="#9aa3ad">旧市街 約1km²</text></g>
