@@ -2,3 +2,8 @@ id: sociology-so06-01
 code: SO06-01
 title: マスメディアと権力
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 81
+  narration: VOICEVOX:ずんだもん
