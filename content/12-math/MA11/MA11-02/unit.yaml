@@ -2,3 +2,8 @@ id: math-ma11-02
 code: MA11-02
 title: 微分の考え方
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 125
+  narration: VOICEVOX:青山龍星

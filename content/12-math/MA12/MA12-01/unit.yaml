@@ -2,3 +2,8 @@ id: math-ma12-01
 code: MA12-01
 title: 背理法
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 87
+  narration: VOICEVOX:青山龍星
