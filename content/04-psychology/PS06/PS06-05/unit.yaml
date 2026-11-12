@@ -2,3 +2,8 @@ id: psychology-ps06-05
 code: PS06-05
 title: 対人関係と好意
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 96
+  narration: VOICEVOX:ずんだもん
