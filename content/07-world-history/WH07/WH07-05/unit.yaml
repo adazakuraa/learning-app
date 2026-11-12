@@ -2,3 +2,8 @@ id: world-history-wh07-05
 code: WH07-05
 title: ルイ14世と絶対王政
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 60
+  narration: VOICEVOX:ずんだもん

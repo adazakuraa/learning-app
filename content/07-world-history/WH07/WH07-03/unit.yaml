@@ -2,3 +2,8 @@ id: world-history-wh07-03
 code: WH07-03
 title: 三十年戦争とナントの勅令
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 108
+  narration: VOICEVOX:ずんだもん
