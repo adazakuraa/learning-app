@@ -5,12 +5,12 @@ scenes:
       - say: フェニキア人は、今のレバノンのあたりを本拠地にした、海の民です。地中海全体に、交易のネットワークを広げました。
         show:
           - { type: title, text: フェニキア人とアルファベット }
-          - { type: text, at: [80, 140], w: 1120, text: "**フェニキア人**：今のレバノンあたりの、海の商人" }
+          - { type: text, at: [ 80, 140 ], w: 1120, text: "**フェニキア人**：今のレバノンあたりの、海の商人" }
       - say: 彼らが作った、22文字のフェニキア文字は、ギリシャ文字を経て、ラテン文字、つまり今のABCへと発展しました。
         read: 彼らが作った、にじゅうに文字のフェニキア文字は、ギリシャ文字を経て、ラテン文字、つまり今のエービーシーへと発展しました。
         show:
           - type: svg
-            at: [80, 230]
+            at: [ 80, 230 ]
             w: 1120
             h: 130
             anim: draw
@@ -23,19 +23,54 @@ scenes:
               <g stroke="none" font-size="26" fill="#e8eef5" text-anchor="middle"><text x="160" y="74">フェニキア文字</text><text x="560" y="74">ギリシャ文字</text><text x="960" y="74">ラテン文字（ABC）</text></g>
       - say: 今あなたが目にしているアルファベットの起源は、地中海の商人たちが、取引を記録するために作った文字なのです。
         show:
-          - { type: text, at: [80, 400], w: 1120, color: gray, text: "ABCのルーツ ＝ 商人の取引メモ" }
+          - { type: text, at: [ 80, 400 ], w: 1120, color: gray, text: "ABCのルーツ ＝ 商人の取引メモ" }
+  - gen: map
+    board: whiteboard
+    steps:
+      - say: フェニキア人の本拠地、今のレバノンは、地中海の東のはしにあります。
+        show:
+          - { type: title, text: フェニキア人の海 }
+          - { type: image, src: map-main.svg, at: &a1 [ 140, 140 ], w: 1000, anim: fade, id: mb }
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: |-
+              <path d="M916.4,364.6L911,365L909.2,369.2L902.5,369.1L909.7,349.6L919.6,332.5L920,331.7L929,332.9L932.2,342.4L921.3,351.5Z" fill="#f3d77a" fill-opacity="0.55" stroke="#f3d77a" stroke-width="1.5"/>
+              <circle cx="904" cy="364.8" r="9" fill="#f3d77a" stroke="#0b1c2c" stroke-width="2.5"/>
+            id: mo0
+          - { type: text, text: ティルス, at: [ 1060, 501 ], size: s, color: yellow, anim: fade, id: ml0_0 }
+        added: true
+      - say: ここから、船で地中海全体に交易の拠点をつくり、北アフリカのカルタゴは、のちにローマと争うほどの大国になりました。
+        show:
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: |-
+              <path d="M904 364.8 L700 335.2 L440 273.6 L406.4 277.3" stroke="#f3d77a" stroke-width="5"/>
+              <path d="M425.3 284 L406.4 277.3 L423.3 266.7" stroke="#f3d77a" stroke-width="5"/>
+              <path d="M406.4 277.3 L260 261 L90 293.5" stroke="#f3d77a" stroke-width="5" stroke-dasharray="12 9"/>
+              <path d="M109.3 298.7 L90 293.5 L106.1 281.6" stroke="#f3d77a" stroke-width="5"/>
+              <circle cx="406.4" cy="277.3" r="9" fill="#f4a3b8" stroke="#0b1c2c" stroke-width="2.5"/>
+            id: mo1
+          - { type: text, text: カルタゴ, at: [ 506, 435 ], size: s, color: pink, anim: fade, id: ml1_0 }
+          - { type: text, text: 地中海, at: [ 700, 487 ], size: s, color: gray, anim: fade, id: ml1_1 }
+        added: true
 
   - board: whiteboard
     steps:
       - say: ヘブライ人、つまりユダヤ人の祖先は、ただ一人の神、ヤハウェを信じる、一神教を確立した民族です。
         show:
           - { type: title, text: ヘブライ人と一神教 }
-          - { type: box, at: [80, 140], w: 540, color: gray, title: 古代世界の常識, text: "たくさんの神々（多神教）" }
-          - { type: box, at: [660, 140], w: 540, color: yellow, title: ヘブライ人, text: "神は **一人だけ**（一神教）" }
+          - { type: box, at: [ 80, 140 ], w: 540, color: gray, title: 古代世界の常識, text: "たくさんの神々（多神教）" }
+          - { type: box, at: [ 660, 140 ], w: 540, color: yellow, title: ヘブライ人, text: "神は **一人だけ**（一神教）" }
       - say: これがユダヤ教となり、のちのキリスト教と、イスラム教の母体になります。今、世界でおよそ40億人の信者がいる二大宗教は、どちらも古代ヘブライ人の一神教から生まれたのです。
         show:
           - type: svg
-            at: [80, 330]
+            at: [ 80, 330 ]
             w: 1120
             h: 200
             anim: draw
@@ -51,7 +86,7 @@ scenes:
       - say: ユダヤ教の聖典、旧約聖書には、モーセの出エジプトという物語があります。エジプトで奴隷だったヘブライ人が、モーセに率いられて、脱出する物語です。
         show:
           - { type: title, text: 出エジプト }
-          - { type: box, at: [80, 140], w: 1120, color: blue, title: 出エジプト（旧約聖書）, text: "エジプトで奴隷だったヘブライ人が、モーセに率いられて脱出" }
+          - { type: box, at: [ 80, 140 ], w: 1120, color: blue, title: 出エジプト（旧約聖書）, text: "エジプトで奴隷だったヘブライ人が、モーセに率いられて脱出" }
       - say: 史実としての証拠はとぼしいのですが、ユダヤ教、キリスト教、イスラム教の、三つの宗教に共通する記憶として、今も生きています。
         show:
-          - { type: text, at: [80, 320], w: 1120, text: "史実の証拠はとぼしい → でも **三つの宗教の共通の記憶**" }
+          - { type: text, at: [ 80, 320 ], w: 1120, text: "史実の証拠はとぼしい → でも **三つの宗教の共通の記憶**" }

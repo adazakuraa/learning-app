@@ -101,7 +101,9 @@ export function patchScript(file, key, newScenes, where) {
   const seq = doc.get('scenes');
   for (let i = seq.items.length - 1; i >= 0; i--) if (seq.items[i].get('gen') === key) seq.items.splice(i, 1);
   let at = seq.items.length;
-  if (where.replaceSay) {
+  if (where.afterIndex != null) {
+    at = where.afterIndex + 1;
+  } else if (where.replaceSay) {
     const idx = seq.items.findIndex((sc) => JSON.stringify(sc.toJSON()).includes(where.replaceSay));
     if (idx < 0) throw new Error('replaceSay not found: ' + where.replaceSay);
     seq.items.splice(idx, 1);

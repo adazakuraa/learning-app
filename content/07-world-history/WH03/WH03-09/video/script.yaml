@@ -5,27 +5,55 @@ scenes:
       - say: 1347年、黒海のクリミア半島から、ジェノバの商船に乗って、ペストがヨーロッパに上陸しました。黒死病とも呼ばれます。
         show:
           - { type: title, text: 1347年　ペスト（黒死病） }
-          - { type: text, at: [80, 140], w: 1120, text: "クリミア半島 → ジェノバの商船 → ヨーロッパへ" }
+          - { type: text, at: [ 80, 140 ], w: 1120, text: "クリミア半島 → ジェノバの商船 → ヨーロッパへ" }
       - say: わずか5年ほどで、ヨーロッパの人口の、およそ3分の1、2000万人から3000万人が亡くなりました。人類の歴史で、最悪の伝染病の一つです。
         show:
           - type: svg
-            at: [80, 230]
+            at: [ 80, 230 ]
             w: 1000
             h: 120
             markup: |
               <g stroke="none"><rect x="40" y="30" width="307" height="60" fill="#f4a3b8" fill-opacity="0.7"/><rect x="347" y="30" width="613" height="60" fill="#9aa3ad" fill-opacity="0.3"/></g>
               <g stroke="none" font-size="22"><text x="60" y="68" fill="#1b2a24">死者 約3分の1</text><text x="560" y="68" fill="#e8eef5">ヨーロッパの人口</text></g>
+  - gen: map
+    board: whiteboard
+    steps:
+      - say: ペストの広がりを、地図で見てみましょう。1347年、黒海のクリミア半島から、商船に乗ってイタリアの港に上陸し、わずか3年ほどで、ヨーロッパのほぼ全体に広がりました。
+        show:
+          - { type: title, text: ペストが広がった道 }
+          - { type: image, src: map-main.svg, at: &a1 [ 140, 140 ], w: 1000, anim: fade, id: mb }
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: |-
+              <path d="M714.7 330.4 L642 388 L585.2 451 L488.6 433.8" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M504.8 445.6 L488.6 433.8 L507.9 428.4" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M488.6 433.8 L426.2 354.2 L373.9 357.3" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M392.4 364.9 L373.9 357.3 L391.4 347.5" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M373.9 357.3 L338.7 267.2 L301.2 210.1" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M303.8 229.9 L301.2 210.1 L318.4 220.4" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M426.2 354.2 L448.9 246.2 L460.2 132.7" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M449.8 149.8 L460.2 132.7 L467.1 151.5" stroke="#f4a3b8" stroke-width="5"/>
+              <circle cx="714.5" cy="329.9" r="9" fill="#f4a3b8" stroke="#0b1c2c" stroke-width="2.5"/>
+              <circle cx="488.6" cy="433.8" r="9" fill="#f4a3b8" stroke="#0b1c2c" stroke-width="2.5"/>
+            id: mo0
+          - { type: text, text: クリミア半島（カッファ）, at: [ 794, 420 ], size: s, color: pink, anim: fade, id: ml0_0 }
+          - { type: text, text: イタリア（1347年）, at: [ 645, 578 ], size: s, color: pink, anim: fade, id: ml0_1 }
+          - { type: text, text: 〜1350年 ヨーロッパ全体へ, at: [ 339, 231 ], size: s, color: pink, anim: fade, id: ml0_2 }
+        added: true
 
   - board: whiteboard
     steps:
       - say: 当時の人々には、原因がまったくわかりませんでした。神の怒りだ、ユダヤ人が井戸に毒を入れた、といううわさが飛びかい、各地でユダヤ人が虐殺されました。
         show:
           - { type: title, text: 疫病とスケープゴート }
-          - { type: box, at: [80, 140], w: 1120, color: pink, title: デマ, text: "「ユダヤ人が井戸に毒を入れた」→ 各地でユダヤ人虐殺" }
+          - { type: box, at: [ 80, 140 ], w: 1120, color: pink, title: デマ, text: "「ユダヤ人が井戸に毒を入れた」→ 各地でユダヤ人虐殺" }
       - say: 日本史の関東大震災でも、同じようなデマで、罪のない人々が殺されました。不安な時代に、誰かを悪者にする、という構造は、今のパンデミックでもくり返されています。
         added: true
         show:
-          - { type: text, at: [80, 320], w: 1120, text: "関東大震災のデマ・コロナ禍の差別 ← 同じ構造" }
+          - { type: text, at: [ 80, 320 ], w: 1120, text: "関東大震災のデマ・コロナ禍の差別 ← 同じ構造" }
 
   - board: whiteboard
     steps:
@@ -34,10 +62,10 @@ scenes:
           - { type: title, text: ペストが中世を終わらせた }
       - say: 働き手が大きく減ったため、農奴の立場が強くなり、封建制度がくずれ始めます。
         show:
-          - { type: box, at: [80, 140], w: 540, color: blue, title: 社会の変化, text: "働き手が激減\n→ 農奴の立場が強まる\n→ 封建制度がくずれる" }
+          - { type: box, at: [ 80, 140 ], w: 540, color: blue, title: 社会の変化, text: "働き手が激減\n→ 農奴の立場が強まる\n→ 封建制度がくずれる" }
       - say: また、教会が人々を救えなかったことで、教会への不信が広がります。これだけ人が死ぬのに、神は何をしているのか、という問いが、中世の世界観をこわしていきました。
         show:
-          - { type: box, at: [660, 140], w: 540, color: yellow, title: 心の変化, text: "教会は救えなかった\n→「神は何をしている？」\n→ 教会の権威がゆらぐ" }
+          - { type: box, at: [ 660, 140 ], w: 540, color: yellow, title: 心の変化, text: "教会は救えなかった\n→「神は何をしている？」\n→ 教会の権威がゆらぐ" }
       - say: これらが重なって、ルネサンス、宗教改革、そして近代への転換が、加速していきます。
         show:
-          - { type: text, at: [80, 400], w: 1120, size: l, text: "→ ルネサンス・宗教改革・**近代** へ" }
+          - { type: text, at: [ 80, 400 ], w: 1120, size: l, text: "→ ルネサンス・宗教改革・**近代** へ" }

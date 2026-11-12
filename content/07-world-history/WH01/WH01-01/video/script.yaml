@@ -8,7 +8,7 @@ scenes:
       - say: アフリカで生まれた人類が世界に広がり、大きな川のほとりで、最初の文明を生み出すまでを見ていきます。
         show:
           - type: list
-            items: ["人類の誕生とアフリカからの拡散", "メソポタミア文明", "エジプト文明とファラオ", "インダス・中国文明", "フェニキア・ヘブライと地中海"]
+            items: [ "人類の誕生とアフリカからの拡散", "メソポタミア文明", "エジプト文明とファラオ", "インダス・中国文明", "フェニキア・ヘブライと地中海" ]
       - say: 文字、法律、宗教、アルファベット。今の世界の土台の多くは、数千年前のこの時代に生まれました。
         added: true
         show:
@@ -19,11 +19,11 @@ scenes:
       - say: 今の人類、ホモ・サピエンスが生まれたのは、およそ30万年前のアフリカです。
         show:
           - { type: title, text: アフリカから始まった旅 }
-          - { type: text, at: [80, 140], w: 1120, text: "約30万年前　アフリカで **ホモ・サピエンス** 誕生" }
+          - { type: text, at: [ 80, 140 ], w: 1120, text: "約30万年前　アフリカで **ホモ・サピエンス** 誕生" }
       - say: そして、およそ6万年から7万年前ごろ、アフリカを出て、世界各地へ広がり始めました。
         show:
           - type: svg
-            at: [80, 220]
+            at: [ 80, 220 ]
             w: 1120
             h: 260
             anim: draw
@@ -36,17 +36,65 @@ scenes:
               <g stroke="none" font-size="24" fill="#e8eef5" text-anchor="middle"><text x="420" y="178">アフリカ</text><text x="520" y="15">ヨーロッパ</text><text x="900" y="40">アジア</text><text x="960" y="240">オセアニア・アメリカへ</text></g>
       - say: わたしたち全員の祖先は、アフリカにいたのです。人類の歴史は、アフリカから始まった、壮大な旅の記録でもあります。
         show: []
+  - gen: map
+    board: whiteboard
+    steps:
+      - say: 人類が世界に広がった道を、地図で見てみましょう。出発点は、アフリカの東部、今のエチオピアやケニアのあたりです。
+        show:
+          - { type: title, text: 人類が広がった道 }
+          - { type: image, src: map-main.svg, at: &a1 [ 140, 140 ], w: 1000, anim: fade, id: mb }
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: <circle cx="347.4" cy="343" r="9" fill="#f3d77a" stroke="#0b1c2c" stroke-width="2.5"/><rect x="359" y="334" width="168" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/>
+            id: mo0
+          - { type: text, text: アフリカ東部, at: [ 505, 473 ], size: s, color: yellow, anim: fade, id: ml0_0 }
+        added: true
+      - say: およそ6万年前から、アフリカを出た人類は、西アジアを通って、ヨーロッパへ、そして南アジアから東アジア、さらに、オーストラリアへと広がりました。
+        show:
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: |-
+              <path d="M347.4 343 L365.6 313.6 L383.8 255.2 L318.4 202.4 L245.7 161.9" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M257.2 178.3 L245.7 161.9 L265.7 163.1" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M383.8 255.2 L463.7 267.4 L572.7 279.2 L638 238.4" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M618.2 240.6 L638 238.4 L627.4 255.3" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M572.7 279.2 L609 361.2 L663.5 397.7 L699.8 451.1" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M696.9 431.3 L699.8 451.1 L682.5 441.1" stroke="#f4a3b8" stroke-width="5"/><rect x="203" y="116" width="142" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/><rect x="603" y="179" width="116" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/><rect x="668" y="477" width="194" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/>
+            id: mo1
+          - { type: text, text: ヨーロッパ, at: [ 349, 255 ], size: s, color: pink, anim: fade, id: ml1_0 }
+          - { type: text, text: 東アジア, at: [ 749, 318 ], size: s, color: pink, anim: fade, id: ml1_1 }
+          - { type: text, text: オーストラリア, at: [ 814, 616 ], size: s, color: pink, anim: fade, id: ml1_2 }
+        added: true
+      - say: そして、およそ1万5000年前までには、凍って陸続きになっていた、ベーリング海峡をわたり、アメリカ大陸にまで、たどり着いたと考えられています。
+        show:
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: |-
+              <path d="M638 238.4 L718 150.8 L808.8 72.1 L859.6 38.9" stroke="#f4a3b8" stroke-width="5"/>
+              <path d="M839.8 41.5 L859.6 38.9 L849.3 56" stroke="#f4a3b8" stroke-width="5"/><rect x="451" y="11" width="547" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/>
+            id: mo2
+          - { type: text, text: → ベーリング海峡をわたり、アメリカ大陸へ, at: [ 597, 150 ], size: s, color: pink, anim: fade, id: ml2_0 }
+        added: true
 
   - board: whiteboard
     steps:
       - say: 広がっていく途中で、ホモ・サピエンスは、ネアンデルタール人など、ほかの人類と出会いました。
         show:
           - { type: title, text: ネアンデルタール人との出会い }
-          - { type: text, at: [80, 140], w: 1120, text: "ほかの人類（**ネアンデルタール人** など）と出会う" }
+          - { type: text, at: [ 80, 140 ], w: 1120, text: "ほかの人類（**ネアンデルタール人** など）と出会う" }
       - say: その一部とは子どもも作っていたことが、遺伝子の研究でわかっています。今のヨーロッパやアジアの人のDNAには、ネアンデルタール人の遺伝子が、1から2%ほど含まれているのです。
         read: その一部とは子どもも作っていたことが、遺伝子の研究でわかっています。今のヨーロッパやアジアの人のディーエヌエーには、ネアンデルタール人の遺伝子が、いちからにパーセントほど含まれているのです。
         show:
-          - { type: box, at: [80, 230], w: 1120, color: blue, text: "ヨーロッパ・アジアの人のDNAの **約1〜2%** はネアンデルタール人由来" }
+          - { type: box, at: [ 80, 230 ], w: 1120, color: blue, text: "ヨーロッパ・アジアの人のDNAの **約1〜2%** はネアンデルタール人由来" }
 
   - board: whiteboard
     steps:
@@ -56,7 +104,7 @@ scenes:
       - say: 農業を始めると、一つの場所に住み続けるようになり、人口が増え、仕事の分担が生まれます。やがて、貧富の差が生まれ、国ができていきました。
         show:
           - type: svg
-            at: [80, 140]
+            at: [ 80, 140 ]
             w: 1120
             h: 120
             anim: draw
@@ -66,7 +114,7 @@ scenes:
       - say: 日本史で学んだ、縄文から弥生への変化と、同じ流れですね。世界中で、同じことが起きていたのです。
         added: true
         show:
-          - { type: text, at: [80, 300], w: 1120, color: gray, text: "日本の「縄文 → 弥生」と同じ流れが、世界中で起きた" }
+          - { type: text, at: [ 80, 300 ], w: 1120, color: gray, text: "日本の「縄文 → 弥生」と同じ流れが、世界中で起きた" }
       - say: ただし、農業で人類は本当に豊かになったのか、という問いには、むしろ労働時間が増え、健康が悪くなった、という研究もあります。農業革命を、手放しで進歩と呼べるかは、今も議論されています。
         show:
-          - { type: box, at: [80, 380], w: 1120, color: pink, title: 農業は進歩だった？, text: "労働時間が増え、健康が悪化したという研究も" }
+          - { type: box, at: [ 80, 380 ], w: 1120, color: pink, title: 農業は進歩だった？, text: "労働時間が増え、健康が悪化したという研究も" }
