@@ -2,3 +2,8 @@ id: chemistry-ch06-02
 code: CH06-02
 title: アルコールとアルデヒド
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 72
+  narration: VOICEVOX:青山龍星

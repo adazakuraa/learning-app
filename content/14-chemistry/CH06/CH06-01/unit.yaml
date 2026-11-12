@@ -2,3 +2,8 @@ id: chemistry-ch06-01
 code: CH06-01
 title: 炭素と有機物
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 95
+  narration: VOICEVOX:青山龍星
