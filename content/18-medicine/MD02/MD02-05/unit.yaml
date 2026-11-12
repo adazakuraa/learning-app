@@ -3,3 +3,8 @@ code: MD02-05
 title: 頭を打ったとき
 order: 5
 summary: 頭のけがは、打った直後だけでなく数時間〜数週間後に悪化することがあります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 161
+  narration: VOICEVOX:ずんだもん

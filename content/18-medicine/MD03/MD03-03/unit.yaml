@@ -3,3 +3,8 @@ code: MD03-03
 title: 息苦しさ
 order: 3
 summary: 息苦しさは、肺・心臓・アレルギーなど命にかかわる病気のサインのことがあります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 144
+  narration: VOICEVOX:ずんだもん

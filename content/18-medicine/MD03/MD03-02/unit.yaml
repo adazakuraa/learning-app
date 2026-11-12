@@ -3,3 +3,8 @@ code: MD03-02
 title: 動悸・脈の乱れ
 order: 2
 summary: 多くは心配ない動悸ですが、失神や胸痛を伴う動悸、心房細動には注意が必要です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 149
+  narration: VOICEVOX:ずんだもん
