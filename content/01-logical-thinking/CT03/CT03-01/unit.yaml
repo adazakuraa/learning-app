@@ -2,3 +2,8 @@ id: logical-thinking-ct03-01
 code: CT03-01
 title: 形式的誤謬
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 82
+  narration: VOICEVOX:青山龍星
