@@ -2,3 +2,8 @@ id: physics-ph02-05
 code: PH02-05
 title: 万有引力
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 95
+  narration: VOICEVOX:青山龍星

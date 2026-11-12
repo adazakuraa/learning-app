@@ -2,3 +2,8 @@ id: physics-ph02-04
 code: PH02-04
 title: 摩擦力と空気抵抗
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 73
+  narration: VOICEVOX:青山龍星
