@@ -2,3 +2,8 @@ id: world-history-wh01-04
 code: WH01-04
 title: インダス・中国文明
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 106
+  narration: VOICEVOX:ずんだもん
