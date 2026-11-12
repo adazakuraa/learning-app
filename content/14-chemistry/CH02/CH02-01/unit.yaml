@@ -2,3 +2,8 @@ id: chemistry-ch02-01
 code: CH02-01
 title: 原子とは何か
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 132
+  narration: VOICEVOX:青山龍星
