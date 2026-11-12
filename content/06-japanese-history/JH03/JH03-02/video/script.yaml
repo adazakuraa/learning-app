@@ -1,0 +1,36 @@
+title: 平城京と都市文化
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 710年、奈良に、平城京が作られました。
+        read: 710年、奈良に、へいじょうきょうが作られました。
+        show:
+          - { type: title, text: 710年　平城京 }
+          - { type: text, at: [80, 140], w: 1120, text: "710年　奈良に **平城京**" }
+      - say: 中国の唐の都をモデルにした、碁盤の目のような町です。道がまっすぐ縦と横に通っていて、今の京都や札幌の町並みに似ています。
+        show:
+          - type: svg
+            at: [80, 220]
+            w: 420
+            h: 320
+            anim: draw
+            markup: |
+              <rect x="20" y="20" width="380" height="280" stroke="#9fc7ff"/>
+              <path d="M96 20 V300 M172 20 V300 M248 20 V300 M324 20 V300 M20 76 H400 M20 132 H400 M20 188 H400 M20 244 H400" stroke-width="2" opacity="0.7"/>
+              <rect x="170" y="22" width="80" height="54" fill="#f3d77a" fill-opacity="0.4" stroke="#f3d77a"/>
+          - { type: box, at: [560, 230], w: 640, color: blue, title: 碁盤の目の都, text: "手本は唐の都（長安）\n今の京都・札幌の町並みに似ている" }
+      - say: 人口は10万人ほどだったと言われます。当時の日本としては、ずば抜けた大都市でした。
+        show:
+          - { type: text, at: [560, 440], w: 640, text: "人口 約 **10万人** の大都市" }
+
+  - board: whiteboard
+    steps:
+      - say: 今の奈良公園には鹿がいますね。当時の平城京にも鹿はいたようで、春日大社の神様の使いとして、大切にされていました。
+        read: 今の奈良公園には鹿がいますね。当時のへいじょうきょうにも鹿はいたようで、かすがたいしゃの神様の使いとして、大切にされていました。
+        show:
+          - { type: title, text: 1300年変わらない風景 }
+          - { type: box, at: [80, 140], w: 1120, color: green, title: 奈良の鹿, text: "春日大社の **神の使い** として大切にされた" }
+      - say: 1300年たった今も、同じ場所に鹿がいる。歴史が、今の風景にそのままつながっている例です。
+        added: true
+        show:
+          - { type: text, at: [80, 320], w: 1120, size: l, text: "奈良時代 → 1300年後の今も、同じ場所に鹿" }
