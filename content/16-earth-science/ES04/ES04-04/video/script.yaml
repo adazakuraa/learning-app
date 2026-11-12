@@ -1,0 +1,51 @@
+title: 日本の気候と季節風
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「日本の気候と季節風」です。日本海側と、太平洋側では、気候が大きくちがいます。その理由が、季節によって向きが変わる風、季節風です。
+        show:
+          - { type: title, text: 季節風 }
+          - { type: text, text: "**季節風** ＝ 季節によって向きが変わる風" }
+
+  - board: whiteboard
+    steps:
+      - say: 冬は、シベリア気団から、冷たい北西の風が吹きます。
+        show:
+          - { type: title, text: 冬の季節風（北西） }
+          - { type: image, src: 1000002990.webp, at: [80, 130], w: 560 }
+      - say: この風は、日本海を通るときに、水分をたっぷりたくわえます。そして、日本列島の山脈にぶつかって、日本海側に大雪をふらせます。
+        show:
+          - type: svg
+            at: [660, 140]
+            w: 580
+            h: 260
+            markup: |
+              <path d="M10 220 H200 L330 60 L460 220 H570" stroke="#9aa3ad"/>
+              <path d="M20 120 Q150 90 260 100" stroke="#8fc4ff"/><path d="M380 100 Q480 120 560 170" stroke="#f3d77a"/>
+              <g fill="#e8eef5" stroke="none"><circle cx="200" cy="140" r="5"/><circle cx="230" cy="170" r="5"/><circle cx="260" cy="140" r="5"/></g>
+              <g stroke="none" font-size="20" text-anchor="middle"><text x="90" y="255" fill="#8fc4ff">日本海側：大雪</text><text x="490" y="255" fill="#f3d77a">太平洋側：晴れ・乾燥</text><text x="330" y="40" fill="#9aa3ad">山脈</text></g>
+      - say: 山をこえたあとの風は、水分を失って、乾いた、からっ風として、太平洋側に吹き下ろします。だから、冬の太平洋側は、晴れて乾燥するのです。
+        show:
+          - { type: text, at: [660, 430], w: 560, color: yellow, text: "山をこえると乾いた **からっ風** → 太平洋側は晴れて乾燥" }
+
+  - board: whiteboard
+    steps:
+      - say: 夏は、太平洋の小笠原気団から、暖かくしめった、南東の風が吹きます。日本の夏がじめじめ蒸し暑いのは、このためです。
+        show:
+          - { type: title, text: 夏の季節風（南東） }
+          - { type: image, src: 1000002954.webp, at: [80, 130], w: 520 }
+          - { type: text, at: [650, 160], w: 570, text: "小笠原気団から、暖かくしめった **南東の風** → じめじめ蒸し暑い" }
+      - say: 冬とは逆に、夏は太平洋側に雨をふらせ、山をこえた日本海側は、晴れやすくなります。
+        show:
+          - { type: box, at: [650, 330], w: 570, color: yellow, text: "夏：太平洋側に雨、日本海側は晴れやすい（冬と逆）" }
+
+  - board: whiteboard
+    steps:
+      - say: 最後に、台風です。台風は、熱帯の海の上で生まれた低気圧のうち、最大風速が、秒速およそ17メートル以上になったものです。
+        show:
+          - { type: title, text: 台風 }
+          - { type: text, text: "**台風** ＝ 熱帯の海の低気圧で、最大風速が約17m/s 以上のもの" }
+      - say: 台風は、暖かい海から、水蒸気というエネルギーをもらって発達します。だから、陸に上がったり、冷たい海に進んだりすると、勢いが弱まります。
+        added: true
+        show:
+          - { type: box, color: blue, w: 1000, text: "暖かい海の水蒸気がエネルギー源 → 陸や冷たい海で弱まる" }

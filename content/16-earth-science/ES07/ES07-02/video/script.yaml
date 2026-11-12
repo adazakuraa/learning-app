@@ -1,0 +1,34 @@
+title: 地球資源とエネルギー
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「地球資源とエネルギー」です。今の文明をささえる資源は、地球の長い歴史がつくり出したものです。
+        show:
+          - { type: title, text: 化石燃料 }
+      - say: 石油、石炭、天然ガスのような化石燃料は、大昔の生き物が、変化してできたものです。石炭は主に植物から、石油は主に、大昔の海の生き物から、長い時間、地下の熱と圧力を受けてできたと考えられています。
+        show:
+          - { type: text, text: "**化石燃料**（石油・石炭・天然ガス）＝ 大昔の生き物が変化したもの" }
+          - { type: text, color: green, text: "石炭：主に植物から" }
+          - { type: text, color: blue, text: "石油：主に大昔の海の生き物から（地下の熱と圧力で）" }
+
+  - board: whiteboard
+    steps:
+      - say: 化石燃料は、数億年をかけてたくわえられた、エネルギーの缶詰です。それを、人類は、たった数百年で、使いはたそうとしています。
+        show:
+          - { type: title, text: エネルギーの缶詰 }
+          - type: svg
+            w: 1000
+            h: 140
+            markup: |
+              <path d="M20 70 H980" stroke="#9aa3ad"/>
+              <rect x="20" y="40" width="900" height="60" stroke="#9be0b0" fill="#9be0b0" fill-opacity="0.2"/>
+              <rect x="925" y="40" width="55" height="60" stroke="#f4a3b8" fill="#f4a3b8" fill-opacity="0.4"/>
+              <g stroke="none" font-size="22"><text x="300" y="130" fill="#9be0b0">たくわえるのに 数億年</text><text x="760" y="30" fill="#f4a3b8">使うのは 数百年</text></g>
+      - say: さらに、化石燃料を燃やすと、たくわえられていた炭素が、二酸化炭素として、一気に空気中にもどります。これが、地球温暖化の大きな原因になっています。
+        added: true
+        show:
+          - { type: box, color: pink, w: 1000, text: "燃やす → 地下の炭素が CO₂ として一気に空気中へ → 地球温暖化" }
+      - say: だからこそ、太陽光や風力のような、再生可能エネルギーへの転換が、世界中で進められています。地球の歴史を知ることは、これからの地球をどう使うかを考えることにつながるのです。これで、地学はおしまいです。おつかれさまでした。
+        added: true
+        show:
+          - { type: text, color: yellow, text: "→ 再生可能エネルギー（太陽光・風力など）への転換" }
