@@ -11,13 +11,29 @@ import YAML from 'yaml';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const RENDER_DIR = path.join(ROOT, 'pipeline/render');
 const rendererHash = crypto.createHash('sha1');
-for (const f of fs.readdirSync(RENDER_DIR).sort()) if (/\.(mjs|js|css|html)$/.test(f) && f !== 'stale.mjs' && f !== 'batch.mjs') rendererHash.update(fs.readFileSync(path.join(RENDER_DIR, f)));
+// Some renderer fixes only matter for videos that use a particular feature. Such a fix lives in a marked block that is
+// left out of the renderer hash and mixed into the hash of just the videos that use the feature, so fixing it does not
+// re-render every video. (Block + feature: Japanese characters inside formulas, see KATEX-CJK in board.css.)
+const FIX_RE = /\n\/\* KATEX-CJK-START \*\/[\s\S]*?\/\* KATEX-CJK-END \*\/\n/;
+let cjkFix = '';
+for (const f of fs.readdirSync(RENDER_DIR).sort()) {
+  if (!/\.(mjs|js|css|html)$/.test(f) || f === 'stale.mjs' || f === 'batch.mjs') continue;
+  let src = fs.readFileSync(path.join(RENDER_DIR, f), 'utf8');
+  if (f === 'board.css') {
+    cjkFix = (src.match(FIX_RE) ?? [''])[0];
+    src = src.replace(FIX_RE, '');
+  }
+  rendererHash.update(src);
+}
+const CJK_IN_FORMULA = /\btex:[^\n]*[\u3000-\u30ff\u4e00-\u9fff\uff00-\uffef]/;
 rendererHash.update(fs.readFileSync(path.join(ROOT, 'pipeline/voice.json'))); // a new voice re-narrates and re-renders everything
 const RENDERER = rendererHash.digest('hex');
 
 export function renderHash(unitDir) {
   const h = crypto.createHash('sha1').update(RENDERER);
-  h.update(fs.readFileSync(path.join(unitDir, 'video', 'script.yaml')));
+  const script = fs.readFileSync(path.join(unitDir, 'video', 'script.yaml'), 'utf8');
+  h.update(script);
+  if (CJK_IN_FORMULA.test(script)) h.update(cjkFix);
   const mf = path.join(unitDir, 'video', 'narration', 'manifest.json');
   if (fs.existsSync(mf)) h.update(fs.readFileSync(mf));
   for (const f of fs.readdirSync(unitDir)) if (/\.(webp|png|jpe?g|svg|gif)$/i.test(f)) h.update(f);
