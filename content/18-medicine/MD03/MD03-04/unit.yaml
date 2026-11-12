@@ -3,3 +3,8 @@ code: MD03-04
 title: 咳・痰
 order: 4
 summary: かぜの咳は多くが自然に治ります。長引く咳と、血の混じる痰には注意します。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 132
+  narration: VOICEVOX:ずんだもん

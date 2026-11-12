@@ -3,3 +3,8 @@ code: MD03-05
 title: むくみと血圧
 order: 5
 summary: むくみの多くは心配ありませんが、片足だけのむくみや息苦しさを伴うむくみは要注意です。高血圧は症状がないまま進みます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 151
+  narration: VOICEVOX:ずんだもん

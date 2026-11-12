@@ -3,3 +3,8 @@ code: MD04-02
 title: 吐き気・嘔吐
 order: 2
 summary: 嘔吐は胃腸炎が多いですが、頭の病気や心臓、腸閉塞のサインのこともあります。脱水に注意します。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 150
+  narration: VOICEVOX:ずんだもん

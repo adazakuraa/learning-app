@@ -3,3 +3,8 @@ code: MD04-01
 title: 腹痛
 order: 1
 summary: 腹痛の原因はさまざまです。「突然の激痛」「おなかが板のように硬い」「どんどん強くなる」は急ぎます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 179
+  narration: VOICEVOX:ずんだもん
