@@ -2,3 +2,8 @@ id: world-history-wh02-03
 code: WH02-03
 title: ソクラテス・プラトン・アリストテレス
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 105
+  narration: VOICEVOX:ずんだもん

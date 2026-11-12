@@ -2,3 +2,8 @@ id: world-history-wh01-05
 code: WH01-05
 title: フェニキア・ヘブライと地中海
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 80
+  narration: VOICEVOX:ずんだもん
