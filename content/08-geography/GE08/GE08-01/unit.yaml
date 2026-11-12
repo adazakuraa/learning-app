@@ -2,3 +2,8 @@ id: geography-ge08-01
 code: GE08-01
 title: 日本列島の成り立ち
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 59
+  narration: VOICEVOX:ずんだもん
