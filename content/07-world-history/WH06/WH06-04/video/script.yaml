@@ -1,0 +1,47 @@
+title: 大西洋奴隷貿易と植民地
+scenes:
+  - board: whiteboard
+    steps:
+      - say: スペインやポルトガル、のちにはイギリス、フランス、オランダなども、アメリカ大陸の植民地に、大農園、プランテーションを作りました。砂糖、タバコ、綿花を作るためです。
+        show:
+          - { type: title, text: プランテーションと奴隷 }
+          - { type: box, at: [80, 140], w: 1120, color: yellow, title: プランテーション（大農園）, text: "砂糖・タバコ・綿花を大量に作る" }
+      - say: その働き手として、16世紀から19世紀に、推計で1000万から1300万人ものアフリカの人々が、奴隷として連れ去られました。
+        show:
+          - { type: text, at: [80, 320], w: 1120, size: l, text: "推計 **1000万〜1300万人** のアフリカの人々が連れ去られる" }
+
+  - board: whiteboard
+    steps:
+      - say: これが、三角貿易のしくみです。ヨーロッパから、武器やお酒をアフリカへ。アフリカから、奴隷をアメリカへ。アメリカから、砂糖などの農産物をヨーロッパへ運びました。
+        show:
+          - { type: title, text: 三角貿易 }
+          - type: svg
+            at: [80, 130]
+            w: 760
+            h: 420
+            anim: draw
+            markup: |
+              <rect x="280" y="10" width="220" height="64" rx="10" stroke="#9fc7ff"/>
+              <rect x="510" y="320" width="220" height="64" rx="10" stroke="#f3d77a"/>
+              <rect x="20" y="320" width="220" height="64" rx="10" stroke="#9be0b0"/>
+              <path d="M450 80 L590 312"/><path d="M570 300 L592 314 L590 290"/>
+              <path d="M500 352 L250 352"/><path d="M270 340 L248 352 L270 364"/>
+              <path d="M150 312 L320 80"/><path d="M300 86 L322 78 L320 102"/>
+              <g stroke="none" font-size="26" fill="#e8eef5" text-anchor="middle"><text x="390" y="51">ヨーロッパ</text><text x="620" y="361">アフリカ</text><text x="130" y="361">アメリカ大陸</text></g>
+              <g stroke="none" font-size="20" fill="#f3d77a"><text x="540" y="190">武器・酒</text><text x="320" y="405">奴隷</text><text x="60" y="190">砂糖・綿花など</text></g>
+      - say: 船の中では、鎖でつながれた状態で運ばれ、航海中に亡くなる人は、15から20%にものぼりました。
+        show:
+          - { type: box, at: [880, 150], w: 320, color: pink, title: 航海中の死亡率, text: "**15〜20%**" }
+
+  - board: whiteboard
+    steps:
+      - say: この奴隷貿易で得た富が、ヨーロッパの経済を豊かにし、のちの産業革命を支えました。一方、アフリカは、働き盛りの多くの人を奪われ、社会が大きく傷つきました。
+        added: true
+        show:
+          - { type: title, text: 今に続く影響 }
+          - { type: box, at: [80, 140], w: 540, color: green, title: ヨーロッパ, text: "富を得る\n→ 産業革命を支える" }
+          - { type: box, at: [660, 140], w: 540, color: pink, title: アフリカ, text: "多くの働き手を奪われる\n社会が大きく傷つく" }
+      - say: アメリカの黒人差別の問題や、アフリカと先進国の経済の差は、この時代にまでさかのぼる、長い歴史の結果でもあるのです。
+        added: true
+        show:
+          - { type: text, at: [80, 360], w: 1120, text: "アメリカの人種差別・南北の経済格差 ← この時代までさかのぼる" }
