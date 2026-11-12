@@ -2,3 +2,8 @@ id: philosophy-ph08-03
 code: PH08-03
 title: 死と有限性
 order: 3
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 70
+  narration: VOICEVOX:ずんだもん

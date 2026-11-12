@@ -2,3 +2,8 @@ id: philosophy-ph08-01
 code: PH08-01
 title: 人生に意味はあるか
 order: 1
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 141
+  narration: VOICEVOX:ずんだもん
