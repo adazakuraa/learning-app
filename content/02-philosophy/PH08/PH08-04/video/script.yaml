@@ -1,0 +1,25 @@
+title: よく生きるとは
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「よく生きるとは」。これが、哲学の、最後の実践的な問いです。
+        show:
+          - { type: title, text: よく生きるとは }
+      - say: アリストテレスは、人間としてすぐれた、充実した生を求めました。快楽を追いかけることではなく、自分の本性や能力を、最大限に発揮して生きることです。
+        show:
+          - { type: box, color: yellow, w: 1100, title: アリストテレス, text: "快楽を追うのではなく、自分の本性・能力を最大限に発揮して生きる" }
+
+  - board: whiteboard
+    steps:
+      - say: 楽しい生と、よい生と、意味のある生は、必ずしも一致しません。
+        show:
+          - { type: title, text: 3つの「生」 }
+          - type: svg
+            w: 1000
+            h: 260
+            markup: |
+              <g stroke-width="3" fill-opacity="0.12"><circle cx="380" cy="110" r="100" stroke="#f3d77a" fill="#f3d77a"/><circle cx="620" cy="110" r="100" stroke="#8fc4ff" fill="#8fc4ff"/><circle cx="500" cy="170" r="100" stroke="#f4a3b8" fill="#f4a3b8"/></g>
+              <g stroke="none" font-size="24" text-anchor="middle"><text x="330" y="90" fill="#f3d77a">楽しい生</text><text x="670" y="90" fill="#8fc4ff">よい生</text><text x="500" y="240" fill="#f4a3b8">意味ある生</text></g>
+      - say: 快楽だけを追う生き方は、楽しいかもしれませんが、よい生かどうかは、別の問題です。どんな生き方をするか、を問い続けること。それ自体が、よく生きることの一部なのです。
+        show:
+          - { type: box, color: green, w: 1000, text: "「どう生きるか」を問い続けること自体が、よく生きることの一部" }
