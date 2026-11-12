@@ -2,3 +2,8 @@ id: world-history-wh09-05
 code: WH09-05
 title: 第二次世界大戦
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 71
+  narration: VOICEVOX:ずんだもん
