@@ -2,3 +2,8 @@ id: english-en07-04
 code: EN07-04
 title: 動名詞（-ing）
 order: 4
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 81
+  narration: VOICEVOX:ずんだもん

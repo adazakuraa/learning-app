@@ -2,3 +2,8 @@ id: english-en07-05
 code: EN07-05
 title: 接続詞
 order: 5
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 71
+  narration: VOICEVOX:ずんだもん
