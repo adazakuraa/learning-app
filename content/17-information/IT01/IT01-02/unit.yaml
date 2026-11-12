@@ -2,3 +2,8 @@ id: information-it01-02
 code: IT01-02
 title: デジタルとは何か
 order: 2
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 94
+  narration: VOICEVOX:青山龍星
