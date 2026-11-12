@@ -2,3 +2,8 @@ id: world-history-wh06-06
 code: WH06-06
 title: 科学革命
 order: 6
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 84
+  narration: VOICEVOX:ずんだもん
