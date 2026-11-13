@@ -3,3 +3,8 @@ code: BK01-02
 title: 貸借対照表と損益計算書（5つの要素）
 order: 2
 summary: 資産・負債・純資産・収益・費用の5要素と、B/S・P/Lの形を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 105
+  narration: VOICEVOX:ずんだもん

@@ -3,3 +3,8 @@ code: BK01-04
 title: 取引の8要素と仕訳の練習
 order: 4
 summary: 取引の8つの組み合わせ（取引要素の結合関係）と、簿記上の取引になるかどうかを学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 105
+  narration: VOICEVOX:ずんだもん
