@@ -136,7 +136,7 @@ function build() {
       const cPath = path.join(sPath, cDir);
       const cMeta = readYaml(path.join(cPath, 'chapter.yaml'));
       if (!cMeta) continue;
-      const chapter = { id: cMeta.id ?? cDir, title: cMeta.title ?? cDir, description: cMeta.description ?? '', order: cMeta.order, _dir: cDir, units: [] };
+      const chapter = { id: cMeta.id ?? cDir, title: cMeta.title ?? cDir, description: cMeta.description ?? '', order: cMeta.order, _dir: cDir, units: [], ...(cMeta.intro ? { intro: true } : {}) };
 
       for (const uDir of subdirs(cPath)) {
         const uPath = path.join(cPath, uDir);

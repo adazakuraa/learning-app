@@ -7,6 +7,7 @@ import { unitStatus } from '../lib/progress/model';
 import { useProgress } from '../lib/progress/ProgressProvider';
 import { chapterCounts, subjectCounts } from '../lib/stats';
 import { NotFound } from './NotFound';
+import { chapterNumber } from '../lib/types';
 
 export function SubjectDetail() {
   const { subjectId } = useParams();
@@ -63,7 +64,7 @@ export function SubjectDetail() {
           <details key={ch.id} className="chapter" open={isOpen(ch.id)} onToggle={(e) => { const v = (e.currentTarget as HTMLDetailsElement).open; if (v !== isOpen(ch.id)) toggle(ch.id, v); }}>
             <summary className="chapter-head">
               <h2>
-                <span className="chapter-no">第{i + 1}章</span>
+                <span className="chapter-no">第{chapterNumber(s.chapters, i)}章</span>
                 {ch.title}
               </h2>
               <span className="chapter-count muted small">
