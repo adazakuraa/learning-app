@@ -3,3 +3,8 @@ code: BK12-03
 title: 帳簿の締め切り
 order: 3
 summary: 決算で収益・費用を損益勘定に集め、繰越利益剰余金に振り替えて帳簿を締め切る手順を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 50
+  narration: VOICEVOX:ずんだもん

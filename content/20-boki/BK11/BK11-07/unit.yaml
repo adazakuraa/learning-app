@@ -3,3 +3,8 @@ code: BK11-07
 title: 経過勘定②（未払費用・未収収益）
 order: 7
 summary: まだ払っていない・受け取っていない当期分の費用や収益を、決算で加える（見越す）処理を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 76
+  narration: VOICEVOX:ずんだもん

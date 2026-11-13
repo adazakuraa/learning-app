@@ -3,3 +3,8 @@ code: BK12-02
 title: 損益計算書と貸借対照表の作成
 order: 2
 summary: 決算整理後の金額から、損益計算書・貸借対照表を作るときの表示のルールを学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 43
+  narration: VOICEVOX:ずんだもん
