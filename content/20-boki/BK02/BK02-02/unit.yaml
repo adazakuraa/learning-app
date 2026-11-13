@@ -3,3 +3,8 @@ code: BK02-02
 title: 現金過不足
 order: 2
 summary: 帳簿と実際の現金が合わないときの処理（現金過不足）と、決算での雑損・雑益を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 83
+  narration: VOICEVOX:ずんだもん
