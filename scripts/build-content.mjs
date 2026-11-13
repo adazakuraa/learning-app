@@ -281,6 +281,19 @@ function build() {
         if (hq) questions.push(hq);
       }
     }
+    // 追加分（content/hayaoshi/<フォルダ>/<本体と同じファイル名>.yaml）は同じジャンルに合流させる。
+    // フォルダごと消せば追加分だけを取り除ける。
+    for (const d of fs.readdirSync(hDir, { withFileTypes: true }).filter((x) => x.isDirectory()).map((x) => x.name).sort()) {
+      for (const f of fs.readdirSync(path.join(hDir, d)).filter((x) => x.endsWith('.yaml')).sort()) {
+        const gid = f.replace(/\.yaml$/, '').replace(/^\d+-/, '');
+        if (!genres.some((g) => g.id === gid)) { errors.push(`hayaoshi ${d}/${f}: 本体に同じジャンルのファイルがない`); continue; }
+        const y = readYaml(path.join(hDir, d, f));
+        for (const [i, q] of (y.questions ?? []).entries()) {
+          const hq = hQuestion(q, gid, `${d}/${f} #${i + 1}`, ids, { batch: d });
+          if (hq) questions.push(hq);
+        }
+      }
+    }
     fs.writeFileSync(path.join(outDir, 'hayaoshi.json'), JSON.stringify({ genres, questions }));
     console.log(`hayaoshi: ${questions.length} questions in ${genres.length} genres`);
   }
