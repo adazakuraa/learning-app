@@ -84,6 +84,21 @@ export function SubjectDetail() {
                   </Link>
                 </li>
               ))}
+              {ch.quiz && (() => {
+                const r = doc.quizzes?.[ch.quiz.id];
+                const perfect = r && r.best === r.total;
+                return (
+                  <li>
+                    <Link to={`/quiz/${ch.quiz.id}`} className="unit-row quiz-row">
+                      <span className={`quiz-icon${perfect ? ' perfect' : ''}`} aria-hidden>{perfect ? '★' : '?'}</span>
+                      <span className="unit-row-main">
+                        <span className="unit-row-title">練習問題</span>
+                        <span className="muted small">{ch.quiz.count}問{r ? ` ・ 最高 ${r.best}/${r.total}問` : ' ・ 未挑戦'}</span>
+                      </span>
+                    </Link>
+                  </li>
+                );
+              })()}
             </ul>
           </details>
         );

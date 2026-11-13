@@ -3,3 +3,8 @@ code: FP07-03
 title: 住民税と手取りの計算
 order: 3
 summary: 住民税は前年の所得にかかります。額面から手取りがどれくらいになるかを知っておきます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 44
+  narration: VOICEVOX:ずんだもん

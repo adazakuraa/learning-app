@@ -3,3 +3,8 @@ code: FP07-06
 title: 消費税・固定資産税など身近な税
 order: 6
 summary: 買う・持つ・使うときにかかる税金と、ふるさと納税の仕組みを学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 63
+  narration: VOICEVOX:ずんだもん

@@ -3,3 +3,8 @@ code: FP06-04
 title: 必要保障額と保険の見直し
 order: 4
 summary: 必要な保険の額は、家族構成や公的保障で変わります。入りすぎも、足りないのも避けます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 58
+  narration: VOICEVOX:ずんだもん

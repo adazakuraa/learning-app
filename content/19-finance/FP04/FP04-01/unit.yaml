@@ -3,3 +3,8 @@ code: FP04-01
 title: 日本の社会保障の全体像
 order: 1
 summary: 日本では、病気・老後・失業などのリスクに、まず公的な制度が備えています。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 73
+  narration: VOICEVOX:ずんだもん

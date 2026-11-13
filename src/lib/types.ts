@@ -8,7 +8,10 @@ export type UnitMeta = {
   hasText: boolean;
   videoDuration: number | null;
 };
-export type Chapter = { id: string; title: string; description: string; units: UnitMeta[] };
+export type Chapter = { id: string; title: string; description: string; units: UnitMeta[]; quiz?: { id: string; count: number } };
+
+export type QuizQuestion = { q: string; answers: string[]; show: string; explain: string };
+export type Quiz = { id: string; title: string; subjectId: string; questions: QuizQuestion[] };
 export type Subject = { id: string; title: string; description: string; group: string; chapters: Chapter[] };
 export type Catalog = { generatedAt: string; subjects: Subject[] };
 

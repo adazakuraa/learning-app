@@ -3,3 +3,8 @@ code: FP07-04
 title: 年末調整
 order: 4
 summary: 会社員の1年分の税金を、会社が12月にまとめて精算するのが年末調整です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 76
+  narration: VOICEVOX:ずんだもん

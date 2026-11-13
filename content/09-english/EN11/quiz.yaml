@@ -1,0 +1,9 @@
+questions:
+  - q: unhappy の un- のように、単語の頭について意味を加える部分を何というか。
+    a: [接頭辞]
+  - q: 「再び」の意味を加える接頭辞は何か。（rebuild の最初の部分）
+    a: [re, re-]
+    show: re-
+  - q: misunderstand の意味を日本語で答えよ。
+    a: [誤解する, 誤解]
+    show: 誤解する

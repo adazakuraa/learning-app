@@ -3,3 +3,8 @@ code: FP07-05
 title: 確定申告のやり方
 order: 5
 summary: 自分で1年の所得と税金を計算して申告する手続きです。会社員でも必要・お得な場合があります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 85
+  narration: VOICEVOX:ずんだもん

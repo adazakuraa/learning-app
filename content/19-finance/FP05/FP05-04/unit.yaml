@@ -3,3 +3,8 @@ code: FP05-04
 title: 自分で上乗せする年金
 order: 4
 summary: 公的年金に上乗せする制度の全体像です。iDeCoの詳しい使い方は第9章で学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 51
+  narration: VOICEVOX:ずんだもん

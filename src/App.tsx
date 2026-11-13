@@ -8,6 +8,7 @@ import { Subjects } from './pages/Subjects';
 import { SubjectDetail } from './pages/SubjectDetail';
 import { UnitPage } from './pages/UnitPage';
 import { SettingsPage } from './pages/SettingsPage';
+import { QuizPage } from './pages/QuizPage';
 import { NotFound } from './pages/NotFound';
 
 function SyncDot() {
@@ -61,6 +62,7 @@ function Shell() {
             <Route path="/subjects" element={<Subjects />} />
             <Route path="/subjects/:subjectId" element={<SubjectDetail />} />
             <Route path="/units/:unitId" element={<UnitPage />} />
+            <Route path="/quiz/:quizId" element={<QuizPage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -3,3 +3,8 @@ code: FP03-01
 title: 金利と複利
 order: 1
 summary: お金を増やす力の正体は「複利」です。借金でも同じ力が逆向きに働きます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 77
+  narration: VOICEVOX:ずんだもん

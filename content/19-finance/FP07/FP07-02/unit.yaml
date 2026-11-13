@@ -3,3 +3,8 @@ code: FP07-02
 title: 所得税のしくみ
 order: 2
 summary: 所得税は「収入 − 経費（控除）」に税率をかけて計算します。税率は所得が多いほど高くなります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 72
+  narration: VOICEVOX:ずんだもん

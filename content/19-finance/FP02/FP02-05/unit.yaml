@@ -3,3 +3,8 @@ code: FP02-05
 title: キャッシュレスとクレジットカード
 order: 5
 summary: キャッシュレスは便利でポイントも貯まりますが、「後払い」の仕組みを理解して使うことが大切です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 68
+  narration: VOICEVOX:ずんだもん

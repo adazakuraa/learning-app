@@ -1,0 +1,11 @@
+questions:
+  - q: 「右に曲がる」を英語で何というか。turn（　　）
+    a: [right]
+  - q: 「〜のとなりに」を表す表現。（　　）to
+    a: [next]
+    show: next to
+  - q: アプリでよく見る「設定」を英語で何というか。
+    a: [settings, setting]
+    show: settings
+  - q: 「混乱している」という意味の形容詞は何か。
+    a: [confused]

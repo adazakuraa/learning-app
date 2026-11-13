@@ -3,3 +3,8 @@ code: FP04-05
 title: 労災保険と働くときのルール
 order: 5
 summary: 仕事中・通勤中のけがは労災保険で守られます。働く人を守る基本のルールも知っておきます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 67
+  narration: VOICEVOX:ずんだもん
