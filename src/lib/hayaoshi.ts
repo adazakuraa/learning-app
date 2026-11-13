@@ -37,8 +37,14 @@ const clampP = (p: number) => Math.min(0.97, Math.max(0.03, p));
 export const difficulty = (p: number) => -Math.log(clampP(p) / (1 - clampP(p)));
 export const predict = (theta: number, q: HQuestion) => sigmoid(theta - difficulty(q.p));
 
-/** rating shown to the user (1000 = an average adult) */
-export const rating = (theta: number) => Math.round(1000 + theta * 200);
+/** expected correct rate (for an average adult) of the questions picked at the target rate */
+export const targetP = (theta: number, target = TARGET) => sigmoid(Math.log(target / (1 - target)) - theta);
+/**
+ * Rating shown to the user (1000 = an average adult).
+ * Linear in the expected correct rate of the questions that get picked:
+ * +100 rating = questions 10 points harder (1000 → p 70%, 1200 → 50%, 1400 → 30%, 1600 → 10%).
+ */
+export const rating = (theta: number) => Math.round(1000 + 1000 * (TARGET - targetP(theta)));
 
 export function thinkSeconds(q: HQuestion): number {
   return Math.max(MIN_THINK, Math.ceil(q.len * SEC_PER_CHAR));
