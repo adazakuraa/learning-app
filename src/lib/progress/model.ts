@@ -28,6 +28,8 @@ export type ProgressDoc = {
   quizzes?: Record<string, QuizResult>;
   /** hayaoshi (buzzer quiz game) */
   hayaoshi?: HState;
+  /** hayaoshi review mode (questions from completed units) */
+  hayaoshiReview?: HState;
   /** seconds studied: device -> unitId -> seconds */
   time: Record<string, Record<string, number>>;
   /** seconds studied: device -> YYYY-MM-DD -> seconds */
@@ -110,6 +112,7 @@ export function mergeDocs(a: ProgressDoc, b: ProgressDoc): ProgressDoc {
     units,
     ...(Object.keys(quizzes).length ? { quizzes } : {}),
     ...(a.hayaoshi || b.hayaoshi ? { hayaoshi: mergeH(a.hayaoshi, b.hayaoshi) } : {}),
+    ...(a.hayaoshiReview || b.hayaoshiReview ? { hayaoshiReview: mergeH(a.hayaoshiReview, b.hayaoshiReview) } : {}),
     time: mergeCounters(a.time ?? {}, b.time ?? {}),
     days: mergeCounters(a.days ?? {}, b.days ?? {}),
     updatedAt: Math.max(a.updatedAt, b.updatedAt),

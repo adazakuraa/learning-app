@@ -1,16 +1,17 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useProgress } from '../lib/progress/ProgressProvider';
 import { isCorrect } from '../lib/quiz';
+import { unitStatus } from '../lib/progress/model';
 import {
   AFTER_FULL, CPS, emptyH, pickNext, points, predict, rating, SESSION_LEN, thinkSeconds, updateTheta,
-  type HBank, type HQuestion, type HState,
+  type HBank, type HMode, type HQuestion, type HState,
 } from '../lib/hayaoshi';
 
 type Phase = 'ready' | 'reading' | 'answering' | 'judged' | 'result';
 type Outcome = { q: HQuestion; ok: boolean; pos: number | null; pts: number; prevPos?: number; prevBest?: number; through: boolean };
 
-let bankPromise: Promise<HBank> | null = null;
-const loadBank = () => (bankPromise ??= fetch('data/hayaoshi.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status))))));
+const banks: Partial<Record<HMode, Promise<HBank>>> = {};
+const loadBank = (m: HMode) => (banks[m] ??= fetch(m === 'review' ? 'data/hayaoshi-review.json' : 'data/hayaoshi.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status))))));
 const today = () => new Date().toLocaleDateString('sv');
 
 // small sound effects (Web Audio, no files)
@@ -40,9 +41,17 @@ function beep(kind: 'buzz' | 'ok' | 'ng' | 'fanfare') {
 }
 
 export function HayaoshiPage() {
-  const { doc, setHayaoshi } = useProgress();
-  const h: HState = doc.hayaoshi ?? emptyH();
-  const [bank, setBank] = useState<HBank | null>(null);
+  const { doc, setHayaoshi: setH } = useProgress();
+  const [mode, setMode] = useState<HMode>(() => { try { return localStorage.getItem('la:hayaoshi-mode') === 'review' ? 'review' : 'general'; } catch { return 'general'; } });
+  const h: HState = (mode === 'review' ? doc.hayaoshiReview : doc.hayaoshi) ?? emptyH();
+  const setHayaoshi = useCallback((fn: (x: HState) => HState) => setH(mode, fn), [setH, mode]);
+  const [fullBank, setBank] = useState<HBank | null>(null);
+  const done = useMemo(() => new Set(Object.entries(doc.units).filter(([, u]) => unitStatus(u) === 'done').map(([id]) => id)), [doc.units]);
+  const bank = useMemo<HBank | null>(() => {
+    if (!fullBank) return null;
+    if (mode !== 'review') return fullBank;
+    return { ...fullBank, questions: fullBank.questions.filter((x) => x.unit && done.has(x.unit)) };
+  }, [fullBank, mode, done]);
   const [err, setErr] = useState(false);
   const [phase, setPhase] = useState<Phase>('ready');
   const [q, setQ] = useState<HQuestion | null>(null);
@@ -60,7 +69,7 @@ export function HayaoshiPage() {
   hRef.current = h;
   const used = useRef(new Set<string>());
 
-  useEffect(() => { loadBank().then(setBank, () => setErr(true)); }, []);
+  useEffect(() => { setBank(null); loadBank(mode).then(setBank, () => setErr(true)); }, [mode]);
   useEffect(() => () => window.clearInterval(timer.current), []);
 
   const score = outs.reduce((s, o) => s + o.pts, 0);
@@ -151,7 +160,7 @@ export function HayaoshiPage() {
     });
   };
   const advance = () => {
-    if (outs.length >= SESSION_LEN) {
+    if (outs.length >= Math.min(SESSION_LEN, bank?.questions.length ?? SESSION_LEN)) {
       setHayaoshi((s) => ({ ...s, sessions: s.sessions + 1, bestScore: Math.max(s.bestScore, score) }));
       if (outs.every((o) => o.ok) || score > h.bestScore) beep('fanfare');
       setPhase('result');
@@ -173,6 +182,13 @@ export function HayaoshiPage() {
     return (
       <div className="page hay">
         <h1 className="page-title">早押しクイズ</h1>
+        <div className="hay-modes" role="tablist">
+          {([['general', 'いろいろクイズ', 'いろんなジャンルから'], ['review', '復習クイズ', '学習済みの単元から']] as const).map(([m, t, d]) => (
+            <button key={m} role="tab" aria-selected={mode === m} className={`hay-mode${mode === m ? ' on' : ''}`} onClick={() => { setMode(m); try { localStorage.setItem('la:hayaoshi-mode', m); } catch { /* */ } }}>
+              <b>{t}</b><span className="muted small">{d}</span>
+            </button>
+          ))}
+        </div>
         <div className="card hay-stats">
           <div><div className="muted small">クイズ力</div><div className="hay-big">{rating(h.theta)}</div></div>
           <div><div className="muted small">正答率</div><div className="hay-big">{acc === null ? '—' : `${acc}%`}</div></div>
@@ -186,9 +202,15 @@ export function HayaoshiPage() {
             <li>あなたの実力に合わせて、ちょうどいい難しさの問題が出ます。間違えても減点はありません。</li>
           </ul>
         </div>
-        <button className="btn primary block hay-start" onClick={start}>スタート（{SESSION_LEN}問）</button>
+        {mode === 'review' && bank.questions.length < 5 ? (
+          <div className="notice">復習クイズは、学習を完了した単元から出題します。単元を「完了」にすると、ここで遊べるようになります（いま出題できる問題：{bank.questions.length}問）。</div>
+        ) : (
+          <button className="btn primary block hay-start" onClick={start}>スタート（{Math.min(SESSION_LEN, bank.questions.length)}問）</button>
+        )}
         <button className="linkbtn small" onClick={toggleSound}>効果音：{sound ? 'オン' : 'オフ'}</button>
-        <p className="muted small">全{bank.questions.length}問 ・ {bank.genres.length}ジャンル ・ これまで{h.answered}問に挑戦</p>
+        <p className="muted small">
+          {mode === 'review' ? `学習済み${done.size}単元から ${bank.questions.length}問` : `全${bank.questions.length}問 ・ ${bank.genres.length}ジャンル`} ・ これまで{h.answered}問に挑戦
+        </p>
       </div>
     );
   }
@@ -283,7 +305,7 @@ export function HayaoshiPage() {
           {!last.ok && last.prevBest !== undefined && <div className="muted small">前に{last.prevBest}文字目で正解した問題です</div>}
           <div className="muted small">予想正答率 {Math.round(q.p * 100)}%（あなたなら {Math.round(predict(startTheta, q) * 100)}%）</div>
           {!last.ok && !last.through && <button className="linkbtn small" onClick={override}>書き方が違うだけで合っていた → 正解にする</button>}
-          <button className="btn primary quiz-next" onClick={advance}>{outs.length >= SESSION_LEN ? '結果を見る' : '次の問題'}</button>
+          <button className="btn primary quiz-next" onClick={advance}>{outs.length >= Math.min(SESSION_LEN, bank?.questions.length ?? SESSION_LEN) ? '結果を見る' : '次の問題'}</button>
         </div>
       )}
     </div>
