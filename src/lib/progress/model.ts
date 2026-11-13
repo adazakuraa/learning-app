@@ -17,9 +17,13 @@ export type UnitProgress = {
   lastStudiedAt?: number;
 };
 
+/** chapter quiz results */
+export type QuizResult = { best: number; last: number; total: number; attempts: number; perfectAt?: number; updatedAt: number };
+
 export type ProgressDoc = {
   version: 1;
   units: Record<string, UnitProgress>;
+  quizzes?: Record<string, QuizResult>;
   /** seconds studied: device -> unitId -> seconds */
   time: Record<string, Record<string, number>>;
   /** seconds studied: device -> YYYY-MM-DD -> seconds */
@@ -88,9 +92,19 @@ export function mergeDocs(a: ProgressDoc, b: ProgressDoc): ProgressDoc {
     for (const k of Object.keys(u) as (keyof UnitProgress)[]) if (u[k] === undefined) delete u[k];
     units[id] = u;
   }
+  const quizzes: Record<string, QuizResult> = {};
+  const qa = a.quizzes ?? {}, qb = b.quizzes ?? {};
+  for (const id of new Set([...Object.keys(qa), ...Object.keys(qb)])) {
+    const x = qa[id], y = qb[id];
+    if (!x || !y) { quizzes[id] = (x ?? y)!; continue; }
+    const n = newer(x, y)!;
+    const perfectAt = [x.perfectAt, y.perfectAt].filter(Boolean).sort()[0];
+    quizzes[id] = { ...n, best: Math.max(x.best, y.best), attempts: Math.max(x.attempts, y.attempts), ...(perfectAt ? { perfectAt } : {}) };
+  }
   return {
     version: 1,
     units,
+    ...(Object.keys(quizzes).length ? { quizzes } : {}),
     time: mergeCounters(a.time ?? {}, b.time ?? {}),
     days: mergeCounters(a.days ?? {}, b.days ?? {}),
     updatedAt: Math.max(a.updatedAt, b.updatedAt),

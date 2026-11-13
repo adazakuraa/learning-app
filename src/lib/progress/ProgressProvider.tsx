@@ -23,6 +23,7 @@ type Api = {
   setTextCompleted: (id: string, completed: boolean) => void;
   setUnitCompleted: (id: string, completed: boolean) => void;
   addStudyTime: (id: string, seconds: number) => void;
+  recordQuiz: (quizId: string, score: number, total: number) => void;
   importDoc: (doc: ProgressDoc, mode: 'merge' | 'replace') => void;
   sync: SyncState;
   syncNow: () => Promise<void>;
@@ -164,6 +165,20 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
           const u = d.units[id] ?? {};
           return { ...d, time: { ...d.time, [device]: t }, days: { ...d.days, [device]: days }, units: { ...d.units, [id]: { ...u, lastStudiedAt: Date.now() } } };
         }),
+      recordQuiz: (quizId: string, score: number, total: number) =>
+        update((d) => {
+          const prev = d.quizzes?.[quizId];
+          const now = Date.now();
+          const r = {
+            best: Math.max(prev?.best ?? 0, score),
+            last: score,
+            total,
+            attempts: (prev?.attempts ?? 0) + 1,
+            updatedAt: now,
+            ...(prev?.perfectAt || score === total ? { perfectAt: prev?.perfectAt ?? now } : {}),
+          };
+          return { ...d, quizzes: { ...(d.quizzes ?? {}), [quizId]: r } };
+        }, true),
       importDoc: (incoming: ProgressDoc, mode: 'merge' | 'replace') => update((d) => (mode === 'merge' ? mergeDocs(d, incoming) : incoming), true),
       setGithubConfig: (c: GitHubConfig | null) => {
         saveConfig(c);

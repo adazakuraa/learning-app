@@ -97,6 +97,9 @@ function renderMarkdown(md, opts) {
   );
 }
 
+/** Inline markdown for quiz text: **bold**, line breaks, inline math $..$ (rendered by KaTeX). */
+const renderInline = (s) => renderMarkdown(s, { toc: null, assetBase: '', unitDir: '.', used: new Set() }).replace(/^<p>([\s\S]*)<\/p>\s*$/, '$1');
+
 /** Drop a leading "# Title" line (the page shows the unit title itself). */
 const stripTitle = (md) => md.replace(/^﻿?\s*#\s+[^\n]*\n/, '');
 
@@ -200,6 +203,19 @@ function build() {
         });
       }
       chapter.units.sort(byOrder);
+      // chapter-end quiz (content/<subject>/<chapter>/quiz.yaml)
+      const qMeta = readYaml(path.join(cPath, 'quiz.yaml'));
+      if (qMeta?.questions?.length) {
+        const qid = `${subject.id}--${chapter.id}`;
+        const questions = qMeta.questions.map((q, i) => {
+          const answers = [].concat(q.a ?? []).map(String);
+          if (!q.q || !answers.length) errors.push(`quiz ${qid} question ${i + 1}: needs q and a`);
+          return { q: renderInline(String(q.q ?? '')), answers, show: renderInline(String(q.show ?? answers[0] ?? '')), explain: q.explain ? renderInline(String(q.explain)) : '' };
+        });
+        fs.mkdirSync(path.join(outDir, 'quizzes'), { recursive: true });
+        fs.writeFileSync(path.join(outDir, 'quizzes', `${qid}.json`), JSON.stringify({ id: qid, title: chapter.title, subjectId: subject.id, questions }));
+        chapter.quiz = { id: qid, count: questions.length };
+      }
       subject.chapters.push(chapter);
     }
     subject.chapters.sort(byOrder);
