@@ -3,3 +3,8 @@ code: BK03-03
 title: 仕入諸掛・発送費
 order: 3
 summary: 商品の運賃などの付随費用（諸掛り）を、誰が負担するかで処理を分けて学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 60
+  narration: VOICEVOX:ずんだもん
