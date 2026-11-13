@@ -3,3 +3,8 @@ code: FP12-01
 title: 相続の基本
 order: 1
 summary: 人が亡くなると、その人の財産（借金も含む）は家族に引き継がれます。誰が・どれだけ受け継ぐかのルールです。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 90
+  narration: VOICEVOX:ずんだもん
