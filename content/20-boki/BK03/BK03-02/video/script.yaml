@@ -1,0 +1,96 @@
+title: 掛け取引と返品
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 会社どうしの取引では、そのたびに現金を払うのではなく、月末にまとめて払います、という約束で取引することが多いです。これを掛け取引といいます。
+        show:
+          - type: title
+            text: 掛け取引
+      - say: 売った側は、あとでお金をもらえる権利、売掛金を持ちます。資産です。買った側は、あとで払う義務、買掛金を持ちます。負債です。
+        read: 売った側は、あとでお金をもらえる権利、うりかけきんを持ちます。資産です。買った側は、あとで払う義務、かいかけきんを持ちます。負債です。
+        show:
+          - type: box
+            w: 560
+            text: |-
+              ・**売掛金**（資産）
+              ・あとでお金をもらえる
+            title: 売った側
+            color: blue
+            at:
+              - 60
+              - 220
+          - type: box
+            w: 560
+            text: |-
+              ・**買掛金**（負債）
+              ・あとでお金を払う
+            title: 買った側
+            color: pink
+            at:
+              - 660
+              - 220
+  - board: whiteboard
+    steps:
+      - say: A社から、商品10万円を掛けで仕入れました。
+        read: A社から、商品10万円を掛けでしいれれました。
+        show:
+          - type: title
+            text: 仕訳の例
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 140
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">仕入</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">買掛金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text>
+      - say: B社に商品15万円を掛けで売りました。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 290
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">売掛金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">150,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売上</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">150,000</text>
+      - say: 後日、B社から15万円が普通預金に振り込まれたら、売掛金を減らします。
+        read: 後日、B社から15万円が普通預金に振り込まれたら、うりかけきんを減らします。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 440
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">普通預金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">150,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売掛金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">150,000</text>
+  - board: whiteboard
+    steps:
+      - say: 返品のときは、元の仕訳の逆を書いて、なかったことにします。
+        read: 返品のときは、元のしわけの逆を書いて、なかったことにします。
+        show:
+          - type: title
+            text: 返品
+      - say: 仕入れた商品5千円分を返品したら、仕入と買掛金を逆に書きます。
+        read: しいれれた商品5千円分を返品したら、しいれとかいかけきんを逆に書きます。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 170
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">買掛金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">5,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">仕入</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">5,000</text>
+      - say: 売った商品8千円分が返品されたら、売上と売掛金を逆に書きます。返品は、逆仕訳。覚えておきましょう。
+        read: 売った商品8千円分が返品されたら、売上とうりかけきんを逆に書きます。返品は、逆しわけ。覚えておきましょう。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 340
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">売上</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">8,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売掛金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">8,000</text>

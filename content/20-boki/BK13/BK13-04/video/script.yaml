@@ -1,0 +1,56 @@
+title: 第3問（決算）攻略
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 第3問は35点。決算整理前の残高試算表と、決算整理事項から、精算表、財務諸表、決算整理後の残高試算表などを作ります。
+        read: 第3問は35点。決算整理前の残高しさんひょうと、決算整理事項から、せいさんひょう、財務諸表、決算整理後の残高しさんひょうなどを作ります。
+        show:
+          - type: title
+            text: 第3問の解き方
+      - say: 手順は4つ。決算整理事項をすべて仕訳する。試算表の金額に足し引きする。解答欄に書く。当期純利益を確かめる。
+        read: 手順は4つ。決算整理事項をすべてしわけする。しさんひょうの金額に足し引きする。解答欄に書く。当期純利益を確かめる。
+        show:
+          - type: svg
+            w: 1200
+            h: 134
+            at:
+              - 40
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="258.5" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="131.25" y="58" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">① 整理仕訳を</text><text x="131.25" y="90" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">下書き</text><path d="M270.5 65 L304.5 65 M292.5 55 L304.5 65 L292.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="314.5" y="2" width="258.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="443.75" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">② 試算表に</text><text x="443.75" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">足し引き</text><path d="M583 65 L617 65 M605 55 L617 65 L605 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="627" y="2" width="258.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="756.25" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">③ 解答欄へ</text><text x="756.25" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">表示名に注意</text><path d="M895.5 65 L929.5 65 M917.5 55 L929.5 65 L917.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="939.5" y="2" width="258.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="1068.75" y="58" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">④ 純利益を</text><text x="1068.75" y="90" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">確認</text>
+      - say: 整理仕訳の金額は、問題用紙の試算表の横に、直接書き込むと速いです。
+        read: 整理しわけの金額は、問題用紙のしさんひょうの横に、直接書き込むと速いです。
+        show:
+          - type: text
+            text: 試算表の横に**直接書き込む**
+            color: yellow
+            at:
+              - 80
+              - 420
+  - board: whiteboard
+    steps:
+      - say: よくある失点です。期中に買った固定資産を12か月で償却する。売上原価で期首と期末を逆にする。貸倒引当金を全額繰り入れる。経過勘定の月数をまちがえる。繰越利益剰余金に利益を足し忘れる。
+        read: よくある失点です。期中に買った固定資産を12か月で償却する。売上原価できしゅときまつを逆にする。かしだおれ引当金を全額繰り入れる。経過勘定の月数をまちがえる。くりこし利益じょうよきんに利益を足し忘れる。
+        show:
+          - type: title
+            text: よくある失点
+          - type: list
+            items:
+              - 期中取得の資産 → **月割**を忘れる
+              - 売上原価 → **期首と期末**を逆に
+              - 貸倒引当金 → **差額**ではなく全額
+              - 経過勘定 → **月数**のまちがい
+              - 繰越利益剰余金 → **利益の足し忘れ**
+  - board: whiteboard
+    steps:
+      - say: 第3問は、同じパターンのくり返しです。過去問を5回分ほど解けば、ほとんどの整理事項に慣れます。第11章と第12章を何度も見直して、8つの決算整理を自分で説明できるようになれば、合格はすぐそこです。がんばりましょう。
+        show:
+          - type: title
+            text: 最後に
+          - type: box
+            w: 1100
+            text: 過去問を**5回分**　＋　決算整理の8つを**説明できる**ように
+            color: yellow
+            at:
+              - 80
+              - 200

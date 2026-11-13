@@ -1,0 +1,80 @@
+title: 経過勘定②（未払費用・未収収益）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 今度は反対に、まだ払っていない、まだ受け取っていない、当期の分を加える処理です。これを見越しといいます。
+        show:
+          - type: title
+            text: 見越しとは
+      - say: 例です。借入金120万円、年利率3パーセント。利息は毎年9月末に、1年分を後払いします。決算日の3月31日には、10月から3月の6か月分の利息を、まだ払っていません。
+        show:
+          - type: svg
+            w: 1100
+            h: 200
+            at:
+              - 90
+              - 230
+            anim: fade
+            markup: <rect x="2" y="60" width="362.6666666666667" height="90" rx="10" fill="#9aa3ad" fill-opacity="0.2" stroke="#9aa3ad" stroke-width="3"/><text x="183.33333333333334" y="112" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">前回の支払い分</text><rect x="368.6666666666667" y="60" width="362.6666666666667" height="90" rx="10" fill="#f4a3b8" fill-opacity="0.2" stroke="#f4a3b8" stroke-width="3"/><text x="550" y="96" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">当期分 6か月（未払）</text><text x="550" y="128" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">支払利息 18,000</text><rect x="735.3333333333334" y="60" width="362.6666666666667" height="90" rx="10" fill="#9aa3ad" fill-opacity="0.2" stroke="#9aa3ad" stroke-width="3"/><text x="916.6666666666667" y="112" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">来期</text><path d="M366.66666666666663 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="366.66666666666663" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">9月30日 支払</text><path d="M733.3333333333333 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="733.3333333333333" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">3月31日 決算</text>
+  - board: whiteboard
+    steps:
+      - say: でも、借りていた期間の利息は、払っていなくても当期の費用です。120万かける3パーセントかける12分の6で、1万8千円を、未払利息という負債にします。
+        read: でも、借りていた期間の利息は、払っていなくても当期の費用です。120万かける3パーセントかける12分の6で、1万8千円を、みばらい利息という負債にします。
+        show:
+          - type: title
+            text: 未払費用
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">支払利息</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">18,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">未払利息</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">18,000</text>
+      - say: 貸している側なら、まだもらっていない利息を、未収利息という資産にします。
+        read: 貸している側なら、まだもらっていない利息を、みしゅう利息という資産にします。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 380
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">未収利息</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">5,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">受取利息</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">5,000</text>
+  - board: whiteboard
+    steps:
+      - say: 4つの経過勘定をまとめます。繰延べは、前払費用と前受収益。見越しは、未払費用と未収収益。前払と未収は資産、前受と未払は負債です。
+        read: 4つの経過勘定をまとめます。繰延べは、まえばらい費用とまえうけ収益。見越しは、みばらい費用とみしゅう収益。まえばらいとみしゅうは資産、まえうけとみばらいは負債です。
+        show:
+          - type: title
+            text: 4つの経過勘定
+          - type: box
+            w: 560
+            text: |-
+              ・**前払**費用（繰延べ）
+              ・**未収**収益（見越し）
+            title: 資産（もらえる側）
+            color: blue
+            at:
+              - 60
+              - 170
+          - type: box
+            w: 560
+            text: |-
+              ・**前受**収益（繰延べ）
+              ・**未払**費用（見越し）
+            title: 負債（払う・渡す側）
+            color: pink
+            at:
+              - 660
+              - 170
+      - say: なお、未払金と未払費用は別物です。未払金は商品以外の買い物の後払い、未払費用は、利息や家賃のように続くサービスの見越しです。
+        read: なお、みばらい金とみばらい費用は別物です。みばらい金は商品以外の買い物の後払い、みばらい費用は、利息や家賃のように続くサービスの見越しです。
+        show:
+          - type: text
+            text: 未払金 ≠ 未払費用
+            color: yellow
+            at:
+              - 80
+              - 460

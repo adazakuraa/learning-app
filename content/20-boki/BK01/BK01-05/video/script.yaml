@@ -1,0 +1,84 @@
+title: 勘定・転記と簿記の一巡
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 仕訳は、日付の順番の記録です。これだけだと、今、現金がいくらあるかを知るには、全部の仕訳から現金を探さなければなりません。
+        read: しわけは、日付の順番の記録です。これだけだと、今、現金がいくらあるかを知るには、全部のしわけから現金を探さなければなりません。
+        show:
+          - type: title
+            text: 勘定とは
+      - say: そこで、科目ごとに専用の場所を用意して、同じ科目の動きを集めます。これを勘定といい、T字の形で書くので、T字勘定とも呼びます。
+        read: そこで、科目ごとに専用の場所を用意して、同じ科目の動きを集めます。これを勘定といい、ティーじの形で書くので、ティーじ勘定とも呼びます。
+        show:
+          - type: svg
+            w: 520
+            h: 124
+            at:
+              - 380
+              - 230
+            anim: fade
+            markup: <text x="260" y="32" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">現金</text><path d="M0 48 H520 M260 48 V120" stroke="#8fc4ff" stroke-width="4"/><text x="10" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">増えた分</text><text x="270" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">減った分</text>
+  - board: whiteboard
+    steps:
+      - say: 仕訳を勘定に書き写すことを、転記といいます。例で見てみましょう。4月1日、銀行から現金10万円を借りました。
+        read: しわけを勘定に書き写すことを、転記といいます。例で見てみましょう。4月1日、銀行から現金10万円を借りました。
+        show:
+          - type: title
+            text: 転記のしかた
+          - type: svg
+            w: 1000
+            h: 120
+            at:
+              - 90
+              - 150
+            anim: fade
+            markup: <rect x="2" y="2" width="996" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H998 M500 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="160" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="410" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="660" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="910" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">現金</text><text x="480" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text><text x="520" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">借入金</text><text x="980" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text>
+      - say: 仕訳の左にある現金は、現金勘定の左へ。右にある借入金は、借入金勘定の右へ書きます。そして、書くのは自分の科目名ではなく、相手の科目名です。
+        read: しわけの左にある現金は、現金勘定の左へ。右にある借入金は、借入金勘定の右へ書きます。そして、書くのは自分の科目名ではなく、相手の科目名です。
+        show:
+          - type: svg
+            w: 1080
+            h: 124
+            at:
+              - 90
+              - 320
+            anim: fade
+            markup: <text x="260" y="32" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">現金</text><path d="M0 48 H520 M260 48 V120" stroke="#8fc4ff" stroke-width="4"/><text x="10" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">借入金</text><text x="248" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text><text x="820" y="32" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="middle">借入金</text><path d="M560 48 H1080 M820 48 V120" stroke="#f4a3b8" stroke-width="4"/><text x="830" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">現金</text><text x="1068" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text>
+      - say: 相手の科目を書くのは、何と引き換えに増えたのかが、わかるようにするためです。相手が2つ以上あるときは、「しょくち」と書きます。
+        show:
+          - type: box
+            w: 1100
+            text: 勘定には**相手の科目名**を書く（2つ以上なら「諸口」）
+            color: yellow
+            at:
+              - 80
+              - 560
+        added: true
+  - board: whiteboard
+    steps:
+      - say: 最後に、簿記の一巡、1年間の流れです。
+        read: 最後に、ぼきの一巡、1年間の流れです。
+        show:
+          - type: title
+            text: 簿記の一巡
+      - say: 1年間の毎日は、取引を仕訳して、勘定に転記します。そして1年の最後、決算では、試算表で記録を確かめて、決算整理をして、ビーエスとピーエルを作ります。
+        read: 1年間の毎日は、取引をしわけして、勘定に転記します。そして1年の最後、決算では、しさんひょうで記録を確かめて、決算整理をして、ビーエスとピーエルを作ります。
+        show:
+          - type: svg
+            w: 1200
+            h: 134
+            at:
+              - 40
+              - 220
+            anim: fade
+            markup: <rect x="2" y="2" width="154.33333333333334" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="79.16666666666667" y="74" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">取引</text><path d="M166.33333333333334 65 L200.33333333333334 65 M188.33333333333334 55 L200.33333333333334 65 L188.33333333333334 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="210.33333333333334" y="2" width="154.33333333333334" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="287.5" y="74" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="middle">仕訳</text><path d="M374.6666666666667 65 L408.6666666666667 65 M396.6666666666667 55 L408.6666666666667 65 L396.6666666666667 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="418.6666666666667" y="2" width="154.33333333333334" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="495.83333333333337" y="74" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="middle">転記</text><path d="M583 65 L617 65 M605 55 L617 65 L605 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="627" y="2" width="154.33333333333334" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="704.1666666666666" y="74" font-size="24" fill="#f3a76a" stroke="none" text-anchor="middle">試算表</text><path d="M791.3333333333334 65 L825.3333333333334 65 M813.3333333333334 55 L825.3333333333334 65 L813.3333333333334 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="835.3333333333334" y="2" width="154.33333333333334" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="912.5" y="74" font-size="24" fill="#f3a76a" stroke="none" text-anchor="middle">決算整理</text><path d="M999.6666666666667 65 L1033.6666666666667 65 M1021.6666666666667 55 L1033.6666666666667 65 L1021.6666666666667 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="1043.6666666666667" y="2" width="154.33333333333334" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="1120.8333333333335" y="74" font-size="24" fill="#9be0b0" stroke="none" text-anchor="middle">B/S・P/L</text>
+      - say: 会社が決めた1年間を会計期間、最初の日を期首、最後の日を期末といいます。3級の問題は、4月1日から3月31日の会社が多いです。
+        read: 会社が決めた1年間を会計期間、最初の日をきしゅ、最後の日をきまつといいます。さんきゅうの問題は、4月1日から3月31日の会社が多いです。
+        show:
+          - type: box
+            w: 1100
+            text: 会計期間：**期首**（4月1日）〜**期末**（3月31日）
+            color: yellow
+            at:
+              - 80
+              - 420

@@ -1,0 +1,61 @@
+title: 減価償却・消費税・法人税等の決算整理
+scenes:
+  - board: whiteboard
+    steps:
+      - say: ここは、これまでに学んだ内容を、決算整理として確認します。まず減価償却です。期中に買った資産は、月割にするのを忘れないようにしましょう。
+        read: ここは、これまでに学んだ内容を、決算整理として確認します。まずげんかしょうきゃくです。期中に買った資産は、月割にするのを忘れないようにしましょう。
+        show:
+          - type: title
+            text: 減価償却
+      - say: 建物300万円、耐用年数30年なら1年10万円。12月1日に買った備品36万円、耐用年数5年なら、1年7万2千円の、12分の4で2万4千円です。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">減価償却費</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">124,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">建物減価償却累計額</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">備品減価償却累計額</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">24,000</text>
+  - board: whiteboard
+    steps:
+      - say: 消費税は、仮受消費税から仮払消費税を引いた差額を、未払消費税にします。
+        read: 消費税は、かりうけ消費税からかりばらい消費税を引いた差額を、みばらい消費税にします。
+        show:
+          - type: title
+            text: 消費税
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 150
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">仮受消費税</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">150,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">仮払消費税</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">80,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">未払消費税</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">70,000</text>
+      - say: 法人税等は、当期の税額を計上して、中間納付の仮払法人税等を消し、残りを未払法人税等にします。法人税等は、ほかの決算整理をすべて終えてから、最後に計算します。
+        read: 法人税等は、当期の税額を計上して、中間納付のかりばらい法人税等を消し、残りをみばらい法人税等にします。法人税等は、ほかの決算整理をすべて終えてから、最後に計算します。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 380
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">法人税等</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">400,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">仮払法人税等</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">150,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">未払法人税等</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">250,000</text>
+  - board: slide
+    steps:
+      - say: 第3問を解くときの順番です。現金過不足などの整理、貸倒引当金、売上原価、減価償却、経過勘定と貯蔵品、消費税、そして最後に法人税等。
+        read: 第3問を解くときの順番です。現金かぶそくなどの整理、かしだおれ引当金、売上原価、げんかしょうきゃく、経過勘定とちょぞうひん、消費税、そして最後に法人税等。
+        show:
+          - type: title
+            text: 第3問での順番
+          - type: list
+            items:
+              - ① 現金過不足・仮払金など
+              - ② 貸倒引当金
+              - ③ 売上原価
+              - ④ 減価償却
+              - ⑤ 経過勘定・貯蔵品
+              - ⑥ 消費税
+              - ⑦ **法人税等（いちばん最後）**

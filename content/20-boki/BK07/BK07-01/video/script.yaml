@@ -1,0 +1,76 @@
+title: 株式の発行と資本金
+scenes:
+  - board: slide
+    steps:
+      - say: 第7章は、「株式会社と税金」です。会社のお金の集め方、もうけの分け方、そして税金の処理を学びます。
+        show:
+          - type: title
+            text: 第7章　株式会社と税金
+          - type: list
+            items:
+              - 株式の発行と資本金
+              - 配当と繰越利益剰余金
+              - 法人税等
+              - 消費税
+              - 租税公課
+  - board: whiteboard
+    steps:
+      - say: 株式会社は、株式を発行して、株主からお金を集めます。株主は、会社がもうかったら配当を受け取れます。
+        show:
+          - type: title
+            text: 株式会社のしくみ
+          - type: svg
+            w: 1000
+            h: 134
+            at:
+              - 130
+              - 190
+            anim: fade
+            markup: <rect x="2" y="2" width="296" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="150" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">株主</text><path d="M308 65 L342 65 M330 55 L342 65 L330 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="352" y="2" width="296" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="500" y="74" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">出資（お金）</text><path d="M658 65 L692 65 M680 55 L692 65 L680 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="702" y="2" width="296" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="850" y="74" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">株式会社</text>
+      - say: 株主から集めたお金は、返す必要がないので、負債ではなく純資産。3級では、原則として全額を資本金にします。
+        read: 株主から集めたお金は、返す必要がないので、負債ではなく純資産。さんきゅうでは、原則として全額を資本金にします。
+        show:
+          - type: box
+            w: 560
+            text: |-
+              ・銀行から
+              ・返す必要あり → **負債**
+            title: 借入金
+            color: pink
+            at:
+              - 60
+              - 360
+          - type: box
+            w: 560
+            text: |-
+              ・株主から
+              ・返す必要なし → **純資産**
+            title: 資本金
+            color: green
+            at:
+              - 660
+              - 360
+  - board: whiteboard
+    steps:
+      - say: 例です。株式100株を、1株5万円で発行して、全額が普通預金に払い込まれました。5万かける100株で、500万円です。
+        show:
+          - type: title
+            text: 仕訳の例
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">普通預金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">5,000,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">資本金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">5,000,000</text>
+      - say: 会社をつくるときも、あとで増資するときも、同じ仕訳です。金額は、1株の金額かける株数、で計算します。
+        read: 会社をつくるときも、あとで増資するときも、同じしわけです。金額は、1株の金額かける株数、で計算します。
+        show:
+          - type: box
+            w: 1100
+            text: 資本金 ＝ **1株の金額 × 株数**
+            color: yellow
+            at:
+              - 80
+              - 380

@@ -1,0 +1,64 @@
+title: 電子記録債権・電子記録債務
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 紙の手形には、作る手間や、紛失のリスクがあります。そこで、電子データで記録するようにしたのが、電子記録債権です。
+        read: 紙のてがたには、作る手間や、紛失のリスクがあります。そこで、電子データで記録するようにしたのが、電子記録債権です。
+        show:
+          - type: title
+            text: 電子記録債権
+      - say: 考え方は手形と同じです。受取手形のかわりに電子記録債権、支払手形のかわりに電子記録債務、と置き換えるだけです。
+        read: 考え方はてがたと同じです。受取てがたのかわりに電子記録債権、支払てがたのかわりに電子記録債務、と置き換えるだけです。
+        show:
+          - type: box
+            w: 560
+            text: ・受取手形 → **電子記録債権**
+            title: 受け取る側
+            color: blue
+            at:
+              - 60
+              - 220
+          - type: box
+            w: 560
+            text: ・支払手形 → **電子記録債務**
+            title: 払う側
+            color: pink
+            at:
+              - 660
+              - 220
+  - board: whiteboard
+    steps:
+      - say: 3級でよく出るのは、売掛金を電子記録債権に付け替えるパターンです。発生記録をしたら、売掛金を減らして電子記録債権にします。
+        read: さんきゅうでよく出るのは、うりかけきんを電子記録債権に付け替えるパターンです。発生記録をしたら、うりかけきんを減らして電子記録債権にします。
+        show:
+          - type: title
+            text: 発生記録
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 170
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">電子記録債権</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売掛金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text>
+      - say: 払う側は、買掛金を減らして電子記録債務にします。新しい売上や仕入ではないことに注意しましょう。
+        read: 払う側は、かいかけきんを減らして電子記録債務にします。新しい売上やしいれではないことに注意しましょう。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 330
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">買掛金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">80,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">電子記録債務</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">80,000</text>
+      - say: 期日に入金されたら、電子記録債権を消します。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 490
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">普通預金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">電子記録債権</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text>

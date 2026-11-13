@@ -1,0 +1,66 @@
+title: 未収入金・未払金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 売掛金と買掛金は、商品の売り買いだけに使う科目です。商品以外のものを、後払いで売り買いしたときは、未収入金と未払金を使います。
+        read: うりかけきんとかいかけきんは、商品の売り買いだけに使う科目です。商品以外のものを、後払いで売り買いしたときは、みしゅうにゅうきんとみばらい金を使います。
+        show:
+          - type: title
+            text: 未収入金・未払金
+      - say: 表にすると、後で払うのは、商品なら買掛金、商品以外なら未払金。後でもらうのは、商品なら売掛金、商品以外なら未収入金です。
+        read: 表にすると、後で払うのは、商品ならかいかけきん、商品以外ならみばらい金。後でもらうのは、商品ならうりかけきん、商品以外ならみしゅうにゅうきんです。
+        show:
+          - type: box
+            w: 560
+            text: |-
+              ・商品：**買掛金**
+              ・商品以外：**未払金**
+            title: 後で払う（負債）
+            color: pink
+            at:
+              - 60
+              - 220
+          - type: box
+            w: 560
+            text: |-
+              ・商品：**売掛金**
+              ・商品以外：**未収入金**
+            title: 後でもらう（資産）
+            color: blue
+            at:
+              - 660
+              - 220
+  - board: whiteboard
+    steps:
+      - say: 例です。事務用のパソコン30万円を、月末払いで買いました。パソコンは商品ではなく備品なので、未払金です。
+        read: 例です。事務用のパソコン30万円を、月末払いで買いました。パソコンは商品ではなく備品なので、みばらい金です。
+        show:
+          - type: title
+            text: 仕訳の例
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 190
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">備品</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">未払金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text>
+      - say: 不要な段ボールを5千円で売って、代金は後でもらうことにしました。これも商品ではないので、未収入金です。
+        read: 不要な段ボールを5千円で売って、代金は後でもらうことにしました。これも商品ではないので、みしゅうにゅうきんです。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 360
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">未収入金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">5,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">雑益</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">5,000</text>
+      - say: 「掛」がつくのは商品だけ、と覚えておきましょう。
+        show:
+          - type: tag
+            text: 「掛」は商品だけ
+            color: yellow
+            at:
+              - 900
+              - 52

@@ -1,0 +1,57 @@
+title: 手形貸付金・手形借入金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 手形は、お金の貸し借りに使うこともあります。この場合は、商品売買の受取手形、支払手形と区別して、手形貸付金、手形借入金を使います。
+        read: てがたは、お金の貸し借りに使うこともあります。この場合は、商品売買の受取てがた、支払てがたと区別して、てがた貸付金、てがた借入金を使います。
+        show:
+          - type: title
+            text: お金の貸し借りと手形
+          - type: box
+            w: 560
+            text: ・受取手形・支払手形
+            title: 商品の売買
+            color: gray
+            at:
+              - 60
+              - 200
+          - type: box
+            w: 560
+            text: |-
+              ・**手形貸付金**（資産）
+              ・**手形借入金**（負債）
+            title: お金の貸し借り
+            color: yellow
+            at:
+              - 660
+              - 200
+  - board: whiteboard
+    steps:
+      - say: 例です。銀行から100万円を借りて、約束手形を振り出しました。利息2万円を差し引かれた残りが、当座預金に入金されました。
+        read: 例です。銀行から100万円を借りて、約束てがたをふりだしました。利息2万円を差し引かれた残りが、当座預金に入金されました。
+        show:
+          - type: title
+            text: 仕訳の例
+      - say: 借りた金額は100万円のまま、手形借入金にします。先に引かれた利息は支払利息です。
+        read: 借りた金額は100万円のまま、てがた借入金にします。先に引かれた利息は支払利息です。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">当座預金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">980,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">手形借入金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">1,000,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">支払利息</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text>
+      - say: 商品なら受取手形・支払手形。お金なら手形貸付金・手形借入金。これで区別しましょう。
+        read: 商品なら受取てがた・支払てがた。お金ならてがた貸付金・てがた借入金。これで区別しましょう。
+        show:
+          - type: box
+            w: 1100
+            text: |-
+              商品 → 受取手形・支払手形
+              お金 → **手形貸付金・手形借入金**
+            color: yellow
+            at:
+              - 80
+              - 440

@@ -1,0 +1,80 @@
+title: 試算表のしくみ
+scenes:
+  - board: slide
+    steps:
+      - say: 第10章は、「試算表」です。記録が正しいかを確かめる表と、その作り方を学びます。
+        read: 第10章は、「しさんひょう」です。記録が正しいかを確かめる表と、その作り方を学びます。
+        show:
+          - type: title
+            text: 第10章　試算表
+          - type: list
+            items:
+              - 試算表のしくみ
+              - 試算表の問題の解き方
+  - board: whiteboard
+    steps:
+      - say: 試算表は、総勘定元帳の各勘定の金額を、1つの表に集めたものです。転記が正しいかを確かめるために作ります。
+        read: しさんひょうは、総勘定もとちょうの各勘定の金額を、1つの表に集めたものです。転記が正しいかを確かめるために作ります。
+        show:
+          - type: title
+            text: 試算表とは
+      - say: すべての仕訳は、左右の金額が同じです。それを勘定に写しただけなので、全部の勘定の左の合計と、右の合計は、必ず一致します。一致しなければ、どこかで間違えています。
+        read: すべてのしわけは、左右の金額が同じです。それを勘定に写しただけなので、全部の勘定の左の合計と、右の合計は、必ず一致します。一致しなければ、どこかで間違えています。
+        show:
+          - type: svg
+            w: 1000
+            h: 134
+            at:
+              - 130
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="296" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="150" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">仕訳</text><text x="150" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">左右同額</text><path d="M308 65 L342 65 M330 55 L342 65 L330 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="352" y="2" width="296" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="500" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">勘定に転記</text><path d="M658 65 L692 65 M680 55 L692 65 L680 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="702" y="2" width="296" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="850" y="58" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">試算表</text><text x="850" y="90" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">左合計＝右合計</text>
+      - say: 試算表には、合計だけを書く合計試算表、残高だけを書く残高試算表、両方を書く合計残高試算表の3種類があります。
+        read: しさんひょうには、合計だけを書く合計しさんひょう、残高だけを書く残高しさんひょう、両方を書く合計残高しさんひょうの3種類があります。
+        show:
+          - type: list
+            items:
+              - 合計試算表
+              - 残高試算表
+              - 合計残高試算表
+            at:
+              - 130
+              - 420
+  - board: whiteboard
+    steps:
+      - say: 残高試算表では、資産と費用は借方に、負債、純資産、収益は貸方に残高が出ます。ホームポジションのとおりです。
+        read: 残高しさんひょうでは、資産と費用はかりかたに、負債、純資産、収益はかしかたに残高が出ます。ホームポジションのとおりです。
+        show:
+          - type: title
+            text: 残高の位置
+          - type: box
+            w: 560
+            text: |-
+              ・資産
+              ・費用
+            title: 借方に残高
+            color: blue
+            at:
+              - 60
+              - 170
+          - type: box
+            w: 560
+            text: |-
+              ・負債
+              ・純資産
+              ・収益
+            title: 貸方に残高
+            color: pink
+            at:
+              - 660
+              - 170
+      - say: ただし、左右の合計が合っていても、見つけられない間違いがあります。仕訳を忘れた、二重に書いた、科目を間違えた、左右を逆に書いた、などです。
+        read: ただし、左右の合計が合っていても、見つけられない間違いがあります。しわけを忘れた、二重に書いた、科目を間違えた、左右を逆に書いた、などです。
+        show:
+          - type: box
+            w: 1100
+            text: 見つけられない誤り：**記入漏れ・二重記入・科目違い・左右逆**
+            color: yellow
+            at:
+              - 80
+              - 470

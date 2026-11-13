@@ -1,0 +1,78 @@
+title: 売上原価の計算（しくりくりし）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 三分法では、期中に買った商品を、全部、仕入という費用にしています。でも、売れた分の原価だけを費用にしないと、正しいもうけになりません。
+        read: さんぶんぽうでは、期中に買った商品を、全部、しいれという費用にしています。でも、売れた分の原価だけを費用にしないと、正しいもうけになりません。
+        show:
+          - type: title
+            text: 売上原価とは
+      - say: 去年の売れ残り、期首の商品は、今年売れたので、今年の費用に加えます。今年の売れ残り、期末の商品は、まだ売れていないので、今年の費用から除きます。
+        read: 去年の売れ残り、きしゅの商品は、今年売れたので、今年の費用に加えます。今年の売れ残り、きまつの商品は、まだ売れていないので、今年の費用から除きます。
+        show:
+          - type: box
+            w: 560
+            text: ・今年売れた → 費用に**加える**
+            title: 期首の商品（去年の残り）
+            color: purple
+            at:
+              - 60
+              - 200
+          - type: box
+            w: 560
+            text: ・まだ売れていない → 費用から**除く**
+            title: 期末の商品（今年の残り）
+            color: blue
+            at:
+              - 660
+              - 200
+  - board: whiteboard
+    steps:
+      - say: ボックス図で見てみましょう。左は、入ってきた商品。期首2万円と、当期の仕入30万円。右は、売れた分の売上原価と、残った期末の商品3万円です。
+        read: ボックス図で見てみましょう。左は、入ってきた商品。きしゅ2万円と、当期のしいれ30万円。右は、売れた分の売上原価と、残ったきまつの商品3万円です。
+        show:
+          - type: title
+            text: ボックス図
+          - type: svg
+            w: 900
+            h: 360
+            at:
+              - 190
+              - 150
+            anim: fade
+            markup: <rect x="0" y="3" width="435" height="82.30188679245283" rx="12" fill="#8fc4ff" fill-opacity="0.18" stroke="#8fc4ff" stroke-width="3"/><text x="217.5" y="54.15094339622642" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">期首商品 20,000</text><rect x="0" y="91.30188679245283" width="435" height="265.6981132075472" rx="12" fill="#c9a6f5" fill-opacity="0.18" stroke="#c9a6f5" stroke-width="3"/><text x="217.5" y="216.1509433962264" font-size="30" fill="#c9a6f5" stroke="none" text-anchor="middle">当期仕入</text><text x="217.5" y="252.1509433962264" font-size="30" fill="#c9a6f5" stroke="none" text-anchor="middle">300,000</text><rect x="465" y="3" width="435" height="265.6981132075472" rx="12" fill="#c9a6f5" fill-opacity="0.18" stroke="#c9a6f5" stroke-width="3"/><text x="682.5" y="127.84905660377359" font-size="30" fill="#c9a6f5" stroke="none" text-anchor="middle">売上原価</text><text x="682.5" y="163.8490566037736" font-size="30" fill="#c9a6f5" stroke="none" text-anchor="middle">290,000</text><rect x="465" y="274.6981132075472" width="435" height="82.30188679245283" rx="12" fill="#8fc4ff" fill-opacity="0.18" stroke="#8fc4ff" stroke-width="3"/><text x="682.5" y="325.8490566037736" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">期末商品 30,000</text>
+      - say: 左右は同じ大きさなので、売上原価は、2万たす30万ひく3万で、29万円です。
+        show:
+          - type: box
+            w: 1100
+            text: 売上原価 ＝ 期首 ＋ 仕入 − 期末 ＝ **290,000**
+            color: yellow
+            at:
+              - 80
+              - 560
+  - board: whiteboard
+    steps:
+      - say: 仕訳は、しーくり、くりしー、と覚えます。1行目は、仕入と繰越商品で、期首の金額。2行目は、繰越商品と仕入で、期末の金額です。
+        read: しわけは、しーくり、くりしー、と覚えます。1行目は、しいれとくりこし商品で、きしゅの金額。2行目は、くりこし商品としいれで、きまつの金額です。
+        show:
+          - type: title
+            text: しーくり・くりしー
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 160
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">仕入</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">繰越商品</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">繰越商品</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">仕入</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text>
+      - say: こうすると、仕入勘定の残高が売上原価の29万円、繰越商品が期末の在庫3万円になります。決算整理前の繰越商品は、期首の在庫だ、ということも覚えておきましょう。
+        read: こうすると、しいれ勘定の残高が売上原価の29万円、くりこし商品がきまつの在庫3万円になります。決算整理前のくりこし商品は、きしゅの在庫だ、ということも覚えておきましょう。
+        show:
+          - type: svg
+            w: 620
+            h: 168
+            at:
+              - 330
+              - 360
+            anim: fade
+            markup: <text x="310" y="32" font-size="30" fill="#c9a6f5" stroke="none" text-anchor="middle">仕入</text><path d="M0 48 H620 M310 48 V164" stroke="#c9a6f5" stroke-width="4"/><text x="10" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">当期仕入</text><text x="298" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text><text x="10" y="132" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">繰越商品</text><text x="298" y="132" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text><text x="320" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">繰越商品</text><text x="608" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text><text x="320" y="132" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">残高（売上原価）</text><text x="608" y="132" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">290,000</text>

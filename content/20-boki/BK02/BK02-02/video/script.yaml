@@ -1,0 +1,86 @@
+title: 現金過不足
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 帳簿の現金と、金庫の中の実際の現金が、合わないことがあります。そのときの処理が、現金過不足です。
+        read: 帳簿の現金と、金庫の中の実際の現金が、合わないことがあります。そのときの処理が、現金かぶそくです。
+        show:
+          - type: title
+            text: 現金過不足
+      - say: 考え方はシンプルです。まず、帳簿を実際の金額に合わせる。そして、理由がわからない差額は、現金過不足という仮置き場に入れておきます。
+        read: 考え方はシンプルです。まず、帳簿を実際の金額に合わせる。そして、理由がわからない差額は、現金かぶそくという仮置き場に入れておきます。
+        show:
+          - type: svg
+            w: 1200
+            h: 134
+            at:
+              - 40
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="258.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="131.25" y="58" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="middle">帳簿を実際に</text><text x="131.25" y="90" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="middle">合わせる</text><path d="M270.5 65 L304.5 65 M292.5 55 L304.5 65 L292.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="314.5" y="2" width="258.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="443.75" y="58" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">差額は</text><text x="443.75" y="90" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">現金過不足へ</text><path d="M583 65 L617 65 M605 55 L617 65 L605 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="627" y="2" width="258.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="756.25" y="58" font-size="24" fill="#9be0b0" stroke="none" text-anchor="middle">原因判明</text><text x="756.25" y="90" font-size="24" fill="#9be0b0" stroke="none" text-anchor="middle">→ 正しい科目へ</text><path d="M895.5 65 L929.5 65 M917.5 55 L929.5 65 L917.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="939.5" y="2" width="258.5" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="1068.75" y="58" font-size="24" fill="#f3a76a" stroke="none" text-anchor="middle">決算まで不明</text><text x="1068.75" y="90" font-size="24" fill="#f3a76a" stroke="none" text-anchor="middle">→ 雑損・雑益</text>
+  - board: whiteboard
+    steps:
+      - say: 例です。帳簿の現金は3万円、でも実際は2万7千円しかありませんでした。3千円足りません。
+        show:
+          - type: title
+            text: 不足していたとき
+      - say: 現金を3千円減らして、実際に合わせます。相手は現金過不足です。
+        read: 現金を3千円減らして、実際に合わせます。相手は現金かぶそくです。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 160
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">現金過不足</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">3,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">現金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">3,000</text>
+      - say: 後日、2千円は交通費の記入もれだとわかりました。現金過不足を消して、旅費交通費にします。
+        read: 後日、2千円は交通費の記入もれだとわかりました。現金かぶそくを消して、旅費交通費にします。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 310
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">旅費交通費</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">2,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">現金過不足</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">2,000</text>
+      - say: 残りの千円は、決算日になってもわかりませんでした。足りないのは損をしたということなので、雑損にします。
+        read: 残りの千円は、決算日になってもわかりませんでした。足りないのは損をしたということなので、ざつぞんにします。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 460
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">雑損</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">1,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">現金過不足</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">1,000</text>
+  - board: whiteboard
+    steps:
+      - say: 反対に、現金が多かったときは、現金を増やして、相手を現金過不足にします。決算まで原因がわからなければ、もうけとして雑益にします。
+        read: 反対に、現金が多かったときは、現金を増やして、相手を現金かぶそくにします。決算まで原因がわからなければ、もうけとしてざつえきにします。
+        show:
+          - type: title
+            text: 多かったとき
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 170
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">現金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">1,500</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">現金過不足</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">1,500</text>
+      - say: 覚え方は、足りない、つまり損をしたら雑損。多かったら雑益です。また、決算日に初めて差額が見つかったときは、現金過不足を使わず、直接、雑損か雑益にします。
+        read: 覚え方は、足りない、つまり損をしたらざつぞん。多かったらざつえきです。また、決算日に初めて差額が見つかったときは、現金かぶそくを使わず、直接、ざつぞんかざつえきにします。
+        show:
+          - type: box
+            w: 1100
+            text: |-
+              足りない → **雑損**（費用）　多い → **雑益**（収益）
+              決算日に発見 → 直接 雑損・雑益
+            color: yellow
+            at:
+              - 80
+              - 360

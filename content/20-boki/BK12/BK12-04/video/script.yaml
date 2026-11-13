@@ -1,0 +1,71 @@
+title: 再振替仕訳
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 前期末に、来期の分の保険料8千円を、前払保険料にしました。翌期になったら、その8千円は今期の費用です。
+        read: 前きまつに、来期の分の保険料8千円を、まえばらい保険料にしました。翌期になったら、その8千円は今期の費用です。
+        show:
+          - type: title
+            text: 再振替仕訳
+      - say: そこで、翌期の最初の日に、前期末の決算整理仕訳の逆を書いて、元に戻します。これを再振替仕訳といいます。
+        read: そこで、翌期の最初の日に、前きまつの決算整理しわけの逆を書いて、元に戻します。これをさいふりかえしわけといいます。
+        show:
+          - type: svg
+            w: 1000
+            h: 120
+            at:
+              - 90
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="996" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H998 M500 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="160" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="410" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="660" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="910" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">前払保険料</text><text x="480" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">8,000</text><text x="520" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">保険料</text><text x="980" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">8,000</text>
+          - type: text
+            text: ↓ 翌期首に逆を書く
+            color: yellow
+            at:
+              - 90
+              - 330
+          - type: svg
+            w: 1000
+            h: 120
+            at:
+              - 90
+              - 390
+            anim: fade
+            markup: <rect x="2" y="2" width="996" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H998 M500 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="160" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="410" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="660" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="910" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">保険料</text><text x="480" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">8,000</text><text x="520" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">前払保険料</text><text x="980" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">8,000</text>
+  - board: whiteboard
+    steps:
+      - say: 再振替するのは、前払費用、前受収益、未払費用、未収収益、そして貯蔵品です。減価償却や貸倒引当金、売上原価は、再振替しません。
+        read: さいふりかえするのは、まえばらい費用、まえうけ収益、みばらい費用、みしゅう収益、そしてちょぞうひんです。げんかしょうきゃくやかしだおれ引当金、売上原価は、さいふりかえしません。
+        show:
+          - type: title
+            text: 再振替するもの
+          - type: box
+            w: 560
+            text: |-
+              ・前払・前受・未払・未収
+              ・貯蔵品
+            title: 再振替する
+            color: green
+            at:
+              - 60
+              - 180
+          - type: box
+            w: 560
+            text: |-
+              ・減価償却・貸倒引当金
+              ・売上原価
+            title: しない
+            color: gray
+            at:
+              - 660
+              - 180
+      - say: 第2問では、勘定に再振替や決算整理を書き込む問題がよく出ます。4月1日には再振替、3月31日には決算整理が入る、と覚えておきましょう。
+        read: 第2問では、勘定にさいふりかえや決算整理を書き込む問題がよく出ます。4月1日にはさいふりかえ、3月31日には決算整理が入る、と覚えておきましょう。
+        show:
+          - type: box
+            w: 1100
+            text: "**4月1日：再振替**　**3月31日：決算整理**"
+            color: yellow
+            at:
+              - 80
+              - 440

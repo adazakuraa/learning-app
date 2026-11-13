@@ -1,0 +1,66 @@
+title: 現金過不足・仮払金などの整理と貯蔵品
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 決算で、現金過不足が残っていたら、原因がわかった分は正しい科目へ、残りは雑損か雑益にします。
+        read: 決算で、現金かぶそくが残っていたら、原因がわかった分は正しい科目へ、残りはざつぞんかざつえきにします。
+        show:
+          - type: title
+            text: 現金過不足の整理
+      - say: 例です。現金過不足が借方に3千円。借方に残っているということは、現金が足りなかったということです。2千円は家賃の記入漏れ、残りは不明でした。
+        read: 例です。現金かぶそくがかりかたに3千円。かりかたに残っているということは、現金が足りなかったということです。2千円は家賃の記入漏れ、残りは不明でした。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">支払家賃</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">2,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">現金過不足</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">3,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">雑損</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">1,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text>
+      - say: 仮払金や仮受金も、内容がわかったら正しい科目に振り替えます。決算日まで残しておきません。
+        read: かりばらい金やかりうけ金も、内容がわかったら正しい科目に振り替えます。決算日まで残しておきません。
+        show:
+          - type: text
+            text: 仮払金・仮受金も**正しい科目へ**
+            color: yellow
+            at:
+              - 80
+              - 440
+  - board: whiteboard
+    steps:
+      - say: 次に貯蔵品です。切手や収入印紙は、買ったときに通信費や租税公課という費用にしています。
+        read: 次にちょぞうひんです。切手や収入印紙は、買ったときに通信費やそぜいこうかという費用にしています。
+        show:
+          - type: title
+            text: 貯蔵品
+      - say: でも、期末に使っていないものが残っていたら、それは当期の費用ではなく、来期に使える資産です。だから、費用から差し引いて、貯蔵品という資産に振り替えます。
+        read: でも、きまつに使っていないものが残っていたら、それは当期の費用ではなく、来期に使える資産です。だから、費用から差し引いて、ちょぞうひんという資産に振り替えます。
+        show:
+          - type: box
+            w: 560
+            text: ・当期の**費用**のまま
+            title: 使った分
+            color: purple
+            at:
+              - 60
+              - 180
+          - type: box
+            w: 560
+            text: ・**貯蔵品**（資産）へ
+            title: 残った分
+            color: blue
+            at:
+              - 660
+              - 180
+      - say: 切手3千円、印紙5千円が残っていたら、こうなります。翌期の最初の日には、逆の仕訳で元に戻します。
+        read: 切手3千円、印紙5千円が残っていたら、こうなります。翌期の最初の日には、逆のしわけで元に戻します。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 380
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">貯蔵品</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">8,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">通信費</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">3,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">租税公課</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">5,000</text>

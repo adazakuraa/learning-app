@@ -1,0 +1,54 @@
+title: 受取商品券
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 自治体や百貨店が発行した商品券で、代金を受け取ることもあります。商品券は、あとで発行元に請求すると、お金に換えてもらえる権利です。
+        read: 自治体や百貨店が発行したしょうひんけんで、代金を受け取ることもあります。しょうひんけんは、あとで発行元に請求すると、お金に換えてもらえる権利です。
+        show:
+          - type: title
+            text: 受取商品券
+      - say: そこで、受取商品券という資産で処理します。小切手とちがって、銀行ですぐ換金できないので、現金にはしません。
+        read: そこで、受取しょうひんけんという資産で処理します。こぎってとちがって、銀行ですぐ換金できないので、現金にはしません。
+        show:
+          - type: tag
+            text: 受取商品券＝資産
+            color: blue
+            at:
+              - 880
+              - 52
+      - say: 商品3万円を売り、2万円は商品券、残りは現金で受け取りました。
+        read: 商品3万円を売り、2万円はしょうひんけん、残りは現金で受け取りました。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 260
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">受取商品券</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売上</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">現金</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">10,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text>
+      - say: 換金して普通預金に入金されたら、受取商品券を減らします。
+        read: 換金して普通預金に入金されたら、受取しょうひんけんを減らします。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 470
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">普通預金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">受取商品券</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text>
+  - board: slide
+    steps:
+      - say: 第3章のまとめです。売掛金と買掛金、前払金と前受金、クレジット売掛金、受取商品券、そして発送費。どの場面で使うか、整理しておきましょう。
+        read: 第3章のまとめです。うりかけきんとかいかけきん、まえばらいきんとまえうけきん、クレジットうりかけきん、受取しょうひんけん、そしてはっそうひ。どの場面で使うか、整理しておきましょう。
+        show:
+          - type: title
+            text: 第3章のまとめ
+          - type: list
+            items:
+              - 掛け → **売掛金・買掛金**
+              - 手付金 → **前払金・前受金**
+              - カード払い → **クレジット売掛金**＋支払手数料
+              - 商品券 → **受取商品券**
+              - 売るときの運賃 → **発送費**

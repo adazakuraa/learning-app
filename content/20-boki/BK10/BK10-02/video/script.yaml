@@ -1,0 +1,44 @@
+title: 試算表の問題の解き方
+scenes:
+  - board: whiteboard
+    steps:
+      - say: よく出るのは、前の月末の残高試算表と、今月の取引から、今月末の試算表を作る問題です。
+        read: よく出るのは、前の月末の残高しさんひょうと、今月の取引から、今月末のしさんひょうを作る問題です。
+        show:
+          - type: title
+            text: 試算表の問題
+      - say: 手順は4つ。取引をすべて仕訳する。科目ごとに集計する。前月末の残高に足し引きする。最後に左右の合計を確認する。
+        read: 手順は4つ。取引をすべてしわけする。科目ごとに集計する。前月末の残高に足し引きする。最後に左右の合計を確認する。
+        show:
+          - type: svg
+            w: 1200
+            h: 134
+            at:
+              - 40
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="258.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="131.25" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">① すべて</text><text x="131.25" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">仕訳</text><path d="M270.5 65 L304.5 65 M292.5 55 L304.5 65 L292.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="314.5" y="2" width="258.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="443.75" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">② 科目ごとに</text><text x="443.75" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">集計</text><path d="M583 65 L617 65 M605 55 L617 65 L605 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="627" y="2" width="258.5" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="756.25" y="58" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">③ 前月末に</text><text x="756.25" y="90" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">足し引き</text><path d="M895.5 65 L929.5 65 M917.5 55 L929.5 65 L917.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="939.5" y="2" width="258.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="1068.75" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">④ 合計を</text><text x="1068.75" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">確認</text>
+  - board: whiteboard
+    steps:
+      - say: 集計は、下書き用紙にT字勘定を書くと速いです。たとえば売掛金。前月末15万円に、今月の掛け売上20万円を足し、回収18万円を引いて、17万円です。
+        read: 集計は、下書き用紙にティーじ勘定を書くと速いです。たとえばうりかけきん。前月末15万円に、今月の掛け売上20万円を足し、回収18万円を引いて、17万円です。
+        show:
+          - type: title
+            text: 集計のしかた
+          - type: svg
+            w: 520
+            h: 168
+            at:
+              - 380
+              - 170
+            anim: fade
+            markup: <text x="260" y="32" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">売掛金</text><path d="M0 48 H520 M260 48 V164" stroke="#8fc4ff" stroke-width="4"/><text x="10" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">前月末</text><text x="248" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">150,000</text><text x="10" y="132" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">掛け売上</text><text x="248" y="132" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text><text x="270" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">回収</text><text x="508" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">180,000</text><text x="270" y="132" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">残高</text><text x="508" y="132" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">170,000</text>
+      - say: 合計が合わないときは、差額の金額から間違いを探します。差額が2でわり切れるなら、左右を逆に書いた可能性があります。
+        show:
+          - type: box
+            w: 1100
+            text: 差額が2でわり切れる → **左右を逆**に書いたかも
+            color: yellow
+            at:
+              - 80
+              - 470

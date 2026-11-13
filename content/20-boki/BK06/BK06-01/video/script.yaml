@@ -1,0 +1,71 @@
+title: 固定資産の取得
+scenes:
+  - board: slide
+    steps:
+      - say: 第6章は、「固定資産」です。建物や備品のように、長く使う資産の記録と、減価償却を学びます。
+        read: 第6章は、「固定資産」です。建物や備品のように、長く使う資産の記録と、げんかしょうきゃくを学びます。
+        show:
+          - type: title
+            text: 第6章　固定資産
+          - type: list
+            items:
+              - 固定資産の取得
+              - 減価償却
+              - 固定資産の売却
+              - 修繕費と資本的支出
+  - board: whiteboard
+    steps:
+      - say: 固定資産とは、1年以上使う、建物、備品、車両運搬具、土地などのことです。
+        show:
+          - type: title
+            text: 固定資産とは
+          - type: list
+            items:
+              - "**建物**：店舗・事務所・倉庫"
+              - "**備品**：パソコン・机・コピー機"
+              - "**車両運搬具**：営業用の車・トラック"
+              - "**土地**"
+      - say: 固定資産の金額は、買った値段に、仲介手数料、登記料、運送費、据付費などの付随費用を加えます。使える状態にするまでにかかったお金は、すべて資産の値段の一部です。
+        show:
+          - type: box
+            w: 1100
+            text: 取得原価 ＝ 購入代価 ＋ **付随費用**
+            color: yellow
+            at:
+              - 80
+              - 450
+  - board: whiteboard
+    steps:
+      - say: 例です。土地500万円を買い、仲介手数料20万円、登記料10万円と一緒に、普通預金から払いました。
+        show:
+          - type: title
+            text: 仕訳の例
+          - type: svg
+            w: 1160
+            h: 134
+            at:
+              - 60
+              - 170
+            anim: fade
+            markup: <rect x="2" y="2" width="248.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="126.25" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">購入代価</text><text x="126.25" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">500万</text><path d="M260.5 65 L294.5 65 M282.5 55 L294.5 65 L282.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="304.5" y="2" width="248.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="428.75" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">仲介手数料</text><text x="428.75" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">20万</text><path d="M563 65 L597 65 M585 55 L597 65 L585 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="607" y="2" width="248.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="731.25" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">登記料</text><text x="731.25" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">10万</text><path d="M865.5 65 L899.5 65 M887.5 55 L899.5 65 L887.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="909.5" y="2" width="248.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="1033.75" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">土地</text><text x="1033.75" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">530万</text>
+      - say: 土地は530万円です。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 350
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">土地</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">5,300,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">普通預金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">5,300,000</text>
+      - say: 代金を後払いにしたときは、商品ではないので、買掛金ではなく未払金を使います。
+        read: 代金を後払いにしたときは、商品ではないので、かいかけきんではなくみばらい金を使います。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 500
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">備品</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">420,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">未払金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">420,000</text>

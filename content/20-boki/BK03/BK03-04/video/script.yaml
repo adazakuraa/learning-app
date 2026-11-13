@@ -1,0 +1,86 @@
+title: 前払金・前受金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 商品を注文するときに、代金の一部を先に払うことがあります。手付金や内金といいます。
+        show:
+          - type: title
+            text: 前払金・前受金
+      - say: 先に払った側は、あとで商品をもらえる権利として、前払金、資産にします。先に受け取った側は、あとで商品を渡す義務として、前受金、負債にします。
+        read: 先に払った側は、あとで商品をもらえる権利として、まえばらいきん、資産にします。先に受け取った側は、あとで商品を渡す義務として、まえうけきん、負債にします。
+        show:
+          - type: box
+            w: 560
+            text: ・**前払金**（資産）
+            title: 先に払った（買い手）
+            color: blue
+            at:
+              - 60
+              - 220
+          - type: box
+            w: 560
+            text: ・**前受金**（負債）
+            title: 先に受け取った（売り手）
+            color: pink
+            at:
+              - 660
+              - 220
+      - say: なぜ仕入や売上にしないのかというと、仕入と売上は、商品の受け渡しがあったときに記録するルールだからです。
+        read: なぜしいれや売上にしないのかというと、しいれと売上は、商品の受け渡しがあったときに記録するルールだからです。
+        show:
+          - type: text
+            text: 仕入・売上は**商品の受け渡し**のときに記録
+            color: yellow
+            at:
+              - 80
+              - 420
+  - board: whiteboard
+    steps:
+      - say: 買う側の例です。商品20万円を注文し、内金2万円を現金で払いました。
+        show:
+          - type: title
+            text: 買う側
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 150
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">前払金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">現金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text>
+      - say: 商品が届きました。残りの18万円は掛けにします。前払金を取り崩します。
+        read: 商品が届きました。残りの18万円は掛けにします。まえばらいきんを取り崩します。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 310
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">仕入</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">前払金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">買掛金</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">180,000</text>
+  - board: whiteboard
+    steps:
+      - say: 売る側の例です。注文を受けて、手付金3万円を受け取りました。
+        show:
+          - type: title
+            text: 売る側
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 150
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">現金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">前受金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text>
+      - say: 商品30万円を渡して、残りは掛けにしました。前受金を取り崩します。注文しただけ、注文を受けただけでは仕訳しないことも、思い出しておきましょう。
+        read: 商品30万円を渡して、残りは掛けにしました。まえうけきんを取り崩します。注文しただけ、注文を受けただけではしわけしないことも、思い出しておきましょう。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 310
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">前受金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売上</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">売掛金</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">270,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text>

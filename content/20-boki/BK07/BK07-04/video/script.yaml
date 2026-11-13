@@ -1,0 +1,78 @@
+title: 消費税（税抜方式）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 消費税は、最終的にはお客さんが負担する税金です。会社は、仕入のときに消費税を払い、売上のときに消費税を預かり、その差額を国に納めます。
+        read: 消費税は、最終的にはお客さんが負担する税金です。会社は、しいれのときに消費税を払い、売上のときに消費税を預かり、その差額を国に納めます。
+        show:
+          - type: title
+            text: 消費税のしくみ
+          - type: svg
+            w: 1160
+            h: 134
+            at:
+              - 60
+              - 220
+            anim: fade
+            markup: <rect x="2" y="2" width="349.3333333333333" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="176.66666666666666" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">仕入先</text><text x="176.66666666666666" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">消費税を払う 1万</text><rect x="405.3333333333333" y="2" width="349.3333333333333" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="580" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">当社</text><text x="580" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">差額2万を納める</text><rect x="808.6666666666666" y="2" width="349.3333333333333" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="983.3333333333333" y="58" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">お客さん</text><text x="983.3333333333333" y="90" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">消費税を預かる 3万</text>
+      - say: 会社にとっては、預かって、払った分を引いて、国に渡すだけなので、費用でも収益でもありません。だから、仮払消費税、仮受消費税という一時的な科目を使います。
+        read: 会社にとっては、預かって、払った分を引いて、国に渡すだけなので、費用でも収益でもありません。だから、かりばらい消費税、かりうけ消費税という一時的な科目を使います。
+        show:
+          - type: box
+            w: 1100
+            text: |-
+              払った消費税 → **仮払消費税**（資産）
+              預かった消費税 → **仮受消費税**（負債）
+            color: yellow
+            at:
+              - 80
+              - 420
+  - board: whiteboard
+    steps:
+      - say: 3級は税抜方式です。商品10万円を、消費税1万円とあわせて掛けで仕入れました。仕入は税抜の10万円です。
+        read: さんきゅうは税抜方式です。商品10万円を、消費税1万円とあわせて掛けでしいれれました。しいれは税抜の10万円です。
+        show:
+          - type: title
+            text: 仕訳の例
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 150
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">仕入</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">買掛金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">110,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">仮払消費税</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">10,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text>
+      - say: 商品30万円を、消費税3万円とあわせて掛けで売りました。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 340
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">売掛金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">330,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売上</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">仮受消費税</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text>
+  - board: whiteboard
+    steps:
+      - say: 決算では、仮受消費税から仮払消費税を引いた差額を、未払消費税にします。
+        read: 決算では、かりうけ消費税からかりばらい消費税を引いた差額を、みばらい消費税にします。
+        show:
+          - type: title
+            text: 決算
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 170
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">仮受消費税</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">仮払消費税</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">10,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">未払消費税</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text>
+      - say: 払ったら仮払、受け取ったら仮受。法人税等の仮払法人税等と、同じ発想です。
+        read: 払ったらかりばらい、受け取ったらかりうけ。法人税等のかりばらい法人税等と、同じ発想です。
+        show:
+          - type: tag
+            text: 払ったら仮払、受け取ったら仮受
+            color: yellow
+            at:
+              - 700
+              - 52

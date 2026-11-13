@@ -1,0 +1,45 @@
+title: 帳簿の締め切り
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 収益と費用は、1年ごとのもうけを計算するための科目です。来年は来年のもうけを計算するので、毎年ゼロにリセットします。一方、資産、負債、純資産は、会社の財産なので、来年に引き継ぎます。
+        show:
+          - type: title
+            text: なぜ締め切る？
+      - say: 流れは3つ。収益と費用を、損益という勘定に集める。損益の差額、当期純利益を、繰越利益剰余金に移す。資産、負債、純資産は、次期繰越として締め切る。
+        read: 流れは3つ。収益と費用を、そんえきという勘定に集める。そんえきの差額、当期純利益を、くりこし利益じょうよきんに移す。資産、負債、純資産は、次期くりこしとして締め切る。
+        show:
+          - type: svg
+            w: 1000
+            h: 134
+            at:
+              - 130
+              - 300
+            anim: fade
+            markup: <rect x="2" y="2" width="296" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="150" y="74" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">収益・費用</text><path d="M308 65 L342 65 M330 55 L342 65 L330 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="352" y="2" width="296" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="500" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">損益に集める</text><path d="M658 65 L692 65 M680 55 L692 65 L680 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="702" y="2" width="296" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="850" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">当期純利益を</text><text x="850" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">繰越利益剰余金へ</text>
+  - board: whiteboard
+    steps:
+      - say: 仕訳です。収益を損益へ、費用を損益へ振り替えます。
+        read: しわけです。収益をそんえきへ、費用をそんえきへ振り替えます。
+        show:
+          - type: title
+            text: 仕訳
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 150
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">売上</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">450,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">損益</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">450,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">損益</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">350,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">仕入</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">350,000</text>
+      - say: 損益の差額10万円を、繰越利益剰余金に振り替えます。損失のときは、左右が逆になります。
+        read: そんえきの差額10万円を、くりこし利益じょうよきんに振り替えます。損失のときは、左右が逆になります。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 370
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">損益</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">繰越利益剰余金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text>

@@ -1,0 +1,58 @@
+title: 利益の配当と繰越利益剰余金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 会社のもうけ、当期純利益は、決算で、繰越利益剰余金という純資産にたまります。そして、株主総会で、その使い道を決めます。
+        read: 会社のもうけ、当期純利益は、決算で、くりこし利益じょうよきんという純資産にたまります。そして、株主総会で、その使い道を決めます。
+        show:
+          - type: title
+            text: もうけの行き先
+          - type: svg
+            w: 1200
+            h: 134
+            at:
+              - 40
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="258.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="131.25" y="74" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">当期純利益</text><path d="M270.5 65 L304.5 65 M292.5 55 L304.5 65 L292.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="314.5" y="2" width="258.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="443.75" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">繰越利益</text><text x="443.75" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">剰余金</text><path d="M583 65 L617 65 M605 55 L617 65 L605 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="627" y="2" width="258.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="756.25" y="58" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">株主総会で</text><text x="756.25" y="90" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">配当を決定</text><path d="M895.5 65 L929.5 65 M917.5 55 L929.5 65 L917.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="939.5" y="2" width="258.5" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="1068.75" y="58" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">配当金の</text><text x="1068.75" y="90" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">支払い</text>
+  - board: whiteboard
+    steps:
+      - say: 例です。株主総会で、配当金30万円と、利益準備金の積み立て3万円が決まりました。
+        show:
+          - type: title
+            text: 配当が決まったとき
+      - say: 繰越利益剰余金を、合計の33万円減らします。配当金はまだ払っていないので、未払配当金という負債。利益準備金は純資産です。
+        read: くりこし利益じょうよきんを、合計の33万円減らします。配当金はまだ払っていないので、みばらい配当金という負債。利益準備金は純資産です。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">繰越利益剰余金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">330,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">未払配当金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">利益準備金</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text>
+      - say: 配当金を払ったら、未払配当金を消します。
+        read: 配当金を払ったら、みばらい配当金を消します。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 450
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">未払配当金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">普通預金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text>
+  - board: whiteboard
+    steps:
+      - say: 利益準備金は、会社法で積み立てが義務づけられています。もうけを全部配当してしまうと、借金を返せなくなるおそれがあるので、一部を会社に残すのです。
+        show:
+          - type: title
+            text: なぜ利益準備金？
+          - type: box
+            w: 1100
+            text: 配当のたびに、一部を会社に残す（基本は**配当額の10分の1**）
+            color: yellow
+            at:
+              - 80
+              - 230

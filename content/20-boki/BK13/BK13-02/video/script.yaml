@@ -1,0 +1,46 @@
+title: 第1問（仕訳）攻略
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 第1問は仕訳15問。勘定科目は選択肢から選びます。選択肢にない科目は使えないので、選択肢をヒントにしましょう。
+        read: 第1問はしわけ15問。勘定科目は選択肢から選びます。選択肢にない科目は使えないので、選択肢をヒントにしましょう。
+        show:
+          - type: title
+            text: 第1問の解き方
+      - say: 解き方は、登場する科目を探す、5要素と増減を考える、金額を計算する、左右の合計を確かめる、の4ステップです。
+        show:
+          - type: svg
+            w: 1200
+            h: 134
+            at:
+              - 40
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="258.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="131.25" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">科目を探す</text><path d="M270.5 65 L304.5 65 M292.5 55 L304.5 65 L292.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="314.5" y="2" width="258.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="443.75" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">5要素と</text><text x="443.75" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">増減</text><path d="M583 65 L617 65 M605 55 L617 65 L605 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="627" y="2" width="258.5" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="756.25" y="74" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">金額を計算</text><path d="M895.5 65 L929.5 65 M917.5 55 L929.5 65 L917.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="939.5" y="2" width="258.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="1068.75" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">左右の合計</text><text x="1068.75" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">を確認</text>
+  - board: whiteboard
+    steps:
+      - say: ひっかけに注意したいポイントです。当社負担か先方負担か。前期の売掛金か当期の売掛金か。商品か商品以外か。自社が振り出した小切手か、他社の小切手か。そして、利息は月割です。
+        read: ひっかけに注意したいポイントです。当社負担か先方負担か。前期のうりかけきんか当期のうりかけきんか。商品か商品以外か。自社がふりだしたこぎってか、他社のこぎってか。そして、利息は月割です。
+        show:
+          - type: title
+            text: ひっかけに注意
+          - type: list
+            items:
+              - "**当社負担**か**先方負担**か（諸掛り）"
+              - "**前期**か**当期**か（貸倒れ）"
+              - "**商品**か**商品以外**か（掛け or 未払金）"
+              - "**自社振出**か**他社振出**か（小切手）"
+              - 利息は**月割**
+  - board: whiteboard
+    steps:
+      - say: 練習のしかたです。問題を見て、10秒以内に科目が浮かぶかをチェックしましょう。浮かばない取引を重点的に復習すれば、効率よく力がつきます。
+        show:
+          - type: title
+            text: 練習のしかた
+          - type: box
+            w: 1100
+            text: "**10秒**で科目が浮かぶか？　浮かばない取引を重点復習"
+            color: yellow
+            at:
+              - 80
+              - 200

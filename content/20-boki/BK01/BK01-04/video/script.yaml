@@ -1,0 +1,106 @@
+title: 取引の8要素と仕訳の練習
+scenes:
+  - board: whiteboard
+    steps:
+      - say: ホームポジションと、その反対を組み合わせると、仕訳の左右に来るものは、8つに整理できます。これを、取引の8要素といいます。
+        read: ホームポジションと、その反対を組み合わせると、しわけの左右に来るものは、8つに整理できます。これを、取引の8要素といいます。
+        show:
+          - type: title
+            text: 取引の8要素
+      - say: 左側には、資産の増加、負債の減少、純資産の減少、費用の発生。右側には、資産の減少、負債の増加、純資産の増加、収益の発生がきます。
+        show:
+          - type: box
+            w: 560
+            text: |-
+              ・資産の増加
+              ・負債の減少
+              ・純資産の減少
+              ・費用の発生
+            title: 借方（左）
+            color: blue
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・資産の減少
+              ・負債の増加
+              ・純資産の増加
+              ・収益の発生
+            title: 貸方（右）
+            color: pink
+            at:
+              - 660
+              - 160
+      - say: すべての仕訳は、左の4つのどれかと、右の4つのどれかの組み合わせでできています。
+        read: すべてのしわけは、左の4つのどれかと、右の4つのどれかの組み合わせでできています。
+        show:
+          - type: text
+            text: 左の4つ × 右の4つ の組み合わせ
+            color: yellow
+            at:
+              - 80
+              - 520
+  - board: whiteboard
+    steps:
+      - say: 次に、そもそも何を記録するのか、です。簿記上の取引になるのは、資産や負債などが、実際に増えたり減ったりするものだけです。
+        read: 次に、そもそも何を記録するのか、です。ぼき上の取引になるのは、資産や負債などが、実際に増えたり減ったりするものだけです。
+        show:
+          - type: title
+            text: 簿記上の取引とは
+      - say: たとえば、建物を借りる契約をしただけ、商品の注文を受けただけでは、まだお金もモノも動いていないので、記録しません。
+        show:
+          - type: box
+            w: 1100
+            text: 契約しただけ・注文を受けただけ → **記録しない**
+            color: pink
+            at:
+              - 80
+              - 200
+      - say: 反対に、倉庫が火事で焼けた、現金が盗まれた、というのは、ふつうは取引とは言いませんが、財産が減ったので、簿記上の取引になります。
+        read: 反対に、倉庫が火事で焼けた、現金が盗まれた、というのは、ふつうは取引とは言いませんが、財産が減ったので、ぼき上の取引になります。
+        show:
+          - type: box
+            w: 1100
+            text: 火事・盗難 → 財産が減った → **記録する**
+            color: green
+            at:
+              - 80
+              - 330
+      - say: 判断のポイントは、お金やモノの量が変わったかどうか、です。
+        show:
+          - type: tag
+            text: 量が変わったか？
+            color: yellow
+            at:
+              - 880
+              - 52
+  - board: whiteboard
+    steps:
+      - say: 最後に、1つの取引で、3つ以上の科目が動く例です。商品10万円を仕入れて、4万円は現金で払い、残りは後払いにしました。
+        read: 最後に、1つの取引で、3つ以上の科目が動く例です。商品10万円をしいれれて、4万円は現金で払い、残りは後払いにしました。
+        show:
+          - type: title
+            text: 3つの科目が動く例
+      - say: 仕入10万円が左。右には、現金4万円と、後払いの買掛金6万円を書きます。
+        read: しいれ10万円が左。右には、現金4万円と、後払いのかいかけきん6万円を書きます。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 180
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">仕入</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">現金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">40,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">買掛金</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">60,000</text>
+      - say: 左の合計10万円と、右の合計10万円が一致していれば大丈夫です。仕訳を書いたら、必ず左右の合計を確かめるくせをつけましょう。
+        read: 左の合計10万円と、右の合計10万円が一致していれば大丈夫です。しわけを書いたら、必ず左右の合計を確かめるくせをつけましょう。
+        show:
+          - type: box
+            w: 1100
+            text: 左の合計 ＝ 右の合計　を必ず確認
+            color: yellow
+            at:
+              - 80
+              - 420

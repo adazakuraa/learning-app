@@ -1,0 +1,84 @@
+title: 決算の流れと決算整理
+scenes:
+  - board: slide
+    steps:
+      - say: 第11章は、「決算整理」です。第3問の中心になる、いちばん大事な章です。
+        show:
+          - type: title
+            text: 第11章　決算整理
+          - type: list
+            items:
+              - 決算の流れ
+              - 現金過不足・仮払金・貯蔵品
+              - 貸倒引当金
+              - 売上原価
+              - 減価償却・消費税・法人税等
+              - 経過勘定（前払・前受）
+              - 経過勘定（未払・未収）
+  - board: whiteboard
+    steps:
+      - say: 決算の流れです。決算整理前の残高試算表から、決算整理仕訳をして、決算整理後の残高試算表を作り、そこから損益計算書と貸借対照表を作ります。
+        read: 決算の流れです。決算整理前の残高しさんひょうから、決算整理しわけをして、決算整理後の残高しさんひょうを作り、そこからそんえき計算書と貸借対照表を作ります。
+        show:
+          - type: title
+            text: 決算の流れ
+          - type: svg
+            w: 1200
+            h: 134
+            at:
+              - 40
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="258.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="131.25" y="58" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">整理前</text><text x="131.25" y="90" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">残高試算表</text><path d="M270.5 65 L304.5 65 M292.5 55 L304.5 65 L292.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="314.5" y="2" width="258.5" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="443.75" y="58" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">決算整理</text><text x="443.75" y="90" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">仕訳</text><path d="M583 65 L617 65 M605 55 L617 65 L605 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="627" y="2" width="258.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="756.25" y="58" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">整理後</text><text x="756.25" y="90" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">残高試算表</text><path d="M895.5 65 L929.5 65 M917.5 55 L929.5 65 L917.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="939.5" y="2" width="258.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="1068.75" y="74" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">P/L・B/S</text>
+      - say: 決算整理とは、期中の記録を、期末の正しい状態に直す作業です。
+        read: 決算整理とは、期中の記録を、きまつの正しい状態に直す作業です。
+        show:
+          - type: text
+            text: 期中の記録を、**期末の正しい状態**に直す
+            color: yellow
+            at:
+              - 80
+              - 400
+  - board: whiteboard
+    steps:
+      - say: なぜ直す必要があるのでしょう。期中の記録は、お金が動いたときを中心に書いています。でも、それだけでは当期の正しいもうけになりません。
+        show:
+          - type: title
+            text: なぜ決算整理？
+      - say: たとえば、1年分の保険料を払ったけれど、一部は来期の分。仕入れた商品の一部が売れ残っている。建物は使った分だけ価値が減っている。こうしたズレを直します。
+        read: たとえば、1年分の保険料を払ったけれど、一部は来期の分。しいれれた商品の一部が売れ残っている。建物は使った分だけ価値が減っている。こうしたズレを直します。
+        show:
+          - type: list
+            items:
+              - 保険料の一部は**来期の分**
+              - 商品の一部が**売れ残っている**
+              - 建物は**使った分だけ価値が減る**
+            at:
+              - 80
+              - 180
+      - say: 基本の考え方は、当期の収益と費用は、当期の分だけにする、ということです。お金を払ったかどうかではなく、当期に関係するかで考えます。これを発生主義といいます。
+        show:
+          - type: box
+            w: 1100
+            text: 当期の収益・費用は**当期の分だけ**（発生主義）
+            color: yellow
+            at:
+              - 80
+              - 440
+  - board: whiteboard
+    steps:
+      - say: 3級の主な決算整理事項は、この8つです。これから1つずつ学んでいきます。
+        read: さんきゅうの主な決算整理事項は、この8つです。これから1つずつ学んでいきます。
+        show:
+          - type: title
+            text: 主な決算整理事項
+          - type: list
+            items:
+              - ① 現金過不足・仮払金などの整理
+              - ② 貯蔵品
+              - ③ 貸倒引当金
+              - ④ 売上原価
+              - ⑤ 減価償却
+              - ⑥ 消費税・法人税等
+              - ⑦ 前払費用・前受収益
+              - ⑧ 未払費用・未収収益

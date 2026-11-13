@@ -127,3 +127,9 @@ questions:
 
 - `p` は「その単元を学んだ人」が答えられる割合（%）の予想。
 - 実力（クイズ力）と記録は、いろいろクイズとは別々に持つ（進捗データの `hayaoshiReview`）。
+
+## 簿記3級（content/20-boki）
+
+- 本文・図・unit.yaml は `node scripts/boki/text/chNN.mjs` で生成する（図は `scripts/boki/svg.mjs` の SVG。明るい背景のカードなのでダークモードでも読める）。
+- 動画の台本は `node scripts/bokivideo/chNN.mjs`（`video/script.yaml` を書き出す）。読み上げの読み（借方→かりかた など）は `scripts/bokivideo/lib.mjs` の WORDS。
+- 章末クイズは各章の `quiz.yaml`、復習クイズは `content/20-boki/review.yaml`。

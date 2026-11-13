@@ -1,0 +1,71 @@
+title: 経過勘定①（前払費用・前受収益）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 12月1日に、1年分の保険料1万2千円を払いました。決算日は3月31日です。
+        show:
+          - type: title
+            text: 前払費用
+      - say: 当期にかかわるのは、12月から3月の4か月分、4千円だけ。残りの8か月分、8千円は、来期の分です。
+        show:
+          - type: svg
+            w: 1100
+            h: 200
+            at:
+              - 90
+              - 180
+            anim: fade
+            markup: <rect x="2" y="60" width="362.6666666666667" height="90" rx="10" fill="#c9a6f5" fill-opacity="0.2" stroke="#c9a6f5" stroke-width="3"/><text x="183.33333333333334" y="96" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">当期分 4か月</text><text x="183.33333333333334" y="128" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">保険料 4,000</text><rect x="368.6666666666667" y="60" width="729.3333333333334" height="90" rx="10" fill="#8fc4ff" fill-opacity="0.2" stroke="#8fc4ff" stroke-width="3"/><text x="733.3333333333334" y="96" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">来期分 8か月</text><text x="733.3333333333334" y="128" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">前払保険料 8,000</text><path d="M2 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="2" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">12月1日 支払</text><path d="M366.66666666666663 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="366.66666666666663" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">3月31日 決算</text>
+      - say: 来期の分は、当期の費用から除いて、前払保険料という資産にします。来期にサービスを受けられる権利だからです。これを繰延べといいます。
+        read: 来期の分は、当期の費用から除いて、まえばらい保険料という資産にします。来期にサービスを受けられる権利だからです。これを繰延べといいます。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 440
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">前払保険料</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">8,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">保険料</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">8,000</text>
+  - board: whiteboard
+    steps:
+      - say: 収益でも同じことが起きます。2月1日に、6か月分の地代6万円を受け取りました。当期は2月と3月の2か月、来期の分は4か月で4万円です。
+        show:
+          - type: title
+            text: 前受収益
+          - type: svg
+            w: 1100
+            h: 200
+            at:
+              - 90
+              - 200
+            anim: fade
+            markup: <rect x="2" y="60" width="362.6666666666667" height="90" rx="10" fill="#f3a76a" fill-opacity="0.2" stroke="#f3a76a" stroke-width="3"/><text x="183.33333333333334" y="112" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">当期 2か月</text><rect x="368.6666666666667" y="60" width="729.3333333333334" height="90" rx="10" fill="#f4a3b8" fill-opacity="0.2" stroke="#f4a3b8" stroke-width="3"/><text x="733.3333333333334" y="96" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">来期分 4か月</text><text x="733.3333333333334" y="128" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">前受地代 40,000</text><path d="M2 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="2" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">2月1日 受取</text><path d="M366.66666666666663 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="366.66666666666663" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">3月31日 決算</text>
+      - say: 来期の分は、収益から除いて、前受地代という負債にします。来期に土地を貸す義務があるからです。
+        read: 来期の分は、収益から除いて、まえうけ地代という負債にします。来期に土地を貸す義務があるからです。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 450
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">受取地代</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">40,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">前受地代</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">40,000</text>
+  - board: whiteboard
+    steps:
+      - say: 覚え方です。前に払ったら前払、資産。前に受け取ったら前受、負債。仕訳は、費用や収益を減らして、前払や前受を作ります。そして、必ずタイムラインを描いて、決算日より右側の月数を数えましょう。
+        read: 覚え方です。前に払ったらまえばらい、資産。前に受け取ったらまえうけ、負債。しわけは、費用や収益を減らして、まえばらいやまえうけを作ります。そして、必ずタイムラインを描いて、決算日より右側の月数を数えましょう。
+        show:
+          - type: title
+            text: まとめ
+          - type: box
+            w: 1100
+            text: |-
+              前に払った → **前払**（資産）
+              前に受け取った → **前受**（負債）
+              **タイムラインで来期の月数を数える**
+            color: yellow
+            at:
+              - 80
+              - 180
