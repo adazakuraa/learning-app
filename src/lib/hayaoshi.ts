@@ -1,7 +1,7 @@
 // Hayaoshi (buzzer) quiz: adaptive question selection with a simple Rasch / Elo model.
 //   P(correct) = sigmoid(theta - b),  b = logit-difficulty from the authored "expected correct rate" p:
 //   b = -logit(p)  (an average adult, theta = 0, answers with probability p)
-export type HQuestion = { id: string; genre: string; q: string; answers: string[]; show: string; p: number; len: number; unit?: string };
+export type HQuestion = { id: string; genre: string; q: string; answers: string[]; show: string; p: number; len: number; unit?: string; batch?: string };
 export type HMode = 'general' | 'review';
 export type HBank = { genres: { id: string; title: string; academic?: boolean }[]; questions: HQuestion[] };
 /** share of academic genres in the general mode */
