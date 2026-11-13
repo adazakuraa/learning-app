@@ -1,9 +1,9 @@
 questions:
-  - q: 「駅の近くに薬局がある」。There（　　）a pharmacy near the station. （　　）に入る語を答えてください。
+  - q: 「駅の近くに薬局がある」。There（　　）a pharmacy near the station. （　　）に入る語は何でしょう？
     a: [is]
-  - q: 「水分をとることは大切だ」。It is important（　　）stay hydrated. （　　）に入る語を答えてください。
+  - q: 「水分をとることは大切だ」。It is important（　　）stay hydrated. （　　）に入る語は何でしょう？
     a: [to]
   - q: 動詞に -ing をつけて「〜すること」という名詞の働きをさせたものを何というでしょう？
     a: [動名詞]
-  - q: 「雨だったので家にいた」。I stayed home（　　）it was raining. 理由を表す接続詞を答えてください。
+  - q: 「雨だったので家にいた」。I stayed home（　　）it was raining. （　　）に入る、理由を表す接続詞は何でしょう？
     a: [because]
