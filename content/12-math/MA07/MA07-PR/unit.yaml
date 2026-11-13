@@ -7,5 +7,5 @@ practice: true
 video:
   src: video.mp4
   captions: captions.vtt
-  duration: 160
+  duration: 165
   narration: VOICEVOX:ずんだもん

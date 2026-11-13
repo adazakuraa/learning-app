@@ -3,3 +3,8 @@ code: FP13-02
 title: お金と幸せの考え方
 order: 2
 summary: お金は目的ではなく手段です。自分にとって大切なことにお金を使う考え方を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 52
+  narration: VOICEVOX:ずんだもん

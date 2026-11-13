@@ -12,6 +12,7 @@ const paths: Record<string, string> = {
   video: 'M4 6h11a1 1 0 0 1 1 1v3l4-3v10l-4-3v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z',
   text: 'M5 5h14v2H5zm0 4h14v2H5zm0 4h14v2H5zm0 4h9v2H5z',
   chevron: 'M9 6l6 6-6 6-1.4-1.4L12.2 12 7.6 7.4z',
+  bolt: 'M13 2 4 14h6l-1 8 9-12h-6z',
   sync: 'M12 4a8 8 0 0 1 7.4 5H17v2h6V5h-2v2.3A10 10 0 0 0 2 12h2a8 8 0 0 1 8-8zm8 8a8 8 0 0 1-15.4 3H7v-2H1v6h2v-2.3A10 10 0 0 0 22 12z',
 };
 

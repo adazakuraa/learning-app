@@ -9,6 +9,7 @@ import { SubjectDetail } from './pages/SubjectDetail';
 import { UnitPage } from './pages/UnitPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { QuizPage } from './pages/QuizPage';
+import { HayaoshiPage } from './pages/HayaoshiPage';
 import { NotFound } from './pages/NotFound';
 
 function SyncDot() {
@@ -35,6 +36,7 @@ function Shell() {
   const nav = [
     { to: '/', icon: 'home', label: 'ホーム', end: true },
     { to: '/subjects', icon: 'book', label: '科目' },
+    { to: '/hayaoshi', icon: 'bolt', label: 'クイズ' },
     { to: '/settings', icon: 'gear', label: '設定' },
   ];
   return (
@@ -63,6 +65,7 @@ function Shell() {
             <Route path="/subjects/:subjectId" element={<SubjectDetail />} />
             <Route path="/units/:unitId" element={<UnitPage />} />
             <Route path="/quiz/:quizId" element={<QuizPage />} />
+            <Route path="/hayaoshi" element={<HayaoshiPage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

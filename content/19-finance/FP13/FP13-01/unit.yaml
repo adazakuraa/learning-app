@@ -3,3 +3,8 @@ code: FP13-01
 title: 経済ニュースの読み方
 order: 1
 summary: GDP・物価・金利・為替・株価のつながりがわかると、経済ニュースが自分ごとになります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 47
+  narration: VOICEVOX:ずんだもん

@@ -20,10 +20,14 @@ export type UnitProgress = {
 /** chapter quiz results */
 export type QuizResult = { best: number; last: number; total: number; attempts: number; perfectAt?: number; updatedAt: number };
 
+import { mergeH, type HState } from '../hayaoshi';
+
 export type ProgressDoc = {
   version: 1;
   units: Record<string, UnitProgress>;
   quizzes?: Record<string, QuizResult>;
+  /** hayaoshi (buzzer quiz game) */
+  hayaoshi?: HState;
   /** seconds studied: device -> unitId -> seconds */
   time: Record<string, Record<string, number>>;
   /** seconds studied: device -> YYYY-MM-DD -> seconds */
@@ -105,6 +109,7 @@ export function mergeDocs(a: ProgressDoc, b: ProgressDoc): ProgressDoc {
     version: 1,
     units,
     ...(Object.keys(quizzes).length ? { quizzes } : {}),
+    ...(a.hayaoshi || b.hayaoshi ? { hayaoshi: mergeH(a.hayaoshi, b.hayaoshi) } : {}),
     time: mergeCounters(a.time ?? {}, b.time ?? {}),
     days: mergeCounters(a.days ?? {}, b.days ?? {}),
     updatedAt: Math.max(a.updatedAt, b.updatedAt),

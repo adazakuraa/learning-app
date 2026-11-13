@@ -1,3 +1,4 @@
+import crypto from 'node:crypto';
 // Reads content/ (subject > chapter > unit folders) and writes public/data/
 //   catalog.json            : subject/chapter/unit tree (metadata only)
 //   units/<unitId>.json     : rendered lesson/source HTML + table of contents
@@ -231,6 +232,32 @@ function build() {
     void order;
     return rest;
   };
+  // hayaoshi question bank (content/hayaoshi/*.yaml)
+  const hDir = path.join(contentDir, 'hayaoshi');
+  if (fs.existsSync(hDir)) {
+    const genres = [];
+    const questions = [];
+    const ids = new Set();
+    for (const f of fs.readdirSync(hDir).filter((x) => x.endsWith('.yaml')).sort()) {
+      const y = readYaml(path.join(hDir, f));
+      const gid = f.replace(/\.yaml$/, '').replace(/^\d+-/, '');
+      genres.push({ id: gid, title: y.genre });
+      for (const [i, q] of (y.questions ?? []).entries()) {
+        const given = [].concat(q.a ?? []).map(String);
+        if (!q.q || !given.length || typeof q.p !== 'number') { errors.push(`hayaoshi ${f} #${i + 1}: needs q, a, p`); continue; }
+        let id = gid + '-' + crypto.createHash('sha1').update(given[0]).digest('hex').slice(0, 8);
+        while (ids.has(id)) id += 'x';
+        ids.add(id);
+        const reading = kanaReading(given[0]);
+        const answers = [...new Set([...given, ...[].concat(q.r ?? []).map(String), ...given.map(kanaReading).filter(Boolean)])];
+        const len = Math.min(20, [...String(q.r?.[0] ?? reading ?? given[0]).replace(/[\s・、]/g, '')].length);
+        questions.push({ id, genre: gid, q: String(q.q).trim(), answers, show: String(q.show ?? given[0]), p: q.p / 100, len });
+      }
+    }
+    fs.writeFileSync(path.join(outDir, 'hayaoshi.json'), JSON.stringify({ genres, questions }));
+    console.log(`hayaoshi: ${questions.length} questions in ${genres.length} genres`);
+  }
+
   const catalog = {
     generatedAt: new Date().toISOString(),
     subjects: subjects.map((s) => ({ ...strip(s), chapters: s.chapters.map((c) => ({ ...strip(c), units: c.units.map(strip) })) })),
