@@ -3,3 +3,8 @@ code: FP12-05
 title: 家族が亡くなった後の手続き
 order: 5
 summary: 死亡届から年金・口座・相続まで、主な手続きの流れを知っておきます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 51
+  narration: VOICEVOX:ずんだもん
