@@ -4,8 +4,7 @@ import { isCorrect } from '../lib/quiz';
 import { unitStatus } from '../lib/progress/model';
 import {
   ACADEMIC_SHARE, AFTER_FULL, CPS, emptyH, pickNext, sessionTarget, TARGET, points, predict, rating, SESSION_LEN, thinkSeconds, updateTheta,
-  type HBank, type HMode, type HQuestion, type HState,
-} from '../lib/hayaoshi';
+  type HBank, type HMode, type HQuestion, type HState, normH } from '../lib/hayaoshi';
 
 type Phase = 'ready' | 'reading' | 'answering' | 'judged' | 'result';
 type Outcome = { q: HQuestion; ok: boolean; pos: number | null; pts: number; prevPos?: number; prevBest?: number; through: boolean };
@@ -43,7 +42,7 @@ function beep(kind: 'buzz' | 'ok' | 'ng' | 'fanfare') {
 export function HayaoshiPage() {
   const { doc, setHayaoshi: setH } = useProgress();
   const [mode, setMode] = useState<HMode>(() => { try { return localStorage.getItem('la:hayaoshi-mode') === 'review' ? 'review' : 'general'; } catch { return 'general'; } });
-  const h: HState = (mode === 'review' ? doc.hayaoshiReview : doc.hayaoshi) ?? emptyH();
+  const h: HState = normH(mode === 'review' ? doc.hayaoshiReview : doc.hayaoshi) ?? emptyH();
   const setHayaoshi = useCallback((fn: (x: HState) => HState) => setH(mode, fn), [setH, mode]);
   const [fullBank, setBank] = useState<HBank | null>(null);
   const done = useMemo(() => new Set(Object.entries(doc.units).filter(([, u]) => unitStatus(u) === 'done').map(([id]) => id)), [doc.units]);

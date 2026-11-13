@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { emptyH, pickNext, predict, rating, targetP, updateTheta, type HBank, type HQuestion } from './hayaoshi';
+import { emptyH, mergeH, normH, pickNext, predict, rating, targetP, updateTheta, type HBank, type HQuestion } from './hayaoshi';
 
 const q = (id: string, p: number, genre = 'g'): HQuestion => ({ id, genre, q: 'x', answers: ['a'], show: 'a', p, len: 3 });
 
@@ -31,5 +31,20 @@ describe('rating', () => {
       for (let i = 0; i < 60; i++) { const m = (lo + hi) / 2; if (rating(m) < R) lo = m; else hi = m; }
       expect(targetP(lo)).toBeCloseTo(0.85 - (R - 1000) / 1000, 2);
     }
+  });
+});
+
+describe('rating reset (epoch)', () => {
+  it('resets the rating of old states and keeps it reset after merging with old copies', () => {
+    const old = { ...emptyH(), epoch: undefined, theta: 1.5, answered: 300, correct: 250, history: { '2026-01-01': 1.5 }, sessions: 30, bestScore: 900, updatedAt: 5 };
+    const n = normH(old);
+    expect(n.theta).toBe(emptyH().theta);
+    expect(n.answered).toBe(0);
+    expect(n.history).toEqual({});
+    expect(n.sessions).toBe(30);
+    const fresh = { ...emptyH(), theta: 0.2, answered: 10, updatedAt: 10 };
+    const m = mergeH(old, fresh)!;
+    expect(m.theta).toBe(0.2);
+    expect(m.answered).toBe(10);
   });
 });
