@@ -3,3 +3,8 @@ code: FP13-03
 title: 年代別のお金のチェックリスト
 order: 3
 summary: 年代ごとに、やっておきたいお金のことを整理します。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 71
+  narration: VOICEVOX:ずんだもん

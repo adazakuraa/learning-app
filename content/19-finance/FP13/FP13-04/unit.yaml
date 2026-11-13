@@ -3,3 +3,8 @@ code: FP13-04
 title: 相談先と信頼できる情報
 order: 4
 summary: お金の悩みは一人で抱えず、目的に合った相談先を使い分けます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 50
+  narration: VOICEVOX:ずんだもん
