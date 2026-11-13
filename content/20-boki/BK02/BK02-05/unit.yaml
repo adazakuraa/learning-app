@@ -3,3 +3,8 @@ code: BK02-05
 title: 小口現金
 order: 5
 summary: 少額の支払いのために担当者に渡しておく小口現金（定額資金前渡法）を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 62
+  narration: VOICEVOX:ずんだもん
