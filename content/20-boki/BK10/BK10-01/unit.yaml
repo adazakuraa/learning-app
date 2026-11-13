@@ -3,3 +3,8 @@ code: BK10-01
 title: 試算表のしくみ
 order: 1
 summary: 合計試算表・残高試算表・合計残高試算表の作り方と、試算表で見つけられる誤りを学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 71
+  narration: VOICEVOX:ずんだもん

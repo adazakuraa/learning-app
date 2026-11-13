@@ -3,3 +3,8 @@ code: BK10-02
 title: 試算表の問題の解き方
 order: 2
 summary: 月末の残高に期中取引を加えて試算表を完成させる問題の解き方を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 48
+  narration: VOICEVOX:ずんだもん
