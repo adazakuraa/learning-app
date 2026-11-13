@@ -275,7 +275,7 @@ function build() {
     for (const f of fs.readdirSync(hDir).filter((x) => x.endsWith('.yaml')).sort()) {
       const y = readYaml(path.join(hDir, f));
       const gid = f.replace(/\.yaml$/, '').replace(/^\d+-/, '');
-      genres.push({ id: gid, title: y.genre });
+      genres.push({ id: gid, title: y.genre, ...(y.kind === 'academic' ? { academic: true } : {}) });
       for (const [i, q] of (y.questions ?? []).entries()) {
         const hq = hQuestion(q, gid, `${f} #${i + 1}`, ids);
         if (hq) questions.push(hq);

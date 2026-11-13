@@ -3,7 +3,7 @@ import { useProgress } from '../lib/progress/ProgressProvider';
 import { isCorrect } from '../lib/quiz';
 import { unitStatus } from '../lib/progress/model';
 import {
-  AFTER_FULL, CPS, emptyH, pickNext, points, predict, rating, SESSION_LEN, thinkSeconds, updateTheta,
+  ACADEMIC_SHARE, AFTER_FULL, CPS, emptyH, pickNext, sessionTarget, TARGET, points, predict, rating, SESSION_LEN, thinkSeconds, updateTheta,
   type HBank, type HMode, type HQuestion, type HState,
 } from '../lib/hayaoshi';
 
@@ -68,6 +68,7 @@ export function HayaoshiPage() {
   const hRef = useRef(h);
   hRef.current = h;
   const used = useRef(new Set<string>());
+  const tgt = useRef(TARGET);
 
   useEffect(() => { setBank(null); loadBank(mode).then(setBank, () => setErr(true)); }, [mode]);
   useEffect(() => () => window.clearInterval(timer.current), []);
@@ -78,11 +79,19 @@ export function HayaoshiPage() {
   const nextQuestion = useCallback(() => {
     if (!bank) return;
     const recent = outs.map((o) => o.q.genre);
-    const nq = pickNext(bank, hRef.current, used.current, recent);
+    let pool = bank;
+    if (mode === 'general') {
+      // keep academic genres at about ACADEMIC_SHARE of the questions
+      const acad = new Set(bank.genres.filter((g) => g.academic).map((g) => g.id));
+      const asked = outs.filter((o) => acad.has(o.q.genre)).length;
+      const want = (asked + 1) / (outs.length + 1) <= ACADEMIC_SHARE + 0.05 && Math.random() < ACADEMIC_SHARE * 1.7 ? true : asked / Math.max(1, outs.length) < ACADEMIC_SHARE - 0.15 && outs.length >= 3;
+      pool = { ...bank, questions: bank.questions.filter((x) => acad.has(x.genre) === want) };
+    }
+    const nq = pickNext(pool, hRef.current, used.current, recent, Math.random, tgt.current) ?? pickNext(bank, hRef.current, used.current, recent, Math.random, tgt.current);
     if (!nq) { setPhase('result'); return; }
     used.current.add(nq.id);
     setQ(nq); setPos(0); setBuzzPos(null); setInput(''); setPhase('reading');
-  }, [bank, outs]);
+  }, [bank, outs, mode]);
 
   const judge = useCallback((ok: boolean, through: boolean, at: number | null) => {
     if (!q) return;
@@ -168,6 +177,7 @@ export function HayaoshiPage() {
   };
   const start = () => {
     used.current = new Set();
+    tgt.current = sessionTarget();
     setOuts([]); setStreak(0); setStartTheta(h.theta);
     setTimeout(() => nextQuestion(), 0);
   };
