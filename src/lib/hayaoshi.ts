@@ -18,10 +18,21 @@ export type HState = {
   /** daily rating snapshots: YYYY-MM-DD -> theta */
   history: Record<string, number>;
   updatedAt: number;
+  /** rating generation; states from an older generation get their rating reset (see normH) */
+  epoch?: number;
 };
 /** start at rating 1000 (picked questions ≈ 85%) */
 export const START_THETA = Math.log(0.7 / 0.3) - Math.log(0.85 / 0.15);
-export const emptyH = (): HState => ({ theta: START_THETA, answered: 0, correct: 0, sessions: 0, bestScore: 0, items: {}, history: {}, updatedAt: 0 });
+/** bump to reset everyone's rating (theta, answered/correct counts, rating history) once */
+export const RATING_EPOCH = 1;
+export const emptyH = (): HState => ({ theta: START_THETA, answered: 0, correct: 0, sessions: 0, bestScore: 0, items: {}, history: {}, updatedAt: 0, epoch: RATING_EPOCH });
+/** reset the rating of a state saved before the current RATING_EPOCH (keeps per-question records, sessions and best score) */
+export function normH(s: HState): HState;
+export function normH(s: HState | undefined): HState | undefined;
+export function normH(s?: HState): HState | undefined {
+  if (!s || (s.epoch ?? 0) >= RATING_EPOCH) return s;
+  return { ...s, theta: START_THETA, answered: 0, correct: 0, history: {}, epoch: RATING_EPOCH };
+}
 
 /** Target success rate. A bit above "even" so a casual break stays fun, but not trivially easy. */
 export const TARGET = 0.7;
@@ -95,6 +106,8 @@ export function pickNext(bank: HBank, s: HState, exclude: Set<string>, recentGen
 }
 
 export function mergeH(a?: HState, b?: HState): HState | undefined {
+  a = normH(a);
+  b = normH(b);
   if (!a || !b) return a ?? b;
   const n = b.updatedAt > a.updatedAt ? b : a;
   const items: Record<string, HItem> = {};

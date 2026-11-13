@@ -9,7 +9,7 @@ import {
   type Range,
   type UnitProgress,
 } from './model';
-import { emptyH, type HMode, type HState } from '../hayaoshi';
+import { emptyH, normH, type HMode, type HState } from '../hayaoshi';
 import { deviceId, loadLocal, saveLocal } from './storage';
 import { loadConfig, saveConfig, syncWithGitHub, type GitHubConfig } from './github';
 
@@ -184,7 +184,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       setHayaoshi: (mode: HMode, fn: (h: HState) => HState) =>
         update((d) => {
           const key = mode === 'review' ? 'hayaoshiReview' : 'hayaoshi';
-          return { ...d, [key]: { ...fn(d[key] ?? emptyH()), updatedAt: Date.now() } };
+          return { ...d, [key]: { ...fn(normH(d[key]) ?? emptyH()), updatedAt: Date.now() } };
         }, true),
       importDoc: (incoming: ProgressDoc, mode: 'merge' | 'replace') => update((d) => (mode === 'merge' ? mergeDocs(d, incoming) : incoming), true),
       setGithubConfig: (c: GitHubConfig | null) => {
