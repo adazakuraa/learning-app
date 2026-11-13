@@ -1,0 +1,52 @@
+title: 雇用保険：失業・育休
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「雇用保険」です。仕事を失ったときや、育児や介護で休むときに、お金が出る保険です。
+        show:
+          - type: title
+            text: 雇用保険
+      - say: 会社をやめて、次の仕事を探しているあいだは、ハローワークで手続きをすると、基本手当、いわゆる失業手当がもらえます。金額は、以前の給料の、およそ5割から8割です。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">退職</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">ハローワークで手続き</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">基本手当</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">給料の約5〜8割</text>
+      - say: ただし、自分の都合でやめた場合は、もらえるまでに、待つ期間があります。
+        show:
+          - type: box
+            w: 1100
+            text: 自己都合の退職は、受給まで**待つ期間**がある
+            color: pink
+            at:
+              - 80
+              - 400
+  - board: whiteboard
+    steps:
+      - say: 子どもが生まれて育児休業をとると、育児休業給付金が出ます。最初の6か月は、給料の67パーセントです。
+        show:
+          - type: title
+            text: 育児休業給付
+          - type: svg
+            w: 520
+            h: 208
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Fさん（月給30万円）</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">育休中の最初の6か月</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 給付金 約20万円/月</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">＋ 社会保険料は免除</text>
+        added: true
+      - say: 育休中は、社会保険料も免除されるので、手取りで比べると、休む前のおよそ8割になります。
+        show:
+          - type: svg
+            w: 580
+            h: 360
+            at:
+              - 620
+              - 170
+            anim: fade
+            markup: <rect x="75" y="50" width="140" height="260" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="145" y="38" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">100%</text><text x="145" y="346" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">休む前の手取り</text><rect x="365" y="102" width="140" height="208" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="435" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">約80%</text><text x="435" y="346" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">育休中</text><path d="M0 310 H580" stroke="#9aa3ad" stroke-width="2"/>

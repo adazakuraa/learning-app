@@ -1,0 +1,88 @@
+title: 家計の見える化
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「家計の見える化」です。お金の計画は、まず今の家計を知ることから始まります。
+        show:
+          - type: title
+            text: 家計の見える化
+      - say: 最初に知っておきたいのが、額面と手取りのちがいです。額面は、会社が払う給料の総額。手取りは、そこから税金と社会保険料を引いた、実際に使えるお金です。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">額面</text><text x="170" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">（総支給額）</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="560" y="58" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">税金・社会保険料</text><text x="560" y="90" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">を引く</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="950" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">手取り</text><text x="950" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">（使えるお金）</text>
+      - say: たとえば、額面が月30万円なら、手取りはおよそ23万円から25万円。額面のおよそ75から85パーセントが目安です。
+        show:
+          - type: svg
+            w: 600
+            h: 320
+            at:
+              - 340
+              - 360
+            anim: fade
+            markup: <rect x="80" y="50" width="140" height="220" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="150" y="38" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">30万円</text><text x="150" y="306" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">額面</text><rect x="380" y="94" width="140" height="176" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="450" y="82" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">約23〜25万円</text><text x="450" y="306" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">手取り</text><path d="M0 270 H600" stroke="#9aa3ad" stroke-width="2"/>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: 次に、支出です。1、2か月、すべての支出を記録してみましょう。アプリや、カードの明細を使えば十分です。
+        show:
+          - type: title
+            text: 支出を記録する
+      - say: 記録すると、意外な使いすぎが見つかります。たとえば、コンビニでの少しの買い物が、月に1万円をこえていた、ということもよくあります。
+        show:
+          - type: svg
+            w: 520
+            h: 172
+            at:
+              - 80
+              - 150
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Cさんの気づき</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">コンビニで毎日300〜400円</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 1か月で約1万円！</text>
+        added: true
+      - say: 貯金の目安は、手取りの1割から2割です。
+        show:
+          - type: box
+            w: 1100
+            text: 貯金の目安：**手取りの1〜2割**
+            color: yellow
+            at:
+              - 80
+              - 380
+  - board: whiteboard
+    steps:
+      - say: 最後に、家計のバランスシートです。持っているお金や物、つまり資産から、借金などの負債を引いたものを、純資産といいます。
+        show:
+          - type: title
+            text: 家計のバランスシート
+      - say: 預金や投資、家や車は資産。住宅ローンや奨学金は負債です。
+        show:
+          - type: box
+            w: 520
+            text: 預金・投資・家・車
+            title: 資産
+            color: green
+            at:
+              - 80
+              - 170
+          - type: box
+            w: 520
+            text: 住宅ローン・車のローン・奨学金
+            title: 負債
+            color: pink
+            at:
+              - 680
+              - 170
+      - say: 資産から負債を引いた純資産が、毎年増えていれば、家計は健全な方向に進んでいます。年に1回、確認してみましょう。
+        show:
+          - type: box
+            w: 1100
+            text: 資産 − 負債 ＝ **純資産**　→ 毎年増えているか？
+            color: yellow
+            at:
+              - 80
+              - 380

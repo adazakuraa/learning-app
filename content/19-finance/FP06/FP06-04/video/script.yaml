@@ -1,0 +1,53 @@
+title: 必要保障額と見直し
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「必要保障額と見直し」です。生命保険でいくら備えればよいかは、こう考えます。
+        show:
+          - type: title
+            text: 必要保障額の考え方
+      - say: 残された家族に必要なお金から、遺族年金や貯金など、入ってくるお金を引く。その差が、保険で用意する額です。
+        show:
+          - type: svg
+            w: 900
+            h: 400
+            at:
+              - 140
+              - 160
+            anim: fade
+            markup: <rect x="80" y="50" width="140" height="300" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="150" y="38" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">生活費・教育費など</text><text x="150" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">必要なお金</text><rect x="380" y="162.5" width="140" height="187.5" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="450" y="150.5" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">遺族年金・貯金など</text><text x="450" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">入ってくるお金</text><rect x="680" y="237.5" width="140" height="112.5" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="750" y="225.5" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">差額</text><text x="750" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">保険で用意</text><path d="M0 350 H900" stroke="#9aa3ad" stroke-width="2"/>
+  - board: whiteboard
+    steps:
+      - say: 必要な額は、子どもが小さいときがいちばん大きく、成長するにつれて、だんだん減っていきます。
+        show:
+          - type: title
+            text: 必要な額は減っていく
+          - type: svg
+            w: 1000
+            h: 420
+            at:
+              - 140
+              - 170
+            anim: draw
+            markup: <path d="M60 370 H840 M60 370 V20" stroke="#9aa3ad" stroke-width="2" fill="none"/><text x="60" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">子ども0歳</text><text x="255" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">5歳</text><text x="450" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">10歳</text><text x="645" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">15歳</text><text x="840" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">20歳</text><path d="M60.0 51.3 L255.0 104.4 L450.0 178.8 L645.0 253.1 L840.0 327.5" stroke="#f3d77a" stroke-width="5" fill="none"/><text x="852" y="335.5" font-size="24" fill="#f3d77a" stroke="none" text-anchor="start">必要保障額</text>
+      - say: ですから、結婚、出産、家の購入、子どもの独立のときに、見直しましょう。住宅ローンを組むと、団体信用生命保険がつくので、その分、生命保険を減らせることもあります。
+        show:
+          - type: box
+            w: 1100
+            text: 見直すとき：**結婚・出産・住宅購入・子どもの独立**
+            color: green
+            at:
+              - 80
+              - 600
+  - board: whiteboard
+    steps:
+      - say: 見直しのときの注意です。今の保険をやめる前に、新しい保険の審査に通るか、先に確認しましょう。また、昔の保険は、利回りが高く、有利なこともあります。
+        show:
+          - type: title
+            text: 見直しの注意
+          - type: list
+            items:
+              - 解約の前に、**新しい保険の審査**を確認
+              - 昔の保険は**有利なことも**
+              - 窓口の提案は、手数料の高い商品に偏ることも
+        added: true

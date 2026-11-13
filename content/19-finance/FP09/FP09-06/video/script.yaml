@@ -1,0 +1,67 @@
+title: 投資の費用と税金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「投資の費用と税金」です。投資信託は、持っているあいだずっと、信託報酬という手数料がかかります。
+        show:
+          - type: title
+            text: 信託報酬に注意
+          - type: box
+            w: 1100
+            text: "**信託報酬**：持っているあいだ、毎年かかる手数料"
+            color: pink
+            at:
+              - 80
+              - 160
+      - say: 年0.1パーセントと、年1.5パーセント。小さな差に見えますが、1000万円を20年運用すると、手元に残るお金に、数百万円の差がつくことがあります。
+        show:
+          - type: svg
+            w: 800
+            h: 380
+            at:
+              - 140
+              - 260
+            anim: fade
+            markup: <rect x="130" y="50" width="140" height="280" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="200" y="38" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">約2,600万円</text><text x="200" y="366" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">信託報酬 0.1%</text><rect x="530" y="115.69230769230771" width="140" height="214.3076923076923" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="600" y="103.69230769230771" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">約1,990万円</text><text x="600" y="366" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">信託報酬 1.5%</text><path d="M0 330 H800" stroke="#9aa3ad" stroke-width="2"/>
+          - type: text
+            text: 1,000万円を年5%で20年運用した場合の例
+            color: gray
+            at:
+              - 80
+              - 650
+            size: s
+        added: true
+  - board: whiteboard
+    steps:
+      - say: ふつうの口座では、売ったときのもうけや、配当に、およそ20パーセントの税金がかかります。NISAなら、かかりません。
+        read: ふつうの口座では、売ったときのもうけや、配当に、およそ20パーセントの税金がかかります。ニーサなら、かかりません。
+        show:
+          - type: title
+            text: 投資の税金
+          - type: box
+            w: 560
+            text: |-
+              ・もうけ・配当に約20%
+              ・（正確には20.315%）
+            title: ふつうの口座
+            color: gray
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: ・**税金がかからない**
+            title: NISA口座
+            color: green
+            at:
+              - 660
+              - 160
+      - say: ふつうの口座を作るなら、特定口座の、源泉徴収あり、を選びましょう。証券会社が税金を計算して納めてくれるので、確定申告は、原則いりません。
+        show:
+          - type: box
+            w: 1100
+            text: "**特定口座（源泉徴収あり）**なら、確定申告は原則不要"
+            color: yellow
+            at:
+              - 80
+              - 420

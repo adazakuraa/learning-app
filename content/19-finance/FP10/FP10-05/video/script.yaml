@@ -1,0 +1,50 @@
+title: 借金で困ったとき
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「借金で困ったとき」です。返済が苦しいとき、いちばんやってはいけないのが、新しい借金で、前の借金を返すことです。借金が借金を呼ぶ、多重債務の入り口です。
+        show:
+          - type: title
+            text: やってはいけないこと
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">A社に返せない</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">B社から借りて返す</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#ef8a8a" fill-opacity="0.15" stroke="#ef8a8a" stroke-width="3"/><text x="950" y="74" font-size="26" fill="#ef8a8a" stroke="none" text-anchor="middle">借金が雪だるま式に</text>
+  - board: whiteboard
+    steps:
+      - say: 一人で抱えずに、早めに相談しましょう。収入が少ない人は、法テラスで、無料で法律相談が受けられます。
+        show:
+          - type: title
+            text: 相談先
+          - type: list
+            items:
+              - "**法テラス**：収入が少なければ無料で相談"
+              - 弁護士・司法書士
+              - 市区町村・消費生活センター
+      - say: 借金を整理する方法には、3つあります。利息をカットして分割で返す任意整理。裁判所の手続きで、借金を大きく減らす個人再生。そして、返済が免除される、自己破産です。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 380
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="170" y="55" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">任意整理</text><text x="170" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">利息をカットして分割返済</text><rect x="392" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="560" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">個人再生</text><text x="560" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">借金を大幅に減らす</text><rect x="782" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">自己破産</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">返済が免除される</text>
+  - board: whiteboard
+    steps:
+      - say: どの方法も、信用情報に記録は残りますが、生活を立て直すための、大切な制度です。恥ずかしがらずに、相談しましょう。
+        show:
+          - type: title
+            text: まとめ
+          - type: box
+            w: 1100
+            text: 債務整理は**生活を立て直すための制度**。早めに相談
+            color: yellow
+            at:
+              - 80
+              - 170

@@ -1,0 +1,53 @@
+title: 老後の住まいと介護の費用
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「老後の住まいと介護の費用」です。介護が必要になったとき、家で暮らし続けるか、施設に入るかで、費用は大きく変わります。月の費用の目安を見てみましょう。
+        show:
+          - type: title
+            text: 介護の住まいと月の費用
+          - type: svg
+            w: 1100
+            h: 360
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <text x="324" y="49" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">在宅＋介護サービス</text><rect x="340" y="20" width="114" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="468" y="49" font-size="24" fill="#9be0b0" stroke="none" text-anchor="start">数万円〜</text><text x="324" y="119" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">特別養護老人ホーム</text><rect x="340" y="90" width="273.59999999999997" height="44" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="627.5999999999999" y="119" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="start">約10〜15万円</text><text x="324" y="189" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">介護老人保健施設</text><rect x="340" y="160" width="273.59999999999997" height="44" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="627.5999999999999" y="189" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="start">約10〜15万円</text><text x="324" y="259" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">グループホーム</text><rect x="340" y="230" width="387.6" height="44" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="741.6" y="259" font-size="24" fill="#f3d77a" stroke="none" text-anchor="start">約15〜20万円</text><text x="324" y="329" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">介護付き有料老人ホーム</text><rect x="340" y="300" width="570" height="44" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="924" y="329" font-size="24" fill="#f4a3b8" stroke="none" text-anchor="start">約15〜35万円＋入居金</text>
+  - board: whiteboard
+    steps:
+      - say: 特別養護老人ホーム、特養は、費用が比較的安いのですが、原則、要介護3以上の人が対象で、入るまで待つこともあります。
+        show:
+          - type: title
+            text: 特別養護老人ホーム
+          - type: box
+            w: 1100
+            text: "**特養**：費用は比較的安い。原則**要介護3以上**"
+            color: blue
+            at:
+              - 80
+              - 160
+      - say: 介護保険で、自己負担は1割から3割。さらに、1か月の負担に上限を設ける、高額介護サービス費もあります。まずは、地域包括支援センターに相談しましょう。
+        show:
+          - type: box
+            w: 1100
+            text: 介護保険＋**高額介護サービス費**。相談は**地域包括支援センター**
+            color: green
+            at:
+              - 80
+              - 270
+  - board: whiteboard
+    steps:
+      - say: 家族を介護する人は、仕事を辞めずに済むよう、介護休業などの制度を使いましょう。介護休業は、通算93日。その間、給料のおよそ67パーセントの給付金が出ます。
+        show:
+          - type: title
+            text: 介護離職を防ぐ
+          - type: svg
+            w: 900
+            h: 208
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">親の介護が始まったSさん</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">介護休業（通算93日）で、介護の態勢を整える</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">休業中は給料の約67%の給付</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 仕事は辞めない</text>
+        added: true

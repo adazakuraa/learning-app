@@ -1,0 +1,72 @@
+title: 先取り貯蓄
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「先取り貯蓄」です。お金がなかなかたまらない人の多くは、「余ったらためよう」と考えています。
+        show:
+          - type: title
+            text: 「余ったら貯金」はたまらない
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">給料</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">使う</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">余ったら貯金</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">→ ほとんど残らない</text>
+      - say: 先取り貯蓄は、順番を逆にします。給料が入ったら、先に貯金の分を別の口座に移し、残ったお金で暮らすのです。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 400
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">給料</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">先に貯金</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="950" y="74" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">残りで暮らす</text>
+  - board: whiteboard
+    steps:
+      - say: たとえば、手取り25万円のEさん。給料日に、自動で3万円を貯金用の口座へ移す設定をしました。すると、1年で36万円、5年で180万円がたまります。
+        show:
+          - type: title
+            text: 先取り貯蓄の例
+          - type: svg
+            w: 520
+            h: 172
+            at:
+              - 80
+              - 150
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Eさん（手取り25万円）</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">給料日に 3万円 を自動で別口座へ</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">残り22万円で生活</text>
+          - type: svg
+            w: 1100
+            h: 150
+            at:
+              - 80
+              - 360
+            anim: fade
+            markup: <text x="244" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">1年</text><rect x="260" y="20" width="130" height="44" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="404" y="49" font-size="26" fill="#f3d77a" stroke="none" text-anchor="start">36万円</text><text x="244" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">5年</text><rect x="260" y="90" width="650" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="924" y="119" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">180万円</text>
+        added: true
+      - say: ポイントは、自動にすることです。意志の力に頼らないので、続けやすくなります。会社の財形貯蓄も、同じ考え方です。
+        show:
+          - type: box
+            w: 1100
+            text: "**自動積立・財形貯蓄**で、意志に頼らない"
+            color: blue
+            at:
+              - 80
+              - 560
+  - board: whiteboard
+    steps:
+      - say: そして、ためるお金は、使う時期によって置き場所を変えます。使う時期が近いお金ほど、値動きのない場所に置くのが原則です。
+        show:
+          - type: title
+            text: 使う時期で置き場所を変える
+          - type: svg
+            w: 1100
+            h: 290
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <text x="364" y="49" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">いつでも（生活防衛資金）</text><rect x="380" y="20" width="132.5" height="44" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="526.5" y="49" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="start">普通預金</text><text x="364" y="119" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">1〜5年後（車・結婚）</text><rect x="380" y="90" width="265" height="44" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="659" y="119" font-size="24" fill="#f3d77a" stroke="none" text-anchor="start">定期預金・個人向け国債</text><text x="364" y="189" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">10年以上先（教育）</text><rect x="380" y="160" width="397.5" height="44" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="791.5" y="189" font-size="24" fill="#f4a3b8" stroke="none" text-anchor="start">預金＋一部投資</text><text x="364" y="259" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">20年以上先（老後）</text><rect x="380" y="230" width="530" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="924" y="259" font-size="24" fill="#9be0b0" stroke="none" text-anchor="start">NISA・iDeCo</text>

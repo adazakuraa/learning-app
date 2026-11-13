@@ -1,0 +1,71 @@
+title: 相続税と贈与税
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「相続税と贈与税」です。相続税は、亡くなった人の財産が、一定の額、基礎控除をこえたときだけかかります。実際にかかるのは、亡くなった人の、およそ1割です。
+        show:
+          - type: title
+            text: 相続税がかかるのは約1割
+          - type: box
+            w: 1100
+            text: 基礎控除：**3,000万円 ＋ 600万円 × 法定相続人の数**
+            color: yellow
+            at:
+              - 80
+              - 160
+      - say: たとえば、相続人が配偶者と子ども2人の、3人なら、4800万円までは、相続税がかかりません。
+        show:
+          - type: svg
+            w: 1100
+            h: 220
+            at:
+              - 80
+              - 270
+            anim: fade
+            markup: <text x="244" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">相続人1人</text><rect x="260" y="20" width="487.5" height="44" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="761.5" y="49" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="start">3,600万円</text><text x="244" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">相続人2人</text><rect x="260" y="90" width="568.75" height="44" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="842.75" y="119" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="start">4,200万円</text><text x="244" y="189" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">相続人3人</text><rect x="260" y="160" width="650" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="924" y="189" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">4,800万円</text>
+        added: true
+      - say: さらに、配偶者が受けつぐ分や、生命保険金には、大きな非課税の枠があります。
+        show:
+          - type: box
+            w: 1100
+            text: 配偶者は**1億6千万円**まで、生命保険金は**500万円×相続人の数**まで非課税
+            color: green
+            at:
+              - 80
+              - 520
+  - board: whiteboard
+    steps:
+      - say: 生きているうちに、財産をあげると、贈与税がかかります。ただし、もらう人1人につき、年110万円までは、かかりません。
+        show:
+          - type: title
+            text: 贈与税
+          - type: box
+            w: 1100
+            text: もらう人1人につき**年110万円まで非課税**
+            color: yellow
+            at:
+              - 80
+              - 160
+      - say: 一方で、子どもの教育費や生活費を、必要なときにその都度払うのは、そもそも贈与税がかかりません。
+        show:
+          - type: box
+            w: 560
+            text: |-
+              ・教育費・生活費を、必要なときにその都度払う
+              ・年110万円までの贈与
+            title: 贈与税がかからない
+            color: green
+            at:
+              - 60
+              - 270
+          - type: box
+            w: 560
+            text: |-
+              ・住宅を買うお金の贈与
+              ・教育資金の一括贈与
+              ・夫婦間の自宅の贈与（婚姻20年以上）
+            title: 特例もある
+            color: blue
+            at:
+              - 660
+              - 270

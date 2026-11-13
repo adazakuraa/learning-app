@@ -1,0 +1,96 @@
+title: ライフプランとキャッシュフロー表
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「ライフプランとキャッシュフロー表」です。人生の大きな出費を見通して、いつ、いくら必要かを、表にしてみます。
+        show:
+          - type: title
+            text: ライフプランとは
+      - say: ライフプランとは、結婚、出産、家の購入、子どもの進学、退職など、これからの人生の予定を書き出したものです。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="180" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="92" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">結婚</text><path d="M192 65 L226 65 M214 55 L226 65 L214 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="236" y="2" width="180" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="326" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">出産</text><path d="M426 65 L460 65 M448 55 L460 65 L448 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="470" y="2" width="180" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">住宅購入</text><path d="M660 65 L694 65 M682 55 L694 65 L682 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="704" y="2" width="180" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="794" y="74" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">子の進学</text><path d="M894 65 L928 65 M916 55 L928 65 L916 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="938" y="2" width="180" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="1028" y="74" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">退職</text>
+      - say: 人生のお金の中で、特に大きいのが、住宅、教育、老後の3つ。人生の三大支出と呼ばれます。
+        show:
+          - type: box
+            w: 1100
+            text: 人生の三大支出：**住宅・教育・老後**
+            color: yellow
+            at:
+              - 80
+              - 420
+  - board: whiteboard
+    steps:
+      - say: それぞれ、どのくらいかかるのか、大まかな目安を見てみましょう。
+        show:
+          - type: title
+            text: 三大支出の目安
+      - say: 家を買うなら数千万円。子どもの教育費は、すべて公立でも、1人およそ1000万円前後。そして老後は、年金で足りない分を、自分で準備します。
+        show:
+          - type: svg
+            w: 1100
+            h: 220
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <text x="314" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">住宅（購入）</text><rect x="330" y="20" width="580" height="44" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="924" y="49" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="start">数千万円</text><text x="314" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">教育（子1人・公立）</text><rect x="330" y="90" width="165.7142857142857" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="509.71428571428567" y="119" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">約1,000万円</text><text x="314" y="189" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">老後の不足分</text><rect x="330" y="160" width="248.57142857142856" height="44" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="592.5714285714286" y="189" font-size="26" fill="#f3d77a" stroke="none" text-anchor="start">家計による</text>
+      - say: どれも、急に用意できる金額ではありません。だから、早めに見通しを立てることが大切なのです。
+        show:
+          - type: text
+            text: → 急には用意できない。**早めの見通し**が大切
+            color: pink
+            at:
+              - 80
+              - 420
+  - board: whiteboard
+    steps:
+      - say: その見通しを表にしたのが、キャッシュフロー表です。年ごとに、収入、支出、そして貯金の残高を並べます。
+        show:
+          - type: title
+            text: キャッシュフロー表
+      - say: たとえば、30歳のBさんの家庭。収入450万円、支出400万円なら、1年で50万円たまります。でも翌年、出産で支出が520万円になると、60万円のマイナス。貯金は240万円に減ります。
+        show:
+          - type: svg
+            w: 640
+            h: 244
+            at:
+              - 80
+              - 150
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Bさん家族の例</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">30歳：収入450万・支出400万</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">　→ 貯金 +50万</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">31歳：出産で支出520万</text><text x="120" y="200" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">　→ 貯金 −60万</text>
+          - type: svg
+            w: 460
+            h: 380
+            at:
+              - 760
+              - 160
+            anim: fade
+            markup: <rect x="34.5" y="50" width="84.33333333333334" height="280" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="76.66666666666667" y="38" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">300万</text><text x="76.66666666666667" y="366" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">30歳</text><rect x="187.83333333333334" y="106" width="84.33333333333334" height="224" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="230" y="94" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">240万</text><text x="230" y="366" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">31歳</text><rect x="341.1666666666667" y="78" width="84.33333333333334" height="252" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="383.33333333333337" y="66" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">270万</text><text x="383.33333333333337" y="366" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">32歳</text><path d="M0 330 H460" stroke="#9aa3ad" stroke-width="2"/>
+        added: true
+      - say: このように、貯金がマイナスになりそうな年が、前もってわかるのが、キャッシュフロー表の良いところです。
+        show:
+          - type: box
+            w: 1100
+            text: "**貯金が足りなくなる年**が前もってわかる"
+            color: yellow
+            at:
+              - 80
+              - 560
+  - board: whiteboard
+    steps:
+      - say: 最後に。計画は、一度作って終わりではありません。結婚や転職など、生活が変わるたびに、見直しましょう。
+        show:
+          - type: title
+            text: まとめ
+          - type: list
+            items:
+              - 三大支出は**住宅・教育・老後**
+              - "**キャッシュフロー表**で、足りなくなる時期を見つける"
+              - 生活が変わるたびに**見直す**

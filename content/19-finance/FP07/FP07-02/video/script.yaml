@@ -1,0 +1,65 @@
+title: 所得税のしくみ
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「所得税のしくみ」です。所得税は、こんな順番で計算します。
+        show:
+          - type: title
+            text: 所得税の計算の流れ
+      - say: 年収から、給与所得控除を引いて、所得を出します。そこから、基礎控除や社会保険料などの所得控除を引いたものが、課税所得。これに、税率をかけます。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 60
+              - 190
+            anim: fade
+            markup: <rect x="2" y="2" width="238.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="121.25" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">年収</text><path d="M250.5 65 L284.5 65 M272.5 55 L284.5 65 L272.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="294.5" y="2" width="238.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="413.75" y="55" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">− 給与所得控除</text><text x="413.75" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">会社員の経費がわり</text><path d="M543 65 L577 65 M565 55 L577 65 L565 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="587" y="2" width="238.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="706.25" y="55" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">− 所得控除</text><text x="706.25" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">基礎・社会保険料など</text><path d="M835.5 65 L869.5 65 M857.5 55 L869.5 65 L857.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="879.5" y="2" width="238.5" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="998.75" y="74" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">課税所得 × 税率</text>
+  - board: whiteboard
+    steps:
+      - say: 税率は、所得が多いほど高くなります。5パーセントから45パーセントまでの、7段階です。これを、累進課税といいます。
+        show:
+          - type: title
+            text: 累進課税
+          - type: svg
+            w: 1100
+            h: 400
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <rect x="35.357142857142854" y="316.6666666666667" width="86.42857142857143" height="33.33333333333333" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="78.57142857142857" y="304.6666666666667" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">5%</text><text x="78.57142857142857" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">〜195万</text><rect x="192.5" y="283.33333333333337" width="86.42857142857143" height="66.66666666666666" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="235.71428571428572" y="271.33333333333337" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">10%</text><text x="235.71428571428572" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">〜330万</text><rect x="349.6428571428571" y="216.66666666666669" width="86.42857142857143" height="133.33333333333331" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="392.85714285714283" y="204.66666666666669" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">20%</text><text x="392.85714285714283" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">〜695万</text><rect x="506.7857142857143" y="196.66666666666669" width="86.42857142857143" height="153.33333333333331" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="550" y="184.66666666666669" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">23%</text><text x="550" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">〜900万</text><rect x="663.9285714285714" y="130.00000000000003" width="86.42857142857143" height="219.99999999999997" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="707.1428571428571" y="118.00000000000003" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">33%</text><text x="707.1428571428571" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">〜1800万</text><rect x="821.0714285714286" y="83.33333333333337" width="86.42857142857143" height="266.66666666666663" rx="6" fill="#f3a76a" fill-opacity="0.8" stroke="none"/><text x="864.2857142857142" y="71.33333333333337" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">40%</text><text x="864.2857142857142" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">〜4000万</text><rect x="978.2142857142858" y="50" width="86.42857142857143" height="300" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="1021.4285714285714" y="38" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">45%</text><text x="1021.4285714285714" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">4000万超</text><path d="M0 350 H1100" stroke="#9aa3ad" stroke-width="2"/>
+      - say: よくある誤解が、税率が上がると、手取りが逆に減る、というもの。実際には、上の税率がかかるのは、こえた部分だけです。
+        show:
+          - type: box
+            w: 1100
+            text: 上の税率がかかるのは**こえた部分だけ**。手取りが逆転はしない
+            color: yellow
+            at:
+              - 80
+              - 590
+  - board: whiteboard
+    steps:
+      - say: たとえば、課税所得が200万円の人。195万円までは5パーセント、こえた5万円だけに、10パーセントがかかります。全体に10パーセントがかかるわけではありません。
+        show:
+          - type: title
+            text: 例：課税所得200万円
+          - type: svg
+            w: 1100
+            h: 150
+            at:
+              - 80
+              - 180
+            anim: fade
+            markup: <text x="264" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">195万円まで</text><rect x="280" y="20" width="614.25" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="908.25" y="49" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">5% → 9万7,500円</text><text x="264" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">こえた5万円</text><rect x="280" y="90" width="15.75" height="44" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="309.75" y="119" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="start">10% → 5,000円</text>
+        added: true
+      - say: いわゆる年収の壁も、2025年の改正で変わり、所得税がかかり始めるのは、年収およそ160万円からになりました。ただし、社会保険の壁は、別にあります。
+        show:
+          - type: box
+            w: 1100
+            text: 所得税の壁：年収**約160万円**（2025年〜）。社会保険の壁は別
+            color: pink
+            at:
+              - 80
+              - 400

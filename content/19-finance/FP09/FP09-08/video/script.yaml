@@ -1,0 +1,50 @@
+title: 外貨・金・暗号資産
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「外貨・金・暗号資産」です。円以外の資産や、値動きの大きい資産の特徴を、知っておきましょう。
+        show:
+          - type: title
+            text: 円以外の資産
+      - say: 外貨の資産は、為替で、円での価値が変わります。たとえば、1ドル150円のときに1万ドル、つまり150万円分のドルを買ったとします。1ドル120円の円高になると、円に戻したとき、120万円。30万円減ってしまいます。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">1万ドル＝150万円</text><text x="170" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">1ドル150円のとき</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">円高に</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">1万ドル＝120万円</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">30万円の損</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: 金は、利息や配当はありませんが、世の中が不安なときや、インフレのときに、買われやすい資産です。
+        show:
+          - type: title
+            text: 金と暗号資産
+          - type: box
+            w: 1100
+            text: "**金**：利息なし。危機やインフレに強いと言われる"
+            color: yellow
+            at:
+              - 80
+              - 160
+      - say: 暗号資産は、値動きがとても大きく、詐欺も多い分野です。もうけには、最大55パーセントの税金がかかることもあります。なくなってもよいお金の範囲にとどめましょう。
+        show:
+          - type: box
+            w: 1100
+            text: "**暗号資産**：値動きが極めて大きい・詐欺も多い → **なくなってもよいお金**だけ"
+            color: pink
+            at:
+              - 80
+              - 270
+      - say: 必ずもうかる暗号資産、元本保証の海外投資。こうした話は、詐欺の典型です。
+        show:
+          - type: box
+            w: 1100
+            text: 「必ずもうかる」「元本保証の海外投資」は**詐欺の典型**
+            color: red
+            at:
+              - 80
+              - 400

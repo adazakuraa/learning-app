@@ -30,7 +30,7 @@ jobs:
       fail-fast: false
       max-parallel: 8
       matrix:
-        subject: [math, physics, chemistry, biology, earth-science, information, japanese-ja, japanese-history, english, world-history, geography, politics-economics, philosophy, psychology, sociology, religion, logical-thinking, medicine]
+        subject: [math, physics, chemistry, biology, earth-science, information, japanese-ja, japanese-history, english, world-history, geography, politics-economics, philosophy, psychology, sociology, religion, logical-thinking, medicine, finance]
     steps:
       # check out the branch head (not the triggering commit) so work already pushed is reused
       - uses: actions/checkout@v4

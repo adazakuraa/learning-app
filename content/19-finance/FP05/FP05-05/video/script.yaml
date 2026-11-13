@@ -1,0 +1,66 @@
+title: 老後に必要なお金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「老後に必要なお金」です。2019年、「老後に2000万円足りない」という話題が、大きなニュースになりました。
+        show:
+          - type: title
+            text: 老後2,000万円問題
+      - say: これは、ある平均的な夫婦で、年金だけでは毎月およそ5万円足りず、30年続くと、およそ2000万円になる、という試算でした。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">毎月 約5万円 不足</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">× 12か月 × 30年</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="950" y="74" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">約2,000万円</text>
+      - say: つまり、全員に当てはまる数字ではありません。必要な額は、家計によって大きく違います。
+        show:
+          - type: box
+            w: 1100
+            text: 平均の一例。**必要な額は人によって違う**
+            color: blue
+            at:
+              - 80
+              - 400
+  - board: whiteboard
+    steps:
+      - say: 自分の場合は、こう計算します。毎月の支出から年金を引いて、12か月と、老後の年数をかけます。
+        show:
+          - type: title
+            text: 自分の必要額の計算
+          - type: box
+            w: 1100
+            text: "**（毎月の支出 − 年金）× 12 × 老後の年数**"
+            color: yellow
+            at:
+              - 80
+              - 160
+      - say: たとえば、老後の支出が月25万円、年金が月22万円なら、不足は月3万円。65歳から95歳までの30年なら、1080万円です。これに、介護や家の修理などの費用を足します。
+        show:
+          - type: svg
+            w: 1000
+            h: 208
+            at:
+              - 80
+              - 270
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Iさん夫婦の例</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">支出 月25万円 − 年金 月22万円 ＝ 月3万円不足</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">3万円 × 12か月 × 30年 ＝ 1,080万円</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">＋ 介護・修繕などの費用</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: 対策は、組み合わせです。長く働く。年金をもらう時期を遅らせる。支出を見直す。そして、早くから、NISAやiDeCoで積み立てる。
+        read: 対策は、組み合わせです。長く働く。年金をもらう時期を遅らせる。支出を見直す。そして、早くから、ニーサやイデコで積み立てる。
+        show:
+          - type: title
+            text: 対策の組み合わせ
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="238.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="121.25" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">長く働く</text><rect x="294.5" y="2" width="238.5" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="413.75" y="58" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">年金を</text><text x="413.75" y="90" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">繰り下げる</text><rect x="587" y="2" width="238.5" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="706.25" y="58" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">支出を</text><text x="706.25" y="90" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">見直す</text><rect x="879.5" y="2" width="238.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="998.75" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">NISA・iDeCo</text><text x="998.75" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">で積み立て</text>

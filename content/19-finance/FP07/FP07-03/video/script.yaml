@@ -1,0 +1,59 @@
+title: 住民税と手取り
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「住民税と手取り」です。住民税は、所得のおよそ10パーセントです。
+        show:
+          - type: title
+            text: 住民税
+          - type: box
+            w: 1100
+            text: 住民税：**所得の約10%**
+            color: green
+            at:
+              - 80
+              - 160
+      - say: 大切なのは、住民税は、前の年の所得をもとに、翌年の6月から払う、ということです。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 260
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">2026年の所得</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">計算</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="950" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">2027年6月〜</text><text x="950" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">翌年5月に払う</text>
+      - say: たとえば、会社を辞めて、収入がなくなった翌年も、住民税は、前の年の高い所得の分が来ます。お金を残しておきましょう。
+        show:
+          - type: svg
+            w: 520
+            h: 172
+            at:
+              - 80
+              - 440
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">3月に退職したJさん</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">収入がなくなっても</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">前の年の分の住民税が届く！</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: では、年収から、手取りはどのくらいになるのでしょう。独身の会社員の場合の目安です。
+        show:
+          - type: title
+            text: 年収と手取りの目安
+          - type: svg
+            w: 1100
+            h: 220
+            at:
+              - 80
+              - 180
+            anim: fade
+            markup: <text x="264" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">年収300万円</text><rect x="280" y="20" width="256.271186440678" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="550.271186440678" y="49" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">手取り 約240万円</text><text x="264" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">年収500万円</text><rect x="280" y="90" width="416.4406779661017" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="710.4406779661017" y="119" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">手取り 約390万円</text><text x="264" y="189" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">年収800万円</text><rect x="280" y="160" width="630" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="924" y="189" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">手取り 約590万円</text>
+      - say: 手取りは、年収のおよそ75パーセントから80パーセント。年収が上がるほど、割合は少しずつ下がります。
+        show:
+          - type: box
+            w: 1100
+            text: 手取りは**年収の約75〜80%**
+            color: yellow
+            at:
+              - 80
+              - 420

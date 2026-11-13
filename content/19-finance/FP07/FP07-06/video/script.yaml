@@ -1,0 +1,66 @@
+title: 消費税・固定資産税など
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「消費税・固定資産税など」です。消費税は10パーセント。ただし、食品と新聞は、8パーセントです。お酒と外食は、10パーセントになります。
+        show:
+          - type: title
+            text: 消費税
+          - type: box
+            w: 560
+            text: |-
+              ・ふつうの買い物
+              ・お酒
+              ・外食
+            title: 10%
+            color: pink
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・食品（持ち帰り）
+              ・新聞（定期購読）
+            title: 8%（軽減税率）
+            color: green
+            at:
+              - 660
+              - 160
+  - board: whiteboard
+    steps:
+      - say: 家や土地を持つと、毎年、固定資産税がかかります。車を持つと、自動車税です。持っているだけでかかる税金も、計画に入れておきましょう。
+        show:
+          - type: title
+            text: 持っているとかかる税金
+          - type: list
+            items:
+              - "**固定資産税**：土地・建物（毎年）"
+              - "**自動車税**：車（毎年）"
+              - 家を買ったとき：不動産取得税・登録免許税
+  - board: whiteboard
+    steps:
+      - say: 最後に、ふるさと納税です。好きな自治体に寄付すると、寄付した額から2000円を引いた分、所得税と住民税が安くなります。
+        show:
+          - type: title
+            text: ふるさと納税
+      - say: たとえば、3万円寄付すると、2万8千円分、税金が安くなり、さらに、お礼の品がもらえます。実際の負担は、2000円だけです。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">3万円を寄付</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="560" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">税金が</text><text x="560" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">2万8千円安く</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="950" y="58" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">負担は2,000円</text><text x="950" y="90" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">＋お礼の品</text>
+        added: true
+      - say: ただし、安くなる額には、年収などで決まる上限があります。また、税金の前払い先を選んでいるだけなので、節税ではない点に注意しましょう。
+        show:
+          - type: box
+            w: 1100
+            text: 上限あり。**税金の前払い先を選ぶ制度**（節税ではない）
+            color: pink
+            at:
+              - 80
+              - 400

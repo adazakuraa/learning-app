@@ -1,0 +1,113 @@
+title: お金の教養とは
+scenes:
+  - board: slide
+    steps:
+      - say: ここから、新しい科目、「FP・お金の教養」です。
+        read: ここから、新しい科目、「エフピー・お金の教養」です。
+        show:
+          - type: title
+            text: FP・お金の教養
+      - say: 家計、保険、年金、税金、住まい、投資、相続。大人なら知っておきたい、お金の基礎を、ひととおり学びます。
+        show:
+          - type: list
+            items:
+              - 家計・貯蓄
+              - 保険・年金
+              - 税金
+              - 住まい・投資
+              - ローン・詐欺
+              - 相続・介護
+  - board: slide
+    steps:
+      - say: 第1章は、「お金と人生設計の基本」です。お金の判断の考え方と、人生の計画の立て方を学びます。
+        show:
+          - type: title
+            text: 第1章　お金と人生設計の基本
+          - type: list
+            items:
+              - お金の教養とは
+              - ライフプランとキャッシュフロー表
+              - 家計の見える化
+              - お金の優先順位
+  - board: whiteboard
+    steps:
+      - say: 「お金の教養とは」です。この科目の目的は、お金の不安を減らして、自分で判断できるようになることです。
+        show:
+          - type: title
+            text: お金の教養とは
+          - type: box
+            w: 1100
+            text: 目的：お金の不安を減らし、**自分で判断できる**ようになる
+            color: yellow
+            at:
+              - 80
+              - 150
+      - say: たとえば、窓口で「この保険がおすすめです」と言われたとき。仕組みを知らないと、言われるままに決めるしかありません。
+        show:
+          - type: svg
+            w: 520
+            h: 172
+            at:
+              - 80
+              - 250
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Aさん（30歳・会社員）</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">窓口で保険をすすめられた</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">「よくわからないけど、入っておこうかな…」</text>
+        added: true
+      - say: でも、公的な保険でどこまで守られているかを知っていれば、本当に必要かどうか、自分で考えられます。お金の教養は、こうした場面で役に立ちます。
+        show:
+          - type: box
+            w: 1100
+            text: 仕組みを知る → 比べられる → 自分で決められる
+            color: green
+            at:
+              - 80
+              - 420
+        added: true
+  - board: whiteboard
+    steps:
+      - say: ファイナンシャルプランナー、略してFPは、家計全体を見て、人生の目標に合わせたお金の計画を手伝う専門家です。
+        read: ファイナンシャルプランナー、略してエフピーは、家計全体を見て、人生の目標に合わせたお金の計画を手伝う専門家です。
+        show:
+          - type: title
+            text: FPが扱う分野
+          - type: tag
+            text: FP＝ファイナンシャルプランナー
+            color: blue
+            at:
+              - 700
+              - 52
+      - say: FPが扱う分野は、とても広く、人生のお金のほぼすべてです。この科目も、この順番で学んでいきます。
+        read: エフピーが扱う分野は、とても広く、人生のお金のほぼすべてです。この科目も、この順番で学んでいきます。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 220
+            anim: fade
+            markup: <rect x="2" y="2" width="180" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="92" y="58" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">人生設計</text><text x="92" y="90" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">家計</text><path d="M192 65 L226 65 M214 55 L226 65 L214 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="236" y="2" width="180" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="326" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">保険</text><text x="326" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">年金</text><path d="M426 65 L460 65 M448 55 L460 65 L448 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="470" y="2" width="180" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">税金</text><path d="M660 65 L694 65 M682 55 L694 65 L682 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="704" y="2" width="180" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="794" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">住まい</text><text x="794" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">投資</text><path d="M894 65 L928 65 M916 55 L928 65 L916 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="938" y="2" width="180" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="1028" y="58" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">相続</text><text x="1028" y="90" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">介護</text>
+  - board: whiteboard
+    steps:
+      - say: 最後に、お金の判断の基本の姿勢です。
+        show:
+          - type: title
+            text: お金の判断の基本姿勢
+      - say: ひとつ目、仕組みを理解してから選ぶ。わからない商品は買わない。
+        show:
+          - type: box
+            w: 1100
+            text: ① 仕組みを理解してから選ぶ。**わからない商品は買わない**
+            color: yellow
+      - say: ふたつ目、手数料、税金、リスクを、必ず確認する。
+        show:
+          - type: box
+            w: 1100
+            text: ② **手数料・税金・リスク**を必ず確認
+            color: pink
+      - say: みっつ目、制度はよく変わるので、最新の公式情報を確認する習慣をつけましょう。
+        show:
+          - type: box
+            w: 1100
+            text: ③ 制度は変わる → **最新の公式情報**を確認
+            color: blue

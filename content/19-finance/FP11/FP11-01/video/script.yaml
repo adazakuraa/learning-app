@@ -1,0 +1,68 @@
+title: 教育費と奨学金
+scenes:
+  - board: slide
+    steps:
+      - say: 第11章、「人生の出来事とお金」です。教育、結婚と出産、転職や副業、家族のお金の話を学びます。
+        show:
+          - type: title
+            text: 第11章　人生の出来事とお金
+          - type: list
+            items:
+              - 教育費と奨学金
+              - 結婚・出産・育児のお金
+              - 転職・退職・フリーランス
+              - 副業の税金
+              - 家族のお金の話し方
+  - board: whiteboard
+    steps:
+      - say: 「教育費と奨学金」です。教育費は、公立か私立かで、大きく変わります。1年あたりの学習費の目安を、見てみましょう。
+        show:
+          - type: title
+            text: 教育費（1年あたり）
+          - type: svg
+            w: 1100
+            h: 430
+            at:
+              - 80
+              - 150
+            anim: fade
+            markup: <text x="234" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">小学校 公立</text><rect x="250" y="20" width="124.66666666666666" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="388.66666666666663" y="49" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">約34万円</text><text x="234" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">小学校 私立</text><rect x="250" y="90" width="660" height="44" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="924" y="119" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="start">約180万円</text><text x="234" y="189" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">中学校 公立</text><rect x="250" y="160" width="198" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="462" y="189" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">約54万円</text><text x="234" y="259" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">中学校 私立</text><rect x="250" y="230" width="572" height="44" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="836" y="259" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="start">約156万円</text><text x="234" y="329" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">高校 公立</text><rect x="250" y="300" width="220" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="484" y="329" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">約60万円</text><text x="234" y="399" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">高校 私立</text><rect x="250" y="370" width="377.66666666666663" height="44" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="641.6666666666666" y="399" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="start">約103万円</text>
+  - board: whiteboard
+    steps:
+      - say: そして、いちばんお金がかかるのが、大学です。4年間の学費は、国立でおよそ250万円、私立の文系でおよそ400万円、理系でおよそ550万円。下宿をすれば、生活費もかかります。
+        show:
+          - type: title
+            text: 大学4年間の学費
+          - type: svg
+            w: 900
+            h: 420
+            at:
+              - 140
+              - 160
+            anim: fade
+            markup: <rect x="80" y="224.54545454545456" width="140" height="145.45454545454544" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="150" y="212.54545454545456" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">約250万円</text><text x="150" y="406" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">国立</text><rect x="380" y="137.27272727272725" width="140" height="232.72727272727275" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="450" y="125.27272727272725" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">約400万円</text><text x="450" y="406" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">私立文系</text><rect x="680" y="50" width="140" height="320" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="750" y="38" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">約550万円</text><text x="750" y="406" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">私立理系</text><path d="M0 370 H900" stroke="#9aa3ad" stroke-width="2"/>
+  - board: whiteboard
+    steps:
+      - say: 準備のコツは、時期がわかっている出費だということ。たとえば、高校生までもらえる児童手当を、使わずにためておくと、それだけで、およそ200万円以上になります。
+        show:
+          - type: title
+            text: 準備のコツ
+          - type: svg
+            w: 1000
+            h: 172
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">児童手当をためておくと</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">0〜2歳：月1.5万円、3歳〜高校生：月1万円</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 高校卒業までで 約240万円（第1子・第2子の場合）</text>
+        added: true
+      - say: 時間がある場合は、預金に加えて、NISAで積み立てる方法もあります。大学の授業料の減免や、給付型の奨学金など、国の支援も確認しましょう。
+        read: 時間がある場合は、預金に加えて、ニーサで積み立てる方法もあります。大学の授業料の減免や、給付型の奨学金など、国の支援も確認しましょう。
+        show:
+          - type: box
+            w: 1100
+            text: 預金＋NISAで準備。**給付型奨学金・授業料減免**も確認
+            color: green
+            at:
+              - 80
+              - 380

@@ -1,0 +1,92 @@
+title: 生命保険と医療保険
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「生命保険と医療保険」です。死亡保障が本当に必要なのは、主に、子どもなど、養う家族がいる人です。
+        show:
+          - type: title
+            text: 死亡保障が必要な人
+          - type: box
+            w: 560
+            text: |-
+              ・小さな子どもがいる
+              ・家計を一人で支えている
+            title: 必要性が高い
+            color: yellow
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・独身
+              ・子どもが独立した
+            title: 少なくてよいことが多い
+            color: gray
+            at:
+              - 660
+              - 160
+  - board: whiteboard
+    steps:
+      - say: 生命保険には、いくつか種類があります。
+        show:
+          - type: title
+            text: 生命保険の種類
+      - say: 定期保険は、決まった期間だけ保障する、掛け捨ての保険。保険料が安く、子育て中の備えに向いています。
+        show:
+          - type: box
+            w: 1100
+            text: "**定期保険**：一定期間だけ保障。掛け捨てで**保険料が安い**"
+            color: blue
+            at:
+              - 80
+              - 160
+      - say: 収入保障保険は、亡くなったとき、毎月お金が出るタイプです。子どもが大きくなるにつれて、必要な額が減っていくのに合っています。
+        show:
+          - type: box
+            w: 1100
+            text: "**収入保障保険**：毎月お金が出る。必要額が減るのに合う"
+            color: green
+            at:
+              - 80
+              - 270
+      - say: 終身保険は、一生の保障で、解約するとお金が戻りますが、保険料は高めです。
+        show:
+          - type: box
+            w: 1100
+            text: "**終身保険**：一生保障。お金が戻るが、**保険料は高い**"
+            color: pink
+            at:
+              - 80
+              - 380
+      - say: 保障は掛け捨てで、貯金は別に。これが、基本の考え方です。
+        show:
+          - type: text
+            text: 基本：**保障は掛け捨て、貯金は別に**
+            color: yellow
+            at:
+              - 80
+              - 500
+  - board: whiteboard
+    steps:
+      - say: 医療保険は、入院や手術でお金が出る保険です。でも、日本には高額療養費制度があるので、1か月の医療費の負担には上限があります。
+        show:
+          - type: title
+            text: 医療保険は必須？
+          - type: svg
+            w: 700
+            h: 360
+            at:
+              - 140
+              - 170
+            anim: fade
+            markup: <rect x="105" y="50" width="140" height="260" rx="6" fill="#9aa3ad" fill-opacity="0.8" stroke="none"/><text x="175" y="38" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">3割なら30万</text><text x="175" y="346" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">医療費100万円</text><rect x="455" y="232" width="140" height="78" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="525" y="220" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">約9万円</text><text x="525" y="346" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">実際の負担</text><path d="M0 310 H700" stroke="#9aa3ad" stroke-width="2"/>
+      - say: ですから、貯金で備えられるなら、医療保険は必須ではありません。自営業の人や、貯金が少ない人は、検討する価値があります。
+        show:
+          - type: box
+            w: 1100
+            text: 貯金で備えられれば**必須ではない**。自営業・貯金が少ない人は検討
+            color: yellow
+            at:
+              - 80
+              - 560

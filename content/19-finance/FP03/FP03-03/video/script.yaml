@@ -1,0 +1,73 @@
+title: お金の時間価値
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「お金の時間価値」です。今の100万円と、10年後の100万円。同じ100万円ですが、価値は同じでしょうか。
+        show:
+          - type: title
+            text: 今の100万円と10年後の100万円
+          - type: box
+            w: 560
+            text: |-
+              ・すぐ使える
+              ・運用して増やせる
+            title: 今の100万円
+            color: green
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・それまで使えない
+              ・物価が上がると価値が下がる
+            title: 10年後の100万円
+            color: gray
+            at:
+              - 660
+              - 160
+      - say: 答えは、今の100万円のほうが価値が高い。今あれば、運用して増やせますし、物価が上がる前に使えるからです。
+        show:
+          - type: box
+            w: 1100
+            text: "**今のお金のほうが価値が高い**"
+            color: yellow
+            at:
+              - 80
+              - 440
+  - board: whiteboard
+    steps:
+      - say: 今の100万円を、年3パーセントで運用すると、10年後はおよそ134万円。これを、将来価値といいます。
+        show:
+          - type: title
+            text: 将来価値と現在価値
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 170
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">今 100万円</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">年3%で10年</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">約134万円</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">将来価値</text>
+      - say: 逆に、10年後の100万円は、今の価値に直すと、およそ74万円。これを、現在価値といいます。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 360
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">10年後 100万円</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">今の価値に直す</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">約74万円</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">現在価値</text>
+  - board: whiteboard
+    steps:
+      - say: この考え方は、たとえば、退職金を一度にもらうか、分けてもらうか。年金を早くもらうか、遅らせるか。そうした判断で役に立ちます。
+        show:
+          - type: title
+            text: 使う場面
+          - type: list
+            items:
+              - 退職金を**一時金でもらうか、年金でもらうか**
+              - 年金を**早くもらうか、遅らせて増やすか**
+              - 「10年後に必ず100万円返す」は得か
+        added: true

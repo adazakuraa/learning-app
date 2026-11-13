@@ -1,0 +1,82 @@
+title: 保険の基本
+scenes:
+  - board: slide
+    steps:
+      - say: 第6章、「民間保険」です。生命保険、医療保険、火災保険や自動車保険など、民間の保険の選び方を学びます。
+        show:
+          - type: title
+            text: 第6章　民間保険
+          - type: list
+            items:
+              - 保険の基本
+              - 生命保険と医療保険
+              - 損害保険
+              - 必要保障額と見直し
+              - 保険のしくみと共済
+  - board: whiteboard
+    steps:
+      - say: 「保険の基本」です。保険が向いているのは、めったに起きないけれど、起きたら貯金では払えない損失です。
+        show:
+          - type: title
+            text: 保険が向くリスク
+      - say: 起きる確率と、損失の大きさで、4つに分けてみましょう。確率は低いけれど損失が大きいもの。たとえば、一家の稼ぎ手が亡くなる、火事、自転車事故で高額の賠償。これが、保険の出番です。
+        show:
+          - type: box
+            w: 560
+            text: |-
+              ・起きる確率は低い
+              ・起きたら損失が大きい
+              ・例：稼ぎ手の死亡・火事・高額賠償
+            title: 保険で備える
+            color: yellow
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・起きる確率が高い
+              ・損失は小さい
+              ・例：かぜで通院・スマホの故障
+            title: 貯金で備える
+            color: blue
+            at:
+              - 660
+              - 160
+  - board: whiteboard
+    steps:
+      - say: なぜ、小さな出費に保険をかけると損なのでしょう。それは、保険料の中に、保険会社の経費や利益が含まれているからです。
+        show:
+          - type: title
+            text: 保険料の中身
+          - type: svg
+            w: 900
+            h: 200
+            at:
+              - 190
+              - 180
+            anim: fade
+            markup: <rect x="225" y="0" width="450" height="90" rx="10" fill="#f4a3b8" fill-opacity="0.22" stroke="#f4a3b8" stroke-width="3"/><text x="450" y="55" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="middle">保険会社の経費・利益</text><rect x="0" y="100" width="900" height="90" rx="10" fill="#8fc4ff" fill-opacity="0.22" stroke="#8fc4ff" stroke-width="3"/><text x="450" y="155" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">将来の支払いにあてる部分</text>
+      - say: 平均すると、払った保険料より、受け取るお金は少なくなります。保険は、元を取るものではなく、安心を買うもの、と考えましょう。
+        show:
+          - type: box
+            w: 1100
+            text: 保険は「元を取る」ものではなく、**安心を買う**もの
+            color: yellow
+            at:
+              - 80
+              - 400
+  - board: whiteboard
+    steps:
+      - say: そして、民間保険を考える前に、公的な保険で、どこまで守られているかを確認します。医療なら高額療養費、死亡なら遺族年金、障害なら障害年金、仕事中なら労災です。
+        show:
+          - type: title
+            text: まず公的保険を確認
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 190
+            anim: fade
+            markup: <rect x="2" y="2" width="238.5" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="121.25" y="55" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">医療</text><text x="121.25" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">高額療養費</text><rect x="294.5" y="2" width="238.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="413.75" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">死亡</text><text x="413.75" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">遺族年金</text><rect x="587" y="2" width="238.5" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="706.25" y="55" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">障害</text><text x="706.25" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">障害年金</text><rect x="879.5" y="2" width="238.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="998.75" y="55" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">仕事中</text><text x="998.75" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">労災保険</text>

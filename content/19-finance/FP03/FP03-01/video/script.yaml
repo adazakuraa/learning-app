@@ -1,0 +1,99 @@
+title: 金利と複利
+scenes:
+  - board: slide
+    steps:
+      - say: 第3章、「金利・インフレ・お金の時間価値」です。お金が増えたり、目減りしたりする仕組みを学びます。
+        show:
+          - type: title
+            text: 第3章　金利・インフレ・お金の時間価値
+          - type: list
+            items:
+              - 金利と複利
+              - インフレとデフレ
+              - お金の時間価値
+              - 金利・為替と日銀の役割
+  - board: whiteboard
+    steps:
+      - say: 「金利と複利」です。利息のつき方には、単利と複利の2種類があります。
+        show:
+          - type: title
+            text: 単利と複利
+      - say: 単利は、最初に預けたお金、元本にだけ利息がつきます。複利は、ついた利息にも、さらに利息がつきます。
+        show:
+          - type: box
+            w: 560
+            text: |-
+              ・元本にだけ利息がつく
+              ・毎年同じ額ずつ増える
+            title: 単利
+            color: blue
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・利息にも利息がつく
+              ・雪だるま式に増える
+            title: 複利
+            color: green
+            at:
+              - 660
+              - 160
+  - board: whiteboard
+    steps:
+      - say: 100万円を年5パーセントで運用した場合を、グラフで比べてみましょう。10年ではあまり差がありませんが、30年たつと、単利は250万円、複利はおよそ432万円。大きな差になります。
+        show:
+          - type: title
+            text: 時間がたつほど差が開く
+          - type: svg
+            w: 1000
+            h: 420
+            at:
+              - 140
+              - 170
+            anim: draw
+            markup: <path d="M60 370 H840 M60 370 V20" stroke="#9aa3ad" stroke-width="2" fill="none"/><text x="60" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">0年</text><text x="190" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">5</text><text x="320" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">10</text><text x="450" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">15</text><text x="580" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">20</text><text x="710" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">25</text><text x="840" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">30年</text><path d="M60.0 294.4 L190.0 275.6 L320.0 256.7 L450.0 237.8 L580.0 218.9 L710.0 200.0 L840.0 181.1" stroke="#8fc4ff" stroke-width="5" fill="none"/><text x="852" y="174.11111111111111" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="start">単利 250万</text><path d="M60.0 294.4 L190.0 273.3 L320.0 246.8 L450.0 212.8 L580.0 169.8 L710.0 113.9 L840.0 43.6" stroke="#9be0b0" stroke-width="5" fill="none"/><text x="852" y="66.60000000000002" font-size="24" fill="#9be0b0" stroke="none" text-anchor="start">複利 約432万</text>
+        added: true
+      - say: 複利を味方にするコツは、早く始めて、長く続けることです。
+        show:
+          - type: box
+            w: 1100
+            text: 複利のコツ：**早く始めて、長く続ける**
+            color: yellow
+            at:
+              - 80
+              - 610
+  - board: whiteboard
+    steps:
+      - say: ここで便利なのが、72の法則です。72を、年の利率で割ると、お金がおよそ2倍になる年数がわかります。
+        show:
+          - type: title
+            text: 72の法則
+          - type: box
+            w: 1100
+            text: "**72 ÷ 年利（%）≒ 2倍になる年数**"
+            color: yellow
+            at:
+              - 80
+              - 160
+      - say: 年3パーセントなら24年、6パーセントなら12年で2倍です。
+        show:
+          - type: svg
+            w: 1100
+            h: 220
+            at:
+              - 80
+              - 270
+            anim: fade
+            markup: <text x="244" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">年1%</text><rect x="260" y="20" width="585" height="44" rx="6" fill="#9aa3ad" fill-opacity="0.8" stroke="none"/><text x="859" y="49" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="start">約72年</text><text x="244" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">年3%</text><rect x="260" y="90" width="195" height="44" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="469" y="119" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="start">約24年</text><text x="244" y="189" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">年6%</text><rect x="260" y="160" width="97.5" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="371.5" y="189" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">約12年</text>
+      - say: ただし、複利は借金にも働きます。年15パーセントのリボ払いなら、およそ5年で、借金が2倍になる計算です。
+        show:
+          - type: box
+            w: 1100
+            text: 借金にも複利：年15%なら **約5年で借金が2倍**
+            color: pink
+            at:
+              - 80
+              - 520
+        added: true

@@ -1,0 +1,68 @@
+title: 労災保険と働くときのルール
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「労災保険と働くときのルール」です。仕事中のけがや病気は、労災保険で守られます。
+        show:
+          - type: title
+            text: 労災保険
+          - type: box
+            w: 1100
+            text: 仕事中・**通勤中**のけがや病気 → **労災保険**
+            color: yellow
+            at:
+              - 80
+              - 160
+      - say: たとえば、会社に向かう途中で転んで骨折した場合も、通勤中の事故として、労災の対象になります。治療費は無料で、休んだあいだは、給料のおよそ8割が補償されます。
+        show:
+          - type: svg
+            w: 520
+            h: 172
+            at:
+              - 80
+              - 270
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">通勤中に転んで骨折</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 労災保険の対象</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">治療費は無料・休業中は給料の約8割</text>
+        added: true
+      - say: パートやアルバイトも対象です。保険料は、会社が全額払っています。病院では、健康保険ではなく、労災で、と伝えましょう。
+        show:
+          - type: box
+            w: 1100
+            text: パート・アルバイトも対象。病院では「**労災で**」と伝える
+            color: green
+            at:
+              - 80
+              - 480
+  - board: whiteboard
+    steps:
+      - say: 働く人を守るルールも、法律で決まっています。
+        show:
+          - type: title
+            text: 働く人の基本ルール
+      - say: 労働時間は、原則、1日8時間、週40時間まで。それをこえたら、残業代は、25パーセント以上、上乗せされます。
+        show:
+          - type: box
+            w: 1100
+            text: 労働時間：1日8時間・週40時間まで。こえたら**残業代25%以上の割増**
+            color: blue
+            at:
+              - 80
+              - 160
+      - say: 6か月働けば、有給休暇がもらえます。パートでも、働く日数に応じてもらえます。
+        show:
+          - type: box
+            w: 1100
+            text: "**有給休暇**：6か月働けば年10日〜（パートも日数に応じて）"
+            color: green
+            at:
+              - 80
+              - 280
+      - say: 困ったときは、労働基準監督署や、総合労働相談コーナーに、無料で相談できます。
+        show:
+          - type: box
+            w: 1100
+            text: 相談先：**労働基準監督署**・総合労働相談コーナー（無料）
+            color: yellow
+            at:
+              - 80
+              - 400

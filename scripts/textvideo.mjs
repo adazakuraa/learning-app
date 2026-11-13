@@ -15,7 +15,7 @@ const sayText = (s) => plain(s).replace(/：/g, '、').replace(/＋/g, 'と').re
 export function reading(s) {
   return s
     .replace(/#7119/g, 'シャープ、ななないちいちきゅう').replace(/#8000/g, 'シャープ、はっせん')
-    .replace(/(?<![\d])119(?![\d])/g, 'いちいちきゅう').replace(/(?<![\d])110(?![\d])/g, 'ひゃくとお')
+    .replace(/(?<![\d])119(?![\d])/g, 'いちいちきゅう').replace(/(?<![\d])110番/g, 'ひゃくとおばん')
     .replace(/(\d+)\/(\d+)/g, '$1の$2').replace(/〜/g, 'から').replace(/～/g, 'から')
     .replace(/%/g, 'パーセント').replace(/℃/g, '度').replace(/(\d)m(?![a-zA-Z])/g, '$1メートル').replace(/(\d)cm/g, '$1センチ')
     .replace(/(\d)mSv/g, '$1ミリシーベルト').replace(/BMI/g, 'ビーエムアイ').replace(/CT/g, 'シーティー').replace(/MRI/g, 'エムアールアイ')

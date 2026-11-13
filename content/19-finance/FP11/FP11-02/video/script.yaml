@@ -1,0 +1,51 @@
+title: 結婚・出産・育児のお金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「結婚・出産・育児のお金」です。子どもが生まれるときに受けられる、主なお金を、時間の流れで見てみましょう。
+        show:
+          - type: title
+            text: 出産・育児で受けられるお金
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 60
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="238.5" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="121.25" y="55" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">妊娠・出産</text><text x="121.25" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">出産育児一時金 50万円</text><path d="M250.5 65 L284.5 65 M272.5 55 L284.5 65 L272.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="294.5" y="2" width="238.5" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="413.75" y="55" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">産休</text><text x="413.75" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">出産手当金（会社員）</text><path d="M543 65 L577 65 M565 55 L577 65 L565 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="587" y="2" width="238.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="706.25" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">育休</text><text x="706.25" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">育児休業給付金</text><path d="M835.5 65 L869.5 65 M857.5 55 L869.5 65 L857.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="879.5" y="2" width="238.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="998.75" y="55" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">子育て</text><text x="998.75" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">児童手当・医療費助成</text>
+      - say: 会社員なら、産休中は出産手当金、育休中は育児休業給付金が出ます。育休中は、社会保険料も免除されます。
+        show:
+          - type: box
+            w: 1100
+            text: 会社員：産休・育休中も給付あり。**社会保険料は免除**
+            color: yellow
+            at:
+              - 80
+              - 420
+  - board: whiteboard
+    steps:
+      - say: 子どもには、児童手当が、高校生の年代まで出ます。3歳未満は月1万5千円。第3子以降は、月3万円です。多くの自治体では、子どもの医療費の助成もあります。
+        show:
+          - type: title
+            text: 児童手当
+          - type: svg
+            w: 1100
+            h: 220
+            at:
+              - 80
+              - 180
+            anim: fade
+            markup: <text x="244" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">3歳未満</text><rect x="260" y="20" width="325" height="44" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="599" y="49" font-size="26" fill="#f3d77a" stroke="none" text-anchor="start">月1.5万円</text><text x="244" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">3歳〜高校生</text><rect x="260" y="90" width="216.66666666666666" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="490.66666666666663" y="119" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">月1万円</text><text x="244" y="189" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">第3子以降</text><rect x="260" y="160" width="650" height="44" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="924" y="189" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="start">月3万円</text>
+  - board: whiteboard
+    steps:
+      - say: 結婚したら、ふたりで、お金の価値観を話し合いましょう。貯金や借金、保険を共有し、家計の管理方法を決めます。扶養に入るかどうかも、税金と社会保険の壁を考えて決めます。
+        show:
+          - type: title
+            text: 結婚とお金
+          - type: list
+            items:
+              - お金の**価値観**を話し合う
+              - "**貯金・借金・保険**を共有"
+              - 家計の管理方法を決める
+              - 扶養に入るかは**税金と社会保険の壁**で判断

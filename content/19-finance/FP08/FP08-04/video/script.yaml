@@ -1,0 +1,64 @@
+title: 賃貸のお金とルール
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「賃貸のお金とルール」です。部屋を借りるときの初期費用は、家賃の4か月分から6か月分ほどかかります。
+        show:
+          - type: title
+            text: 初期費用
+          - type: svg
+            w: 520
+            h: 140
+            at:
+              - 80
+              - 150
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">家賃8万円の部屋を借りる</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">初期費用：約32万〜48万円</text>
+        added: true
+      - say: 中身は、退去のときに戻る敷金、戻らない礼金、不動産会社への仲介手数料、それに前家賃などです。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 330
+            anim: fade
+            markup: <rect x="2" y="2" width="238.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="121.25" y="55" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">敷金</text><text x="121.25" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">退去時に戻る</text><rect x="294.5" y="2" width="238.5" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="413.75" y="55" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">礼金</text><text x="413.75" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">戻らない</text><rect x="587" y="2" width="238.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="706.25" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">仲介手数料</text><text x="706.25" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">家賃1か月分まで</text><rect x="879.5" y="2" width="238.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="998.75" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">前家賃など</text>
+  - board: whiteboard
+    steps:
+      - say: トラブルになりやすいのが、退去するときの原状回復です。ふつうに暮らしてできた、日焼けや家具の跡などは、大家さんの負担が原則です。
+        show:
+          - type: title
+            text: 原状回復のルール
+          - type: box
+            w: 560
+            text: |-
+              ・たばこのヤニ
+              ・ペットの傷
+              ・不注意の汚れ・破損
+            title: 借りた人の負担
+            color: pink
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・日焼け
+              ・家具の跡
+              ・ふつうの使用による傷み
+            title: 大家さんの負担
+            color: green
+            at:
+              - 660
+              - 160
+      - say: 入居したときに、部屋の写真を撮っておくと、退去のときの、トラブル防止になります。困ったら、消費者ホットライン、188へ。
+        show:
+          - type: box
+            w: 1100
+            text: 入居時に**写真を撮っておく**。困ったら **188**
+            color: yellow
+            at:
+              - 80
+              - 440

@@ -1,0 +1,54 @@
+title: 遺言・成年後見・エンディングノート
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「遺言・成年後見・エンディングノート」です。認知症などで判断する力が落ちると、本人の預金が引き出せなくなったり、家を売る契約ができなくなったりします。
+        show:
+          - type: title
+            text: 判断力が落ちると
+          - type: svg
+            w: 520
+            h: 208
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Rさんの母（80歳）</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">認知症が進んだ</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 銀行で預金が引き出せない</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 介護施設の費用が払えない…</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: 元気なうちに、備えておく方法があります。
+        show:
+          - type: title
+            text: 元気なうちの備え
+      - say: 任意後見は、将来、財産を管理してくれる人を、自分で選んでおく制度。家族信託は、家族に財産の管理を任せる契約です。判断力が落ちてからは、家庭裁判所が選ぶ、法定後見になります。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="170" y="55" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">任意後見</text><text x="170" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">後見人を自分で選んでおく</text><rect x="392" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="560" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">家族信託</text><text x="560" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">家族に管理を任せる契約</text><rect x="782" y="2" width="336" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">法定後見</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">判断力が落ちた後・裁判所が選ぶ</text>
+  - board: whiteboard
+    steps:
+      - say: そして、ぜひ書いておきたいのが、エンディングノートです。預金や保険のありか、スマホやネットのアカウント、介護や延命治療の希望などを書いておくと、家族の負担が、大きく減ります。
+        show:
+          - type: title
+            text: エンディングノート
+          - type: list
+            items:
+              - 預金口座・証券口座・保険・借金
+              - "**スマホ・ネットのアカウント**"
+              - 介護や延命治療の希望
+              - 葬儀・お墓の希望
+      - say: ただし、エンディングノートには、法的な力はありません。財産の分け方は、遺言で残しましょう。
+        show:
+          - type: box
+            w: 1100
+            text: エンディングノートに**法的な力はない** → 財産の分け方は**遺言**で
+            color: pink
+            at:
+              - 80
+              - 400
