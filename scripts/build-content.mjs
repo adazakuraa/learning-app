@@ -201,6 +201,7 @@ function build() {
           hasVideo: Boolean(video?.src),
           hasText: Boolean(lessonHtml),
           videoDuration: video?.duration ?? null,
+          _code: uMeta.code ?? uDir,
         });
       }
       chapter.units.sort(byOrder);
@@ -227,11 +228,44 @@ function build() {
   subjects.sort(byOrder);
 
   const strip = (o) => {
-    const { _dir, order, ...rest } = o;
+    const { _dir, order, _code, ...rest } = o;
     void _dir;
+    void _code;
     void order;
     return rest;
   };
+  const hQuestion = (q, gid, where, ids, extra = {}) => {
+    const given = [].concat(q.a ?? []).map(String);
+    if (!q.q || !given.length || typeof q.p !== 'number') { errors.push(`hayaoshi ${where}: needs q, a, p`); return null; }
+    let id = gid + '-' + crypto.createHash('sha1').update(given[0]).digest('hex').slice(0, 8);
+    while (ids.has(id)) id += 'x';
+    ids.add(id);
+    const reading = kanaReading(given[0]);
+    const answers = [...new Set([...given, ...[].concat(q.r ?? []).map(String), ...given.map(kanaReading).filter(Boolean)])];
+    const len = Math.min(20, [...String(q.r?.[0] ?? reading ?? given[0]).replace(/[\s・、]/g, '')].length);
+    return { id, genre: gid, q: String(q.q).trim(), answers, show: String(q.show ?? given[0]), p: q.p / 100, len, ...extra };
+  };
+  // review-mode bank: content/<subject>/review.yaml, each question tagged with a unit code (u)
+  {
+    const genres = [];
+    const questions = [];
+    const ids = new Set();
+    for (const s of subjects) {
+      const f = path.join(contentDir, s._dir, 'review.yaml');
+      const y = readYaml(f);
+      if (!y?.questions) continue;
+      const byCode = new Map(s.chapters.flatMap((c) => c.units.map((u) => [String(u._code ?? '').toUpperCase(), u.id])));
+      genres.push({ id: s.id, title: s.title });
+      for (const [i, q] of y.questions.entries()) {
+        const unit = byCode.get(String(q.u ?? '').toUpperCase());
+        if (!unit) { errors.push(`review ${s._dir} #${i + 1}: unknown unit ${q.u}`); continue; }
+        const hq = hQuestion(q, s.id, `${s._dir}/review.yaml #${i + 1}`, ids, { unit });
+        if (hq) questions.push(hq);
+      }
+    }
+    fs.writeFileSync(path.join(outDir, 'hayaoshi-review.json'), JSON.stringify({ genres, questions }));
+    console.log(`hayaoshi review: ${questions.length} questions`);
+  }
   // hayaoshi question bank (content/hayaoshi/*.yaml)
   const hDir = path.join(contentDir, 'hayaoshi');
   if (fs.existsSync(hDir)) {
@@ -243,15 +277,8 @@ function build() {
       const gid = f.replace(/\.yaml$/, '').replace(/^\d+-/, '');
       genres.push({ id: gid, title: y.genre });
       for (const [i, q] of (y.questions ?? []).entries()) {
-        const given = [].concat(q.a ?? []).map(String);
-        if (!q.q || !given.length || typeof q.p !== 'number') { errors.push(`hayaoshi ${f} #${i + 1}: needs q, a, p`); continue; }
-        let id = gid + '-' + crypto.createHash('sha1').update(given[0]).digest('hex').slice(0, 8);
-        while (ids.has(id)) id += 'x';
-        ids.add(id);
-        const reading = kanaReading(given[0]);
-        const answers = [...new Set([...given, ...[].concat(q.r ?? []).map(String), ...given.map(kanaReading).filter(Boolean)])];
-        const len = Math.min(20, [...String(q.r?.[0] ?? reading ?? given[0]).replace(/[\s・、]/g, '')].length);
-        questions.push({ id, genre: gid, q: String(q.q).trim(), answers, show: String(q.show ?? given[0]), p: q.p / 100, len });
+        const hq = hQuestion(q, gid, `${f} #${i + 1}`, ids);
+        if (hq) questions.push(hq);
       }
     }
     fs.writeFileSync(path.join(outDir, 'hayaoshi.json'), JSON.stringify({ genres, questions }));
