@@ -1,0 +1,47 @@
+title: クレジット売掛金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: お客さんがクレジットカードで払った場合、代金は、あとでカード会社から入金されます。お客さんに対する売掛金と区別して、クレジット売掛金という科目を使います。
+        read: お客さんがクレジットカードで払った場合、代金は、あとでカード会社から入金されます。お客さんに対するうりかけきんと区別して、クレジットうりかけきんという科目を使います。
+        show:
+          - type: title
+            text: クレジット売掛金
+      - say: カード会社には手数料を払います。これは支払手数料という費用です。
+        show:
+          - type: svg
+            w: 1160
+            h: 134
+            at:
+              - 60
+              - 260
+            anim: fade
+            markup: <rect x="2" y="2" width="349.3333333333333" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="176.66666666666666" y="58" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">お客さん</text><text x="176.66666666666666" y="90" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">カード払い</text><path d="M361.3333333333333 65 L395.3333333333333 65 M383.3333333333333 55 L395.3333333333333 65 L383.3333333333333 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="405.3333333333333" y="2" width="349.3333333333333" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="580" y="58" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">当社</text><text x="580" y="90" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">売上</text><path d="M764.6666666666666 65 L798.6666666666666 65 M786.6666666666666 55 L798.6666666666666 65 L786.6666666666666 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="808.6666666666666" y="2" width="349.3333333333333" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="983.3333333333333" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">カード会社</text><text x="983.3333333333333" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">手数料を引いて入金</text>
+  - board: whiteboard
+    steps:
+      - say: 例です。商品10万円をカード払いで売りました。手数料は2パーセントで、販売のときに計上します。
+        show:
+          - type: title
+            text: 仕訳の例
+      - say: 売上は満額の10万円。手数料は2千円で支払手数料。実際に入金される9万8千円が、クレジット売掛金です。
+        read: 売上は満額の10万円。手数料は2千円で支払手数料。実際に入金される9万8千円が、クレジットうりかけきんです。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">クレジット売掛金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">98,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売上</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">支払手数料</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">2,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text>
+      - say: 入金されたら、クレジット売掛金を減らします。売上を手数料を引いた金額にしてしまうミスに、気をつけましょう。
+        read: 入金されたら、クレジットうりかけきんを減らします。売上を手数料を引いた金額にしてしまうミスに、気をつけましょう。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 400
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">普通預金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">98,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">クレジット売掛金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">98,000</text>

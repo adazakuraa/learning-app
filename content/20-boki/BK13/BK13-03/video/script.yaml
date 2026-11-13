@@ -1,0 +1,43 @@
+title: 第2問攻略
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 第2問は2問で20点。補助簿の選択、勘定記入、商品有高帳、語句の穴埋め、伝票などがよく出ます。どの問題も、まず仕訳を下書きすれば解けます。
+        read: 第2問は2問で20点。補助簿の選択、勘定記入、商品ありだかちょう、語句の穴埋め、でんぴょうなどがよく出ます。どの問題も、まずしわけを下書きすれば解けます。
+        show:
+          - type: title
+            text: 第2問の形
+          - type: list
+            items:
+              - 補助簿の選択
+              - 勘定記入（保険料・支払利息など）
+              - 商品有高帳
+              - 語句の穴埋め
+              - 伝票・証ひょう
+  - board: whiteboard
+    steps:
+      - say: 勘定記入では、日付ごとに仕訳を書いてから転記します。費用の勘定なら、期首の再振替、期中の支払い、期末の決算整理、そして損益への振替、の順に書き込まれていきます。
+        read: 勘定記入では、日付ごとにしわけを書いてから転記します。費用の勘定なら、きしゅのさいふりかえ、期中の支払い、きまつの決算整理、そしてそんえきへのふりかえ、の順に書き込まれていきます。
+        show:
+          - type: title
+            text: 勘定記入
+          - type: svg
+            w: 1200
+            h: 134
+            at:
+              - 40
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="258.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="131.25" y="58" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">4月1日</text><text x="131.25" y="90" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">再振替</text><path d="M270.5 65 L304.5 65 M292.5 55 L304.5 65 L292.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="314.5" y="2" width="258.5" height="126" rx="14" fill="#c9a6f5" fill-opacity="0.15" stroke="#c9a6f5" stroke-width="3"/><text x="443.75" y="58" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">期中</text><text x="443.75" y="90" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">支払い</text><path d="M583 65 L617 65 M605 55 L617 65 L605 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="627" y="2" width="258.5" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="756.25" y="58" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">3月31日</text><text x="756.25" y="90" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">決算整理</text><path d="M895.5 65 L929.5 65 M917.5 55 L929.5 65 L917.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="939.5" y="2" width="258.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="1068.75" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">3月31日</text><text x="1068.75" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">損益へ</text>
+      - say: 前期繰越、次期繰越、損益の書き忘れが多いので注意。そして、第2問に時間を使いすぎないこと。15分たったら次へ進みましょう。
+        read: 前期くりこし、次期くりこし、そんえきの書き忘れが多いので注意。そして、第2問に時間を使いすぎないこと。15分たったら次へ進みましょう。
+        show:
+          - type: box
+            w: 1100
+            text: |-
+              前期繰越・次期繰越・損益の**書き忘れ**に注意
+              **15分**で切り上げる
+            color: yellow
+            at:
+              - 80
+              - 430

@@ -1,0 +1,120 @@
+title: 貸借対照表と損益計算書（5つの要素）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 簿記で使う言葉は、すべて、5つのグループのどれかに入ります。資産、負債、純資産、収益、費用です。
+        read: ぼきで使う言葉は、すべて、5つのグループのどれかに入ります。資産、負債、純資産、収益、費用です。
+        show:
+          - type: title
+            text: 5つの要素
+          - type: list
+            items:
+              - "**資産**：持っている財産・権利"
+              - "**負債**：将来払う義務"
+              - "**純資産**：資産−負債（会社自身の持ち分）"
+              - "**収益**：もうけのもとになる収入"
+              - "**費用**：収益を得るために使ったお金"
+      - say: たとえば、現金や商品、建物は資産。借金である借入金は負債。売上は収益で、給料や家賃は費用です。
+        show:
+          - type: box
+            w: 1100
+            text: |-
+              現金・商品・建物 → 資産　／　借入金 → 負債
+              売上 → 収益　／　給料・家賃 → 費用
+            color: yellow
+            at:
+              - 80
+              - 480
+        added: true
+  - board: whiteboard
+    steps:
+      - say: まず、貸借対照表の形です。左側に資産、右側に負債と純資産を書きます。
+        show:
+          - type: title
+            text: 貸借対照表（B/S）
+          - type: svg
+            w: 900
+            h: 380
+            at:
+              - 190
+              - 180
+            anim: fade
+            markup: <rect x="0" y="3" width="435" height="374" rx="12" fill="#8fc4ff" fill-opacity="0.18" stroke="#8fc4ff" stroke-width="3"/><text x="217.5" y="200" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">資産</text><rect x="465" y="3" width="435" height="184" rx="12" fill="#f4a3b8" fill-opacity="0.18" stroke="#f4a3b8" stroke-width="3"/><text x="682.5" y="105" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="middle">負債</text><rect x="465" y="193" width="435" height="184" rx="12" fill="#9be0b0" fill-opacity="0.18" stroke="#9be0b0" stroke-width="3"/><text x="682.5" y="295" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">純資産</text>
+      - say: 左は「何を持っているか」。右は「そのお金を、どうやって集めたか」です。
+        show:
+          - type: text
+            text: 左：何を持っているか　右：お金の出どころ
+            color: yellow
+            at:
+              - 80
+              - 590
+  - board: whiteboard
+    steps:
+      - say: 例で見てみましょう。自分のお金100万円と、銀行からの借金50万円で会社を始めて、全部を預金に入れたとします。
+        show:
+          - type: title
+            text: 例：会社を始める
+          - type: svg
+            w: 520
+            h: 208
+            at:
+              - 80
+              - 150
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">会社のスタート</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">自分のお金 100万円</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">銀行からの借金 50万円</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 全部を預金へ</text>
+      - say: 資産は、預金150万円。右側は、返す必要のある借金50万円が負債、返さなくていい自分のお金100万円が純資産です。
+        show:
+          - type: svg
+            w: 900
+            h: 300
+            at:
+              - 190
+              - 300
+            anim: fade
+            markup: <rect x="0" y="3" width="435" height="294" rx="12" fill="#8fc4ff" fill-opacity="0.18" stroke="#8fc4ff" stroke-width="3"/><text x="217.5" y="142" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">預金</text><text x="217.5" y="178" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">150万円</text><rect x="465" y="3" width="435" height="94" rx="12" fill="#f4a3b8" fill-opacity="0.18" stroke="#f4a3b8" stroke-width="3"/><text x="682.5" y="42" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="middle">借入金</text><text x="682.5" y="78" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="middle">50万円</text><rect x="465" y="103" width="435" height="194" rx="12" fill="#9be0b0" fill-opacity="0.18" stroke="#9be0b0" stroke-width="3"/><text x="682.5" y="192" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">資本金</text><text x="682.5" y="228" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">100万円</text>
+        added: true
+      - say: 左右の合計は、必ず同じになります。資産イコール、負債たす純資産。これを貸借対照表等式といいます。
+        show:
+          - type: tag
+            text: 資産 ＝ 負債 ＋ 純資産
+            color: yellow
+            at:
+              - 760
+              - 52
+  - board: whiteboard
+    steps:
+      - say: 次に、損益計算書です。左側に費用、右側に収益を書きます。
+        read: 次に、そんえき計算書です。左側に費用、右側に収益を書きます。
+        show:
+          - type: title
+            text: 損益計算書（P/L）
+          - type: svg
+            w: 900
+            h: 380
+            at:
+              - 190
+              - 180
+            anim: fade
+            markup: <rect x="0" y="3" width="435" height="298" rx="12" fill="#f4a3b8" fill-opacity="0.18" stroke="#f4a3b8" stroke-width="3"/><text x="217.5" y="162" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="middle">費用</text><rect x="0" y="307" width="435" height="70" rx="12" fill="#9be0b0" fill-opacity="0.18" stroke="#9be0b0" stroke-width="3"/><text x="217.5" y="352" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">当期純利益</text><rect x="465" y="3" width="435" height="374" rx="12" fill="#f3a76a" fill-opacity="0.18" stroke="#f3a76a" stroke-width="3"/><text x="682.5" y="200" font-size="30" fill="#f3a76a" stroke="none" text-anchor="middle">収益</text>
+      - say: 収益の方が大きければ、その差が、当期純利益、つまりもうけです。たとえば売上500万円、費用420万円なら、もうけは80万円です。
+        show:
+          - type: box
+            w: 1100
+            text: 収益 500万 − 費用 420万 ＝ **当期純利益 80万**
+            color: green
+            at:
+              - 80
+              - 590
+        added: true
+  - board: whiteboard
+    steps:
+      - say: まとめです。ビーエスは、左に資産、右に負債と純資産。ピーエルは、左に費用、右に収益。この左右の位置が、次に学ぶ仕訳のルールに、そのままつながります。
+        read: まとめです。ビーエスは、左に資産、右に負債と純資産。ピーエルは、左に費用、右に収益。この左右の位置が、次に学ぶしわけのルールに、そのままつながります。
+        show:
+          - type: title
+            text: まとめ
+          - type: list
+            items:
+              - B/S：左に**資産**、右に**負債・純資産**
+              - P/L：左に**費用**、右に**収益**
+              - 資産 ＝ 負債 ＋ 純資産

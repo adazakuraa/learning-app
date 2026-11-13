@@ -1,0 +1,75 @@
+title: 貸付金・借入金と利息
+scenes:
+  - board: slide
+    steps:
+      - say: 第5章は、「いろいろな債権・債務」です。商品売買以外の、お金の貸し借りや、仮の科目を学びます。
+        show:
+          - type: title
+            text: 第5章　いろいろな債権・債務
+          - type: list
+            items:
+              - 貸付金・借入金と利息
+              - 未収入金・未払金
+              - 仮払金・仮受金
+              - 給料の支払い
+              - 差入保証金と支払手数料
+  - board: whiteboard
+    steps:
+      - say: お金を貸したら貸付金、資産。借りたら借入金、負債です。利息は、受け取ったら受取利息、払ったら支払利息です。
+        show:
+          - type: title
+            text: 貸付金・借入金
+      - say: 利息の計算は、元金かける年利率かける、月数わる12。3級では、月割で計算するのが基本です。
+        read: 利息の計算は、元金かける年利率かける、月数わる12。さんきゅうでは、月割で計算するのが基本です。
+        show:
+          - type: box
+            w: 1100
+            text: 利息 ＝ 元金 × 年利率 × **月数 ÷ 12**
+            color: yellow
+            at:
+              - 80
+              - 230
+      - say: 年利率4パーセントは、1年間借りたら4パーセント、という意味です。30万円を6か月なら、30万かける4パーセントかける12分の6で、6千円です。
+        show:
+          - type: svg
+            w: 1100
+            h: 200
+            at:
+              - 90
+              - 380
+            anim: fade
+            markup: <rect x="2" y="60" width="546" height="90" rx="10" fill="#f3a76a" fill-opacity="0.2" stroke="#f3a76a" stroke-width="3"/><text x="275" y="112" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">6か月分の利息 6,000円</text><rect x="552" y="60" width="546" height="90" rx="10" fill="#9aa3ad" fill-opacity="0.2" stroke="#9aa3ad" stroke-width="3"/><text x="825" y="112" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">残りの6か月</text><path d="M2 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="2" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">貸付</text><path d="M550 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="550" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">返済</text><path d="M1098 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="1098" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">1年</text>
+  - board: whiteboard
+    steps:
+      - say: 仕訳です。30万円を現金で貸し付けました。
+        read: しわけです。30万円を現金で貸し付けました。
+        show:
+          - type: title
+            text: 仕訳の例
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 150
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">貸付金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">現金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text>
+      - say: 6か月後に、元金と利息を現金で受け取りました。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 300
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">現金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">306,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">貸付金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">受取利息</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">6,000</text>
+      - say: 会社の役員にお金を貸したときは、役員貸付金という科目を使います。月数を数えるときは、4月1日から9月30日は6か月、のように、指を折って確認しましょう。
+        show:
+          - type: box
+            w: 1100
+            text: 役員への貸し借り → **役員貸付金・役員借入金**
+            color: yellow
+            at:
+              - 80
+              - 520

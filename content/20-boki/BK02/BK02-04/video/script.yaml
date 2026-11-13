@@ -1,0 +1,62 @@
+title: 当座借越
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 当座預金の残高が10万円しかないのに、15万円の支払いが必要になった。銀行と当座借越契約を結んでいれば、残高をこえて小切手を振り出せます。
+        read: 当座預金の残高が10万円しかないのに、15万円の支払いが必要になった。銀行ととうざかりこし契約を結んでいれば、残高をこえてこぎってをふりだせます。
+        show:
+          - type: title
+            text: 当座借越とは
+      - say: 足りない5万円は、銀行が立て替えてくれます。これは実は、銀行からの借金です。
+        show:
+          - type: tag
+            text: マイナスの預金 ＝ 借金
+            color: pink
+            at:
+              - 820
+              - 52
+      - say: 期中は、そのまま当座預金を減らします。当座預金は、マイナス5万円、つまり貸方の残高になります。
+        read: 期中は、そのまま当座預金を減らします。当座預金は、マイナス5万円、つまりかしかたの残高になります。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 300
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">買掛金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">150,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">当座預金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">150,000</text>
+  - board: whiteboard
+    steps:
+      - say: 決算日に、当座預金がマイナスのままなら、それは預金ではなく借金なので、負債に振り替えます。科目は、当座借越です。
+        read: 決算日に、当座預金がマイナスのままなら、それは預金ではなく借金なので、負債に振り替えます。科目は、とうざかりこしです。
+        show:
+          - type: title
+            text: 決算での振替
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 160
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">当座預金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">50,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">当座借越</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">50,000</text>
+      - say: 問題文で、借入金に振り替えると指示があれば、借入金を使います。
+        show:
+          - type: text
+            text: 「借入金勘定へ」の指示 → 借入金
+            color: gray
+            at:
+              - 90
+              - 320
+      - say: そして、翌期の最初の日に、逆の仕訳をして元に戻します。これを再振替仕訳といいます。決算で負債に、期首に元に戻す。2点セットで覚えましょう。
+        read: そして、翌期の最初の日に、逆のしわけをして元に戻します。これをさいふりかえしわけといいます。決算で負債に、きしゅに元に戻す。2点セットで覚えましょう。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 420
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">当座借越</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">50,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">当座預金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">50,000</text>

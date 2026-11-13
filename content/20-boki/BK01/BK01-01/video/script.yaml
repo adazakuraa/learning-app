@@ -1,0 +1,119 @@
+title: 簿記とは・簿記3級の試験
+scenes:
+  - board: slide
+    steps:
+      - say: ここから、新しい科目、「簿記3級」です。この科目は、日商簿記3級の合格を目標に、試験に必要なことを、ひとつずつ丁寧に学んでいきます。
+        read: ここから、新しい科目、「ぼきさんきゅう」です。この科目は、日商ぼきさんきゅうの合格を目標に、試験に必要なことを、ひとつずつ丁寧に学んでいきます。
+        show:
+          - type: title
+            text: 簿記3級
+      - say: 第1章は、「簿記の基本」です。簿記とは何か、そして、すべての土台になる仕訳のルールを学びます。
+        read: 第1章は、「ぼきの基本」です。ぼきとは何か、そして、すべての土台になるしわけのルールを学びます。
+        show:
+          - type: title
+            text: 第1章　簿記の基本
+          - type: list
+            items:
+              - 簿記とは・試験の形式
+              - 貸借対照表と損益計算書
+              - 仕訳のルール
+              - 取引の8要素
+              - 勘定・転記と簿記の一巡
+  - board: whiteboard
+    steps:
+      - say: 簿記とは、会社のお金やモノの動きを、決まったルールで帳簿に記録する技術です。
+        read: ぼきとは、会社のお金やモノの動きを、決まったルールで帳簿に記録する技術です。
+        show:
+          - type: title
+            text: 簿記とは
+      - say: 会社は毎日、商品を仕入れたり、売ったり、給料を払ったりしています。ただメモしていくだけでは、今いくら財産があるのか、1年でいくらもうかったのかが、すぐにはわかりません。
+        read: 会社は毎日、商品をしいれれたり、売ったり、給料を払ったりしています。ただメモしていくだけでは、今いくら財産があるのか、1年でいくらもうかったのかが、すぐにはわかりません。
+        show:
+          - type: svg
+            w: 520
+            h: 172
+            at:
+              - 80
+              - 150
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">あるお店の1年</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">仕入れる・売る・給料を払う・家賃を払う…</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">「結局、いくらもうかったの？」</text>
+        added: true
+      - say: そこで、すべての取引を同じルールで記録して、最後に2つの表にまとめます。この流れが、簿記です。
+        read: そこで、すべての取引を同じルールで記録して、最後に2つの表にまとめます。この流れが、ぼきです。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 400
+            anim: fade
+            markup: <rect x="2" y="2" width="238.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="121.25" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">取引</text><path d="M250.5 65 L284.5 65 M272.5 55 L284.5 65 L272.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="294.5" y="2" width="238.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="413.75" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">仕訳</text><text x="413.75" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">（記録）</text><path d="M543 65 L577 65 M565 55 L577 65 L565 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="587" y="2" width="238.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="706.25" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">帳簿</text><text x="706.25" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">（集計）</text><path d="M835.5 65 L869.5 65 M857.5 55 L869.5 65 L857.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="879.5" y="2" width="238.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="998.75" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">2つの表</text><text x="998.75" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">（報告）</text>
+  - board: whiteboard
+    steps:
+      - say: 最終的に作る2つの表が、貸借対照表と、損益計算書です。
+        read: 最終的に作る2つの表が、貸借対照表と、そんえき計算書です。
+        show:
+          - type: title
+            text: ゴールは2つの表
+      - say: 貸借対照表、ビーエスは、ある日の財産の状態を表します。何をいくら持っていて、借金はいくらか。会社の健康診断の結果のようなものです。
+        show:
+          - type: box
+            w: 1100
+            text: "**貸借対照表（B/S）**：ある日の**財産の状態**"
+            color: blue
+            at:
+              - 80
+              - 170
+      - say: 損益計算書、ピーエルは、ある期間のもうけを表します。いくら稼いで、いくら使ったか。会社の1年間の成績表です。
+        read: そんえき計算書、ピーエルは、ある期間のもうけを表します。いくら稼いで、いくら使ったか。会社の1年間の成績表です。
+        show:
+          - type: box
+            w: 1100
+            text: "**損益計算書（P/L）**：ある期間の**もうけ**"
+            color: green
+            at:
+              - 80
+              - 300
+      - say: この2つの表は、銀行や投資家、税務署なども見ます。だれが見ても同じように読めるように、記録のルールが決まっているのです。
+        show:
+          - type: text
+            text: → だれが見ても読めるように、**ルールが決まっている**
+            color: yellow
+            at:
+              - 80
+              - 440
+  - board: whiteboard
+    steps:
+      - say: 次に、試験の形式です。試験時間は60分、100点満点で、70点以上で合格です。
+        show:
+          - type: title
+            text: 日商簿記3級の試験
+          - type: box
+            w: 1100
+            text: 60分・100点満点・**70点以上で合格**
+            color: yellow
+            at:
+              - 80
+              - 150
+      - say: 問題は3つ。第1問は仕訳が15問で45点。第2問は帳簿などの問題で20点。第3問は決算の問題で35点です。
+        read: 問題は3つ。第1問はしわけが15問で45点。第2問は帳簿などの問題で20点。第3問は決算の問題で35点です。
+        show:
+          - type: svg
+            w: 900
+            h: 300
+            at:
+              - 190
+              - 250
+            anim: fade
+            markup: <rect x="0" y="0" width="900" height="90" rx="10" fill="#8fc4ff" fill-opacity="0.22" stroke="#8fc4ff" stroke-width="3"/><text x="450" y="41" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">第1問　仕訳15問</text><text x="450" y="73" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">45点</text><rect x="112.5" y="100" width="675" height="90" rx="10" fill="#9be0b0" fill-opacity="0.22" stroke="#9be0b0" stroke-width="3"/><text x="450" y="141" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">第2問　帳簿・勘定記入など</text><text x="450" y="173" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">20点</text><rect x="45" y="200" width="810" height="90" rx="10" fill="#f4a3b8" fill-opacity="0.22" stroke="#f4a3b8" stroke-width="3"/><text x="450" y="241" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="middle">第3問　決算（精算表・財務諸表）</text><text x="450" y="273" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">35点</text>
+      - say: いちばん大事なのは、第1問の仕訳です。仕訳ができれば、第2問も第3問も解けるようになります。この科目でも、まず仕訳を完璧にすることを目標にしましょう。
+        read: いちばん大事なのは、第1問のしわけです。しわけができれば、第2問も第3問も解けるようになります。この科目でも、まずしわけを完璧にすることを目標にしましょう。
+        show:
+          - type: tag
+            text: 最重要：仕訳
+            color: pink
+            at:
+              - 920
+              - 52
+        added: true

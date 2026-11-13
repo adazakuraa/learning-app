@@ -1,0 +1,108 @@
+title: 減価償却（定額法・間接法）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 120万円のトラックを買って、6年間使うとします。もし買った年に、全部を費用にしたらどうなるでしょう。
+        show:
+          - type: title
+            text: 減価償却とは
+      - say: その年だけ大赤字で、残りの5年は費用ゼロになってしまいます。でも実際は、トラックは6年間ずっと商売の役に立っています。
+        show:
+          - type: svg
+            w: 1000
+            h: 340
+            at:
+              - 140
+              - 200
+            anim: fade
+            markup: <rect x="37.49999999999999" y="50" width="91.66666666666667" height="240" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="83.33333333333333" y="38" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">120万</text><text x="83.33333333333333" y="326" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">1年目</text><rect x="204.16666666666666" y="289" width="91.66666666666667" height="1" rx="6" fill="#9aa3ad" fill-opacity="0.8" stroke="none"/><text x="250" y="277" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">0</text><text x="250" y="326" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">2年目</text><rect x="370.8333333333333" y="289" width="91.66666666666667" height="1" rx="6" fill="#9aa3ad" fill-opacity="0.8" stroke="none"/><text x="416.66666666666663" y="277" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">0</text><text x="416.66666666666663" y="326" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">3年目</text><rect x="537.5" y="289" width="91.66666666666667" height="1" rx="6" fill="#9aa3ad" fill-opacity="0.8" stroke="none"/><text x="583.3333333333334" y="277" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">0</text><text x="583.3333333333334" y="326" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">4年目</text><rect x="704.1666666666666" y="289" width="91.66666666666667" height="1" rx="6" fill="#9aa3ad" fill-opacity="0.8" stroke="none"/><text x="750" y="277" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">0</text><text x="750" y="326" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">5年目</text><rect x="870.8333333333333" y="289" width="91.66666666666667" height="1" rx="6" fill="#9aa3ad" fill-opacity="0.8" stroke="none"/><text x="916.6666666666666" y="277" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">0</text><text x="916.6666666666666" y="326" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">6年目</text><path d="M0 290 H1000" stroke="#9aa3ad" stroke-width="2"/>
+            id: bad
+        added: true
+      - say: そこで、使う期間に分けて、少しずつ費用にします。これが減価償却です。こうすると、毎年のもうけを正しく計算できます。
+        read: そこで、使う期間に分けて、少しずつ費用にします。これがげんかしょうきゃくです。こうすると、毎年のもうけを正しく計算できます。
+        show:
+          - type: svg
+            w: 1000
+            h: 340
+            at:
+              - 140
+              - 200
+            anim: fade
+            markup: <rect x="37.49999999999999" y="250" width="91.66666666666667" height="40" rx="6" fill="#c9a6f5" fill-opacity="0.8" stroke="none"/><text x="83.33333333333333" y="238" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">20万</text><text x="83.33333333333333" y="326" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">1年目</text><rect x="204.16666666666666" y="250" width="91.66666666666667" height="40" rx="6" fill="#c9a6f5" fill-opacity="0.8" stroke="none"/><text x="250" y="238" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">20万</text><text x="250" y="326" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">2年目</text><rect x="370.8333333333333" y="250" width="91.66666666666667" height="40" rx="6" fill="#c9a6f5" fill-opacity="0.8" stroke="none"/><text x="416.66666666666663" y="238" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">20万</text><text x="416.66666666666663" y="326" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">3年目</text><rect x="537.5" y="250" width="91.66666666666667" height="40" rx="6" fill="#c9a6f5" fill-opacity="0.8" stroke="none"/><text x="583.3333333333334" y="238" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">20万</text><text x="583.3333333333334" y="326" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">4年目</text><rect x="704.1666666666666" y="250" width="91.66666666666667" height="40" rx="6" fill="#c9a6f5" fill-opacity="0.8" stroke="none"/><text x="750" y="238" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">20万</text><text x="750" y="326" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">5年目</text><rect x="870.8333333333333" y="250" width="91.66666666666667" height="40" rx="6" fill="#c9a6f5" fill-opacity="0.8" stroke="none"/><text x="916.6666666666666" y="238" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">20万</text><text x="916.6666666666666" y="326" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">6年目</text><path d="M0 290 H1000" stroke="#9aa3ad" stroke-width="2"/>
+        hide:
+          - bad
+  - board: whiteboard
+    steps:
+      - say: 3級の計算方法は、定額法です。取得原価から残存価額を引いて、耐用年数でわります。毎年同じ金額になります。
+        read: さんきゅうの計算方法は、ていがくほうです。しゅとくげんかから残存価額を引いて、耐用年数でわります。毎年同じ金額になります。
+        show:
+          - type: title
+            text: 定額法
+          - type: box
+            w: 1100
+            text: 1年分 ＝（取得原価 − 残存価額）÷ 耐用年数
+            color: yellow
+            at:
+              - 80
+              - 160
+      - say: 残存価額は、使い終わったときに残る価値です。トラックの例では、残存価額ゼロ、耐用年数6年なら、120万わる6で、1年20万円です。
+        show:
+          - type: box
+            w: 1100
+            text: （120万 − 0）÷ 6年 ＝ **20万円**
+            color: green
+            at:
+              - 80
+              - 300
+  - board: whiteboard
+    steps:
+      - say: 記帳の方法は、間接法です。トラックの金額は減らさずに、減価償却累計額という科目を、右側に積み上げていきます。
+        read: 記帳の方法は、かんせつほうです。トラックの金額は減らさずに、げんかしょうきゃく累計額という科目を、右側に積み上げていきます。
+        show:
+          - type: title
+            text: 間接法
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 150
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">減価償却費</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">車両運搬具減価償却累計額</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text>
+      - say: 2年たつと、累計額は40万円。帳簿上の価値は、120万ひく40万で、80万円です。いくらで買って、どれだけ古くなったかが、両方わかるのが間接法の良いところです。
+        read: 2年たつと、累計額は40万円。帳簿上の価値は、120万ひく40万で、80万円です。いくらで買って、どれだけ古くなったかが、両方わかるのがかんせつほうの良いところです。
+        show:
+          - type: svg
+            w: 1080
+            h: 168
+            at:
+              - 80
+              - 320
+            anim: fade
+            markup: <text x="260" y="32" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">車両運搬具</text><path d="M0 48 H520 M260 48 V164" stroke="#8fc4ff" stroke-width="4"/><text x="10" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">取得</text><text x="248" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">1,200,000</text><text x="820" y="32" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="middle">減価償却累計額</text><path d="M560 48 H1080 M820 48 V164" stroke="#f4a3b8" stroke-width="4"/><text x="830" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">1年目</text><text x="1068" y="88" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text><text x="830" y="132" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">2年目</text><text x="1068" y="132" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text>
+  - board: whiteboard
+    steps:
+      - say: 期の途中で買ったときは、使った月数分だけにします。12月1日に、60万円の備品を買いました。耐用年数5年、決算日は3月31日です。
+        show:
+          - type: title
+            text: 期中に買ったとき
+          - type: svg
+            w: 1100
+            h: 200
+            at:
+              - 90
+              - 160
+            anim: fade
+            markup: <rect x="2" y="60" width="362.6666666666667" height="90" rx="10" fill="#c9a6f5" fill-opacity="0.2" stroke="#c9a6f5" stroke-width="3"/><text x="183.33333333333334" y="112" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">使った4か月</text><rect x="368.6666666666667" y="60" width="729.3333333333334" height="90" rx="10" fill="#9aa3ad" fill-opacity="0.2" stroke="#9aa3ad" stroke-width="3"/><text x="733.3333333333334" y="112" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">来期以降</text><path d="M2 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="2" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">12月1日</text><path d="M366.66666666666663 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="366.66666666666663" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">3月31日 決算</text>
+      - say: 1年分は12万円。使ったのは12月から3月の4か月なので、12万かける12分の4で、4万円です。買った月も1か月に数えます。そして、土地は価値が減らないので、減価償却しません。
+        read: 1年分は12万円。使ったのは12月から3月の4か月なので、12万かける12分の4で、4万円です。買った月も1か月に数えます。そして、土地は価値が減らないので、げんかしょうきゃくしません。
+        show:
+          - type: box
+            w: 1100
+            text: |-
+              60万 ÷ 5年 × 4/12 ＝ **4万円**
+              **買った月も数える**／**土地は償却しない**
+            color: yellow
+            at:
+              - 80
+              - 420

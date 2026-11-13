@@ -1,0 +1,49 @@
+title: 差入保証金と支払手数料
+scenes:
+  - board: whiteboard
+    steps:
+      - say: お店を借りるときに払うお金を、整理しましょう。家賃、敷金、仲介手数料です。
+        show:
+          - type: title
+            text: 店舗を借りるとき
+      - say: 家賃は支払家賃、費用です。不動産会社への仲介手数料は、支払手数料、費用です。そして敷金は、退去するときに戻ってくるお金なので、差入保証金という資産にします。
+        read: 家賃は支払家賃、費用です。不動産会社への仲介手数料は、支払手数料、費用です。そして敷金は、退去するときに戻ってくるお金なので、さしいれほしょうきんという資産にします。
+        show:
+          - type: svg
+            w: 1100
+            h: 232
+            at:
+              - 90
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="228" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V230" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">支払家賃</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">普通預金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">400,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">差入保証金</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="20" y="206" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">支払手数料</text><text x="530" y="206" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text><text x="570" y="206" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="206" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text>
+      - say: 戻ってくるお金は資産、戻ってこないお金は費用。これが判断の基準です。
+        show:
+          - type: tag
+            text: 戻ってくる → 資産
+            color: yellow
+            at:
+              - 860
+              - 52
+  - board: whiteboard
+    steps:
+      - say: 注意したいのは、土地や建物を買ったときの仲介手数料です。この場合は、支払手数料ではなく、土地や建物の金額に含めます。次の章で学ぶ、付随費用です。
+        show:
+          - type: title
+            text: 借りる？買う？
+          - type: box
+            w: 560
+            text: ・仲介手数料 → **支払手数料**
+            title: 部屋を借りる
+            color: pink
+            at:
+              - 60
+              - 220
+          - type: box
+            w: 560
+            text: ・仲介手数料 → **土地・建物に含める**
+            title: 土地・建物を買う
+            color: blue
+            at:
+              - 660
+              - 220

@@ -1,0 +1,74 @@
+title: 固定資産の売却
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 固定資産を売ったときは、帳簿価額と、売った値段をくらべます。帳簿価額は、取得原価から減価償却累計額を引いた金額です。
+        read: 固定資産を売ったときは、帳簿価額と、売った値段をくらべます。帳簿価額は、しゅとくげんかからげんかしょうきゃく累計額を引いた金額です。
+        show:
+          - type: title
+            text: 売却のしかた
+          - type: box
+            w: 1100
+            text: 帳簿価額 ＝ 取得原価 − 減価償却累計額
+            color: yellow
+            at:
+              - 80
+              - 160
+      - say: 帳簿価額より高く売れたら固定資産売却益、安かったら固定資産売却損です。
+        show:
+          - type: box
+            w: 560
+            text: ・**固定資産売却益**（収益）
+            title: 売却価額 ＞ 帳簿価額
+            color: green
+            at:
+              - 60
+              - 300
+          - type: box
+            w: 560
+            text: ・**固定資産売却損**（費用）
+            title: 売却価額 ＜ 帳簿価額
+            color: pink
+            at:
+              - 660
+              - 300
+  - board: whiteboard
+    steps:
+      - say: 例です。取得原価120万円、累計額40万円の車を、期首に90万円で売り、代金は月末に受け取ることにしました。
+        read: 例です。しゅとくげんか120万円、累計額40万円の車を、きしゅに90万円で売り、代金は月末に受け取ることにしました。
+        show:
+          - type: title
+            text: 仕訳の例
+      - say: 帳簿価額は80万円。90万円で売れたので、10万円の売却益です。車と累計額の両方を消して、代金は未収入金にします。
+        read: 帳簿価額は80万円。90万円で売れたので、10万円の売却益です。車と累計額の両方を消して、代金はみしゅうにゅうきんにします。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">車両運搬具減価償却累計額</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">400,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">車両運搬具</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">1,200,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">未収入金</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">900,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">固定資産売却益</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">100,000</text>
+  - board: whiteboard
+    steps:
+      - say: 解き方のコツです。まず固定資産を右に書いて消す。累計額を左に書いて消す。期の途中なら、当期の減価償却費を左に書く。受け取ったお金を左に書く。
+        read: 解き方のコツです。まず固定資産を右に書いて消す。累計額を左に書いて消す。期の途中なら、当期のげんかしょうきゃく費を左に書く。受け取ったお金を左に書く。
+        show:
+          - type: title
+            text: 解き方のコツ
+          - type: list
+            items:
+              - ① 固定資産を**右**に（取得原価）
+              - ② 累計額を**左**に
+              - ③ 期中なら当期の減価償却費を**左**に
+              - ④ 受け取ったお金を**左**に
+              - ⑤ **差額**が売却益（右）か売却損（左）
+      - say: そして最後に、左右の差額が、売却益か売却損になります。差額で出せば、計算ミスが減ります。
+        show:
+          - type: tag
+            text: 差額で出す
+            color: yellow
+            at:
+              - 940
+              - 52

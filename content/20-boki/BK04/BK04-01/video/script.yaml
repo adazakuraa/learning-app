@@ -1,0 +1,77 @@
+title: 約束手形
+scenes:
+  - board: slide
+    steps:
+      - say: 第4章は、「手形と電子記録債権」です。掛けより確実に代金を回収する方法を学びます。
+        read: 第4章は、「てがたと電子記録債権」です。掛けより確実に代金を回収する方法を学びます。
+        show:
+          - type: title
+            text: 第4章　手形と電子記録債権
+          - type: list
+            items:
+              - 約束手形
+              - 電子記録債権・電子記録債務
+              - 手形貸付金・手形借入金
+  - board: whiteboard
+    steps:
+      - say: 約束手形は、何月何日に、この金額を払います、と約束する証券です。期日に払えないと不渡りになり、会社の信用が大きく傷つくので、掛けより確実に代金を回収できます。
+        read: 約束てがたは、何月何日に、この金額を払います、と約束する証券です。期日に払えないと不渡りになり、会社の信用が大きく傷つくので、掛けより確実に代金を回収できます。
+        show:
+          - type: title
+            text: 約束手形
+      - say: 手形を振り出した、つまり書いて渡した側は、支払手形、負債です。受け取った側は、受取手形、資産です。
+        read: てがたをふりだした、つまり書いて渡した側は、支払てがた、負債です。受け取った側は、受取てがた、資産です。
+        show:
+          - type: box
+            w: 560
+            text: ・**支払手形**（負債）
+            title: 振り出した側
+            color: pink
+            at:
+              - 60
+              - 260
+          - type: box
+            w: 560
+            text: ・**受取手形**（資産）
+            title: 受け取った側
+            color: blue
+            at:
+              - 660
+              - 260
+  - board: whiteboard
+    steps:
+      - say: 商品20万円を仕入れて、約束手形を振り出しました。
+        read: 商品20万円をしいれれて、約束てがたをふりだしました。
+        show:
+          - type: title
+            text: 仕訳の例
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 140
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">仕入</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">支払手形</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text>
+      - say: 商品30万円を売って、相手が振り出した約束手形を受け取りました。
+        read: 商品30万円を売って、相手がふりだした約束てがたを受け取りました。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 290
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">受取手形</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売上</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text>
+      - say: 期日に当座預金で決済されたら、それぞれの手形を消します。売掛金と受取手形、買掛金と支払手形が、それぞれペアだと考えると覚えやすいです。
+        read: 期日に当座預金で決済されたら、それぞれのてがたを消します。うりかけきんと受取てがた、かいかけきんと支払てがたが、それぞれペアだと考えると覚えやすいです。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 440
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">支払手形</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">当座預金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text>

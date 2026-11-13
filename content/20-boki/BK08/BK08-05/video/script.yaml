@@ -1,0 +1,67 @@
+title: 商品有高帳（移動平均法）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 2つ目の方法が、移動平均法です。仕入れるたびに、平均の単価を計算し直します。
+        read: 2つ目の方法が、いどうへいきんほうです。しいれれるたびに、平均の単価を計算し直します。
+        show:
+          - type: title
+            text: 移動平均法
+      - say: 同じ例で計算します。残高10個で千円、仕入20個で2600円。合わせて30個、3600円なので、平均単価は3600わる30で、120円です。
+        read: 同じ例で計算します。残高10個で千円、しいれ20個で2600円。合わせて30個、3600円なので、平均単価は3600わる30で、120円です。
+        show:
+          - type: svg
+            w: 1000
+            h: 134
+            at:
+              - 130
+              - 220
+            anim: fade
+            markup: <rect x="2" y="2" width="296" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="150" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">残高</text><text x="150" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">10個 1,000円</text><path d="M308 65 L342 65 M330 55 L342 65 L330 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="352" y="2" width="296" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="500" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">仕入</text><text x="500" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">20個 2,600円</text><path d="M658 65 L692 65 M680 55 L692 65 L680 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="702" y="2" width="296" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="850" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">30個 3,600円</text><text x="850" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">→ @120</text>
+      - say: 25個を売ったら、単価120円で払い出します。売上原価は3000円、残高は5個で600円です。
+        show:
+          - type: box
+            w: 1100
+            text: 払出 25個×@120 ＝ **3,000**　残高 5個×@120 ＝ **600**
+            color: yellow
+            at:
+              - 80
+              - 430
+  - board: whiteboard
+    steps:
+      - say: 先入先出法とくらべてみましょう。売上原価は2950円と3000円、売上総利益は2050円と2000円になります。
+        read: さきいれさきだしほうとくらべてみましょう。売上原価は2950円と3000円、売上総利益は2050円と2000円になります。
+        show:
+          - type: title
+            text: 2つの方法の比較
+          - type: box
+            w: 560
+            text: |-
+              ・売上原価 2,950
+              ・売上総利益 2,050
+              ・残高 650
+            title: 先入先出法
+            color: blue
+            at:
+              - 60
+              - 170
+          - type: box
+            w: 560
+            text: |-
+              ・売上原価 3,000
+              ・売上総利益 2,000
+              ・残高 600
+            title: 移動平均法
+            color: green
+            at:
+              - 660
+              - 170
+      - say: 移動平均法のコツは、仕入のたびに、金額の合計と数量の合計を出して割ること。売ったときは単価は変わりません。試験では、月末の残高や売上総利益まで答えさせることが多いので、最後まで計算しましょう。
+        read: いどうへいきんほうのコツは、しいれのたびに、金額の合計と数量の合計を出して割ること。売ったときは単価は変わりません。試験では、月末の残高や売上総利益まで答えさせることが多いので、最後まで計算しましょう。
+        show:
+          - type: text
+            text: 仕入のたびに「金額合計 ÷ 数量合計」
+            color: yellow
+            at:
+              - 80
+              - 480

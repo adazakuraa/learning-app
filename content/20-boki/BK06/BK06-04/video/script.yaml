@@ -1,0 +1,53 @@
+title: 修繕費と資本的支出
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 固定資産を修理したり、改良したりしたときは、費用にするか、資産に加えるかを区別します。
+        show:
+          - type: title
+            text: 修繕費と資本的支出
+      - say: 壊れたところを元に戻す修理は、修繕費という費用です。一方、エレベーターをつける、耐震補強をするなど、価値を高めたり、長く使えるようにしたりする支出は、資本的支出といって、建物などの資産に加えます。
+        read: 壊れたところを元に戻す修理は、修繕費という費用です。一方、エレベーターをつける、耐震補強をするなど、価値を高めたり、長く使えるようにしたりする支出は、しほんてきししゅつといって、建物などの資産に加えます。
+        show:
+          - type: box
+            w: 560
+            text: |-
+              ・窓ガラスの交換・塗り直し
+              ・→ **修繕費**（費用）
+            title: 元に戻す
+            color: pink
+            at:
+              - 60
+              - 200
+          - type: box
+            w: 560
+            text: |-
+              ・増築・耐震補強・エレベーター
+              ・→ **建物に加える**（資産）
+            title: パワーアップ
+            color: blue
+            at:
+              - 660
+              - 200
+  - board: whiteboard
+    steps:
+      - say: 例です。改修工事100万円のうち、70万円は耐震補強、30万円は壁の塗り直しでした。
+        show:
+          - type: title
+            text: 仕訳の例
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">建物</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">700,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">普通預金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">1,000,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">修繕費</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text>
+      - say: 元に戻すなら費用、パワーアップなら資産。覚え方はこれだけです。
+        show:
+          - type: tag
+            text: 元に戻す→費用　パワーアップ→資産
+            color: yellow
+            at:
+              - 620
+              - 52

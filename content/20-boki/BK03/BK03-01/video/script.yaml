@@ -1,0 +1,93 @@
+title: 三分法（仕入と売上）
+scenes:
+  - board: slide
+    steps:
+      - say: 第3章は、「商品売買」です。お店の本業である、商品の仕入と販売の記録を学びます。
+        read: 第3章は、「商品売買」です。お店の本業である、商品のしいれと販売の記録を学びます。
+        show:
+          - type: title
+            text: 第3章　商品売買
+          - type: list
+            items:
+              - 三分法
+              - 掛け取引と返品
+              - 仕入諸掛・発送費
+              - 前払金・前受金
+              - クレジット売掛金
+              - 受取商品券
+  - board: whiteboard
+    steps:
+      - say: 3級では、商品の売り買いを、三分法という方法で記録します。使う科目は3つ。仕入、売上、繰越商品です。
+        read: さんきゅうでは、商品の売り買いを、さんぶんぽうという方法で記録します。使う科目は3つ。しいれ、売上、くりこし商品です。
+        show:
+          - type: title
+            text: 三分法
+          - type: svg
+            w: 1000
+            h: 134
+            at:
+              - 130
+              - 190
+            anim: fade
+            markup: <rect x="2" y="2" width="296" height="126" rx="14" fill="#c9a6f5" fill-opacity="0.15" stroke="#c9a6f5" stroke-width="3"/><text x="150" y="58" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">仕入</text><text x="150" y="90" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">（費用）</text><rect x="352" y="2" width="296" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="500" y="58" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">売上</text><text x="500" y="90" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">（収益）</text><rect x="702" y="2" width="296" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="850" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">繰越商品</text><text x="850" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">（資産）</text>
+      - say: 仕入と売上は、毎日の取引で使います。繰越商品は、決算のときだけ使います。
+        read: しいれと売上は、毎日の取引で使います。くりこし商品は、決算のときだけ使います。
+        show:
+          - type: text
+            text: 繰越商品は**決算**のときだけ
+            color: yellow
+            at:
+              - 130
+              - 380
+  - board: whiteboard
+    steps:
+      - say: なぜ三分法なのでしょうか。千円で仕入れて千五百円で売ったら、もうけは五百円です。でも、毎回、この商品の原価はいくらだったかを調べるのは大変です。
+        read: なぜさんぶんぽうなのでしょうか。千円でしいれれて千五百円で売ったら、もうけは五百円です。でも、毎回、この商品の原価はいくらだったかを調べるのは大変です。
+        show:
+          - type: title
+            text: なぜ三分法？
+      - say: そこで、期中は、買った金額と売った金額をそのまま記録して、もうけの計算は、決算でまとめて行います。
+        show:
+          - type: box
+            w: 1100
+            text: |-
+              期中：**買った値段・売った値段のまま**記録
+              決算：まとめて**もうけを計算**
+            color: yellow
+            at:
+              - 80
+              - 250
+  - board: whiteboard
+    steps:
+      - say: 仕訳です。商品6万円を現金で仕入れました。仕入は費用なので左です。
+        read: しわけです。商品6万円を現金でしいれれました。しいれは費用なので左です。
+        show:
+          - type: title
+            text: 仕訳の例
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 160
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">仕入</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">60,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">現金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">60,000</text>
+      - say: 原価4万円の商品を、7万円で売りました。売上には、売った値段の7万円を書きます。原価の4万円は、ここでは使いません。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 330
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">現金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">70,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売上</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">70,000</text>
+      - say: 買ったら仕入、売ったら売上。どちらも値段そのまま。これが三分法です。
+        read: 買ったらしいれ、売ったら売上。どちらも値段そのまま。これがさんぶんぽうです。
+        show:
+          - type: tag
+            text: 値段そのまま
+            color: yellow
+            at:
+              - 940
+              - 52

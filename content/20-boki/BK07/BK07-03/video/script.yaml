@@ -1,0 +1,53 @@
+title: 法人税等
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 会社のもうけにかかる、法人税、住民税、事業税は、まとめて法人税等という科目で処理します。
+        show:
+          - type: title
+            text: 法人税等
+      - say: 国は、1年分をまとめて払わせると負担が大きいので、期の途中で、半分ほどを先に納めさせます。これを中間納付といいます。
+        show:
+          - type: svg
+            w: 1100
+            h: 200
+            at:
+              - 90
+              - 230
+            anim: fade
+            markup: <rect x="2" y="60" width="546" height="90" rx="10" fill="#8fc4ff" fill-opacity="0.2" stroke="#8fc4ff" stroke-width="3"/><text x="275" y="96" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">中間納付</text><text x="275" y="128" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">仮払法人税等 20万</text><rect x="552" y="60" width="546" height="90" rx="10" fill="#f4a3b8" fill-opacity="0.2" stroke="#f4a3b8" stroke-width="3"/><text x="825" y="96" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">決算で確定 45万</text><text x="825" y="128" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">残り25万は未払法人税等</text><path d="M2 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="2" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">期首</text><path d="M550 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="550" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">中間</text><path d="M1098 44 V166" stroke="#eef0ea" stroke-width="3" stroke-dasharray="8 6"/><text x="1098" y="32" font-size="24" fill="#f3d77a" stroke="none" text-anchor="middle">決算</text>
+  - board: whiteboard
+    steps:
+      - say: 中間納付の時点では、1年分の金額は決まっていないので、仮払法人税等という資産にします。
+        read: 中間納付の時点では、1年分の金額は決まっていないので、かりばらい法人税等という資産にします。
+        show:
+          - type: title
+            text: 仕訳の流れ
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 140
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">仮払法人税等</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">普通預金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text>
+      - say: 決算で、1年分が45万円と決まりました。法人税等45万円を計上して、仮払分20万円を消し、残りの25万円を未払法人税等にします。
+        read: 決算で、1年分が45万円と決まりました。法人税等45万円を計上して、かりばらい分20万円を消し、残りの25万円をみばらい法人税等にします。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 300
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">法人税等</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">450,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">仮払法人税等</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">200,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">未払法人税等</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">250,000</text>
+      - say: 前払いは仮払、確定は法人税等、残りは未払。この流れで覚えましょう。
+        read: まえばらいいはかりばらい、確定は法人税等、残りはみばらい。この流れで覚えましょう。
+        show:
+          - type: tag
+            text: 仮払 → 法人税等 → 未払
+            color: yellow
+            at:
+              - 820
+              - 52

@@ -1,0 +1,84 @@
+title: 貸倒れと貸倒引当金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 得意先が倒産するなどして、売掛金が回収できなくなることを、貸倒れといいます。
+        read: 得意先が倒産するなどして、うりかけきんが回収できなくなることを、かしだおれれといいます。
+        show:
+          - type: title
+            text: 貸倒引当金とは
+      - say: 当期に売った代金が、来期に回収できなくなっても、その損失は、売上を計上した当期の責任です。そこで、決算で、来期以降の貸倒れに備えて、先に費用にしておきます。
+        read: 当期に売った代金が、来期に回収できなくなっても、その損失は、売上を計上した当期の責任です。そこで、決算で、来期以降のかしだおれれに備えて、先に費用にしておきます。
+        show:
+          - type: box
+            w: 1100
+            text: 来期の貸倒れに備えて、**当期に先に費用にする**
+            color: yellow
+            at:
+              - 80
+              - 200
+      - say: この備えを、貸倒引当金といいます。資産のマイナスで、費用は貸倒引当金繰入です。
+        read: この備えを、かしだおれ引当金といいます。資産のマイナスで、費用はかしだおれ引当金くりいれです。
+        show:
+          - type: tag
+            text: 費用：貸倒引当金繰入
+            color: purple
+            at:
+              - 840
+              - 52
+  - board: whiteboard
+    steps:
+      - say: 3級は、差額補充法です。必要な額と、今残っている額の、差額だけを繰り入れます。
+        read: さんきゅうは、差額補充法です。必要な額と、今残っている額の、差額だけを繰り入れます。
+        show:
+          - type: title
+            text: 差額補充法
+      - say: 例です。売掛金50万円に2パーセント、必要額は1万円。今の残高は3千円なので、繰り入れるのは差額の7千円です。
+        read: 例です。うりかけきん50万円に2パーセント、必要額は1万円。今の残高は3千円なので、繰り入れるのは差額の7千円です。
+        show:
+          - type: svg
+            w: 900
+            h: 320
+            at:
+              - 190
+              - 160
+            anim: fade
+            markup: <rect x="0" y="3" width="435" height="314" rx="12" fill="#f4a3b8" fill-opacity="0.18" stroke="#f4a3b8" stroke-width="3"/><text x="217.5" y="152" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="middle">必要額</text><text x="217.5" y="188" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="middle">10,000</text><rect x="465" y="3" width="435" height="218" rx="12" fill="#c9a6f5" fill-opacity="0.18" stroke="#c9a6f5" stroke-width="3"/><text x="682.5" y="104" font-size="30" fill="#c9a6f5" stroke="none" text-anchor="middle">繰入</text><text x="682.5" y="140" font-size="30" fill="#c9a6f5" stroke="none" text-anchor="middle">7,000</text><rect x="465" y="227" width="435" height="90" rx="12" fill="#9aa3ad" fill-opacity="0.18" stroke="#9aa3ad" stroke-width="3"/><text x="682.5" y="264" font-size="30" fill="#9aa3ad" stroke="none" text-anchor="middle">残高</text><text x="682.5" y="300" font-size="30" fill="#9aa3ad" stroke="none" text-anchor="middle">3,000</text>
+      - say: 仕訳はこうなります。もし残高の方が多ければ、多すぎる分を戻して、貸倒引当金戻入という収益にします。
+        read: しわけはこうなります。もし残高の方が多ければ、多すぎる分を戻して、かしだおれ引当金もどしいれという収益にします。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 520
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">貸倒引当金繰入</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">7,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">貸倒引当金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">7,000</text>
+  - board: whiteboard
+    steps:
+      - say: 実際に貸し倒れたときは、いつの売掛金かで処理が変わります。前期以前の売掛金なら、まず貸倒引当金を取り崩し、足りない分は貸倒損失です。
+        read: 実際に貸し倒れたときは、いつのうりかけきんかで処理が変わります。前期以前のうりかけきんなら、まずかしだおれ引当金を取り崩し、足りない分はかしだおれ損失です。
+        show:
+          - type: title
+            text: 貸し倒れたとき
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 180
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">貸倒引当金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売掛金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">貸倒損失</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">10,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text>
+      - say: 当期の売掛金なら、まだ引当金を作っていないので、全額を貸倒損失にします。前期の売掛金は引当金、当期の売掛金は貸倒損失。ここがよく問われます。
+        read: 当期のうりかけきんなら、まだ引当金を作っていないので、全額をかしだおれ損失にします。前期のうりかけきんは引当金、当期のうりかけきんはかしだおれ損失。ここがよく問われます。
+        show:
+          - type: box
+            w: 1100
+            text: |-
+              前期の売掛金 → **貸倒引当金**を使う
+              当期の売掛金 → 全額**貸倒損失**
+            color: yellow
+            at:
+              - 80
+              - 410

@@ -1,0 +1,74 @@
+title: 給料の支払い（預り金・立替金・法定福利費）
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 給料の仕訳は、試験によく出ます。会社は、社員の給料から、所得税や社会保険料を差し引いて、社員の代わりに国などへ納めます。
+        read: 給料のしわけは、試験によく出ます。会社は、社員の給料から、所得税や社会保険料を差し引いて、社員の代わりに国などへ納めます。
+        show:
+          - type: title
+            text: 給料の支払い
+      - say: 差し引いた時点では、まだ納めていないので、会社が一時的に預かっているお金です。だから、預り金という負債にします。
+        read: 差し引いた時点では、まだ納めていないので、会社が一時的に預かっているお金です。だから、あずかりきんという負債にします。
+        show:
+          - type: tag
+            text: 天引き分＝預り金（負債）
+            color: pink
+            at:
+              - 800
+              - 52
+      - say: 例です。給料30万円から、所得税2万円、社会保険料4万円を差し引いて、残りを普通預金から払いました。
+        show:
+          - type: svg
+            w: 520
+            h: 208
+            at:
+              - 80
+              - 150
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">給料30万円の内訳</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">所得税 2万円 → 預り金</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">社会保険料 4万円 → 預り金</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">手取り 24万円 → 普通預金</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: 左には、給料の総額30万円。右には、差し引いた預り金と、実際に払った24万円を書きます。
+        read: 左には、給料の総額30万円。右には、差し引いたあずかりきんと、実際に払った24万円を書きます。
+        show:
+          - type: title
+            text: 仕訳
+          - type: svg
+            w: 1100
+            h: 232
+            at:
+              - 90
+              - 150
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="228" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V230" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">給料</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">所得税預り金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">20,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">社会保険料預り金</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">40,000</text><text x="20" y="206" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="206" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="206" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">普通預金</text><text x="1080" y="206" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">240,000</text>
+      - say: 社会保険料を納めるときは、社員から預かった分と、同じ額の会社負担分を一緒に払います。会社負担分は、法定福利費という費用です。
+        read: 社会保険料を納めるときは、社員から預かった分と、同じ額の会社負担分を一緒に払います。会社負担分は、ほうていふくりひという費用です。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 420
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">社会保険料預り金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">40,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">普通預金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">80,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">法定福利費</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">40,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text>
+  - board: whiteboard
+    steps:
+      - say: 社員が個人で払うべきものを、会社が立て替えたときは、従業員立替金という資産です。給料から差し引いて返してもらいます。
+        read: 社員が個人で払うべきものを、会社が立て替えたときは、従業員たてかえきんという資産です。給料から差し引いて返してもらいます。
+        show:
+          - type: title
+            text: 立替金
+      - say: 預り金は後で払うので負債、立替金は後でもらうので資産。給料の仕訳は、左に総額、右に差し引いたものと手取り、と覚えましょう。
+        read: あずかりきんは後で払うので負債、たてかえきんは後でもらうので資産。給料のしわけは、左に総額、右に差し引いたものと手取り、と覚えましょう。
+        show:
+          - type: box
+            w: 1100
+            text: |-
+              **預り金**＝後で払う（負債）　**立替金**＝後でもらう（資産）
+              給料：左に**総額**、右に**差し引き分＋手取り**
+            color: yellow
+            at:
+              - 80
+              - 230

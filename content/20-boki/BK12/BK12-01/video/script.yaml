@@ -1,0 +1,81 @@
+title: 精算表
+scenes:
+  - board: slide
+    steps:
+      - say: 第12章は、「精算表と財務諸表」です。決算の最後の仕上げを学びます。
+        read: 第12章は、「せいさんひょうと財務諸表」です。決算の最後の仕上げを学びます。
+        show:
+          - type: title
+            text: 第12章　精算表と財務諸表
+          - type: list
+            items:
+              - 精算表
+              - 損益計算書と貸借対照表の作成
+              - 帳簿の締め切り
+              - 再振替仕訳
+  - board: whiteboard
+    steps:
+      - say: 精算表は、決算の流れを1枚の表にまとめたものです。3級は8桁精算表。残高試算表、修正記入、損益計算書、貸借対照表の4つの欄に、それぞれ借方と貸方があります。
+        read: せいさんひょうは、決算の流れを1枚の表にまとめたものです。さんきゅうは8桁せいさんひょう。残高しさんひょう、修正記入、そんえき計算書、貸借対照表の4つの欄に、それぞれかりかたとかしかたがあります。
+        show:
+          - type: title
+            text: 8桁精算表
+          - type: svg
+            w: 1200
+            h: 134
+            at:
+              - 40
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="258.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="131.25" y="74" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">残高試算表</text><path d="M270.5 65 L304.5 65 M292.5 55 L304.5 65 L292.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="314.5" y="2" width="258.5" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="443.75" y="58" font-size="22" fill="#f3a76a" stroke="none" text-anchor="middle">修正記入</text><text x="443.75" y="90" font-size="22" fill="#f3a76a" stroke="none" text-anchor="middle">（決算整理）</text><path d="M583 65 L617 65 M605 55 L617 65 L605 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="627" y="2" width="258.5" height="126" rx="14" fill="#c9a6f5" fill-opacity="0.15" stroke="#c9a6f5" stroke-width="3"/><text x="756.25" y="58" font-size="22" fill="#c9a6f5" stroke="none" text-anchor="middle">損益計算書</text><text x="756.25" y="90" font-size="22" fill="#c9a6f5" stroke="none" text-anchor="middle">収益・費用</text><path d="M895.5 65 L929.5 65 M917.5 55 L929.5 65 L917.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="939.5" y="2" width="258.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="1068.75" y="58" font-size="22" fill="#8fc4ff" stroke="none" text-anchor="middle">貸借対照表</text><text x="1068.75" y="90" font-size="22" fill="#8fc4ff" stroke="none" text-anchor="middle">資産・負債・純資産</text>
+  - board: whiteboard
+    steps:
+      - say: 書き方です。決算整理仕訳を修正記入欄に書いて、残高試算表の金額に足し引きします。同じ側なら足す、反対側なら引きます。
+        read: 書き方です。決算整理しわけを修正記入欄に書いて、残高しさんひょうの金額に足し引きします。同じ側なら足す、反対側なら引きます。
+        show:
+          - type: title
+            text: 書き方
+      - say: たとえば仕入。残高試算表の借方30万円に、修正記入の借方2万円を足し、貸方3万円を引いて、29万円。これを損益計算書の借方に書きます。
+        read: たとえばしいれ。残高しさんひょうのかりかた30万円に、修正記入のかりかた2万円を足し、かしかた3万円を引いて、29万円。これをそんえき計算書のかりかたに書きます。
+        show:
+          - type: box
+            w: 1100
+            text: 仕入：300,000 ＋ 20,000 − 30,000 ＝ **290,000** → 損益計算書へ
+            color: yellow
+            at:
+              - 80
+              - 200
+      - say: 収益と費用は損益計算書の欄へ、資産、負債、純資産は貸借対照表の欄へ。貸倒引当金や減価償却累計額は、貸借対照表の貸方に書きます。
+        read: 収益と費用はそんえき計算書の欄へ、資産、負債、純資産は貸借対照表の欄へ。かしだおれ引当金やげんかしょうきゃく累計額は、貸借対照表のかしかたに書きます。
+        show:
+          - type: list
+            items:
+              - 収益・費用 → **損益計算書**欄
+              - 資産・負債・純資産 → **貸借対照表**欄
+              - 貸倒引当金・累計額 → 貸借対照表の**貸方**
+            at:
+              - 80
+              - 330
+  - board: whiteboard
+    steps:
+      - say: 最後に、損益計算書の貸方合計から借方合計を引いて、当期純利益を出します。これを損益計算書の借方と、貸借対照表の貸方に書くと、どちらの欄も左右が合います。
+        read: 最後に、そんえき計算書のかしかた合計からかりかた合計を引いて、当期純利益を出します。これをそんえき計算書のかりかたと、貸借対照表のかしかたに書くと、どちらの欄も左右が合います。
+        show:
+          - type: title
+            text: 当期純利益
+          - type: svg
+            w: 900
+            h: 300
+            at:
+              - 190
+              - 160
+            anim: fade
+            markup: <rect x="0" y="3" width="435" height="224.76923076923077" rx="12" fill="#c9a6f5" fill-opacity="0.18" stroke="#c9a6f5" stroke-width="3"/><text x="217.5" y="125.38461538461539" font-size="30" fill="#c9a6f5" stroke="none" text-anchor="middle">費用</text><rect x="0" y="233.76923076923077" width="435" height="63.230769230769226" rx="12" fill="#9be0b0" fill-opacity="0.18" stroke="#9be0b0" stroke-width="3"/><text x="217.5" y="275.38461538461536" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">当期純利益</text><rect x="465" y="3" width="435" height="294" rx="12" fill="#f3a76a" fill-opacity="0.18" stroke="#f3a76a" stroke-width="3"/><text x="682.5" y="160" font-size="30" fill="#f3a76a" stroke="none" text-anchor="middle">収益</text>
+      - say: 利益は純資産を増やすので、貸借対照表では右に書く、と考えましょう。2つの当期純利益は、必ず同じ金額です。
+        show:
+          - type: text
+            text: P/Lの純利益 ＝ B/Sの純利益
+            color: yellow
+            at:
+              - 80
+              - 520

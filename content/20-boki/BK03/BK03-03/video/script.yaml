@@ -1,0 +1,74 @@
+title: 仕入諸掛・発送費
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 商品を運ぶ運賃などを、諸掛りといいます。仕入のときと、売るときで、処理がちがいます。
+        read: 商品を運ぶ運賃などを、しょがかりりといいます。しいれのときと、売るときで、処理がちがいます。
+        show:
+          - type: title
+            text: 諸掛りとは
+      - say: 仕入のときに当社が払った運賃は、仕入に含めます。商品を手に入れるためにかかったお金は、商品の値段の一部と考えるからです。これを取得原価といいます。
+        read: しいれのときに当社が払った運賃は、しいれに含めます。商品を手に入れるためにかかったお金は、商品の値段の一部と考えるからです。これをしゅとくげんかといいます。
+        show:
+          - type: svg
+            w: 1000
+            h: 134
+            at:
+              - 130
+              - 260
+            anim: fade
+            markup: <rect x="2" y="2" width="296" height="126" rx="14" fill="#c9a6f5" fill-opacity="0.15" stroke="#c9a6f5" stroke-width="3"/><text x="150" y="58" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">商品代金</text><text x="150" y="90" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">50,000</text><path d="M308 65 L342 65 M330 55 L342 65 L330 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="352" y="2" width="296" height="126" rx="14" fill="#c9a6f5" fill-opacity="0.15" stroke="#c9a6f5" stroke-width="3"/><text x="500" y="58" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">＋ 引取運賃</text><text x="500" y="90" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">2,000</text><path d="M658 65 L692 65 M680 55 L692 65 L680 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="702" y="2" width="296" height="126" rx="14" fill="#c9a6f5" fill-opacity="0.15" stroke="#c9a6f5" stroke-width="3"/><text x="850" y="58" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">＝ 仕入</text><text x="850" y="90" font-size="26" fill="#c9a6f5" stroke="none" text-anchor="middle">52,000</text>
+  - board: whiteboard
+    steps:
+      - say: 仕訳です。商品5万円を掛けで仕入れ、引取運賃2千円を現金で払いました。仕入は5万2千円です。
+        read: しわけです。商品5万円を掛けでしいれれ、引取運賃2千円を現金で払いました。しいれは5万2千円です。
+        show:
+          - type: title
+            text: 仕入諸掛（当社負担）
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 170
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">仕入</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">52,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">買掛金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">50,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start"></text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">現金</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">2,000</text>
+      - say: 一方、商品を売るときに当社が払った運賃は、発送費という費用にします。
+        read: 一方、商品を売るときに当社が払った運賃は、はっそうひという費用にします。
+        show:
+          - type: svg
+            w: 1100
+            h: 176
+            at:
+              - 90
+              - 380
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="172" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V174" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">売掛金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">80,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売上</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">80,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">発送費</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">3,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">現金</text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">3,000</text>
+  - board: whiteboard
+    steps:
+      - say: 相手が負担すべき運賃を、当社が立て替えて払ったときは、立替金という資産にします。あとで返してもらえるからです。
+        read: 相手が負担すべき運賃を、当社が立て替えて払ったときは、たてかえきんという資産にします。あとで返してもらえるからです。
+        show:
+          - type: title
+            text: 相手負担の運賃
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 170
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">立替金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">1,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">現金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">1,000</text>
+      - say: ポイントは、当社負担か、先方負担か、を必ず確認すること。買うときの費用は商品の値段に、売るときの費用は発送費に、です。
+        read: ポイントは、当社負担か、先方負担か、を必ず確認すること。買うときの費用は商品の値段に、売るときの費用ははっそうひに、です。
+        show:
+          - type: box
+            w: 1100
+            text: |-
+              買うときの運賃 → **仕入**に含める
+              売るときの運賃 → **発送費**
+              相手負担を立て替え → **立替金**
+            color: yellow
+            at:
+              - 80
+              - 340

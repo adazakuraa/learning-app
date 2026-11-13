@@ -1,0 +1,79 @@
+title: 普通預金・定期預金・当座預金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 預金はすべて資産です。種類ごとに、普通預金、定期預金、当座預金という勘定科目を使います。
+        show:
+          - type: title
+            text: 預金の種類
+          - type: list
+            items:
+              - "**普通預金**：いつでも出し入れ自由"
+              - "**定期預金**：一定期間引き出せない・利息が高め"
+              - "**当座預金**：小切手で支払うための口座・利息なし"
+      - say: 普通預金に利息が入ったときは、受取利息という収益です。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 400
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">普通預金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">受取利息</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">300</text>
+  - board: whiteboard
+    steps:
+      - say: 当座預金は、小切手を使うための口座です。小切手のしくみを見てみましょう。
+        read: 当座預金は、こぎってを使うための口座です。こぎってのしくみを見てみましょう。
+        show:
+          - type: title
+            text: 小切手のしくみ
+      - say: 会社が小切手に金額を書いて相手に渡すと、相手はそれを銀行に持っていき、会社の当座預金からお金を受け取ります。大きなお金を持ち歩かなくてすむので、会社でよく使われます。
+        read: 会社がこぎってに金額を書いて相手に渡すと、相手はそれを銀行に持っていき、会社の当座預金からお金を受け取ります。大きなお金を持ち歩かなくてすむので、会社でよく使われます。
+        show:
+          - type: svg
+            w: 1160
+            h: 134
+            at:
+              - 60
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="349.3333333333333" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="176.66666666666666" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">当社</text><text x="176.66666666666666" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">小切手を書く</text><path d="M361.3333333333333 65 L395.3333333333333 65 M383.3333333333333 55 L395.3333333333333 65 L383.3333333333333 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="405.3333333333333" y="2" width="349.3333333333333" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="580" y="58" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">取引先</text><text x="580" y="90" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">銀行へ持ち込む</text><path d="M764.6666666666666 65 L798.6666666666666 65 M786.6666666666666 55 L798.6666666666666 65 L786.6666666666666 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="808.6666666666666" y="2" width="349.3333333333333" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="983.3333333333333" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">銀行</text><text x="983.3333333333333" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">当社の当座預金から支払う</text>
+  - board: whiteboard
+    steps:
+      - say: 仕訳です。買掛金8万円を払うために、小切手を振り出しました。小切手を書いた時点で、当座預金が減ったものとします。
+        read: しわけです。かいかけきん8万円を払うために、こぎってをふりだしました。こぎってを書いた時点で、当座預金が減ったものとします。
+        show:
+          - type: title
+            text: 仕訳の例
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 160
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">買掛金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">80,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">当座預金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">80,000</text>
+      - say: 前に自分が振り出した小切手が、売掛金の回収として戻ってきたときは、現金ではなく当座預金の増加です。自分の小切手が戻ってきたので、当座預金が減らなかったことになるからです。
+        read: 前に自分がふりだしたこぎってが、うりかけきんの回収として戻ってきたときは、現金ではなく当座預金の増加です。自分のこぎってが戻ってきたので、当座預金が減らなかったことになるからです。
+        show:
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 330
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">当座預金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">売掛金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text>
+      - say: 覚え方は、小切手を書いたら当座預金が減る。他人の小切手は現金、自分の小切手は当座預金、です。
+        read: 覚え方は、こぎってを書いたら当座預金が減る。他人のこぎっては現金、自分のこぎっては当座預金、です。
+        show:
+          - type: box
+            w: 1100
+            text: |-
+              小切手を**書いたら当座預金が減る**
+              他人の小切手 → 現金　自分の小切手 → 当座預金
+            color: yellow
+            at:
+              - 80
+              - 500

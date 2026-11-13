@@ -1,0 +1,54 @@
+title: 小口現金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 切手代や電車代のような、小さな支払いのたびに、会計係がお金を出して記録するのは大変です。
+        show:
+          - type: title
+            text: 小口現金
+      - say: そこで、一定額をまとめて、担当者、小口係に渡しておきます。このお金を小口現金といい、資産です。そして、使った分だけを補給します。この方法を、定額資金前渡法といいます。
+        read: そこで、一定額をまとめて、担当者、こぐち係に渡しておきます。このお金をこぐち現金といい、資産です。そして、使った分だけを補給します。この方法を、定額資金前渡法といいます。
+        show:
+          - type: svg
+            w: 1200
+            h: 134
+            at:
+              - 40
+              - 230
+            anim: fade
+            markup: <rect x="2" y="2" width="258.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="131.25" y="58" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="middle">会計係が</text><text x="131.25" y="90" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="middle">3万円渡す</text><path d="M270.5 65 L304.5 65 M292.5 55 L304.5 65 L292.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="314.5" y="2" width="258.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="443.75" y="58" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">小口係が</text><text x="443.75" y="90" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">少額を支払う</text><path d="M583 65 L617 65 M605 55 L617 65 L605 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="627" y="2" width="258.5" height="126" rx="14" fill="#c9a6f5" fill-opacity="0.15" stroke="#c9a6f5" stroke-width="3"/><text x="756.25" y="58" font-size="24" fill="#c9a6f5" stroke="none" text-anchor="middle">週末に</text><text x="756.25" y="90" font-size="24" fill="#c9a6f5" stroke="none" text-anchor="middle">使った分を報告</text><path d="M895.5 65 L929.5 65 M917.5 55 L929.5 65 L917.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="939.5" y="2" width="258.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="1068.75" y="58" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="middle">使った分を</text><text x="1068.75" y="90" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="middle">補給</text>
+  - board: whiteboard
+    steps:
+      - say: 流れを仕訳で見ます。まず、小切手を振り出して、小口現金3万円を渡しました。
+        read: 流れをしわけで見ます。まず、こぎってをふりだして、こぐち現金3万円を渡しました。
+        show:
+          - type: title
+            text: 仕訳の流れ
+          - type: svg
+            w: 1100
+            h: 120
+            at:
+              - 90
+              - 140
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="116" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V118" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">小口現金</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">当座預金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">30,000</text>
+      - say: 週末に、交通費8千円、消耗品費5千円、通信費2千円を使った、と報告を受けました。費用を記録するのは、この報告を受けたときです。
+        show:
+          - type: svg
+            w: 1100
+            h: 232
+            at:
+              - 90
+              - 290
+            anim: fade
+            markup: <rect x="2" y="2" width="1096" height="228" rx="10" fill="none" stroke="#9aa3ad" stroke-width="2"/><path d="M2 56 H1098 M550 2 V230" stroke="#9aa3ad" stroke-width="2"/><text x="176" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">借方</text><text x="451" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="726" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">貸方</text><text x="1001" y="38" font-size="24" fill="#9aa3ad" stroke="none" text-anchor="middle">金額</text><text x="20" y="94" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">旅費交通費</text><text x="530" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">8,000</text><text x="570" y="94" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start">小口現金</text><text x="1080" y="94" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">15,000</text><text x="20" y="150" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">消耗品費</text><text x="530" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">5,000</text><text x="570" y="150" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="150" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text><text x="20" y="206" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="start">通信費</text><text x="530" y="206" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end">2,000</text><text x="570" y="206" font-size="30" fill="#f4a3b8" stroke="none" text-anchor="start"></text><text x="1080" y="206" font-size="30" fill="#eef0ea" stroke="none" text-anchor="end"></text>
+      - say: 使った分の1万5千円を補給すると、小口現金はまた3万円に戻ります。報告と補給が同時なら、小口現金の増減が消えて、右側は直接、当座預金になります。
+        read: 使った分の1万5千円を補給すると、こぐち現金はまた3万円に戻ります。報告と補給が同時なら、こぐち現金の増減が消えて、右側は直接、当座預金になります。
+        show:
+          - type: box
+            w: 1100
+            text: 報告と同時に補給 → 右側は直接 **当座預金 15,000**
+            color: yellow
+            at:
+              - 80
+              - 560
