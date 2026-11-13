@@ -3,3 +3,8 @@ code: FP04-04
 title: 雇用保険：失業・育休
 order: 4
 summary: 仕事を失ったとき、育児や介護で休むときの給付です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 49
+  narration: VOICEVOX:ずんだもん

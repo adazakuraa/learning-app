@@ -3,3 +3,8 @@ code: FP05-01
 title: 公的年金のしくみ
 order: 1
 summary: 日本の年金は「国民年金」と「厚生年金」の2階建て。老後だけでなく、障害や死亡にも備える保険です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 84
+  narration: VOICEVOX:ずんだもん
