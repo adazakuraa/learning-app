@@ -3,3 +3,8 @@ code: PH00-01
 title: 哲学とは・学ぶ意味
 order: 1
 summary: 哲学で何を学ぶのか、学ぶとどんな場面で役立つのかを紹介します。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 127
+  narration: VOICEVOX:ずんだもん
