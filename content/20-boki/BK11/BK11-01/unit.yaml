@@ -3,3 +3,8 @@ code: BK11-01
 title: 決算の流れと決算整理
 order: 1
 summary: 決算で何をするのか、決算整理が必要な理由と主な決算整理事項を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 77
+  narration: VOICEVOX:ずんだもん

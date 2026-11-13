@@ -3,3 +3,8 @@ code: BK01-05
 title: 勘定・転記と簿記の一巡
 order: 5
 summary: 仕訳を勘定（T字勘定）に転記する方法と、日々の記録から決算までの流れを学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 93
+  narration: VOICEVOX:ずんだもん

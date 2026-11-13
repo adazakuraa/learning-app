@@ -3,3 +3,8 @@ code: BK05-03
 title: 仮払金・仮受金
 order: 3
 summary: 内容や金額が確定していない支払い・入金を一時的に記録する方法を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 53
+  narration: VOICEVOX:ずんだもん

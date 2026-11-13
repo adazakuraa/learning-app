@@ -3,3 +3,8 @@ code: BK07-04
 title: 消費税（税抜方式）
 order: 4
 summary: 消費税の仮払消費税・仮受消費税と、決算での未払消費税を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 62
+  narration: VOICEVOX:ずんだもん

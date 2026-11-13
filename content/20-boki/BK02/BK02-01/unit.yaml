@@ -3,3 +3,8 @@ code: BK02-01
 title: 現金
 order: 1
 summary: 簿記の「現金」に含まれるもの（通貨代用証券）と、現金の仕訳を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 64
+  narration: VOICEVOX:ずんだもん

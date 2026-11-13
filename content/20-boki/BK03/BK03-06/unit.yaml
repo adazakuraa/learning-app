@@ -3,3 +3,8 @@ code: BK03-06
 title: 受取商品券
 order: 6
 summary: 他社などが発行した商品券で代金を受け取ったときの処理を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 51
+  narration: VOICEVOX:ずんだもん

@@ -3,3 +3,8 @@ code: BK11-03
 title: 貸倒れと貸倒引当金
 order: 3
 summary: 売掛金などが回収できなくなる貸倒れと、それに備える貸倒引当金（差額補充法）を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 90
+  narration: VOICEVOX:ずんだもん

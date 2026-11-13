@@ -3,3 +3,8 @@ code: BK05-02
 title: 未収入金・未払金
 order: 2
 summary: 商品以外のものを売り買いしたときの、後払い・後受け取りの処理を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 50
+  narration: VOICEVOX:ずんだもん

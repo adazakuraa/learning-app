@@ -3,3 +3,8 @@ code: BK07-05
 title: 租税公課
 order: 5
 summary: 固定資産税・印紙税・自動車税など、会社が負担する税金の処理を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 37
+  narration: VOICEVOX:ずんだもん

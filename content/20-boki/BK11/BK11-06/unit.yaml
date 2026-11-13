@@ -3,3 +3,8 @@ code: BK11-06
 title: 経過勘定①（前払費用・前受収益）
 order: 6
 summary: 来期の分まで払った・受け取った費用や収益を、決算で除く（繰り延べる）処理を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 74
+  narration: VOICEVOX:ずんだもん

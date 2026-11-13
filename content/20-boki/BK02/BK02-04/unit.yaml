@@ -3,3 +3,8 @@ code: BK02-04
 title: 当座借越
 order: 4
 summary: 当座預金の残高をこえて小切手を振り出したときの当座借越と、決算での振替を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 61
+  narration: VOICEVOX:ずんだもん

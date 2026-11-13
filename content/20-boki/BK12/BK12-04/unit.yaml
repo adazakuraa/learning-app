@@ -3,3 +3,8 @@ code: BK12-04
 title: 再振替仕訳
 order: 4
 summary: 翌期首に、前期の経過勘定や貯蔵品を元の科目に戻す再振替仕訳を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 52
+  narration: VOICEVOX:ずんだもん

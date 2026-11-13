@@ -3,3 +3,8 @@ code: BK11-02
 title: 現金過不足・仮払金などの整理と貯蔵品
 order: 2
 summary: 決算で現金過不足や仮の科目を整理する方法と、未使用の切手・印紙を貯蔵品にする方法を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 64
+  narration: VOICEVOX:ずんだもん

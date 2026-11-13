@@ -3,3 +3,8 @@ code: BK12-01
 title: 精算表
 order: 1
 summary: 決算整理前の試算表から、修正記入をして損益計算書・貸借対照表の欄に分ける精算表（8桁）を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 95
+  narration: VOICEVOX:ずんだもん

@@ -3,3 +3,8 @@ code: BK06-02
 title: 減価償却（定額法・間接法）
 order: 2
 summary: 固定資産の価値の減少を費用にする減価償却を、定額法・間接法で学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 115
+  narration: VOICEVOX:ずんだもん
