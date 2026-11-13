@@ -3,3 +3,8 @@ code: FP10-02
 title: 借入と奨学金
 order: 2
 summary: お金を借りるときは、金利・返済総額・返せるかどうかを必ず確認します。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 56
+  narration: VOICEVOX:ずんだもん

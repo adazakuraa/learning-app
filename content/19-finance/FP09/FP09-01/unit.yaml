@@ -3,3 +3,8 @@ code: FP09-01
 title: 投資とは：リスクとリターン
 order: 1
 summary: 投資の「リスク」は危険という意味ではなく、結果の振れ幅のことです。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 67
+  narration: VOICEVOX:ずんだもん

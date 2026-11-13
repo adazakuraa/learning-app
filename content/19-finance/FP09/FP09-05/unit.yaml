@@ -3,3 +3,8 @@ code: FP09-05
 title: iDeCo（個人型確定拠出年金）
 order: 5
 summary: 自分で作る年金です。掛金が全額所得控除になり、税金が大きく安くなります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 103
+  narration: VOICEVOX:ずんだもん

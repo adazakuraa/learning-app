@@ -3,3 +3,8 @@ code: FP09-08
 title: 外貨・金・暗号資産
 order: 8
 summary: 円以外の資産や、値動きの大きい資産の特徴とリスクを知っておきます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 63
+  narration: VOICEVOX:ずんだもん

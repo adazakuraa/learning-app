@@ -3,3 +3,8 @@ code: FP08-03
 title: 家を買うときのお金
 order: 3
 summary: 物件価格のほかにかかる費用と、住宅ローン控除などの支援制度を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 73
+  narration: VOICEVOX:ずんだもん

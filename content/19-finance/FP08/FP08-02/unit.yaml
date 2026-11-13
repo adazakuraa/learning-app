@@ -3,3 +3,8 @@ code: FP08-02
 title: 住宅ローンのしくみ
 order: 2
 summary: 住宅ローンは人生で最大の借金です。金利のタイプと返し方で、総返済額が大きく変わります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 74
+  narration: VOICEVOX:ずんだもん

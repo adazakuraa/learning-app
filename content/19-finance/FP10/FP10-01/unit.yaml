@@ -3,3 +3,8 @@ code: FP10-01
 title: リボ払いと分割払いの落とし穴
 order: 1
 summary: 毎月の支払いが一定で楽に見えるリボ払いは、高い手数料で残高が減りにくい仕組みです。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 65
+  narration: VOICEVOX:ずんだもん
