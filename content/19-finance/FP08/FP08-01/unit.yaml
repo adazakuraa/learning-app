@@ -3,3 +3,8 @@ code: FP08-01
 title: 持ち家か賃貸か
 order: 1
 summary: どちらが得かは一概に言えません。お金だけでなく、暮らし方やリスクで考えます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 45
+  narration: VOICEVOX:ずんだもん
