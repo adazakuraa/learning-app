@@ -3,3 +3,8 @@ code: FP06-05
 title: 保険のしくみと共済
 order: 5
 summary: 保険料の決まり方、解約返戻金、共済との違いなどを知っておきます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 50
+  narration: VOICEVOX:ずんだもん

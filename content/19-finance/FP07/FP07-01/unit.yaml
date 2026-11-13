@@ -3,3 +3,8 @@ code: FP07-01
 title: 税金の全体像
 order: 1
 summary: 私たちが払う税金の種類と、手取りが決まる仕組みの全体像をつかみます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 60
+  narration: VOICEVOX:ずんだもん
