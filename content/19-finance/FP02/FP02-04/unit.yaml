@@ -3,3 +3,8 @@ code: FP02-04
 title: 預金の種類と預金保険
 order: 4
 summary: 預金にもいくつか種類があります。銀行が破綻しても、一定額までは守られます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 60
+  narration: VOICEVOX:ずんだもん
