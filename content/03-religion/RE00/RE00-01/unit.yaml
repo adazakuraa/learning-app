@@ -3,3 +3,8 @@ code: RE00-01
 title: 宗教とは・学ぶ意味
 order: 1
 summary: 宗教で何を学ぶのか、学ぶとどんな場面で役立つのかを紹介します。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 119
+  narration: VOICEVOX:ずんだもん

@@ -3,3 +3,8 @@ code: BK00-01
 title: 簿記3級とは・学ぶ意味
 order: 1
 summary: 簿記3級で何を学ぶのか、学ぶとどんな場面で役立つのかを紹介します。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 129
+  narration: VOICEVOX:ずんだもん
