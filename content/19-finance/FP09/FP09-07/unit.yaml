@@ -3,3 +3,8 @@ code: FP09-07
 title: 行動経済学：人はなぜ損をするのか
 order: 7
 summary: 人は合理的に判断しているつもりでも、心のくせで損をしがちです。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 52
+  narration: VOICEVOX:ずんだもん

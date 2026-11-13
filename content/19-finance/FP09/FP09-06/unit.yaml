@@ -3,3 +3,8 @@ code: FP09-06
 title: 投資の費用と税金
 order: 6
 summary: 投資の成果は、手数料と税金で大きく変わります。見落としやすいコストを確認します。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 48
+  narration: VOICEVOX:ずんだもん
