@@ -9,6 +9,7 @@ import {
   type Range,
   type UnitProgress,
 } from './model';
+import { emptyH, type HState } from '../hayaoshi';
 import { deviceId, loadLocal, saveLocal } from './storage';
 import { loadConfig, saveConfig, syncWithGitHub, type GitHubConfig } from './github';
 
@@ -24,6 +25,7 @@ type Api = {
   setUnitCompleted: (id: string, completed: boolean) => void;
   addStudyTime: (id: string, seconds: number) => void;
   recordQuiz: (quizId: string, score: number, total: number) => void;
+  setHayaoshi: (fn: (h: HState) => HState) => void;
   importDoc: (doc: ProgressDoc, mode: 'merge' | 'replace') => void;
   sync: SyncState;
   syncNow: () => Promise<void>;
@@ -179,6 +181,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
           };
           return { ...d, quizzes: { ...(d.quizzes ?? {}), [quizId]: r } };
         }, true),
+      setHayaoshi: (fn: (h: HState) => HState) =>
+        update((d) => ({ ...d, hayaoshi: { ...fn(d.hayaoshi ?? emptyH()), updatedAt: Date.now() } }), true),
       importDoc: (incoming: ProgressDoc, mode: 'merge' | 'replace') => update((d) => (mode === 'merge' ? mergeDocs(d, incoming) : incoming), true),
       setGithubConfig: (c: GitHubConfig | null) => {
         saveConfig(c);

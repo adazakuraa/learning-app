@@ -182,7 +182,7 @@ code {
     inset: auto 0 0 0;
     z-index: 20;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: calc(var(--nav-h) + env(safe-area-inset-bottom));
     padding-bottom: env(safe-area-inset-bottom);
     background: color-mix(in srgb, var(--surface) 94%, transparent);
@@ -1198,3 +1198,30 @@ details.chapter .unit-list { border: 0; border-top: 1px solid var(--border); bor
 .quiz-review li.ok .quiz-mark { color: var(--ok); }
 .quiz-review li.ng .quiz-mark { color: #e08a8a; }
 .quiz-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+
+/* ---------- hayaoshi ---------- */
+.hay-stats { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; gap: 8px; }
+.hay-big { font-size: 1.6rem; font-weight: 700; }
+.hay-rules p { margin: 0 0 6px; }
+.hay-rules ul { margin: 0; padding-left: 1.2em; }
+.hay-start { min-height: 56px; font-size: 1.1rem; margin: 6px 0 10px; }
+.hay-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+.hay-points { font-weight: 700; }
+.hay-streak { color: var(--warn); }
+.hay-q p { font-size: 1.2rem; line-height: 1.8; min-height: 5.4em; margin: 0; word-break: break-all; }
+.hay-cursor { color: var(--accent); animation: hay-blink 0.8s steps(1) infinite; }
+@keyframes hay-blink { 50% { opacity: 0; } }
+.hay-mark { display: inline-block; width: 3px; height: 1.1em; background: var(--warn); vertical-align: -0.15em; margin: 0 1px; }
+.hay-buzz { display: block; width: 100%; margin-top: 16px; min-height: 120px; border-radius: 24px; border: none; font-size: 2rem; font-weight: 800; color: #fff; background: radial-gradient(circle at 50% 35%, #ff7a7a, #d63a3a); box-shadow: 0 6px 0 #9c2323; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+.hay-buzz:active { transform: translateY(4px); box-shadow: 0 2px 0 #9c2323; }
+.hay-answer form { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 6px; }
+.hay-timer { height: 8px; border-radius: 4px; background: var(--surface-2); overflow: hidden; }
+.hay-timer span { display: block; height: 100%; background: var(--warn); transition: width 0.1s linear; }
+.hay-fb { margin-top: 12px; }
+.up { color: var(--ok); font-weight: 600; }
+.down { color: #e08a8a; }
+.hay-result { text-align: center; padding: 22px 16px; }
+.hay-result.perfect { box-shadow: inset 0 0 0 2px var(--warn); }
+.hay-score { font-size: 2.6rem; font-weight: 800; animation: quiz-pop 0.6s cubic-bezier(.2, 1.4, .4, 1) both; }
+.hay-badge { margin-left: 8px; padding: 2px 10px; border-radius: 999px; background: var(--warn); color: #222; font-size: 0.8rem; font-weight: 700; }
+.hay-rest { opacity: 0.55; }
