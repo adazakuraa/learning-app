@@ -3,3 +3,8 @@ code: BK05-04
 title: 給料の支払い（預り金・立替金・法定福利費）
 order: 4
 summary: 給料から差し引く所得税・社会保険料の預り金と、立替金・法定福利費を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 79
+  narration: VOICEVOX:ずんだもん
