@@ -208,7 +208,9 @@ function build() {
       if (qMeta?.questions?.length) {
         const qid = `${subject.id}--${chapter.id}`;
         const questions = qMeta.questions.map((q, i) => {
-          const answers = [].concat(q.a ?? []).map(String);
+          const given = [].concat(q.a ?? []).map(String);
+          // also accept the kana reading of kanji answers (e.g. 複利 -> ふくり); explicit readings via `r:`
+          const answers = [...new Set([...given, ...[].concat(q.r ?? []).map(String), ...given.map(kanaReading).filter(Boolean)])];
           if (!q.q || !answers.length) errors.push(`quiz ${qid} question ${i + 1}: needs q and a`);
           return { q: renderInline(String(q.q ?? '')), answers, show: renderInline(String(q.show ?? answers[0] ?? '')), explain: q.explain ? renderInline(String(q.explain)) : '' };
         });
@@ -241,6 +243,20 @@ function build() {
     console.error(errors.map((e) => `  ✗ ${e}`).join('\n'));
     process.exit(1);
   }
+}
+
+// kana readings for quiz answers (kuromoji, build time only)
+let tokenizer = null;
+try {
+  const kuromoji = (await import('kuromoji')).default;
+  tokenizer = await new Promise((res, rej) => kuromoji.builder({ dicPath: path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'node_modules', 'kuromoji', 'dict') }).build((e, t) => (e ? rej(e) : res(t))));
+} catch (e) {
+  console.warn('kuromoji unavailable, quiz answers accept only the written form:', e.message);
+}
+function kanaReading(s) {
+  if (!tokenizer || !/[\u4e00-\u9fff々ヶ]/.test(s)) return null;
+  const r = tokenizer.tokenize(s).map((t) => (t.reading && t.reading !== '*' ? t.reading : t.surface_form)).join('');
+  return /[\u4e00-\u9fff々]/.test(r) ? null : r;
 }
 
 build();
