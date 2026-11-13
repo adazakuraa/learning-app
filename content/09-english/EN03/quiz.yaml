@@ -1,13 +1,13 @@
 questions:
-  - q: 「今ちょうど動画を見ています」。I（　　）watching a video right now. （　　）に入る語を答えよ。
+  - q: 「今ちょうど動画を見ています」。I（　　）watching a video right now. （　　）に入る語は何でしょう？
     a: [am]
     explain: 現在進行形は「be動詞＋ing形」。
-  - q: go の過去形は何か。
+  - q: go の過去形は何でしょう？
     a: [went]
-  - q: 「よく眠れましたか？」。（　　）you sleep well? （　　）に入る語を答えよ。
+  - q: 「よく眠れましたか？」。（　　）you sleep well? （　　）に入る語は何でしょう？
     a: [Did]
-  - q: 「ニュージーランドに行ったことがある」。I have（　　）to New Zealand. （　　）に入る語を答えよ。
+  - q: 「ニュージーランドに行ったことがある」。I have（　　）to New Zealand. （　　）に入る語は何でしょう？
     a: [been]
     explain: 現在完了形（have＋過去分詞）で「経験」を表す。
-  - q: すでに計画していることを表す未来表現。I'm（　　）to visit my grandmother next week. （　　）に入る語を答えよ。
+  - q: すでに計画していることを表す未来表現。I'm（　　）to visit my grandmother next week. （　　）に入る語は何でしょう？
     a: [going]
