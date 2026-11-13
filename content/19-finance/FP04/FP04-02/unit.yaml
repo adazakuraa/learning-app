@@ -3,3 +3,8 @@ code: FP04-02
 title: 健康保険と医療費
 order: 2
 summary: 病院の窓口負担には上限があります。病気で働けないときの手当も知っておきます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 70
+  narration: VOICEVOX:ずんだもん
