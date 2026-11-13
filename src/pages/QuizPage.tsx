@@ -4,6 +4,7 @@ import { useCatalog } from '../lib/catalog';
 import { useProgress } from '../lib/progress/ProgressProvider';
 import { isCorrect, loadQuiz } from '../lib/quiz';
 import type { Quiz } from '../lib/types';
+import { chapterNumber } from '../lib/types';
 import { NotFound } from './NotFound';
 
 type Judged = { input: string; ok: boolean; overridden?: boolean };
@@ -31,7 +32,8 @@ export function QuizPage() {
   if (error) return <NotFound />;
   if (!quiz || !catalog) return <div className="loading">読み込み中…</div>;
   const subject = catalog.subjects.find((s) => s.id === quiz.subjectId);
-  const chapterNo = subject ? subject.chapters.findIndex((c) => c.quiz?.id === quiz.id) + 1 : 0;
+  const ci = subject ? subject.chapters.findIndex((c) => c.quiz?.id === quiz.id) : -1;
+  const chapterNo = subject && ci >= 0 ? chapterNumber(subject.chapters, ci) : 0;
   const total = quiz.questions.length;
   const q = quiz.questions[idx];
   const judged = results[idx];
@@ -92,7 +94,7 @@ export function QuizPage() {
   return (
     <div className="page quiz">
       {crumbs}
-      <h1 className="page-title">練習問題 <span className="muted small">{chapterNo ? `第${chapterNo}章 ` : ''}{quiz.title}</span></h1>
+      <h1 className="page-title">練習問題 <span className="muted small">{ci >= 0 ? `第${chapterNo}章 ` : ''}{quiz.title}</span></h1>
       <div className="quiz-progress" aria-label={`${idx + 1}問目 / ${total}問`}>
         {quiz.questions.map((_, i) => (
           <span key={i} className={`dot${i === idx ? ' now' : ''}${results[i] ? (results[i].ok ? ' ok' : ' ng') : ''}`} />

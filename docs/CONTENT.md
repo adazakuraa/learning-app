@@ -133,3 +133,8 @@ questions:
 - 本文・図・unit.yaml は `node scripts/boki/text/chNN.mjs` で生成する（図は `scripts/boki/svg.mjs` の SVG。明るい背景のカードなのでダークモードでも読める）。
 - 動画の台本は `node scripts/bokivideo/chNN.mjs`（`video/script.yaml` を書き出す）。読み上げの読み（借方→かりかた など）は `scripts/bokivideo/lib.mjs` の WORDS。
 - 章末クイズは各章の `quiz.yaml`、復習クイズは `content/20-boki/review.yaml`。
+
+## 第0章「この科目について」
+
+- 各科目の先頭の章（`<prefix>00`）。`chapter.yaml` に `intro: true` を書くと、画面では「第0章」と表示される。
+- 本文と動画台本は `scripts/intro/data.mjs`（概要・学ぶ意味・役立つ場面・コツ）から `node scripts/intro/build.mjs` で生成する。章の一覧は各科目の chapter.yaml から自動で作る。

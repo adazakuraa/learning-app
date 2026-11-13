@@ -8,7 +8,9 @@ export type UnitMeta = {
   hasText: boolean;
   videoDuration: number | null;
 };
-export type Chapter = { id: string; title: string; description: string; units: UnitMeta[]; quiz?: { id: string; count: number } };
+export type Chapter = { id: string; title: string; description: string; units: UnitMeta[]; quiz?: { id: string; count: number }; intro?: boolean };
+/** chapter number shown in the UI: an intro chapter (chapter.yaml `intro: true`) is 第0章 */
+export const chapterNumber = (chapters: Chapter[], i: number) => (chapters[0]?.intro ? i : i + 1);
 
 export type QuizQuestion = { q: string; answers: string[]; show: string; explain: string };
 export type Quiz = { id: string; title: string; subjectId: string; questions: QuizQuestion[] };
