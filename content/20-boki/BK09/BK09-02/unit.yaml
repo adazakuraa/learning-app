@@ -3,3 +3,8 @@ code: BK09-02
 title: 証ひょうからの仕訳
 order: 2
 summary: 請求書・領収書・納品書・通帳などの証ひょうを読み取って仕訳する方法を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 66
+  narration: VOICEVOX:ずんだもん

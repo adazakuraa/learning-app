@@ -3,3 +3,8 @@ code: BK08-05
 title: 商品有高帳（移動平均法）
 order: 5
 summary: 仕入のたびに平均単価を計算し直す移動平均法と、売上原価・売上総利益の計算を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 63
+  narration: VOICEVOX:ずんだもん
