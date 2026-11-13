@@ -10,7 +10,7 @@ scenes:
         show:
           - type: list
             size: s
-            items: ["消化と吸収", "循環系（心臓と血液）", "呼吸系", "神経系と脳", "泌尿器", "ホルモンと内分泌系", "免疫の仕組み"]
+            items: [ "消化と吸収", "循環系（心臓と血液）", "呼吸系", "神経系と脳", "泌尿器", "ホルモンと内分泌系", "免疫の仕組み" ]
       - say: 健康診断の結果、病気や薬、ワクチンの話。自分の体を知ることは、健康を守ることにつながります。
         added: true
         show:
@@ -26,6 +26,54 @@ scenes:
         added: true
         show:
           - { type: text, size: s, color: gray, text: "消化酵素は「触媒」の一種（化学の第4章）" }
+  - gen: body
+    board: whiteboard
+    steps:
+      - say: まず、消化に関わる臓器が、体のどこにあるのか、図で確認しておきましょう。食べ物は、口から入り、のどの奥から、食道を通って、おなかへ下りていきます。
+        show:
+          - { type: title, text: 消化に関わる臓器の位置 }
+          - type: svg
+            id: body
+            at: &a1
+              - 90
+              - 100
+            w: 1100
+            h: 615
+            anim: fade
+            markup: |-
+              <g transform="translate(70,42) scale(0.86)" stroke="#c9d1cc" stroke-width="2.5" fill="#ffffff" fill-opacity="0.07">
+              <ellipse cx="200" cy="62" rx="46" ry="56"/>
+              <path d="M184 114 L184 140 M216 114 L216 140" fill="none"/>
+              <path d="M184 140 C150 146 112 150 94 172 L70 330 L62 432 L86 436 L98 334 L116 232 L120 300 C126 350 120 400 116 446 L124 606 L190 606 L198 474 L202 474 L210 606 L276 606 L284 446 C280 400 274 350 280 300 L284 232 L302 334 L314 436 L338 432 L330 330 L306 172 C288 150 250 146 216 140 Z"/>
+              </g>
+          - type: svg
+            id: org0
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#f3d77a" fill-opacity="0.85" stroke="#f3d77a" stroke-width="2"><path d="M186 92 Q200 100 214 92" stroke-width="5" fill="none"/></g><path d="M254.04 122.84 L440 40 L548 40" stroke="#f3d77a" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="254.04" cy="122.84" r="4" fill="#f3d77a" stroke="none"/><text x="560" y="49" fill="#f3d77a" stroke="none" font-size="28">口</text><g transform="translate(70,42) scale(0.86)" fill="#f3d77a" fill-opacity="0.85" stroke="#f3d77a" stroke-width="2"><path d="M198 104 L198 140 L202 230 L214 300" stroke-width="8" fill="none"/></g><path d="M243.72 214 L440 120 L548 120" stroke="#f3d77a" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="243.72" cy="214" r="4" fill="#f3d77a" stroke="none"/><text x="560" y="129" fill="#f3d77a" stroke="none" font-size="28">食道</text><text x="560" y="162" fill="#c9d1cc" stroke="none" font-size="21">胸の中央、背骨の前を通る</text>
+        added: true
+      - say: 胃は、みぞおちの少し左にあります。その右側、肋骨の内側の大きな臓器が肝臓で、その下に、胆のうがついています。すい臓は、胃の裏側に、横向きに細長くあります。
+        show:
+          - type: svg
+            id: org1
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#f4a3b8" fill-opacity="0.85" stroke="#f4a3b8" stroke-width="2"><path d="M214 306 C240 296 268 308 270 334 C272 360 252 376 230 374 C214 372 206 360 216 350 C232 350 240 340 236 328 C232 318 220 316 214 312 Z"/></g><path d="M300.48 325.8 L440 200 L548 200" stroke="#f4a3b8" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="300.48" cy="325.8" r="4" fill="#f4a3b8" stroke="none"/><text x="560" y="209" fill="#f4a3b8" stroke="none" font-size="28">胃</text><text x="560" y="242" fill="#c9d1cc" stroke="none" font-size="21">みぞおちの左</text><g transform="translate(70,42) scale(0.86)" fill="#f3a76a" fill-opacity="0.85" stroke="#f3a76a" stroke-width="2"><path d="M124 310 C150 296 200 296 222 306 C228 326 214 340 190 352 C160 362 130 356 124 340 Z"/></g><path d="M181.8 325.8 L440 280 L548 280" stroke="#f3a76a" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="181.8" cy="325.8" r="4" fill="#f3a76a" stroke="none"/><text x="560" y="289" fill="#f3a76a" stroke="none" font-size="28">肝臓・胆のう</text><text x="560" y="322" fill="#c9d1cc" stroke="none" font-size="21">右の肋骨の内側</text><g transform="translate(70,42) scale(0.86)" fill="#f3a76a" fill-opacity="0.85" stroke="#f3a76a" stroke-width="2"><ellipse cx="186" cy="356" rx="9" ry="12"/></g><g transform="translate(70,42) scale(0.86)" fill="#9be0b0" fill-opacity="0.85" stroke="#9be0b0" stroke-width="2"><path d="M176 372 C196 364 236 360 262 356" stroke-width="12" fill="none"/></g><path d="M285 351.6 L440 360 L548 360" stroke="#9be0b0" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="285" cy="351.6" r="4" fill="#9be0b0" stroke="none"/><text x="560" y="369" fill="#9be0b0" stroke="none" font-size="28">すい臓</text><text x="560" y="402" fill="#c9d1cc" stroke="none" font-size="21">胃の裏側</text>
+        added: true
+      - say: おなかのまんなかに、長い小腸が、折りたたまれて入っています。そのまわりを、額縁のように、大腸がぐるりと囲み、肛門へつながっています。
+        show:
+          - type: svg
+            id: org2
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#8fc4ff" fill-opacity="0.85" stroke="#8fc4ff" stroke-width="2"><path d="M164 392 C190 384 236 384 238 400 C240 414 162 410 162 424 C162 440 238 436 238 450 C238 462 186 462 176 456" stroke-width="10" fill="none"/></g><path d="M272.96000000000004 403.2 L440 440 L548 440" stroke="#8fc4ff" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="272.96000000000004" cy="403.2" r="4" fill="#8fc4ff" stroke="none"/><text x="560" y="449" fill="#8fc4ff" stroke="none" font-size="28">小腸</text><text x="560" y="482" fill="#c9d1cc" stroke="none" font-size="21">おなかの中央。長さ約6〜7m</text><g transform="translate(70,42) scale(0.86)" fill="#e8eef5" fill-opacity="0.85" stroke="#e8eef5" stroke-width="2"><path d="M150 466 L148 384 C148 374 154 372 162 372 L246 372 C254 372 256 380 256 388 L256 452 C256 468 232 470 212 470 L204 480" stroke-width="13" fill="none"/></g><path d="M290.15999999999997 403.2 L440 520 L548 520" stroke="#e8eef5" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="290.15999999999997" cy="403.2" r="4" fill="#e8eef5" stroke="none"/><text x="560" y="529" fill="#e8eef5" stroke="none" font-size="28">大腸</text><text x="560" y="562" fill="#c9d1cc" stroke="none" font-size="21">小腸を囲む。長さ約1.5m</text>
+        added: true
 
   - board: whiteboard
     steps:
@@ -33,7 +81,7 @@ scenes:
         show:
           - { type: title, text: 消化の道すじ }
           - type: svg
-            at: [80, 140]
+            at: [ 80, 140 ]
             w: 1100
             h: 520
             markup: |
@@ -43,16 +91,16 @@ scenes:
               <path d="M120 90 V150 M120 220 V280 M120 350 V410" stroke="#9aa3ad"/>
       - say: 口では、だ液にふくまれるアミラーゼが、デンプンを分解します。ご飯をよくかむと甘く感じるのは、このためです。
         show:
-          - { type: text, at: [340, 165], w: 860, color: yellow, text: "口：アミラーゼがデンプンを分解（よくかむと甘い）" }
+          - { type: text, at: [ 340, 165 ], w: 860, color: yellow, text: "口：アミラーゼがデンプンを分解（よくかむと甘い）" }
       - say: 胃では、ペプシンがタンパク質を分解します。胃の中は、pH2ほどの強い酸性で、細菌を殺す役割もあります。
         show:
-          - { type: text, at: [340, 295], w: 860, color: pink, text: "胃：ペプシンがタンパク質を分解。強い酸（pH2）で細菌を殺す" }
+          - { type: text, at: [ 340, 295 ], w: 860, color: pink, text: "胃：ペプシンがタンパク質を分解。強い酸（pH2）で細菌を殺す" }
       - say: 小腸では、すい臓から出る酵素で、糖、脂肪、タンパク質を、さらに細かく分解します。そして、小腸の壁から、栄養を吸収します。
         show:
-          - { type: text, at: [340, 425], w: 860, color: green, text: "小腸：すい臓の酵素でさらに分解し、栄養を吸収" }
+          - { type: text, at: [ 340, 425 ], w: 860, color: green, text: "小腸：すい臓の酵素でさらに分解し、栄養を吸収" }
       - say: 大腸では、水分を吸収して、便をつくります。
         show:
-          - { type: text, at: [340, 555], w: 860, color: blue, text: "大腸：水分を吸収して便をつくる" }
+          - { type: text, at: [ 340, 555 ], w: 860, color: blue, text: "大腸：水分を吸収して便をつくる" }
 
   - board: whiteboard
     steps:

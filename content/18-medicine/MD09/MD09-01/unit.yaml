@@ -1,5 +1,10 @@
 id: medicine-md09-01
 code: MD09-01
-title: 子どもの診かたの基本と、受診の目安
+title: 子どもの診かたの基本
 order: 1
-summary: 子どもは悪化が早く、言葉で伝えられません。年齢別の注意点、小児救急電話相談（#8000）、受診の目安を学びます。
+summary: 子どもは悪化が早く、言葉で伝えられません。「機嫌・顔色・水分・尿」を見ます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 147
+  narration: VOICEVOX:ずんだもん

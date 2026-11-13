@@ -7,4 +7,4 @@
 # Captions (.vtt) always stay in this app (a <track> must come from the same origin).
 external:
   - base: https://adazakuraa.github.io/learning-app-2
-    subjects: [japanese-history, world-history, geography, politics-economics, philosophy, religion, sociology]
+    subjects: [japanese-history, world-history, geography, politics-economics, philosophy, religion, sociology, medicine]

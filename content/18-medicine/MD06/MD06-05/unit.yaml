@@ -1,5 +1,10 @@
 id: medicine-md06-05
 code: MD06-05
-title: 咬まれた・刺された・異物
+title: かまれた・刺された・異物
 order: 5
-summary: ヘビ、クラゲ、ムカデ、釣り針や刺さった物など、野外や家庭での咬傷・刺傷・異物への対応をまとめます。
+summary: ハチ・ヘビ・動物にかまれた、目に物が入った、などの対応を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 133
+  narration: VOICEVOX:ずんだもん

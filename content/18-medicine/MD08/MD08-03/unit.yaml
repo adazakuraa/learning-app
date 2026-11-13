@@ -2,4 +2,9 @@ id: medicine-md08-03
 code: MD08-03
 title: 妊娠中・産後の症状
 order: 3
-summary: 妊娠中に急いで受診すべき症状、つわりと妊娠高血圧症候群、産後の注意点を学びます。
+summary: 妊娠中は「迷ったら、かかりつけの産科に電話」が基本です。産後うつは誰にでも起こりえます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 137
+  narration: VOICEVOX:ずんだもん

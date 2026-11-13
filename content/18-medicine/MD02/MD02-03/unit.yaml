@@ -1,5 +1,10 @@
 id: medicine-md02-03
 code: MD02-03
-title: 脳卒中：手足のしびれ・麻痺・ろれつ
+title: 脳卒中
 order: 3
-summary: 脳卒中は時間との勝負です。FASTで見分け、すぐ119。一過性でも受診が必要な理由を学びます。
+summary: 脳卒中は時間との勝負です。「BE-FAST」で疑い、発症時刻を確認してすぐ119。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 150
+  narration: VOICEVOX:ずんだもん

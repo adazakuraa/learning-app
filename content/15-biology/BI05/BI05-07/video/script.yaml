@@ -9,6 +9,44 @@ scenes:
       - say: 免疫には、2つのしくみがあります。自然免疫は、生まれつき持っている守りです。皮ふや粘膜が、壁になって入りこむのを防ぎ、白血球が、病原体を食べてやっつけます。
         show:
           - { type: box, color: blue, w: 1100, title: 自然免疫, text: "生まれつきの守り。皮ふ・粘膜の壁、白血球が病原体を食べる" }
+  - gen: body
+    board: whiteboard
+    steps:
+      - say: 免疫に関わる場所は、体のあちこちにあります。白血球は、骨の中の骨髄でつくられ、胸の胸腺では、T細胞が育ちます。
+        show:
+          - { type: title, text: 免疫に関わる場所 }
+          - type: svg
+            id: body
+            at: &a1
+              - 90
+              - 100
+            w: 1100
+            h: 615
+            anim: fade
+            markup: |-
+              <g transform="translate(70,42) scale(0.86)" stroke="#c9d1cc" stroke-width="2.5" fill="#ffffff" fill-opacity="0.07">
+              <ellipse cx="200" cy="62" rx="46" ry="56"/>
+              <path d="M184 114 L184 140 M216 114 L216 140" fill="none"/>
+              <path d="M184 140 C150 146 112 150 94 172 L70 330 L62 432 L86 436 L98 334 L116 232 L120 300 C126 350 120 400 116 446 L124 606 L190 606 L198 474 L202 474 L210 606 L276 606 L284 446 C280 400 274 350 280 300 L284 232 L302 334 L314 436 L338 432 L330 330 L306 172 C288 150 250 146 216 140 Z"/>
+              </g>
+          - type: svg
+            id: org0
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#f3d77a" fill-opacity="0.85" stroke="#f3d77a" stroke-width="2"><path d="M158 490 L156 590 M242 490 L244 590" stroke-width="7" fill="none"/></g><path d="M279.84000000000003 506.4 L440 520 L548 520" stroke="#f3d77a" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="279.84000000000003" cy="506.4" r="4" fill="#f3d77a" stroke="none"/><text x="560" y="529" fill="#f3d77a" stroke="none" font-size="28">骨髄</text><text x="560" y="562" fill="#c9d1cc" stroke="none" font-size="21">骨の中。白血球などをつくる</text><g transform="translate(70,42) scale(0.86)" fill="#9be0b0" fill-opacity="0.85" stroke="#9be0b0" stroke-width="2"><path d="M192 196 C186 210 188 226 198 228 C200 222 202 222 202 228 C212 226 214 210 208 196 Z"/></g><path d="M247.16 222.6 L440 200 L548 200" stroke="#9be0b0" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="247.16" cy="222.6" r="4" fill="#9be0b0" stroke="none"/><text x="560" y="209" fill="#9be0b0" stroke="none" font-size="28">胸腺</text><text x="560" y="242" fill="#c9d1cc" stroke="none" font-size="21">心臓の上。T細胞が育つ</text>
+        added: true
+      - say: 首やわきの下、足のつけねなどには、リンパ節があり、病原体を待ちかまえる、関所の役割をしています。おなかの左上にある、ひ臓も、血液の中の病原体を取りのぞきます。かぜのとき、首のリンパ節がはれるのは、ここで免疫が戦っているからです。
+        show:
+          - type: svg
+            id: org1
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#8fc4ff" fill-opacity="0.85" stroke="#8fc4ff" stroke-width="2"><circle cx="180" cy="126" r="6"/><circle cx="220" cy="126" r="6"/><circle cx="118" cy="226" r="6"/><circle cx="282" cy="226" r="6"/><circle cx="160" cy="460" r="6"/><circle cx="240" cy="460" r="6"/></g><path d="M312.52 236.35999999999999 L440 90 L548 90" stroke="#8fc4ff" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="312.52" cy="236.35999999999999" r="4" fill="#8fc4ff" stroke="none"/><text x="560" y="99" fill="#8fc4ff" stroke="none" font-size="28">リンパ節</text><text x="560" y="132" fill="#c9d1cc" stroke="none" font-size="21">首・わきの下・足のつけね</text><g transform="translate(70,42) scale(0.86)" fill="#f4a3b8" fill-opacity="0.85" stroke="#f4a3b8" stroke-width="2"><ellipse cx="270" cy="314" rx="10" ry="20" transform="rotate(20 270 314)"/></g><path d="M309.08 312.04 L440 330 L548 330" stroke="#f4a3b8" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="309.08" cy="312.04" r="4" fill="#f4a3b8" stroke="none"/><text x="560" y="339" fill="#f4a3b8" stroke="none" font-size="28">ひ臓</text><text x="560" y="372" fill="#c9d1cc" stroke="none" font-size="21">おなかの左上。血液をろ過</text>
+        added: true
 
   - board: whiteboard
     steps:

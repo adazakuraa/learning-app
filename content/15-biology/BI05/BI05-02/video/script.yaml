@@ -6,7 +6,7 @@ scenes:
         show:
           - { type: title, text: 2つの循環 }
           - type: svg
-            at: [80, 120]
+            at: [ 80, 120 ]
             w: 1100
             h: 460
             markup: |
@@ -18,10 +18,48 @@ scenes:
               <g stroke="none" font-size="22"><text x="720" y="150" fill="#8fc4ff">肺循環</text><text x="830" y="330" fill="#f3d77a">体循環</text></g>
       - say: 体循環は、心臓から大動脈を通って全身へ。酸素と栄養を届け、二酸化炭素と老廃物を回収して、大静脈から心臓へ戻ります。
         show:
-          - { type: text, at: [80, 595], color: yellow, text: "体循環：心臓 → 全身（酸素・栄養を届け、CO₂・老廃物を回収）→ 心臓" }
+          - { type: text, at: [ 80, 595 ], color: yellow, text: "体循環：心臓 → 全身（酸素・栄養を届け、CO₂・老廃物を回収）→ 心臓" }
       - say: 肺循環は、心臓から肺へ行き、全身から集めた二酸化炭素を出し、酸素を受けとって、心臓へ戻ります。
         show:
-          - { type: text, at: [80, 645], color: blue, text: "肺循環：心臓 → 肺（CO₂ を出し、酸素を受けとる）→ 心臓" }
+          - { type: text, at: [ 80, 645 ], color: blue, text: "肺循環：心臓 → 肺（CO₂ を出し、酸素を受けとる）→ 心臓" }
+  - gen: body
+    board: whiteboard
+    steps:
+      - say: 心臓は、胸のまんなか、やや左寄りにあります。左右の肺にはさまれ、大きさは、にぎりこぶしくらいです。
+        show:
+          - { type: title, text: 心臓と血管の位置 }
+          - type: svg
+            id: body
+            at: &a1
+              - 90
+              - 100
+            w: 1100
+            h: 615
+            anim: fade
+            markup: |-
+              <g transform="translate(70,42) scale(0.86)" stroke="#c9d1cc" stroke-width="2.5" fill="#ffffff" fill-opacity="0.07">
+              <ellipse cx="200" cy="62" rx="46" ry="56"/>
+              <path d="M184 114 L184 140 M216 114 L216 140" fill="none"/>
+              <path d="M184 140 C150 146 112 150 94 172 L70 330 L62 432 L86 436 L98 334 L116 232 L120 300 C126 350 120 400 116 446 L124 606 L190 606 L198 474 L202 474 L210 606 L276 606 L284 446 C280 400 274 350 280 300 L284 232 L302 334 L314 436 L338 432 L330 330 L306 172 C288 150 250 146 216 140 Z"/>
+              </g>
+          - type: svg
+            id: org0
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#8fc4ff" fill-opacity="0.85" stroke="#8fc4ff" stroke-width="2"><path d="M192 178 C160 172 136 200 132 250 C130 280 136 298 150 300 C170 300 190 292 192 280 Z"/></g><g transform="translate(70,42) scale(0.86)" fill="#8fc4ff" fill-opacity="0.85" stroke="#8fc4ff" stroke-width="2"><path d="M208 178 C240 172 264 200 268 250 C270 280 264 298 250 300 C238 300 226 296 224 286 C236 270 230 248 208 240 Z"/></g><path d="M190.39999999999998 248.4 L440 160 L548 160" stroke="#8fc4ff" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="190.39999999999998" cy="248.4" r="4" fill="#8fc4ff" stroke="none"/><text x="560" y="169" fill="#8fc4ff" stroke="none" font-size="28">肺</text><text x="560" y="202" fill="#c9d1cc" stroke="none" font-size="21">心臓を左右からはさむ</text><g transform="translate(70,42) scale(0.86)" fill="#ef8a8a" fill-opacity="0.85" stroke="#ef8a8a" stroke-width="2"><path d="M196 236 C206 222 230 226 232 244 C236 266 214 282 206 290 C196 280 184 266 186 250 C186 240 192 236 196 236 Z"/></g><path d="M267.79999999999995 262.15999999999997 L440 270 L548 270" stroke="#ef8a8a" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="267.79999999999995" cy="262.15999999999997" r="4" fill="#ef8a8a" stroke="none"/><text x="560" y="279" fill="#ef8a8a" stroke="none" font-size="28">心臓</text><text x="560" y="312" fill="#c9d1cc" stroke="none" font-size="21">胸の中央やや左。にぎりこぶし大</text>
+        added: true
+      - say: 心臓から出た、太い大動脈は、上に弓のように曲がってから、背骨の前を下り、全身へ血液を送っていきます。
+        show:
+          - type: svg
+            id: org1
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#f4a3b8" fill-opacity="0.85" stroke="#f4a3b8" stroke-width="2"><path d="M206 236 C206 200 186 196 182 214 L184 300 L190 440" stroke-width="6" fill="none"/></g><path d="M231.68 368.8 L440 400 L548 400" stroke="#f4a3b8" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="231.68" cy="368.8" r="4" fill="#f4a3b8" stroke="none"/><text x="560" y="409" fill="#f4a3b8" stroke="none" font-size="28">大動脈</text><text x="560" y="442" fill="#c9d1cc" stroke="none" font-size="21">背骨の前を下り、全身へ</text>
+        added: true
 
   - board: whiteboard
     steps:
@@ -30,10 +68,10 @@ scenes:
           - { type: title, text: 血液の成分 }
       - say: 赤血球は、ヘモグロビンというタンパク質で、酸素を運びます。白血球は、細菌やウイルスを攻撃する、免疫の係。血小板は、出血したときに集まって、血を止めます。血しょうは、ただひとつの液体の成分で、栄養やホルモン、老廃物をとかして運びます。
         show:
-          - { type: box, color: pink, at: [60, 150], w: 560, title: 赤血球, text: "ヘモグロビンで酸素を運ぶ（血が赤いのはこれ）" }
-          - { type: box, color: gray, at: [660, 150], w: 560, title: 白血球, text: "免疫。細菌・ウイルスを攻撃" }
-          - { type: box, color: yellow, at: [60, 410], w: 560, title: 血小板, text: "出血したとき集まって血を止める" }
-          - { type: box, color: blue, at: [660, 410], w: 560, title: 血しょう, text: "液体。栄養・ホルモン・老廃物を運ぶ" }
+          - { type: box, color: pink, at: [ 60, 150 ], w: 560, title: 赤血球, text: "ヘモグロビンで酸素を運ぶ（血が赤いのはこれ）" }
+          - { type: box, color: gray, at: [ 660, 150 ], w: 560, title: 白血球, text: "免疫。細菌・ウイルスを攻撃" }
+          - { type: box, color: yellow, at: [ 60, 410 ], w: 560, title: 血小板, text: "出血したとき集まって血を止める" }
+          - { type: box, color: blue, at: [ 660, 410 ], w: 560, title: 血しょう, text: "液体。栄養・ホルモン・老廃物を運ぶ" }
 
   - board: whiteboard
     steps:

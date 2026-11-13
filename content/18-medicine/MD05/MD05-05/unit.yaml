@@ -1,5 +1,10 @@
 id: medicine-md05-05
 code: MD05-05
-title: いろいろな感染症：尿路・皮膚・ダニ・渡航・性感染症
+title: いろいろな感染症
 order: 5
-summary: 膀胱炎と腎盂腎炎、帯状疱疹、マダニなどの虫媒介感染症、海外帰りの発熱、性感染症の検査について、基本を学びます。
+summary: 尿路感染、皮膚の感染、帯状疱疹、マダニ、海外帰り、性感染症の要点です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 164
+  narration: VOICEVOX:ずんだもん

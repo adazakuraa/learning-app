@@ -7,24 +7,55 @@ scenes:
           - { type: title, text: メイフラワー号 }
       - say: 1620年、イギリス国教会の厳しい統制をきらったピューリタンの一団が、メイフラワー号で北アメリカに渡ります。彼らは、ピルグリムファーザーズと呼ばれます。
         show:
-          - { type: box, at: [80, 140], w: 1120, color: blue, title: 1620年　ピルグリムファーザーズ, text: "イギリス国教会をきらったピューリタンが、メイフラワー号で北アメリカへ" }
+          - { type: box, at: [ 80, 140 ], w: 1120, color: blue, title: 1620年　ピルグリムファーザーズ, text: "イギリス国教会をきらったピューリタンが、メイフラワー号で北アメリカへ" }
       - say: 厳しい冬を、先住民の助けで乗りこえ、翌年の収穫を感謝して開いた宴が、アメリカの感謝祭、サンクスギビングの始まりとされています。
         show:
-          - { type: box, at: [80, 320], w: 1120, color: yellow, title: 感謝祭（サンクスギビング）, text: "先住民の助けで冬を越え、収穫に感謝した宴が起源" }
+          - { type: box, at: [ 80, 320 ], w: 1120, color: yellow, title: 感謝祭（サンクスギビング）, text: "先住民の助けで冬を越え、収穫に感謝した宴が起源" }
       - say: 宗教の自由を求めて渡った人々。この精神が、のちのアメリカという国の考え方の、土台の一つになりました。
         added: true
         show:
-          - { type: text, at: [80, 480], w: 1120, color: gray, text: "宗教の自由を求めた移住 → アメリカの精神の土台" }
+          - { type: text, at: [ 80, 480 ], w: 1120, color: gray, text: "宗教の自由を求めた移住 → アメリカの精神の土台" }
+  - gen: map
+    board: whiteboard
+    steps:
+      - say: 1620年、メイフラワー号に乗ったピルグリム・ファーザーズは、イギリスから大西洋をわたり、北アメリカの東海岸、今のマサチューセッツ州の、プリマスに上陸しました。
+        show:
+          - { type: title, text: 北アメリカの植民地 }
+          - { type: image, src: map-main.svg, at: &a1 [ 140, 140 ], w: 1000, anim: fade, id: mb }
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: |-
+              <path d="M810.4 104 L675.5 142.9 L574.2 195.1" stroke="#f3d77a" stroke-width="5"/>
+              <path d="M594.2 194.6 L574.2 195.1 L586.3 179.1" stroke="#f3d77a" stroke-width="5"/>
+              <circle cx="558.4" cy="199.5" r="9" fill="#f3d77a" stroke="#0b1c2c" stroke-width="2.5"/><rect x="568" y="186" width="254" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/><rect x="696" y="44" width="209" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/>
+            id: mo0
+          - { type: text, text: プリマス（1620年）, at: [ 714, 325 ], size: s, color: yellow, anim: fade, id: ml0_0 }
+          - { type: text, text: ← イギリスから, at: [ 842, 183 ], size: s, color: yellow, anim: fade, id: ml0_1 }
+        added: true
+      - say: その後、東海岸にそって、イギリスの13の植民地がつくられ、これが、のちのアメリカ合衆国のもとになります。
+        show:
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: <path d="M560.7 152.4 L581 137.2 L608 146.7 L567.5 207.8 L513.5 225.7 L493.3 260.7 L479.8 319.6 L452.8 344.1 L419 368.2 L412.3 388.8 L378.5 376.2 L392 319.6 L432.5 277.8 L439.3 234.5 L425.8 198.7 L500 142.9 Z" fill="#9be0b0" fill-opacity="0.45" stroke="#9be0b0" stroke-width="3"/><rect x="319" y="287" width="120" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/>
+            id: mo1
+          - { type: text, text: 13植民地, at: [ 465, 426 ], size: s, color: green, anim: fade, id: ml1_0 }
+        added: true
 
   - board: whiteboard
     steps:
       - say: 17世紀からは、北アメリカで、イギリス、フランス、スペインが、植民地をめぐって争い続けます。この対立は、本国での戦争とも連動していきました。
         show:
           - { type: title, text: 世界に広がる植民地争い }
-          - { type: box, at: [80, 140], w: 540, color: blue, title: 北アメリカ, text: "イギリス・フランス・スペインが争う" }
+          - { type: box, at: [ 80, 140 ], w: 540, color: blue, title: 北アメリカ, text: "イギリス・フランス・スペインが争う" }
       - say: インドでも、進出してきたイギリスとフランスが争い、1757年のプラッシーの戦いで、イギリスが勝って、インドを支配する道を開きました。
         show:
-          - { type: box, at: [660, 140], w: 540, color: green, title: インド, text: "1757年 プラッシーの戦い\n→ イギリスが勝利" }
+          - { type: box, at: [ 660, 140 ], w: 540, color: green, title: インド, text: "1757年 プラッシーの戦い\n→ イギリスが勝利" }
       - say: ヨーロッパの国どうしの争いが、世界中を舞台にするようになっていったのです。
         show:
-          - { type: text, at: [80, 360], w: 1120, size: l, text: "ヨーロッパの争いが **世界中** に広がる" }
+          - { type: text, at: [ 80, 360 ], w: 1120, size: l, text: "ヨーロッパの争いが **世界中** に広がる" }

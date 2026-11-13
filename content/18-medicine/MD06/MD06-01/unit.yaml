@@ -2,4 +2,9 @@ id: medicine-md06-01
 code: MD06-01
 title: 発疹とかゆみ
 order: 1
-summary: 発疹の多くは湿疹や感染症ですが、アナフィラキシー・重症薬疹・髄膜炎菌など緊急のものも含まれます。見分けるポイントと代表的な疾患を学びます。
+summary: 多くは湿疹やじんま疹ですが、全身の病気のサインになる発疹もあります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 166
+  narration: VOICEVOX:ずんだもん

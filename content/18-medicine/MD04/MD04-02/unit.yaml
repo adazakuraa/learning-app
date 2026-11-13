@@ -2,4 +2,9 @@ id: medicine-md04-02
 code: MD04-02
 title: 吐き気・嘔吐
 order: 2
-summary: 胃腸炎以外にも、脳・心臓・腸閉塞など、嘔吐で始まる危険な病気があります。見分け方と水分のとり方を学びます。
+summary: 嘔吐は胃腸炎が多いですが、頭の病気や心臓、腸閉塞のサインのこともあります。脱水に注意します。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 150
+  narration: VOICEVOX:ずんだもん

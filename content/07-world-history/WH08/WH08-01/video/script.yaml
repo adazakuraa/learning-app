@@ -8,52 +8,75 @@ scenes:
       - say: アメリカの独立、フランス革命、ナポレオン、産業革命、社会主義、ナショナリズム、そして帝国主義。今の世界のしくみと考え方が、一気に生まれた時代です。
         show:
           - type: list
-            at: [80, 130]
+            at: [ 80, 130 ]
             w: 540
             size: s
-            items: ["アメリカ独立革命", "フランス革命", "ナポレオンの台頭と没落", "ウィーン体制とその動揺", "産業革命とその影響"]
+            items: [ "アメリカ独立革命", "フランス革命", "ナポレオンの台頭と没落", "ウィーン体制とその動揺", "産業革命とその影響" ]
           - type: list
-            at: [660, 130]
+            at: [ 660, 130 ]
             w: 540
             size: s
-            items: ["社会主義の誕生", "ナショナリズム", "帝国主義と植民地支配", "ネルチンスク条約とロシアの拡大"]
+            items: [ "社会主義の誕生", "ナショナリズム", "帝国主義と植民地支配", "ネルチンスク条約とロシアの拡大" ]
       - say: 人権、民主主義、資本主義、国民国家。わたしたちが当たり前と思っている考え方の多くは、この時代の革命から生まれました。
         added: true
         show:
-          - { type: box, at: [80, 440], color: yellow, w: 1120, title: この章の目的, text: "政治の革命と産業の革命が、今の世界のしくみを作った流れをつかむ" }
+          - { type: box, at: [ 80, 440 ], color: yellow, w: 1120, title: この章の目的, text: "政治の革命と産業の革命が、今の世界のしくみを作った流れをつかむ" }
 
   - board: whiteboard
     steps:
       - say: 七年戦争でお金に困ったイギリスは、北アメリカの植民地に、印紙税や茶税などの、新しい税をかけました。
         show:
           - { type: title, text: 代表なくして課税なし }
-          - { type: text, at: [80, 140], w: 1120, text: "七年戦争で財政難 → 植民地に **新しい税**（印紙税・茶税）" }
+          - { type: text, at: [ 80, 140 ], w: 1120, text: "七年戦争で財政難 → 植民地に **新しい税**（印紙税・茶税）" }
       - say: でも、植民地の人々は、イギリス本国の議会に、代表を送ることができませんでした。そこで、代表なくして課税なし、と強く反発します。
         show:
-          - { type: box, at: [80, 230], w: 1120, color: yellow, text: "「**代表なくして課税なし**」" }
+          - { type: box, at: [ 80, 230 ], w: 1120, color: yellow, text: "「**代表なくして課税なし**」" }
       - say: 議会の同意なしに税はかけられない。これは、名誉革命以来、イギリス自身が作ってきた原則です。それを植民地には当てはめない、という矛盾を突いた言葉でした。
         show:
-          - { type: text, at: [80, 380], w: 1120, text: "イギリス自身の原則（名誉革命）を、植民地には適用しない **矛盾** を突く" }
+          - { type: text, at: [ 80, 380 ], w: 1120, text: "イギリス自身の原則（名誉革命）を、植民地には適用しない **矛盾** を突く" }
+  - gen: map
+    board: whiteboard
+    steps:
+      - say: 独立戦争の舞台は、北アメリカの東海岸の、13の植民地です。茶会事件が起きたボストン、独立宣言が出されたフィラデルフィア、そして、最後の大きな戦いの場、ヨークタウンです。
+        show:
+          - { type: title, text: アメリカ独立の舞台 }
+          - { type: image, src: map-main.svg, at: &a1 [ 140, 140 ], w: 1000, anim: fade, id: mb }
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: |-
+              <path d="M611.4 102.6 L641.8 79.7 L682.3 94 L621.5 185.7 L540.5 212.5 L510.1 265 L489.9 353.5 L449.4 390.3 L398.7 426.4 L388.6 457.2 L338 438.3 L358.2 353.5 L419 290.7 L429.1 225.8 L408.9 172.1 L520.3 88.3 Z" fill="#9be0b0" fill-opacity="0.4" stroke="#9be0b0" stroke-width="3"/>
+              <circle cx="600.1" cy="162.3" r="9" fill="#f3d77a" stroke="#0b1c2c" stroke-width="2.5"/>
+              <circle cx="517" cy="227.1" r="9" fill="#f3d77a" stroke="#0b1c2c" stroke-width="2.5"/>
+              <circle cx="489.7" cy="297.4" r="9" fill="#f4a3b8" stroke="#0b1c2c" stroke-width="2.5"/><rect x="610" y="133" width="272" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/><rect x="527" y="222" width="376" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/><rect x="500" y="298" width="306" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/><rect x="697" y="379" width="90" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/>
+            id: mo0
+          - { type: text, text: ボストン（茶会事件）, at: [ 756, 272 ], size: s, color: yellow, anim: fade, id: ml0_0 }
+          - { type: text, text: フィラデルフィア（独立宣言）, at: [ 673, 361 ], size: s, color: yellow, anim: fade, id: ml0_1 }
+          - { type: text, text: ヨークタウン（1781年）, at: [ 646, 437 ], size: s, color: pink, anim: fade, id: ml0_2 }
+          - { type: text, text: 大西洋, at: [ 843, 518 ], size: s, color: gray, anim: fade, id: ml0_3 }
+        added: true
 
   - board: whiteboard
     steps:
       - say: そして1775年、アメリカ独立戦争が始まり、翌1776年、独立宣言が出されます。
         show:
           - { type: title, text: 1776年　独立宣言 }
-          - { type: text, at: [80, 140], w: 1120, text: "1775年 独立戦争 → 1776年 **独立宣言**" }
+          - { type: text, at: [ 80, 140 ], w: 1120, text: "1775年 独立戦争 → 1776年 **独立宣言**" }
       - say: 起草したジェファーソンの、すべての人間は平等に作られ、生命、自由、幸福の追求という権利を与えられている、という一節は、ロックなどの、ヨーロッパの啓蒙思想の影響を強く受けています。啓蒙思想とは、理性によって社会をよくできる、という考え方です。
         show:
-          - { type: box, at: [80, 230], w: 1120, color: blue, text: "「すべての人間は平等に作られ、生命・自由・幸福の追求の権利を与えられている」" }
+          - { type: box, at: [ 80, 230 ], w: 1120, color: blue, text: "「すべての人間は平等に作られ、生命・自由・幸福の追求の権利を与えられている」" }
       - say: しかし、ジェファーソン自身は、600人以上の奴隷を所有していました。すべての人間、の中に、黒人や先住民、女性は、まだ入っていなかったのです。
         show:
-          - { type: box, at: [80, 400], w: 1120, color: pink, text: "でもジェファーソン自身は **600人以上の奴隷** を所有していた" }
+          - { type: box, at: [ 80, 400 ], w: 1120, color: pink, text: "でもジェファーソン自身は **600人以上の奴隷** を所有していた" }
 
   - board: whiteboard
     steps:
       - say: 初代大統領のワシントンは、2期つとめたところで、自ら権力を手放して引退しました。王になれる人が、王にならなかった、と驚かれました。
         show:
           - { type: title, text: 王にならなかった英雄 }
-          - { type: box, at: [80, 140], w: 1120, color: green, title: 初代大統領ワシントン, text: "2期で自ら引退 ＝「王になれる人物が、王にならなかった」" }
+          - { type: box, at: [ 80, 140 ], w: 1120, color: green, title: 初代大統領ワシントン, text: "2期で自ら引退 ＝「王になれる人物が、王にならなかった」" }
       - say: 権力者が、自分から権力を手放す。この前例は、民主主義の大切なルールとして、世界に示されました。
         show:
-          - { type: text, at: [80, 320], w: 1120, size: l, text: "自ら権力を手放す ＝ **民主主義の大切な前例**" }
+          - { type: text, at: [ 80, 320 ], w: 1120, size: l, text: "自ら権力を手放す ＝ **民主主義の大切な前例**" }

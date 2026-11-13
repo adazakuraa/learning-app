@@ -5,5 +5,5 @@ order: 3
 video:
   src: video.mp4
   captions: captions.vtt
-  duration: 68
+  duration: 84
   narration: VOICEVOX:ずんだもん

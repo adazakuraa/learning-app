@@ -1,5 +1,10 @@
 id: medicine-md13-02
 code: MD13-02
-title: 検査を知る：血液・画像・内視鏡
+title: 検査の基本：血液・CT・MRIなど
 order: 2
-summary: 血液検査・尿検査・心電図・X線・CT・MRI・超音波・内視鏡・PETなど、有名な検査の仕組みと使い分け、被ばくや注意点を学びます。
+summary: 有名な検査が何を見ているのか、ざっくり知っておきます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 187
+  narration: VOICEVOX:ずんだもん

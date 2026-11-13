@@ -10,6 +10,44 @@ scenes:
         show:
           - { type: box, color: blue, w: 1100, title: 神経系 ＝ 電話, text: "速い・決まった相手に" }
           - { type: box, color: yellow, w: 1100, title: 内分泌系（ホルモン）＝ 郵便, text: "ゆっくり・全身に" }
+  - gen: body
+    board: whiteboard
+    steps:
+      - say: ホルモンを出す、主な場所を、図で見てみましょう。脳の下垂体は、ほかのホルモンの司令塔です。のどには、甲状腺があります。
+        show:
+          - { type: title, text: ホルモンを出す場所 }
+          - type: svg
+            id: body
+            at: &a1
+              - 90
+              - 100
+            w: 1100
+            h: 615
+            anim: fade
+            markup: |-
+              <g transform="translate(70,42) scale(0.86)" stroke="#c9d1cc" stroke-width="2.5" fill="#ffffff" fill-opacity="0.07">
+              <ellipse cx="200" cy="62" rx="46" ry="56"/>
+              <path d="M184 114 L184 140 M216 114 L216 140" fill="none"/>
+              <path d="M184 140 C150 146 112 150 94 172 L70 330 L62 432 L86 436 L98 334 L116 232 L120 300 C126 350 120 400 116 446 L124 606 L190 606 L198 474 L202 474 L210 606 L276 606 L284 446 C280 400 274 350 280 300 L284 232 L302 334 L314 436 L338 432 L330 330 L306 172 C288 150 250 146 216 140 Z"/>
+              </g>
+          - type: svg
+            id: org0
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#f3d77a" fill-opacity="0.85" stroke="#f3d77a" stroke-width="2"><circle cx="200" cy="74" r="6"/></g><path d="M247.16 105.64 L440 60 L548 60" stroke="#f3d77a" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="247.16" cy="105.64" r="4" fill="#f3d77a" stroke="none"/><text x="560" y="69" fill="#f3d77a" stroke="none" font-size="28">下垂体（脳）</text><text x="560" y="102" fill="#c9d1cc" stroke="none" font-size="21">成長ホルモンなど。ホルモンの司令塔</text><g transform="translate(70,42) scale(0.86)" fill="#9be0b0" fill-opacity="0.85" stroke="#9be0b0" stroke-width="2"><path d="M186 126 C186 118 198 120 200 128 C202 120 214 118 214 126 C214 138 204 140 200 134 C196 140 186 138 186 126 Z"/></g><path d="M254.04 152.07999999999998 L440 150 L548 150" stroke="#9be0b0" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="254.04" cy="152.07999999999998" r="4" fill="#9be0b0" stroke="none"/><text x="560" y="159" fill="#9be0b0" stroke="none" font-size="28">甲状腺</text><text x="560" y="192" fill="#c9d1cc" stroke="none" font-size="21">のどぼとけの下。代謝を調節</text>
+        added: true
+      - say: おなかでは、すい臓がインスリンを出し、腎臓の上にのった、小さな副腎が、アドレナリンを出します。そして、卵巣や精巣は、性ホルモンを出します。
+        show:
+          - type: svg
+            id: org1
+            at: *a1
+            w: 1100
+            h: 615
+            anim: fade
+            markup: <g transform="translate(70,42) scale(0.86)" fill="#8fc4ff" fill-opacity="0.85" stroke="#8fc4ff" stroke-width="2"><path d="M176 372 C196 364 236 360 262 356" stroke-width="12" fill="none"/></g><path d="M285 351.6 L440 280 L548 280" stroke="#8fc4ff" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="285" cy="351.6" r="4" fill="#8fc4ff" stroke="none"/><text x="560" y="289" fill="#8fc4ff" stroke="none" font-size="28">すい臓</text><text x="560" y="322" fill="#c9d1cc" stroke="none" font-size="21">インスリン（血糖値を下げる）</text><g transform="translate(70,42) scale(0.86)" fill="#f4a3b8" fill-opacity="0.85" stroke="#f4a3b8" stroke-width="2"><path d="M148 350 L158 334 L168 350 Z M232 350 L242 334 L252 350 Z"/></g><path d="M285 336.12 L440 380 L548 380" stroke="#f4a3b8" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="285" cy="336.12" r="4" fill="#f4a3b8" stroke="none"/><text x="560" y="389" fill="#f4a3b8" stroke="none" font-size="28">副腎</text><text x="560" y="422" fill="#c9d1cc" stroke="none" font-size="21">腎臓の上。アドレナリン</text><g transform="translate(70,42) scale(0.86)" fill="#f3a76a" fill-opacity="0.85" stroke="#f3a76a" stroke-width="2"><circle cx="174" cy="454" r="8"/><circle cx="226" cy="454" r="8"/></g><path d="M271.24 432.44 L440 480 L548 480" stroke="#f3a76a" stroke-width="2" fill="none" stroke-dasharray="5 5"/><circle cx="271.24" cy="432.44" r="4" fill="#f3a76a" stroke="none"/><text x="560" y="489" fill="#f3a76a" stroke="none" font-size="28">卵巣・精巣</text><text x="560" y="522" fill="#c9d1cc" stroke="none" font-size="21">性ホルモン</text>
+        added: true
 
   - board: whiteboard
     steps:

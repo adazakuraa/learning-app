@@ -1,5 +1,10 @@
 id: medicine-md13-03
 code: MD13-03
-title: がん検診と健康診断：何をいつ受けるか
+title: がん検診と健康診断
 order: 3
-summary: 日本の対策型がん検診（胃・大腸・肺・乳・子宮頸）、特定健診、検診のメリットとデメリット、受けるべき年齢を学びます。
+summary: 国がすすめるがん検診は5つ。科学的に「受けると死亡が減る」とわかっているものです。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 164
+  narration: VOICEVOX:ずんだもん

@@ -2,4 +2,9 @@ id: medicine-md03-04
 code: MD03-04
 title: 咳・痰
 order: 4
-summary: 咳の続いた期間が見分けのポイントです。血痰や3週間以上続く咳、結核を疑うサインを学びます。
+summary: かぜの咳は多くが自然に治ります。長引く咳と、血の混じる痰には注意します。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 132
+  narration: VOICEVOX:ずんだもん

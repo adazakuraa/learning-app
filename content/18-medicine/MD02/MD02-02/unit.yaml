@@ -2,4 +2,9 @@ id: medicine-md02-02
 code: MD02-02
 title: めまい
 order: 2
-summary: 回転性・ふわふわ・立ちくらみの違いと、耳の病気が多い一方で、脳卒中が隠れていることがある点を整理します。
+summary: 多くは耳のトラブルですが、脳卒中のめまいを見逃さないことが大切です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 150
+  narration: VOICEVOX:ずんだもん

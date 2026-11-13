@@ -1,5 +1,10 @@
 id: medicine-md12-02
 code: MD12-02
-title: 窒息・溺水・熱中症・低体温
+title: 窒息・溺水・熱中症
 order: 2
-summary: 気道異物の取り方、溺れた人への対応、熱中症の分類と冷却、低体温の対応を学びます。
+summary: 窒息の解除、溺れた人への対応、熱中症の冷やし方を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 158
+  narration: VOICEVOX:ずんだもん

@@ -1,5 +1,10 @@
 id: medicine-md05-03
 code: MD05-03
-title: のどの痛み
+title: 喉の痛み
 order: 3
-summary: 多くはウイルス性の咽頭炎ですが、息ができなくなる急性喉頭蓋炎や、膿がたまる扁桃周囲膿瘍は緊急です。溶連菌と抗菌薬の関係も学びます。
+summary: 多くはかぜですが、息苦しさや飲み込めないほどの痛みは、命にかかわる病気のことがあります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 115
+  narration: VOICEVOX:ずんだもん

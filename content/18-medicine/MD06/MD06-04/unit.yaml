@@ -1,5 +1,10 @@
 id: medicine-md06-04
 code: MD06-04
-title: 骨折・捻挫・打撲と、腰痛・関節痛
+title: 骨折・ねんざ・腰痛
 order: 4
-summary: 骨折を疑うサイン、RICEによる手当て、腰痛の危険サイン、関節が腫れて熱いときの注意を学びます。
+summary: けがの応急手当（冷やす・固定する）と、危険な腰痛のサインを学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 175
+  narration: VOICEVOX:ずんだもん

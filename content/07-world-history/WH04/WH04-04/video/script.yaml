@@ -6,7 +6,7 @@ scenes:
         show:
           - { type: title, text: シルクロード }
           - type: svg
-            at: [80, 140]
+            at: [ 80, 140 ]
             w: 1120
             h: 160
             anim: draw
@@ -18,9 +18,47 @@ scenes:
               <g stroke="none" font-size="26" fill="#e8eef5" text-anchor="middle"><text x="110" y="84">ローマ</text><text x="1010" y="84">中国</text><text x="560" y="24" font-size="22">陸の道（オアシスの道・草原の道）</text><text x="560" y="152" font-size="22">海の道</text></g>
       - say: 運ばれたのは、絹や香辛料などの商品だけではありません。仏教、イスラム教、キリスト教などの宗教。数学、天文学、医学の知識。そして、紙、火薬、羅針盤の技術も、東と西を行き来しました。
         show:
-          - { type: box, at: [80, 340], w: 360, color: yellow, title: 商品, text: "絹・香辛料" }
-          - { type: box, at: [460, 340], w: 360, color: blue, title: 宗教・知識, text: "仏教・イスラム教\n数学・天文学・医学" }
-          - { type: box, at: [840, 340], w: 360, color: green, title: 技術, text: "紙・火薬・羅針盤" }
+          - { type: box, at: [ 80, 340 ], w: 360, color: yellow, title: 商品, text: "絹・香辛料" }
+          - { type: box, at: [ 460, 340 ], w: 360, color: blue, title: 宗教・知識, text: "仏教・イスラム教\n数学・天文学・医学" }
+          - { type: box, at: [ 840, 340 ], w: 360, color: green, title: 技術, text: "紙・火薬・羅針盤" }
+  - gen: map
+    board: whiteboard
+    steps:
+      - say: シルクロードを、地図でたどってみましょう。中国の長安を出て、砂漠のオアシスの町をつなぎ、中央アジアのサマルカンドをこえて、西アジアから地中海へ。これが、陸の道です。
+        show:
+          - { type: title, text: シルクロード }
+          - { type: image, src: map-main.svg, at: &a1 [ 140, 140 ], w: 1000, anim: fade, id: mb }
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: |-
+              <path d="M861.3 209.2 L817.5 190.1 L739.7 146.3 L683 125.3 L580.9 153.8 L504 151.8 L427.6 175.2 L371.5 194.3 L311.9 219.1 L242.1 189 L180.8 136.7" stroke="#f3d77a" stroke-width="5"/>
+              <path d="M188.8 155 L180.8 136.7 L200.1 141.8" stroke="#f3d77a" stroke-width="5"/>
+              <circle cx="861.3" cy="209.2" r="9" fill="#f3d77a" stroke="#0b1c2c" stroke-width="2.5"/>
+              <circle cx="504" cy="151.8" r="9" fill="#f3d77a" stroke="#0b1c2c" stroke-width="2.5"/>
+              <circle cx="739.7" cy="146.3" r="9" fill="#f3d77a" stroke="#0b1c2c" stroke-width="2.5"/>
+              <circle cx="311.5" cy="219" r="9" fill="#f3d77a" stroke="#0b1c2c" stroke-width="2.5"/>
+            id: mo0
+          - { type: text, text: 長安, at: [ 991, 363 ], size: s, color: yellow, anim: fade, id: ml0_0 }
+          - { type: text, text: サマルカンド, at: [ 584, 242 ], size: s, color: yellow, anim: fade, id: ml0_1 }
+          - { type: text, text: 敦煌, at: [ 860, 236 ], size: s, color: yellow, anim: fade, id: ml0_2 }
+          - { type: text, text: バグダード, at: [ 392, 373 ], size: s, color: yellow, anim: fade, id: ml0_3 }
+        added: true
+      - say: もう一つが、海の道です。中国の南の港から、東南アジア、インドを通り、アラビア半島や、エジプトへと、船で結ばれていました。
+        show:
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: |-
+              <path d="M898.4 317.8 L861.8 390.8 L819.2 503 L742.6 468.8 L614.9 468.8 L546.8 417.1 L427.6 364.2 L308.5 417.1 L257.4 346.2 L214.8 281.2" stroke="#8fc4ff" stroke-width="5"/>
+              <path d="M217.4 301 L214.8 281.2 L232 291.5" stroke="#8fc4ff" stroke-width="5"/>
+            id: mo1
+          - { type: text, text: 海の道, at: [ 797, 660 ], size: s, color: blue, anim: fade, id: ml1_0 }
+        added: true
 
   - board: whiteboard
     steps:
@@ -28,22 +66,22 @@ scenes:
         show:
           - { type: title, text: 一枚の紙がつないだ歴史 }
           - type: list
-            at: [80, 140]
-            items: ["中国で **紙** の発明", "イスラム世界を経てヨーロッパへ", "**活版印刷** の誕生", "宗教改革・科学革命へ"]
+            at: [ 80, 140 ]
+            items: [ "中国で **紙** の発明", "イスラム世界を経てヨーロッパへ", "**活版印刷** の誕生", "宗教改革・科学革命へ" ]
 
   - board: whiteboard
     steps:
       - say: 13世紀、モンゴル帝国がユーラシア大陸の大部分を支配すると、交易路は、もっとも安全で活発な時代を迎えます。
         show:
           - { type: title, text: マルコ・ポーロとジパング }
-          - { type: text, at: [80, 140], w: 1120, text: "モンゴル帝国の支配 → 交易路がもっとも安全に" }
+          - { type: text, at: [ 80, 140 ], w: 1120, text: "モンゴル帝国の支配 → 交易路がもっとも安全に" }
       - say: イタリアの商人マルコ・ポーロは、元の中国を旅して、『東方見聞録』を書きました。この本が、ヨーロッパの人々に東洋の豊かさを伝え、のちのコロンブスの航海への、あこがれを生みます。そこには、黄金の国、ジパング、つまり日本も描かれていました。
         show:
-          - { type: box, at: [80, 230], w: 1120, color: yellow, title: 『東方見聞録』, text: "東洋の豊かさを伝える　黄金の国 **ジパング**（日本）" }
+          - { type: box, at: [ 80, 230 ], w: 1120, color: yellow, title: 『東方見聞録』, text: "東洋の豊かさを伝える　黄金の国 **ジパング**（日本）" }
       - say: 一方で、シルクロードは伝染病も運びました。14世紀のペストがヨーロッパに届いたのも、モンゴルの交易路を通ってだったとされます。繁栄と災いは、同じ道を通ってやってきたのです。
         show:
-          - { type: text, at: [80, 400], w: 1120, color: pink, text: "ペストも同じ道を通ってきた ＝ 繁栄と災いは同じ道を通る" }
+          - { type: text, at: [ 80, 400 ], w: 1120, color: pink, text: "ペストも同じ道を通ってきた ＝ 繁栄と災いは同じ道を通る" }
       - say: 人やものが行き交えば、病気も行き交う。新型コロナが世界に広がったのと、同じ構造ですね。
         added: true
         show:
-          - { type: text, at: [80, 480], w: 1120, color: gray, text: "グローバル化と感染症 ← 今も同じ構造" }
+          - { type: text, at: [ 80, 480 ], w: 1120, color: gray, text: "グローバル化と感染症 ← 今も同じ構造" }

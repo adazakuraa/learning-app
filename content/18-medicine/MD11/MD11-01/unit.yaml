@@ -1,5 +1,10 @@
 id: medicine-md11-01
 code: MD11-01
-title: 心の症状：うつ・不安・不眠・自殺を考えたとき
+title: 心の不調：うつ・不安・不眠
 order: 1
-summary: うつ病、不安障害、不眠、パニック発作、そして「死にたい」と思ったときの対応を学びます。心の不調も体の病気と同じく治療できます。
+summary: 心の不調は誰にでも起こり、治療で良くなります。「死にたい」と感じたら、ひとりで抱えず相談を。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 170
+  narration: VOICEVOX:ずんだもん

@@ -2,4 +2,9 @@ id: medicine-md06-02
 code: MD06-02
 title: じんま疹とアナフィラキシー
 order: 2
-summary: じんま疹の多くは心配ありませんが、息苦しさや血圧低下を伴うアナフィラキシーは分単位で悪化します。エピペンの使い方と、まず何をするかを学びます。
+summary: アナフィラキシーは数分〜数十分で命にかかわります。エピペンは「迷ったら使う」。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 157
+  narration: VOICEVOX:ずんだもん

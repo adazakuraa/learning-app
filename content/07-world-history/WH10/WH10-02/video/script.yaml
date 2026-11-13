@@ -5,15 +5,51 @@ scenes:
       - say: 朝鮮半島は、第二次世界大戦のあと、北緯38度線で、ソ連が支える北朝鮮と、アメリカが支える韓国に分けられました。
         show:
           - { type: title, text: 朝鮮戦争 }
-          - { type: box, at: [80, 140], w: 540, color: pink, title: 北朝鮮, text: "ソ連・中国が支援" }
-          - { type: box, at: [660, 140], w: 540, color: blue, title: 韓国, text: "アメリカが支援" }
-          - { type: text, at: [80, 320], w: 1120, text: "北緯38度線で分断" }
+          - { type: box, at: [ 80, 140 ], w: 540, color: pink, title: 北朝鮮, text: "ソ連・中国が支援" }
+          - { type: box, at: [ 660, 140 ], w: 540, color: blue, title: 韓国, text: "アメリカが支援" }
+          - { type: text, at: [ 80, 320 ], w: 1120, text: "北緯38度線で分断" }
       - say: 1950年、北朝鮮が韓国に攻めこんで朝鮮戦争が起き、およそ300万人の死者を出したあと、休戦しました。
         show:
-          - { type: text, at: [80, 400], w: 1120, text: "1950年 北朝鮮が侵攻 → 約300万人が死亡 → 1953年 **休戦**" }
+          - { type: text, at: [ 80, 400 ], w: 1120, text: "1950年 北朝鮮が侵攻 → 約300万人が死亡 → 1953年 **休戦**" }
       - say: 正式な平和条約は今もなく、朝鮮半島は、法的には、まだ戦争中なのです。日本史で学んだ、朝鮮特需は、この戦争によるものでした。
         show:
-          - { type: text, at: [80, 480], w: 1120, color: pink, text: "平和条約はなく、法的には今も戦争中" }
+          - { type: text, at: [ 80, 480 ], w: 1120, color: pink, text: "平和条約はなく、法的には今も戦争中" }
+  - gen: map
+    board: whiteboard
+    steps:
+      - say: 朝鮮半島は、北緯38度線で、北の北朝鮮と、南の韓国に分かれました。今も、休戦の状態が続いています。
+        show:
+          - { type: title, text: 朝鮮半島とベトナム }
+          - { type: image, src: map-main.svg, at: &a1 [ 140, 140 ], w: 1000, anim: fade, id: mb }
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: |-
+              <path d="M651.8,43.9L651.8,43.9L651.8,43.9ZM650.2,41.2L651.8,43.9L647.4,43L642.5,48.2L639.1,53.4L639.5,64.3L633.6,67.6L631.6,70.3L627.3,74.7L619.7,77.2L614.7,81.2L614.3,87.6L613,89.2L617.6,91.6L624,98.1L622.4,101.6L617.5,102.6L609.4,103.3L605,109.8L599.9,109.3L599.2,110.6L593.6,107.9L592.2,110.6L588.9,111.8L588.5,109.1L585.5,107.7L582.4,105.4L585.5,99L588.3,97.3L587.2,94.6L590.2,86.7L589.4,84.3L582.7,82.6L577.3,78.7L586.7,69.1L599.3,60.9L607.1,50.1L612.5,54.9L622.4,55.5L620.6,47.4L638.3,40.7L642.8,32Z" fill="#f4a3b8" fill-opacity="0.55" stroke="#f4a3b8" stroke-width="1.5"/>
+              <path d="M599.2,110.6L599.9,109.3L605,109.8L609.4,103.3L617.5,102.6L622.4,101.6L624,98.1L633.9,115.2L636.7,124.5L636.8,140.8L632.5,148.5L622.1,151.2L613,157L602.7,158.2L601.4,150.6L603.5,140.1L598.5,125.3L607,122.9Z" fill="#8fc4ff" fill-opacity="0.55" stroke="#8fc4ff" stroke-width="1.5"/>
+              <path d="M574.3 107 L642.9 107" stroke="#e8eef5" stroke-width="4" stroke-dasharray="12 9"/><rect x="641" y="118" width="146" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/><rect x="523" y="56" width="90" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/><rect x="515" y="156" width="64" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/>
+            id: mo0
+          - { type: text, text: 北緯38度線, at: [ 787, 257 ], size: s, color: white, anim: fade, id: ml0_0 }
+          - { type: text, text: 北朝鮮, at: [ 669, 195 ], size: s, color: pink, anim: fade, id: ml0_1 }
+          - { type: text, text: 韓国, at: [ 661, 295 ], size: s, color: blue, anim: fade, id: ml0_2 }
+        added: true
+      - say: ベトナムは、北緯17度線で、北と南に分かれ、アメリカは、南ベトナムを支えて、戦争に深くかかわっていきました。
+        show:
+          - type: svg
+            at: *a1
+            w: 1000
+            h: 520
+            anim: fade
+            markup: |-
+              <path d="M349.5,456.7L359.4,452L371.4,451.2L366.4,444.1L385.6,435.1L387,421L384.4,413.2L386.4,401.4L383.5,393L374.9,384.7L367.7,374.2L358.2,360L344.5,352.7L347.8,348.4L355.1,345.2L350.7,334.6L336.6,334.5L331.4,323.3L324.8,313.6L330.9,310.6L340,310.6L351.2,309.2L360.9,302.6L366.4,307.3L376.8,309.5L375,316.6L380.5,321.6L392,324.9L376.7,335.3L367.2,346.8L364.7,355.2L373.4,368L384.1,383.6L394.5,391L401.4,400.5L406.7,422.3L405.1,442.9L395.6,450.6L382.5,458.1L373.2,467.8L358.9,478.5L354.8,471.1L358,463.3Z" fill="#f3d77a" fill-opacity="0.55" stroke="#f3d77a" stroke-width="1.5"/>
+              <path d="M351.4 380 L402.8 380" stroke="#e8eef5" stroke-width="4" stroke-dasharray="12 9"/><rect x="260" y="333" width="142" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/><rect x="408" y="440" width="142" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/><rect x="401" y="387" width="146" height="38" rx="8" fill="#0d1a24" fill-opacity="0.72" stroke="none"/>
+            id: mo1
+          - { type: text, text: 北ベトナム, at: [ 406, 472 ], size: s, color: pink, anim: fade, id: ml1_0 }
+          - { type: text, text: 南ベトナム, at: [ 554, 579 ], size: s, color: blue, anim: fade, id: ml1_1 }
+          - { type: text, text: 北緯17度線, at: [ 547, 526 ], size: s, color: white, anim: fade, id: ml1_2 }
+        added: true
 
   - board: whiteboard
     steps:
@@ -22,11 +58,11 @@ scenes:
           - { type: title, text: ベトナム戦争（1955〜1975年） }
       - say: 一つの国が共産主義になると、周りの国も、ドミノ倒しのように共産主義になる。このドミノ理論を信じたアメリカは、共産主義の北ベトナムに対抗して、南ベトナムを支えましたが、ジャングルでのゲリラ戦に苦しみ続けました。
         show:
-          - { type: box, at: [80, 140], w: 1120, color: yellow, title: ドミノ理論, text: "一国が共産化すると、周りもドミノ倒しのように共産化する" }
-          - { type: text, at: [80, 300], w: 1120, text: "アメリカが南ベトナムを支援 → ジャングルのゲリラ戦に苦戦" }
+          - { type: box, at: [ 80, 140 ], w: 1120, color: yellow, title: ドミノ理論, text: "一国が共産化すると、周りもドミノ倒しのように共産化する" }
+          - { type: text, at: [ 80, 300 ], w: 1120, text: "アメリカが南ベトナムを支援 → ジャングルのゲリラ戦に苦戦" }
       - say: テレビの中継で、戦争のむごさが、初めてお茶の間に届いたことで、アメリカ国内で反戦運動が高まります。アメリカは1973年に撤退し、1975年、南ベトナムは崩壊しました。
         show:
-          - { type: text, at: [80, 380], w: 1120, text: "テレビ中継 → 反戦運動 → 1973年 米軍撤退 → 1975年 南ベトナム崩壊" }
+          - { type: text, at: [ 80, 380 ], w: 1120, text: "テレビ中継 → 反戦運動 → 1973年 米軍撤退 → 1975年 南ベトナム崩壊" }
       - say: 超大国アメリカが、小国ベトナムに負けた、という衝撃は、その後のアメリカの外交と軍事に、長く影を落とすことになります。
         show:
-          - { type: box, at: [80, 470], w: 1120, color: pink, text: "超大国が小国に「負けた」衝撃 → アメリカ外交に長く影" }
+          - { type: box, at: [ 80, 470 ], w: 1120, color: pink, text: "超大国が小国に「負けた」衝撃 → アメリカ外交に長く影" }

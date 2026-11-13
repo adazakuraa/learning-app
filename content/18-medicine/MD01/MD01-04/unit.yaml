@@ -1,5 +1,10 @@
 id: medicine-md01-04
 code: MD01-04
-title: 症状の伝え方と119番通報
+title: 119番のかけ方と症状の伝え方
 order: 4
-summary: 受診や通報のときに何を伝えればよいか。短時間で正確に伝えるコツと、救急隊が来るまでの動きをまとめます。
+summary: 119番通報の流れと、受診のときに医師に伝えるべきことを学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 123
+  narration: VOICEVOX:ずんだもん
