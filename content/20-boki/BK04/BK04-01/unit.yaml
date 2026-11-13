@@ -3,3 +3,8 @@ code: BK04-01
 title: 約束手形
 order: 1
 summary: 約束手形を振り出したとき・受け取ったときの処理（支払手形・受取手形）を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 60
+  narration: VOICEVOX:ずんだもん

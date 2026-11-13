@@ -3,3 +3,8 @@ code: BK04-02
 title: 電子記録債権・電子記録債務
 order: 2
 summary: 手形の代わりに電子的に記録される債権・債務の処理を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 46
+  narration: VOICEVOX:ずんだもん
