@@ -23,12 +23,13 @@ describe('hayaoshi model', () => {
 
 describe('rating', () => {
   it('is linear in the expected correct rate of the picked questions', () => {
-    expect(rating(0)).toBe(1000);
-    for (const R of [800, 1000, 1200, 1400, 1600]) {
+    expect(rating(emptyH().theta)).toBe(1000);
+    expect(rating(0)).toBe(1150);
+    for (const R of [1000, 1150, 1350, 1550, 1750]) {
       // find theta whose rating is R, then check the picked p
       let lo = -10, hi = 10;
       for (let i = 0; i < 60; i++) { const m = (lo + hi) / 2; if (rating(m) < R) lo = m; else hi = m; }
-      expect(targetP(lo)).toBeCloseTo(0.7 - (R - 1000) / 1000, 2);
+      expect(targetP(lo)).toBeCloseTo(0.85 - (R - 1000) / 1000, 2);
     }
   });
 });
