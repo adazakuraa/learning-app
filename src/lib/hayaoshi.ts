@@ -19,7 +19,7 @@ export type HState = {
   history: Record<string, number>;
   updatedAt: number;
 };
-export const emptyH = (): HState => ({ theta: -0.6, answered: 0, correct: 0, sessions: 0, bestScore: 0, items: {}, history: {}, updatedAt: 0 });
+export const emptyH = (): HState => ({ theta: 0, answered: 0, correct: 0, sessions: 0, bestScore: 0, items: {}, history: {}, updatedAt: 0 });
 
 /** Target success rate. A bit above "even" so a casual break stays fun, but not trivially easy. */
 export const TARGET = 0.7;
