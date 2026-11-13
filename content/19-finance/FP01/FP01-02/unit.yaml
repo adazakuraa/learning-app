@@ -3,3 +3,8 @@ code: FP01-02
 title: ライフプランとキャッシュフロー表
 order: 2
 summary: 人生の大きな出費を見通し、いつ・いくら必要かを表にすると、今やるべきことが見えてきます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 105
+  narration: VOICEVOX:ずんだもん

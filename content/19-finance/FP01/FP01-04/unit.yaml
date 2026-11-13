@@ -3,3 +3,8 @@ code: FP01-04
 title: お金の優先順位：貯める・守る・増やす
 order: 4
 summary: お金の使い道には順番があります。土台を作ってから投資へ進むのが基本です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 66
+  narration: VOICEVOX:ずんだもん
