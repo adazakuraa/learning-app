@@ -1,0 +1,81 @@
+title: 預金の種類と預金保険
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「預金の種類と預金保険」です。預金の基本は、いつでも出し入れできる普通預金と、期間を決めて預ける定期預金です。
+        show:
+          - type: title
+            text: 預金の種類
+          - type: box
+            w: 560
+            text: |-
+              ・いつでも出し入れできる
+              ・金利は低い
+            title: 普通預金
+            color: blue
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・期間を決めて預ける
+              ・途中で解約すると金利が下がる
+            title: 定期預金
+            color: green
+            at:
+              - 660
+              - 160
+      - say: 外貨預金は、ドルなど外国のお金で預けるものです。金利が高いこともありますが、為替が動くと、円に戻したときに元本より減ることがあります。
+        show:
+          - type: box
+            w: 1100
+            text: 外貨預金：金利が高めでも、**為替で元本割れ**のおそれ
+            color: pink
+            at:
+              - 80
+              - 420
+  - board: whiteboard
+    steps:
+      - say: では、もし銀行がつぶれたら、預けたお金はどうなるのでしょうか。
+        show:
+          - type: title
+            text: 銀行がつぶれたら？
+      - say: 預金保険という制度で、1つの金融機関あたり、元本1000万円と、その利息までが守られます。これを、ペイオフといいます。
+        show:
+          - type: box
+            w: 1100
+            text: "**1金融機関あたり 元本1,000万円＋利息** まで保護"
+            color: yellow
+            at:
+              - 80
+              - 170
+      - say: たとえば、1つの銀行に1500万円預けていたら、守られるのは1000万円とその利息。残りの500万円は、一部しか戻らないかもしれません。大きなお金は、銀行を分けると安心です。
+        show:
+          - type: svg
+            w: 520
+            h: 330
+            at:
+              - 140
+              - 280
+            anim: fade
+            markup: |-
+              <rect x="60" y="50" width="140" height="230" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="130" y="38" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">1,000万円</text><text x="130" y="316" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">守られる</text><rect x="320" y="165" width="140" height="115" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="390" y="153" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">500万円</text><text x="390" y="316" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">戻らない
+              おそれ</text><path d="M0 280 H520" stroke="#9aa3ad" stroke-width="2"/>
+          - type: svg
+            w: 520
+            h: 140
+            at:
+              - 700
+              - 330
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">銀行に1,500万円</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 銀行を分けると安心</text>
+        added: true
+      - say: なお、外貨預金は、この預金保険の対象外です。
+        show:
+          - type: text
+            text: ※外貨預金は**対象外**
+            color: pink
+            at:
+              - 700
+              - 520

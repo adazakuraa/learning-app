@@ -1,0 +1,93 @@
+title: 日本の社会保障の全体像
+scenes:
+  - board: slide
+    steps:
+      - say: 第4章、「社会保険」です。病気、介護、失業、仕事中のけがなどに備える、国の保険の仕組みを学びます。
+        show:
+          - type: title
+            text: 第4章　社会保険
+          - type: list
+            items:
+              - 社会保障の全体像
+              - 健康保険と医療費
+              - 介護保険
+              - 雇用保険
+              - 労災保険と働くときのルール
+              - 扶養に入っている人の保障
+  - board: whiteboard
+    steps:
+      - say: 「日本の社会保障の全体像」です。日本では、人生のさまざまなリスクに、まず国の保険、社会保険が備えています。
+        show:
+          - type: title
+            text: 5つの社会保険
+      - say: 社会保険は、5つあります。医療、年金、介護、雇用、そして労災です。
+        show:
+          - type: svg
+            w: 1120
+            h: 144
+            at:
+              - 80
+              - 210
+            anim: fade
+            markup: <rect x="2" y="2" width="180" height="136" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="92" y="60" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">医療</text><text x="92" y="100" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">病気・けが</text><rect x="236" y="2" width="180" height="136" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="326" y="60" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">年金</text><text x="326" y="100" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">老後・障害・死亡</text><rect x="470" y="2" width="180" height="136" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="560" y="60" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">介護</text><text x="560" y="100" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">介護が必要</text><rect x="704" y="2" width="180" height="136" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="794" y="60" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">雇用</text><text x="794" y="100" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">失業・育休</text><rect x="938" y="2" width="180" height="136" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="1028" y="60" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">労災</text><text x="1028" y="100" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">仕事中のけが</text>
+      - say: 会社員の場合、保険料は会社と半分ずつ払います。労災保険は、会社が全額払います。
+        show:
+          - type: box
+            w: 1100
+            text: 会社員：保険料は**会社と半分ずつ**（労災は会社が全額）
+            color: yellow
+            at:
+              - 80
+              - 420
+  - board: whiteboard
+    steps:
+      - say: ただし、会社員と自営業では、受けられる保障に差があります。
+        show:
+          - type: title
+            text: 会社員と自営業のちがい
+          - type: box
+            w: 560
+            text: |-
+              ・健康保険（傷病手当金あり）
+              ・厚生年金＋国民年金
+              ・雇用保険・労災保険
+            title: 会社員・公務員
+            color: blue
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・国民健康保険（傷病手当金なし）
+              ・国民年金だけ
+              ・雇用保険・労災は原則なし
+            title: 自営業・フリーランス
+            color: pink
+            at:
+              - 660
+              - 160
+      - say: たとえば、病気で1か月働けなくなったとき。会社員なら、給料のおよそ3分の2が手当として出ますが、自営業には、そうした手当がありません。だから自営業は、自分で備える必要が大きいのです。
+        show:
+          - type: svg
+            w: 900
+            h: 172
+            at:
+              - 80
+              - 420
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">病気で1か月働けない</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">会社員 → 給料の約3分の2の手当</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">自営業 → 手当なし（自分で備える）</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: 民間の保険は、この公的な保険で足りない部分を補うものです。まず、公的な保険で何が守られているかを知ることが、出発点です。
+        show:
+          - type: title
+            text: まとめ
+          - type: box
+            w: 1100
+            text: まず**公的保険**を知る → 足りない分だけ**民間保険**
+            color: yellow
+            at:
+              - 80
+              - 170

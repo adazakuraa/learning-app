@@ -1,0 +1,52 @@
+title: 家族のお金の話し方
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「家族のお金の話し方」です。お金のトラブルの多くは、話し合っていないことから生まれます。
+        show:
+          - type: title
+            text: 話し合うこと
+          - type: list
+            items:
+              - 収入・支出
+              - 貯金・借金
+              - 保険
+              - 目標（住宅・教育・老後）と優先順位
+  - board: whiteboard
+    steps:
+      - say: 夫婦の家計の管理には、いくつかの方法があります。決まった額を出し合う共通口座、項目ごとの分担、どちらか一方がまとめて管理する方法です。
+        show:
+          - type: title
+            text: 夫婦の家計管理
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="170" y="55" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">共通口座</text><text x="170" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">わかりやすい</text><rect x="392" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="560" y="55" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">項目で分担</text><text x="560" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">全体が見えにくい</text><rect x="782" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">一方が管理</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">もう一方が知らなくなりがち</text>
+      - say: どの方法でも、年に1回は、家計全体を一緒に確認しましょう。
+        show:
+          - type: box
+            w: 1100
+            text: 年1回は**家計全体を一緒に確認**
+            color: yellow
+            at:
+              - 80
+              - 400
+  - board: whiteboard
+    steps:
+      - say: 親とも、元気なうちに話しておきたいことがあります。預金や保険のありか、介護が必要になったときの希望、相続のこと。エンディングノートを使うと、話しやすくなります。
+        show:
+          - type: title
+            text: 親と話しておきたいこと
+          - type: svg
+            w: 900
+            h: 208
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">親が元気なうちに</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">預金口座・保険のありか</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">介護の希望・お墓や葬儀</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ エンディングノートが便利</text>
+        added: true

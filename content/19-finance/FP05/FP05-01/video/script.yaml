@@ -1,0 +1,70 @@
+title: 公的年金のしくみ
+scenes:
+  - board: slide
+    steps:
+      - say: 第5章、「年金」です。公的年金の仕組み、もらえる額、そして、自分で上乗せする方法を学びます。
+        show:
+          - type: title
+            text: 第5章　年金
+          - type: list
+            items:
+              - 公的年金のしくみ
+              - 年金はいくら？いつから？
+              - 障害年金と遺族年金
+              - 自分で上乗せする年金
+              - 老後に必要なお金
+  - board: whiteboard
+    steps:
+      - say: 「公的年金のしくみ」です。日本の年金は、よく、建物にたとえられます。
+        show:
+          - type: title
+            text: 年金は「階建て」
+      - say: 1階は、20歳から60歳までの全員が入る、国民年金。2階は、会社員や公務員が入る、厚生年金。さらに3階として、会社や自分で上乗せする年金があります。
+        show:
+          - type: svg
+            w: 900
+            h: 300
+            at:
+              - 190
+              - 170
+            anim: fade
+            markup: <rect x="180" y="0" width="540" height="90" rx="10" fill="#9be0b0" fill-opacity="0.22" stroke="#9be0b0" stroke-width="3"/><text x="450" y="41" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">3階：企業年金・iDeCo</text><text x="450" y="73" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">会社や自分で上乗せ（任意）</text><rect x="90" y="100" width="720" height="90" rx="10" fill="#8fc4ff" fill-opacity="0.22" stroke="#8fc4ff" stroke-width="3"/><text x="450" y="141" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">2階：厚生年金</text><text x="450" y="173" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">会社員・公務員</text><rect x="0" y="200" width="900" height="90" rx="10" fill="#f3d77a" fill-opacity="0.22" stroke="#f3d77a" stroke-width="3"/><text x="450" y="241" font-size="30" fill="#f3d77a" stroke="none" text-anchor="middle">1階：国民年金（基礎年金）</text><text x="450" y="273" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">20〜60歳の全員</text>
+  - board: whiteboard
+    steps:
+      - say: 入っている人は、3つのグループに分かれます。
+        show:
+          - type: title
+            text: 3つのグループ
+      - say: 自営業や学生は、第1号。自分で、月およそ1万7千円の保険料を払います。会社員や公務員は、第2号。給料に応じた保険料を、会社と半分ずつ払います。そして、第2号の人に扶養されている配偶者は、第3号。自分では払いません。
+        show:
+          - type: svg
+            w: 1120
+            h: 174
+            at:
+              - 80
+              - 180
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="166" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="170" y="75" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">第1号</text><text x="170" y="115" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">自営業・学生</text><text x="170" y="139" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">月約1.7万円を自分で</text><rect x="392" y="2" width="336" height="166" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="560" y="75" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">第2号</text><text x="560" y="115" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">会社員・公務員</text><text x="560" y="139" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">会社と半分ずつ</text><rect x="782" y="2" width="336" height="166" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="950" y="75" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">第3号</text><text x="950" y="115" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">第2号の配偶者</text><text x="950" y="139" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">自分では払わない</text>
+  - board: whiteboard
+    steps:
+      - say: 年金は、老後のためだけではありません。障害を負ったとき、そして家族が亡くなったときにも、お金が出る保険です。
+        show:
+          - type: title
+            text: 年金は3つのリスクに備える
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 180
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="170" y="55" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">老後</text><text x="170" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">老齢年金</text><rect x="392" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="560" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">障害</text><text x="560" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">障害年金</text><rect x="782" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">死亡</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">遺族年金</text>
+      - say: 収入が少なくて保険料が払えないときは、未納のままにせず、免除や猶予を申請しましょう。未納のままだと、もしものときに障害年金がもらえないことがあります。
+        show:
+          - type: box
+            w: 1100
+            text: 払えないときは**免除・猶予を申請**（未納にしない）
+            color: yellow
+            at:
+              - 80
+              - 380

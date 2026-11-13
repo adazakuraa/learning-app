@@ -1,0 +1,89 @@
+title: インフレとデフレ
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「インフレとデフレ」です。インフレは、物の値段が上がり続けること。デフレは、下がり続けることです。
+        show:
+          - type: title
+            text: インフレとデフレ
+          - type: box
+            w: 560
+            text: |-
+              ・物価が上がる
+              ・お金の価値が下がる
+              ・現金だけの人は損
+            title: インフレ
+            color: pink
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・物価が下がる
+              ・お金の価値が上がる
+              ・借金のある人は苦しい
+            title: デフレ
+            color: blue
+            at:
+              - 660
+              - 160
+  - board: whiteboard
+    steps:
+      - say: インフレが続くと、同じ1000円で買える物が、だんだん減っていきます。
+        show:
+          - type: title
+            text: お金の価値が下がる
+      - say: たとえば、今150円のおにぎりが、毎年2パーセントずつ値上がりすると、36年後には、およそ300円。物の値段が2倍になり、お金の価値は半分になります。
+        show:
+          - type: svg
+            w: 800
+            h: 400
+            at:
+              - 140
+              - 170
+            anim: fade
+            markup: <rect x="63.33333333333334" y="200" width="140" height="150" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="133.33333333333334" y="188" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">150円</text><text x="133.33333333333334" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">今</text><rect x="330" y="136" width="140" height="214" rx="6" fill="#f3a76a" fill-opacity="0.8" stroke="none"/><text x="400" y="124" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">約214円</text><text x="400" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">18年後</text><rect x="596.6666666666667" y="50" width="140" height="300" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="666.6666666666667" y="38" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">約300円</text><text x="666.6666666666667" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">36年後</text><path d="M0 350 H800" stroke="#9aa3ad" stroke-width="2"/>
+        added: true
+      - say: 日本は長くデフレ気味でしたが、2022年ごろから物価が上がり始めました。日本銀行は、年2パーセントの物価上昇を目標にしています。
+        show:
+          - type: box
+            w: 1100
+            text: 日本銀行の目標：**物価上昇 年2%**
+            color: blue
+            at:
+              - 80
+              - 590
+  - board: whiteboard
+    steps:
+      - say: ここで大切なのが、実質金利という考え方です。預金の金利から、物価の上がり方を引いたものです。
+        show:
+          - type: title
+            text: 実質金利
+          - type: box
+            w: 1100
+            text: "**実質金利 ＝ 金利 − 物価上昇率**"
+            color: yellow
+            at:
+              - 80
+              - 160
+      - say: たとえば、預金の金利が0.2パーセント、物価が2パーセント上がると、実質はマイナス1.8パーセント。預金の数字は増えても、買える物は減っているのです。
+        show:
+          - type: svg
+            w: 1100
+            h: 220
+            at:
+              - 80
+              - 270
+            anim: fade
+            markup: <text x="264" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">預金の金利</text><rect x="280" y="20" width="63" height="44" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="357" y="49" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="start">+0.2%</text><text x="264" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">物価の上昇</text><rect x="280" y="90" width="630" height="44" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="924" y="119" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="start">+2%</text><text x="264" y="189" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">実質</text><rect x="280" y="160" width="567" height="44" rx="6" fill="#ef8a8a" fill-opacity="0.8" stroke="none"/><text x="861" y="189" font-size="26" fill="#ef8a8a" stroke="none" text-anchor="start">−1.8%（目減り）</text>
+        added: true
+      - say: だから、長く持つお金の一部は、物価とともに値上がりしやすい株式などにも、分けておく考え方があります。
+        show:
+          - type: box
+            w: 1100
+            text: 長期のお金の一部は、物価に強い資産へ分ける
+            color: green
+            at:
+              - 80
+              - 520

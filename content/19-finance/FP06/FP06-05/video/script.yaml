@@ -1,0 +1,65 @@
+title: 保険のしくみと共済
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「保険のしくみと共済」です。保険料は、年齢や性別、健康状態などで決まります。若くて健康なほど、安くなります。
+        show:
+          - type: title
+            text: 保険料の決まり方
+          - type: list
+            items:
+              - "**年齢**：若いほど安い"
+              - 性別
+              - "**健康状態**"
+              - たばこを吸うか
+      - say: 保険に入るとき、健康状態を正しく伝える義務があります。うその告知をすると、いざというとき、保険金が出ないことがあります。
+        show:
+          - type: box
+            w: 1100
+            text: "**告知義務**：うそをつくと保険金が出ないことも"
+            color: pink
+            at:
+              - 80
+              - 380
+  - board: whiteboard
+    steps:
+      - say: 終身保険などは、解約するとお金が戻ります。これを、解約返戻金といいます。ただし、入って数年で解約すると、払った額より、大きく減ることが多いです。
+        show:
+          - type: title
+            text: 解約返戻金
+          - type: svg
+            w: 1000
+            h: 420
+            at:
+              - 140
+              - 170
+            anim: draw
+            markup: <path d="M60 370 H840 M60 370 V20" stroke="#9aa3ad" stroke-width="2" fill="none"/><text x="60" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">0年</text><text x="255" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">5年</text><text x="450" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">15年</text><text x="645" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">25年</text><text x="840" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">35年</text><path d="M60.0 370.0 L255.0 329.2 L450.0 247.6 L645.0 152.4 L840.0 50.4" stroke="#8fc4ff" stroke-width="5" fill="none"/><text x="852" y="43.400000000000034" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="start">払った保険料</text><path d="M60.0 370.0 L255.0 356.4 L450.0 288.4 L645.0 179.6 L840.0 43.6" stroke="#f3d77a" stroke-width="5" fill="none"/><text x="852" y="66.60000000000002" font-size="24" fill="#f3d77a" stroke="none" text-anchor="start">解約返戻金</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: 保険によく似たものに、共済があります。都道府県民共済やコープ共済などです。保険料が安めで、シンプルな保障が多いのが特徴です。
+        show:
+          - type: title
+            text: 共済
+          - type: box
+            w: 560
+            text: |-
+              ・保険会社が運営
+              ・種類が多く、細かく選べる
+            title: 保険
+            color: blue
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・協同組合などが運営
+              ・保険料が安め・シンプル
+              ・割戻金が戻ることも
+            title: 共済
+            color: green
+            at:
+              - 660
+              - 160

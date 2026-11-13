@@ -1,0 +1,78 @@
+title: 相続の基本
+scenes:
+  - board: slide
+    steps:
+      - say: 第12章、「相続・贈与・老後・介護」です。財産を引きつぐルール、税金、判断力が落ちたときの備え、介護の費用、亡くなった後の手続きを学びます。
+        show:
+          - type: title
+            text: 第12章　相続・贈与・老後・介護
+          - type: list
+            items:
+              - 相続の基本
+              - 相続税と贈与税
+              - 遺言・成年後見・エンディングノート
+              - 老後の住まいと介護の費用
+              - 亡くなった後の手続き
+  - board: whiteboard
+    steps:
+      - say: 「相続の基本」です。人が亡くなると、その人の財産は、家族に引きつがれます。誰が相続人になるかは、法律で順番が決まっています。
+        show:
+          - type: title
+            text: 誰が相続人になる？
+      - say: 配偶者は、いつも相続人です。そのほかは、1番目が子ども。子どもがいなければ、2番目に親。親もいなければ、3番目に兄弟姉妹です。
+        show:
+          - type: svg
+            w: 900
+            h: 400
+            at:
+              - 190
+              - 160
+            anim: fade
+            markup: <rect x="0" y="0" width="900" height="90" rx="10" fill="#f3d77a" fill-opacity="0.22" stroke="#f3d77a" stroke-width="3"/><text x="450" y="55" font-size="30" fill="#f3d77a" stroke="none" text-anchor="middle">配偶者：いつも相続人</text><rect x="90" y="100" width="720" height="90" rx="10" fill="#9be0b0" fill-opacity="0.22" stroke="#9be0b0" stroke-width="3"/><text x="450" y="155" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">① 子ども</text><rect x="135" y="200" width="630" height="90" rx="10" fill="#8fc4ff" fill-opacity="0.22" stroke="#8fc4ff" stroke-width="3"/><text x="450" y="255" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">② 親（子どもがいないとき）</text><rect x="180" y="300" width="540" height="90" rx="10" fill="#9aa3ad" fill-opacity="0.22" stroke="#9aa3ad" stroke-width="3"/><text x="450" y="355" font-size="30" fill="#9aa3ad" stroke="none" text-anchor="middle">③ 兄弟姉妹（子も親もいないとき）</text>
+  - board: whiteboard
+    steps:
+      - say: 遺言がない場合、法律で決められた分け方の目安があります。たとえば、配偶者と子ども2人なら、配偶者が2分の1。子どもは、残りを半分ずつ、4分の1ずつです。
+        show:
+          - type: title
+            text: 例：配偶者と子ども2人
+          - type: svg
+            w: 800
+            h: 380
+            at:
+              - 140
+              - 170
+            anim: fade
+            markup: <rect x="63.33333333333334" y="50" width="140" height="280" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="133.33333333333334" y="38" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">1/2</text><text x="133.33333333333334" y="366" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">配偶者</text><rect x="330" y="190" width="140" height="140" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="400" y="178" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">1/4</text><text x="400" y="366" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">子ども1</text><rect x="596.6666666666667" y="190" width="140" height="140" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="666.6666666666667" y="178" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">1/4</text><text x="666.6666666666667" y="366" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">子ども2</text><path d="M0 330 H800" stroke="#9aa3ad" stroke-width="2"/>
+        added: true
+      - say: 実際には、相続人全員で話し合って、自由に分けることもできます。遺言があれば、原則、遺言に従います。
+        show:
+          - type: box
+            w: 1100
+            text: 全員の話し合いで自由に分けられる。**遺言**があれば原則それに従う
+            color: blue
+            at:
+              - 80
+              - 580
+  - board: whiteboard
+    steps:
+      - say: 気をつけたいのは、借金も相続されることです。借金のほうが多いときは、3か月以内に、家庭裁判所で、相続放棄の手続きをします。
+        show:
+          - type: title
+            text: 借金も相続される
+          - type: box
+            w: 1100
+            text: 借金が多いときは**3か月以内に相続放棄**
+            color: pink
+            at:
+              - 80
+              - 160
+      - say: 相続には、期限のある手続きが多くあります。家や土地を相続したら、3年以内に登記することも、2024年から義務になりました。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 280
+            anim: fade
+            markup: <rect x="2" y="2" width="238.5" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="121.25" y="55" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">3か月</text><text x="121.25" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">相続放棄</text><path d="M250.5 65 L284.5 65 M272.5 55 L284.5 65 L272.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="294.5" y="2" width="238.5" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="413.75" y="55" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">4か月</text><text x="413.75" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">準確定申告</text><path d="M543 65 L577 65 M565 55 L577 65 L565 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="587" y="2" width="238.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="706.25" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">10か月</text><text x="706.25" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">相続税の申告</text><path d="M835.5 65 L869.5 65 M857.5 55 L869.5 65 L857.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="879.5" y="2" width="238.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="998.75" y="55" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">3年</text><text x="998.75" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">不動産の相続登記</text>

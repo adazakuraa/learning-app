@@ -1,0 +1,76 @@
+title: 確定申告
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「確定申告」です。自分で、1年の所得と税金を計算して、税務署に申告する手続きです。期間は、原則、2月16日から3月15日です。
+        show:
+          - type: title
+            text: 確定申告とは
+          - type: box
+            w: 1100
+            text: 期間：原則 **2月16日〜3月15日**
+            color: yellow
+            at:
+              - 80
+              - 160
+      - say: 今は、マイナンバーカードとスマホがあれば、e-Taxで、自宅から申告できます。
+        read: 今は、マイナンバーカードとスマホがあれば、イータックスで、自宅から申告できます。
+        show:
+          - type: box
+            w: 1100
+            text: "**e-Tax**：マイナンバーカード＋スマホで自宅から"
+            color: blue
+            at:
+              - 80
+              - 260
+  - board: whiteboard
+    steps:
+      - say: 会社員でも、確定申告が必要な場合があります。いちばん身近なのは、副業の所得が、年20万円をこえたときです。
+        show:
+          - type: title
+            text: 会社員でも必要なとき
+          - type: list
+            items:
+              - 副業の所得が**年20万円をこえる**
+              - 年収が2,000万円をこえる
+              - 2か所以上から給料をもらっている
+  - board: whiteboard
+    steps:
+      - say: 一方、申告すると、お金が戻ってくる場合もあります。代表が、医療費控除です。
+        show:
+          - type: title
+            text: 申告するとお金が戻る
+      - say: 家族全員の医療費が、1年で10万円をこえたら、こえた分が所得から引けます。たとえば、出産や入院で、医療費が30万円かかった家庭なら、20万円分が控除の対象です。
+        show:
+          - type: svg
+            w: 1000
+            h: 208
+            at:
+              - 80
+              - 180
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Kさん一家の例</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">1年の医療費：30万円（出産・通院など）</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 10万円をこえた20万円が控除の対象</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 税率20%なら約4万円が戻る（住民税も軽く）</text>
+        added: true
+      - say: ほかにも、ワンストップ特例を使わないふるさと納税や、住宅ローン控除の1年目は、確定申告で手続きします。もらい忘れた還付は、5年前までさかのぼって申告できます。
+        show:
+          - type: box
+            w: 1100
+            text: 還付の申告は**5年前まで**さかのぼれる
+            color: green
+            at:
+              - 80
+              - 450
+  - board: whiteboard
+    steps:
+      - say: やり方は、国税庁の、確定申告書等作成コーナーで、画面の案内に沿って入力するだけです。マイナポータルとつなぐと、医療費のデータも、自動で取りこめます。
+        show:
+          - type: title
+            text: やり方
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">作成コーナーを開く</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">案内に沿って入力</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="950" y="74" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">e-Taxで送信</text>

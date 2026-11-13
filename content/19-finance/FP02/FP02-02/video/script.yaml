@@ -1,0 +1,81 @@
+title: 生活防衛資金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「生活防衛資金」です。急な失業や病気、思わぬ出費に備えて、手元に置いておくお金のことです。
+        show:
+          - type: title
+            text: 生活防衛資金とは
+      - say: 人生には、予定外の出来事がつきものです。失業、病気、けが、家電の故障、冠婚葬祭。こんなとき手元にお金がないと、高い金利で借りることになってしまいます。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">失業・病気</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">お金がない</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#ef8a8a" fill-opacity="0.15" stroke="#ef8a8a" stroke-width="3"/><text x="950" y="74" font-size="26" fill="#ef8a8a" stroke="none" text-anchor="middle">高金利で借りる</text>
+      - say: 目安は、生活費の3か月分から6か月分です。
+        show:
+          - type: box
+            w: 1100
+            text: 目安：**生活費の3〜6か月分**
+            color: yellow
+            at:
+              - 80
+              - 380
+  - board: whiteboard
+    steps:
+      - say: 具体的に見てみましょう。毎月の生活費が20万円の人なら、60万円から120万円が目安になります。
+        show:
+          - type: title
+            text: いくら必要？
+          - type: svg
+            w: 500
+            h: 360
+            at:
+              - 140
+              - 160
+            anim: fade
+            markup: <rect x="56.25" y="180" width="137.5" height="130" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="125" y="168" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">60万円</text><text x="125" y="346" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">3か月分</text><rect x="306.25" y="50" width="137.5" height="260" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="375" y="38" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">120万円</text><text x="375" y="346" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">6か月分</text><path d="M0 310 H500" stroke="#9aa3ad" stroke-width="2"/>
+          - type: svg
+            w: 520
+            h: 172
+            at:
+              - 680
+              - 200
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">生活費 月20万円の人</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">3か月分 → 60万円</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">6か月分 → 120万円</text>
+        added: true
+      - say: 会社員は、失業したときの雇用保険や、病気のときの傷病手当金があるので、少なめでも大丈夫。自営業やフリーランスは、こうした保障がないので、半年から1年分あると安心です。
+        show:
+          - type: box
+            w: 1100
+            text: 会社員：3か月〜　／　自営業・フリーランス：**6か月〜1年分**
+            color: blue
+            at:
+              - 80
+              - 560
+  - board: whiteboard
+    steps:
+      - say: 置き場所は、すぐ引き出せて、元本が減らない場所。普通預金などです。このお金は、投資には回しません。
+        show:
+          - type: title
+            text: 置き場所
+          - type: box
+            w: 1100
+            text: "**すぐ引き出せる預金**に。投資には回さない"
+            color: green
+            at:
+              - 80
+              - 160
+      - say: 生活防衛資金があれば、いざというときに、慌ててお金を借りたり、値下がりした投資を売ったりしなくて済みます。お金の土台です。
+        show:
+          - type: box
+            w: 1100
+            text: 慌てて借りない・慌てて売らない ＝ **お金の土台**
+            color: yellow
+            at:
+              - 80
+              - 280

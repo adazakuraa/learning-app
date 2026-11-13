@@ -1,0 +1,113 @@
+title: iDeCo
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「iDeCo」です。iDeCoは、自分でお金を積み立てて、自分で運用する、自分で作る年金です。正式には、個人型確定拠出年金といいます。
+        read: 「イデコ」です。イデコは、自分でお金を積み立てて、自分で運用する、自分で作る年金です。正式には、個人型確定拠出年金といいます。
+        show:
+          - type: title
+            text: iDeCo＝自分で作る年金
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">毎月 掛金を出す</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="560" y="55" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">自分で運用</text><text x="560" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">投資信託・定期預金など</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="950" y="74" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">60歳以降に受け取る</text>
+  - board: whiteboard
+    steps:
+      - say: iDeCoのいちばんの特徴は、税金のメリットが、3回あることです。
+        read: イデコのいちばんの特徴は、税金のメリットが、3回あることです。
+        show:
+          - type: title
+            text: 税金のメリットが3回
+      - say: 1回目、掛金が、全額、所得から差し引かれ、所得税と住民税が安くなります。2回目、運用でもうけても、税金がかかりません。3回目、受け取るときにも、税金を軽くする控除があります。
+        show:
+          - type: svg
+            w: 900
+            h: 300
+            at:
+              - 190
+              - 160
+            anim: fade
+            markup: <rect x="0" y="0" width="900" height="90" rx="10" fill="#f3d77a" fill-opacity="0.22" stroke="#f3d77a" stroke-width="3"/><text x="450" y="41" font-size="30" fill="#f3d77a" stroke="none" text-anchor="middle">① 掛けるとき</text><text x="450" y="73" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">掛金が全額 所得控除 → 税金が安くなる</text><rect x="0" y="100" width="900" height="90" rx="10" fill="#9be0b0" fill-opacity="0.22" stroke="#9be0b0" stroke-width="3"/><text x="450" y="141" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">② 運用中</text><text x="450" y="173" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">もうけに税金がかからない</text><rect x="0" y="200" width="900" height="90" rx="10" fill="#8fc4ff" fill-opacity="0.22" stroke="#8fc4ff" stroke-width="3"/><text x="450" y="241" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">③ 受け取るとき</text><text x="450" y="273" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">退職所得控除・公的年金等控除</text>
+  - board: whiteboard
+    steps:
+      - say: どのくらい安くなるか、例で見てみましょう。年収500万円の会社員が、月2万円、年24万円を掛けると、税金が、年およそ4万8千円安くなります。
+        show:
+          - type: title
+            text: どのくらい安くなる？
+          - type: svg
+            w: 900
+            h: 208
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Mさん（年収500万円の会社員）</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">iDeCoに 月2万円（年24万円）</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">所得税10%＋住民税10%</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 税金が 年 約4.8万円 安くなる</text>
+        added: true
+      - say: 20年続ければ、税金だけで、およそ96万円の差です。これは、運用のもうけとは別に、確実に得られる効果です。
+        show:
+          - type: svg
+            w: 1100
+            h: 150
+            at:
+              - 80
+              - 400
+            anim: fade
+            markup: <text x="244" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">1年</text><rect x="260" y="20" width="32.5" height="44" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="306.5" y="49" font-size="26" fill="#f3d77a" stroke="none" text-anchor="start">約4.8万円</text><text x="244" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">20年</text><rect x="260" y="90" width="650" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="924" y="119" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">約96万円</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: 掛金の上限は、働き方によって違います。会社員で企業年金がない人は月2万3千円、自営業は月6万8千円などです。2027年からは、上限の引き上げが予定されています。
+        show:
+          - type: title
+            text: 掛金の上限（月額・2026年時点）
+          - type: svg
+            w: 1100
+            h: 290
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <text x="404" y="49" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">自営業・フリーランス</text><rect x="420" y="20" width="490" height="44" rx="6" fill="#f3a76a" fill-opacity="0.8" stroke="none"/><text x="924" y="49" font-size="24" fill="#f3a76a" stroke="none" text-anchor="start">6.8万円</text><text x="404" y="119" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">会社員（企業年金なし）</text><rect x="420" y="90" width="165.73529411764704" height="44" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="599.7352941176471" y="119" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="start">2.3万円</text><text x="404" y="189" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">会社員（企業年金あり）・公務員</text><rect x="420" y="160" width="144.11764705882354" height="44" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="578.1176470588235" y="189" font-size="24" fill="#8fc4ff" stroke="none" text-anchor="start">2万円</text><text x="404" y="259" font-size="24" fill="#eef0ea" stroke="none" text-anchor="end">専業主婦・主夫</text><rect x="420" y="230" width="165.73529411764704" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="599.7352941176471" y="259" font-size="24" fill="#9be0b0" stroke="none" text-anchor="start">2.3万円</text>
+  - board: whiteboard
+    steps:
+      - say: ただし、大きな注意点があります。iDeCoのお金は、原則、60歳まで引き出せません。教育費や家を買うお金には、使えないのです。
+        read: ただし、大きな注意点があります。イデコのお金は、原則、60歳まで引き出せません。教育費や家を買うお金には、使えないのです。
+        show:
+          - type: title
+            text: 注意点とNISAとの使い分け
+          - type: box
+            w: 560
+            text: |-
+              ・いつでも引き出せる
+              ・掛金の所得控除はない
+              ・教育・住宅・老後に幅広く
+            title: NISA
+            color: green
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・**原則60歳まで引き出せない**
+              ・掛金が所得控除になる
+              ・老後専用
+            title: iDeCo
+            color: blue
+            at:
+              - 660
+              - 160
+      - say: ですから、いつでも使えるNISAを基本にして、余裕があれば、節税効果の大きいiDeCoを足す、という考え方が一般的です。
+        read: ですから、いつでも使えるニーサを基本にして、余裕があれば、節税効果の大きいイデコを足す、という考え方が一般的です。
+        show:
+          - type: box
+            w: 1100
+            text: "**NISAが基本**、余裕があれば**iDeCoを足す**"
+            color: yellow
+            at:
+              - 80
+              - 440

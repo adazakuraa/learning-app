@@ -1,0 +1,53 @@
+title: 障害年金と遺族年金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「障害年金と遺族年金」です。病気やけがで、生活や仕事に支障が出たら、年齢に関係なく、障害年金がもらえることがあります。
+        show:
+          - type: title
+            text: 障害年金
+      - say: たとえば、うつ病で長く働けなくなった人も、対象になりえます。がんや、糖尿病の合併症なども対象です。
+        show:
+          - type: svg
+            w: 520
+            h: 172
+            at:
+              - 80
+              - 150
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Hさん（35歳）</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">うつ病で、長く働けない</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 障害年金の対象になりうる</text>
+        added: true
+      - say: 大切なのは、初めて病院にかかった日、初診日です。相談は、年金事務所や、社会保険労務士へ。
+        show:
+          - type: box
+            w: 1100
+            text: ポイント：**初診日**。相談は年金事務所・社会保険労務士
+            color: yellow
+            at:
+              - 80
+              - 400
+  - board: whiteboard
+    steps:
+      - say: 家計を支える人が亡くなると、家族に、遺族年金が出ます。
+        show:
+          - type: title
+            text: 遺族年金
+      - say: 子どものいる配偶者には、遺族基礎年金。亡くなった人が会社員なら、さらに、遺族厚生年金が上乗せされます。
+        show:
+          - type: svg
+            w: 900
+            h: 200
+            at:
+              - 190
+              - 170
+            anim: fade
+            markup: <rect x="90" y="0" width="720" height="90" rx="10" fill="#8fc4ff" fill-opacity="0.22" stroke="#8fc4ff" stroke-width="3"/><text x="450" y="41" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">遺族厚生年金</text><text x="450" y="73" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">亡くなった人が会社員など</text><rect x="0" y="100" width="900" height="90" rx="10" fill="#f3d77a" fill-opacity="0.22" stroke="#f3d77a" stroke-width="3"/><text x="450" y="141" font-size="30" fill="#f3d77a" stroke="none" text-anchor="middle">遺族基礎年金</text><text x="450" y="173" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">子どものいる配偶者・子ども</text>
+      - say: 公的な遺族年金がいくら出るかを知っておくと、民間の生命保険に、入りすぎずに済みます。
+        show:
+          - type: box
+            w: 1100
+            text: 遺族年金を知る → **生命保険の入りすぎを防ぐ**
+            color: green
+            at:
+              - 80
+              - 400

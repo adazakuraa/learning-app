@@ -1,0 +1,40 @@
+title: 信用情報
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「信用情報」です。クレジットカードやローンを、いつ、いくら使い、きちんと返したか。その記録は、信用情報機関に登録されています。
+        show:
+          - type: title
+            text: 信用情報とは
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">カード・ローン・</text><text x="170" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">スマホの分割</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="560" y="58" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">信用情報機関に</text><text x="560" y="90" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">記録</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="950" y="58" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">審査で</text><text x="950" y="90" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">見られる</text>
+  - board: whiteboard
+    steps:
+      - say: 支払いが遅れると、その記録が残ります。長い延滞は、およそ5年残り、その間は、住宅ローンやクレジットカードの審査に、通りにくくなります。
+        show:
+          - type: title
+            text: 延滞すると
+          - type: svg
+            w: 900
+            h: 208
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Oさん（28歳）</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">スマホ本体の分割払いを、何か月か払い忘れた</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 5年ほど記録が残る</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 住宅ローンの審査に通らなかった</text>
+        added: true
+      - say: 意外と多いのが、スマホ本体の分割払いの、払い忘れです。口座の残高不足にも、気をつけましょう。自分の記録は、本人が開示請求して、確認できます。
+        show:
+          - type: box
+            w: 1100
+            text: "**スマホ本体の分割払い**の払い忘れに注意。記録は本人が確認できる"
+            color: yellow
+            at:
+              - 80
+              - 420

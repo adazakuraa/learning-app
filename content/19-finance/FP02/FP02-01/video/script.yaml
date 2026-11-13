@@ -1,0 +1,111 @@
+title: 固定費と変動費
+scenes:
+  - board: slide
+    steps:
+      - say: 第2章、「家計管理と貯蓄」です。家計の見直し方と、お金のため方、預金やキャッシュレスの基本を学びます。
+        show:
+          - type: title
+            text: 第2章　家計管理と貯蓄
+          - type: list
+            items:
+              - 固定費と変動費
+              - 生活防衛資金
+              - 先取り貯蓄
+              - 預金と預金保険
+              - キャッシュレスとクレジットカード
+  - board: whiteboard
+    steps:
+      - say: 「固定費と変動費」です。支出は、毎月決まって出ていく固定費と、月によって変わる変動費に分けられます。
+        show:
+          - type: title
+            text: 固定費と変動費
+          - type: box
+            w: 560
+            text: |-
+              ・家賃・住宅ローン
+              ・スマホ・ネット
+              ・保険
+              ・サブスク
+              ・車
+            title: 固定費（毎月ほぼ同じ）
+            color: blue
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・食費
+              ・日用品
+              ・交際費
+              ・娯楽
+            title: 変動費（月で変わる）
+            color: green
+            at:
+              - 660
+              - 160
+      - say: 家計を見直すなら、まず固定費からです。一度手続きすれば、その効果がずっと続くからです。
+        show:
+          - type: box
+            w: 1100
+            text: 見直しは**固定費から**：一度の手続きで効果が続く
+            color: yellow
+            at:
+              - 80
+              - 520
+  - board: whiteboard
+    steps:
+      - say: たとえば、スマホ代を、月5000円安いプランに変えたとします。
+        show:
+          - type: title
+            text: 固定費の見直しの効果
+          - type: svg
+            w: 520
+            h: 172
+            at:
+              - 80
+              - 150
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Dさんの例</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">スマホを格安プランに変更</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">毎月 5,000円 安くなった</text>
+        added: true
+      - say: すると、1年で6万円。10年続けば、60万円になります。何もがまんせずに、これだけの差が生まれるのです。
+        show:
+          - type: svg
+            w: 1100
+            h: 220
+            at:
+              - 80
+              - 330
+            anim: fade
+            markup: <text x="244" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">1か月</text><rect x="260" y="20" width="5.416666666666667" height="44" rx="6" fill="#9aa3ad" fill-opacity="0.8" stroke="none"/><text x="279.4166666666667" y="49" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="start">5,000円</text><text x="244" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">1年</text><rect x="260" y="90" width="65" height="44" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="339" y="119" font-size="26" fill="#f3d77a" stroke="none" text-anchor="start">6万円</text><text x="244" y="189" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">10年</text><rect x="260" y="160" width="650" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="924" y="189" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">60万円</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: 変動費は、予算を決めて、使いすぎを防ぎます。そして年に1回、なんとなく払い続けている支出がないか、点検しましょう。使っていないサブスクは、代表例です。
+        show:
+          - type: title
+            text: 変動費と年1回の点検
+          - type: box
+            w: 1100
+            text: 変動費：**予算を決める**
+            color: green
+            at:
+              - 80
+              - 160
+          - type: box
+            w: 1100
+            text: 年1回：使っていないサブスクなど「**なんとなくの支出**」を点検
+            color: pink
+            at:
+              - 80
+              - 260
+      - say: また、生活費用、貯金用、特別な出費用と、口座を分けておくと、お金の流れが見えやすくなります。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 400
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">生活費の口座</text><rect x="392" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">貯金の口座</text><rect x="782" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">特別費の口座</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">旅行・家電など</text>

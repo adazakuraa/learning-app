@@ -1,0 +1,80 @@
+title: 詐欺と悪質商法の見分け方
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「詐欺と悪質商法の見分け方」です。まず、詐欺の合図となる言葉を覚えましょう。
+        show:
+          - type: title
+            text: 詐欺の合図
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">必ずもうかる</text><rect x="392" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="560" y="58" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">元本保証で</text><text x="560" y="90" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">高利回り</text><rect x="782" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="950" y="58" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">今だけ・</text><text x="950" y="90" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">あなただけ</text>
+      - say: これらを言われたら、どんなに魅力的でも、一度立ち止まりましょう。
+        show:
+          - type: box
+            w: 1100
+            text: 合図の言葉を聞いたら、**一度立ち止まる**
+            color: yellow
+            at:
+              - 80
+              - 400
+  - board: whiteboard
+    steps:
+      - say: 最近増えているのが、SNS型の投資詐欺です。たとえば、こんな流れです。
+        read: 最近増えているのが、エスエヌエス型の投資詐欺です。たとえば、こんな流れです。
+        show:
+          - type: title
+            text: SNS型投資詐欺の流れ
+        added: true
+      - say: SNSで、有名人の名前を使った投資の広告を見る。LINEのグループに誘われ、先生と呼ばれる人が、もうかる話をする。最初は、少しもうかったように見せかけ、どんどんお金を振り込ませる。そして、引き出そうとすると、連絡が取れなくなります。
+        read: エスエヌエスで、有名人の名前を使った投資の広告を見る。ラインのグループに誘われ、先生と呼ばれる人が、もうかる話をする。最初は、少しもうかったように見せかけ、どんどんお金を振り込ませる。そして、引き出そうとすると、連絡が取れなくなります。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 60
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="238.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="121.25" y="58" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">有名人の</text><text x="121.25" y="90" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">投資広告</text><path d="M250.5 65 L284.5 65 M272.5 55 L284.5 65 L272.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="294.5" y="2" width="238.5" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="413.75" y="58" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">LINEグループ</text><text x="413.75" y="90" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">へ誘導</text><path d="M543 65 L577 65 M565 55 L577 65 L565 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="587" y="2" width="238.5" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="706.25" y="58" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">最初は</text><text x="706.25" y="90" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">もうかったふり</text><path d="M835.5 65 L869.5 65 M857.5 55 L869.5 65 L857.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="879.5" y="2" width="238.5" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="998.75" y="58" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">出金できず</text><text x="998.75" y="90" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">連絡が途絶える</text>
+        added: true
+      - say: 見分けるポイントは、振込先が、個人の名前の口座であること。そして、金融商品を売れるのは、金融庁に登録した業者だけ、ということです。金融庁のサイトで、確認できます。
+        show:
+          - type: list
+            items:
+              - 振込先が**個人名義の口座** → 疑う
+              - 金融商品を売れるのは**金融庁の登録業者**だけ
+            at:
+              - 80
+              - 400
+  - board: whiteboard
+    steps:
+      - say: もし、お金を払ってしまったら、すぐに、警察の相談窓口、シャープ9110や、消費者ホットライン、188に相談しましょう。訪問販売などは、クーリング・オフで、契約をやめられることもあります。
+        show:
+          - type: title
+            text: 困ったら
+          - type: box
+            w: 560
+            text: |-
+              ・消費者ホットライン **188**
+              ・警察相談 **#9110**
+            title: 相談先
+            color: blue
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・訪問販売・電話勧誘は
+              ・**クーリング・オフ**（多くは8日以内）
+            title: 取り消せることも
+            color: green
+            at:
+              - 660
+              - 160

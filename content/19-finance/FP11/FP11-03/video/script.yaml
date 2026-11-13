@@ -1,0 +1,71 @@
+title: 転職・退職・フリーランス
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「転職・退職・フリーランス」です。会社を辞めて、すぐに次の会社に入らないときは、健康保険と年金を、自分で切りかえる必要があります。期限は、14日以内です。
+        show:
+          - type: title
+            text: 退職したら14日以内に
+      - say: 健康保険は、3つから選びます。前の会社の保険を続ける任意継続、国民健康保険、そして、家族の扶養に入る方法です。保険料を比べて選びましょう。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 220
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">任意継続</text><text x="170" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">前の会社の保険（最長2年）</text><rect x="392" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="560" y="55" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">国民健康保険</text><text x="560" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">市区町村</text><rect x="782" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">家族の扶養</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">条件を満たせば保険料なし</text>
+  - board: whiteboard
+    steps:
+      - say: たとえば、3月に会社を辞めたPさん。6月に届いた住民税の通知に、驚きました。前の年の給料をもとにした住民税は、収入がなくても来るのです。
+        show:
+          - type: title
+            text: 退職後のお金の落とし穴
+          - type: svg
+            w: 900
+            h: 208
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">3月に退職したPさん</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">6月に住民税の通知が届いた</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">前の年の給料の分なので、年20万円以上！</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 退職前にお金を残しておく</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: フリーランスになると、会社員とくらべて、公的な保障が薄くなります。社会保険料は全額自分で払い、病気で休んでも手当はありません。
+        show:
+          - type: title
+            text: 会社員とフリーランス
+          - type: box
+            w: 560
+            text: |-
+              ・保険料は会社が半分
+              ・傷病手当金・失業給付あり
+              ・厚生年金あり
+            title: 会社員
+            color: blue
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・保険料は全額自分
+              ・手当は原則なし
+              ・国民年金だけ
+            title: フリーランス
+            color: pink
+            at:
+              - 660
+              - 160
+      - say: だから、生活防衛資金を多めにして、iDeCoや小規模企業共済で、自分で備えます。青色申告をすれば、最大65万円の控除で、税金を軽くすることもできます。
+        read: だから、生活防衛資金を多めにして、イデコや小規模企業共済で、自分で備えます。青色申告をすれば、最大65万円の控除で、税金を軽くすることもできます。
+        show:
+          - type: box
+            w: 1100
+            text: 生活防衛資金を多めに。iDeCo・小規模企業共済・**青色申告（最大65万円控除）**
+            color: yellow
+            at:
+              - 80
+              - 440

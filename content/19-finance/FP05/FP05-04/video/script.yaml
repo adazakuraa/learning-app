@@ -1,0 +1,67 @@
+title: 自分で上乗せする年金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「自分で上乗せする年金」です。年金の3階部分にあたるのが、会社の企業年金と、自分で入るiDeCoです。
+        read: 「自分で上乗せする年金」です。年金の3階部分にあたるのが、会社の企業年金と、自分で入るイデコです。
+        show:
+          - type: title
+            text: 3階部分の制度
+          - type: svg
+            w: 900
+            h: 300
+            at:
+              - 190
+              - 170
+            anim: fade
+            markup: <rect x="180" y="0" width="540" height="90" rx="10" fill="#9be0b0" fill-opacity="0.22" stroke="#9be0b0" stroke-width="3"/><text x="450" y="41" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">3階：企業年金・iDeCo</text><text x="450" y="73" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">会社や自分で上乗せ</text><rect x="90" y="100" width="720" height="90" rx="10" fill="#8fc4ff" fill-opacity="0.22" stroke="#8fc4ff" stroke-width="3"/><text x="450" y="155" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">2階：厚生年金</text><rect x="0" y="200" width="900" height="90" rx="10" fill="#f3d77a" fill-opacity="0.22" stroke="#f3d77a" stroke-width="3"/><text x="450" y="255" font-size="30" fill="#f3d77a" stroke="none" text-anchor="middle">1階：国民年金</text>
+  - board: whiteboard
+    steps:
+      - say: 自営業の人は、2階の厚生年金がないので、自分で上乗せする制度が、特に大切です。
+        show:
+          - type: title
+            text: 自営業の人の上乗せ
+      - say: 付加年金は、月400円を足して払うだけで、将来の年金が増えます。たとえば20年払うと、年金が毎年4万8千円増え、2年で元が取れる計算です。
+        show:
+          - type: svg
+            w: 520
+            h: 208
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">付加年金の例</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">月400円 × 20年 ＝ 9万6千円払う</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 年金が毎年 4万8千円 増える</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 2年で元が取れる</text>
+        added: true
+      - say: ほかにも、国民年金基金や、小規模企業共済があります。
+        show:
+          - type: list
+            items:
+              - 国民年金基金：終身の年金を上乗せ
+              - 小規模企業共済：自営業の退職金がわり
+            at:
+              - 80
+              - 380
+  - board: whiteboard
+    steps:
+      - say: これらに共通するのは、掛金が全額、所得控除になり、税金が安くなることです。そのかわり、原則60歳まで引き出せません。
+        show:
+          - type: title
+            text: 共通のポイント
+          - type: box
+            w: 560
+            text: |-
+              ・掛金が全額、所得控除
+              ・税金が安くなる
+            title: メリット
+            color: green
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: ・原則60歳まで引き出せない
+            title: 注意
+            color: pink
+            at:
+              - 660
+              - 160

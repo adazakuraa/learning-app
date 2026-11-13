@@ -1,0 +1,77 @@
+title: キャッシュレスとクレジットカード
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「キャッシュレスとクレジットカード」です。キャッシュレスは、支払うタイミングで3つに分けられます。
+        show:
+          - type: title
+            text: いつ払う？
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="170" y="55" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">前払い</text><text x="170" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">電子マネー（チャージ）</text><rect x="392" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="560" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">今すぐ払い</text><text x="560" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">デビットカード</text><rect x="782" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">後払い</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">クレジットカード</text>
+      - say: クレジットカードは、後払い。つまり、カード会社に一時的にお金を借りている状態です。翌月に一括で払えば、手数料はかかりません。
+        show:
+          - type: box
+            w: 1100
+            text: クレジットカード＝**後払いの借金**。一括払いなら手数料なし
+            color: yellow
+            at:
+              - 80
+              - 400
+  - board: whiteboard
+    steps:
+      - say: 気をつけたいのが、リボ払いです。毎月の支払い額が一定で、楽に見えますが、手数料は年15パーセント前後と、とても高いのです。
+        show:
+          - type: title
+            text: リボ払いに注意
+          - type: tag
+            text: 手数料 年15%前後
+            color: pink
+            at:
+              - 1000
+              - 52
+      - say: たとえば、毎月1万円のリボ払いで、30万円の買い物を返すと、終わるまでおよそ3年。その間に、手数料をおよそ8万円も払うことになります。
+        show:
+          - type: svg
+            w: 1100
+            h: 150
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <text x="244" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">買い物</text><rect x="260" y="20" width="650" height="44" rx="6" fill="#8fc4ff" fill-opacity="0.8" stroke="none"/><text x="924" y="49" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="start">30万円</text><text x="244" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">払う手数料</text><rect x="260" y="90" width="173.33333333333334" height="44" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="447.33333333333337" y="119" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="start">約8万円</text>
+          - type: svg
+            w: 520
+            h: 140
+            at:
+              - 80
+              - 380
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">毎月1万円のリボ払い</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">返し終わるまで 約3年</text>
+        added: true
+      - say: 支払いは一括を基本にしましょう。知らないうちに、自動でリボ払いになる設定がされていないかも、確認しておきます。
+        show:
+          - type: box
+            w: 1100
+            text: "**一括払い**が基本。「自動リボ」の設定を確認"
+            color: yellow
+            at:
+              - 80
+              - 560
+  - board: whiteboard
+    steps:
+      - say: 最後に、ポイントのために、いらない物を買わないこと。ポイントは、あくまでおまけです。そして、毎月の明細で、身に覚えのない請求がないかを確認しましょう。
+        show:
+          - type: title
+            text: まとめ
+          - type: list
+            items:
+              - キャッシュレスは「いつ払うか」で3種類
+              - クレジットカードは**後払いの借金**。一括払いが基本
+              - "**リボ払いは高い手数料**。使わない"
+              - 明細で不正利用をチェック

@@ -1,0 +1,51 @@
+title: 経済ニュースの読み方
+scenes:
+  - board: slide
+    steps:
+      - say: 最後の章、第13章、「お金の教養の総まとめ」です。経済ニュースの読み方、お金と幸せ、年代別のチェックリスト、そして相談先を学びます。
+        show:
+          - type: title
+            text: 第13章　お金の教養の総まとめ
+          - type: list
+            items:
+              - 経済ニュースの読み方
+              - お金と幸せの考え方
+              - 年代別チェックリスト
+              - 相談先と信頼できる情報
+  - board: whiteboard
+    steps:
+      - say: 「経済ニュースの読み方」です。ニュースによく出てくる言葉を、まず押さえましょう。
+        show:
+          - type: title
+            text: よく出てくる指標
+          - type: list
+            items:
+              - "**GDP**：国全体のもうけの大きさ"
+              - "**消費者物価指数**：物の値段の変化"
+              - "**実質賃金**：物価を考えた給料の価値"
+              - "**政策金利**：日銀が決める金利"
+              - "**為替レート**：円とドルなどの交換比率"
+  - board: whiteboard
+    steps:
+      - say: これらは、つながっています。たとえば、円安になると、輸入品やエネルギーが値上がりし、物価が上がります。物価が上がると、日銀が金利を上げ、変動金利の住宅ローンの返済が増える。こんな流れです。
+        show:
+          - type: title
+            text: つながりの例
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 60
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="180" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="92" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">円安</text><path d="M192 65 L226 65 M214 55 L226 65 L214 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="236" y="2" width="180" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="326" y="58" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">輸入品が</text><text x="326" y="90" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">値上がり</text><path d="M426 65 L460 65 M448 55 L460 65 L448 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="470" y="2" width="180" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="560" y="58" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">物価が</text><text x="560" y="90" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">上がる</text><path d="M660 65 L694 65 M682 55 L694 65 L682 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="704" y="2" width="180" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="794" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">日銀が</text><text x="794" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">金利を上げる</text><path d="M894 65 L928 65 M916 55 L928 65 L916 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="938" y="2" width="180" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="1028" y="58" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">ローンの</text><text x="1028" y="90" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">返済が増える</text>
+        added: true
+      - say: ニュースを見たら、自分の家計にどう影響するかに、置きかえて考える習慣をつけましょう。
+        show:
+          - type: box
+            w: 1100
+            text: ニュースは「**自分の家計にどう影響するか**」に置きかえる
+            color: yellow
+            at:
+              - 80
+              - 420

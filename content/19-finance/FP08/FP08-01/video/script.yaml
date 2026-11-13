@@ -1,0 +1,69 @@
+title: 持ち家か賃貸か
+scenes:
+  - board: slide
+    steps:
+      - say: 第8章、「住まい」です。持ち家と賃貸、住宅ローン、家を買うときや借りるときのお金を学びます。
+        show:
+          - type: title
+            text: 第8章　住まい
+          - type: list
+            items:
+              - 持ち家か賃貸か
+              - 住宅ローンのしくみ
+              - 家を買うときのお金
+              - 賃貸のお金とルール
+              - 不動産の基礎知識
+  - board: whiteboard
+    steps:
+      - say: 「持ち家か賃貸か」。よく話題になりますが、生涯のお金は、条件しだいで、大きな差がないことも多いのです。
+        show:
+          - type: title
+            text: どちらが得？
+          - type: box
+            w: 560
+            text: |-
+              ・ローン完済後は住居費が下がる
+              ・家と土地が残る
+              ・引っ越しにくい
+              ・修繕費・固定資産税がかかる
+            title: 持ち家
+            color: blue
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・引っ越しやすい
+              ・修繕費は大家もち
+              ・老後も家賃が続く
+              ・高齢になると借りにくいことも
+            title: 賃貸
+            color: green
+            at:
+              - 660
+              - 160
+  - board: whiteboard
+    steps:
+      - say: ですから、どちらが得かより、どちらが自分に合うかで考えます。転勤が多い人は賃貸、長く住む地域が決まっている人は持ち家も、という具合です。
+        show:
+          - type: title
+            text: 自分に合うのはどっち？
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="531" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="267.5" y="39" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">転勤が多い</text><text x="267.5" y="71" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">家族が変わりそう</text><text x="267.5" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">→ 賃貸が身軽</text><rect x="587" y="2" width="531" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="852.5" y="39" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">住む地域が決まっている</text><text x="852.5" y="71" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">老後の住居費を下げたい</text><text x="852.5" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">→ 持ち家も選択肢</text>
+        added: true
+      - say: どちらでも、住居費は、手取りの25から30パーセントまでが、無理のない目安です。手取り25万円なら、6万円から7万5千円ほどです。
+        show:
+          - type: box
+            w: 1100
+            text: 住居費の目安：**手取りの25〜30%**（手取り25万円なら6〜7.5万円）
+            color: yellow
+            at:
+              - 80
+              - 420

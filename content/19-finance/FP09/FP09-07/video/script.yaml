@@ -1,0 +1,52 @@
+title: 行動経済学：人はなぜ損をするのか
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「行動経済学」です。人は、自分では合理的に判断しているつもりでも、心のくせで、損をしがちです。
+        show:
+          - type: title
+            text: 心のくせ
+      - say: いちばん有名なのが、損失回避です。人は、1万円をもらううれしさより、1万円を失う痛みを、およそ2倍強く感じる、と言われます。
+        show:
+          - type: svg
+            w: 1100
+            h: 150
+            at:
+              - 80
+              - 180
+            anim: fade
+            markup: <text x="314" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">1万円もらう うれしさ</text><rect x="330" y="20" width="290" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="634" y="49" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">1</text><text x="314" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">1万円失う 痛み</text><rect x="330" y="90" width="580" height="44" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="924" y="119" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="start">約2倍</text>
+      - say: だから、値下がりした株を、元に戻るまで、と売れずに持ち続けたり、少し上がるとすぐ売ったりしてしまうのです。
+        show:
+          - type: svg
+            w: 520
+            h: 172
+            at:
+              - 80
+              - 380
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Nさん</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">値下がりした株を「戻るまで」と持ち続け</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">値上がりした株はすぐ売ってしまう</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: ほかにも、いろいろな心のくせがあります。
+        show:
+          - type: title
+            text: ほかの心のくせ
+          - type: list
+            items:
+              - "**群集心理**：みんなが買うから買う → 高値でつかむ"
+              - "**現在バイアス**：今を優先 → 貯金の先延ばし"
+              - "**アンカリング**：「定価◯万円が半額」に引きずられる"
+              - "**サンクコスト**：払ったお金が惜しくて、やめられない"
+  - board: whiteboard
+    steps:
+      - say: 対策は、心に頼らないことです。積立を自動にして、資産の割合の見直しは、年1回と決めておく。そして、今だけ、あなただけ、絶対もうかる、と言われたら、一度立ち止まりましょう。
+        show:
+          - type: title
+            text: 対策
+          - type: list
+            items:
+              - 積立を**自動化**する
+              - 見直しは**年1回**と決める
+              - 「今だけ・あなただけ・絶対」は**立ち止まる**

@@ -1,0 +1,53 @@
+title: お金と幸せの考え方
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「お金と幸せの考え方」です。収入が増えると、生活の満足度は上がります。でも、物を買う満足は、すぐに慣れてしまいやすい、ということがわかっています。
+        show:
+          - type: title
+            text: お金と満足度
+          - type: svg
+            w: 1000
+            h: 420
+            at:
+              - 140
+              - 170
+            anim: draw
+            markup: <path d="M60 370 H840 M60 370 V20" stroke="#9aa3ad" stroke-width="2" fill="none"/><text x="60" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">低い</text><text x="216" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle"></text><text x="372" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle"></text><text x="528" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">収入</text><text x="684" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle"></text><text x="840" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">高い</text><path d="M60.0 336.0 L216.0 217.0 L372.0 149.0 L528.0 115.0 L684.0 98.0 L840.0 87.8" stroke="#f3d77a" stroke-width="5" fill="none"/><text x="852" y="95.80000000000001" font-size="24" fill="#f3d77a" stroke="none" text-anchor="start">満足度</text>
+  - board: whiteboard
+    steps:
+      - say: 一方で、満足感につながりやすいお金の使い方があります。旅行や学びなどの体験。人のために使うこと。そして、家事を頼むなどして、時間を買うことです。
+        show:
+          - type: title
+            text: 満足感につながりやすい使い方
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="170" y="55" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">体験</text><text x="170" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">旅行・学び</text><rect x="392" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="560" y="55" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">人のために</text><text x="560" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">プレゼント・寄付</text><rect x="782" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">時間を買う</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">家事代行など</text>
+  - board: whiteboard
+    steps:
+      - say: 大切なのは、自分が何を大切にしているかを知ることです。家族、健康、学び、自由な時間。それに合わないお金の使い方を減らし、大切なことに回しましょう。
+        show:
+          - type: title
+            text: 自分の価値観に合わせる
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="170" y="58" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">大切なことを</text><text x="170" y="90" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">書き出す</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="560" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">今の使い方と</text><text x="560" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">くらべる</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="950" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">合わない支出を</text><text x="950" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">減らす</text>
+      - say: 漠然としたお金の不安は、家計の見える化と、キャッシュフロー表で数字にすると、具体的な対策に変わります。
+        show:
+          - type: box
+            w: 1100
+            text: 漠然とした不安 → **数字にする** → 具体的な対策に
+            color: yellow
+            at:
+              - 80
+              - 400

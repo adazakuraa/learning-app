@@ -1,0 +1,66 @@
+title: 年末調整
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「年末調整」です。会社員の所得税は、毎月の給料から、だいたいの額が引かれています。
+        show:
+          - type: title
+            text: 年末調整とは
+      - say: そして12月に、1年分の正しい税金を計算し直して、払いすぎていれば戻り、足りなければ追加で引かれます。これが、年末調整です。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 220
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">毎月、だいたいの</text><text x="170" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">税金を天引き</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="560" y="58" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">12月に</text><text x="560" y="90" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">正しく計算し直す</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="950" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">払いすぎなら戻る</text><text x="950" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">足りなければ引く</text>
+  - board: whiteboard
+    steps:
+      - say: 年末調整では、会社に、いくつか書類を出します。
+        show:
+          - type: title
+            text: 出す書類
+      - say: 扶養している家族を書く書類。そして、生命保険料、地震保険料、iDeCoの掛金などを書く、保険料控除の書類です。保険会社から届く、控除証明書を添えます。
+        read: 扶養している家族を書く書類。そして、生命保険料、地震保険料、イデコの掛金などを書く、保険料控除の書類です。保険会社から届く、控除証明書を添えます。
+        show:
+          - type: list
+            items:
+              - "**扶養控除の申告書**：扶養している家族"
+              - "**保険料控除の申告書**：生命保険・地震保険・iDeCoなど"
+              - 控除証明書を添える
+            at:
+              - 80
+              - 160
+      - say: たとえば、生命保険に入っている人が、控除証明書を出し忘れると、年に数千円、税金を多く払うことになります。
+        show:
+          - type: svg
+            w: 520
+            h: 172
+            at:
+              - 80
+              - 360
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">控除証明書を出し忘れた</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 年に数千円、税金を払いすぎ</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">（確定申告で取り戻せる）</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: ただし、年末調整ではできないものがあります。医療費控除、6か所以上のふるさと納税、住宅ローン控除の1年目。これらは、確定申告が必要です。
+        show:
+          - type: title
+            text: 年末調整でできないもの
+          - type: list
+            items:
+              - 医療費控除
+              - ふるさと納税（6か所以上・ワンストップ特例なし）
+              - 住宅ローン控除の**1年目**
+      - say: 結果は、12月か1月にもらう、源泉徴収票にまとまっています。ローンの申し込みなどで使うので、保管しておきましょう。
+        show:
+          - type: box
+            w: 1100
+            text: 結果は**源泉徴収票**に。保管しておく
+            color: yellow
+            at:
+              - 80
+              - 380

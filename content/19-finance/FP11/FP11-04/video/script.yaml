@@ -1,0 +1,60 @@
+title: 副業の税金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「副業の税金」です。副業の所得、つまり、収入から経費を引いた額が、年20万円をこえたら、会社員でも確定申告が必要です。
+        show:
+          - type: title
+            text: 20万円がポイント
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">副業の収入</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">− 経費</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="950" y="58" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">所得が20万円超</text><text x="950" y="90" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">→ 確定申告</text>
+      - say: 20万円以下でも、住民税の申告は必要です。この点は、見落としがちです。
+        show:
+          - type: box
+            w: 1100
+            text: 20万円以下でも**住民税の申告は必要**
+            color: pink
+            at:
+              - 80
+              - 400
+  - board: whiteboard
+    steps:
+      - say: たとえば、週末にイラストを描いて、1年で50万円の収入があったQさん。パソコンやソフトなどの経費が15万円なら、所得は35万円。20万円をこえるので、確定申告をします。
+        show:
+          - type: title
+            text: 例：イラストの副業
+          - type: svg
+            w: 900
+            h: 208
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Qさん（会社員）</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">副業の収入 50万円</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">経費（パソコン・ソフトなど）15万円</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 所得 35万円 → 確定申告が必要</text>
+        added: true
+      - say: 経費にするには、領収書や記録を残しておくことが大切です。
+        show:
+          - type: box
+            w: 1100
+            text: 経費は**領収書・記録**を残す
+            color: green
+            at:
+              - 80
+              - 420
+  - board: whiteboard
+    steps:
+      - say: 副業を始める前には、会社の就業規則で、副業が認められているかを確認しましょう。
+        show:
+          - type: title
+            text: 始める前に
+          - type: list
+            items:
+              - 会社の**就業規則**を確認
+              - アルバイトの副業は、住民税で会社に気づかれやすい
+              - 取引先によっては**インボイス**の登録が必要か確認

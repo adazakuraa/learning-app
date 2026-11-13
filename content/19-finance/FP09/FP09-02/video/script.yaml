@@ -1,0 +1,58 @@
+title: 株式・債券・投資信託
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「株式・債券・投資信託」です。代表的な金融商品を、ざっくり理解しましょう。
+        show:
+          - type: title
+            text: 3つの基本の商品
+      - say: 株式は、会社の持ち主の一部になること。会社が成長すれば、株の値段が上がったり、配当がもらえたりします。
+        show:
+          - type: box
+            w: 1100
+            text: "**株式**：会社の持ち主の一部に → 値上がり・配当"
+            color: pink
+            at:
+              - 80
+              - 160
+      - say: 債券は、国や会社に、お金を貸すこと。決まった利息がもらえ、期限が来ると、お金が戻ります。
+        show:
+          - type: box
+            w: 1100
+            text: "**債券**：国や会社にお金を貸す → 利息、期限にお金が戻る"
+            color: blue
+            at:
+              - 80
+              - 270
+      - say: 投資信託は、たくさんの人から集めたお金を、専門家がまとめて、株や債券に投資するものです。少ない金額でも、たくさんの会社に分散できます。
+        show:
+          - type: box
+            w: 1100
+            text: "**投資信託**：みんなのお金をまとめて専門家が運用 → **少額で分散**"
+            color: green
+            at:
+              - 80
+              - 380
+  - board: whiteboard
+    steps:
+      - say: 投資信託のしくみを、図で見てみましょう。
+        show:
+          - type: title
+            text: 投資信託のしくみ
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 60
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="238.5" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="121.25" y="58" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">たくさんの人の</text><text x="121.25" y="90" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">お金</text><path d="M250.5 65 L284.5 65 M272.5 55 L284.5 65 L272.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="294.5" y="2" width="238.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="413.75" y="58" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">専門家が</text><text x="413.75" y="90" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">まとめて運用</text><path d="M543 65 L577 65 M565 55 L577 65 L565 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="587" y="2" width="238.5" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="706.25" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">国内外の</text><text x="706.25" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">株・債券</text><path d="M835.5 65 L869.5 65 M857.5 55 L869.5 65 L857.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="879.5" y="2" width="238.5" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="998.75" y="58" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">もうけを</text><text x="998.75" y="90" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">みんなで分ける</text>
+      - say: なかでも、日経平均株価や、全世界の株式など、市場全体の動きに合わせる投資信託を、インデックスファンドといいます。手数料が安く、自動で分散されるので、長期の資産づくりで、広く使われています。
+        show:
+          - type: box
+            w: 1100
+            text: "**インデックスファンド**：市場全体に連動。手数料が安く自動で分散"
+            color: yellow
+            at:
+              - 80
+              - 400

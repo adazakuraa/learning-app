@@ -1,0 +1,71 @@
+title: 新NISA
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「新NISA」です。ふつう、投資でもうけたお金には、およそ20パーセントの税金がかかります。NISAの口座なら、これが、かかりません。
+        read: 「新ニーサ」です。ふつう、投資でもうけたお金には、およそ20パーセントの税金がかかります。ニーサの口座なら、これが、かかりません。
+        show:
+          - type: title
+            text: NISA＝税金がかからない口座
+      - say: たとえば、投資で100万円もうけたとき。ふつうの口座なら、およそ20万円が税金で引かれますが、NISAなら、100万円がまるまる残ります。
+        read: たとえば、投資で100万円もうけたとき。ふつうの口座なら、およそ20万円が税金で引かれますが、ニーサなら、100万円がまるまる残ります。
+        show:
+          - type: svg
+            w: 800
+            h: 400
+            at:
+              - 140
+              - 170
+            anim: fade
+            markup: <rect x="130" y="110" width="140" height="240" rx="6" fill="#9aa3ad" fill-opacity="0.8" stroke="none"/><text x="200" y="98" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">手元に約80万円</text><text x="200" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">ふつうの口座</text><rect x="530" y="50" width="140" height="300" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="600" y="38" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">手元に100万円</text><text x="600" y="386" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">NISA口座</text><path d="M0 350 H800" stroke="#9aa3ad" stroke-width="2"/>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: NISAには、2つの枠があります。つみたて投資枠は、年120万円まで。成長投資枠は、年240万円まで。合わせて、年360万円です。
+        read: ニーサには、2つの枠があります。つみたて投資枠は、年120万円まで。成長投資枠は、年240万円まで。合わせて、年360万円です。
+        show:
+          - type: title
+            text: 2つの枠
+          - type: svg
+            w: 900
+            h: 200
+            at:
+              - 190
+              - 170
+            anim: fade
+            markup: <rect x="0" y="0" width="900" height="90" rx="10" fill="#9be0b0" fill-opacity="0.22" stroke="#9be0b0" stroke-width="3"/><text x="450" y="41" font-size="30" fill="#9be0b0" stroke="none" text-anchor="middle">つみたて投資枠</text><text x="450" y="73" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">年120万円まで・長期の積立向けの投資信託</text><rect x="0" y="100" width="900" height="90" rx="10" fill="#8fc4ff" fill-opacity="0.22" stroke="#8fc4ff" stroke-width="3"/><text x="450" y="141" font-size="30" fill="#8fc4ff" stroke="none" text-anchor="middle">成長投資枠</text><text x="450" y="173" font-size="22" fill="#eef0ea" stroke="none" text-anchor="middle">年240万円まで・株式や投資信託</text>
+      - say: 一生のうちに使える上限は、1800万円です。税金がかからない期間は、無期限。売った分の枠は、次の年に復活します。
+        show:
+          - type: svg
+            w: 1100
+            h: 150
+            at:
+              - 80
+              - 400
+            anim: fade
+            markup: <text x="244" y="49" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">1年の上限</text><rect x="260" y="20" width="130" height="44" rx="6" fill="#f3d77a" fill-opacity="0.8" stroke="none"/><text x="404" y="49" font-size="26" fill="#f3d77a" stroke="none" text-anchor="start">360万円</text><text x="244" y="119" font-size="26" fill="#eef0ea" stroke="none" text-anchor="end">一生の上限</text><rect x="260" y="90" width="650" height="44" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="924" y="119" font-size="26" fill="#9be0b0" stroke="none" text-anchor="start">1,800万円</text>
+  - board: whiteboard
+    steps:
+      - say: 使い方の基本は、まず、つみたて投資枠で、手数料の安いインデックスファンドを、毎月積み立てることです。たとえば、毎月3万円なら、年36万円。枠には、まだ余裕があります。
+        show:
+          - type: title
+            text: 使い方の基本
+          - type: svg
+            w: 520
+            h: 208
+            at:
+              - 80
+              - 160
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">Lさん（30歳）</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">つみたて投資枠で毎月3万円</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">全世界株式のインデックスファンド</text><text x="120" y="164" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">→ 年36万円（枠の3割）</text>
+        added: true
+      - say: なお、NISAで損をしても、ほかの口座のもうけと、差し引きできない点には、注意しましょう。
+        read: なお、ニーサで損をしても、ほかの口座のもうけと、差し引きできない点には、注意しましょう。
+        show:
+          - type: box
+            w: 1100
+            text: NISAの損は、ほかの口座の利益と**相殺できない**
+            color: pink
+            at:
+              - 80
+              - 400

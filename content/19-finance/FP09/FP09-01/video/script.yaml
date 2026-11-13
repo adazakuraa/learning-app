@@ -1,0 +1,104 @@
+title: 投資とは：リスクとリターン
+scenes:
+  - board: slide
+    steps:
+      - say: 第9章、「資産運用の基礎」です。投資の考え方、商品の種類、NISAとiDeCo、そして、失敗しないための心構えを学びます。
+        read: 第9章、「資産運用の基礎」です。投資の考え方、商品の種類、ニーサとイデコ、そして、失敗しないための心構えを学びます。
+        show:
+          - type: title
+            text: 第9章　資産運用の基礎
+          - type: list
+            items:
+              - リスクとリターン
+              - 株式・債券・投資信託
+              - 長期・積立・分散
+              - 新NISA
+              - iDeCo
+              - 投資の費用と税金
+              - 行動経済学
+              - 外貨・金・暗号資産
+  - board: whiteboard
+    steps:
+      - say: 「投資とは」です。投資の世界でいう、リスクとは、危険という意味ではありません。結果の、ぶれ幅のことです。
+        show:
+          - type: title
+            text: リスク＝ぶれ幅
+          - type: box
+            w: 1100
+            text: リスク＝危険ではなく、**結果のぶれ幅**
+            color: yellow
+            at:
+              - 80
+              - 160
+      - say: たとえば、預金は、1年後もほぼ同じ金額。ぶれはほとんどありません。株式は、1年後に2割増えることも、2割減ることもある。ぶれが大きい、つまり、リスクが大きいのです。
+        show:
+          - type: box
+            w: 560
+            text: |-
+              ・1年後もほぼ同じ
+              ・ぶれが小さい＝低リスク
+            title: 預金
+            color: blue
+            at:
+              - 60
+              - 270
+          - type: box
+            w: 560
+            text: |-
+              ・2割増えることも、減ることも
+              ・ぶれが大きい＝高リスク
+            title: 株式
+            color: pink
+            at:
+              - 660
+              - 270
+        added: true
+  - board: whiteboard
+    steps:
+      - say: リスクとリターンは、セットです。大きなもうけが期待できるものほど、ぶれも大きくなります。
+        show:
+          - type: title
+            text: リスクとリターンの関係
+          - type: svg
+            w: 1000
+            h: 420
+            at:
+              - 140
+              - 170
+            anim: draw
+            markup: <path d="M60 370 H840 M60 370 V20" stroke="#9aa3ad" stroke-width="2" fill="none"/><text x="60" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">預金</text><text x="255" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">国債</text><text x="450" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">債券</text><text x="645" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">株式</text><text x="840" y="404" font-size="22" fill="#9aa3ad" stroke="none" text-anchor="middle">暗号資産</text><path d="M60.0 354.5 L255.0 308.2 L450.0 230.9 L645.0 138.2 L840.0 60.9" stroke="#f3d77a" stroke-width="5" fill="none"/><text x="852" y="68.90909090909093" font-size="24" fill="#f3d77a" stroke="none" text-anchor="start">リスク大＝リターン大</text>
+      - say: ですから、ローリスクで、ハイリターン、という話は、ありません。もしあれば、詐欺を疑いましょう。
+        show:
+          - type: box
+            w: 1100
+            text: 「**ローリスク・ハイリターン**」はない → 詐欺を疑う
+            color: pink
+            at:
+              - 80
+              - 610
+  - board: whiteboard
+    steps:
+      - say: リスクを抑える基本は、分散です。卵を一つのかごに盛るな、という言葉があります。一つのかごを落とすと、全部割れてしまうからです。
+        show:
+          - type: title
+            text: 卵を一つのかごに盛るな
+          - type: box
+            w: 560
+            text: |-
+              ・その会社が倒産すると
+              ・大きな損
+            title: 1社の株だけ
+            color: pink
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・どれかが下がっても
+              ・全体のぶれは小さい
+            title: たくさんの会社・国に分散
+            color: green
+            at:
+              - 660
+              - 160

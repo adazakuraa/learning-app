@@ -1,0 +1,51 @@
+title: 亡くなった後の手続き
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「亡くなった後の手続き」です。家族が亡くなると、短いあいだに、たくさんの手続きが必要になります。期限の順に、見てみましょう。
+        show:
+          - type: title
+            text: 主な手続きと期限
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 60
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="238.5" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="121.25" y="55" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">7日以内</text><text x="121.25" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">死亡届</text><path d="M250.5 65 L284.5 65 M272.5 55 L284.5 65 L272.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="294.5" y="2" width="238.5" height="126" rx="14" fill="#f3d77a" fill-opacity="0.15" stroke="#f3d77a" stroke-width="3"/><text x="413.75" y="55" font-size="26" fill="#f3d77a" stroke="none" text-anchor="middle">14日以内</text><text x="413.75" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">年金・健康保険</text><path d="M543 65 L577 65 M565 55 L577 65 L565 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="587" y="2" width="238.5" height="126" rx="14" fill="#f3a76a" fill-opacity="0.15" stroke="#f3a76a" stroke-width="3"/><text x="706.25" y="55" font-size="26" fill="#f3a76a" stroke="none" text-anchor="middle">3か月</text><text x="706.25" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">相続放棄</text><path d="M835.5 65 L869.5 65 M857.5 55 L869.5 65 L857.5 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="879.5" y="2" width="238.5" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="998.75" y="55" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">10か月</text><text x="998.75" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">相続税の申告</text>
+  - board: whiteboard
+    steps:
+      - say: 気をつけたいのが、預金口座です。銀行が亡くなったことを知ると、口座は凍結され、引き出せなくなります。ただし、1つの銀行につき150万円までなど、一定額は、遺産を分ける前でも引き出せる制度があります。
+        show:
+          - type: title
+            text: 口座は凍結される
+          - type: box
+            w: 1100
+            text: 口座は**凍結**。ただし一定額（1金融機関150万円まで等）は引き出せる
+            color: pink
+            at:
+              - 80
+              - 170
+      - say: 遺族は、葬祭費や埋葬料として、数万円を受け取れます。遺族年金も、忘れずに請求しましょう。
+        show:
+          - type: box
+            w: 1100
+            text: "**葬祭費・埋葬料**（数万円）、**遺族年金**を忘れずに請求"
+            color: green
+            at:
+              - 80
+              - 290
+  - board: whiteboard
+    steps:
+      - say: 多くの市区町村には、おくやみコーナーがあり、必要な手続きを、まとめて案内してくれます。一人で抱えこまずに、利用しましょう。
+        show:
+          - type: title
+            text: 便利な窓口
+          - type: box
+            w: 1100
+            text: "**おくやみコーナー**：手続きをまとめて案内（多くの市区町村）"
+            color: yellow
+            at:
+              - 80
+              - 170

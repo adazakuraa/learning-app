@@ -1,0 +1,69 @@
+title: 住宅ローンのしくみ
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「住宅ローンのしくみ」です。住宅ローンは、人生でいちばん大きな借金です。
+        show:
+          - type: title
+            text: 住宅ローンの基本
+      - say: 大切なのは、銀行が貸してくれる額ではなく、無理なく返せる額で借りることです。目安は、年間の返済が、手取りの20から25パーセント以内です。
+        show:
+          - type: box
+            w: 1100
+            text: 借りられる額ではなく、**無理なく返せる額**で借りる
+            color: yellow
+            at:
+              - 80
+              - 170
+  - board: whiteboard
+    steps:
+      - say: 金利のタイプは、大きく2つ。変動金利は、今は低いけれど、世の中の金利が上がると、返済が増えます。固定金利は、少し高めですが、最後まで返済額が変わりません。
+        show:
+          - type: title
+            text: 変動金利と固定金利
+          - type: box
+            w: 560
+            text: |-
+              ・今は金利が低い
+              ・金利が上がると返済が増える
+            title: 変動金利
+            color: pink
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・少し高め
+              ・最後まで返済額が変わらない
+            title: 固定金利
+            color: blue
+            at:
+              - 660
+              - 160
+  - board: whiteboard
+    steps:
+      - say: 金利の差は、とても大きく効きます。3000万円を35年で借りた場合、金利1パーセントなら、返す合計はおよそ3560万円。2パーセントなら、およそ4170万円。600万円以上の差です。
+        show:
+          - type: title
+            text: 金利で総返済額が変わる
+          - type: svg
+            w: 900
+            h: 420
+            at:
+              - 140
+              - 160
+            anim: fade
+            markup: <rect x="80" y="139.7841726618705" width="140" height="230.2158273381295" rx="6" fill="#9aa3ad" fill-opacity="0.8" stroke="none"/><text x="150" y="127.78417266187051" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">3,000万円</text><text x="150" y="406" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">借りた額</text><rect x="380" y="96.81055155875299" width="140" height="273.189448441247" rx="6" fill="#9be0b0" fill-opacity="0.8" stroke="none"/><text x="450" y="84.81055155875299" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">約3,560万円</text><text x="450" y="406" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">金利1%</text><rect x="680" y="50" width="140" height="320" rx="6" fill="#f4a3b8" fill-opacity="0.8" stroke="none"/><text x="750" y="38" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">約4,170万円</text><text x="750" y="406" font-size="24" fill="#eef0ea" stroke="none" text-anchor="middle">金利2%</text><path d="M0 370 H900" stroke="#9aa3ad" stroke-width="2"/>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: ローンを組む人が亡くなったときは、団体信用生命保険で、残りのローンがなくなります。また、余裕があるときに多めに返す、繰上げ返済をすると、利息を減らせます。ただし、生活防衛資金は残しておきましょう。
+        show:
+          - type: title
+            text: 知っておきたいこと
+          - type: list
+            items:
+              - "**団体信用生命保険**：亡くなるとローンがなくなる"
+              - "**繰上げ返済**：早いほど利息が減る"
+              - ただし**生活防衛資金は残す**

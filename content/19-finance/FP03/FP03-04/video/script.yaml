@@ -1,0 +1,96 @@
+title: 金利・為替と日銀の役割
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「金利・為替と日銀の役割」です。日本銀行は、物価を安定させるために、政策金利を上げ下げします。
+        show:
+          - type: title
+            text: 日銀と金利
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 200
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">物価が上がりすぎ</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">日銀が金利を上げる</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="950" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">お金を借りにくくなり</text><text x="950" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">景気が落ち着く</text>
+      - say: 日本は長く、マイナス金利でしたが、2024年に解除し、金利のある時代に戻りつつあります。
+        show:
+          - type: box
+            w: 1100
+            text: 2024年：マイナス金利を解除 → **金利のある時代へ**
+            color: yellow
+            at:
+              - 80
+              - 420
+  - board: whiteboard
+    steps:
+      - say: 金利が上がると、家計にはどんな影響があるでしょう。預金の利息は増えますが、変動金利の住宅ローンは、返済が増えます。
+        show:
+          - type: title
+            text: 金利が上がると
+          - type: box
+            w: 560
+            text: ・預金の利息が増える
+            title: うれしいこと
+            color: green
+            at:
+              - 60
+              - 160
+          - type: box
+            w: 560
+            text: |-
+              ・変動金利のローンの返済が増える
+              ・債券の価格が下がる
+            title: 困ること
+            color: pink
+            at:
+              - 660
+              - 160
+      - say: たとえば、3000万円の住宅ローンで、金利が1パーセント上がると、毎月の返済は、およそ1万5000円増える計算になります。
+        show:
+          - type: svg
+            w: 520
+            h: 172
+            at:
+              - 80
+              - 420
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">住宅ローン 3,000万円（35年）</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">金利 1% → 2% になると</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">毎月の返済が 約1.5万円 増える</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: 最後に、為替です。1ドルが100円から150円になるのが、円安。ドルに対して、円の価値が下がったということです。
+        show:
+          - type: title
+            text: 円安と円高
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 180
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">1ドル＝100円</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">円安</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#f4a3b8" fill-opacity="0.15" stroke="#f4a3b8" stroke-width="3"/><text x="950" y="55" font-size="26" fill="#f4a3b8" stroke="none" text-anchor="middle">1ドル＝150円</text><text x="950" y="95" font-size="20" fill="#9aa3ad" stroke="none" text-anchor="middle">輸入品が値上がり</text>
+      - say: 円安になると、輸入している食べ物やエネルギーが値上がりし、海外旅行も高くなります。逆に、円高になると、輸入品が安くなります。
+        show:
+          - type: box
+            w: 560
+            text: |-
+              ・輸入品・海外旅行が高い
+              ・輸出企業はもうかりやすい
+            title: 円安
+            color: pink
+            at:
+              - 60
+              - 380
+          - type: box
+            w: 560
+            text: |-
+              ・輸入品・海外旅行が安い
+              ・輸出企業は厳しい
+            title: 円高
+            color: blue
+            at:
+              - 660
+              - 380

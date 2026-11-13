@@ -1,0 +1,63 @@
+title: 家を買うときのお金
+scenes:
+  - board: whiteboard
+    steps:
+      - say: 「家を買うときのお金」です。家を買うときは、物件の価格のほかに、諸費用がかかります。
+        show:
+          - type: title
+            text: 物件価格＋諸費用
+      - say: 新築でおよそ3から5パーセント、中古で6から8パーセントが目安です。たとえば、4000万円の中古マンションなら、240万円から320万円ほどになります。
+        show:
+          - type: svg
+            w: 1000
+            h: 172
+            at:
+              - 80
+              - 170
+            anim: fade
+            markup: <circle cx="50" cy="44" r="26" fill="none" stroke="#f3d77a" stroke-width="4"/><path d="M8 130 C8 88 92 88 92 130" fill="none" stroke="#f3d77a" stroke-width="4"/><text x="120" y="50" font-size="32" fill="#f3d77a" stroke="none" text-anchor="start">4,000万円の中古マンション</text><text x="120" y="92" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">諸費用 約6〜8% → 約240〜320万円</text><text x="120" y="128" font-size="24" fill="#eef0ea" stroke="none" text-anchor="start">仲介手数料・登記・ローン手数料・保険・税金など</text>
+        added: true
+      - say: 頭金は、多いほど利息が減ります。でも、貯金をすべて使い切らないようにしましょう。
+        show:
+          - type: box
+            w: 1100
+            text: 頭金は多いほど有利。でも**貯金は出し切らない**
+            color: yellow
+            at:
+              - 80
+              - 380
+  - board: whiteboard
+    steps:
+      - say: 家を買うと使える支援が、住宅ローン控除です。年末のローン残高の0.7パーセントが、最長13年、税金から差し引かれます。
+        show:
+          - type: title
+            text: 住宅ローン控除
+          - type: box
+            w: 1100
+            text: 年末のローン残高の**0.7%**が、最長**13年**、税金から引かれる
+            color: green
+            at:
+              - 80
+              - 160
+      - say: たとえば、年末の残高が3000万円なら、その年は、最大21万円、税金が安くなります。1年目は確定申告、2年目からは年末調整で手続きします。
+        show:
+          - type: svg
+            w: 1120
+            h: 134
+            at:
+              - 80
+              - 280
+            anim: fade
+            markup: <rect x="2" y="2" width="336" height="126" rx="14" fill="#8fc4ff" fill-opacity="0.15" stroke="#8fc4ff" stroke-width="3"/><text x="170" y="74" font-size="26" fill="#8fc4ff" stroke="none" text-anchor="middle">残高3,000万円</text><path d="M348 65 L382 65 M370 55 L382 65 L370 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="392" y="2" width="336" height="126" rx="14" fill="#9aa3ad" fill-opacity="0.15" stroke="#9aa3ad" stroke-width="3"/><text x="560" y="74" font-size="26" fill="#9aa3ad" stroke="none" text-anchor="middle">× 0.7%</text><path d="M738 65 L772 65 M760 55 L772 65 L760 75" stroke="#9aa3ad" stroke-width="4" fill="none"/><rect x="782" y="2" width="336" height="126" rx="14" fill="#9be0b0" fill-opacity="0.15" stroke="#9be0b0" stroke-width="3"/><text x="950" y="58" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">最大21万円</text><text x="950" y="90" font-size="26" fill="#9be0b0" stroke="none" text-anchor="middle">税金が安く</text>
+        added: true
+  - board: whiteboard
+    steps:
+      - say: 買ったあとも、お金はかかります。固定資産税、マンションなら管理費と修繕積立金。一戸建ても、10年から15年ごとの、屋根や外壁の修理に、自分で備えておきます。
+        show:
+          - type: title
+            text: 買ったあとのお金
+          - type: list
+            items:
+              - 固定資産税（毎年）
+              - マンション：**管理費・修繕積立金**
+              - 一戸建て：10〜15年ごとの修繕に**自分で積み立て**
