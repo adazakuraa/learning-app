@@ -3,3 +3,8 @@ code: FP08-05
 title: 不動産の基礎知識
 order: 5
 summary: 不動産の価格、登記、災害リスクの調べ方など、買う・持つ前に知っておきたい基本です。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 47
+  narration: VOICEVOX:ずんだもん

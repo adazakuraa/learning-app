@@ -3,3 +3,8 @@ code: FP08-04
 title: 賃貸のお金とルール
 order: 4
 summary: 賃貸の初期費用、更新、退去時の原状回復のルールを知っておきます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 42
+  narration: VOICEVOX:ずんだもん
