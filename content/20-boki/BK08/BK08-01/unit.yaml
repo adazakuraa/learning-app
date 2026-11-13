@@ -3,3 +3,8 @@ code: BK08-01
 title: 主要簿と補助簿
 order: 1
 summary: 仕訳帳・総勘定元帳（主要簿）と、補助簿の種類・使い分けを学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 67
+  narration: VOICEVOX:ずんだもん

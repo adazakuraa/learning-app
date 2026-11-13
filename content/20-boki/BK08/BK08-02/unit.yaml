@@ -3,3 +3,8 @@ code: BK08-02
 title: 現金出納帳・仕入帳・売上帳
 order: 2
 summary: 補助記入帳のつけ方（現金出納帳・当座預金出納帳・仕入帳・売上帳）を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 54
+  narration: VOICEVOX:ずんだもん

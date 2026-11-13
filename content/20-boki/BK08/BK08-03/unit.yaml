@@ -3,3 +3,8 @@ code: BK08-03
 title: 売掛金元帳・買掛金元帳・手形記入帳
 order: 3
 summary: 得意先・仕入先ごとの元帳と、受取手形記入帳・支払手形記入帳を学びます。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 65
+  narration: VOICEVOX:ずんだもん
