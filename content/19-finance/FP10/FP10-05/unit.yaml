@@ -3,3 +3,8 @@ code: FP10-05
 title: 借金で困ったとき
 order: 5
 summary: 返せない借金は、一人で抱えずに相談すれば解決の道があります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 53
+  narration: VOICEVOX:ずんだもん
