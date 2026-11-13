@@ -1,6 +1,6 @@
 questions:
-  - q: 「カナダに住んでいる友達がいる」。I have a friend（　　）lives in Canada. 人を説明する関係代名詞を答えよ。
+  - q: 「カナダに住んでいる友達がいる」。I have a friend（　　）lives in Canada. 人を説明する関係代名詞を答えてください。
     a: [who, that]
     show: who（that も可）
-  - q: 「私たちが出会ったカフェ」。the cafe（　　）we met. 場所を表す関係副詞を答えよ。
+  - q: 「私たちが出会ったカフェ」。the cafe（　　）we met. 場所を表す関係副詞を答えてください。
     a: [where]
