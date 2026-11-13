@@ -3,3 +3,8 @@ code: FP06-01
 title: 保険の基本
 order: 1
 summary: 保険は「めったに起きないが、起きたら払えない損失」に備えるものです。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 77
+  narration: VOICEVOX:ずんだもん
