@@ -3,7 +3,9 @@
 //   b = -logit(p)  (an average adult, theta = 0, answers with probability p)
 export type HQuestion = { id: string; genre: string; q: string; answers: string[]; show: string; p: number; len: number; unit?: string };
 export type HMode = 'general' | 'review';
-export type HBank = { genres: { id: string; title: string }[]; questions: HQuestion[] };
+export type HBank = { genres: { id: string; title: string; academic?: boolean }[]; questions: HQuestion[] };
+/** share of academic genres in the general mode */
+export const ACADEMIC_SHARE = 0.3;
 
 export type HItem = { seen: number; correct: number; lastAt: number; lastPos?: number; bestPos?: number; lastWrongAt?: number };
 export type HState = {
