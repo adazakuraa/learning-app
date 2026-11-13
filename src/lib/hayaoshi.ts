@@ -52,8 +52,16 @@ export function updateTheta(s: HState, q: HQuestion, ok: boolean): number {
   return s.theta + kFactor(s.answered) * ((ok ? 1 : 0) - pr);
 }
 
-/** Pick the next question: predicted success near TARGET, fresh genres, unseen or due for review. */
-export function pickNext(bank: HBank, s: HState, exclude: Set<string>, recentGenres: string[], rnd = Math.random): HQuestion | null {
+/**
+ * Per-session target: varies around TARGET so some rounds are tough (~5/10) and some go well (~9/10),
+ * while the long-run average stays at TARGET (symmetric, roughly bell-shaped, ±0.25).
+ */
+export function sessionTarget(rnd = Math.random): number {
+  return TARGET + (rnd() + rnd() + rnd() - 1.5) * 0.167;
+}
+
+/** Pick the next question: predicted success near the target, fresh genres, unseen or due for review. */
+export function pickNext(bank: HBank, s: HState, exclude: Set<string>, recentGenres: string[], rnd = Math.random, target = TARGET): HQuestion | null {
   const now = Date.now();
   const DAY = 864e5;
   let best: HQuestion | null = null;
@@ -61,7 +69,7 @@ export function pickNext(bank: HBank, s: HState, exclude: Set<string>, recentGen
   for (const q of bank.questions) {
     if (exclude.has(q.id)) continue;
     const it = s.items[q.id];
-    let score = -Math.abs(predict(s.theta, q) - TARGET) * 4;
+    let score = -Math.abs(predict(s.theta, q) - target) * 4;
     if (it) {
       const age = (now - it.lastAt) / DAY;
       if (it.correct > 0 && it.lastWrongAt === undefined) score -= 2.5; // solved: rarely again

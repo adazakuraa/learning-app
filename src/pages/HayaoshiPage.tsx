@@ -3,7 +3,7 @@ import { useProgress } from '../lib/progress/ProgressProvider';
 import { isCorrect } from '../lib/quiz';
 import { unitStatus } from '../lib/progress/model';
 import {
-  ACADEMIC_SHARE, AFTER_FULL, CPS, emptyH, pickNext, points, predict, rating, SESSION_LEN, thinkSeconds, updateTheta,
+  ACADEMIC_SHARE, AFTER_FULL, CPS, emptyH, pickNext, sessionTarget, TARGET, points, predict, rating, SESSION_LEN, thinkSeconds, updateTheta,
   type HBank, type HMode, type HQuestion, type HState,
 } from '../lib/hayaoshi';
 
@@ -68,6 +68,7 @@ export function HayaoshiPage() {
   const hRef = useRef(h);
   hRef.current = h;
   const used = useRef(new Set<string>());
+  const tgt = useRef(TARGET);
 
   useEffect(() => { setBank(null); loadBank(mode).then(setBank, () => setErr(true)); }, [mode]);
   useEffect(() => () => window.clearInterval(timer.current), []);
@@ -86,7 +87,7 @@ export function HayaoshiPage() {
       const want = (asked + 1) / (outs.length + 1) <= ACADEMIC_SHARE + 0.05 && Math.random() < ACADEMIC_SHARE * 1.7 ? true : asked / Math.max(1, outs.length) < ACADEMIC_SHARE - 0.15 && outs.length >= 3;
       pool = { ...bank, questions: bank.questions.filter((x) => acad.has(x.genre) === want) };
     }
-    const nq = pickNext(pool, hRef.current, used.current, recent) ?? pickNext(bank, hRef.current, used.current, recent);
+    const nq = pickNext(pool, hRef.current, used.current, recent, Math.random, tgt.current) ?? pickNext(bank, hRef.current, used.current, recent, Math.random, tgt.current);
     if (!nq) { setPhase('result'); return; }
     used.current.add(nq.id);
     setQ(nq); setPos(0); setBuzzPos(null); setInput(''); setPhase('reading');
@@ -176,6 +177,7 @@ export function HayaoshiPage() {
   };
   const start = () => {
     used.current = new Set();
+    tgt.current = sessionTarget();
     setOuts([]); setStreak(0); setStartTheta(h.theta);
     setTimeout(() => nextQuestion(), 0);
   };
