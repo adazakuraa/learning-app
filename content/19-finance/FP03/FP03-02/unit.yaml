@@ -3,3 +3,8 @@ code: FP03-02
 title: インフレとデフレ
 order: 2
 summary: 物価が上がると、同じ金額で買えるものが減ります。現金だけで持つことにもリスクがあります。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 74
+  narration: VOICEVOX:ずんだもん

@@ -3,3 +3,8 @@ code: FP03-03
 title: お金の時間価値
 order: 3
 summary: 「今の100万円」と「10年後の100万円」は同じ価値ではありません。
+video:
+  src: video.mp4
+  captions: captions.vtt
+  duration: 54
+  narration: VOICEVOX:ずんだもん
