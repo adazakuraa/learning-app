@@ -14,14 +14,14 @@ scenes:
           - { type: title, text: "問題 ①②" }
           - { type: text, text: "1 ＋ 1/2 ＋ 1/4 ＋ 1/8 ＋ …" }
         pause: 4
-      - say: 初項1、公比1/2、項数nを公式に入れて、整理すると、2×（1－1/2のn乗）。無限に足した和は、これのnを無限大に近づけた極限です。
+      - say: 解答です。初項1、公比1/2、項数nを公式に入れて、整理すると、2×（1－1/2のn乗）。無限に足した和は、これのnを無限大に近づけた極限です。
         show:
           - { type: formula, tex: 'S_n = 2\left(1 - \frac{1}{2^n}\right) \qquad \lim_{n \to \infty} 2\left(1 - \frac{1}{2^n}\right)' }
       - say: 問題2。では、その無限和は、いくつでしょう。
         show:
           - { type: text, text: "② 無限に足すと、いくつ？" }
         pause: 3
-      - say: nが大きくなると、2のn乗は限りなく大きくなるので、1/2のn乗は0に近づきます。だから、2×（1－0）で、2です。無限に足しても、2を超えないのです。
+      - say: 解答です。nが大きくなると、2のn乗は限りなく大きくなるので、1/2のn乗は0に近づきます。だから、2×（1－0）で、2です。無限に足しても、2を超えないのです。
         show:
           - { type: formula, color: green, tex: '\lim_{n \to \infty} 2\left(1 - \frac{1}{2^n}\right) = 2(1 - 0) = 2' }
       - say: 0から2までの道を、まず1進み、残りの半分、さらに残りの半分…と進んでいくイメージです。2にどこまでも近づくけれど、2を超えることはありません。
@@ -42,7 +42,7 @@ scenes:
           - { type: title, text: "問題 ③④⑤　落ちるボール" }
           - { type: formula, size: l, tex: 'x = 5t^2' }
         pause: 4
-      - say: 定義どおり計算します。tからt＋hまでに落ちた距離は、5（t＋h）²－5t²で、10th＋5h²。hで割ると10t＋5h。hを0に近づけると、10tです。
+      - say: 解答です。定義どおり計算します。tからt＋hまでに落ちた距離は、5（t＋h）²－5t²で、10th＋5h²。hで割ると10t＋5h。hを0に近づけると、10tです。
         show:
           - { type: formula, tex: '\frac{5(t+h)^2 - 5t^2}{h} = \frac{10th + 5h^2}{h} = 10t + 5h' }
           - { type: formula, color: green, tex: '\lim_{h \to 0}(10t + 5h) = 10t' }
